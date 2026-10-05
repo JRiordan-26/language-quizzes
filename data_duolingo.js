@@ -7507,7 +7507,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la ragazza", "e": "girl / girlfriend"},
     {"t": "il ragazzo", "e": "boy"},
     {"t": "la sorella", "e": "sister"},
-    {"t": "una", "e": "a / an (feminine: una) (feminine)"}
+    {"t": "una", "e": "a / an (feminine: una)"}
   ]},
   { id: "duo_it_u5", type: "vocab", title: "Vocab: Unit 5 \u00b7 Character \u2014 Describe personalities", items: [
     {"t": "allegra", "e": "cheerful / happy (feminine)"},
@@ -7594,7 +7594,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "giallo", "e": "yellow"},
     {"t": "la gonna", "e": "skirt"},
     {"t": "il", "e": "the (masculine: il)"},
-    {"t": "la", "e": "the (feminine: la) (feminine)"},
+    {"t": "la", "e": "the (feminine: la)"},
     {"t": "la maglietta", "e": "T-shirt / shirt"},
     {"t": "il maglione", "e": "sweater"},
     {"t": "nero", "e": "black"},
@@ -7663,7 +7663,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "grande", "e": "big"},
     {"t": "impermeabile", "e": "raincoat / waterproof"},
     {"t": "l'", "e": "the (before a vowel: l')"},
-    {"t": "lo", "e": "the (masculine before s+consonant or z: lo) (masculine)"},
+    {"t": "lo", "e": "the (masculine before s+consonant or z: lo)"},
     {"t": "molto", "e": "very / a lot of (masculine)"},
     {"t": "nuovo", "e": "new"},
     {"t": "l'ombrello", "e": "umbrella"},
@@ -7689,8 +7689,8 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il cibo", "e": "food"},
     {"t": "la compagna di classe", "e": "classmate (feminine)"},
     {"t": "il compagno di classe", "e": "classmate (masculine)"},
-    {"t": "mia", "e": "my / mine (feminine)"},
-    {"t": "mio", "e": "my (masculine)"},
+    {"t": "mia", "e": "my (feminine: mia)"},
+    {"t": "mio", "e": "my (masculine: mio)"},
     {"t": "la pasta", "e": "pasta"},
     {"t": "per", "e": "for"},
     {"t": "il regalo", "e": "present (gift)"},
@@ -7811,7 +7811,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il gioco", "e": "game (toy)"},
     {"t": "il golf", "e": "golf"},
     {"t": "guardare la televisione", "e": "to watch television"},
-    {"t": "l'hobby", "e": "hobby / hobbies"},
+    {"t": "i hobby", "e": "hobby / hobbies"},
     {"t": "importante", "e": "important"},
     {"t": "noioso", "e": "boring"},
     {"t": "odiare", "e": "to hate"},
@@ -7840,7 +7840,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo stadio", "e": "stadium"},
     {"t": "la statua", "e": "statue"},
     {"t": "un'", "e": "a / an / one"},
-    {"t": "uno", "e": "a / an (masculine before s+consonant or z: uno) / one (masculine)"},
+    {"t": "uno", "e": "a / an (masculine before s+consonant or z: uno) / one"},
     {"t": "lo zoo", "e": "zoo"}
   ]},
   { id: "duo_it_u21", type: "vocab", title: "Vocab: Unit 21 \u00b7 Clothes \u2014 Shop for clothing items", items: [
@@ -7914,8 +7914,8 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sicuro", "e": "sure"},
     {"t": "straniero", "e": "foreign"},
     {"t": "il tedesco", "e": "German"},
-    {"t": "tua", "e": "your (feminine)"},
-    {"t": "tuo", "e": "your (masculine)"},
+    {"t": "tua", "e": "your (informal singular, feminine: tua)"},
+    {"t": "tuo", "e": "your (informal singular, masculine: tuo)"},
     {"t": "via", "e": "away"}
   ]},
   { id: "duo_it_u24", type: "vocab", title: "Vocab: Unit 24 \u00b7 Birthday \u2014 Celebrate a birthday", items: [
@@ -7935,8 +7935,8 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "quando", "e": "when?"},
     {"t": "regalare", "e": "to give as a gift / give"},
     {"t": "la sciarpa", "e": "scarf"},
-    {"t": "sua", "e": "hers / your / her (feminine)"},
-    {"t": "suo", "e": "his / hers / its (masculine)"},
+    {"t": "sua", "e": "his / her / its (feminine: sua)"},
+    {"t": "suo", "e": "his / her / its (masculine: suo)"},
     {"t": "il tablet", "e": "tablet"},
     {"t": "vecchio", "e": "old"}
   ]},
@@ -7949,21 +7949,21 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "devi", "e": "you must / you have to (tu form)"},
     {"t": "devo", "e": "I must / I have to (io devo)"},
     {"t": "il documento", "e": "document"},
-    {"t": "l'email", "e": "email"},
+    {"t": "gli email", "e": "email"},
     {"t": "intelligente", "e": "intelligent"},
     {"t": "internazionale", "e": "international"},
     {"t": "inviare", "e": "to send"},
     {"t": "loro", "e": "they / them"},
     {"t": "là", "e": "her / it"},
-    {"t": "nostra", "e": "our / ours (feminine)"},
-    {"t": "nostro", "e": "our (masculine)"},
+    {"t": "nostra", "e": "our (feminine: nostra)"},
+    {"t": "nostro", "e": "our (masculine: nostro)"},
     {"t": "la persona", "e": "person"},
     {"t": "preparare", "e": "to prepare"},
     {"t": "la presentazione", "e": "presentation"},
     {"t": "il progetto", "e": "project"},
     {"t": "pronto", "e": "ready"},
-    {"t": "vostra", "e": "your (feminine)"},
-    {"t": "vostro", "e": "your (plural) (masculine)"}
+    {"t": "vostra", "e": "your (plural you, feminine: vostra)"},
+    {"t": "vostro", "e": "your (plural you, masculine: vostro)"}
   ]},
   { id: "duo_it_u26", type: "vocab", title: "Vocab: Unit 26 \u00b7 Wedding \u2014 Talk about weddings", items: [
     {"t": "abbiamo", "e": "we have (noi abbiamo)"},
@@ -7995,7 +7995,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la domenica", "e": "Sunday"},
     {"t": "la famiglia", "e": "family"},
     {"t": "la foto", "e": "photo"},
-    {"t": "l'hobby", "e": "hobby / hobbies"},
+    {"t": "i hobby", "e": "hobby / hobbies"},
     {"t": "la mamma", "e": "mom"},
     {"t": "il papà", "e": "dad"},
     {"t": "pop", "e": "pop"},
@@ -8042,14 +8042,14 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la farina", "e": "flour"},
     {"t": "ha bisogno di", "e": "needs"},
     {"t": "il latte", "e": "milk"},
-    {"t": "mie", "e": "my / mine"},
-    {"t": "miei", "e": "my / mine"},
+    {"t": "mie", "e": "my (feminine plural: mie)"},
+    {"t": "miei", "e": "my (masculine plural: miei)"},
     {"t": "non trovo", "e": "I can't find / I cannot find"},
     {"t": "pigro", "e": "lazy"},
     {"t": "il sale", "e": "salt"},
     {"t": "il supermercato", "e": "supermarket"},
-    {"t": "tue", "e": "your"},
-    {"t": "tuoi", "e": "your"},
+    {"t": "tue", "e": "your (informal singular, feminine plural: tue)"},
+    {"t": "tuoi", "e": "your (informal singular, masculine plural: tuoi)"},
     {"t": "lo zucchero", "e": "sugar"}
   ]},
   { id: "duo_it_u30", type: "vocab", title: "Vocab: Unit 30 \u00b7 Traits \u2014 Describe traits and belongings", items: [
@@ -8069,8 +8069,8 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la sedia", "e": "chair"},
     {"t": "sopra", "e": "above"},
     {"t": "sotto", "e": "under"},
-    {"t": "sue", "e": "her / hers / his"},
-    {"t": "suoi", "e": "her / his / your"},
+    {"t": "sue", "e": "his / her (feminine plural: sue)"},
+    {"t": "suoi", "e": "his / her (masculine plural: suoi)"},
     {"t": "il tavolo", "e": "table (masculine)"}
   ]},
   { id: "duo_it_u31", type: "vocab", title: "Vocab: Unit 31 \u00b7 Our Room \u2014 Describe your room", items: [
@@ -8084,19 +8084,19 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la lampada", "e": "lamp"},
     {"t": "migliore", "e": "better"},
     {"t": "il mobile", "e": "piece of furniture"},
-    {"t": "nostre", "e": "our / ours"},
-    {"t": "nostri", "e": "our / ours"},
+    {"t": "nostre", "e": "our (feminine plural: nostre)"},
+    {"t": "nostri", "e": "our (masculine plural: nostri)"},
     {"t": "il pavimento", "e": "floor"},
     {"t": "peggiore", "e": "worse"},
     {"t": "la pianta", "e": "plant"},
     {"t": "la porta", "e": "door"},
     {"t": "il tappeto", "e": "carpet"},
     {"t": "la tenda", "e": "curtain / tent"},
-    {"t": "vostre", "e": "your"},
-    {"t": "vostri", "e": "your"}
+    {"t": "vostre", "e": "your (plural you, feminine plural: vostre)"},
+    {"t": "vostri", "e": "your (plural you, masculine plural: vostri)"}
   ]},
   { id: "duo_it_u32", type: "vocab", title: "Vocab: Unit 32 \u00b7 Milan \u2014 Plan a day out", items: [
-    {"t": "Duomo", "e": "cathedral"},
+    {"t": "il duomo", "e": "cathedral"},
     {"t": "all'una", "e": "at one / at 1 o'clock / at one o'clock"},
     {"t": "alle", "e": "to the / at the"},
     {"t": "il castello", "e": "castle"},
@@ -9095,7 +9095,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "le piacciono", "e": "she likes"},
     {"t": "le piace", "e": "he likes"},
     {"t": "maltese", "e": "Maltese"},
-    {"t": "il manager", "e": "manager"},
+    {"t": "i manager", "e": "manager"},
     {"t": "la prenotazione", "e": "reservation"},
     {"t": "presentare", "e": "to introduce / to present"},
     {"t": "il pullman", "e": "coach / bus"},
@@ -9413,7 +9413,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "dico", "e": "I say (io dico)"},
     {"t": "dire", "e": "to say / to tell"},
     {"t": "il fornello", "e": "stove / burner"},
-    {"t": "il gas", "e": "gas"},
+    {"t": "i gas", "e": "gas"},
     {"t": "giovane", "e": "young"},
     {"t": "già", "e": "already"},
     {"t": "la lenzuola", "e": "sheets (feminine)"},
@@ -9669,15 +9669,15 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il gioco da tavolo", "e": "board game / tabletop game / table game"},
     {"t": "mai", "e": "never"},
     {"t": "meglio", "e": "better"},
-    {"t": "mio", "e": "my (masculine)"},
+    {"t": "mio", "e": "my (masculine: mio)"},
     {"t": "niente", "e": "nothing"},
     {"t": "l'orso", "e": "bear"},
     {"t": "poco", "e": "little (masculine)"},
     {"t": "prendere in prestito", "e": "to borrow"},
-    {"t": "suo", "e": "his / hers / its (masculine)"},
+    {"t": "suo", "e": "his / her / its (masculine: suo)"},
     {"t": "il tipo", "e": "type"},
     {"t": "toccare", "e": "to touch"},
-    {"t": "tuo", "e": "your (masculine)"}
+    {"t": "tuo", "e": "your (informal singular, masculine: tuo)"}
   ]},
   { id: "duo_it_u100", type: "vocab", title: "Vocab: Unit 100 \u00b7 Packing \u2014 Pack for a trip", items: [
     {"t": "Natale", "e": "Christmas"},
@@ -9692,14 +9692,14 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "in bocca al lupo", "e": "good luck!"},
     {"t": "intorno", "e": "around"},
     {"t": "loro", "e": "they / them"},
-    {"t": "nostro", "e": "our (masculine)"},
+    {"t": "nostro", "e": "our (masculine: nostro)"},
     {"t": "orario", "e": "schedule / timetable"},
     {"t": "il reggiseno", "e": "bra"},
     {"t": "sono le", "e": "it's"},
     {"t": "sopra", "e": "above"},
     {"t": "sotto", "e": "under"},
     {"t": "il topo", "e": "mouse"},
-    {"t": "vostro", "e": "your (plural) (masculine)"}
+    {"t": "vostro", "e": "your (plural you, masculine: vostro)"}
   ]},
   { id: "duo_it_u101", type: "vocab", title: "Vocab: Unit 101 \u00b7 Resolution \u2014 Make New Year's resolutions", items: [
     {"t": "l'alfabeto", "e": "alphabet"},
@@ -9818,7 +9818,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "impossibile", "e": "impossible"},
     {"t": "inoltre", "e": "besides"},
     {"t": "meglio", "e": "better"},
-    {"t": "la novità", "e": "news"},
+    {"t": "le novità", "e": "news"},
     {"t": "possibile", "e": "possible"},
     {"t": "la professione", "e": "profession / trade / occupation"},
     {"t": "il quarto", "e": "quarter"},
@@ -9875,10 +9875,10 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "coperto", "e": "cover charge"},
     {"t": "coraggioso", "e": "courageous"},
     {"t": "croccante", "e": "crunchy / crispy"},
-    {"t": "la", "e": "the (feminine: la) (feminine)"},
+    {"t": "la", "e": "the (feminine: la)"},
     {"t": "le", "e": "the (feminine plural: le)"},
     {"t": "li", "e": "them"},
-    {"t": "lo", "e": "the (masculine before s+consonant or z: lo) (masculine)"},
+    {"t": "lo", "e": "the (masculine before s+consonant or z: lo)"},
     {"t": "la mozzarella", "e": "mozzarella"},
     {"t": "pensare", "e": "to think"},
     {"t": "il peperone", "e": "bell pepper"},
@@ -9960,7 +9960,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "cambiare in", "e": "to exchange for / exchange"},
     {"t": "incluso", "e": "included"},
     {"t": "intorno", "e": "around"},
-    {"t": "la", "e": "the (feminine: la) (feminine)"},
+    {"t": "la", "e": "the (feminine: la)"},
     {"t": "le", "e": "the (feminine plural: le)"},
     {"t": "il numero", "e": "number"},
     {"t": "la parte", "e": "side"},
@@ -10296,7 +10296,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sano", "e": "healthy"},
     {"t": "servire", "e": "to serve"},
     {"t": "la siringa", "e": "syringe"},
-    {"t": "suo", "e": "his / hers / its (masculine)"},
+    {"t": "suo", "e": "his / her / its (masculine: suo)"},
     {"t": "la tessera sanitaria", "e": "health card"}
   ]},
   { id: "duo_it_u129", type: "vocab", title: "Vocab: Unit 129 \u00b7 Managers \u2014 Discuss employee performance", items: [
@@ -10653,7 +10653,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "settimanale", "e": "weekly"},
     {"t": "la situazione", "e": "situation"},
     {"t": "superiore", "e": "superior"},
-    {"t": "il team", "e": "team"}
+    {"t": "i team", "e": "team"}
   ]},
   { id: "duo_it_u145", type: "vocab", title: "Vocab: Unit 145 \u00b7 describing events \u2014 Events: Describe a recent event", items: [
     {"t": "a meno che", "e": "unless"},
@@ -10921,7 +10921,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "bruciare", "e": "to burn"},
     {"t": "il disordine", "e": "disorder / mess / chaos"},
     {"t": "la faccenda", "e": "matter / business / chores"},
-    {"t": "il gas", "e": "gas"},
+    {"t": "i gas", "e": "gas"},
     {"t": "l'inquilino", "e": "tenant / lodger / occupant"},
     {"t": "lasciare", "e": "to leave (an object)"},
     {"t": "la macchia", "e": "stain / spot"},
@@ -11373,7 +11373,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la mossa", "e": "move / tactic / play"},
     {"t": "la pedina", "e": "pawn / piece / checker"},
     {"t": "il punto", "e": "point (masculine)"},
-    {"t": "il quiz", "e": "quiz / quizzes"},
+    {"t": "i quiz", "e": "quiz / quizzes"},
     {"t": "salire", "e": "to go up / to get on"},
     {"t": "secondario", "e": "secondary"},
     {"t": "tifare", "e": "to cheer / to root for"},
@@ -13159,7 +13159,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
   { id: "duo_it_u259", type: "vocab", title: "Vocab: Unit 259 \u00b7 pop culture \u2014 Pop icons: Describe your favorite pop icon", items: [
     {"t": "appassionante", "e": "exciting / gripping"},
     {"t": "gli ascolti", "e": "ratings / audience"},
-    {"t": "la celebrità", "e": "celebrity / celebrities"},
+    {"t": "le celebrità", "e": "celebrity / celebrities"},
     {"t": "comporre", "e": "to compose"},
     {"t": "il copione", "e": "script / screenplay / scenario"},
     {"t": "debuttare", "e": "to debut"},
@@ -13220,7 +13220,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sé stesso", "e": "himself / herself / itself"},
     {"t": "il tappetino", "e": "mat / exercise mat"},
     {"t": "tonificare", "e": "to tone / to tone up"},
-    {"t": "uno", "e": "a / an (masculine before s+consonant or z: uno) / one (masculine)"}
+    {"t": "uno", "e": "a / an (masculine before s+consonant or z: uno) / one"}
   ]},
   { id: "duo_it_u262", type: "vocab", title: "Vocab: Unit 262 \u00b7 literature 2 \u2014 Literature: Identify irony in stories", items: [
     {"t": "ambientare", "e": "to set / to place / to situate"},
@@ -13336,7 +13336,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "l'adattatore", "e": "adapter / adaptor"},
     {"t": "antivirus", "e": "antivirus / antivirus software / antivirus program"},
     {"t": "audio", "e": "audio"},
-    {"t": "il browser", "e": "browser"},
+    {"t": "i browser", "e": "browser"},
     {"t": "corsivo", "e": "italics / cursive"},
     {"t": "disconnettersi", "e": "to disconnect / to log out"},
     {"t": "l'emoji", "e": "emoji / emoticon / smiley"},
@@ -13817,7 +13817,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "protettivo", "e": "protective / shielding / safeguarding"},
     {"t": "la radice", "e": "root"},
     {"t": "repellente", "e": "repellent"},
-    {"t": "lo scooter", "e": "scooter"},
+    {"t": "gli scooter", "e": "scooter"},
     {"t": "solare", "e": "solar / sun / sunny"}
   ]},
   { id: "duo_it_u289", type: "vocab", title: "Vocab: Unit 289 \u00b7 rural life 2 \u2014 Countryside: Describe farm life", items: [
@@ -13864,7 +13864,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il pompiere", "e": "fireman / firefighter"},
     {"t": "quantomeno", "e": "at least"},
     {"t": "stradale", "e": "road / streets"},
-    {"t": "il tunnel", "e": "tunnel"}
+    {"t": "i tunnel", "e": "tunnel"}
   ]},
   { id: "duo_it_u291", type: "vocab", title: "Vocab: Unit 291 \u00b7 art \u2014 Artworks: Describe light in artworks", items: [
     {"t": "il bronzo", "e": "bronze"},
@@ -14109,7 +14109,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo schema", "e": "diagram / outline / scheme"},
     {"t": "scoraggiare", "e": "to discourage"},
     {"t": "sinonimo", "e": "synonym"},
-    {"t": "il test", "e": "test / trial"}
+    {"t": "i test", "e": "test / trial"}
   ]},
   { id: "duo_it_u302", type: "vocab", title: "Vocab: Unit 302 \u00b7 music 2 \u2014 Music: React to live music", items: [
     {"t": "abbondantemente", "e": "generously"},
@@ -19294,7 +19294,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "perfecto", "e": "perfect"},
     {"t": "por favor", "e": "please"},
     {"t": "quieres", "e": "you want (tú quieres)"},
-    {"t": "quiero", "e": "I want (yo quiero) (masculine)"},
+    {"t": "quiero", "e": "I want (yo quiero)"},
     {"t": "el sándwich", "e": "sandwich"},
     {"t": "el taco", "e": "taco"},
     {"t": "el té", "e": "tea (té) / you (object: te)"},
@@ -19748,7 +19748,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "morado", "e": "purple"},
     {"t": "necesitar", "e": "to need"},
     {"t": "el negro", "e": "black"},
-    {"t": "quiero", "e": "I want (yo quiero) (masculine)"},
+    {"t": "quiero", "e": "I want (yo quiero)"},
     {"t": "rojo", "e": "red"},
     {"t": "el sombrero", "e": "hat"},
     {"t": "el traje", "e": "suit"}
@@ -20249,7 +20249,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el enfermero", "e": "nurse"},
     {"t": "enfermo", "e": "sick"},
     {"t": "espalda", "e": "back"},
-    {"t": "esta", "e": "this (feminine: esta) / is (está) (feminine)"},
+    {"t": "esta", "e": "this (feminine: esta) / is (está)"},
     {"t": "el estómago", "e": "stomach"},
     {"t": "la garganta", "e": "throat"},
     {"t": "el hombro", "e": "shoulder"},
@@ -20730,7 +20730,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "esas", "e": "those"},
     {"t": "la ese", "e": "the / that"},
     {"t": "esos", "e": "those"},
-    {"t": "esta", "e": "this (feminine: esta) / is (está) (feminine)"},
+    {"t": "esta", "e": "this (feminine: esta) / is (está)"},
     {"t": "estas", "e": "these"},
     {"t": "este", "e": "this"},
     {"t": "estos", "e": "these / this / these ones"},

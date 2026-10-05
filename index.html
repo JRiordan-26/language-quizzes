@@ -1,0 +1,3227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0f1420">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Quizzes">
+<title>Language Quizzes</title>
+<style>
+  :root{
+    --bg:#0f1220; --card:#1a1f35; --card2:#232a4a; --text:#e8eaf6; --muted:#9aa3c7;
+    --accent:#6c8cff; --good:#3ddc84; --bad:#ff5c7a; --warn:#ffb74d; --border:#2e3660;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:'Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--text); min-height:100vh;}
+  .wrap{max-width:880px; margin:0 auto; padding:24px 16px 60px;}
+  h1{font-size:1.6rem; margin-bottom:4px;}
+  h2{font-size:1.2rem; margin:18px 0 10px;}
+  .sub{color:var(--muted); font-size:.92rem; margin-bottom:20px;}
+  .card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:18px; margin-bottom:14px;}
+  .row{display:flex; gap:12px; flex-wrap:wrap;}
+  button{font-family:inherit; cursor:pointer; border:none; border-radius:10px; padding:10px 16px; font-size:1rem; background:var(--card2); color:var(--text); transition:.15s;}
+  button:hover{filter:brightness(1.2);}
+  button.primary{background:var(--accent); color:#fff; font-weight:600;}
+  button.small{padding:5px 10px; font-size:.85rem;}
+  button:disabled{opacity:.4; cursor:not-allowed;}
+  .langBtn{flex:1; min-width:180px; font-size:1.25rem; padding:26px 16px; display:flex; flex-direction:column; align-items:center; gap:8px; border:2px solid var(--border);}
+  .langBtn .flag{font-size:2.6rem;}
+  .langBtn.active{border-color:var(--accent); background:var(--card2);}
+  .pill{display:inline-block; background:var(--card2); border-radius:999px; padding:3px 10px; font-size:.78rem; color:var(--muted); margin-left:6px;}
+  .unit{display:flex; align-items:center; gap:10px; padding:8px 10px; border-radius:8px; margin:2px 0;}
+  .unit:hover{background:var(--card2);}
+  .unit label{flex:1; cursor:pointer; font-size:.95rem;}
+  .unit input{width:18px; height:18px; accent-color:var(--accent); cursor:pointer;}
+  .unit .cnt{color:var(--muted); font-size:.82rem; white-space:nowrap;}
+  .courseHead{display:flex; align-items:center; justify-content:space-between; margin:14px 0 6px; padding-bottom:4px; border-bottom:1px solid var(--border);}
+  .courseHead h3{font-size:1.02rem; color:var(--accent);}
+  .opts{display:flex; gap:8px; flex-wrap:wrap; margin:8px 0;}
+  .opt{background:var(--card2); border:2px solid transparent; border-radius:10px; padding:8px 14px; cursor:pointer; font-size:.92rem;}
+  .opt.sel{border-color:var(--accent);}
+  .startBar{position:sticky; bottom:12px; display:flex; gap:10px; align-items:center; background:var(--card2); border:1px solid var(--border); border-radius:14px; padding:12px 16px; margin-top:16px; box-shadow:0 6px 24px rgba(0,0,0,.4);}
+  .startBar .info{flex:1; font-size:.92rem; color:var(--muted);}
+  /* quiz */
+  .qTop{display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; color:var(--muted); font-size:.9rem;}
+  .qWord{font-size:2rem; font-weight:700; text-align:center; margin:18px 0 6px; min-height:2.4rem;}
+  .qHint{text-align:center; color:var(--muted); margin-bottom:14px; font-size:.95rem;}
+  .speakBtn{display:block; margin:0 auto 18px; font-size:1.5rem; background:var(--card2); border-radius:50%; width:58px; height:58px;}
+  .choices{display:grid; grid-template-columns:1fr; gap:10px; max-width:560px; margin:0 auto;}
+  @media(min-width:640px){.choices.two{grid-template-columns:1fr 1fr;}}
+  .choice{padding:14px 16px; text-align:left; font-size:1.02rem; border:2px solid var(--border); background:var(--card);}
+  .choice.correct{border-color:var(--good); background:rgba(61,220,132,.12);}
+  .choice.wrong{border-color:var(--bad); background:rgba(255,92,122,.12);}
+  .feedback{max-width:560px; margin:14px auto 0; text-align:center;}
+  .feedback .expl{color:var(--muted); font-size:.92rem; margin-top:6px;}
+  .barOuter{height:6px; background:var(--card2); border-radius:3px; overflow:hidden; margin-bottom:16px;}
+  .barInner{height:100%; background:var(--accent); width:0%; transition:width .3s;}
+  .resultBig{font-size:2.4rem; font-weight:700; text-align:center; margin:10px 0;}
+  .missItem{display:flex; align-items:center; gap:10px; padding:8px 10px; border-radius:8px; background:var(--card2); margin:5px 0; font-size:.95rem;}
+  .missItem .w{font-weight:600;}
+  .learnedTag{color:var(--good); font-size:.8rem;}
+  .backlink{color:var(--accent); cursor:pointer; font-size:.9rem; margin-bottom:14px; display:inline-block;}
+  .tabs{display:flex; gap:8px; margin-bottom:14px;}
+  .voiceNote{font-size:.8rem; color:var(--muted); margin-top:8px;}
+  .topnav{display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;}
+  @media (max-width:640px){
+    .wrap{padding:12px 10px;}
+    h1{font-size:1.45rem;} h2{font-size:1.1rem;}
+    .qWord{font-size:1.5rem;}
+    .langBtn{min-width:44%; flex:1;}
+    .langBtn .flag{font-size:2rem;}
+    input[type=text]{font-size:16px !important;}  /* <16px makes iOS zoom the page */
+  }
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+
+<script src="data_german.js"></script>
+<script src="data_italian.js"></script>
+<script src="data_dutch.js"></script>
+<script src="data_irish.js"></script>
+<script src="data_spanish.js"></script>
+<script src="wanakana.min.js"></script>
+<script src="data_japanese.js"></script>
+<script src="data_extra.js"></script>
+<script src="data_conjugation.js"></script>
+<script src="data_duolingo.js"></script>
+<script src="data_idioms.js"></script>
+<script src="data_paradigms.js"></script>
+<script src="data_plurals.js"></script>
+<script src="data_ip_german.js"></script>
+<script src="data_ip_italian.js"></script>
+<script src="data_ip_dutch.js"></script>
+<script src="data_ip_spanish.js"></script>
+<script>
+"use strict";
+const $ = (h)=>{const d=document.createElement('div'); d.innerHTML=h; return d.firstElementChild;};
+const app = document.getElementById('app');
+const DATA = window.QUIZ_DATA;
+const LANGS = ['german','italian','dutch','irish','spanish','japanese'];
+
+// Merge transcript-mined additions (data_extra.js) into the base units, skipping duplicates.
+(function mergeExtras(){
+  const X = window.QUIZ_EXTRA || {};
+  const norm = s => s.toLowerCase().replace(/\s+/g,' ').trim();
+  for(const l of LANGS){
+    const ex = X[l]; if(!ex || !DATA[l]) continue;
+    const units = {};
+    DATA[l].courses.forEach(c=>c.units.forEach(u=>units[u.id]=u));
+    for(const [uid, items] of Object.entries(ex)){
+      const u = units[uid]; if(!u || u.type!=='vocab' || !Array.isArray(items)) continue;
+      const seen = new Set(u.items.map(i=>norm(i.t)));
+      for(const it of items){
+        if(!it || !it.t || !it.e) continue;
+        const k = norm(it.t);
+        if(seen.has(k)) continue;
+        seen.add(k);
+        u.items.push({t: it.t, e: it.e});
+      }
+    }
+  }
+})();
+
+// Attach conjugation-drill units (data_conjugation.js) to their courses.
+(function mergeConj(){
+  const C = window.QUIZ_CONJ || {};
+  for(const l of LANGS){
+    if(!C[l] || !DATA[l]) continue;
+    for(const entry of C[l]){
+      const course = DATA[l].courses.find(c=>c.id===entry.course);
+      if(course && !course.units.some(u=>u.id===entry.unit.id)) course.units.push(entry.unit);
+    }
+  }
+})();
+
+// Attach Duolingo vocabulary courses (data_duolingo.js, generated from AnkiWeb shared decks).
+(function mergeDuo(){
+  for(const entry of (window.QUIZ_DUO_LIST||[])){
+    const d = DATA[entry.lang];
+    if(d && !d.courses.some(c=>c.id===entry.course.id)) d.courses.push(entry.course);
+  }
+})();
+
+// Attach idiom units (data_idioms.js) to their courses.
+(function mergeAddons(){
+  for(const entry of (window.QUIZ_ADDON_UNITS||[])){
+    const d = DATA[entry.lang]; if(!d) continue;
+    const course = d.courses.find(c=>c.id===entry.course);
+    if(course && !course.units.some(u=>u.id===entry.unit.id)) course.units.push(entry.unit);
+  }
+})();
+
+const PERSONS = {
+  german: ['ich','du','er/sie/es','wir','ihr','sie/Sie'],
+  italian: ['io','tu','lui/lei','noi','voi','loro'],
+  dutch: ['ik','jij','hij/zij','wij','jullie','zij'],
+  irish: ['mé','tú','sé/sí','muid','sibh','siad'],
+  spanish: ['yo','tú','él/ella/usted','nosotros','ustedes','ellos/ellas']
+};
+// Conjugation drills show ENGLISH person labels and require the pronoun to be
+// typed with the verb form ("ich mache", "io parlo"). PRON lists the accepted
+// pronoun(s) per row; Irish rows are empty because Irish forms already embed
+// the pronoun where the language uses one (ólaim / ólann tú).
+const PERSONS_EN = {
+  german: ['I','you (sg.)','he/she/it','we','you (pl.)','they / you (formal)'],
+  italian: ['I','you (sg.)','he/she','we','you (pl.)','they'],
+  dutch: ['I','you (sg.)','he/she','we','you (pl.)','they'],
+  irish: ['I','you (sg.)','he/she','we','you (pl.)','they'],
+  spanish: ['I','you (sg.)','he/she / you (formal)','we','you (pl.: ustedes)','they']
+};
+const PRON = {
+  german: [['ich'],['du'],['er','sie','es'],['wir'],['ihr'],['sie','Sie']],
+  italian: [['io'],['tu'],['lui','lei'],['noi'],['voi'],['loro']],
+  dutch: [['ik'],['jij','je'],['hij','zij','ze'],['wij','we'],['jullie'],['zij','ze']],
+  irish: [[],[],[],[],[],[]],
+  spanish: [['yo'],['tú'],['él','ella','usted'],['nosotros','nosotras'],['ustedes'],['ellos','ellas']]
+};
+// plain=true (paradigm tables with custom rows): the form itself is the answer,
+// no pronoun prefix required.
+function conjCanon(lang,i,f,plain){ const p=plain?null:PRON[lang][i]; return (p&&p.length? p.join('/')+' ' : '')+f; }
+function conjSpeakText(lang,item){
+  const plain=!!item.rows;
+  return item.forms.map((f,i)=>{ const p=plain?null:PRON[lang][i]; return (p&&p.length? p[0]+' ':'')+f.split('/')[0]; }).join(', ');
+}
+function conjRowOk(lang,i,typed,f,plain){
+  const variants=f.split('/').map(v=>v.trim());
+  const prons=plain?[]:(PRON[lang][i]||[]);
+  if(!prons.length) return variants.some(v=>answerMatches(typed,v));
+  return prons.some(p=>variants.some(v=>answerMatches(typed, p+' '+v)));
+}
+
+// ---------- state ----------
+let state = {
+  lang: null,
+  screen: 'home',        // home | setup | quiz | result | learned
+  quizType: 'vocab',     // vocab | grammar
+  vocabMode: 'toEN',     // toEN | fromEN | listen
+  qCount: 15,            // 10 | 15 | 25 | 9999 (all)
+  selectedUnits: new Set(),
+  quiz: null,
+};
+
+// ---------- learned words (persisted) ----------
+function learnedKey(lang){ return 'lq_learned_'+lang; }
+function getLearned(lang){
+  try{ return new Set(JSON.parse(localStorage.getItem(learnedKey(lang))||'[]')); }catch(e){ return new Set(); }
+}
+function saveLearned(lang,set){ localStorage.setItem(learnedKey(lang), JSON.stringify([...set])); }
+function vocabId(item){ return item.t; }
+
+// remember unit selections per language
+function selKey(lang){ return 'lq_sel_'+lang; }
+function loadSel(lang){
+  try{ return new Set(JSON.parse(localStorage.getItem(selKey(lang))||'[]')); }catch(e){ return new Set(); }
+}
+function saveSel(){ if(state.lang) localStorage.setItem(selKey(state.lang), JSON.stringify([...state.selectedUnits])); }
+
+// ---------- speech ----------
+let voices = [];
+function refreshVoices(){ voices = window.speechSynthesis ? speechSynthesis.getVoices() : []; }
+if (window.speechSynthesis){ refreshVoices(); speechSynthesis.onvoiceschanged = refreshVoices; }
+function bestVoice(langCode){
+  const lc = langCode.toLowerCase();
+  const cand = voices.filter(v=>v.lang && v.lang.toLowerCase().startsWith(lc.slice(0,2)));
+  if(!cand.length) return null;
+  // prefer exact region, then Google/Microsoft "online/natural" voices
+  cand.sort((a,b)=>{
+    const ax=a.lang.toLowerCase()===lc?0:1, bx=b.lang.toLowerCase()===lc?0:1;
+    if(ax!==bx) return ax-bx;
+    const an=/natural|online|google/i.test(a.name)?0:1, bn=/natural|online|google/i.test(b.name)?0:1;
+    return an-bn;
+  });
+  return cand[0];
+}
+function speak(text, langCode){
+  if(!window.speechSynthesis) return;
+  if(!bestVoice(langCode)) return; // no voice for this language (e.g. Irish) — stay silent rather than mispronounce
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = langCode;
+  const v = bestVoice(langCode);
+  if(v) u.voice = v;
+  u.rate = 0.88;
+  speechSynthesis.speak(u);
+}
+function hasVoice(langCode){ return !!bestVoice(langCode); }
+
+// ---------- helpers ----------
+function shuffle(arr){ const a=[...arr]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a; }
+// Accent-tolerant answer matching: "uber"≈"über", "perche"≈"perché"; articles optional.
+// Japanese: kana/kanji would fold to '' under the Latin fold, so they get
+// their own. wanakana converts typed romaji (and katakana) to hiragana, so
+// "mizu", ミズ and みず all fold identically.
+const JP_RX = /[぀-ヿ一-鿿]/;
+function jpFold(s){
+  s = (s||'').trim().toLowerCase();
+  if(window.wanakana){ try{ s = wanakana.toHiragana(s); }catch(e){} }
+  return s.replace(/[^぀-ヿ一-鿿a-z0-9ー]/g,'');
+}
+// Kanji readings live in the duo data (romaji field "r"), looked up by surface
+// form — climb/miss storage keeps its plain {t,e} shape (whose "r" is the
+// review flag, not romaji).
+let __jpR = null;
+function jpReading(t){
+  if(!__jpR){
+    __jpR = {};
+    try{ duoFlat('japanese').forEach(it=>{ const v=it.k||it.r; if(v && !__jpR[it.t]) __jpR[it.t]=v; }); }catch(e){}
+  }
+  const v = __jpR[t];
+  if(!v) return '';
+  if(JP_RX.test(v)) return v;                    // "k": kana reading, as-is
+  return window.wanakana ? wanakana.toHiragana(v.toLowerCase()) : '';  // "r": romaji
+}
+// typed romaji/kana vs a Japanese answer: the word itself, or its kana reading
+function jpMatch(typed, answer){
+  const t = jpFold(typed);
+  if(!t) return false;
+  if(t === jpFold(answer)) return true;
+  const k = jpReading(answer);
+  return !!k && t === jpFold(k);
+}
+// kanji words render with furigana wherever the word is revealed
+function jpDisp(t){
+  if(!JP_RX.test(t)) return t;
+  const k = jpReading(t);
+  return (k && /[一-鿿]/.test(t)) ? `<ruby>${t}<rt style="font-size:.55em">${k}</rt></ruby>` : t;
+}
+function foldTxt(s){
+  if(JP_RX.test(s)) return jpFold(s);
+  return s.toLowerCase()
+    .replace(/\(.*?\)/g,'')
+    .replace(/ß/g,'ss')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/[’'`]/g,' ')
+    .replace(/[^a-z0-9\s]/g,' ')
+    .replace(/\s+/g,' ').trim();
+}
+function stripArticle(s){
+  return s.replace(/^(der|die|das|ein|eine|einen|de|het|een|il|lo|la|le|li|gli|i|un|uno|una|l|an|na|el|los|las|unos|unas)\s+/,'');
+}
+function answerMatches(typed, answer){
+  if(JP_RX.test(answer)) return jpMatch(typed, answer);
+  const t=foldTxt(typed);
+  if(!t) return false;
+  // accept plain-folded answer AND German-convention umlaut expansion (ü→ue etc.)
+  const umlaut = answer.toLowerCase().replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue');
+  for(const a of [foldTxt(answer), foldTxt(umlaut)]){
+    if(t===a) return true;
+    if(stripArticle(t)===stripArticle(a)) return true;
+    if(t.replace(/\s+/g,'')===a.replace(/\s+/g,'')) return true;
+    if(stripArticle(t).replace(/\s+/g,'')===stripArticle(a).replace(/\s+/g,'')) return true;
+  }
+  return false;
+}
+// Gender enforcement: when the stored answer begins with an article, the typed
+// answer must include it (accents still optional) — "Tür" is NOT accepted for
+// "die Tür", and neither is "der Tür".
+function startsWithArticle(s){
+  return /^(der|die|das|ein|eine|de|het|een|il|lo|la|le|gli|i|un|uno|una|an|na|el|los|las|unos|unas)\s/i.test(s) || /^l['’]/i.test(s);
+}
+function strictMatches(typed, answer){
+  if(JP_RX.test(answer)) return jpMatch(typed, answer);
+  const t = foldTxt(typed);
+  if(!t) return false;
+  const umlaut = answer.toLowerCase().replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue');
+  for(const a of [foldTxt(answer), foldTxt(umlaut)]){
+    if(t===a) return true;
+    if(t.replace(/\s+/g,'')===a.replace(/\s+/g,'')) return true;
+  }
+  return false;
+}
+const SUBJ_PRON = new Set(['ich','du','er','sie','es','wir','ihr','io','tu','lui','lei','noi','voi','loro',
+  'ik','jij','je','hij','u','wij','we','jullie','zij','ze','mé','me','tú','sé','sí','muid','sibh','siad',
+  'yo','el','ella','usted','ustedes','nosotros','nosotras','ellos','ellas']);
+function vocabAnswerOk(typed, answer){
+  if(startsWithArticle(answer)) return strictMatches(typed, answer);
+  if(answerMatches(typed, answer)) return true;
+  // allow an optional subject pronoun before a bare verb form: "tu studi" for "studi"
+  const m = typed.trim().match(/^(\S+)\s+(.+)$/);
+  if(m && SUBJ_PRON.has(foldTxt(m[1])) && answerMatches(m[2], answer)) return true;
+  return false;
+}
+const ACCENTS = { german:['ä','ö','ü','ß'], italian:['à','è','é','ì','ò','ù'], dutch:['é','ë','ï','ö','ü'], irish:['á','é','í','ó','ú'], spanish:['á','é','í','ó','ú','ñ','ü'] };
+// Japanese answer boxes: type romaji, see hiragana (wanakana IME mode keeps a
+// trailing "n" undecided until the next key; the checker converts leftovers).
+function jpBind(inp, lang){
+  if(lang!=='japanese' || !window.wanakana) return;
+  try{ wanakana.bind(inp, {IMEMode:'toHiragana'}); }catch(e){}
+  inp.placeholder='Type romaji — becomes かな…';
+}
+// Person-hint glosses embed the target form ("are (wir/sie/Sie sind)") — vital
+// when the answer is revealed, but a giveaway as a prompt. As a prompt, drop the
+// answer word and describe the person in English instead:
+// "you are (du bist)" -> "you are (informal singular)",
+// "are (wir/sie/Sie sind)" -> "are (we / they / formal)".
+const PRON_EN = {
+  german: {ich:'I', du:'informal singular', er:'he', es:'it', wir:'we', ihr:'informal plural', Sie:'formal'},
+  italian:{io:'I', tu:'informal singular', lui:'he', lei:'she', noi:'we', voi:'plural', loro:'they'},
+  dutch:  {ik:'I', jij:'informal singular', je:'informal singular', hij:'he', wij:'we', we:'we', jullie:'plural', u:'formal'},
+  spanish:{yo:'I', 'tú':'informal singular', 'él':'he', ella:'she', usted:'formal singular',
+           nosotros:'we', nosotras:'we', ustedes:'plural (ustedes)', ellos:'they', ellas:'they'},
+  irish:  {}
+};
+function maskPrompt(e, answer, lang){
+  if(!e || !e.includes('(') || !answer) return e;
+  const ans = stripArticle(foldTxt(answer));
+  if(!ans) return e;
+  return e.replace(/\s*\(([^)]*)\)/g, (m, inner)=>{
+    const words = inner.split(/[\s\/]+/).filter(Boolean);
+    if(!words.some(w=>stripArticle(foldTxt(w))===ans)) return m;  // no leak in this hint
+    const kept = words.filter(w=>stripArticle(foldTxt(w))!==ans);
+    const pm = PRON_EN[lang]||{};
+    let translated=false;
+    const mapped = kept.map(w=>{
+      const key = w.replace(/[:,]$/,'');
+      if(key==='sie'||key==='zij'||key==='ze'){ translated=true;   // she vs they by context
+        return kept.some(x=>/^(er|es|hij)$/.test(x)) ? 'she' : 'they'; }
+      if(pm[key]!==undefined){ translated=true; return pm[key]; }
+      return key;
+    });
+    const uniq = mapped.filter((x,i)=>mapped.indexOf(x)===i && x);
+    if(!uniq.length) return '';
+    // "I was (yo fui)" -> "(I)" adds nothing when the English already says I
+    if(uniq.length===1 && new RegExp('\\b'+uniq[0]+'\\b').test(e.slice(0, e.indexOf('(')))) return '';
+    // pronoun lists join with " / "; plain hint text keeps its spaces
+    return ' ('+uniq.join(translated?' / ':' ')+')';
+  });
+}
+// When the answer requires its article (stored "la rosa"), say so in the
+// prompt: "the rose" — otherwise "rose" is ambiguous (noun vs adjective rosa).
+function nounPrompt(e, t){
+  // the answer IS an article ("l'", "il", "las") — nothing to mark
+  if(/^(l['’]|der|die|das|ein|eine|il|lo|la|le|gli|i|el|los|las|un|uno|una|de|het|een|an|na)$/i.test(t.trim())) return e;
+  if(!startsWithArticle(t)) return e;
+  if(/^(the|a|an)\s/i.test(e)) return e;                       // authored glosses may already say "the"
+  if(/^(each|one|to|i|you|he|she|we|they|it|that|this|these|those|there|what|who|how)\b/i.test(e)) return e;  // phrase/pronoun/sentence glosses
+  if(/^(der|die|das|ein|eine)\s+[a-zäöüß]/.test(t.trim())) return e; // German nouns are capitalized — lowercase word after article = not a noun ("das ist")
+  const indef = /^(ein|eine|un|uno|una|een)\s/i.test(t) || /^un['’]/i.test(t);
+  return (indef ? 'a ' : 'the ') + e;
+}
+function pluralNote(lang, t){
+  const p = (window.QUIZ_PLURALS && window.QUIZ_PLURALS[lang] || {})[t];
+  return p ? ` · plural: ${p}` : '';
+}
+
+// When a grammar answer is a list of target-language words ("durch, für,
+// gegen, ohne, um"), show what each word means. Curated function words first,
+// then any match in the language's own vocabulary data.
+const FUNC_GLOSS = {
+  german: { seit:"since", von:"from / of", zu:"to", aus:"out of / from", bei:"at / near", mit:"with",
+    nach:"after / to", durch:"through", "für":"for", gegen:"against", ohne:"without", um:"around / at",
+    zum:"to the", zur:"to the", im:"in the", am:"at the / on the", ins:"into the",
+    beim:"at the", vom:"from the", ans:"to the", aufs:"onto the",
+    in:"in", an:"at / on", auf:"on / onto", "über":"above / about", unter:"under / among",
+    vor:"in front of / before", hinter:"behind", neben:"next to", zwischen:"between", entlang:"along",
+    bis:"until", ab:"from (time)", "gegenüber":"opposite", trotz:"despite", wegen:"because of",
+    "während":"during", statt:"instead of", innerhalb:"inside of", "außerhalb":"outside of",
+    und:"and", oder:"or", aber:"but", denn:"because / for", sondern:"but rather", weil:"because",
+    dass:"that", wenn:"if / when", als:"when / than", ob:"whether", obwohl:"although",
+    damit:"so that", bevor:"before", nachdem:"after", "während dessen":"meanwhile",
+    deshalb:"therefore", trotzdem:"nevertheless", dann:"then", danach:"after that", zuerst:"first",
+    bin:"am", bist:"you are", ist:"is", sind:"are", seid:"you (pl.) are",
+    war:"was", warst:"you were", waren:"were", wart:"you (pl.) were",
+    habe:"have", hast:"you have", hat:"has", habt:"you (pl.) have",
+    hatte:"had", hattest:"you had", hatten:"had (wir/sie)", hattet:"you (pl.) had",
+    werde:"will / become", wirst:"you will", wird:"will / becomes", werdet:"you (pl.) will",
+    wurde:"became / was (passive)", wurden:"became / were", geworden:"become (participle)",
+    gewesen:"been", gehabt:"had (participle)",
+    "hätte":"would have", "hätten":"would have (wir/sie)", "wäre":"would be", "wären":"would be (wir/sie)",
+    "würde":"would", "würden":"would (wir/sie)" },
+  italian: { al:"to the", allo:"to the", alla:"to the", ai:"to the", agli:"to the", alle:"to the",
+    del:"of the / some", dello:"of the / some", della:"of the / some", dei:"of the / some",
+    degli:"of the / some", delle:"of the / some",
+    dal:"from the / by the", dallo:"from the / by the", dalla:"from the / by the",
+    dai:"from the / by the", dagli:"from the / by the", dalle:"from the / by the",
+    nel:"in the", nello:"in the", nella:"in the", nei:"in the", negli:"in the", nelle:"in the",
+    sul:"on the", sullo:"on the", sulla:"on the", sui:"on the", sugli:"on the", sulle:"on the",
+    "dall'":"from the", "dell'":"of the", "nell'":"in the", "sull'":"on the", "all'":"to the",
+    di:"of / from", a:"to / at", da:"from / by", in:"in", con:"with", su:"on / about",
+    per:"for", tra:"between / among", fra:"between / among", e:"and", o:"or", ma:"but",
+    "perché":"because / why", se:"if", quando:"when", mentre:"while", "però":"however",
+    quindi:"therefore", anche:"also", senza:"without", sotto:"under", sopra:"above",
+    dentro:"inside", fuori:"outside", davanti:"in front", dietro:"behind", vicino:"near",
+    lontano:"far", prima:"before / first", dopo:"after", durante:"during", verso:"towards",
+    sono:"I am / they are", sei:"you are", "è":"is", siamo:"we are", siete:"you (pl.) are",
+    ero:"I was", eri:"you were", era:"was", eravamo:"we were", erano:"they were",
+    ho:"I have", hai:"you have", ha:"has", abbiamo:"we have", avete:"you (pl.) have", hanno:"they have",
+    avevo:"I had", aveva:"had", avevano:"they had", stato:"been",
+    "sarà":"will be", sarebbe:"would be", avrebbe:"would have", "c'è":"there is", "ci sono":"there are" },
+  dutch: { van:"from / of", naar:"to", met:"with", zonder:"without", voor:"for / in front of",
+    achter:"behind", op:"on", onder:"under", boven:"above", naast:"next to", tussen:"between",
+    in:"in", uit:"out of", bij:"at / near", door:"through / by", over:"over / about",
+    tegen:"against", na:"after", sinds:"since", tot:"until", langs:"along", rond:"around",
+    en:"and", of:"or", maar:"but", want:"because / for", dus:"so", omdat:"because",
+    als:"if / when", terwijl:"while", hoewel:"although", dat:"that", toen:"when (past)",
+    ben:"am", bent:"you are", is:"is", was:"was", waren:"were",
+    heb:"I have", hebt:"you have", heeft:"has", hebben:"have", had:"had", hadden:"had (wij/zij)",
+    zal:"will", zult:"you will", zullen:"will (wij/zij)", zou:"would", zouden:"would (wij/zij)",
+    geweest:"been", gehad:"had (participle)", geworden:"become (participle)" },
+  irish: { ag:"at", ar:"on", as:"out of / from", chuig:"to / towards", de:"from / off",
+    do:"to / for", faoi:"under / about", i:"in", le:"with", "ó":"from", roimh:"before",
+    thar:"over / past", "trí":"through", um:"about / at", gan:"without", idir:"between",
+    agus:"and", "nó":"or", ach:"but", mar:"because / as", "má":"if", nuair:"when", go:"that / to" },
+  spanish: { al:"to the", del:"of the / from the",
+    de:"of / from", a:"to / at", en:"in / on", con:"with", sin:"without",
+    por:"for / by / through", para:"for / in order to", sobre:"on / about",
+    entre:"between / among", desde:"from / since", hasta:"until / up to",
+    hacia:"towards", durante:"during", "según":"according to", contra:"against",
+    tras:"after / behind", bajo:"under", ante:"before / faced with",
+    y:"and", o:"or", pero:"but", porque:"because", si:"if", cuando:"when",
+    mientras:"while", aunque:"although", como:"like / as", que:"that / which",
+    pues:"well / since", entonces:"then", luego:"then / later", "después":"afterwards",
+    antes:"before", siempre:"always", nunca:"never", "también":"also", tampoco:"neither",
+    fue:"was / went", era:"was", sido:"been", "será":"will be", "sería":"would be",
+    hay:"there is / there are", "había":"there was / there were",
+    he:"I have (perfect)", has:"you have (perfect)", ha:"has (perfect)", hemos:"we have (perfect)", han:"they have (perfect)",
+    sea:"be (subjunctive of ser)", "esté":"be (subjunctive of estar)" }
+};
+let _glossLk = {};
+function glossLookup(lang){
+  if(_glossLk[lang]) return _glossLk[lang];
+  const fold = {}, exact = {};
+  ((DATA[lang]||{}).courses||[]).forEach(c=>(c.units||[]).forEach(u=>{
+    if(u.type!=='vocab'||!u.items) return;
+    u.items.forEach(it=>{
+      if(!it.t||!it.e) return;
+      const k = stripArticle(foldTxt(it.t));
+      if(k && !(k in fold)) fold[k] = it.e;
+    });
+  }));
+  // exact spellings win — hatte/hätte and wurde/würde fold to the same key
+  for(const [w,g] of Object.entries(FUNC_GLOSS[lang]||{})){
+    exact[w.toLowerCase()] = g;
+    const fk = foldTxt(w);
+    if(!(fk in exact)) fold[fk] = g;
+  }
+  _glossLk[lang] = {fold, exact};
+  return _glossLk[lang];
+}
+// For fill-in-the-blank grammar questions, rebuild the whole sentence with the
+// answer slotted in ("Torno ___ ufficio" + "dall'" → "Torno dall'ufficio …").
+function fullSentence(qtext, ans){
+  const m = (qtext||'').match(/_{2,}/);
+  if(!m || !ans) return '';
+  let pre = qtext.slice(0, m.index), post = qtext.slice(m.index + m[0].length);
+  if(/['’]$/.test(ans) && post.startsWith(' ')) post = post.slice(1); // dall' + ufficio
+  return `${pre}<b>${ans}</b>${post}`;
+}
+function wordGlossNote(lang, answerText){
+  const toks = (answerText||'').split(/[,;·]| \/ /).map(s=>s.trim()).filter(Boolean);
+  if(!toks.length || toks.some(t=>t.split(/\s+/).length>3)) return '';
+  const single = toks.length===1;
+  const lk = glossLookup(lang), out=[];
+  for(const t of toks){
+    const raw = lk.exact[t.toLowerCase()] || lk.fold[stripArticle(foldTxt(t))];
+    if(!raw) continue;
+    // lists get the short first sense; a lone answer keeps its full gloss
+    // ("hatte = had (ich/er hatte)")
+    const g = single ? raw : raw.replace(/\(.*?\)/g,'').split('/')[0].trim();
+    if(g && foldTxt(g)!==foldTxt(t)) out.push(`${t} = ${g}`);
+  }
+  if(out.length < (single ? 1 : Math.max(2, Math.ceil(toks.length*0.6)))) return '';
+  return out.join(' · ');
+}
+function langData(){ return DATA[state.lang]; }
+function allUnits(){
+  return langData().courses.flatMap(c=>c.units.map(u=>({...u, courseTitle:c.title})))
+    .concat(customUnitsFor(state.lang).map(u=>({...u, courseTitle:'My Words'})));
+}
+function unitById(id){ return allUnits().find(u=>u.id===id); }
+function availableVocab(unit, learned){ return unit.items.filter(it=>!learned.has(vocabId(it))); }
+
+// ---------- custom words (My Words) ----------
+// Stored shape: { cats:[{id,name}], words:[{id, en, tr:{german,italian,dutch}, cats:[catId]}] }
+// Categories are shared across languages; a word may sit in several categories at once.
+function getCustom(){
+  try{ const c=JSON.parse(localStorage.getItem('lq_custom')||'null')||{}; return {cats:c.cats||[], words:c.words||[]}; }
+  catch(e){ return {cats:[], words:[]}; }
+}
+function saveCustom(c){ localStorage.setItem('lq_custom', JSON.stringify(c)); }
+function customUnitsFor(lang){
+  const c = getCustom();
+  const units = [];
+  const mk = (id,name,ws)=>({ id, type:'vocab', custom:true, title:'My Words: '+name,
+    items: ws.map(w=>({t:w.tr[lang], e:w.en})) });
+  for(const cat of c.cats){
+    const ws = c.words.filter(w=>w.tr && w.tr[lang] && (w.cats||[]).includes(cat.id));
+    if(ws.length) units.push(mk('cust_'+cat.id, cat.name, ws));
+  }
+  const uncat = c.words.filter(w=>w.tr && w.tr[lang] && !(w.cats||[]).length);
+  if(uncat.length) units.push(mk('cust_uncat','Uncategorized', uncat));
+  return units;
+}
+// Duplicate lookup: does this English word / this translation already exist for a language?
+function normEnVariants(e){
+  return e.split('/').map(v=>foldTxt(v).replace(/^(the|a|an|to)\s+/,'')).filter(Boolean);
+}
+function findDup(lang, en, tr){
+  const enN = normEnVariants(en||'');
+  const trN = tr ? stripArticle(foldTxt(tr)) : null;
+  const scan = (items, where)=>{
+    for(const it of items){
+      if(trN && stripArticle(foldTxt(it.t))===trN) return {kind:'translation', t:it.t, e:it.e, where};
+      if(enN.length && normEnVariants(it.e).some(v=>enN.includes(v))) return {kind:'english', t:it.t, e:it.e, where};
+    }
+    return null;
+  };
+  for(const course of DATA[lang].courses)
+    for(const u of course.units){
+      if(u.type!=='vocab') continue;
+      const hit = scan(u.items, u.title.replace(/^Vocab[^:]*:\s*/,''));
+      if(hit) return hit;
+    }
+  const c = getCustom();
+  const mine = c.words.filter(w=>w.tr && w.tr[lang]).map(w=>({t:w.tr[lang], e:w.en}));
+  return scan(mine, 'My Words');
+}
+// Free MyMemory translation API (no key). Returns {best, alts:[...]} or throws.
+const MM_LANG = { german:'de', italian:'it', dutch:'nl', irish:'ga', spanish:'es' };
+// Reverse direction: target-language word in, English out.
+async function suggestEnglish(word, lang){
+  return mmSuggest(word, MM_LANG[lang]+'|en');
+}
+async function suggestTranslation(en, lang){
+  return mmSuggest(en, 'en|'+MM_LANG[lang]);
+}
+async function mmSuggest(q, langpair){
+  const url = 'https://api.mymemory.translated.net/get?q='+encodeURIComponent(q)+'&langpair='+langpair;
+  const r = await fetch(url).then(r=>r.json());
+  const fixCaps = s => (s===s.toUpperCase() && /[A-Za-z]/.test(s)) ? s.toLowerCase() : s;
+  let best = fixCaps((r.responseData && r.responseData.translatedText || '').trim());
+  const seen = new Set([foldTxt(best)]);
+  const alts = [];
+  for(const m of (r.matches||[])){
+    const t = fixCaps((m.translation||'').trim());
+    // skip sentence-like matches: too long, too many words, or trailing punctuation
+    if(!t || t.length>30 || t.split(/\s+/).length>3 || /[.!?,;:]$/.test(t)) continue;
+    const k = foldTxt(t);
+    if(seen.has(k)) continue;
+    seen.add(k);
+    alts.push(t);
+    if(alts.length>=4) break;
+  }
+  // if the main result looks like a sentence and a concise alternative exists, promote it
+  if((best.split(/\s+/).length>3 || best.length>34) && alts.length){
+    best = alts.shift();
+  }
+  if(!best) throw new Error('no suggestion');
+  return { best, alts };
+}
+
+// ---------- render root ----------
+function render(){
+  app.innerHTML='';
+  if(state.screen==='home') renderHome();
+  else if(state.screen==='setup') renderSetup();
+  else if(state.screen==='quiz') renderQuiz();
+  else if(state.screen==='result') renderResult();
+  else if(state.screen==='learned') renderLearned();
+  else if(state.screen==='mywords') renderMyWords();
+  else if(state.screen==='daily') renderDaily();
+  else if(state.screen==='dailyhist') renderDailyHist();
+  else if(state.screen==='hundred') renderHundred();
+  else if(state.screen==='climb') renderClimb();
+  else if(state.screen==='idioms') renderIdioms();
+  else if(state.screen==='phrases') renderPhrases();
+  else if(state.screen==='voice') renderVoice();
+  window.scrollTo(0,0);
+}
+
+// ---------- mastery tally ----------
+// A word counts as mastered when: marked learned, OR daily-mastered (3
+// consecutive first-try correct), OR part of a completed 100-Word Quiz, OR
+// removed from a climb as "I know this". Deduplicated across sources.
+const CEFR_LEVELS=[[500,'A1'],[1500,'A2'],[3000,'B1'],[5000,'B2'],[10000,'C1']];
+function masteredCount(lang){
+  const key=t=>stripArticle(foldTxt(t));
+  const s=new Set();
+  for(const t of getLearned(lang)) s.add(key(t));
+  const D=getDaily(lang);
+  for(const [t,st] of Object.entries(D.stats)){
+    const r=st.r||[];
+    if(st.mUntil || (r.length>=3 && r.slice(-3).every(x=>x.ok))) s.add(key(t));
+  }
+  getHundred(lang).past.flat().forEach(t=>s.add(key(t)));
+  for(const L of climbSlots(lang)){
+    L.removed.forEach(i=>{ const w=L.list[i]; if(w) s.add(key(w.t)); });
+    (L.comp||[]).flat().forEach(t=>s.add(key(t)));
+  }
+  s.delete('');
+  return s.size;
+}
+function cefrStatus(n){
+  let level='—', next=CEFR_LEVELS[0];
+  for(const [th,name] of CEFR_LEVELS){
+    if(n>=th) level=name;
+  }
+  next=CEFR_LEVELS.find(([th])=>n<th)||null;
+  return {level, next};
+}
+
+// ---------- home ----------
+function renderHome(){
+  app.appendChild($(`<h1>🎓 Language Quizzes</h1>`));
+  app.appendChild($(`<div class="sub">Vocabulary, grammar &amp; conjugation quizzes — German, Italian and Dutch built from your six Udemy courses, plus an Irish section built to match. Pick a language to begin.</div>`));
+  const row = $(`<div class="row"></div>`);
+  for(const l of LANGS){
+    const d = DATA[l];
+    const nUnits = d.courses.reduce((s,c)=>s+c.units.length,0);
+    const learned = getLearned(l).size;
+    const b = $(`<button class="langBtn"><span class="flag">${d.flag}</span><span>${d.name}</span>
+      <span class="pill">${d.courses.length} courses · ${nUnits} units${learned?` · ${learned} learned`:``}</span></button>`);
+    b.onclick=()=>{ state.lang=l; state.selectedUnits=loadSel(l); state.screen='setup'; render(); };
+    row.appendChild(b);
+  }
+  app.appendChild(row);
+  // mastery progress card
+  {
+    const mc=$(`<div class="card" style="margin-top:16px"><h2 style="margin-top:0">🏆 Mastered words <span class="pill">learned · daily-mastered · cleared quizzes · removed-as-known</span></h2></div>`);
+    const BARMAX=5000;
+    for(const l of LANGS){
+      const dd=DATA[l], n=masteredCount(l);
+      const {level,next}=cefrStatus(n);
+      const pct=Math.min(100, n/BARMAX*100);
+      const rowEl=$(`<div style="display:flex;align-items:center;gap:12px;margin:10px 0">
+        <span style="width:110px;flex-shrink:0">${dd.flag} ${dd.name}</span>
+        <span style="width:150px;flex-shrink:0"><b>${n.toLocaleString()}</b> · ${n>=500?level:'→ A1'}${next?` <span style="color:var(--muted);font-size:.85rem">(${(next[0]-n).toLocaleString()} to ${next[1]})</span>`:' 🏆'}</span>
+        <span style="flex:1;position:relative;height:14px;background:var(--card2);border-radius:7px;overflow:visible;display:block">
+          <span style="position:absolute;left:0;top:0;height:100%;width:${pct}%;background:var(--accent);border-radius:7px;display:block"></span>
+          ${CEFR_LEVELS.filter(([th])=>th<=BARMAX).map(([th,name])=>`
+            <span style="position:absolute;left:${th/BARMAX*100}%;top:-3px;height:20px;width:2px;background:var(--border);display:block"></span>
+            <span style="position:absolute;left:${th/BARMAX*100}%;top:16px;transform:translateX(-50%);font-size:.7rem;color:var(--muted)">${name}</span>`).join('')}
+        </span></div>`);
+      mc.appendChild(rowEl);
+    }
+    mc.appendChild($(`<div style="height:14px"></div>`));
+    app.appendChild(mc);
+  }
+  // daily exercise card
+  const dc = $(`<div class="card" style="margin-top:16px"><h2 style="margin-top:0">📅 Daily Exercise <span class="pill">10 words + 5 grammar questions a day</span></h2><div class="row" id="dailyRow"></div></div>`);
+  for(const l of DAILY_LANGS){
+    const dd = DATA[l];
+    const D = getDaily(l);
+    const sess = todaySessions(D);
+    const today = sess.length ? D.days[sess[sess.length-1]] : null;
+    const dayNum = today ? today.day : Object.keys(D.days).length+1;
+    const extra = sess.length>1 ? ` (+${sess.length-1} extra)` : '';
+    let status;
+    if(!today || !today.attempts.length) status = `<span class="pill">Day ${dayNum}${extra} · not started</span>`;
+    else if(today.best===100) status = `<span class="pill" style="color:var(--good)">Day ${dayNum}${extra} · 🎯 100%</span>`;
+    else status = `<span class="pill" style="color:var(--warn)">Day ${dayNum}${extra} · best ${today.best}%</span>`;
+    const b = $(`<button style="flex:1;min-width:200px;padding:14px">${dd.flag} ${dd.name}<br>${status}</button>`);
+    b.onclick=()=>{ state.dailyLang=l; state.dq=null; state.screen='daily'; render(); };
+    dc.querySelector('#dailyRow').appendChild(b);
+  }
+  app.appendChild(dc);
+  // 100-word quiz card
+  const hc = $(`<div class="card" style="margin-top:16px"><h2 style="margin-top:0">💯 100-Word Quiz <span class="pill">10 sets of 10, then 5 sets of 20 — clear every word</span></h2><div class="row" id="hundRow"></div></div>`);
+  for(const l of HUNDRED_LANGS){
+    const dd = DATA[l];
+    const HH = getHundred(l);
+    let status;
+    if(!HH.phase) status = `<span class="pill">${HH.n?HH.n+' completed · start a new one':'not started'}</span>`;
+    else status = `<span class="pill" style="color:var(--warn)">${HH.phase===1?'Round 1':'Round 2'} · set ${HH.tr+1}/${HH.phase===1?10:5} · ${HH.rem.length} left</span>`;
+    const b = $(`<button style="flex:1;min-width:200px;padding:14px">${dd.flag} ${dd.name}<br>${status}</button>`);
+    b.onclick=()=>{ state.hundredLang=l; state.hq=null; state.screen='hundred'; render(); };
+    hc.querySelector('#hundRow').appendChild(b);
+  }
+  app.appendChild(hc);
+  // 50-word climb card
+  const cc = $(`<div class="card" style="margin-top:16px"><h2 style="margin-top:0">🪜 50-Word Climb <span class="pill">start at 5 — clear the set, earn new words, first mistake ends the run</span></h2><div class="row" id="climbRow"></div></div>`);
+  for(const l of CLIMB_LANGS){
+    const dd = DATA[l];
+    const Ls = climbSlots(l);
+    const act = Ls.map((L,i)=>({L,i})).filter(x=>x.L.used);
+    const done = Ls.reduce((s,L)=>s+L.n,0);
+    const tot = climbTotalTested(l);
+    const tt = tot ? ` · ${tot} tested` : '';
+    let status;
+    if(!act.length) status = `<span class="pill">${done?done+' completed':'not started'}${tt}</span>`;
+    else{
+      const nm=missPool(l).length;
+      status = `<span class="pill" style="color:var(--warn)">${act.map(x=>'Climb '+(x.i+1)+': '+x.L.used+'/50').join(' · ')}${nm?` · 🎯 ${nm}`:''}${tt}</span>`;
+    }
+    const b = $(`<button style="flex:1;min-width:200px;padding:14px">${dd.flag} ${dd.name}<br>${status}</button>`);
+    b.onclick=()=>{ state.climbLang=l; state.climbSlot=act.length?act[0].i:0; state.lq=null; state.screen='climb'; render(); };
+    cc.querySelector('#climbRow').appendChild(b);
+  }
+  app.appendChild(cc);
+  // voice drill card
+  {
+    const vc = $(`<div class="card" style="margin-top:16px"><h2 style="margin-top:0">🎤 Voice Drill <span class="pill">hear the word & say the English — or hear English & spell the word</span></h2><div class="row" id="voiceRow"></div></div>`);
+    for(const l of VOICE_LANGS){
+      const dd = DATA[l];
+      const V = getVoice(l);
+      const st = (V.a.n||V.b.n)
+        ? `<span class="pill">🗣 ${V.a.n?V.a.best+'% best':'—'} · ⌨ ${V.b.n?V.b.best+'% best':'—'}</span>`
+        : `<span class="pill">not started</span>`;
+      const b = $(`<button style="flex:1;min-width:200px;padding:14px">${dd.flag} ${dd.name}<br>${st}</button>`);
+      b.onclick=()=>{ state.voiceLang=l; state.vq=null; state.screen='voice'; render(); };
+      vc.querySelector('#voiceRow').appendChild(b);
+    }
+    app.appendChild(vc);
+  }
+  // idioms + phrases cards
+  if(IP_LANGS.some(l=>idiomList(l).length)){
+    const ic = $(`<div class="card" style="margin-top:16px"><h2 style="margin-top:0">🗣 Idioms Test <span class="pill">type the idiom — sets of 10, with literal translation & hint</span></h2><div class="row" id="idiomRow"></div></div>`);
+    for(const l of IP_LANGS){
+      const list=idiomList(l); if(!list.length) continue;
+      const dd=DATA[l], p=getIdiomProg(l), sets=Math.ceil(list.length/10);
+      const b=$(`<button style="flex:1;min-width:200px;padding:14px">${dd.flag} ${dd.name}<br><span class="pill">${list.length} idioms · ${p.next>=sets?'all sets done':'set '+(Math.min(p.next,sets-1)+1)+'/'+sets}</span></button>`);
+      b.onclick=()=>{ state.ipLang=l; state.iq=null; state.screen='idioms'; render(); };
+      ic.querySelector('#idiomRow').appendChild(b);
+    }
+    app.appendChild(ic);
+  }
+  if(IP_LANGS.some(l=>phraseTopics(l).length)){
+    const pc = $(`<div class="card" style="margin-top:16px"><h2 style="margin-top:0">💬 Useful Phrases <span class="pill">10 phrases per quiz — pick the subject</span></h2><div class="row" id="phraseRow"></div></div>`);
+    for(const l of IP_LANGS){
+      const tps=phraseTopics(l); if(!tps.length) continue;
+      const dd=DATA[l];
+      const n=tps.reduce((s,t)=>s+t.items.length,0);
+      const b=$(`<button style="flex:1;min-width:200px;padding:14px">${dd.flag} ${dd.name}<br><span class="pill">${tps.length} subjects · ${n} phrases</span></button>`);
+      b.onclick=()=>{ state.ipLang=l; state.pq=null; state.screen='phrases'; render(); };
+      pc.querySelector('#phraseRow').appendChild(b);
+    }
+    app.appendChild(pc);
+  }
+  const nCustom = getCustom().words.length;
+  const mw = $(`<button style="margin-top:14px">📝 My Words — add your own vocabulary${nCustom?` (${nCustom})`:''}</button>`);
+  mw.onclick=()=>{ state.mwBack='home'; state.screen='mywords'; render(); };
+  app.appendChild(mw);
+  const note = window.speechSynthesis
+    ? `<div class="voiceNote">🔊 Audio uses your browser's built-in voices (German, Italian, Dutch). If a word sounds wrong or silent, make sure you're online — Chrome and Edge stream their best voices. Browsers ship no Irish voice, so Irish audio is disabled.</div>`
+    : `<div class="voiceNote">⚠️ This browser does not support speech synthesis — audio features will be disabled.</div>`;
+  app.appendChild($(note));
+}
+
+// ---------- setup ----------
+function renderSetup(){
+  const d = langData();
+  const learned = getLearned(state.lang);
+  app.appendChild($(`<div class="topnav"><span class="backlink" id="back">← Languages</span>
+    <span><button class="small" id="mwBtn">📝 My Words</button>
+    <button class="small" id="mgrBtn">✓ Learned words (${learned.size})</button></span></div>`));
+  app.querySelector('#back').onclick=()=>{ state.screen='home'; render(); };
+  app.querySelector('#mgrBtn').onclick=()=>{ state.screen='learned'; render(); };
+  app.querySelector('#mwBtn').onclick=()=>{ state.mwBack='setup'; state.screen='mywords'; render(); };
+
+  app.appendChild($(`<h1>${d.flag} ${d.name}</h1>`));
+  app.appendChild($(`<div class="sub">Choose quiz type, then tick the units you want. Ticking several units combines their material into one quiz.</div>`));
+
+  // quiz type
+  const typeCard = $(`<div class="card"><h2 style="margin-top:0">1 · Quiz type</h2><div class="opts" id="types"></div><div class="opts" id="modes"></div></div>`);
+  app.appendChild(typeCard);
+  const types = [ ['vocab','📖 Vocabulary'], ['grammar','✏️ Grammar'], ['conj','🔤 Conjugation & tables'] ];
+  for(const [val,lbl] of types){
+    const o = $(`<div class="opt ${state.quizType===val?'sel':''}">${lbl}</div>`);
+    o.onclick=()=>{ state.quizType=val; render(); };
+    typeCard.querySelector('#types').appendChild(o);
+  }
+  if(state.quizType==='vocab'){
+    const voiceOK = hasVoice(d.ttsLang);
+    if(!voiceOK && state.vocabMode==='listen') state.vocabMode='toEN';
+    const modes = [ ['toEN', d.name+' → English'], ['fromEN','English → '+d.name], ['listen','🔊 Listening (audio only)'], ['type','⌨️ Type the '+d.name+' word'] ];
+    for(const [val,lbl] of modes){
+      const o = $(`<div class="opt ${state.vocabMode===val?'sel':''}">${lbl}</div>`);
+      if(val==='listen' && !voiceOK){ o.style.opacity='.35'; o.style.cursor='not-allowed'; o.title='No '+d.name+' voice in this browser'; }
+      else o.onclick=()=>{ state.vocabMode=val; render(); };
+      typeCard.querySelector('#modes').appendChild(o);
+    }
+    if(!voiceOK) typeCard.appendChild($(`<div class="voiceNote">🔇 This browser has no ${d.name} voice, so audio and the Listening mode are disabled for ${d.name}.</div>`));
+  }
+
+  // units
+  const unitCard = $(`<div class="card"><h2 style="margin-top:0">2 · Material <span class="pill">from your course sections</span></h2></div>`);
+  app.appendChild(unitCard);
+  const sections = [...d.courses];
+  if(state.quizType==='vocab'){
+    const cu = customUnitsFor(state.lang);
+    if(cu.length) sections.push({ title:'📝 My Words (your custom vocabulary)', units: cu });
+  }
+  if(!state.openCourses) state.openCourses = null; // per-language default computed below
+  const openKey = state.lang + '|' + state.quizType;
+  if(!state._open) state._open = {};
+  if(!state._open[openKey]){
+    state._open[openKey] = new Set(sections.filter(c=>!(c.id||'').startsWith('duo_')).map(c=>c.title));
+  }
+  const openSet = state._open[openKey];
+  for(const c of sections){
+    const units = c.units.filter(u=>u.type===state.quizType);
+    if(!units.length) continue;
+    const isOpen = openSet.has(c.title);
+    const nSel = units.filter(u=>state.selectedUnits.has(u.id)).length;
+    const head = $(`<div class="courseHead" style="cursor:pointer"><h3>${isOpen?'▾':'▸'} ${c.title} <span class="pill">${units.length} units${nSel?` · ${nSel} ticked`:''}</span></h3><span>
+      <button class="small selAll">all</button> <button class="small selNone">none</button></span></div>`);
+    unitCard.appendChild(head);
+    head.querySelector('h3').onclick=()=>{ isOpen?openSet.delete(c.title):openSet.add(c.title); render(); };
+    head.querySelector('.selAll').onclick=(e)=>{ e.stopPropagation(); units.forEach(u=>state.selectedUnits.add(u.id)); saveSel(); render(); };
+    head.querySelector('.selNone').onclick=(e)=>{ e.stopPropagation(); units.forEach(u=>state.selectedUnits.delete(u.id)); saveSel(); render(); };
+    if(!isOpen) continue;
+    for(const u of units){
+      let cnt, cntTxt;
+      if(u.type==='vocab'){
+        cnt = availableVocab(u, learned).length;
+        const excl = u.items.length - cnt;
+        cntTxt = `${cnt} words${excl?` <span class="learnedTag">(${excl} learned)</span>`:``}`;
+      } else if(u.type==='conj'){ cnt = u.items.length; cntTxt = `${cnt} ${u.items.some(it=>it.rows)?'tables':'verbs'}`; }
+      else { cnt = u.items.length; cntTxt = `${cnt} questions`; }
+      const row = $(`<div class="unit"><input type="checkbox" id="cb_${u.id}" ${state.selectedUnits.has(u.id)?'checked':''}>
+        <label for="cb_${u.id}">${u.title.replace(/^(Vocab|Grammar|Conjugate|Tables|My Words)[^:]*:\s*/,'')}</label><span class="cnt">${cntTxt}</span></div>`);
+      row.querySelector('input').onchange=(e)=>{
+        if(e.target.checked) state.selectedUnits.add(u.id); else state.selectedUnits.delete(u.id);
+        saveSel(); updateStartBar();
+      };
+      unitCard.appendChild(row);
+    }
+  }
+
+  // length
+  const lenCard = $(`<div class="card"><h2 style="margin-top:0">3 · Quiz length</h2><div class="opts" id="lens"></div></div>`);
+  app.appendChild(lenCard);
+  for(const [val,lbl] of [[10,'10'],[15,'15'],[25,'25'],[9999,'Everything selected']]){
+    const o = $(`<div class="opt ${state.qCount===val?'sel':''}">${lbl}</div>`);
+    o.onclick=()=>{ state.qCount=val; render(); };
+    lenCard.querySelector('#lens').appendChild(o);
+  }
+
+  // start bar
+  const bar = $(`<div class="startBar"><div class="info" id="startInfo"></div><button class="primary" id="startBtn">Start quiz ▶</button></div>`);
+  app.appendChild(bar);
+  bar.querySelector('#startBtn').onclick=startQuiz;
+  updateStartBar();
+
+  function updateStartBar(){
+    const pool = buildPool();
+    const info = app.querySelector('#startInfo');
+    const btn = app.querySelector('#startBtn');
+    if(!pool.length){ info.textContent = 'Select at least one unit with material remaining.'; btn.disabled=true; }
+    else{
+      const n = Math.min(state.qCount, pool.length);
+      const noun = state.quizType==='vocab'?'words':state.quizType==='conj'?'verbs':'questions';
+      info.textContent = `${pool.length} ${noun} available → quiz of ${n}`;
+      btn.disabled=false;
+    }
+  }
+}
+
+function buildPool(){
+  const learned = getLearned(state.lang);
+  const pool=[];
+  for(const id of state.selectedUnits){
+    const u = unitById(id);
+    if(!u || u.type!==state.quizType) continue;
+    if(u.type==='vocab') for(const it of availableVocab(u,learned)) pool.push({unit:u, item:it});
+    else for(const it of u.items) pool.push({unit:u, item:it});
+  }
+  return pool;
+}
+
+// ---------- quiz building ----------
+function startQuiz(){
+  const pool = buildPool();
+  if(!pool.length) return;
+  const picked = shuffle(pool).slice(0, Math.min(state.qCount, pool.length));
+  let questions;
+  if(state.quizType==='vocab'){
+    // distractors drawn from the full selected pool (fall back to whole language)
+    const allItems = pool.map(p=>p.item);
+    const globalItems = allUnits().filter(u=>u.type==='vocab').flatMap(u=>u.items);
+    questions = picked.map(p=>{
+      const mode = state.vocabMode;
+      const correct = p.item;
+      if(mode==='type'){
+        return { kind:'vocab', mode, item:correct, unit:p.unit, prompt: correct.e, choices:[], answer: correct.t };
+      }
+      const distractorSrc = (allItems.length>=8?allItems:globalItems).filter(it=>it.t!==correct.t);
+      const ds = shuffle(distractorSrc).slice(0,3);
+      const answerField = (mode==='fromEN') ? 't' : 'e';
+      const choices = shuffle([correct, ...ds]).map(it=>it[answerField]);
+      return { kind:'vocab', mode, item:correct, unit:p.unit,
+        prompt: mode==='fromEN' ? correct.e : correct.t,
+        choices, answer: correct[answerField] };
+    });
+  } else if(state.quizType==='conj'){
+    questions = picked.map(p=>({ kind:'conj', item:p.item, unit:p.unit, prompt:p.item.inf, choices:[], answer:p.item.forms.join(', ') }));
+  } else {
+    questions = picked.map(p=>{
+      const it = p.item;
+      const correctText = it.c[it.a];
+      const choices = shuffle(it.c);
+      return { kind:'grammar', item:it, unit:p.unit, prompt: it.q, choices, answer: correctText, expl: it.x, ex: it.ex, tr: it.tr };
+    });
+  }
+  state.quiz = { questions, idx:0, correct:0, missed:[], answered:false };
+  state.screen='quiz'; render();
+}
+
+// ---------- quiz screen ----------
+function renderQuiz(){
+  const qz = state.quiz;
+  const q = qz.questions[qz.idx];
+  const d = langData();
+  app.appendChild($(`<div class="topnav"><span class="backlink" id="quit">✕ Quit quiz</span>
+    <span style="color:var(--muted);font-size:.9rem">${d.flag} ${state.quizType==='vocab'?'Vocabulary':state.quizType==='conj'?'Conjugation':'Grammar'}</span></div>`));
+  app.querySelector('#quit').onclick=()=>{ if(confirm('Quit this quiz?')){ state.screen='setup'; render(); } };
+
+  app.appendChild($(`<div class="qTop"><span>Question ${qz.idx+1} / ${qz.questions.length}</span><span>Score: ${qz.correct}</span></div>`));
+  const bar = $(`<div class="barOuter"><div class="barInner"></div></div>`);
+  bar.firstElementChild.style.width = (qz.idx/qz.questions.length*100)+'%';
+  app.appendChild(bar);
+
+  const card = $(`<div class="card"></div>`);
+  app.appendChild(card);
+
+  if(q.kind==='vocab'){
+    const listen = q.mode==='listen';
+    if(listen){
+      card.appendChild($(`<div class="qWord">🔊 …</div>`));
+      card.appendChild($(`<div class="qHint">Listen and choose the English meaning</div>`));
+    } else if(q.mode==='type'){
+      card.appendChild($(`<div class="qWord">${nounPrompt(maskPrompt(q.prompt, q.answer, state.lang), q.answer)}</div>`));
+      card.appendChild($(`<div class="qHint">${state.lang==='japanese' ? 'Type the Japanese word in romaji — it converts to hiragana as you type (mizu = みず)' : `Type the ${d.name} word — accents optional (uber = über); nouns need their article (die Tür)${CTRL_HINT[state.lang]||''}`}</div>`));
+    } else {
+      card.appendChild($(`<div class="qWord">${q.mode==='fromEN' ? nounPrompt(maskPrompt(q.prompt, q.answer, state.lang), q.answer) : jpDisp(q.prompt)}</div>`));
+      card.appendChild($(`<div class="qHint">${q.mode==='fromEN' ? 'Choose the '+d.name+' translation' : 'Choose the English meaning'}</div>`));
+    }
+    if(window.speechSynthesis && q.mode!=='fromEN' && q.mode!=='type'){
+      const sp = $(`<button class="speakBtn" title="Play audio">🔊</button>`);
+      sp.onclick=()=>speak(q.item.t, d.ttsLang);
+      card.appendChild(sp);
+      setTimeout(()=>speak(q.item.t, d.ttsLang), 250);
+    }
+  } else if(q.kind==='conj'){
+    let hintTxt;
+    if(q.item.rows){
+      hintTxt = 'fill in every form';
+    } else {
+      const exPron = PRON[state.lang][0].length ? PRON[state.lang][0][0]+' + verb ('+PRON[state.lang][0][0]+' '+q.item.forms[0].split('/')[0]+')' : q.item.forms[0].split('/')[0];
+      hintTxt = 'type pronoun + verb form for each person (e.g. '+exPron+')';
+    }
+    card.appendChild($(`<div class="qWord">${q.item.inf}</div>`));
+    card.appendChild($(`<div class="qHint">${q.item.en} · <b>${q.unit.tense}</b> — ${hintTxt}</div>`));
+    if(window.speechSynthesis){
+      const sp = $(`<button class="speakBtn" title="Hear the infinitive">🔊</button>`);
+      sp.onclick=()=>speak(q.item.inf, d.ttsLang);
+      card.appendChild(sp);
+    }
+  } else {
+    card.appendChild($(`<div class="qWord" style="font-size:1.25rem; line-height:1.5">${q.prompt}</div>`));
+    card.appendChild($(`<div class="qHint">${q.unit.title.replace(/^Grammar[^:]*:\s*/,'')}</div>`));
+    if(q.unit.lesson) card.appendChild($(`<details style="max-width:640px;margin:6px auto 4px;color:var(--muted)"><summary style="cursor:pointer;font-size:.9rem">📖 Review the lesson</summary><div style="text-align:left;line-height:1.6;margin-top:8px">${q.unit.lesson.replace(/\n/g,'<br>')}</div></details>`));
+  }
+
+  const ch = $(`<div class="choices ${q.kind==='vocab'?'two':''}"></div>`);
+  card.appendChild(ch);
+  if(q.kind==='conj'){
+    const persons = q.item.rows || PERSONS_EN[state.lang];
+    const wrapC = $(`<div style="max-width:520px;margin:0 auto"></div>`);
+    const inputs = [];
+    let lastInput = null;
+    persons.forEach((p,i)=>{
+      const row = $(`<div style="display:flex;align-items:center;gap:10px;margin:6px 0"></div>`);
+      row.appendChild($(`<span style="width:118px;text-align:right;color:var(--muted);font-size:.92rem;flex-shrink:0">${p}</span>`));
+      const inp = $(`<input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" style="flex:1;min-width:0;padding:9px 12px;font-size:1rem;border-radius:8px;border:2px solid var(--border);background:var(--card);color:var(--text);outline:none">`);
+      inp.addEventListener('focus',()=>{ lastInput=inp; });
+      inp.addEventListener('keydown',e=>{
+        if(e.key==='Enter'){
+          e.preventDefault(); e.__consumed=true; window.__enterTs=Date.now();
+          // Enter = Check all once every cell is filled; otherwise jump to the
+          // next empty cell (wrapping), so Enter and the button always agree
+          if(inputs.every(x=>x.value.trim())){ doCheck(); return; }
+          const after = inputs.slice(i+1).find(x=>!x.value.trim());
+          const before = inputs.slice(0,i+1).find(x=>!x.value.trim());
+          const nxt = after || before || (i<persons.length-1 ? inputs[i+1] : null);
+          if(nxt) nxt.focus();
+        }
+      });
+      const mark = $(`<span style="width:22px;flex-shrink:0"></span>`);
+      row.appendChild(inp); row.appendChild(mark);
+      inputs.push(inp); inp._mark = mark;
+      wrapC.appendChild(row);
+    });
+    const accRow = $(`<div style="display:flex;gap:6px;justify-content:center;margin:10px 0;flex-wrap:wrap"></div>`);
+    (ACCENTS[state.lang]||[]).forEach(chr=>{
+      const b = $(`<button class="small" style="min-width:38px;font-size:1.05rem">${chr}</button>`);
+      const cb=comboFor(state.lang,chr); if(cb) b.title=cb;
+      b.onclick=()=>{ const inp=lastInput||inputs[0]; const s=inp.selectionStart||inp.value.length; inp.value=inp.value.slice(0,s)+chr+inp.value.slice(inp.selectionEnd||s); inp.focus(); inp.setSelectionRange(s+1,s+1); };
+      accRow.appendChild(b);
+    });
+    const go = $(`<button class="primary" style="display:block;margin:6px auto 0">Check all</button>`);
+    function doCheck(){
+      if(qz.answered) return;
+      qz.answered=true;
+      let nRight=0;
+      const plain = !!q.item.rows;
+      q.item.forms.forEach((f,i)=>{
+        const typed = inputs[i].value;
+        const ok = conjRowOk(state.lang, i, typed, f, plain);
+        const canon = conjCanon(state.lang, i, f, plain);
+        inputs[i].disabled=true;
+        inputs[i].style.borderColor = ok ? 'var(--good)' : 'var(--bad)';
+        inputs[i]._mark.textContent = ok ? '✓' : '✗';
+        inputs[i]._mark.style.color = ok ? 'var(--good)' : 'var(--bad)';
+        const canonFirst = (!plain && (PRON[state.lang][i]||[])[0] ? PRON[state.lang][i][0]+' ' : '') + f.split('/')[0].trim();
+        if(!ok || typed.trim().toLowerCase()!==canonFirst.toLowerCase()){
+          const hint = $(`<span style="color:${ok?'var(--muted)':'var(--good)'};font-size:.9rem;white-space:nowrap">${canon}</span>`);
+          inputs[i].parentElement.appendChild(hint);
+        }
+        if(ok) nRight++;
+      });
+      const all = nRight===q.item.forms.length;
+      if(all) qz.correct++; else qz.missed.push(q);
+      go.style.display='none';
+      const fb = $(`<div class="feedback"></div>`);
+      fb.appendChild($(`<div style="font-weight:600; color:${all?'var(--good)':nRight>0?'var(--warn)':'var(--bad)'}">${all?'✔ Perfect — all '+nRight+' forms correct!':nRight+' / '+q.item.forms.length+' forms correct'}</div>`));
+      if(window.speechSynthesis){
+        const hear = $(`<button class="small" style="margin-top:8px">🔊 Hear the full conjugation</button>`);
+        hear.onclick=()=>speak(conjSpeakText(state.lang, q.item), d.ttsLang);
+        fb.appendChild(hear);
+      }
+      const next = $(`<button class="primary" style="margin-top:12px">${qz.idx+1<qz.questions.length?'Next →':'Finish'}</button>`);
+      next.onclick=()=>{
+        qz.answered=false;
+        if(qz.idx+1<qz.questions.length){ qz.idx++; render(); }
+        else { state.screen='result'; render(); }
+      };
+      fb.appendChild(next);
+      card.appendChild(fb);
+      next.focus();
+    }
+    go.onclick=doCheck;
+    wrapC.appendChild(accRow); wrapC.appendChild(go);
+    card.appendChild(wrapC);
+    setTimeout(()=>inputs[0].focus(),50);
+  } else if(q.kind==='vocab' && q.mode==='type'){
+    const wrapT = $(`<div style="max-width:560px;margin:0 auto;text-align:center"></div>`);
+    const inp = $(`<input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" style="width:100%;padding:14px 16px;font-size:1.1rem;border-radius:10px;border:2px solid var(--border);background:var(--card);color:var(--text);outline:none" placeholder="Type here…">`);
+    jpBind(inp, state.lang);
+    const accRow = $(`<div style="display:flex;gap:6px;justify-content:center;margin:10px 0;flex-wrap:wrap"></div>`);
+    (ACCENTS[state.lang]||[]).forEach(chr=>{
+      const b = $(`<button class="small" style="min-width:38px;font-size:1.05rem">${chr}</button>`);
+      const cb=comboFor(state.lang,chr); if(cb) b.title=cb;
+      b.onclick=()=>{ const s=inp.selectionStart||inp.value.length; inp.value=inp.value.slice(0,s)+chr+inp.value.slice(inp.selectionEnd||s); inp.focus(); inp.setSelectionRange(s+1,s+1); };
+      accRow.appendChild(b);
+    });
+    const go = $(`<button class="primary" style="margin-top:4px">Check</button>`);
+    const doCheck=()=>{
+      if(qz.answered) return;
+      const typed = inp.value;
+      const right = vocabAnswerOk(typed, q.answer);
+      const artMiss = !right && answerMatches(typed, q.answer);
+      const exact = typed.trim().toLowerCase()===q.answer.toLowerCase();
+      inp.disabled=true; go.style.display='none';
+      typedFeedback(right, exact, typed, artMiss);
+    };
+    go.onclick=doCheck;
+    inp.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); e.__consumed=true; window.__enterTs=Date.now(); doCheck(); } });
+    wrapT.appendChild(inp); wrapT.appendChild(accRow); wrapT.appendChild(go);
+    card.appendChild(wrapT);
+    setTimeout(()=>inp.focus(),50);
+  } else {
+    q.choices.forEach(c=>{
+      const b = $(`<button class="choice"></button>`);
+      // English-gloss choices can leak the prompted word inside parens too
+      b.textContent = (q.kind==='vocab' && q.mode!=='fromEN') ? maskPrompt(c, q.item.t, state.lang) : c;
+      b._val = c;
+      b.onclick=()=>answer(b, c);
+      ch.appendChild(b);
+    });
+  }
+
+  function typedFeedback(right, exact, typed, artMiss){
+    qz.answered=true;
+    if(right) qz.correct++; else qz.missed.push(q);
+    const fb = $(`<div class="feedback"></div>`);
+    let head;
+    if(right && exact) head = `✔ Correct!`;
+    else if(right) head = `✔ Correct — full spelling: “${jpDisp(q.answer)}”`;
+    else if(artMiss) head = `✘ Right word, but the article (gender) is wrong or missing — it's “${q.answer}”`;
+    else head = `✘ Not quite — it's “${jpDisp(q.answer)}”`;
+    fb.appendChild($(`<div style="font-weight:600; color:${right?'var(--good)':'var(--bad)'}">${head}</div>`));
+    fb.appendChild($(`<div class="expl">${jpDisp(q.item.t)} = ${q.item.e}${pluralNote(state.lang, q.item.t)}</div>`));
+    if(window.speechSynthesis) speak(q.item.t, d.ttsLang);
+    const learned = getLearned(state.lang);
+    if(!learned.has(vocabId(q.item))){
+      const lb = $(`<button class="small" style="margin-top:8px">✓ I know this — exclude from future quizzes</button>`);
+      lb.onclick=()=>{ const s=getLearned(state.lang); s.add(vocabId(q.item)); saveLearned(state.lang,s); lb.textContent='✓ Marked as learned'; lb.disabled=true; };
+      fb.appendChild(lb);
+    }
+    const next = $(`<button class="primary" style="margin-top:12px">${qz.idx+1<qz.questions.length?'Next →':'Finish'}</button>`);
+    next.onclick=()=>{
+      qz.answered=false;
+      if(qz.idx+1<qz.questions.length){ qz.idx++; render(); }
+      else { state.screen='result'; render(); }
+    };
+    fb.appendChild(next);
+    card.appendChild(fb);
+    next.focus();
+  }
+
+  function answer(btn, chosen){
+    if(qz.answered) return;
+    qz.answered=true;
+    const right = chosen===q.answer;
+    if(right) qz.correct++;
+    else qz.missed.push(q);
+    [...ch.children].forEach(b=>{
+      if((b._val!==undefined?b._val:b.textContent)===q.answer) b.classList.add('correct');
+      else if(b===btn) b.classList.add('wrong');
+      b.style.pointerEvents='none';
+    });
+    const fb = $(`<div class="feedback"></div>`);
+    fb.appendChild($(`<div style="font-weight:600; color:${right?'var(--good)':'var(--bad)'}">${right?'✔ Correct!':'✘ Not quite — it\'s “'+q.answer+'”'}</div>`));
+    if(q.kind==='grammar'){
+      const fs = fullSentence(q.prompt, q.answer);
+      if(fs) fb.appendChild($(`<div class="expl" style="font-size:1.05rem">${fs}</div>`));
+    }
+    if(q.kind==='grammar' && q.expl) fb.appendChild($(`<div class="expl">${q.expl}</div>`));
+    if(q.kind==='grammar' && q.ex) fb.appendChild($(`<div class="expl" style="font-size:1.05rem">${q.ex}</div>`));
+    if(q.kind==='grammar' && q.tr) fb.appendChild($(`<div class="expl" style="font-style:italic">🇬🇧 “${q.tr}”</div>`));
+    if(q.kind==='grammar'){
+      const wg = wordGlossNote(state.lang, q.answer);
+      if(wg) fb.appendChild($(`<div class="expl" style="color:var(--muted)">${wg}</div>`));
+    }
+    if(q.kind==='vocab'){
+      fb.appendChild($(`<div class="expl">${q.item.t} = ${q.item.e}${pluralNote(state.lang, q.item.t)}</div>`));
+      // speak the word after answering in EN->target mode
+      if(window.speechSynthesis && q.mode==='fromEN') speak(q.item.t, d.ttsLang);
+      const learned = getLearned(state.lang);
+      if(!learned.has(vocabId(q.item))){
+        const lb = $(`<button class="small" style="margin-top:8px">✓ I know this — exclude from future quizzes</button>`);
+        lb.onclick=()=>{ const s=getLearned(state.lang); s.add(vocabId(q.item)); saveLearned(state.lang,s); lb.textContent='✓ Marked as learned'; lb.disabled=true; };
+        fb.appendChild(lb);
+      }
+    }
+    const next = $(`<button class="primary" style="margin-top:12px">${qz.idx+1<qz.questions.length?'Next →':'Finish'}</button>`);
+    next.onclick=()=>{
+      qz.answered=false;
+      if(qz.idx+1<qz.questions.length){ qz.idx++; render(); }
+      else { state.screen='result'; render(); }
+    };
+    fb.appendChild(next);
+    card.appendChild(fb);
+    next.focus();
+  }
+}
+
+// ---------- results ----------
+function renderResult(){
+  const qz = state.quiz;
+  const d = langData();
+  const pct = Math.round(qz.correct/qz.questions.length*100);
+  app.appendChild($(`<h1>${d.flag} Quiz complete</h1>`));
+  const card = $(`<div class="card" style="text-align:center"></div>`);
+  card.appendChild($(`<div class="resultBig" style="color:${pct>=80?'var(--good)':pct>=50?'var(--warn)':'var(--bad)'}">${qz.correct} / ${qz.questions.length}</div>`));
+  card.appendChild($(`<div class="sub" style="margin-bottom:8px">${pct}% correct</div>`));
+  app.appendChild(card);
+
+  if(qz.missed.length){
+    const mc = $(`<div class="card"><h2 style="margin-top:0">Review what you missed</h2></div>`);
+    app.appendChild(mc);
+    qz.missed.forEach(q=>{
+      const row = $(`<div class="missItem"></div>`);
+      if(q.kind==='vocab'){
+        row.appendChild($(`<span class="w">${q.item.t}</span>`));
+        row.appendChild($(`<span style="flex:1">${q.item.e}</span>`));
+        if(window.speechSynthesis){
+          const sp = $(`<button class="small">🔊</button>`);
+          sp.onclick=()=>speak(q.item.t, d.ttsLang);
+          row.appendChild(sp);
+        }
+      } else if(q.kind==='conj'){
+        const rowLabels = q.item.rows || PERSONS_EN[state.lang];
+        const tbl = rowLabels.map((p,i)=>`${p}: <span style="color:var(--good)">${conjCanon(state.lang,i,q.item.forms[i],!!q.item.rows)}</span>`).join(' · ');
+        row.appendChild($(`<span style="flex:1"><span class="w">${q.item.inf}</span> (${q.unit.tense})<br>${tbl}</span>`));
+        if(window.speechSynthesis){
+          const sp = $(`<button class="small">🔊</button>`);
+          sp.onclick=()=>speak(conjSpeakText(state.lang, q.item), d.ttsLang);
+          row.appendChild(sp);
+        }
+      } else {
+        const wg = wordGlossNote(state.lang, q.answer);
+        const fs = fullSentence(q.prompt, q.answer);
+        row.appendChild($(`<span style="flex:1">${q.prompt}<br><span style="color:var(--good)">${fs||q.answer}</span>${q.expl?` — <span style="color:var(--muted)">${q.expl}</span>`:''}${q.ex?`<br><span>${q.ex}</span>`:''}${wg?`<br><span style="color:var(--muted)">${wg}</span>`:''}${q.tr?`<br><span style="color:var(--muted);font-style:italic">🇬🇧 “${q.tr}”</span>`:''}</span>`));
+      }
+      mc.appendChild(row);
+    });
+    const retry = $(`<button style="margin-top:10px">↻ Retry missed only</button>`);
+    retry.onclick=()=>{
+      const qs = shuffle(qz.missed).map(q=>({...q, choices: shuffle(q.choices||[])}));
+      state.quiz = { questions: qs, idx:0, correct:0, missed:[], answered:false };
+      state.screen='quiz'; render();
+    };
+    mc.appendChild(retry);
+  }
+
+  const row = $(`<div class="row" style="margin-top:14px"></div>`);
+  const again = $(`<button class="primary">New quiz (same settings)</button>`);
+  again.onclick=startQuiz;
+  const setup = $(`<button>Change settings</button>`);
+  setup.onclick=()=>{ state.screen='setup'; render(); };
+  row.appendChild(again); row.appendChild(setup);
+  app.appendChild(row);
+}
+
+// ---------- learned manager ----------
+function renderLearned(){
+  const d = langData();
+  const learned = getLearned(state.lang);
+  app.appendChild($(`<span class="backlink" id="back">← Back to setup</span>`));
+  app.querySelector('#back').onclick=()=>{ state.screen='setup'; render(); };
+  app.appendChild($(`<h1>${d.flag} Learned words</h1>`));
+  app.appendChild($(`<div class="sub">These words are excluded from vocabulary quizzes. Un-tick to bring one back into rotation.</div>`));
+  if(!learned.size){ app.appendChild($(`<div class="card">Nothing marked as learned yet. During a vocab quiz, click “✓ I know this” after answering.</div>`)); return; }
+  for(const u of d.courses.flatMap(c=>c.units).concat(customUnitsFor(state.lang))){
+    {
+      if(u.type!=='vocab') continue;
+      const items = u.items.filter(it=>learned.has(vocabId(it)));
+      if(!items.length) continue;
+      const card = $(`<div class="card"><h2 style="margin-top:0;font-size:1rem">${u.title.replace(/^(Vocab|My Words)[^:]*:\s*/,'')} <span class="pill">${items.length}</span></h2></div>`);
+      items.forEach(it=>{
+        const row = $(`<div class="missItem"><span class="w">${it.t}</span><span style="flex:1">${it.e}</span></div>`);
+        const rb = $(`<button class="small">↩ un-learn</button>`);
+        rb.onclick=()=>{ const s=getLearned(state.lang); s.delete(vocabId(it)); saveLearned(state.lang,s); render(); };
+        row.appendChild(rb);
+        card.appendChild(row);
+      });
+      app.appendChild(card);
+    }
+  }
+  const clr = $(`<button style="margin-top:6px">Reset all learned words for ${d.name}</button>`);
+  clr.onclick=()=>{ if(confirm('Un-learn ALL '+d.name+' words?')){ saveLearned(state.lang,new Set()); render(); } };
+  app.appendChild(clr);
+}
+
+// ---------- Daily Exercise (German & Italian) ----------
+const DAILY_LANGS = ['german','italian','spanish'];
+function todayStr(){ const d=new Date(); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+function addDays(ds,n){ const [y,m,dd]=ds.split('-').map(Number); const d=new Date(y,m-1,dd+n); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+function getDaily(lang){ try{ const o=JSON.parse(localStorage.getItem('lq_daily_'+lang)||'null')||{}; return {days:o.days||{}, stats:o.stats||{}, cursor:o.cursor||0}; }catch(e){ return {days:{},stats:{},cursor:0}; } }
+function saveDaily(lang,D){ localStorage.setItem('lq_daily_'+lang, JSON.stringify(D)); }
+function duoFlat(lang){ const c=DATA[lang].courses.find(c=>c.id.startsWith('duo_')); return c ? c.units.flatMap(u=>u.items) : []; }
+function grammarUnitsFor(lang){ return DATA[lang].courses.flatMap(c=>c.units).filter(u=>u.type==='grammar'); }
+function gUnitById(lang,id){ return DATA[lang].courses.flatMap(c=>c.units).find(u=>u.id===id); }
+function hashStr(s){ let h=2166136261; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); } return h>>>0; }
+function seededPick(n,k,seed){ const idx=[...Array(n).keys()]; let s=seed||1; for(let i=idx.length-1;i>0;i--){ s=(Math.imul(s,1103515245)+12345)>>>0; const j=s%(i+1); const tmp=idx[i]; idx[i]=idx[j]; idx[j]=tmp; } return idx.slice(0,k); }
+function wordRate(s){ const r=s.r||[]; return r.length ? r.reduce((a,x)=>a+x.ok,0)/r.length : 0; }
+function isMastered(s,dateStr){ return !!(s && s.mUntil && dateStr < s.mUntil); }
+
+// Quiz-size settings (shared by both languages): vocab & grammar question counts.
+function getDailyCfg(){ try{ return Object.assign({v:10,g:5}, JSON.parse(localStorage.getItem('lq_daily_cfg')||'{}')); }catch(e){ return {v:10,g:5}; } }
+function saveDailyCfg(c){ localStorage.setItem('lq_daily_cfg', JSON.stringify(c)); }
+function sessN(k){ const m=k.match(/#(\d+)$/); return m?+m[1]:1; }
+function todaySessions(D){ const t=todayStr(); return Object.keys(D.days).filter(k=>k===t||k.startsWith(t+'#')).sort((a,b)=>sessN(a)-sessN(b)); }
+// Grammar questions for a session: start at the rotating concept for this quiz
+// number and spill into the following concept(s) if the configured count exceeds
+// one unit's questions. Stored as [{u:unitId, i:questionIndex}, ...].
+// Rule-first ordering: lead with a question that states the concept's rule
+// (no blank in the question), then follow with application questions that put
+// the rule into effect (fill-in-the-blank sentences).
+function pickGrammar(lang, dayNum, count, seedStr){
+  const gunits=grammarUnitsFor(lang);
+  const out=[]; let ui=(dayNum-1)%gunits.length, hop=0;
+  while(out.length<count && hop<gunits.length){
+    const gu=gunits[ui%gunits.length];
+    const rule=[], app=[];
+    gu.items.forEach((it,i)=>((it.q.includes('___')?app:rule).push(i)));
+    const sr=seededPick(rule.length, rule.length, hashStr(seedStr+gu.id+'r')).map(x=>rule[x]);
+    let sa=seededPick(app.length, app.length, hashStr(seedStr+gu.id+'a')).map(x=>app[x]);
+    // the questions right after a rule question should exercise THAT rule:
+    // rank the unit's fill-ins by keyword overlap with the leading rule item
+    if(sr.length && sa.length){
+      const STOPW=new Set(['which','what','with','that','this','from','when','does','goes','only','always','after','before','into','take','takes','sentence','correct','answer','form','word','words']);
+      const tok=it=>new Set(foldTxt(it.q+' '+(it.c||[]).join(' ')+' '+(it.x||'')).split(' ').filter(w=>w.length>=4&&!STOPW.has(w)));
+      const lead=tok(gu.items[sr[0]]);
+      const score=i=>{ let n=0; for(const w of tok(gu.items[i])) if(lead.has(w)) n++; return n; };
+      sa=sa.map((i,j)=>[i,score(i),j]).sort((a,b)=>b[1]-a[1]||a[2]-b[2]).map(x=>x[0]);
+    }
+    const remaining=count-out.length;
+    const nRule=Math.min(sr.length, Math.max(1, Math.floor(remaining/4)));
+    const order=[...sr.slice(0,nRule), ...sa, ...sr.slice(nRule)];
+    for(const i of order){ if(out.length>=count) break; out.push({u:gu.id, i}); }
+    ui++; hop++;
+  }
+  return out;
+}
+// Refresh stored daily words from the current course data, so article/gloss
+// improvements reach quizzes that were already built; per-word stats migrate
+// with the renamed word (matched ignoring article and accents).
+function migrateDaily(lang){
+  const D=getDaily(lang);
+  if(!Object.keys(D.days).length) return;
+  const map=new Map();
+  for(const it of duoFlat(lang)){
+    const k=stripArticle(foldTxt(it.t));
+    if(k && !map.has(k)) map.set(k, it);
+  }
+  let changed=false;
+  for(const key of Object.keys(D.days)){
+    for(const w of (D.days[key].words||[])){
+      const cur=map.get(stripArticle(foldTxt(w.t)));
+      if(!cur) continue;
+      if(cur.t!==w.t){
+        if(D.stats[w.t] && !D.stats[cur.t]){ D.stats[cur.t]=D.stats[w.t]; delete D.stats[w.t]; }
+        else if(D.stats[w.t] && D.stats[cur.t]){ D.stats[cur.t].r=[...D.stats[w.t].r, ...D.stats[cur.t].r]; delete D.stats[w.t]; }
+        const wo=D.days[key].wOk;
+        if(wo && (w.t in wo) && !(cur.t in wo)){ wo[cur.t]=wo[w.t]; delete wo[w.t]; }
+        w.t=cur.t; changed=true;
+      }
+      if(cur.e && cur.e!==w.e){ w.e=cur.e; changed=true; }
+    }
+  }
+  for(const [t,s] of Object.entries(D.stats)){
+    const cur=map.get(stripArticle(foldTxt(t)));
+    if(cur && cur.e && s.e!==cur.e){ s.e=cur.e; changed=true; }
+  }
+  if(changed) saveDaily(lang,D);
+}
+// Build (or return) the latest quiz session. Selection: first 10 sessions all-new
+// words walking the Duolingo path in order; afterwards at least 40% review words
+// (lowest success rate first). Mastered words (3 consecutive correct first tries)
+// are excluded for 30 days. forceNew=true starts an additional session today.
+function buildDailySession(lang, forceNew){
+  migrateDaily(lang);
+  const D=getDaily(lang); const t=todayStr();
+  const todays=todaySessions(D);
+  if(!forceNew && todays.length) return D.days[todays[todays.length-1]];
+  const key = todays.length ? t+'#'+(todays.length+1) : t;
+  if(D.days[key]) return D.days[key];
+  const cfg=getDailyCfg();
+  const all=duoFlat(lang);
+  const dayNum=Object.keys(D.days).length+1;
+  const learned=getLearned(lang);
+  let review=[];
+  if(dayNum>10){
+    const revTarget=Math.ceil(cfg.v*0.4);
+    // Words NEVER answered correctly on the previous quiz day (across every
+    // attempt, retakes included) must come back on this quiz — ahead of, and
+    // if necessary beyond, the normal 40% review quota.
+    const prevKeys=Object.keys(D.days).sort((a,b)=>(D.days[a].day||0)-(D.days[b].day||0));
+    const prev=prevKeys.length?D.days[prevKeys[prevKeys.length-1]]:null;
+    let carry=[];
+    if(prev){
+      const missed = prev.wOk
+        ? Object.keys(prev.wOk).filter(w=>!prev.wOk[w])
+        // older records have no per-attempt map: fall back to first-try misses
+        : (prev.words||[]).filter(w=>{ const s=D.stats[w.t]; const e=((s&&s.r)||[]).filter(x=>x.d===prev.date);
+            return e.length&&!e[e.length-1].ok; }).map(w=>w.t);
+      carry = missed.filter(w=>!learned.has(w)).slice(0,cfg.v)
+        .map(w=>({t:w, e:(D.stats[w]&&D.stats[w].e)||((prev.words||[]).find(x=>x.t===w)||{}).e||'', review:true}));
+    }
+    const carrySet=new Set(carry.map(x=>x.t));
+    review=carry.concat(Object.entries(D.stats)
+      .filter(([w,s])=>!carrySet.has(w)&&!isMastered(s,t))
+      .sort((a,b)=>{ const ra=wordRate(a[1]), rb=wordRate(b[1]); if(ra!==rb) return ra-rb;
+        const la=(a[1].r[a[1].r.length-1]||{}).d||'', lb=(b[1].r[b[1].r.length-1]||{}).d||'';
+        return la<lb?-1:la>lb?1:0; })
+      .slice(0,Math.max(0,revTarget-carry.length)).map(([w,s])=>({t:w, e:s.e, review:true})));
+  }
+  const have=new Set(review.map(x=>x.t));
+  const testedSet=new Set(Object.keys(D.stats));
+  // words already used by a current or past 100-Word Quiz are NOT new — the
+  // 100-word quiz walks the same Duolingo path, so without this the daily's
+  // "new" words repeat what that quiz just tested
+  const hundredUsed=new Set();
+  { const HH=getHundred(lang);
+    for(const t of [...HH.list.map(x=>x.t), ...HH.past.flat()]) hundredUsed.add(stripArticle(foldTxt(t)));
+    for(const LL of climbSlots(lang))
+      for(const t of [...LL.tested, ...LL.past.flat()]) hundredUsed.add(stripArticle(foldTxt(t))); }
+  const news=[]; let cur=D.cursor;
+  while(review.length+news.length<cfg.v && cur<all.length){
+    const it=all[cur]; cur++;
+    if(!it||!it.t||!it.e) continue;
+    if(testedSet.has(it.t)||learned.has(it.t)||have.has(it.t)) continue;
+    if(hundredUsed.has(stripArticle(foldTxt(it.t)))) continue;
+    have.add(it.t); news.push({t:it.t, e:it.e, review:false});
+  }
+  D.cursor=cur;
+  if(review.length+news.length<cfg.v){
+    for(const [w,s] of Object.entries(D.stats)){
+      if(review.length+news.length>=cfg.v) break;
+      if(!have.has(w)&&!isMastered(s,t)){ have.add(w); review.push({t:w,e:s.e,review:true}); }
+    }
+  }
+  const gQs=pickGrammar(lang, dayNum, cfg.g, t+lang+key);
+  const rec={key, date:t, day:dayNum, sess:sessN(key), words:[...review,...news], gQs, attempts:[], best:0};
+  D.days[key]=rec; saveDaily(lang,D);
+  return rec;
+}
+// Back-compat: sessions built before the size/extra-session update stored gUnit+gIdx.
+function sessionGrammar(lang, rec){
+  const list = rec.gQs ? rec.gQs : rec.gIdx.map(i=>({u:rec.gUnit, i}));
+  return list.map(({u,i})=>({unit:gUnitById(lang,u), q:gUnitById(lang,u).items[i]}));
+}
+// Record a finished attempt. Only the FIRST attempt of the day feeds the per-word
+// history and mastery (retakes chase 100% but don't inflate the stats).
+function recordDailyAttempt(lang, key, perWord, gOk, gTot){
+  const D=getDaily(lang); const day=D.days[key]; if(!day) return {pct:0,first:false};
+  const dateStr=day.date||key;
+  const v=perWord.filter(x=>x.ok).length;
+  const first=day.attempts.length===0;
+  const pct=Math.round(100*(v+gOk)/(perWord.length+gTot));
+  day.attempts.push({when:new Date().toISOString(), v, vt:perWord.length, g:gOk, gt:gTot, pct});
+  day.best=Math.max(day.best||0,pct);
+  // ever-correct-today map (every attempt counts): feeds next-day carry-over
+  day.wOk = day.wOk || {};
+  for(const pw of perWord){ if(pw.ok) day.wOk[pw.t]=1; else if(!(pw.t in day.wOk)) day.wOk[pw.t]=0; }
+  if(first){
+    for(const pw of perWord){
+      const s=D.stats[pw.t]=D.stats[pw.t]||{r:[],mUntil:null,e:pw.e};
+      s.e=s.e||pw.e;
+      s.r.push({d:dateStr, ok:pw.ok?1:0});
+      const l3=s.r.slice(-3);
+      if(l3.length===3 && l3.every(x=>x.ok)) s.mUntil=addDays(dateStr,30);
+      else if(!pw.ok) s.mUntil=null;
+    }
+  }
+  saveDaily(lang,D);
+  return {pct, first};
+}
+
+function startDailyRun(lang, srec){
+  state.dq={ rec:srec, lang, vSeq:shuffle([...srec.words]), gSeq:sessionGrammar(lang,srec),
+    idx:0, phase:'v', vRes:[], gOk:0, done:false };
+  render();
+}
+function renderDaily(){
+  const lang=state.dailyLang, d=DATA[lang];
+  if(!duoFlat(lang).length){ app.appendChild($(`<div class="card">Duolingo course data missing for ${d.name}.</div>`)); return; }
+
+  if(!state.dq){
+    buildDailySession(lang,false);
+    const D=getDaily(lang);
+    const sessions=todaySessions(D);
+    const cfg=getDailyCfg();
+    app.appendChild($(`<div class="topnav"><span class="backlink" id="back">← Home</span>
+      <button class="small" id="histBtn">📊 History</button></div>`));
+    app.querySelector('#back').onclick=()=>{ state.screen='home'; render(); };
+    app.querySelector('#histBtn').onclick=()=>{ state.screen='dailyhist'; render(); };
+    app.appendChild($(`<h1>${d.flag} Daily Exercise — ${todayStr()}</h1>`));
+
+    // quiz-size settings (apply to the next NEW quiz)
+    const sc=$(`<div class="card"><h2 style="margin-top:0;font-size:1rem">⚙ Quiz size <span class="pill">applies to the next new quiz</span></h2></div>`);
+    const vRow=$(`<div class="opts" style="align-items:center"></div>`);
+    vRow.appendChild($(`<span style="color:var(--muted);font-size:.9rem;width:90px">Vocabulary</span>`));
+    for(const n of [5,10,15,20]){
+      const o=$(`<div class="opt ${cfg.v===n?'sel':''}">${n}</div>`);
+      o.onclick=()=>{ const c=getDailyCfg(); c.v=n; saveDailyCfg(c); render(); };
+      vRow.appendChild(o);
+    }
+    const gRow=$(`<div class="opts" style="align-items:center"></div>`);
+    gRow.appendChild($(`<span style="color:var(--muted);font-size:.9rem;width:90px">Grammar</span>`));
+    for(const n of [3,5,8,10]){
+      const o=$(`<div class="opt ${cfg.g===n?'sel':''}">${n}</div>`);
+      o.onclick=()=>{ const c=getDailyCfg(); c.g=n; saveDailyCfg(c); render(); };
+      gRow.appendChild(o);
+    }
+    sc.appendChild(vRow); sc.appendChild(gRow);
+    app.appendChild(sc);
+
+    // today's sessions
+    for(const key of sessions){
+      const srec=D.days[key];
+      const gInfo=sessionGrammar(lang,srec);
+      const concepts=[...new Set(gInfo.map(x=>x.unit.title.replace(/^Grammar[^:]*:\s*/,'')))].join(' + ');
+      const nNew=srec.words.filter(w=>!w.review).length, nRev=srec.words.length-nNew;
+      const card=$(`<div class="card"></div>`);
+      card.appendChild($(`<h2 style="margin-top:0;font-size:1.05rem">Quiz ${srec.sess>1?'#'+srec.sess+' <span class="pill">extra</span>':'#1'} — Day ${srec.day}</h2>`));
+      card.appendChild($(`<div style="margin:6px 0">📖 <b>${srec.words.length}</b> words: <b>${nNew} new</b>${nRev?` + <b>${nRev} review</b>`:''} · ✏️ <b>${gInfo.length}</b> grammar: <b>${concepts}</b></div>`));
+      if(srec.attempts.length){
+        const f=srec.attempts[0];
+        card.appendChild($(`<div style="margin:8px 0 4px">Attempts: <b>${srec.attempts.length}</b> · first try ${f.pct}% · best <b style="color:${srec.best===100?'var(--good)':'var(--warn)'}">${srec.best}%</b>${srec.best===100?' 🎯':''}</div>`));
+      } else {
+        card.appendChild($(`<div style="margin:8px 0 4px;color:var(--muted)">Not started. The first attempt counts toward word records and mastery; retakes chase 100%.</div>`));
+      }
+      const go=$(`<button class="primary" style="margin-top:8px">${srec.attempts.length?'↻ Retake':'Start ▶'}</button>`);
+      go.onclick=()=>startDailyRun(lang, srec);
+      card.appendChild(go);
+      app.appendChild(card);
+    }
+
+    // extra session
+    const last=D.days[sessions[sessions.length-1]];
+    const ex=$(`<div class="card" style="text-align:center"></div>`);
+    if(last.attempts.length){
+      const eb=$(`<button>➕ Start an extra quiz today <span class="pill">${cfg.v} words + ${cfg.g} grammar · continues your progression</span></button>`);
+      eb.onclick=()=>{ const nrec=buildDailySession(lang,true); startDailyRun(lang, nrec); };
+      ex.appendChild(eb);
+    } else {
+      ex.appendChild($(`<div style="color:var(--muted);font-size:.9rem">Finish the current quiz to unlock an extra one.</div>`));
+    }
+    app.appendChild(ex);
+    return;
+  }
+
+  // ---- quiz runner ----
+  const dq=state.dq;
+  const total=dq.vSeq.length+dq.gSeq.length;
+  const pos=dq.phase==='v'? dq.idx : dq.vSeq.length+dq.idx;
+
+  if(dq.done){
+    const v=dq.vRes.filter(x=>x.ok).length;
+    const pct=Math.round(100*(v+dq.gOk)/total);
+    app.appendChild($(`<h1>${d.flag} Day ${dq.rec.day} — result</h1>`));
+    const card=$(`<div class="card" style="text-align:center"></div>`);
+    card.appendChild($(`<div class="resultBig" style="color:${pct===100?'var(--good)':pct>=70?'var(--warn)':'var(--bad)'}">${pct}%</div>`));
+    card.appendChild($(`<div class="sub">Vocabulary ${v}/${dq.vSeq.length} · Grammar ${dq.gOk}/${dq.gSeq.length}${pct===100?' — 🎯 perfect!':''}</div>`));
+    const missedW=dq.vRes.filter(x=>!x.ok);
+    if(missedW.length){
+      const mc=$(`<div style="text-align:left;margin-top:8px"></div>`);
+      mc.appendChild($(`<div style="font-weight:600;margin-bottom:4px">Missed words:</div>`));
+      missedW.forEach(x=>mc.appendChild($(`<div class="missItem"><span class="w">${x.t}</span><span style="flex:1">${x.e}</span></div>`)));
+      card.appendChild(mc);
+    }
+    const row=$(`<div class="row" style="justify-content:center;margin-top:14px"></div>`);
+    const again=$(`<button class="primary">↻ Retake (goal 100%)</button>`);
+    again.onclick=()=>startDailyRun(lang, dq.rec);
+    const home=$(`<button>Done</button>`);
+    home.onclick=()=>{ state.dq=null; render(); };
+    const hist=$(`<button>📊 History</button>`);
+    hist.onclick=()=>{ state.dq=null; state.screen='dailyhist'; render(); };
+    row.appendChild(again); row.appendChild(home); row.appendChild(hist);
+    card.appendChild(row);
+    app.appendChild(card);
+    return;
+  }
+
+  app.appendChild($(`<div class="topnav"><span class="backlink" id="quit">✕ Quit</span>
+    <span style="color:var(--muted);font-size:.9rem">${d.flag} Day ${dq.rec.day} · ${dq.phase==='v'?'Vocabulary':'Grammar'}</span></div>`));
+  app.querySelector('#quit').onclick=()=>{ if(confirm('Quit? This attempt won\'t be recorded.')){ state.dq=null; render(); } };
+  app.appendChild($(`<div class="qTop"><span>Question ${pos+1} / ${total}</span><span>✔ ${dq.vRes.filter(x=>x.ok).length+dq.gOk}</span></div>`));
+  const bar=$(`<div class="barOuter"><div class="barInner"></div></div>`);
+  bar.firstElementChild.style.width=(pos/total*100)+'%';
+  app.appendChild(bar);
+  const card=$(`<div class="card"></div>`);
+  app.appendChild(card);
+
+  if(dq.phase==='v'){
+    const w=dq.vSeq[dq.idx];
+    card.appendChild($(`<div class="qWord">${nounPrompt(maskPrompt(w.e, w.t, lang), w.t)}</div>`));
+    card.appendChild($(`<div class="qHint">Type the ${d.name} word${w.review?' · <span style="color:var(--warn)">review</span>':''} — accents optional; nouns need their article${CTRL_HINT[lang]||''}</div>`));
+    const wrap=$(`<div style="max-width:560px;margin:0 auto;text-align:center"></div>`);
+    const inp=$(`<input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" style="width:100%;padding:14px 16px;font-size:1.1rem;border-radius:10px;border:2px solid var(--border);background:var(--card2);color:var(--text);outline:none" placeholder="Type here…">`);
+    const accRow=$(`<div style="display:flex;gap:6px;justify-content:center;margin:10px 0;flex-wrap:wrap"></div>`);
+    (ACCENTS[lang]||[]).forEach(chr=>{
+      const b=$(`<button class="small" style="min-width:38px;font-size:1.05rem">${chr}</button>`);
+      const cb=comboFor(lang,chr); if(cb) b.title=cb;
+      b.onclick=()=>{ const s=inp.selectionStart||inp.value.length; inp.value=inp.value.slice(0,s)+chr+inp.value.slice(inp.selectionEnd||s); inp.focus(); inp.setSelectionRange(s+1,s+1); };
+      accRow.appendChild(b);
+    });
+    const go=$(`<button class="primary">Check</button>`);
+    let checked=false;
+    const doCheck=()=>{
+      if(checked) return; checked=true;
+      const ok=vocabAnswerOk(inp.value, w.t);
+      const artMiss=!ok && answerMatches(inp.value, w.t);
+      dq.vRes.push({t:w.t, e:w.e, ok});
+      inp.disabled=true; go.style.display='none';
+      inp.style.borderColor= ok?'var(--good)':'var(--bad)';
+      const fb=$(`<div class="feedback"></div>`);
+      fb.appendChild($(`<div style="font-weight:600;color:${ok?'var(--good)':'var(--bad)'}">${ok?'✔ Correct!':artMiss?'✘ Right word, but the article (gender) is wrong or missing — it\'s “'+w.t+'”':'✘ It\'s “'+w.t+'”'}</div>`));
+      fb.appendChild($(`<div class="expl">${w.t} = ${w.e}${pluralNote(lang, w.t)}</div>`));
+      if(window.speechSynthesis) speak(w.t, d.ttsLang);
+      const next=$(`<button class="primary" style="margin-top:12px">Next →</button>`);
+      next.onclick=()=>{
+        dq.idx++;
+        if(dq.idx>=dq.vSeq.length){ dq.phase='g'; dq.idx=0; }
+        render();
+      };
+      fb.appendChild(next);
+      card.appendChild(fb);
+      next.focus();
+    };
+    go.onclick=doCheck;
+    inp.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); e.__consumed=true; window.__enterTs=Date.now(); doCheck(); } });
+    wrap.appendChild(inp); wrap.appendChild(accRow); wrap.appendChild(go);
+    card.appendChild(wrap);
+    setTimeout(()=>inp.focus(),50);
+  } else {
+    // Lesson first: teach the concept(s), then the questions test it
+    if(!dq.lessonDone){
+      const lus=[...new Map(dq.gSeq.map(x=>[x.unit.id,x.unit])).values()].filter(u=>u.lesson);
+      if(lus.length){
+        card.appendChild($(`<h2 style="margin-top:0">📖 Today's grammar lesson</h2>`));
+        for(const u of lus){
+          card.appendChild($(`<div style="font-weight:600;color:var(--accent);margin:12px 0 6px">${u.title.replace(/^Grammar[^:]*:\s*/,'')}</div>`));
+          card.appendChild($(`<div style="line-height:1.65">${u.lesson.replace(/\n/g,'<br>')}</div>`));
+        }
+        const go=$(`<button class="primary" style="margin-top:18px">Start the questions →</button>`);
+        go.onclick=()=>{ if(window.speechSynthesis) speechSynthesis.cancel(); dq.lessonDone=true; render(); };
+        card.appendChild(go);
+        if(window.speechSynthesis){
+          const rd=$(`<button class="small" style="margin-top:18px;margin-left:10px">🔊 Read the lesson aloud</button>`);
+          rd.onclick=()=>{
+            if(speechSynthesis.speaking || speechSynthesis.pending){
+              speechSynthesis.cancel(); rd.textContent='🔊 Read the lesson aloud'; return;
+            }
+            const text=lus.map(u=>u.title.replace(/^Grammar[^:]*:\s*/,'')+'. '+u.lesson.replace(/\n+/g,' ')).join(' ');
+            // chunk by sentence — Chrome cuts off long single utterances
+            const parts=text.match(/[^.!?]+[.!?]?/g)||[text];
+            const v=bestVoice('en-US');
+            parts.forEach((s,i)=>{
+              const u=new SpeechSynthesisUtterance(s.trim());
+              u.lang='en-US'; if(v) u.voice=v; u.rate=1.0;
+              if(i===parts.length-1) u.onend=()=>{ rd.textContent='🔊 Read the lesson aloud'; };
+              speechSynthesis.speak(u);
+            });
+            rd.textContent='⏹ Stop reading';
+          };
+          card.appendChild(rd);
+        }
+        setTimeout(()=>go.focus(),50);
+        return;
+      }
+      dq.lessonDone=true;
+    }
+    const {unit, q}=dq.gSeq[dq.idx];
+    const correct=q.c[q.a];
+    card.appendChild($(`<div class="qWord" style="font-size:1.25rem;line-height:1.5">${q.q}</div>`));
+    card.appendChild($(`<div class="qHint">${unit.title.replace(/^Grammar[^:]*:\s*/,'')}</div>`));
+    if(unit.lesson) card.appendChild($(`<details style="max-width:640px;margin:6px auto 4px;color:var(--muted)"><summary style="cursor:pointer;font-size:.9rem">📖 Review the lesson</summary><div style="text-align:left;line-height:1.6;margin-top:8px">${unit.lesson.replace(/\n/g,'<br>')}</div></details>`));
+    const ch=$(`<div class="choices"></div>`);
+    card.appendChild(ch);
+    let answered=false;
+    shuffle(q.c).forEach(c=>{
+      const b=$(`<button class="choice"></button>`);
+      b.textContent=c;
+      b.onclick=()=>{
+        if(answered) return; answered=true;
+        const ok=c===correct;
+        if(ok) dq.gOk++;
+        [...ch.children].forEach(x=>{ if(x.textContent===correct) x.classList.add('correct'); else if(x===b) x.classList.add('wrong'); x.style.pointerEvents='none'; });
+        const fb=$(`<div class="feedback"></div>`);
+        fb.appendChild($(`<div style="font-weight:600;color:${ok?'var(--good)':'var(--bad)'}">${ok?'✔ Correct!':'✘ Not quite — “'+correct+'”'}</div>`));
+        const fs=fullSentence(q.q, correct);
+        if(fs) fb.appendChild($(`<div class="expl" style="font-size:1.05rem">${fs}</div>`));
+        if(q.x) fb.appendChild($(`<div class="expl">${q.x}</div>`));
+        if(q.ex) fb.appendChild($(`<div class="expl" style="font-size:1.05rem">${q.ex}</div>`));
+        if(q.tr) fb.appendChild($(`<div class="expl" style="font-style:italic">🇬🇧 “${q.tr}”</div>`));
+        const wg=wordGlossNote(lang, correct);
+        if(wg) fb.appendChild($(`<div class="expl" style="color:var(--muted)">${wg}</div>`));
+        const next=$(`<button class="primary" style="margin-top:12px">${dq.idx+1<dq.gSeq.length?'Next →':'Finish'}</button>`);
+        next.onclick=()=>{
+          dq.idx++;
+          if(dq.idx>=dq.gSeq.length){
+            dq.done=true;
+            recordDailyAttempt(lang, dq.rec.key||dq.rec.date, dq.vRes, dq.gOk, dq.gSeq.length);
+            state.dq={...dq};
+          }
+          render();
+        };
+        fb.appendChild(next);
+        card.appendChild(fb);
+        next.focus();
+      };
+      ch.appendChild(b);
+    });
+  }
+}
+
+function renderDailyHist(){
+  const lang=state.dailyLang, d=DATA[lang];
+  const D=getDaily(lang);
+  app.appendChild($(`<span class="backlink" id="back">← Daily Exercise</span>`));
+  app.querySelector('#back').onclick=()=>{ state.screen='daily'; render(); };
+  app.appendChild($(`<h1>${d.flag} Daily Exercise — history</h1>`));
+
+  const keys=Object.keys(D.days).sort((a,b)=>(D.days[b].day||0)-(D.days[a].day||0));
+  const dayCard=$(`<div class="card"><h2 style="margin-top:0">Quizzes</h2></div>`);
+  if(!keys.length) dayCard.appendChild($(`<div class="sub" style="margin:0">No quizzes taken yet.</div>`));
+  for(const dt of keys){
+    const day=D.days[dt];
+    const f=day.attempts[0];
+    const dDate=day.date||dt;
+    const row=$(`<div style="background:var(--card2);border-radius:8px;padding:8px 10px;margin:6px 0"></div>`);
+    row.appendChild($(`<div><b>Day ${day.day}</b> · ${dDate}${(day.sess||1)>1?` <span class="pill">extra #${day.sess}</span>`:''} — ${day.attempts.length? `first try ${f.pct}% (words ${f.v}/${f.vt}, grammar ${f.g}/${f.gt}) · ${day.attempts.length} attempt${day.attempts.length>1?'s':''} · best <b style="color:${day.best===100?'var(--good)':'var(--warn)'}">${day.best}%</b>${day.best===100?' 🎯':''}` : '<span style="color:var(--muted)">not attempted</span>'}</div>`));
+    const wl=$(`<div style="margin-top:5px;font-size:.9rem;line-height:1.8"></div>`);
+    for(const w of day.words){
+      const res=(D.stats[w.t]?.r||[]).find(r=>r.d===dDate);
+      const mark=res? (res.ok?'<span style="color:var(--good)">✓</span>':'<span style="color:var(--bad)">✗</span>') : '·';
+      wl.appendChild($(`<span style="margin-right:10px;white-space:nowrap">${mark} ${w.t}${w.review?'<sup style="color:var(--warn)">R</sup>':''}</span>`));
+    }
+    row.appendChild(wl);
+    dayCard.appendChild(row);
+  }
+  app.appendChild(dayCard);
+
+  const words=Object.entries(D.stats).sort((a,b)=>{
+    const la=(a[1].r[a[1].r.length-1]||{}).d||'', lb=(b[1].r[b[1].r.length-1]||{}).d||'';
+    return la<lb?1:la>lb?-1:0;
+  });
+  const wCard=$(`<div class="card"><h2 style="margin-top:0">Word record <span class="pill">${words.length} words</span></h2></div>`);
+  if(!words.length) wCard.appendChild($(`<div class="sub" style="margin:0">Nothing recorded yet.</div>`));
+  const tdy=todayStr();
+  for(const [w,s] of words){
+    const pctW=Math.round(100*wordRate(s));
+    const status=isMastered(s,tdy)? `<span style="color:var(--good)">★ mastered</span> <span style="color:var(--muted)">(back ${s.mUntil})</span>` : `${s.r.length}× tested`;
+    const hist=s.r.map(r=>`${r.d.slice(5)} ${r.ok?'✓':'✗'}`).join(' · ');
+    const row=$(`<div class="missItem" style="flex-wrap:wrap"><span class="w">${w}</span><span style="flex:1">${s.e||''}</span>
+      <span style="color:${pctW>=90?'var(--good)':pctW>=60?'var(--warn)':'var(--bad)'};font-weight:600">${pctW}%</span>
+      <span style="font-size:.85rem;color:var(--muted)">${status}</span>
+      <span style="flex-basis:100%;font-size:.8rem;color:var(--muted)">${hist}</span></div>`);
+    wCard.appendChild(row);
+  }
+  app.appendChild(wCard);
+}
+
+// ---------- 100-Word Quiz (German & Italian) ----------
+// 100 words in 10 sets of 10: each pass through a set removes the words
+// answered correctly, repeating until the set is empty. Then the sets pair up
+// into 5 sets of 20, worked down the same way. 40 of the 100 are repeats from
+// the Daily Exercise / earlier 100-word quizzes, 60 are new words.
+const HUNDRED_LANGS=['german','italian'];
+function getHundred(lang){
+  try{ const o=JSON.parse(localStorage.getItem('lq_hundred_'+lang)||'null')||{};
+    return {list:o.list||[], phase:o.phase||0, tr:o.tr||0, rem:o.rem||[], past:o.past||[], n:o.n||0};
+  }catch(e){ return {list:[],phase:0,tr:0,rem:[],past:[],n:0}; }
+}
+function saveHundred(lang,H){ localStorage.setItem('lq_hundred_'+lang, JSON.stringify(H)); }
+function hSetInfo(H){ return H.phase===2 ? {size:20,count:5} : {size:10,count:10}; }
+function hSetIdx(H){ const {size}=hSetInfo(H); return [...Array(size).keys()].map(k=>H.tr*size+k); }
+// Shared list builder for the 100-Word Quiz and the 50-Word Climb: 40% repeats
+// (daily history first, then words from completed quizzes of either kind),
+// 60% new. Words active or tested in EITHER quiz never come back as "new".
+function buildMasteryList(lang, size){
+  const key=t=>stripArticle(foldTxt(t));
+  const learned=getLearned(lang);
+  const H=getHundred(lang);
+  const Ls=climbSlots(lang);
+  const nRep=Math.round(size*0.4);
+  const pastSet=new Set([...H.past.flat(), ...Ls.flatMap(L=>[...L.past.flat(), ...L.tested])].map(key));
+  const pastPool=[...H.past.flat(), ...Ls.flatMap(L=>L.past.flat())];
+  const D=getDaily(lang);
+  const used=new Set();
+  for(const x of H.list) used.add(key(x.t));   // active in the other quizzes
+  for(const L of Ls) for(const x of L.list) used.add(key(x.t));
+  // gloss lookup + ordered "new word" candidates: Duolingo path, then course units, then custom
+  const pool=[...duoFlat(lang),
+    ...DATA[lang].courses.filter(c=>!c.id.startsWith('duo_')).flatMap(c=>c.units).filter(u=>u.type==='vocab').flatMap(u=>u.items||[]),
+    ...customUnitsFor(lang).flatMap(u=>u.items||[])].filter(it=>it&&it.t&&it.e);
+  const gloss=new Map();
+  for(const it of pool){ const k=key(it.t); if(k&&!gloss.has(k)) gloss.set(k,it); }
+  // 40% repeats: daily-tested words first (lowest success rate first), then past-quiz words
+  const reps=[];
+  const daily=Object.entries(D.stats).sort((a,b)=>wordRate(a[1])-wordRate(b[1]));
+  for(const [t,s] of daily){
+    if(reps.length>=nRep) break;
+    const k=key(t); if(!k||used.has(k)||learned.has(t)) continue;
+    const e=s.e||((gloss.get(k)||{}).e); if(!e) continue;
+    used.add(k); reps.push({t,e,r:1});
+  }
+  if(reps.length<nRep){
+    for(const t of shuffle(pastPool)){
+      if(reps.length>=nRep) break;
+      const k=key(t); if(!k||used.has(k)) continue;
+      const g=gloss.get(k); if(!g||learned.has(g.t)) continue;
+      used.add(k); reps.push({t:g.t,e:g.e,r:1});
+    }
+  }
+  // 60% new words (more if the repeat pool ran short)
+  const dailySet=new Set(Object.keys(D.stats).map(key));
+  const out=[...reps];
+  for(const it of pool){
+    if(out.length>=size) break;
+    const k=key(it.t); if(!k||used.has(k)) continue;
+    if(dailySet.has(k)||pastSet.has(k)||learned.has(it.t)) continue;
+    used.add(k); out.push({t:it.t,e:it.e});
+  }
+  // sources exhausted: fall back to anything not already picked
+  for(const it of pool){
+    if(out.length>=size) break;
+    const k=key(it.t); if(!k||used.has(k)) continue;
+    used.add(k); out.push({t:it.t,e:it.e});
+  }
+  return shuffle(out).slice(0,size);
+}
+// If every word of the current set was already cleared (e.g. the quiz was
+// quit right after the last correct answer), advance to the next set/round.
+function hundredAdvance(lang){
+  const H=getHundred(lang);
+  if(!H.phase || H.rem.length) return H;
+  H.tr++;
+  const {count}=hSetInfo(H);
+  if(H.tr>=count){
+    if(H.phase===1){ H.phase=2; H.tr=0; H.rem=hSetIdx(H); }
+    else {
+      H.past.push(H.list.map(x=>x.t));
+      if(H.past.length>10) H.past=H.past.slice(-10);
+      H.list=[]; H.phase=0; H.tr=0; H.rem=[];
+    }
+  } else H.rem=hSetIdx(H);
+  saveHundred(lang,H);
+  return getHundred(lang);
+}
+function startHundredPass(){
+  const lang=state.hundredLang;
+  const H=hundredAdvance(lang);
+  if(!H.rem.length){ state.hq=null; render(); return; }
+  state.hq={mode:'q', order:shuffle([...H.rem]), pos:0, okIdx:[], nOk:0};
+  render();
+}
+function renderHundred(){
+  const lang=state.hundredLang, d=DATA[lang];
+  if(!state.hq) migrateMastery(lang);
+  const H=hundredAdvance(lang);
+  const hq=state.hq;
+  if(!hq){
+    // ----- overview -----
+    app.appendChild($(`<span class="backlink" id="back">← Home</span>`));
+    app.querySelector('#back').onclick=()=>{ state.screen='home'; render(); };
+    app.appendChild($(`<h1>${d.flag} 💯 100-Word Quiz</h1>`));
+    app.appendChild($(`<div class="sub">100 words · 10 sets of 10, then 5 sets of 20. Every pass removes the words you got right until the set is done. 40 words are review (Daily Exercise &amp; past 100-word quizzes), 60 are new.</div>`));
+    const card=$(`<div class="card"></div>`);
+    if(!H.phase){
+      card.appendChild($(`<div style="line-height:1.6">${H.n?`🏁 Completed so far: <b>${H.n}</b> quiz${H.n>1?'zes':''}.<br>`:''}Ready for a ${H.n?'new':''} 100-word quiz? The word list is built when you start.</div>`));
+      const go=$(`<button class="primary" style="margin-top:14px">▶ Start ${H.n?'a new':'the'} 100-word quiz</button>`);
+      go.onclick=()=>{ const HH=getHundred(lang); HH.list=buildMasteryList(lang,100); HH.phase=1; HH.tr=0;
+        HH.rem=[...Array(10).keys()]; HH.n=HH.n+1; saveHundred(lang,HH); startHundredPass(); };
+      card.appendChild(go);
+    } else {
+      const {size,count}=hSetInfo(H);
+      const doneInSet=size-H.rem.length;
+      card.appendChild($(`<div style="line-height:1.8">
+        <span class="pill">${H.phase===1?'Round 1 — sets of 10':'Round 2 — sets of 20'}</span>
+        <span class="pill">Set ${H.tr+1} / ${count}</span>
+        <span class="pill">${H.rem.length} word${H.rem.length!==1?'s':''} left in this set${doneInSet?` (${doneInSet} done)`:''}</span></div>`));
+      const go=$(`<button class="primary" style="margin-top:14px">▶ Continue — next pass (${H.rem.length} words)</button>`);
+      go.onclick=startHundredPass;
+      card.appendChild(go);
+      const ab=$(`<button class="small" style="margin-top:14px;margin-left:10px">✕ Abandon this quiz</button>`);
+      ab.onclick=()=>{ if(confirm('Abandon the current 100-word quiz? Progress on it is lost.')){
+        const HH=getHundred(lang); HH.list=[]; HH.phase=0; HH.tr=0; HH.rem=[]; HH.n=Math.max(0,HH.n-1); saveHundred(lang,HH); render(); } };
+      card.appendChild(ab);
+    }
+    app.appendChild(card);
+    return;
+  }
+  if(hq.mode==='pass'){
+    // ----- pass summary -----
+    const card=$(`<div class="card" style="text-align:center"></div>`);
+    card.appendChild($(`<h2 style="margin-top:0">${hq.headline}</h2>`));
+    card.appendChild($(`<div style="line-height:1.7">${hq.detail}</div>`));
+    const btn=$(`<button class="primary" style="margin-top:16px">${hq.nextLabel}</button>`);
+    btn.onclick=()=>{ if(hq.finished){ state.hq=null; render(); } else startHundredPass(); };
+    card.appendChild(btn);
+    app.appendChild(card);
+    setTimeout(()=>btn.focus(),50);
+    return;
+  }
+  // ----- question -----
+  const {size,count}=hSetInfo(H);
+  const idx=hq.order[hq.pos];
+  const w=H.list[idx];
+  app.appendChild($(`<div class="topnav"><span class="backlink" id="quit">✕ Pause</span>
+    <span style="color:var(--muted);font-size:.9rem">${d.flag} 100-Word · ${H.phase===1?'Sets of 10':'Sets of 20'} · Set ${H.tr+1}/${count}</span></div>`));
+  app.querySelector('#quit').onclick=()=>{ state.hq=null; render(); };
+  app.appendChild($(`<div class="qTop"><span>Word ${hq.pos+1} / ${hq.order.length}</span><span>✓ ${hq.nOk}</span></div>`));
+  const bar=$(`<div class="barOuter"><div class="barInner"></div></div>`);
+  bar.firstElementChild.style.width=(hq.pos/hq.order.length*100)+'%';
+  app.appendChild(bar);
+  const card=$(`<div class="card"></div>`);
+  app.appendChild(card);
+  card.appendChild($(`<div class="qWord">${nounPrompt(maskPrompt(w.e, w.t, lang), w.t)}</div>`));
+  card.appendChild($(`<div class="qHint">Type the ${d.name} word${w.r?' · <span style="color:var(--warn)">review</span>':''} — accents optional; nouns need their article${CTRL_HINT[lang]||''}</div>`));
+  const wrap=$(`<div style="max-width:560px;margin:0 auto;text-align:center"></div>`);
+  const inp=$(`<input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" style="width:100%;padding:14px 16px;font-size:1.1rem;border-radius:10px;border:2px solid var(--border);background:var(--card2);color:var(--text);outline:none" placeholder="Type here…">`);
+  const accRow=$(`<div style="display:flex;gap:6px;justify-content:center;margin:10px 0;flex-wrap:wrap"></div>`);
+  (ACCENTS[lang]||[]).forEach(chr=>{
+    const b=$(`<button class="small" style="min-width:38px;font-size:1.05rem">${chr}</button>`);
+    const cb=comboFor(lang,chr); if(cb) b.title=cb;
+    b.onclick=()=>{ const s=inp.selectionStart||inp.value.length; inp.value=inp.value.slice(0,s)+chr+inp.value.slice(inp.selectionEnd||s); inp.focus(); inp.setSelectionRange(s+1,s+1); };
+    accRow.appendChild(b);
+  });
+  const go=$(`<button class="primary">Check</button>`);
+  let checked=false;
+  const doCheck=()=>{
+    if(checked) return; checked=true;
+    const ok=vocabAnswerOk(inp.value, w.t);
+    const artMiss=!ok && answerMatches(inp.value, w.t);
+    if(ok){
+      hq.okIdx.push(idx); hq.nOk++;
+      // credit immediately, so quitting mid-pass never loses a correct answer
+      const HH=getHundred(lang);
+      HH.rem=HH.rem.filter(i=>i!==idx);
+      saveHundred(lang,HH);
+    }
+    inp.disabled=true; go.style.display='none';
+    inp.style.borderColor= ok?'var(--good)':'var(--bad)';
+    const fb=$(`<div class="feedback"></div>`);
+    fb.appendChild($(`<div style="font-weight:600;color:${ok?'var(--good)':'var(--bad)'}">${ok?'✔ Correct!':artMiss?'✘ Right word, but the article (gender) is wrong or missing — it\'s “'+w.t+'”':'✘ It\'s “'+w.t+'”'}</div>`));
+    fb.appendChild($(`<div class="expl">${w.t} = ${w.e}${pluralNote(lang, w.t)}</div>`));
+    if(window.speechSynthesis) speak(w.t, d.ttsLang);
+    const next=$(`<button class="primary" style="margin-top:12px">${hq.pos+1<hq.order.length?'Next →':'Finish pass'}</button>`);
+    next.onclick=()=>{
+      hq.pos++;
+      if(hq.pos<hq.order.length){ render(); return; }
+      // ----- pass finished: remove correct answers, advance set/round -----
+      const HH=getHundred(lang);
+      const okSet=new Set(hq.okIdx);
+      HH.rem=HH.rem.filter(i=>!okSet.has(i));
+      const info=hSetInfo(HH);
+      const got=`You got <b>${hq.nOk} / ${hq.order.length}</b> this pass.`;
+      let sum;
+      if(HH.rem.length){
+        sum={headline:'Pass complete', detail:`${got}<br>${HH.rem.length} word${HH.rem.length!==1?'s':''} to go in this set — they repeat until you clear them.`, nextLabel:`Next pass (${HH.rem.length} words) →`};
+      } else {
+        HH.tr++;
+        if(HH.tr>=info.count){
+          if(HH.phase===1){
+            HH.phase=2; HH.tr=0; HH.rem=hSetIdx(HH);
+            sum={headline:'🎉 Round 1 complete!', detail:`${got}<br>All 10 sets cleared. Round 2 combines them into <b>5 sets of 20</b> — same rules, right answers drop out each pass.`, nextLabel:'Start round 2 (20 words) →'};
+          } else {
+            HH.past.push(HH.list.map(x=>x.t));
+            if(HH.past.length>10) HH.past=HH.past.slice(-10);
+            HH.list=[]; HH.phase=0; HH.tr=0; HH.rem=[];
+            sum={headline:'🏆 100-Word Quiz complete!', detail:`${got}<br>All 100 words cleared twice over. These words join the review pool for your next 100-word quiz.`, nextLabel:'Done', finished:true};
+          }
+        } else {
+          HH.rem=hSetIdx(HH);
+          sum={headline:`✅ Set ${HH.tr} cleared!`, detail:`${got}<br>On to set ${HH.tr+1} of ${info.count} (${info.size} ${HH.phase===2?'':'new '}words).`, nextLabel:`Start set ${HH.tr+1} →`};
+        }
+      }
+      saveHundred(lang,HH);
+      state.hq={mode:'pass', ...sum};
+      render();
+    };
+    fb.appendChild(next);
+    card.appendChild(fb);
+    next.focus();
+  };
+  go.onclick=doCheck;
+  inp.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); e.__consumed=true; window.__enterTs=Date.now(); doCheck(); } });
+  wrap.appendChild(inp); wrap.appendChild(accRow); wrap.appendChild(go);
+  card.appendChild(wrap);
+  setTimeout(()=>inp.focus(),50);
+}
+
+// ---------- 50-Word Climb (German & Italian) ----------
+// A 50-word list built like the 100-Word Quiz (40% repeats / 60% new, shared
+// word economy). A round starts with the working set (initially 5 words); if
+// any are wrong, the round ends with a retake offer. Clear them all and new
+// words are introduced one at a time — at least 3, then onward until the first
+// mistake. Every round ends with Retake or Quit. Only words actually SHOWN
+// count as tested (and as "used" for the 100-Word Quiz's pools).
+const CLIMB_LANGS=['german','italian','dutch','spanish','japanese'];
+// Up to 3 climbs can run side by side per language ("Climb 1/2/3"); the list
+// builder keeps their word lists disjoint. Slot 0 uses the original storage
+// key, so a pre-existing single climb becomes Climb 1 untouched.
+const CLIMB_SLOTS=20;
+function climbKey(lang,slot){ return 'lq_climb_'+lang+(slot?'#'+(slot+1):''); }
+function curClimbSlot(){ return typeof state.climbSlot==='number' ? state.climbSlot : 0; }
+function getClimb(lang, slot){
+  if(slot===undefined) slot=curClimbSlot();
+  try{ const o=JSON.parse(localStorage.getItem(climbKey(lang,slot))||'null')||{};
+    return {list:o.list||[], used:o.used||0, tested:o.tested||[], past:o.past||[], n:o.n||0,
+            removed:o.removed||[], lastMiss:o.lastMiss||[], rev:!!o.rev, comp:o.comp||[]};
+  }catch(e){ return {list:[],used:0,tested:[],past:[],n:0,removed:[],lastMiss:[],rev:false,comp:[]}; }
+}
+function climbActive(L){ return L.used - L.removed.filter(i=>i<L.used).length; }
+function saveClimb(lang,L,slot){
+  if(slot===undefined) slot=curClimbSlot();
+  localStorage.setItem(climbKey(lang,slot), JSON.stringify(L));
+}
+// The 🎯 Misses quiz: union of every climb's misses from its LAST completed
+// round. Answering one correctly here clears it; the pool never grows by
+// itself — only fresh misses in the climbs refill it.
+function missPool(lang, sel){
+  const seen=new Set(), pool=[];
+  for(let s=0;s<CLIMB_SLOTS;s++){
+    if(sel && !sel.has(s)) continue;
+    for(const w of getClimb(lang,s).lastMiss){
+      const k=stripArticle(foldTxt(w.t));
+      if(!k||seen.has(k)) continue;
+      seen.add(k); pool.push({t:w.t, e:w.e});
+    }
+  }
+  return pool;
+}
+// Unique words ever shown across all of a language's climbs (current + past)
+function climbTotalTested(lang){
+  const s=new Set();
+  for(const L of climbSlots(lang)){
+    L.tested.forEach(t=>s.add(stripArticle(foldTxt(t))));
+    L.past.flat().forEach(t=>s.add(stripArticle(foldTxt(t))));
+  }
+  return s.size;
+}
+// Reverse checking: ANY single English sense of the gloss is a correct answer
+// ("Guten Tag = hello / good day" accepts either).
+function englishAnswerOk(typed, gloss){
+  const norm=s=>foldTxt(String(s).replace(/\(.*?\)/g,'')).replace(/^(to|a|an|the) /,'').trim();
+  const t=norm(typed);
+  if(!t) return false;
+  return String(gloss).split(/[\/,;]/).some(s=>{
+    const g=norm(s);
+    return g && (g===t || g.replace(/\s+/g,'')===t.replace(/\s+/g,''));
+  });
+}
+function missClear(lang, t){
+  const k=stripArticle(foldTxt(t));
+  for(let s=0;s<CLIMB_SLOTS;s++){
+    const L=getClimb(lang,s);
+    const nl=L.lastMiss.filter(w=>stripArticle(foldTxt(w.t))!==k);
+    if(nl.length!==L.lastMiss.length){ L.lastMiss=nl; saveClimb(lang,L,s); }
+  }
+}
+function climbSlots(lang){ return [...Array(CLIMB_SLOTS).keys()].map(s=>getClimb(lang,s)); }
+// Refresh stored word snapshots from current course data (like migrateDaily),
+// so gloss/article improvements reach climbs and 100-word quizzes already built.
+function refreshStoredWords(lang, arr){
+  const map=new Map();
+  const add=it=>{ if(it&&it.t&&it.e){ const k=stripArticle(foldTxt(it.t)); if(k&&!map.has(k)) map.set(k,it); } };
+  duoFlat(lang).forEach(add);
+  DATA[lang].courses.filter(c=>!c.id.startsWith('duo_')).forEach(c=>c.units.forEach(u=>{ if(u.type==='vocab'&&u.items) u.items.forEach(add); }));
+  customUnitsFor(lang).forEach(u=>(u.items||[]).forEach(add));
+  let ch=false;
+  for(const w of arr){
+    const cur=map.get(stripArticle(foldTxt(w.t)));
+    if(!cur) continue;
+    if(cur.t!==w.t){ w.t=cur.t; ch=true; }
+    if(cur.e!==w.e){ w.e=cur.e; ch=true; }
+  }
+  return ch;
+}
+function migrateMastery(lang){
+  const H=getHundred(lang);
+  if(H.list.length && refreshStoredWords(lang,H.list)) saveHundred(lang,H);
+  for(let s=0;s<CLIMB_SLOTS;s++){
+    const L=getClimb(lang,s);
+    if(!L.list.length) continue;
+    const before=JSON.stringify(L.tested);
+    let ch=refreshStoredWords(lang,L.list);
+    if(L.lastMiss.length) ch=refreshStoredWords(lang,L.lastMiss)||ch;
+    const m2=new Map(L.list.map(x=>[stripArticle(foldTxt(x.t)),x.t]));
+    L.tested=[...new Set(L.tested.map(t=>m2.get(stripArticle(foldTxt(t)))||t))];
+    if(ch||JSON.stringify(L.tested)!==before) saveClimb(lang,L,s);
+  }
+  climbDedupe(lang);
+}
+// Safety net: no two climbs may hold the same word. The list builder already
+// guarantees this at build time; this repairs any duplicate by swapping it
+// for a fresh word no quiz is using.
+function climbDedupe(lang){
+  const key=t=>stripArticle(foldTxt(t));
+  const slots=[...Array(CLIMB_SLOTS).keys()].map(s=>getClimb(lang,s));
+  const usedAll=new Set();
+  for(const L of slots) L.list.forEach(x=>usedAll.add(key(x.t)));
+  const H=getHundred(lang);
+  H.list.forEach(x=>usedAll.add(key(x.t)));
+  H.past.flat().forEach(t=>usedAll.add(key(t)));
+  for(const L of slots){ L.past.flat().forEach(t=>usedAll.add(key(t))); L.tested.forEach(t=>usedAll.add(key(t))); }
+  Object.keys(getDaily(lang).stats).forEach(t=>usedAll.add(key(t)));
+  const learned=getLearned(lang);
+  const pool=duoFlat(lang).filter(it=>it&&it.t&&it.e&&!learned.has(it.t));
+  const seen=new Set(); let pi=0;
+  for(let s=0;s<CLIMB_SLOTS;s++){
+    const L=slots[s]; let ch=false;
+    for(let i=0;i<L.list.length;i++){
+      const k=key(L.list[i].t);
+      if(!seen.has(k)){ seen.add(k); continue; }
+      while(pi<pool.length && (usedAll.has(key(pool[pi].t))||seen.has(key(pool[pi].t)))) pi++;
+      if(pi>=pool.length) return;
+      const nw=pool[pi++];
+      L.list[i]={t:nw.t, e:nw.e};
+      seen.add(key(nw.t)); usedAll.add(key(nw.t));
+      ch=true;
+    }
+    if(ch) saveClimb(lang,L,s);
+  }
+}
+function climbMarkTested(lang, t){
+  const L=getClimb(lang);
+  if(!L.tested.includes(t)){ L.tested.push(t); saveClimb(lang,L); }
+}
+function startClimbRound(){
+  const lang=state.climbLang;
+  let L=getClimb(lang);
+  if(!L.used){ state.lq=null; render(); return; }
+  let queue=shuffle([...Array(L.used).keys()].filter(i=>!L.removed.includes(i)));
+  if(!queue.length){                      // every set word removed: deal fresh ones
+    if(L.used>=50){ state.lq=null; render(); return; }
+    L.used++; saveClimb(lang,L);
+    queue=[L.used-1];
+  }
+  state.lq={mode:'q', phase:'set', queue, pos:0, mistakes:0, nOk:0, added:0, extIdx:-1, wrong:[]};
+  render();
+}
+// practice round over ONLY this climb's last-round misses (does not climb)
+function startClimbMissRound(){
+  const lang=state.climbLang, L=getClimb(lang);
+  if(!L.lastMiss.length){ state.lq=null; render(); return; }
+  state.lq={mode:'q', phase:'missonly', items:shuffle([...L.lastMiss]), queue:[], pos:0,
+            mistakes:0, nOk:0, added:0, extIdx:-1, wrong:[]};
+  render();
+}
+function makeClimbSlotRow(lang, current){
+  const row=$(`<div class="row" style="margin-bottom:14px"></div>`);
+  for(let s=0;s<CLIMB_SLOTS;s++){
+    const Ls=getClimb(lang,s);
+    const lbl=Ls.used?`${Ls.used}/50${Ls.lastMiss.length?` · 🎯${Ls.lastMiss.length}`:''}`:(Ls.n?`${Ls.n} done`:'empty');
+    const b=$(`<button style="flex:1;min-width:92px;padding:9px 6px${s===current?';border:2px solid var(--accent)':''}">Climb ${s+1}${Ls.rev?' 🔄':''}<br><span class="pill">${lbl}</span></button>`);
+    b.onclick=()=>{ state.climbSlot=s; state.lq=null; render(); };
+    row.appendChild(b);
+  }
+  const mp=missPool(lang);
+  const mb=$(`<button style="flex:1;min-width:92px;padding:9px 6px${current==='miss'?';border:2px solid var(--accent)':''}">🎯 Misses<br><span class="pill">${mp.length} word${mp.length!==1?'s':''}</span></button>`);
+  mb.onclick=()=>{ state.climbSlot='miss'; state.lq=null; render(); };
+  row.appendChild(mb);
+  return row;
+}
+function renderClimb(){
+  const lang=state.climbLang, d=DATA[lang];
+  if(!state.lq) migrateMastery(lang);
+  if(state.climbSlot==='miss'){ renderClimbMisses(lang, DATA[lang]); return; }
+  const L=getClimb(lang);
+  const lq=state.lq;
+  if(!lq){
+    // ----- overview -----
+    app.appendChild($(`<span class="backlink" id="back">← Home</span>`));
+    app.querySelector('#back').onclick=()=>{ state.screen='home'; render(); };
+    app.appendChild($(`<h1>${d.flag} 🪜 50-Word Climb</h1>`));
+    app.appendChild($(`<div class="sub">Start with 5 words. Answer them all correctly and the quiz keeps dealing new words — at least 3, then onward until your first mistake. Miss any and you can retake the set. Climb until all 50 are cleared in a single run. 40% review words, 60% new; words tested here also count as used for the 100-Word Quiz. Up to ${CLIMB_SLOTS} climbs can run side by side — their word lists never overlap, so switch whenever you lose momentum.</div>`));
+    app.appendChild(makeClimbSlotRow(lang, curClimbSlot()));
+    {
+      const nAct=[...Array(CLIMB_SLOTS).keys()].filter(s=>getClimb(lang,s).list.length).length;
+      if(nAct>=2){
+        const sh=$(`<button class="small" style="margin-bottom:14px">🔀 Shuffle words across all ${nAct} climbs</button>`);
+        sh.onclick=()=>{ if(confirm(`Redistribute the words of all ${nAct} active climbs randomly among them? Progress counts, tested words, removals and misses travel with their words.`)){
+          shuffleClimbs(lang); state.lq=null; render(); } };
+        app.appendChild(sh);
+      }
+    }
+    const card=$(`<div class="card"></div>`);
+    if(!L.used){
+      card.appendChild($(`<div style="line-height:1.6">${L.n?`🏁 Completed so far: <b>${L.n}</b>.<br>`:''}${climbTotalTested(lang)?`<span class="pill">${climbTotalTested(lang)} tested across all climbs</span><br>`:''}Ready for a ${L.n?'new':''} climb? The 50-word list is built when you start.</div>`));
+      const go=$(`<button class="primary" style="margin-top:14px">▶ Start ${L.n?'a new':'the'} climb</button>`);
+      go.onclick=()=>{ const LL=getClimb(lang); LL.list=buildMasteryList(lang,50); LL.used=5; LL.tested=[];
+        saveClimb(lang,LL); state.climbLang=lang; startClimbRound(); };
+      card.appendChild(go);
+    } else {
+      card.appendChild($(`<div style="line-height:1.8">
+        <span class="pill">Climbed to ${L.used} / 50</span>
+        <span class="pill">${L.tested.length} word${L.tested.length!==1?'s':''} tested in this climb</span>
+        ${L.removed.length?`<span class="pill">${L.removed.length} removed</span>`:''}
+        <span class="pill">${climbTotalTested(lang)} tested across all climbs</span></div>`));
+      const go=$(`<button class="primary" style="margin-top:14px">▶ Continue — run the set (${climbActive(L)} words)</button>`);
+      go.onclick=startClimbRound;
+      card.appendChild(go);
+      const rv=$(`<button class="small" style="margin-top:14px;margin-left:10px">${L.rev?'🔄 Reverse mode ON — type English':'➡ Normal mode — type '+d.name} (click to switch)</button>`);
+      rv.onclick=()=>{ const LL=getClimb(lang); LL.rev=!LL.rev; saveClimb(lang,LL); render(); };
+      card.appendChild(rv);
+      if(L.removed.length){
+        const rc=$(`<div style="margin-top:16px"></div>`);
+        rc.appendChild($(`<div style="color:var(--muted);font-size:.9rem;margin-bottom:6px">Removed words — click one to put it back in the climb:</div>`));
+        const row=$(`<div style="display:flex;gap:6px;flex-wrap:wrap"></div>`);
+        for(const i of [...L.removed].sort((a,b)=>a-b)){
+          const w=L.list[i]; if(!w) continue;
+          const b=$(`<button class="small">↩ ${w.t}</button>`);
+          b.title=w.e;
+          b.onclick=()=>{ const LL=getClimb(lang); LL.removed=LL.removed.filter(x=>x!==i); saveClimb(lang,LL); render(); };
+          row.appendChild(b);
+        }
+        if(L.removed.length>1){
+          const all=$(`<button class="small" style="border-color:var(--accent)">↩ Re-add all (${L.removed.length})</button>`);
+          all.onclick=()=>{ const LL=getClimb(lang); LL.removed=[]; saveClimb(lang,LL); render(); };
+          row.appendChild(all);
+        }
+        rc.appendChild(row);
+        card.appendChild(rc);
+      }
+      const ab=$(`<button class="small" style="margin-top:14px;margin-left:10px">✕ Abandon this climb</button>`);
+      ab.onclick=()=>{ if(confirm('Abandon this climb? Words already tested stay counted as used; the rest are released.')){
+        const LL=getClimb(lang);
+        if(LL.tested.length){ LL.past.push([...LL.tested]); if(LL.past.length>10) LL.past=LL.past.slice(-10); }
+        LL.list=[]; LL.used=0; LL.tested=[]; LL.removed=[]; LL.lastMiss=[]; saveClimb(lang,LL); render(); } };
+      card.appendChild(ab);
+    }
+    app.appendChild(card);
+    return;
+  }
+  if(lq.mode==='end'){
+    // ----- round end: retake / quit (or completion) -----
+    const card=$(`<div class="card" style="text-align:center"></div>`);
+    card.appendChild($(`<h2 style="margin-top:0">${lq.headline}</h2>`));
+    card.appendChild($(`<div style="line-height:1.7">${lq.detail}</div>`));
+    if(lq.complete){
+      const btn=$(`<button class="primary" style="margin-top:16px">Done</button>`);
+      btn.onclick=()=>{ state.lq=null; render(); };
+      card.appendChild(btn);
+      setTimeout(()=>btn.focus(),50);
+    } else {
+      const LNow=getClimb(lang);
+      const room=Math.max(0, 50-LNow.used);
+      const addRow=$(`<div style="margin-top:16px">Add <select id="addN" style="padding:6px 10px;border-radius:8px;border:2px solid var(--border);background:var(--card2);color:var(--text)"></select> new word${room?'s':''} for the next pass</div>`);
+      const sel=addRow.querySelector('#addN');
+      for(let i=0;i<=Math.min(10,room);i++) sel.appendChild($(`<option value="${i}">${i}</option>`));
+      const rt=$(`<button class="primary" style="margin-top:16px">🔁 Retake — ${climbActive(LNow)} words</button>`);
+      sel.onchange=()=>{ rt.textContent=`🔁 Retake — ${climbActive(LNow)+ +sel.value} words`; };
+      rt.onclick=()=>{
+        const k=+sel.value;
+        if(k>0){ const LL=getClimb(lang); LL.used=Math.min(50, LL.used+k); saveClimb(lang,LL); }
+        startClimbRound();
+      };
+      const lm=LNow.lastMiss.length;
+      let mo=null;
+      if(lm){
+        mo=$(`<button class="primary" style="margin-top:16px;margin-left:10px;background:var(--card2);color:var(--text);border:2px solid var(--accent)">🎯 Only the ${lm} missed</button>`);
+        mo.onclick=startClimbMissRound;
+      }
+      const sw=$(`<button class="small" style="margin-top:16px;margin-left:10px">🪜 Other climbs</button>`);
+      sw.onclick=()=>{ state.lq=null; render(); };
+      const qt=$(`<button class="small" style="margin-top:16px;margin-left:10px">✕ Quit for now</button>`);
+      qt.onclick=()=>{ state.lq=null; state.screen='home'; render(); };
+      card.appendChild(addRow);
+      if(LNow.removed.length){
+        const ra=$(`<button class="small" style="margin-top:10px">↩ Re-add the ${LNow.removed.length} removed word${LNow.removed.length!==1?'s':''}</button>`);
+        ra.onclick=()=>{ const LL=getClimb(lang); LL.removed=[]; saveClimb(lang,LL); render(); };
+        card.appendChild($(`<div></div>`)).appendChild(ra);
+      }
+      card.appendChild(rt); if(mo) card.appendChild(mo);
+      card.appendChild(sw); card.appendChild(qt);
+      setTimeout(()=>rt.focus(),50);
+    }
+    app.appendChild(card);
+    return;
+  }
+  // ----- question -----
+  const isMiss = lq.phase==='missonly';
+  const rev = !!L.rev;                      // 🔄 reverse mode: show target, type English
+  const idx = isMiss ? -1 : (lq.phase==='set' ? lq.queue[lq.pos] : lq.extIdx);
+  const w = isMiss ? lq.items[lq.pos] : L.list[idx];
+  const posLabel = isMiss ? `🎯 Missed ${lq.pos+1} / ${lq.items.length}`
+                 : lq.phase==='set' ? `Word ${lq.pos+1} / ${lq.queue.length}` : `🆕 New word +${lq.added+1}`;
+  app.appendChild($(`<div class="topnav"><span class="backlink" id="quit">✕ Pause</span>
+    <span style="color:var(--muted);font-size:.9rem">${d.flag} Climb ${(state.climbSlot||0)+1} · at ${L.used}/50</span></div>`));
+  app.querySelector('#quit').onclick=()=>{ state.lq=null; render(); };
+  app.appendChild($(`<div class="qTop"><span>${posLabel}</span><span>✓ ${lq.nOk}</span></div>`));
+  const bar=$(`<div class="barOuter"><div class="barInner"></div></div>`);
+  bar.firstElementChild.style.width=((isMiss? lq.pos/lq.items.length : lq.phase==='set'? lq.pos/lq.queue.length : 1)*100)+'%';
+  app.appendChild(bar);
+  const card=$(`<div class="card"></div>`);
+  app.appendChild(card);
+  card.appendChild($(`<div class="qWord">${rev ? jpDisp(w.t) : nounPrompt(maskPrompt(w.e, w.t, lang), w.t)}</div>`));
+  card.appendChild($(`<div class="qHint">${rev ? 'Type the English — any one translation counts' : lang==='japanese' ? `Type the Japanese word in romaji — it becomes hiragana${w.r?' · <span style="color:var(--warn)">review</span>':''}${lq.phase==='ext'?' · <span style="color:var(--good)">keep the streak!</span>':''}` : `Type the ${d.name} word${w.r?' · <span style="color:var(--warn)">review</span>':''}${lq.phase==='ext'?' · <span style="color:var(--good)">keep the streak!</span>':''} — accents optional; nouns need their article${CTRL_HINT[lang]||''}`}</div>`));
+  if(rev && window.speechSynthesis){
+    const sp=$(`<button class="speakBtn" title="Play audio">🔊</button>`);
+    sp.onclick=()=>speak(w.t, d.ttsLang);
+    card.appendChild(sp);
+    setTimeout(()=>speak(w.t, d.ttsLang), 250);
+  }
+  const wrap=$(`<div style="max-width:560px;margin:0 auto;text-align:center"></div>`);
+  const inp=$(`<input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" style="width:100%;padding:14px 16px;font-size:1.1rem;border-radius:10px;border:2px solid var(--border);background:var(--card2);color:var(--text);outline:none" placeholder="Type here…">`);
+  if(!rev) jpBind(inp, lang);
+  const accRow=$(`<div style="display:flex;gap:6px;justify-content:center;margin:10px 0;flex-wrap:wrap"></div>`);
+  (rev ? [] : ACCENTS[lang]||[]).forEach(chr=>{
+    const b=$(`<button class="small" style="min-width:38px;font-size:1.05rem">${chr}</button>`);
+    const cb=comboFor(lang,chr); if(cb) b.title=cb;
+    b.onclick=()=>{ const s=inp.selectionStart||inp.value.length; inp.value=inp.value.slice(0,s)+chr+inp.value.slice(inp.selectionEnd||s); inp.focus(); inp.setSelectionRange(s+1,s+1); };
+    accRow.appendChild(b);
+  });
+  const go=$(`<button class="primary">Check</button>`);
+  let checked=false;
+  const doCheck=()=>{
+    if(checked) return; checked=true;
+    climbMarkTested(lang, w.t);
+    const ok = rev ? englishAnswerOk(inp.value, w.e) : vocabAnswerOk(inp.value, w.t);
+    const artMiss = !rev && !ok && answerMatches(inp.value, w.t);
+    if(ok) lq.nOk++;
+    else { lq.mistakes++; if(!lq.wrong.some(x=>x.t===w.t)) lq.wrong.push({t:w.t, e:w.e}); }
+    inp.disabled=true; go.style.display='none';
+    inp.style.borderColor= ok?'var(--good)':'var(--bad)';
+    const fb=$(`<div class="feedback"></div>`);
+    fb.appendChild($(`<div style="font-weight:600;color:${ok?'var(--good)':'var(--bad)'}">${ok?'✔ Correct!':rev?'✘ It means “'+w.e+'”':artMiss?'✘ Right word, but the article (gender) is wrong or missing — it\'s “'+w.t+'”':'✘ It\'s “'+jpDisp(w.t)+'”'}</div>`));
+    fb.appendChild($(`<div class="expl">${jpDisp(w.t)} = ${w.e}${pluralNote(lang, w.t)}</div>`));
+    if(!rev && window.speechSynthesis) speak(w.t, d.ttsLang);
+    const endRound=()=>{
+      const LL=getClimb(lang);
+      LL.lastMiss=[...lq.wrong];           // feeds the 🎯 Misses quiz
+      saveClimb(lang,LL);
+      const asked=(lq.phase==='set'? lq.pos+1 : lq.queue.length+lq.added+1);
+      const got=`You got <b>${lq.nOk} / ${asked}</b> this round.`;
+      if(lq.mistakes===0 && LL.used>=50){
+        LL.past.push([...LL.tested]); if(LL.past.length>10) LL.past=LL.past.slice(-10);
+        // completed sets count as mastered (past alone can't — abandons land there too)
+        LL.comp=(LL.comp||[]).concat([[...LL.tested]]);
+        LL.list=[]; LL.used=0; LL.tested=[]; LL.removed=[]; LL.lastMiss=[]; LL.n=LL.n+1; saveClimb(lang,LL);
+        state.lq={mode:'end', complete:true, headline:'🏆 Climb complete!',
+          detail:`${got}<br>All 50 words cleared in a single run. They join the review pool for future quizzes.`};
+      } else if(lq.mistakes===0){
+        state.lq={mode:'end', headline:'✅ Perfect round!',
+          detail:`${got}<br>Climbed to <b>${LL.used}</b> of 50 — the new words join your set.`};
+      } else {
+        const extMiss = lq.phase==='ext' && !ok;   // previous set was fully cleared
+        const joined = lq.added + (extMiss?1:0);
+        state.lq={mode:'end', headline:'Round over',
+          detail:`${got}${joined?`<br>+${joined} new word${joined!==1?'s':''} tested and added to the set.`:''}${extMiss&&LL.used>joined+lq.queue.length?`<br>+3 fresh words queued for the next round.`:''}<br>The set stands at <b>${climbActive(LL)}</b> word${climbActive(LL)!==1?'s':''} — clear them all in one run to climb.`};
+      }
+      render();
+    };
+    const isLastOfSet = lq.phase==='set' && lq.pos+1>=lq.queue.length;
+    let label='Next →';
+    if(isMiss){ if(lq.pos+1>=lq.items.length) label='Finish round'; }
+    else if(lq.phase==='ext' && !ok) label='Finish round';
+    else if(isLastOfSet && lq.mistakes>0) label='Finish round';
+    const next=$(`<button class="primary" style="margin-top:12px">${label}</button>`);
+    next.onclick=()=>{
+      if(isMiss){
+        lq.pos++;
+        if(lq.pos<lq.items.length){ render(); return; }
+        const LL=getClimb(lang);
+        LL.lastMiss=[...lq.wrong]; saveClimb(lang,LL);   // the still-missed subset
+        state.lq={mode:'end',
+          headline: lq.wrong.length ? '🎯 Missed-words round done' : '🎉 All previous misses cleared!',
+          detail:`You got <b>${lq.nOk} / ${lq.items.length}</b>.${lq.wrong.length?`<br><b>${lq.wrong.length}</b> still missed.`:''}<br>This was practice — climbing still needs the full set in one run.`};
+        render(); return;
+      }
+      if(lq.phase==='set'){
+        lq.pos++;
+        if(lq.pos<lq.queue.length){ render(); return; }
+        if(lq.mistakes>0){ endRound(); return; }
+        const LL=getClimb(lang);
+        if(LL.used>=50){ endRound(); return; }       // full board cleared
+        LL.used++; saveClimb(lang,LL);               // introduce first new word
+        lq.phase='ext'; lq.extIdx=LL.used-1;
+        render(); return;
+      }
+      // ext phase
+      if(!ok){
+        // the old set was fully cleared before this miss on a NEW word:
+        // queue 3 additional not-yet-seen words into the next round's set
+        const LL=getClimb(lang);
+        LL.used=Math.min(50, LL.used+3); saveClimb(lang,LL);
+        endRound(); return;
+      }
+      lq.added++;
+      const LL=getClimb(lang);
+      if(LL.used>=50){ endRound(); return; }         // reached the top, all correct
+      LL.used++; saveClimb(lang,LL);
+      lq.extIdx=LL.used-1;
+      render();
+    };
+    fb.appendChild(next);
+    if(ok){
+      // "I know this one" — drop the word from this climb and move on
+      const rm=$(`<button class="small" style="margin-top:12px;margin-left:10px">🗑 Remove word & continue</button>`);
+      rm.onclick=()=>{
+        const LL=getClimb(lang);
+        const ri = isMiss ? LL.list.findIndex(x=>x.t===w.t) : idx;
+        if(ri>=0 && !LL.removed.includes(ri)) LL.removed.push(ri);
+        if(isMiss) LL.lastMiss=LL.lastMiss.filter(x=>x.t!==w.t);
+        saveClimb(lang,LL);
+        next.onclick();
+      };
+      fb.appendChild(rm);
+    }
+    card.appendChild(fb);
+    next.focus();
+  };
+  go.onclick=doCheck;
+  inp.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); e.__consumed=true; window.__enterTs=Date.now(); doCheck(); } });
+  wrap.appendChild(inp); wrap.appendChild(accRow); wrap.appendChild(go);
+  card.appendChild(wrap);
+  setTimeout(()=>inp.focus(),50);
+}
+
+// 🔀 Shuffle: redistribute the words of ALL active climbs across those same
+// climbs. Each climb keeps its size, progress count and reverse flag; each
+// word travels with its status (tested / removed / missed). Lists stay
+// disjoint because the pools are partitioned.
+function shuffleClimbs(lang){
+  const key=t=>stripArticle(foldTxt(t));
+  const act=[];
+  for(let s=0;s<CLIMB_SLOTS;s++){
+    const L=getClimb(lang,s);
+    if(L.list.length) act.push([s,L]);
+  }
+  if(act.length<2) return false;
+  const intro=[], unseen=[];
+  for(const [s,L] of act){
+    const testedSet=new Set(L.tested.map(key));
+    const missSet=new Set(L.lastMiss.map(w=>key(w.t)));
+    const remSet=new Set(L.removed);
+    L.list.forEach((w,i)=>{
+      const rec={t:w.t, e:w.e, r:w.r, tested:testedSet.has(key(w.t)), removed:remSet.has(i), missed:missSet.has(key(w.t))};
+      (i<L.used?intro:unseen).push(rec);
+    });
+  }
+  const si=shuffle(intro), su=shuffle(unseen);
+  let pi=0, pu=0;
+  for(const [s,L] of act){
+    const nIntro=L.used, nUnseen=L.list.length-L.used;
+    const mine=[...si.slice(pi,pi+nIntro), ...su.slice(pu,pu+nUnseen)];
+    pi+=nIntro; pu+=nUnseen;
+    L.list=mine.map(w=>w.r?{t:w.t,e:w.e,r:1}:{t:w.t,e:w.e});
+    L.tested=mine.filter(w=>w.tested).map(w=>w.t);
+    L.removed=mine.map((w,i)=>w.removed?i:-1).filter(i=>i>=0);
+    L.lastMiss=mine.filter(w=>w.missed).map(w=>({t:w.t,e:w.e}));
+    saveClimb(lang,L,s);
+  }
+  return true;
+}
+
+// 🎯 Misses quiz view: repeats only the collected last-round misses of the
+// five climbs; correct answers clear a word everywhere; never deals new words.
+function renderClimbMisses(lang, d){
+  const ms=state.lq;
+  if(!ms){
+    app.appendChild($(`<span class="backlink" id="back">← Home</span>`));
+    app.querySelector('#back').onclick=()=>{ state.screen='home'; render(); };
+    app.appendChild($(`<h1>${d.flag} 🎯 Missed Words</h1>`));
+    app.appendChild($(`<div class="sub">Every word you missed in the <b>last round</b> of each climb lands here. Answer one correctly and it leaves the list — this quiz only repeats your misses, it never adds new words. Pick which climbs to draw from below.</div>`));
+    app.appendChild(makeClimbSlotRow(lang,'miss'));
+    // which climbs to include (chips; default = all with misses)
+    const withMiss=[...Array(CLIMB_SLOTS).keys()].filter(s=>getClimb(lang,s).lastMiss.length);
+    if(state.missSelLang!==lang || !(state.missSel instanceof Set)){ state.missSel=new Set(withMiss); state.missSelLang=lang; }
+    state.missSel=new Set([...state.missSel].filter(s=>withMiss.includes(s)));
+    const sel=state.missSel;
+    const card=$(`<div class="card"></div>`);
+    if(!withMiss.length){
+      card.appendChild($(`<div style="line-height:1.6">🎉 Nothing here — no words were missed in your climbs' latest rounds.</div>`));
+    } else {
+      if(withMiss.length>1){
+        const chipRow=$(`<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px"></div>`);
+        for(const s of withMiss){
+          const n=getClimb(lang,s).lastMiss.length;
+          const c=$(`<button class="small" style="${sel.has(s)?'border:2px solid var(--accent);color:var(--text)':'opacity:.55'}">Climb ${s+1} · ${n}</button>`);
+          c.onclick=()=>{ sel.has(s)?sel.delete(s):sel.add(s); render(); };
+          chipRow.appendChild(c);
+        }
+        const all=$(`<button class="small">All</button>`);
+        all.onclick=()=>{ state.missSel=new Set(withMiss); render(); };
+        const none=$(`<button class="small">None</button>`);
+        none.onclick=()=>{ state.missSel=new Set(); render(); };
+        chipRow.appendChild(all); chipRow.appendChild(none);
+        card.appendChild(chipRow);
+      }
+      const pool=missPool(lang, sel);
+      card.appendChild($(`<div style="line-height:1.8"><span class="pill">${pool.length} missed word${pool.length!==1?'s':''} selected</span></div>`));
+      if(pool.length){
+        const go=$(`<button class="primary" style="margin-top:14px">▶ Quiz the missed words (${pool.length})</button>`);
+        go.onclick=()=>{ state.lq={mode:'q', miss:true, items:shuffle(missPool(lang, sel)), pos:0, nOk:0}; render(); };
+        card.appendChild(go);
+      } else {
+        card.appendChild($(`<div style="margin-top:10px;color:var(--muted)">Select at least one climb.</div>`));
+      }
+    }
+    app.appendChild(card);
+    return;
+  }
+  if(ms.end){
+    const remaining=missPool(lang, state.missSel instanceof Set ? state.missSel : undefined).length;
+    const card=$(`<div class="card" style="text-align:center"></div>`);
+    card.appendChild($(`<h2 style="margin-top:0">${remaining?'Round done':'🎉 All misses cleared!'}</h2>`));
+    card.appendChild($(`<div style="line-height:1.7">You got <b>${ms.nOk} / ${ms.items.length}</b>.${remaining?`<br><b>${remaining}</b> word${remaining!==1?'s':''} still missed.`:''}</div>`));
+    if(remaining){
+      const rt=$(`<button class="primary" style="margin-top:16px">🔁 Retake the remaining ${remaining}</button>`);
+      rt.onclick=()=>{ state.lq={mode:'q', miss:true, items:shuffle(missPool(lang, state.missSel instanceof Set ? state.missSel : undefined)), pos:0, nOk:0}; render(); };
+      card.appendChild(rt);
+    }
+    const bk=$(`<button class="small" style="margin-top:16px;margin-left:10px">← Back</button>`);
+    bk.onclick=()=>{ state.lq=null; render(); };
+    card.appendChild(bk);
+    app.appendChild(card);
+    setTimeout(()=>{ (card.querySelector('.primary')||bk).focus(); },50);
+    return;
+  }
+  ipQuestion({ lang, header:`🎯 Missed words`, prompt:`Type the ${d.name} word — accents optional; nouns need their article`,
+    count:ms.items.length, pos:ms.pos, nOk:ms.nOk, item:ms.items[ms.pos],
+    onQuit:()=>{ state.lq=null; render(); },
+    onAnswered:ok=>{
+      if(ok){ ms.nOk++; missClear(lang, ms.items[ms.pos].t); }
+      ms.pos++;
+      if(ms.pos<ms.items.length){ render(); return; }
+      ms.end=true; render();
+    }});
+}
+
+// ---------- Idioms Test & Useful Phrases (German/Italian/Dutch) ----------
+// Idioms: typed, worked through in sets of 10; the reveal shows meaning,
+// literal translation and a usage hint. Phrases: pick a topic (restaurant,
+// directions, …), get 10 typed phrases from it.
+const IP_LANGS=['german','italian','dutch','spanish'];
+function idiomList(lang){ return (window.QUIZ_IDIOMS||{})[lang]||[]; }
+function phraseTopics(lang){ return (window.QUIZ_PHRASES||{})[lang]||[]; }
+function getIdiomProg(lang){ try{ const o=JSON.parse(localStorage.getItem('lq_idiomtest_'+lang)||'{}'); return {next:o.next||0, best:o.best||{}}; }catch(e){ return {next:0,best:{}}; } }
+function saveIdiomProg(lang,p){ localStorage.setItem('lq_idiomtest_'+lang, JSON.stringify(p)); }
+function getPhraseProg(lang){ try{ return JSON.parse(localStorage.getItem('lq_phrases_'+lang)||'{}'); }catch(e){ return {}; } }
+function savePhraseProg(lang,p){ localStorage.setItem('lq_phrases_'+lang, JSON.stringify(p)); }
+
+// shared typed-question card for both quizzes; cfg={lang, header, count, item,
+// pos, extraFeedback(item)->html, onAnswered(ok)}
+function ipQuestion(cfg){
+  const d=DATA[cfg.lang];
+  app.appendChild($(`<div class="topnav"><span class="backlink" id="quit">✕ Quit</span>
+    <span style="color:var(--muted);font-size:.9rem">${d.flag} ${cfg.header}</span></div>`));
+  app.querySelector('#quit').onclick=cfg.onQuit;
+  app.appendChild($(`<div class="qTop"><span>${cfg.pos+1} / ${cfg.count}</span><span>✓ ${cfg.nOk}</span></div>`));
+  const bar=$(`<div class="barOuter"><div class="barInner"></div></div>`);
+  bar.firstElementChild.style.width=(cfg.pos/cfg.count*100)+'%';
+  app.appendChild(bar);
+  const card=$(`<div class="card"></div>`);
+  app.appendChild(card);
+  const w=cfg.item;
+  card.appendChild($(`<div class="qWord" style="font-size:1.5rem">${w.e}</div>`));
+  card.appendChild($(`<div class="qHint">${cfg.prompt}${CTRL_HINT[cfg.lang]||''}</div>`));
+  const wrap=$(`<div style="max-width:640px;margin:0 auto;text-align:center"></div>`);
+  const inp=$(`<input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" style="width:100%;padding:14px 16px;font-size:1.1rem;border-radius:10px;border:2px solid var(--border);background:var(--card2);color:var(--text);outline:none" placeholder="Type here…">`);
+  jpBind(inp, cfg.lang);
+  const accRow=$(`<div style="display:flex;gap:6px;justify-content:center;margin:10px 0;flex-wrap:wrap"></div>`);
+  (ACCENTS[cfg.lang]||[]).forEach(chr=>{
+    const b=$(`<button class="small" style="min-width:38px;font-size:1.05rem">${chr}</button>`);
+    const cb=comboFor(cfg.lang,chr); if(cb) b.title=cb;
+    b.onclick=()=>{ const s=inp.selectionStart||inp.value.length; inp.value=inp.value.slice(0,s)+chr+inp.value.slice(inp.selectionEnd||s); inp.focus(); inp.setSelectionRange(s+1,s+1); };
+    accRow.appendChild(b);
+  });
+  const go=$(`<button class="primary">Check</button>`);
+  let checked=false;
+  const doCheck=()=>{
+    if(checked) return; checked=true;
+    const ok=vocabAnswerOk(inp.value, w.t);
+    inp.disabled=true; go.style.display='none';
+    inp.style.borderColor= ok?'var(--good)':'var(--bad)';
+    const fb=$(`<div class="feedback"></div>`);
+    fb.appendChild($(`<div style="font-weight:600;color:${ok?'var(--good)':'var(--bad)'}">${ok?'✔ Correct!':'✘ It\'s “'+jpDisp(w.t)+'”'}</div>`));
+    fb.appendChild($(`<div class="expl" style="font-size:1.05rem">${jpDisp(w.t)} = ${w.e}</div>`));
+    if(cfg.extraFeedback) fb.appendChild($(`<div>${cfg.extraFeedback(w)}</div>`));
+    if(window.speechSynthesis) speak(w.t, d.ttsLang);
+    const next=$(`<button class="primary" style="margin-top:12px">${cfg.pos+1<cfg.count?'Next →':'Finish'}</button>`);
+    next.onclick=()=>cfg.onAnswered(ok);
+    fb.appendChild(next);
+    card.appendChild(fb);
+    next.focus();
+  };
+  go.onclick=doCheck;
+  inp.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); e.__consumed=true; window.__enterTs=Date.now(); doCheck(); } });
+  wrap.appendChild(inp); wrap.appendChild(accRow); wrap.appendChild(go);
+  card.appendChild(wrap);
+  setTimeout(()=>inp.focus(),50);
+}
+
+function renderIdioms(){
+  const lang=state.ipLang, d=DATA[lang];
+  const list=idiomList(lang);
+  const sets=Math.ceil(list.length/10);
+  const p=getIdiomProg(lang);
+  const iq=state.iq;
+  if(!iq){
+    app.appendChild($(`<span class="backlink" id="back">← Home</span>`));
+    app.querySelector('#back').onclick=()=>{ state.screen='home'; render(); };
+    app.appendChild($(`<h1>${d.flag} 🗣 Idioms Test</h1>`));
+    app.appendChild($(`<div class="sub"><b>${list.length} idioms</b> in ${sets} sets of 10. Type the ${d.name} idiom for the English meaning; the answer shows the literal translation and a usage hint. Finish a set and move on to the next.</div>`));
+    const card=$(`<div class="card"></div>`);
+    const cur=Math.min(p.next, sets-1);
+    const go=$(`<button class="primary">▶ ${p.next>=sets?'All sets done — replay set 1':'Start set '+(cur+1)+' of '+sets}</button>`);
+    go.onclick=()=>{ const set=p.next>=sets?0:cur; startIdiomSet(set); };
+    card.appendChild(go);
+    const grid=$(`<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px"></div>`);
+    for(let i=0;i<sets;i++){
+      const n=Math.min(10, list.length-i*10);
+      const b=$(`<button class="small">Set ${i+1}${p.best[i]!=null?` · ${p.best[i]}/${n}`:''}</button>`);
+      if(p.best[i]===n) b.style.color='var(--good)';
+      b.onclick=()=>startIdiomSet(i);
+      grid.appendChild(b);
+    }
+    card.appendChild(grid);
+    app.appendChild(card);
+    return;
+  }
+  if(iq.end){
+    const n=iq.items.length;
+    const card=$(`<div class="card" style="text-align:center"></div>`);
+    card.appendChild($(`<h2 style="margin-top:0">${iq.nOk===n?'🎉 Set '+(iq.set+1)+' — perfect!':'Set '+(iq.set+1)+' done'}</h2>`));
+    card.appendChild($(`<div style="line-height:1.7">You got <b>${iq.nOk} / ${n}</b>.</div>`));
+    if(iq.set+1<sets){
+      const nx=$(`<button class="primary" style="margin-top:16px">Next set (${iq.set+2} of ${sets}) →</button>`);
+      nx.onclick=()=>startIdiomSet(iq.set+1);
+      card.appendChild(nx);
+    } else card.appendChild($(`<div style="margin-top:12px;color:var(--good)">🏆 That was the last set!</div>`));
+    const rt=$(`<button class="small" style="margin-top:16px;margin-left:10px">🔁 Retake this set</button>`);
+    rt.onclick=()=>startIdiomSet(iq.set);
+    const hm=$(`<button class="small" style="margin-top:16px;margin-left:10px">← Idioms home</button>`);
+    hm.onclick=()=>{ state.iq=null; render(); };
+    card.appendChild(rt); card.appendChild(hm);
+    app.appendChild(card);
+    return;
+  }
+  ipQuestion({ lang, header:`Idioms · set ${iq.set+1}/${sets}`, prompt:`Type the ${d.name} idiom — accents optional`,
+    count:iq.items.length, pos:iq.pos, nOk:iq.nOk, item:iq.items[iq.pos],
+    extraFeedback:w=>`${w.lit?`<div class="expl">Literally: “${w.lit}”</div>`:''}${w.hint?`<div class="expl" style="font-style:italic;color:var(--muted)">💡 ${w.hint}</div>`:''}`,
+    onQuit:()=>{ state.iq=null; render(); },
+    onAnswered:ok=>{
+      if(ok) iq.nOk++;
+      iq.pos++;
+      if(iq.pos<iq.items.length){ render(); return; }
+      const pp=getIdiomProg(lang);
+      pp.best[iq.set]=Math.max(pp.best[iq.set]||0, iq.nOk);
+      if(iq.set===pp.next) pp.next=iq.set+1;
+      saveIdiomProg(lang,pp);
+      iq.end=true; render();
+    }});
+}
+function startIdiomSet(set){
+  const lang=state.ipLang;
+  const list=idiomList(lang);
+  state.iq={set, items:shuffle(list.slice(set*10, set*10+10)), pos:0, nOk:0};
+  render();
+}
+
+function renderPhrases(){
+  const lang=state.ipLang, d=DATA[lang];
+  const topics=phraseTopics(lang);
+  const pq=state.pq;
+  if(!pq){
+    app.appendChild($(`<span class="backlink" id="back">← Home</span>`));
+    app.querySelector('#back').onclick=()=>{ state.screen='home'; render(); };
+    app.appendChild($(`<h1>${d.flag} 💬 Useful Phrases</h1>`));
+    app.appendChild($(`<div class="sub">Pick a subject — each quiz asks 10 phrases from it (typed, accents optional).</div>`));
+    const p=getPhraseProg(lang);
+    const card=$(`<div class="card"><div class="row" id="topics"></div></div>`);
+    for(const tp of topics){
+      const best=p[tp.id];
+      const b=$(`<button style="flex:1;min-width:220px;padding:14px;text-align:left">${tp.title}<br><span class="pill">${tp.items.length} phrases${best!=null?` · best ${best}/10`:''}</span></button>`);
+      b.onclick=()=>{ state.pq={topic:tp, items:shuffle([...tp.items]).slice(0,10), pos:0, nOk:0}; render(); };
+      card.querySelector('#topics').appendChild(b);
+    }
+    app.appendChild(card);
+    return;
+  }
+  if(pq.end){
+    const card=$(`<div class="card" style="text-align:center"></div>`);
+    card.appendChild($(`<h2 style="margin-top:0">${pq.nOk===pq.items.length?'🎉 Perfect!':'Done!'}</h2>`));
+    card.appendChild($(`<div style="line-height:1.7">${pq.topic.title}: <b>${pq.nOk} / ${pq.items.length}</b></div>`));
+    const ag=$(`<button class="primary" style="margin-top:16px">🔁 Same subject, new 10</button>`);
+    ag.onclick=()=>{ state.pq={topic:pq.topic, items:shuffle([...pq.topic.items]).slice(0,10), pos:0, nOk:0}; render(); };
+    const ot=$(`<button class="small" style="margin-top:16px;margin-left:10px">Choose another subject</button>`);
+    ot.onclick=()=>{ state.pq=null; render(); };
+    card.appendChild(ag); card.appendChild(ot);
+    app.appendChild(card);
+    return;
+  }
+  ipQuestion({ lang, header:`Phrases · ${pq.topic.title}`, prompt:`Type the ${d.name} phrase — accents optional`,
+    count:pq.items.length, pos:pq.pos, nOk:pq.nOk, item:pq.items[pq.pos],
+    onQuit:()=>{ state.pq=null; render(); },
+    onAnswered:ok=>{
+      if(ok) pq.nOk++;
+      pq.pos++;
+      if(pq.pos<pq.items.length){ render(); return; }
+      const p=getPhraseProg(lang);
+      p[pq.topic.id]=Math.max(p[pq.topic.id]||0, pq.nOk);
+      savePhraseProg(lang,p);
+      pq.end=true; render();
+    }});
+}
+
+// ---------- My Words manager ----------
+function renderMyWords(){
+  app.appendChild($(`<span class="backlink" id="back">← Back</span>`));
+  app.querySelector('#back').onclick=()=>{ state.screen = state.mwBack==='setup' ? 'setup' : 'home'; render(); };
+  app.appendChild($(`<h1>📝 My Words</h1>`));
+  app.appendChild($(`<div class="sub">Add your own vocabulary. Categories are shared across languages, and a word can sit in several categories at once — tick more than one to “duplicate” it (e.g. sunbathe in Weather and Verbs); change the ticks to move it. Your words appear as quiz units under “My Words”.</div>`));
+
+  // ---- add-a-word card ----
+  const add = $(`<div class="card"><h2 style="margin-top:0">Add a word</h2></div>`);
+  app.appendChild(add);
+
+  // source-language picker: type the word in English OR in one of the target languages
+  const srcLang = state.mwSrc || 'english';
+  const srcRow = $(`<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:8px"></div>`);
+  srcRow.appendChild($(`<span style="color:var(--muted);font-size:.9rem">I'm typing the word in:</span>`));
+  const srcOpts = [['english','🇬🇧 English']].concat(LANGS.map(l=>[l, DATA[l].flag+' '+DATA[l].name]));
+  for(const [val,lbl] of srcOpts){
+    const o = $(`<div class="opt ${srcLang===val?'sel':''}" style="padding:6px 12px;font-size:.88rem">${lbl}</div>`);
+    o.onclick=()=>{ state.mwSrc=val; render(); };
+    srcRow.appendChild(o);
+  }
+  add.appendChild(srcRow);
+
+  const srcName = srcLang==='english' ? 'English' : DATA[srcLang].name;
+  const enRow = $(`<div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"></div>`);
+  const enInp = $(`<input type="text" placeholder="${srcName} word or phrase…" style="flex:1;min-width:220px;padding:10px 14px;font-size:1rem;border-radius:10px;border:2px solid var(--border);background:var(--card2);color:var(--text);outline:none">`);
+  const sugBtn = $(`<button class="primary">💡 ${srcLang==='english'?'Suggest translations':'Suggest English + translations'}</button>`);
+  enRow.appendChild(enInp); enRow.appendChild(sugBtn);
+  add.appendChild(enRow);
+  const sugNote = $(`<div style="color:var(--muted);font-size:.85rem;margin-top:6px"></div>`);
+  add.appendChild(sugNote);
+
+  // English row (shown when typing in a target language — the app supplies the English)
+  let enOut = null;
+  if(srcLang!=='english'){
+    const er = $(`<div style="border-top:1px solid var(--border);padding:10px 0;margin-top:10px"></div>`);
+    const top = $(`<div style="display:flex;gap:10px;align-items:center"></div>`);
+    top.appendChild($(`<span style="width:106px;flex-shrink:0">🇬🇧 English</span>`));
+    const inp = $(`<input type="text" placeholder="English meaning (suggested, editable)…" style="flex:1;min-width:140px;padding:8px 12px;font-size:.98rem;border-radius:8px;border:2px solid var(--border);background:var(--card2);color:var(--text);outline:none">`);
+    top.appendChild(inp);
+    er.appendChild(top);
+    const chips = $(`<div style="margin:6px 0 0 116px;display:flex;gap:6px;flex-wrap:wrap"></div>`);
+    er.appendChild(chips);
+    add.appendChild(er);
+    enOut = {inp, chips};
+  }
+  function currentEn(){ return (srcLang==='english' ? enInp.value : (enOut ? enOut.inp.value : '')).trim(); }
+
+  const rows = {};
+  const rowsWrap = $(`<div style="margin-top:12px"></div>`);
+  add.appendChild(rowsWrap);
+  for(const l of LANGS){
+    const dl = DATA[l];
+    const r = $(`<div style="border-top:1px solid var(--border);padding:10px 0"></div>`);
+    const top = $(`<div style="display:flex;gap:10px;align-items:center"></div>`);
+    const chk = $(`<input type="checkbox" checked style="width:18px;height:18px;accent-color:var(--accent);flex-shrink:0">`);
+    top.appendChild(chk);
+    top.appendChild($(`<span style="width:88px;flex-shrink:0">${dl.flag} ${dl.name}</span>`));
+    const inp = $(`<input type="text" placeholder="translation…" style="flex:1;min-width:140px;padding:8px 12px;font-size:.98rem;border-radius:8px;border:2px solid var(--border);background:var(--card2);color:var(--text);outline:none">`);
+    top.appendChild(inp);
+    const sp = $(`<button class="small">🔊</button>`);
+    sp.onclick=()=>{ if(inp.value.trim()) speak(inp.value.trim(), dl.ttsLang); };
+    top.appendChild(sp);
+    r.appendChild(top);
+    const chips = $(`<div style="margin:6px 0 0 116px;display:flex;gap:6px;flex-wrap:wrap"></div>`);
+    const dup = $(`<div style="margin:4px 0 0 116px;font-size:.83rem;color:var(--warn)"></div>`);
+    r.appendChild(chips); r.appendChild(dup);
+    rowsWrap.appendChild(r);
+    rows[l] = {chk, inp, chips, dup};
+    inp.addEventListener('input',()=>checkDup(l));
+  }
+  function checkDup(l){
+    const hit = findDup(l, currentEn(), rows[l].inp.value.trim()||null);
+    if(hit){
+      rows[l].dup.innerHTML = `⚠ Already present: “${hit.t} = ${hit.e}” (${hit.where}) — unchecked; re-tick the box to add anyway.`;
+      rows[l].chk.checked = false;
+    } else { rows[l].dup.textContent=''; }
+  }
+  sugBtn.onclick = async ()=>{
+    const typed = enInp.value.trim();
+    if(!typed){ enInp.focus(); return; }
+    sugBtn.disabled = true; sugNote.textContent = 'Fetching suggestions…';
+    let fails = 0;
+    let en = typed;
+    if(srcLang!=='english'){
+      // typed a target-language word: get the English first, prefill the source row
+      rows[srcLang].inp.value = typed;
+      rows[srcLang].chk.checked = true;
+      rows[srcLang].chips.innerHTML='';
+      enOut.chips.innerHTML='';
+      try{
+        const s = await suggestEnglish(typed, srcLang);
+        enOut.inp.value = s.best;
+        en = s.best;
+        for(const alt of s.alts){
+          const b = $(`<button class="small"></button>`);
+          b.textContent = alt;
+          b.onclick=()=>{ enOut.inp.value = alt; LANGS.forEach(checkDup); };
+          enOut.chips.appendChild(b);
+        }
+      }catch(e){ fails++; en=''; }
+    }
+    const targets = LANGS.filter(l=>l!==srcLang);
+    await Promise.all(targets.map(async l=>{
+      rows[l].chips.innerHTML='';
+      rows[l].chk.checked = true;
+      if(!en){ checkDup(l); return; }
+      try{
+        const s = await suggestTranslation(en, l);
+        rows[l].inp.value = s.best;
+        for(const alt of s.alts){
+          const b = $(`<button class="small"></button>`);
+          b.textContent = alt;
+          b.onclick=()=>{ rows[l].inp.value = alt; checkDup(l); };
+          rows[l].chips.appendChild(b);
+        }
+      }catch(e){ fails++; }
+      checkDup(l);
+    }));
+    if(srcLang!=='english') checkDup(srcLang);
+    sugNote.textContent = fails
+      ? 'Some suggestions unavailable (offline, or the free service hit its daily limit) — type those manually.'
+      : (srcLang==='english'
+        ? 'Suggestions are editable — click an alternative chip or type your own. Double-check them; they come from a free translation service.'
+        : 'English + other translations suggested — all editable; chips offer alternatives. Double-check them; they come from a free translation service.');
+    sugBtn.disabled = false;
+  };
+  enInp.addEventListener('keydown',e=>{ if(e.key==='Enter') sugBtn.click(); });
+
+  add.appendChild($(`<div style="margin-top:12px;font-weight:600">Categories <span class="pill">tick all that apply</span></div>`));
+  const catWrap = $(`<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;align-items:center"></div>`);
+  add.appendChild(catWrap);
+  const selCats = new Set();
+  function drawCatPicker(){
+    catWrap.innerHTML='';
+    for(const cat of getCustom().cats){
+      const o = $(`<div class="opt ${selCats.has(cat.id)?'sel':''}"></div>`);
+      o.textContent = cat.name;
+      o.onclick=()=>{ selCats.has(cat.id)?selCats.delete(cat.id):selCats.add(cat.id); drawCatPicker(); };
+      catWrap.appendChild(o);
+    }
+    const ni = $(`<input type="text" placeholder="new category + Enter…" style="padding:8px 12px;font-size:.9rem;border-radius:10px;border:2px dashed var(--border);background:transparent;color:var(--text);outline:none;width:170px">`);
+    ni.addEventListener('keydown',e=>{
+      if(e.key==='Enter' && ni.value.trim()){
+        const cc = getCustom();
+        const id = 'c'+Date.now();
+        cc.cats.push({id, name: ni.value.trim()});
+        saveCustom(cc); selCats.add(id); drawCatPicker(); drawManage();
+      }
+    });
+    catWrap.appendChild(ni);
+  }
+  drawCatPicker();
+
+  const addBtn = $(`<button class="primary" style="margin-top:14px">➕ Add word</button>`);
+  const addMsg = $(`<span style="margin-left:10px;font-size:.9rem"></span>`);
+  add.appendChild(addBtn); add.appendChild(addMsg);
+  addBtn.onclick=()=>{
+    if(srcLang!=='english' && enInp.value.trim() && !rows[srcLang].inp.value.trim()){
+      rows[srcLang].inp.value = enInp.value.trim(); // typed but never clicked Suggest
+    }
+    const en = currentEn();
+    if(!en){ addMsg.style.color='var(--bad)'; addMsg.textContent = srcLang==='english' ? 'Enter the English word first.' : 'The English meaning is missing — click Suggest or type it in the English row.'; return; }
+    const tr = {}; let n=0;
+    for(const l of LANGS){
+      if(rows[l].chk.checked && rows[l].inp.value.trim()){ tr[l]=rows[l].inp.value.trim(); n++; }
+    }
+    if(!n){ addMsg.style.color='var(--bad)'; addMsg.textContent='Tick at least one language with a translation filled in.'; return; }
+    const cc = getCustom();
+    cc.words.push({ id:'w'+Date.now(), en, tr, cats:[...selCats] });
+    saveCustom(cc);
+    addMsg.style.color='var(--good)';
+    addMsg.textContent=`Added “${en}” for ${n} language${n>1?'s':''}.`;
+    enInp.value='';
+    if(enOut){ enOut.inp.value=''; enOut.chips.innerHTML=''; }
+    for(const l of LANGS){ rows[l].inp.value=''; rows[l].chips.innerHTML=''; rows[l].dup.textContent=''; rows[l].chk.checked=true; }
+    drawManage();
+    enInp.focus();
+  };
+
+  // ---- categories & words management ----
+  const manage = $(`<div></div>`);
+  app.appendChild(manage);
+  function drawManage(){
+    manage.innerHTML='';
+    const cc = getCustom();
+    const catCard = $(`<div class="card"><h2 style="margin-top:0">Your categories</h2></div>`);
+    if(!cc.cats.length) catCard.appendChild($(`<div class="sub" style="margin:0">None yet — type a name in the “new category” box above and press Enter.</div>`));
+    for(const cat of cc.cats){
+      const nWords = cc.words.filter(w=>(w.cats||[]).includes(cat.id)).length;
+      const row = $(`<div class="missItem"></div>`);
+      const nm = $(`<span class="w" style="flex:1"></span>`); nm.textContent = cat.name;
+      row.appendChild(nm);
+      row.appendChild($(`<span style="color:var(--muted);font-size:.85rem">${nWords} word${nWords===1?'':'s'}</span>`));
+      const del = $(`<button class="small">🗑 delete</button>`);
+      del.onclick=()=>{
+        if(!confirm(`Delete category “${cat.name}”? The words stay — they just leave this category.`)) return;
+        const c2 = getCustom();
+        c2.cats = c2.cats.filter(x=>x.id!==cat.id);
+        c2.words.forEach(w=>{ w.cats=(w.cats||[]).filter(x=>x!==cat.id); });
+        saveCustom(c2); selCats.delete(cat.id); drawCatPicker(); drawManage();
+      };
+      row.appendChild(del);
+      catCard.appendChild(row);
+    }
+    manage.appendChild(catCard);
+
+    const wCard = $(`<div class="card"><h2 style="margin-top:0">Your words <span class="pill">${cc.words.length}</span></h2></div>`);
+    manage.appendChild(wCard);
+    if(!cc.words.length){ wCard.appendChild($(`<div class="sub" style="margin:0">Nothing yet.</div>`)); return; }
+    const groups = [...cc.cats, {id:null, name:'Uncategorized'}];
+    for(const g of groups){
+      const ws = cc.words.filter(w=> g.id ? (w.cats||[]).includes(g.id) : !(w.cats||[]).length );
+      if(!ws.length) continue;
+      const gh = $(`<div style="margin:12px 0 4px;color:var(--accent);font-weight:600"></div>`); gh.textContent = g.name;
+      wCard.appendChild(gh);
+      for(const w of ws) wCard.appendChild(wordRow(w));
+    }
+  }
+  function wordRow(w){
+    const box = $(`<div style="background:var(--card2);border-radius:8px;padding:8px 10px;margin:5px 0"></div>`);
+    const row = $(`<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"></div>`);
+    const enS = $(`<span class="w"></span>`); enS.textContent = w.en;
+    row.appendChild(enS);
+    const trS = $(`<span style="flex:1;font-size:.92rem"></span>`);
+    trS.textContent = LANGS.filter(l=>w.tr[l]).map(l=>DATA[l].flag+' '+w.tr[l]).join('  ·  ');
+    row.appendChild(trS);
+    const ed = $(`<button class="small">✎ edit</button>`);
+    const del = $(`<button class="small">🗑</button>`);
+    row.appendChild(ed); row.appendChild(del);
+    box.appendChild(row);
+    del.onclick=()=>{
+      if(!confirm(`Delete “${w.en}” from all languages and categories?`)) return;
+      const c2=getCustom(); c2.words=c2.words.filter(x=>x.id!==w.id); saveCustom(c2); drawManage();
+    };
+    ed.onclick=()=>{
+      if(box.querySelector('.edpane')) return;
+      const pane = $(`<div class="edpane" style="margin-top:8px;border-top:1px solid var(--border);padding-top:8px"></div>`);
+      const inps={};
+      for(const l of LANGS){
+        const lr=$(`<div style="display:flex;gap:8px;align-items:center;margin:4px 0"></div>`);
+        lr.appendChild($(`<span style="width:88px;flex-shrink:0">${DATA[l].flag} ${DATA[l].name}</span>`));
+        const i=$(`<input type="text" style="flex:1;min-width:120px;padding:6px 10px;border-radius:8px;border:2px solid var(--border);background:var(--card);color:var(--text);outline:none">`);
+        i.value=w.tr[l]||'';
+        lr.appendChild(i); inps[l]=i;
+        pane.appendChild(lr);
+      }
+      pane.appendChild($(`<div style="font-size:.83rem;color:var(--muted);margin:6px 0 2px">Blank a language to drop it there. Tick every category this word belongs to — several ticks = the word appears in each.</div>`));
+      const cats=$(`<div style="display:flex;gap:6px;flex-wrap:wrap;margin:6px 0"></div>`);
+      const sel=new Set(w.cats||[]);
+      const allCats=getCustom().cats;
+      const drawEdCats=()=>{
+        cats.innerHTML='';
+        for(const cat of allCats){
+          const o=$(`<div class="opt ${sel.has(cat.id)?'sel':''}" style="padding:5px 10px;font-size:.85rem"></div>`);
+          o.textContent=cat.name;
+          o.onclick=()=>{ sel.has(cat.id)?sel.delete(cat.id):sel.add(cat.id); drawEdCats(); };
+          cats.appendChild(o);
+        }
+      };
+      drawEdCats();
+      pane.appendChild(cats);
+      const save=$(`<button class="small primary">Save</button>`);
+      const cancel=$(`<button class="small" style="margin-left:8px">Cancel</button>`);
+      save.onclick=()=>{
+        const c3=getCustom();
+        const rec=c3.words.find(x=>x.id===w.id);
+        if(rec){
+          rec.tr={};
+          for(const l of LANGS){ const v=inps[l].value.trim(); if(v) rec.tr[l]=v; }
+          rec.cats=[...sel];
+          if(!Object.keys(rec.tr).length) c3.words=c3.words.filter(x=>x.id!==w.id);
+          saveCustom(c3);
+        }
+        drawManage();
+      };
+      cancel.onclick=()=>drawManage();
+      pane.appendChild(save); pane.appendChild(cancel);
+      box.appendChild(pane);
+    };
+    return box;
+  }
+  drawManage();
+  setTimeout(()=>enInp.focus(),50);
+}
+
+// Accent shortcut: Ctrl+letter types the language's special character into the
+// focused answer box (Shift+Ctrl for capitals). Letters with two variants
+// cycle on a repeated press (Dutch Ctrl+e: é -> ë; Italian: è -> é).
+// Spanish ñ lives on Ctrl+m — Chrome reserves Ctrl+n for a new window.
+const CTRL_CHARS = {
+  german:  {a:['ä'], o:['ö'], u:['ü'], s:['ß']},
+  dutch:   {e:['é','ë'], i:['ï'], o:['ö'], u:['ü']},
+  italian: {a:['à'], e:['è'], i:['ì'], o:['ò'], u:['ù']},   // grave (falls from the left)
+  spanish: {a:['á'], e:['é'], i:['í'], o:['ó'], u:['ú','ü'], m:['ñ']},
+  irish:   {a:['á'], e:['é'], i:['í'], o:['ó'], u:['ú']},
+};
+const ALT_CHARS = {
+  italian: {e:['é']},                                        // acute (rises from the left)
+};
+const CTRL_HINT = {
+  german:  ' · Ctrl+a/o/u/s = ä/ö/ü/ß',
+  dutch:   ' · Ctrl+e/i/o/u = é/ï/ö/ü (Ctrl+e again = ë)',
+  italian: ' · Ctrl+a/e/i/o/u = à/è/ì/ò/ù · Alt+e = é',
+  spanish: ' · Ctrl+a/e/i/o/u = á/é/í/ó/ú · Ctrl+m = ñ',
+  irish:   ' · Ctrl+a/e/i/o/u = á/é/í/ó/ú',
+};
+// key combo that produces a given character (for the accent buttons' tooltips)
+function comboFor(lang, ch){
+  const scan=(m,mod)=>{ for(const k in (m||{})){ const i=m[k].indexOf(ch); if(i>=0) return mod+'+'+k.toUpperCase()+(i>0?' pressed '+(i+1)+'×':''); } return null; };
+  return scan(CTRL_CHARS[lang],'Ctrl') || scan(ALT_CHARS[lang],'Alt');
+}
+function activeQuizLang(){
+  if(state.screen==='daily'||state.screen==='dailyhist') return state.dailyLang;
+  if(state.screen==='hundred') return state.hundredLang;
+  if(state.screen==='climb') return state.climbLang;
+  if(state.screen==='voice') return state.voiceLang;
+  return state.lang;
+}
+
+// ---------- Voice Drill (hear target → say English / hear English → spell target) ----------
+const VOICE_LANGS=['german','italian','dutch','spanish','japanese'];  // Irish: browsers ship no voice
+const SR_CLS = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+function getVoice(lang){
+  try{ const o=JSON.parse(localStorage.getItem('lq_voice_'+lang)||'null')||{};
+    return {a:o.a||{n:0,best:0}, b:o.b||{n:0,best:0}};
+  }catch(e){ return {a:{n:0,best:0}, b:{n:0,best:0}}; }
+}
+function saveVoice(lang,V){ localStorage.setItem('lq_voice_'+lang, JSON.stringify(V)); }
+function startVoiceRound(dir){
+  const lang=state.voiceLang;
+  const pool=duoFlat(lang).filter(it=>it&&it.t&&it.e);
+  state.vq={dir, items:shuffle([...pool]).slice(0,10), pos:0, nOk:0, wrong:[]};
+  render();
+}
+function renderVoice(){
+  const lang=state.voiceLang, d=DATA[lang], vq=state.vq;
+  if(!vq){  // direction picker
+    const back=$(`<button class="small">← Home</button>`);
+    back.onclick=()=>{ state.screen='home'; render(); };
+    app.appendChild(back);
+    app.appendChild($(`<h1>${d.flag} 🎤 Voice Drill</h1>`));
+    const V=getVoice(lang);
+    const srNote = SR_CLS ? '' : `<div class="voiceNote">⚠️ This browser has no speech recognition — in “say the English” rounds you'll type your answer instead. (Chrome, Edge and iPhone Safari all support it.)</div>`;
+    app.appendChild($(`<div class="sub">Ten words per round, drawn from the whole ${d.name} vocabulary. Answers are graded like every other quiz — accents optional, any listed translation counts.</div>`));
+    const row=$(`<div class="row"></div>`);
+    const a=$(`<button style="flex:1;min-width:230px;padding:18px">🔊 ${d.name} → 🗣 English<br><span class="pill">hear the word · say (or type) the English${V.a.n?` · best ${V.a.best}%`:''}</span></button>`);
+    a.onclick=()=>startVoiceRound('a');
+    const b=$(`<button style="flex:1;min-width:230px;padding:18px">🔊 English → ⌨ ${d.name}<br><span class="pill">hear the English · spell the word${V.b.n?` · best ${V.b.best}%`:''}</span></button>`);
+    b.onclick=()=>startVoiceRound('b');
+    row.appendChild(a); row.appendChild(b);
+    app.appendChild(row);
+    if(srNote) app.appendChild($(srNote));
+    return;
+  }
+  if(vq.pos>=vq.items.length){  // round over
+    const pct=Math.round(vq.nOk/vq.items.length*100);
+    const V=getVoice(lang); const slot=V[vq.dir];
+    slot.n++; if(pct>slot.best) slot.best=pct; saveVoice(lang,V);
+    app.appendChild($(`<h1>${d.flag} Round over — ${vq.nOk} / ${vq.items.length}</h1>`));
+    if(vq.wrong.length) app.appendChild($(`<div class="card"><h2 style="margin-top:0">Missed</h2>${vq.wrong.map(w=>`<div style="margin:6px 0">${jpDisp(w.t)} = ${w.e}</div>`).join('')}</div>`));
+    const row=$(`<div class="row" style="margin-top:14px"></div>`);
+    const rt=$(`<button class="primary">🔁 New round</button>`);
+    rt.onclick=()=>startVoiceRound(vq.dir);
+    const q=$(`<button>✕ Done</button>`);
+    q.onclick=()=>{ state.vq=null; render(); };
+    row.appendChild(rt); row.appendChild(q);
+    app.appendChild(row);
+    return;
+  }
+  const w=vq.items[vq.pos];
+  const top=$(`<div class="topnav"><button class="small">✕ Quit</button><span style="color:var(--muted);font-size:.9rem">${d.flag} Voice Drill · word ${vq.pos+1} / ${vq.items.length} · ✓ ${vq.nOk}</span></div>`);
+  top.querySelector('button').onclick=()=>{ state.vq=null; render(); };
+  app.appendChild(top);
+  const card=$(`<div class="card"></div>`);
+  const dirA = vq.dir==='a';
+  const promptLang = dirA ? d.ttsLang : 'en-US';
+  const promptText = dirA ? w.t : w.e;
+  card.appendChild($(`<div class="qWord">${dirA ? '🔊 …' : maskPrompt(w.e, w.t, lang)}</div>`));
+  card.appendChild($(`<div class="qHint">${dirA ? `Listen, then say (or type) the <b>English</b> meaning` : lang==='japanese' ? 'Listen, then type the Japanese word in romaji — it becomes hiragana' : `Listen, then type the ${d.name} word — accents optional; nouns need their article`}</div>`));
+  const replay=$(`<button class="small" style="display:block;margin:4px auto 10px">🔊 Play again</button>`);
+  replay.onclick=()=>speak(promptText, promptLang);
+  card.appendChild(replay);
+  let answered=false;
+  const wrap=$(`<div style="max-width:560px;margin:0 auto;text-align:center"></div>`);
+  const finish=(ok, note)=>{
+    if(answered) return; answered=true;
+    if(ok) vq.nOk++; else vq.wrong.push({t:w.t, e:w.e});
+    inp.disabled=true; go.style.display='none'; if(mic) mic.disabled=true;
+    inp.style.borderColor= ok?'var(--good)':'var(--bad)';
+    const fb=$(`<div class="feedback"></div>`);
+    fb.appendChild($(`<div style="font-weight:600;color:${ok?'var(--good)':'var(--bad)'}">${ok?'✔ Correct!':'✘ Not quite'}${note?` <span style="color:var(--muted);font-weight:400">${note}</span>`:''}</div>`));
+    fb.appendChild($(`<div class="expl">${jpDisp(w.t)} = ${w.e}</div>`));
+    if(!dirA && window.speechSynthesis) speak(w.t, d.ttsLang);
+    const next=$(`<button class="primary" style="margin-top:10px">${vq.pos+1>=vq.items.length?'Finish round':'Next →'}</button>`);
+    next.onclick=()=>{ vq.pos++; render(); };
+    fb.appendChild(next);
+    card.appendChild(fb);
+    next.focus();
+  };
+  let mic=null;
+  if(dirA && SR_CLS){
+    mic=$(`<button class="primary" style="font-size:1.15rem;padding:14px 26px;margin-bottom:12px">🎤 Tap & speak</button>`);
+    mic.onclick=()=>{
+      const r=new SR_CLS();
+      r.lang='en-US'; r.interimResults=false; r.maxAlternatives=5;
+      mic.textContent='🎙 Listening…'; mic.style.opacity=.7;
+      r.onresult=(ev)=>{
+        const alts=[...ev.results[0]].map(x=>x.transcript);
+        const hit=alts.find(a=>englishAnswerOk(a, w.e));
+        finish(!!hit, `heard “${hit||alts[0]}”`);
+      };
+      r.onerror=(ev)=>{
+        mic.textContent='🎤 Tap & speak'; mic.style.opacity=1;
+        if(ev.error==='not-allowed') wrap.insertBefore($(`<div class="voiceNote">⚠️ Microphone blocked — allow mic access for this site, or type your answer below.</div>`), inp);
+      };
+      r.onend=()=>{ if(!answered){ mic.textContent='🎤 Tap & speak'; mic.style.opacity=1; } };
+      try{ r.start(); }catch(e){}
+    };
+    wrap.appendChild(mic);
+  }
+  const inp=$(`<input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" style="width:100%;padding:14px 16px;font-size:1.1rem;border-radius:10px;border:2px solid var(--border);background:var(--card2);color:var(--text);outline:none" placeholder="${dirA?(SR_CLS?'…or type the English here':'Type the English here'):'Type here…'}">`);
+  if(!dirA) jpBind(inp, lang);
+  const accRow=$(`<div style="display:flex;gap:6px;justify-content:center;margin:10px 0;flex-wrap:wrap"></div>`);
+  if(!dirA) (ACCENTS[lang]||[]).forEach(chr=>{
+    const b=$(`<button class="small" style="min-width:38px;font-size:1.05rem">${chr}</button>`);
+    const cb=comboFor(lang,chr); if(cb) b.title=cb;
+    b.onclick=()=>{ const s=inp.selectionStart||inp.value.length; inp.value=inp.value.slice(0,s)+chr+inp.value.slice(inp.selectionEnd||s); inp.focus(); inp.setSelectionRange(s+1,s+1); };
+    accRow.appendChild(b);
+  });
+  const go=$(`<button class="primary">Check</button>`);
+  const doCheck=()=>{
+    if(answered || !inp.value.trim()) return;
+    finish(dirA ? englishAnswerOk(inp.value, w.e) : vocabAnswerOk(inp.value, w.t));
+  };
+  go.onclick=doCheck;
+  inp.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); e.__consumed=true; window.__enterTs=Date.now(); doCheck(); } });
+  wrap.appendChild(inp); wrap.appendChild(accRow); wrap.appendChild(go);
+  card.appendChild(wrap);
+  app.appendChild(card);
+  setTimeout(()=>{ speak(promptText, promptLang); if(!dirA||!SR_CLS) inp.focus(); }, 250);
+}
+document.addEventListener('keydown', (e)=>{
+  if(e.metaKey) return;
+  let map = null;
+  if(e.ctrlKey && !e.altKey) map = CTRL_CHARS[activeQuizLang()];
+  else if(e.altKey && !e.ctrlKey) map = ALT_CHARS[activeQuizLang()];
+  if(!map) return;
+  const k = (e.key||'').toLowerCase();
+  const ae = document.activeElement;
+  if(!map || !map[k] || !ae || ae.tagName!=='INPUT' || ae.type!=='text' || ae.disabled) return;
+  e.preventDefault();
+  const vars = map[k].map(c=> e.shiftKey && c!=='ß' ? c.toUpperCase() : c);
+  let s = ae.selectionStart==null ? ae.value.length : ae.selectionStart;
+  const e2 = ae.selectionEnd==null ? s : ae.selectionEnd;
+  const prev = s===e2 && s>0 ? ae.value[s-1] : '';
+  const at = vars.indexOf(prev);
+  if(at>=0){  // repeated press: cycle the character just typed
+    ae.value = ae.value.slice(0,s-1) + vars[(at+1)%vars.length] + ae.value.slice(e2);
+    ae.setSelectionRange(s, s);
+  } else {
+    ae.value = ae.value.slice(0,s) + vars[0] + ae.value.slice(e2);
+    ae.setSelectionRange(s+1, s+1);
+  }
+});
+
+// Global Enter key: always mirror the visible primary action (Check / Check all /
+// Next / Finish), no matter what has focus. Enter inside the SINGLE answer box
+// clicks Check directly (belt-and-suspenders on top of the input's own handler —
+// every doCheck is guarded, so a double call is a no-op). Multi-row screens
+// (conjugation/tables) keep their own Enter row-navigation. If the primary
+// button itself is focused the browser clicks it natively.
+document.addEventListener('keydown', (e)=>{
+  if(e.key!=='Enter' && e.keyCode!==13) return;
+  // a HELD Enter auto-repeats onto the newly-focused Next button and blows
+  // straight past the feedback — one press, one action, always
+  if(e.repeat){ e.preventDefault(); return; }
+  const ae = document.activeElement;
+  const tag = ae ? ae.tagName : '';
+  if(tag==='TEXTAREA' || tag==='SELECT') return;
+  if(tag==='INPUT' && ae.type!=='checkbox' && !ae.disabled){
+    // multi-input screens handle Enter per row — leave them alone
+    const txts=[...document.querySelectorAll('#app input[type="text"]')].filter(x=>x.offsetParent && !x.disabled);
+    if(txts.length>1) return;
+    // My Words / manager inputs have their own Enter actions (no Check on screen)
+  }
+  if(e.__consumed){ e.preventDefault(); return; }  // an answer-box handler already acted on this press
+  // key-bounce guard only: 150ms. A deliberate second Enter (check → advance)
+  // must work as fast as clicking Check then Next with the mouse — held-key
+  // repeat is already suppressed above.
+  const now = Date.now();
+  if(now - (window.__enterTs||0) < 150){ e.preventDefault(); return; }
+  window.__enterTs = now;
+  const btns = [...document.querySelectorAll('#app button')].filter(b=>b.offsetParent && !b.disabled && b.style.display!=='none');
+  const label = b=>b.textContent.trim();
+  const target = btns.find(b=>label(b)==='Check' || label(b)==='Check all')
+              || btns.find(b=>label(b)==='Next →' || label(b)==='Finish' || label(b)==='Finish pass'
+                           || label(b)==='Finish round' || label(b)==='Start the questions →' || label(b).startsWith('🔁 Retake'));
+  if(!target) return;
+  // click it ourselves and suppress native activation — one deterministic
+  // click whether or not the button happens to be focused
+  e.preventDefault(); target.click();
+});
+
+render();
+</script>
+</body>
+</html>

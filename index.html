@@ -96,6 +96,7 @@
 <script src="data_ip_italian.js"></script>
 <script src="data_ip_dutch.js"></script>
 <script src="data_ip_spanish.js"></script>
+<script src="data_ip_japanese.js"></script>
 <script>
 "use strict";
 const $ = (h)=>{const d=document.createElement('div'); d.innerHTML=h; return d.firstElementChild;};
@@ -269,6 +270,7 @@ function jpReading(t){
   if(!__jpR){
     __jpR = {};
     try{ duoFlat('japanese').forEach(it=>{ const v=it.k||it.r; if(v && !__jpR[it.t]) __jpR[it.t]=v; }); }catch(e){}
+    try{ ((window.QUIZ_IDIOMS||{}).japanese||[]).forEach(it=>{ if(it.k && !__jpR[it.t]) __jpR[it.t]=it.k; }); }catch(e){}
   }
   const v = __jpR[t];
   if(!v) return '';
@@ -2544,7 +2546,7 @@ function renderClimbMisses(lang, d){
 // Idioms: typed, worked through in sets of 10; the reveal shows meaning,
 // literal translation and a usage hint. Phrases: pick a topic (restaurant,
 // directions, …), get 10 typed phrases from it.
-const IP_LANGS=['german','italian','dutch','spanish'];
+const IP_LANGS=['german','italian','dutch','spanish','japanese'];
 function idiomList(lang){ return (window.QUIZ_IDIOMS||{})[lang]||[]; }
 function phraseTopics(lang){ return (window.QUIZ_PHRASES||{})[lang]||[]; }
 function getIdiomProg(lang){ try{ const o=JSON.parse(localStorage.getItem('lq_idiomtest_'+lang)||'{}'); return {next:o.next||0, best:o.best||{}}; }catch(e){ return {next:0,best:{}}; } }
@@ -2649,7 +2651,7 @@ function renderIdioms(){
     app.appendChild(card);
     return;
   }
-  ipQuestion({ lang, header:`Idioms · set ${iq.set+1}/${sets}`, prompt:`Type the ${d.name} idiom — accents optional`,
+  ipQuestion({ lang, header:`Idioms · set ${iq.set+1}/${sets}`, prompt: lang==='japanese' ? 'Type the Japanese idiom in romaji — it becomes hiragana' : `Type the ${d.name} idiom — accents optional`,
     count:iq.items.length, pos:iq.pos, nOk:iq.nOk, item:iq.items[iq.pos],
     extraFeedback:w=>`${w.lit?`<div class="expl">Literally: “${w.lit}”</div>`:''}${w.hint?`<div class="expl" style="font-style:italic;color:var(--muted)">💡 ${w.hint}</div>`:''}`,
     onQuit:()=>{ state.iq=null; render(); },

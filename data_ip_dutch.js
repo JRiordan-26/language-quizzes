@@ -105,7 +105,22 @@ window.QUIZ_IDIOMS.dutch = [
   {t:"De eerste viool spelen", e:"to play first fiddle, dominate", lit:"to play the first violin", hint:"who takes the leading role"},
   {t:"Iets onder vier ogen bespreken", e:"to discuss something in private", lit:"to discuss something under four eyes", hint:"a one-on-one confidential talk"},
   {t:"Het hoofd boven water houden", e:"to keep one's head above water", lit:"to keep the head above water", hint:"barely surviving financially"},
-  {t:"Iemand de wind uit de zeilen nemen", e:"to take the wind out of someone's sails", lit:"to take the wind out of someone's sails", hint:"pre-empting someone's argument or plan"}
+  {t:"Iemand de wind uit de zeilen nemen", e:"to take the wind out of someone's sails", lit:"to take the wind out of someone's sails", hint:"pre-empting someone's argument or plan"},
+  {t:"Iets in de gaten houden", e:"to keep an eye on something", lit:"to hold something in the holes", hint:"watching closely; de politie houdt het in de gaten"},
+  {t:"Ergens geen kaas van gegeten hebben", e:"to not know the first thing about something", lit:"to have eaten no cheese of something", hint:"zero expertise; always negative"},
+  {t:"De druppel die de emmer doet overlopen", e:"the last straw", lit:"the drop that makes the bucket overflow", hint:"the small final insult"},
+  {t:"De handdoek in de ring gooien", e:"to throw in the towel", lit:"to throw the towel into the ring", hint:"giving up, boxing-style"},
+  {t:"Iets uit zijn duim zuigen", e:"to make something up", lit:"to suck something out of one's thumb", hint:"deliberate invention, not a guess"},
+  {t:"De eindjes aan elkaar knopen", e:"to make ends meet", lit:"to knot the little ends together", hint:"just scraping by"},
+  {t:"Iemand een hart onder de riem steken", e:"to give someone encouragement", lit:"to stick a heart under someone's belt", hint:"boosting someone who's struggling"},
+  {t:"Iets op de lange baan schuiven", e:"to put something on the back burner", lit:"to push something onto the long track", hint:"indefinite postponement"},
+  {t:"In de wolken zijn", e:"to be over the moon", lit:"to be in the clouds", hint:"pure happiness — not absent-mindedness"},
+  {t:"Een oogje op iemand hebben", e:"to have a crush on someone", lit:"to have a little eye on someone", hint:"light, informal romance"},
+  {t:"Boter op zijn hoofd hebben", e:"the pot calling the kettle black", lit:"to have butter on one's head", hint:"guilty of what you criticize; political favorite"},
+  {t:"De dans ontspringen", e:"to dodge a bullet", lit:"to escape the dance", hint:"spared while others were hit"},
+  {t:"Een rib uit je lijf zijn", e:"to cost an arm and a leg", lit:"to be a rib out of your body", hint:"painfully expensive"},
+  {t:"De moed zinkt me in de schoenen", e:"my heart sinks", lit:"the courage sinks into my shoes", hint:"discouragement at bad news"},
+  {t:"Iets de kop indrukken", e:"to nip something in the bud", lit:"to press something's head in", hint:"quashing rumors before they spread"},
 ];
 window.QUIZ_PHRASES = window.QUIZ_PHRASES || {};
 window.QUIZ_PHRASES.dutch = [

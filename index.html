@@ -191,7 +191,17 @@ function conjRowOk(lang,i,typed,f,plain){
   const variants=f.split('/').map(v=>v.trim());
   const prons=plain?[]:(PRON[lang][i]||[]);
   if(!prons.length) return variants.some(v=>answerMatches(typed,v));
-  return prons.some(p=>variants.some(v=>answerMatches(typed, p+' '+v)));
+  if(prons.some(p=>variants.some(v=>answerMatches(typed, p+' '+v)))) return true;
+  // the reveal shows compound pronouns ("lui/lei lavora", "er/sie/es ist") —
+  // typing them that way must count: any run of this row's pronouns + form
+  const pset=new Set(prons.map(p=>foldTxt(p)));
+  const toks=foldTxt(typed).split(' ').filter(Boolean);
+  return variants.some(v=>{
+    const vt=foldTxt(v).split(' ').filter(Boolean);
+    return vt.length && toks.length>vt.length
+      && toks.slice(-vt.length).join(' ')===vt.join(' ')
+      && toks.slice(0,toks.length-vt.length).every(t=>pset.has(t));
+  });
 }
 
 // ---------- state ----------

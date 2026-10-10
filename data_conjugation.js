@@ -58,7 +58,10 @@ window.QUIZ_CONJ = {
       {inf:"fahren", en:"to drive → have driven (sein!)", forms:["bin gefahren","bist gefahren","ist gefahren","sind gefahren","seid gefahren","sind gefahren"]},
       {inf:"sein", en:"to be → have been (sein!)", forms:["bin gewesen","bist gewesen","ist gewesen","sind gewesen","seid gewesen","sind gewesen"]},
       {inf:"haben", en:"to have → have had", forms:["habe gehabt","hast gehabt","hat gehabt","haben gehabt","habt gehabt","haben gehabt"]},
-      {inf:"einkaufen", en:"to shop → have shopped (separable!)", forms:["habe eingekauft","hast eingekauft","hat eingekauft","haben eingekauft","habt eingekauft","haben eingekauft"]}
+      {inf:"einkaufen", en:"to shop → have shopped (separable!)", forms:["habe eingekauft","hast eingekauft","hat eingekauft","haben eingekauft","habt eingekauft","haben eingekauft"]},
+      {inf:"sein", en:"to be → have been (gewesen, with sein!)", forms:["bin gewesen","bist gewesen","ist gewesen","sind gewesen","seid gewesen","sind gewesen"]},
+      {inf:"haben", en:"to have → have had (gehabt)", forms:["habe gehabt","hast gehabt","hat gehabt","haben gehabt","habt gehabt","haben gehabt"]},
+      {inf:"werden", en:"to become → have become (geworden, with sein!)", forms:["bin geworden","bist geworden","ist geworden","sind geworden","seid geworden","sind geworden"]}
     ]}},
     { course: "de_a1", unit: { id:"de_a1_c6", type:"conj", title:"Conjugate: Präteritum — strong & regular verbs", tense:"Präteritum", items: [
       {inf:"machen", en:"to do → did (regular)", forms:["machte","machtest","machte","machten","machtet","machten"]},
@@ -129,7 +132,8 @@ window.QUIZ_CONJ = {
       {inf:"vedere", en:"to see → have seen", forms:["ho visto","hai visto","ha visto","abbiamo visto","avete visto","hanno visto"]},
       {inf:"essere", en:"to be → have been (essere! participle agrees)", forms:["sono stato/sono stata","sei stato/sei stata","è stato/è stata","siamo stati/siamo state","siete stati/siete state","sono stati/sono state"]},
       {inf:"andare", en:"to go → have gone (essere! participle agrees)", forms:["sono andato/sono andata","sei andato/sei andata","è andato/è andata","siamo andati/siamo andate","siete andati/siete andate","sono andati/sono andate"]},
-      {inf:"venire", en:"to come → have come (essere!)", forms:["sono venuto/sono venuta","sei venuto/sei venuta","è venuto/è venuta","siamo venuti/siamo venute","siete venuti/siete venute","sono venuti/sono venute"]}
+      {inf:"venire", en:"to come → have come (essere!)", forms:["sono venuto/sono venuta","sei venuto/sei venuta","è venuto/è venuta","siamo venuti/siamo venute","siete venuti/siete venute","sono venuti/sono venute"]},
+      {inf:"dire", en:"to say → said (detto)", forms:["ho detto","hai detto","ha detto","abbiamo detto","avete detto","hanno detto"]}
     ]}},
     { course: "it_a0a2", unit: { id:"it_a2_c1", type:"conj", title:"Conjugate: Imperfetto", tense:"Imperfetto", items: [
       {inf:"essere", en:"to be", forms:["ero","eri","era","eravamo","eravate","erano"]},
@@ -138,7 +142,8 @@ window.QUIZ_CONJ = {
       {inf:"fare", en:"to do / make", forms:["facevo","facevi","faceva","facevamo","facevate","facevano"]},
       {inf:"bere", en:"to drink", forms:["bevevo","bevevi","beveva","bevevamo","bevevate","bevevano"]},
       {inf:"dire", en:"to say", forms:["dicevo","dicevi","diceva","dicevamo","dicevate","dicevano"]},
-      {inf:"dormire", en:"to sleep", forms:["dormivo","dormivi","dormiva","dormivamo","dormivate","dormivano"]}
+      {inf:"dormire", en:"to sleep", forms:["dormivo","dormivi","dormiva","dormivamo","dormivate","dormivano"]},
+      {inf:"andare", en:"to go → used to go", forms:["andavo","andavi","andava","andavamo","andavate","andavano"]}
     ]}},
     { course: "it_a0a2", unit: { id:"it_a2_c2", type:"conj", title:"Conjugate: Futuro", tense:"Futuro", items: [
       {inf:"essere", en:"to be", forms:["sarò","sarai","sarà","saremo","sarete","saranno"]},
@@ -148,7 +153,8 @@ window.QUIZ_CONJ = {
       {inf:"andare", en:"to go", forms:["andrò","andrai","andrà","andremo","andrete","andranno"]},
       {inf:"fare", en:"to do / make", forms:["farò","farai","farà","faremo","farete","faranno"]},
       {inf:"venire", en:"to come", forms:["verrò","verrai","verrà","verremo","verrete","verranno"]},
-      {inf:"volere", en:"to want", forms:["vorrò","vorrai","vorrà","vorremo","vorrete","vorranno"]}
+      {inf:"volere", en:"to want", forms:["vorrò","vorrai","vorrà","vorremo","vorrete","vorranno"]},
+      {inf:"dire", en:"to say → will say", forms:["dirò","dirai","dirà","diremo","direte","diranno"]}
     ]}},
     { course: "it_a0a2", unit: { id:"it_a2_c3", type:"conj", title:"Conjugate: Condizionale presente", tense:"Condizionale", items: [
       {inf:"volere", en:"to want → would like", forms:["vorrei","vorresti","vorrebbe","vorremmo","vorreste","vorrebbero"]},
@@ -156,7 +162,10 @@ window.QUIZ_CONJ = {
       {inf:"avere", en:"to have → would have", forms:["avrei","avresti","avrebbe","avremmo","avreste","avrebbero"]},
       {inf:"potere", en:"can → could", forms:["potrei","potresti","potrebbe","potremmo","potreste","potrebbero"]},
       {inf:"dovere", en:"must → should", forms:["dovrei","dovresti","dovrebbe","dovremmo","dovreste","dovrebbero"]},
-      {inf:"parlare", en:"to speak → would speak", forms:["parlerei","parleresti","parlerebbe","parleremmo","parlereste","parlerebbero"]}
+      {inf:"parlare", en:"to speak → would speak", forms:["parlerei","parleresti","parlerebbe","parleremmo","parlereste","parlerebbero"]},
+      {inf:"fare", en:"to do → would do", forms:["farei","faresti","farebbe","faremmo","fareste","farebbero"]},
+      {inf:"dire", en:"to say → would say", forms:["direi","diresti","direbbe","diremmo","direste","direbbero"]},
+      {inf:"andare", en:"to go → would go", forms:["andrei","andresti","andrebbe","andremmo","andreste","andrebbero"]}
     ]}},
     { course: "it_b1b2", unit: { id:"it_b1_c1", type:"conj", title:"Conjugate: Congiuntivo presente", tense:"Congiuntivo presente", items: [
       {inf:"essere", en:"to be", forms:["sia","sia","sia","siamo","siate","siano"]},
@@ -164,20 +173,24 @@ window.QUIZ_CONJ = {
       {inf:"parlare", en:"to speak", forms:["parli","parli","parli","parliamo","parliate","parlino"]},
       {inf:"fare", en:"to do / make", forms:["faccia","faccia","faccia","facciamo","facciate","facciano"]},
       {inf:"andare", en:"to go", forms:["vada","vada","vada","andiamo","andiate","vadano"]},
-      {inf:"finire", en:"to finish", forms:["finisca","finisca","finisca","finiamo","finiate","finiscano"]}
+      {inf:"finire", en:"to finish", forms:["finisca","finisca","finisca","finiamo","finiate","finiscano"]},
+      {inf:"dire", en:"to say (che io dica…)", forms:["dica","dica","dica","diciamo","diciate","dicano"]}
     ]}},
     { course: "it_b1b2", unit: { id:"it_b1_c2", type:"conj", title:"Conjugate: Congiuntivo imperfetto", tense:"Congiuntivo imperfetto", items: [
       {inf:"essere", en:"to be", forms:["fossi","fossi","fosse","fossimo","foste","fossero"]},
       {inf:"avere", en:"to have", forms:["avessi","avessi","avesse","avessimo","aveste","avessero"]},
       {inf:"parlare", en:"to speak", forms:["parlassi","parlassi","parlasse","parlassimo","parlaste","parlassero"]},
-      {inf:"fare", en:"to do / make", forms:["facessi","facessi","facesse","facessimo","faceste","facessero"]}
+      {inf:"fare", en:"to do / make", forms:["facessi","facessi","facesse","facessimo","faceste","facessero"]},
+      {inf:"dire", en:"to say (se io dicessi…)", forms:["dicessi","dicessi","dicesse","dicessimo","diceste","dicessero"]},
+      {inf:"andare", en:"to go (se io andassi…)", forms:["andassi","andassi","andasse","andassimo","andaste","andassero"]}
     ]}},
     { course: "it_b1b2", unit: { id:"it_b1_c3", type:"conj", title:"Conjugate: Passato remoto", tense:"Passato remoto", items: [
       {inf:"essere", en:"to be", forms:["fui","fosti","fu","fummo","foste","furono"]},
       {inf:"avere", en:"to have", forms:["ebbi","avesti","ebbe","avemmo","aveste","ebbero"]},
       {inf:"fare", en:"to do / make", forms:["feci","facesti","fece","facemmo","faceste","fecero"]},
       {inf:"parlare", en:"to speak", forms:["parlai","parlasti","parlò","parlammo","parlaste","parlarono"]},
-      {inf:"dire", en:"to say", forms:["dissi","dicesti","disse","dicemmo","diceste","dissero"]}
+      {inf:"dire", en:"to say", forms:["dissi","dicesti","disse","dicemmo","diceste","dissero"]},
+      {inf:"andare", en:"to go → went (regular in the remoto!)", forms:["andai","andasti","andò","andammo","andaste","andarono"]}
     ]}}
   ],
   dutch: [
@@ -238,6 +251,21 @@ window.QUIZ_CONJ = {
     ]}}
   ],
   spanish: [
+    { course: "es_core", unit: { id:"es_irr5_pret", type:"conj", title:"Conjugate: Top 5 irregulars — pretérito (fui, tuve, hice…)", tense:"Pretérito indefinido", items: [
+      {inf:"ser", en:"to be → was/were (identical to ir!)", forms:["fui","fuiste","fue","fuimos","fueron","fueron"]},
+      {inf:"estar", en:"to be → was/were (estuv-)", forms:["estuve","estuviste","estuvo","estuvimos","estuvieron","estuvieron"]},
+      {inf:"ir", en:"to go → went (identical to ser!)", forms:["fui","fuiste","fue","fuimos","fueron","fueron"]},
+      {inf:"tener", en:"to have → had (tuv-)", forms:["tuve","tuviste","tuvo","tuvimos","tuvieron","tuvieron"]},
+      {inf:"hacer", en:"to do/make → did/made (hic-, note hizo)", forms:["hice","hiciste","hizo","hicimos","hicieron","hicieron"]}
+    ]}},
+    { course: "es_core", unit: { id:"es_irr_fut", type:"conj", title:"Conjugate: Futuro — the irregular stems (tendré, haré…)", tense:"Futuro", items: [
+      {inf:"tener", en:"to have → will have (tendr-)", forms:["tendré","tendrás","tendrá","tendremos","tendrán","tendrán"]},
+      {inf:"hacer", en:"to do → will do (har-)", forms:["haré","harás","hará","haremos","harán","harán"]},
+      {inf:"decir", en:"to say → will say (dir-)", forms:["diré","dirás","dirá","diremos","dirán","dirán"]},
+      {inf:"poder", en:"can → will be able (podr-)", forms:["podré","podrás","podrá","podremos","podrán","podrán"]},
+      {inf:"saber", en:"to know → will know (sabr-)", forms:["sabré","sabrás","sabrá","sabremos","sabrán","sabrán"]},
+      {inf:"venir", en:"to come → will come (vendr-)", forms:["vendré","vendrás","vendrá","vendremos","vendrán","vendrán"]}
+    ]}},
     { course: "es_core", unit: { id:"es_irr5", type:"conj", title:"Conjugate: Top 5 irregular verbs (presente)", tense:"Presente", items: [
       {inf:"ser", en:"to be (permanent)", forms:["soy","eres","es","somos","son","son"]},
       {inf:"estar", en:"to be (state/location)", forms:["estoy","estás","está","estamos","están","están"]},
@@ -247,6 +275,13 @@ window.QUIZ_CONJ = {
     ]}}
   ],
   irish: [
+    { course: "ga_core", unit: { id:"ga_irr5_pres", type:"conj", title:"Conjugate: Top 5 irregulars — present (An Aimsir Láithreach)", tense:"Aimsir Láithreach", items: [
+      {inf:"bí", en:"to be (tá — the state/location be)", forms:["táim/tá mé","tá tú","tá sé/tá sí","táimid/tá muid","tá sibh","tá siad"]},
+      {inf:"déan", en:"to do / make", forms:["déanaim","déanann tú","déanann sé/déanann sí","déanaimid","déanann sibh","déanann siad"]},
+      {inf:"abair", en:"to say (deir- stem)", forms:["deirim","deir tú","deir sé/deir sí","deirimid","deir sibh","deir siad"]},
+      {inf:"faigh", en:"to get", forms:["faighim","faigheann tú","faigheann sé/faigheann sí","faighimid","faigheann sibh","faigheann siad"]},
+      {inf:"téigh", en:"to go (té- stem)", forms:["téim","téann tú","téann sé/téann sí","téimid","téann sibh","téann siad"]}
+    ]}},
     { course: "ga_core", unit: { id:"ga_irr5", type:"conj", title:"Conjugate: Top 5 irregular verbs (past — An Aimsir Chaite)", tense:"Aimsir Chaite", items: [
       {inf:"bí", en:"to be → was/were (type pronoun too: bhí mé)", forms:["bhí mé","bhí tú","bhí sé/bhí sí","bhíomar/bhí muid","bhí sibh","bhí siad"]},
       {inf:"déan", en:"to do/make → did/made", forms:["rinne mé","rinne tú","rinne sé/rinne sí","rinneamar/rinne muid","rinne sibh","rinne siad"]},
@@ -256,6 +291,13 @@ window.QUIZ_CONJ = {
     ]}}
   ],
   japanese: [
+    { course: "ja_core", unit: { id:"ja_irr5_b", type:"conj", title:"Conjugate: Top 5 irregulars II — polite past, negatives & potential", tense:"Forms II", items: [
+      {inf:"する (suru)", en:"to do", rows:["polite past (〜ました)","plain negative past (〜なかった)","polite negative (〜ません)","polite negative past","potential (can do)"], forms:["しました","しなかった","しません","しませんでした","できる"]},
+      {inf:"来る (kuru)", en:"to come — reading shifts to き/こ", rows:["polite past (〜ました)","plain negative past (〜なかった)","polite negative (〜ません)","polite negative past","potential (can come)"], forms:["来ました/きました","来なかった/こなかった","来ません/きません","来ませんでした/きませんでした","来られる/こられる/これる"]},
+      {inf:"ある (aru)", en:"to exist (things) — negatives use ない", rows:["polite past (〜ました)","plain negative past","polite negative (〜ません)","polite negative past","potential (can exist)"], forms:["ありました","なかった","ありません","ありませんでした","あり得る/ありえる"]},
+      {inf:"行く (iku)", en:"to go", rows:["polite past (〜ました)","plain negative past (〜なかった)","polite negative (〜ません)","polite negative past","potential (can go)"], forms:["行きました/いきました","行かなかった/いかなかった","行きません/いきません","行きませんでした/いきませんでした","行ける/いける"]},
+      {inf:"だ・です (copula)", en:"to be (X is Y)", rows:["polite past (でした)","plain negative past","polite negative","polite negative past"], forms:["でした","じゃなかった/ではなかった","じゃありません/ではありません/じゃないです","じゃありませんでした/ではありませんでした"]}
+    ]}},
     { course: "ja_core", unit: { id:"ja_irr5", type:"conj", title:"Conjugate: Top 5 irregular verbs (plain & polite)", tense:"Forms", items: [
       {inf:"する (suru)", en:"to do", rows:["dictionary (plain)","polite (〜ます)","negative (plain)","past (plain)","te-form"], forms:["する","します","しない","した","して"]},
       {inf:"来る (kuru)", en:"to come — the reading changes!", rows:["dictionary (plain)","polite (〜ます)","negative (plain)","past (plain)","te-form"], forms:["来る/くる","来ます/きます","来ない/こない","来た/きた","来て/きて"]},

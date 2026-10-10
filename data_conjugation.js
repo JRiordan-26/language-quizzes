@@ -4,6 +4,13 @@
 // Persons per language are defined in index.html (6 rows each).
 window.QUIZ_CONJ = {
   german: [
+    { course: "de_a1", unit: { id:"de_irr5", type:"conj", title:"Conjugate: Top 5 irregular verbs (Präsens)", tense:"Präsens", items: [
+      {inf:"sein", en:"to be", forms:["bin","bist","ist","sind","seid","sind"]},
+      {inf:"haben", en:"to have", forms:["habe","hast","hat","haben","habt","haben"]},
+      {inf:"werden", en:"to become / will", forms:["werde","wirst","wird","werden","werdet","werden"]},
+      {inf:"können", en:"can / to be able to", forms:["kann","kannst","kann","können","könnt","können"]},
+      {inf:"müssen", en:"must / to have to", forms:["muss","musst","muss","müssen","müsst","müssen"]}
+    ]}},
     { course: "de_a1", unit: { id:"de_a1_c1", type:"conj", title:"Conjugate: Present – regular & vowel-change", tense:"Präsens", items: [
       {inf:"machen", en:"to do / make", forms:["mache","machst","macht","machen","macht","machen"]},
       {inf:"wohnen", en:"to live", forms:["wohne","wohnst","wohnt","wohnen","wohnt","wohnen"]},
@@ -81,6 +88,13 @@ window.QUIZ_CONJ = {
     ]}}
   ],
   italian: [
+    { course: "it_a0a2", unit: { id:"it_irr5", type:"conj", title:"Conjugate: Top 5 irregular verbs (Presente)", tense:"Presente", items: [
+      {inf:"essere", en:"to be", forms:["sono","sei","è","siamo","siete","sono"]},
+      {inf:"avere", en:"to have", forms:["ho","hai","ha","abbiamo","avete","hanno"]},
+      {inf:"fare", en:"to do / make", forms:["faccio","fai","fa","facciamo","fate","fanno"]},
+      {inf:"dire", en:"to say / tell", forms:["dico","dici","dice","diciamo","dite","dicono"]},
+      {inf:"andare", en:"to go", forms:["vado","vai","va","andiamo","andate","vanno"]}
+    ]}},
     { course: "it_a0a2", unit: { id:"it_a0_c1", type:"conj", title:"Conjugate: Presente – 3 conjugations (-are/-ere/-ire)", tense:"Presente", items: [
       {inf:"parlare", en:"to speak", forms:["parlo","parli","parla","parliamo","parlate","parlano"]},
       {inf:"mangiare", en:"to eat", forms:["mangio","mangi","mangia","mangiamo","mangiate","mangiano"]},
@@ -167,6 +181,13 @@ window.QUIZ_CONJ = {
     ]}}
   ],
   dutch: [
+    { course: "nl_gram", unit: { id:"nl_irr5", type:"conj", title:"Conjugate: Top 5 irregular verbs (presens)", tense:"Presens", items: [
+      {inf:"zijn", en:"to be", forms:["ben","bent","is","zijn","zijn","zijn"]},
+      {inf:"hebben", en:"to have", forms:["heb","hebt","heeft","hebben","hebben","hebben"]},
+      {inf:"kunnen", en:"can / to be able to", forms:["kan","kunt/kan","kan","kunnen","kunnen","kunnen"]},
+      {inf:"zullen", en:"will / shall", forms:["zal","zult/zal","zal","zullen","zullen","zullen"]},
+      {inf:"willen", en:"to want", forms:["wil","wilt/wil","wil","willen","willen","willen"]}
+    ]}},
     { course: "nl_speak", unit: { id:"nl_sp_c1", type:"conj", title:"Conjugate: Present – zijn, hebben & regular verbs", tense:"Present", items: [
       {inf:"zijn", en:"to be", forms:["ben","bent","is","zijn","zijn","zijn"]},
       {inf:"hebben", en:"to have", forms:["heb","hebt","heeft","hebben","hebben","hebben"]},
@@ -214,6 +235,33 @@ window.QUIZ_CONJ = {
       {inf:"zijn", en:"to be → will be", forms:["zal zijn","zult zijn/zal zijn","zal zijn","zullen zijn","zullen zijn","zullen zijn"]},
       {inf:"komen", en:"to come → will come", forms:["zal komen","zult komen/zal komen","zal komen","zullen komen","zullen komen","zullen komen"]},
       {inf:"doen", en:"to do → will do", forms:["zal doen","zult doen/zal doen","zal doen","zullen doen","zullen doen","zullen doen"]}
+    ]}}
+  ],
+  spanish: [
+    { course: "es_core", unit: { id:"es_irr5", type:"conj", title:"Conjugate: Top 5 irregular verbs (presente)", tense:"Presente", items: [
+      {inf:"ser", en:"to be (permanent)", forms:["soy","eres","es","somos","son","son"]},
+      {inf:"estar", en:"to be (state/location)", forms:["estoy","estás","está","estamos","están","están"]},
+      {inf:"ir", en:"to go", forms:["voy","vas","va","vamos","van","van"]},
+      {inf:"tener", en:"to have", forms:["tengo","tienes","tiene","tenemos","tienen","tienen"]},
+      {inf:"hacer", en:"to do / make", forms:["hago","haces","hace","hacemos","hacen","hacen"]}
+    ]}}
+  ],
+  irish: [
+    { course: "ga_core", unit: { id:"ga_irr5", type:"conj", title:"Conjugate: Top 5 irregular verbs (past — An Aimsir Chaite)", tense:"Aimsir Chaite", items: [
+      {inf:"bí", en:"to be → was/were (type pronoun too: bhí mé)", forms:["bhí mé","bhí tú","bhí sé/bhí sí","bhíomar/bhí muid","bhí sibh","bhí siad"]},
+      {inf:"déan", en:"to do/make → did/made", forms:["rinne mé","rinne tú","rinne sé/rinne sí","rinneamar/rinne muid","rinne sibh","rinne siad"]},
+      {inf:"abair", en:"to say → said", forms:["dúirt mé","dúirt tú","dúirt sé/dúirt sí","dúramar/dúirt muid","dúirt sibh","dúirt siad"]},
+      {inf:"faigh", en:"to get → got", forms:["fuair mé","fuair tú","fuair sé/fuair sí","fuaireamar/fuair muid","fuair sibh","fuair siad"]},
+      {inf:"téigh", en:"to go → went", forms:["chuaigh mé","chuaigh tú","chuaigh sé/chuaigh sí","chuamar/chuaigh muid","chuaigh sibh","chuaigh siad"]}
+    ]}}
+  ],
+  japanese: [
+    { course: "ja_core", unit: { id:"ja_irr5", type:"conj", title:"Conjugate: Top 5 irregular verbs (plain & polite)", tense:"Forms", items: [
+      {inf:"する (suru)", en:"to do", rows:["dictionary (plain)","polite (〜ます)","negative (plain)","past (plain)","te-form"], forms:["する","します","しない","した","して"]},
+      {inf:"来る (kuru)", en:"to come — the reading changes!", rows:["dictionary (plain)","polite (〜ます)","negative (plain)","past (plain)","te-form"], forms:["来る/くる","来ます/きます","来ない/こない","来た/きた","来て/きて"]},
+      {inf:"ある (aru)", en:"to exist (things) — negative is just ない", rows:["dictionary (plain)","polite (〜ます)","negative (plain)","past (plain)","te-form"], forms:["ある","あります","ない","あった","あって"]},
+      {inf:"行く (iku)", en:"to go — past/te are irregular (行った, not 行いた)", rows:["dictionary (plain)","polite (〜ます)","negative (plain)","past (plain)","te-form"], forms:["行く/いく","行きます/いきます","行かない/いかない","行った/いった","行って/いって"]},
+      {inf:"だ・です (copula)", en:"to be (X is Y)", rows:["dictionary (plain)","polite","negative (plain)","past (plain)","te-form"], forms:["だ","です","じゃない","だった","で"]}
     ]}}
   ]
 };

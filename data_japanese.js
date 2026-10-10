@@ -6,5 +6,7 @@ window.QUIZ_DATA.japanese = {
   name: "Japanese",
   flag: "🇯🇵",
   ttsLang: "ja-JP",
-  courses: []
+  courses: [
+    { id: "ja_core", title: "Japanese essentials", units: [] }
+  ]
 };

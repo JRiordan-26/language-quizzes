@@ -1039,6 +1039,7 @@ function renderQuiz(){
       const row = $(`<div style="display:flex;align-items:center;gap:10px;margin:6px 0"></div>`);
       row.appendChild($(`<span style="width:118px;text-align:right;color:var(--muted);font-size:.92rem;flex-shrink:0">${p}</span>`));
       const inp = $(`<input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" style="flex:1;min-width:0;padding:9px 12px;font-size:1rem;border-radius:8px;border:2px solid var(--border);background:var(--card);color:var(--text);outline:none">`);
+      jpBind(inp, state.lang);
       inp.addEventListener('focus',()=>{ lastInput=inp; });
       inp.addEventListener('keydown',e=>{
         if(e.key==='Enter'){

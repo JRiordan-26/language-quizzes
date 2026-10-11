@@ -913,14 +913,59 @@ function renderSetup(){
         <label for="cb_${u.id}">${u.title.replace(/^(Vocab|Grammar|Conjugate|Tables|My Words)[^:]*:\s*/,'')}</label><span class="cnt">${cntTxt}</span></div>`);
       row.querySelector('input').onchange=(e)=>{
         if(e.target.checked) state.selectedUnits.add(u.id); else state.selectedUnits.delete(u.id);
-        saveSel(); updateStartBar();
+        saveSel(); updateStartBar(); if(state.quizType==='conj') refreshVerbCard();
       };
       unitCard.appendChild(row);
     }
   }
 
+  // verb picker (conjugation only): narrow the quiz to specific verbs.
+  // state.conjVerbsOff holds EXCLUDED infinitives, so newly ticked tenses
+  // default their verbs to on.
+  let verbCard=null;
+  function refreshVerbCard(){
+    if(state.quizType!=='conj') return;
+    if(state._verbsOffLang!==state.lang){ state.conjVerbsOff=new Set(); state._verbsOffLang=state.lang; }
+    if(!state.conjVerbsOff) state.conjVerbsOff=new Set();
+    const universe=[];
+    const seen=new Set();
+    for(const g of conjTenseGroups(state.lang)){
+      if(!state.selectedUnits.has(g.id)) continue;
+      for(const it of g.items){
+        if(!conjItemPass(it) || seen.has(it.inf)) continue;
+        seen.add(it.inf); universe.push(it);
+      }
+    }
+    for(const v of [...state.conjVerbsOff]) if(!seen.has(v)) state.conjVerbsOff.delete(v);
+    const body=verbCard.querySelector('#verbChips');
+    body.innerHTML='';
+    if(!universe.length){ verbCard.style.display='none'; updateStartBar(); return; }
+    verbCard.style.display='';
+    const nOn=universe.length-state.conjVerbsOff.size;
+    verbCard.querySelector('#verbCnt').textContent=`${nOn} of ${universe.length} selected`;
+    for(const it of universe){
+      const on=!state.conjVerbsOff.has(it.inf);
+      const b=$(`<button class="small" style="margin:0;${on?'background:var(--accent);color:#fff':'opacity:.55'}" title="${(it.en||'').replace(/"/g,'&quot;')}">${it.inf}${it.irr?' ⚡':''}</button>`);
+      b.onclick=()=>{ on?state.conjVerbsOff.add(it.inf):state.conjVerbsOff.delete(it.inf); refreshVerbCard(); updateStartBar(); };
+      body.appendChild(b);
+    }
+  }
+  if(state.quizType==='conj'){
+    verbCard = $(`<div class="card"><h2 style="margin-top:0">3 · Verbs <span class="pill" id="verbCnt"></span></h2>
+      <div class="sub" style="margin-bottom:10px">Tap verbs to drop or re-add them — work on exactly the ones you want. <button class="small" id="vAll">all</button> <button class="small" id="vNone">none</button></div>
+      <div id="verbChips" style="display:flex;gap:6px;flex-wrap:wrap"></div></div>`);
+    app.appendChild(verbCard);
+    verbCard.querySelector('#vAll').onclick=()=>{ state.conjVerbsOff=new Set(); refreshVerbCard(); updateStartBar(); };
+    verbCard.querySelector('#vNone').onclick=()=>{
+      state.conjVerbsOff=new Set();
+      for(const g of conjTenseGroups(state.lang)) if(state.selectedUnits.has(g.id)) g.items.forEach(it=>{ if(conjItemPass(it)) state.conjVerbsOff.add(it.inf); });
+      refreshVerbCard(); updateStartBar();
+    };
+    refreshVerbCard();
+  }
+
   // length
-  const lenCard = $(`<div class="card"><h2 style="margin-top:0">3 · Quiz length</h2><div class="opts" id="lens"></div></div>`);
+  const lenCard = $(`<div class="card"><h2 style="margin-top:0">${state.quizType==='conj'?'4':'3'} · Quiz length</h2><div class="opts" id="lens"></div></div>`);
   app.appendChild(lenCard);
   for(const [val,lbl] of [[10,'10'],[15,'15'],[25,'25'],[9999,'Everything selected']]){
     const o = $(`<div class="opt ${state.qCount===val?'sel':''}">${lbl}</div>`);
@@ -935,9 +980,10 @@ function renderSetup(){
   updateStartBar();
 
   function updateStartBar(){
-    const pool = buildPool();
     const info = app.querySelector('#startInfo');
     const btn = app.querySelector('#startBtn');
+    if(!info || !btn) return;   // verb card refreshes before the bar exists
+    const pool = buildPool();
     if(!pool.length){ info.textContent = 'Select at least one unit with material remaining.'; btn.disabled=true; }
     else{
       const n = Math.min(state.qCount, pool.length);
@@ -991,6 +1037,7 @@ function buildPool(){
     if(u.type==='vocab') for(const it of availableVocab(u,learned)) pool.push({unit:u, item:it});
     else for(const it of u.items){
       if(u.type==='conj' && !conjItemPass(it)) continue;
+      if(u.vgroup && state.conjVerbsOff && state.conjVerbsOff.has(it.inf)) continue;
       pool.push({unit:u, item:it});
     }
   }

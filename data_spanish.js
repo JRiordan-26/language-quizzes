@@ -215,13 +215,13 @@ window.QUIZ_DATA.spanish = {
           {inf:"escribir", en:"to write", forms:["escribo","escribes","escribe","escribimos","escriben","escriben"]}
         ]},
         { id: "es_c2", type: "conj", title: "Conjugate: Present — irregular & stem-changing", tense: "Presente", items: [
-          {inf:"ser", en:"to be (permanent)", forms:["soy","eres","es","somos","son","son"]},
-          {inf:"estar", en:"to be (state/place)", forms:["estoy","estás","está","estamos","están","están"]},
-          {inf:"ir", en:"to go", forms:["voy","vas","va","vamos","van","van"]},
-          {inf:"tener", en:"to have", forms:["tengo","tienes","tiene","tenemos","tienen","tienen"]},
-          {inf:"hacer", en:"to do / make", forms:["hago","haces","hace","hacemos","hacen","hacen"]},
-          {inf:"querer", en:"to want (e→ie)", forms:["quiero","quieres","quiere","queremos","quieren","quieren"]},
-          {inf:"poder", en:"to be able (o→ue)", forms:["puedo","puedes","puede","podemos","pueden","pueden"]}
+          {inf:"ser", irr:1, en:"to be (permanent)", forms:["soy","eres","es","somos","son","son"]},
+          {inf:"estar", irr:1, en:"to be (state/place)", forms:["estoy","estás","está","estamos","están","están"]},
+          {inf:"ir", irr:1, en:"to go", forms:["voy","vas","va","vamos","van","van"]},
+          {inf:"tener", irr:1, en:"to have", forms:["tengo","tienes","tiene","tenemos","tienen","tienen"]},
+          {inf:"hacer", irr:1, en:"to do / make", forms:["hago","haces","hace","hacemos","hacen","hacen"]},
+          {inf:"querer", irr:1, en:"to want (e→ie)", forms:["quiero","quieres","quiere","queremos","quieren","quieren"]},
+          {inf:"poder", irr:1, en:"to be able (o→ue)", forms:["puedo","puedes","puede","podemos","pueden","pueden"]}
         ]}
       ]
     },
@@ -306,37 +306,37 @@ window.QUIZ_DATA.spanish = {
           {q:"Me alegra que te ___ la comida. (gustar)", c:["guste","gusta","gustará","gustaba"], a:0, x:"Emotion verbs (me alegra que…) trigger the subjunctive in the que-clause: me alegra que te guste la comida. Gusta (indicative) misses the trigger — feelings ABOUT an event demand the subjunctive.", tr:"I'm glad you like the food."},
           {q:"No creo que ellos ___ tiempo. (tener)", c:["tengan","tienen","tendrán","tenían"], a:0, x:"Negated belief (no creo que) expresses doubt, so the subjunctive: tengan. Form it from yo tengo — drop the -o, add -a endings: tenga, tengan. Tienen (indicative) would only follow affirmative creo que.", tr:"I don't think they have time."}
         ]},
-        { id: "es_c3", type: "conj", title: "Conjugate: Pretérito — regular & key irregulars", tense: "Pretérito", items: [
+        { id: "es_c3", type: "conj", title: "Conjugate: Simple past (Pretérito) — regular & key irregulars", tense: "Pretérito", items: [
           {inf:"hablar", en:"to speak", forms:["hablé","hablaste","habló","hablamos","hablaron","hablaron"]},
           {inf:"comer", en:"to eat", forms:["comí","comiste","comió","comimos","comieron","comieron"]},
           {inf:"vivir", en:"to live", forms:["viví","viviste","vivió","vivimos","vivieron","vivieron"]},
-          {inf:"ser", en:"to be (same as ir)", forms:["fui","fuiste","fue","fuimos","fueron","fueron"]},
-          {inf:"ir", en:"to go (same as ser)", forms:["fui","fuiste","fue","fuimos","fueron","fueron"]},
-          {inf:"hacer", en:"to do / make", forms:["hice","hiciste","hizo","hicimos","hicieron","hicieron"]},
-          {inf:"tener", en:"to have", forms:["tuve","tuviste","tuvo","tuvimos","tuvieron","tuvieron"]}
+          {inf:"ser", irr:1, en:"to be (same as ir)", forms:["fui","fuiste","fue","fuimos","fueron","fueron"]},
+          {inf:"ir", irr:1, en:"to go (same as ser)", forms:["fui","fuiste","fue","fuimos","fueron","fueron"]},
+          {inf:"hacer", irr:1, en:"to do / make", forms:["hice","hiciste","hizo","hicimos","hicieron","hicieron"]},
+          {inf:"tener", irr:1, en:"to have", forms:["tuve","tuviste","tuvo","tuvimos","tuvieron","tuvieron"]}
         ]},
-        { id: "es_c4", type: "conj", title: "Conjugate: Imperfecto — only three irregulars", tense: "Imperfecto", items: [
+        { id: "es_c4", type: "conj", title: "Conjugate: Imperfect (Imperfecto) — only three irregulars", tense: "Imperfecto", items: [
           {inf:"hablar", en:"to speak", forms:["hablaba","hablabas","hablaba","hablábamos","hablaban","hablaban"]},
           {inf:"comer", en:"to eat", forms:["comía","comías","comía","comíamos","comían","comían"]},
           {inf:"vivir", en:"to live", forms:["vivía","vivías","vivía","vivíamos","vivían","vivían"]},
-          {inf:"ser", en:"to be (irregular)", forms:["era","eras","era","éramos","eran","eran"]},
-          {inf:"ir", en:"to go (irregular)", forms:["iba","ibas","iba","íbamos","iban","iban"]},
-          {inf:"ver", en:"to see (irregular)", forms:["veía","veías","veía","veíamos","veían","veían"]}
+          {inf:"ser", irr:1, en:"to be (irregular)", forms:["era","eras","era","éramos","eran","eran"]},
+          {inf:"ir", irr:1, en:"to go (irregular)", forms:["iba","ibas","iba","íbamos","iban","iban"]},
+          {inf:"ver", irr:1, en:"to see (irregular)", forms:["veía","veías","veía","veíamos","veían","veían"]}
         ]},
-        { id: "es_c5", type: "conj", title: "Conjugate: Futuro — infinitive + endings", tense: "Futuro", items: [
+        { id: "es_c5", type: "conj", title: "Conjugate: Future (Futuro) — infinitive + endings", tense: "Futuro", items: [
           {inf:"hablar", en:"to speak", forms:["hablaré","hablarás","hablará","hablaremos","hablarán","hablarán"]},
           {inf:"comer", en:"to eat", forms:["comeré","comerás","comerá","comeremos","comerán","comerán"]},
           {inf:"vivir", en:"to live", forms:["viviré","vivirás","vivirá","viviremos","vivirán","vivirán"]},
-          {inf:"tener", en:"to have (tendr-)", forms:["tendré","tendrás","tendrá","tendremos","tendrán","tendrán"]},
-          {inf:"hacer", en:"to do / make (har-)", forms:["haré","harás","hará","haremos","harán","harán"]},
-          {inf:"poder", en:"to be able (podr-)", forms:["podré","podrás","podrá","podremos","podrán","podrán"]}
+          {inf:"tener", irr:1, en:"to have (tendr-)", forms:["tendré","tendrás","tendrá","tendremos","tendrán","tendrán"]},
+          {inf:"hacer", irr:1, en:"to do / make (har-)", forms:["haré","harás","hará","haremos","harán","harán"]},
+          {inf:"poder", irr:1, en:"to be able (podr-)", forms:["podré","podrás","podrá","podremos","podrán","podrán"]}
         ]},
-        { id: "es_c6", type: "conj", title: "Conjugate: Condicional — same stems as the future", tense: "Condicional", items: [
+        { id: "es_c6", type: "conj", title: "Conjugate: Conditional (Condicional) — same stems as the future", tense: "Condicional", items: [
           {inf:"hablar", en:"to speak", forms:["hablaría","hablarías","hablaría","hablaríamos","hablarían","hablarían"]},
           {inf:"comer", en:"to eat", forms:["comería","comerías","comería","comeríamos","comerían","comerían"]},
           {inf:"vivir", en:"to live", forms:["viviría","vivirías","viviría","viviríamos","vivirían","vivirían"]},
-          {inf:"tener", en:"to have (tendr-)", forms:["tendría","tendrías","tendría","tendríamos","tendrían","tendrían"]},
-          {inf:"hacer", en:"to do / make (har-)", forms:["haría","harías","haría","haríamos","harían","harían"]}
+          {inf:"tener", irr:1, en:"to have (tendr-)", forms:["tendría","tendrías","tendría","tendríamos","tendrían","tendrían"]},
+          {inf:"hacer", irr:1, en:"to do / make (har-)", forms:["haría","harías","haría","haríamos","harían","harían"]}
         ]},
         { id: "es_v_idioms", type: "vocab", title: "Vocab: Modismos & expresiones", items: [
           {t:"¡Qué padre!", e:"how cool! (Mexico)"},

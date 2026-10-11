@@ -847,6 +847,16 @@ function renderSetup(){
     }
     if(!voiceOK) typeCard.appendChild($(`<div class="voiceNote">🔇 This browser has no ${d.name} voice, so audio and the Listening mode are disabled for ${d.name}.</div>`));
   }
+  if(state.quizType==='conj'){
+    if(!state.conjFilter) state.conjFilter='all';
+    const cmodes = [ ['all','All verbs'], ['reg','Regular only'], ['irr','⚡ Irregular only'] ];
+    for(const [val,lbl] of cmodes){
+      const o = $(`<div class="opt ${state.conjFilter===val?'sel':''}">${lbl}</div>`);
+      o.onclick=()=>{ state.conjFilter=val; render(); };
+      typeCard.querySelector('#modes').appendChild(o);
+    }
+    if(state.conjFilter!=='all') typeCard.appendChild($(`<div class="voiceNote">Only ${state.conjFilter==='irr'?'irregular':'regular'} verbs will be asked from the ticked units; declension tables are unaffected.</div>`));
+  }
 
   // units
   const unitCard = $(`<div class="card"><h2 style="margin-top:0">2 · Material <span class="pill">from your course sections</span></h2></div>`);
@@ -881,7 +891,15 @@ function renderSetup(){
         cnt = availableVocab(u, learned).length;
         const excl = u.items.length - cnt;
         cntTxt = `${cnt} words${excl?` <span class="learnedTag">(${excl} learned)</span>`:``}`;
-      } else if(u.type==='conj'){ cnt = u.items.length; cntTxt = `${cnt} ${u.items.some(it=>it.rows)?'tables':'verbs'}`; }
+      } else if(u.type==='conj'){
+        cnt = u.items.length;
+        const isTables = u.items.some(it=>it.rows);
+        cntTxt = `${cnt} ${isTables?'tables':'verbs'}`;
+        if(!isTables && state.conjFilter && state.conjFilter!=='all'){
+          const n = u.items.filter(conjItemPass).length;
+          cntTxt = n ? `${n} of ${cnt} ${state.conjFilter==='irr'?'irregular':'regular'}` : `<span style="opacity:.5">0 ${state.conjFilter==='irr'?'irregular':'regular'}</span>`;
+        }
+      }
       else { cnt = u.items.length; cntTxt = `${cnt} questions`; }
       const row = $(`<div class="unit"><input type="checkbox" id="cb_${u.id}" ${state.selectedUnits.has(u.id)?'checked':''}>
         <label for="cb_${u.id}">${u.title.replace(/^(Vocab|Grammar|Conjugate|Tables|My Words)[^:]*:\s*/,'')}</label><span class="cnt">${cntTxt}</span></div>`);
@@ -922,6 +940,13 @@ function renderSetup(){
   }
 }
 
+// Regular/irregular radio on the conjugation setup: filters verb items by
+// their irr flag; paradigm tables (items with rows) always pass.
+function conjItemPass(it){
+  const f = state.conjFilter || 'all';
+  if(f==='all' || it.rows) return true;
+  return f==='irr' ? !!it.irr : !it.irr;
+}
 function buildPool(){
   const learned = getLearned(state.lang);
   const pool=[];
@@ -929,7 +954,10 @@ function buildPool(){
     const u = unitById(id);
     if(!u || u.type!==state.quizType) continue;
     if(u.type==='vocab') for(const it of availableVocab(u,learned)) pool.push({unit:u, item:it});
-    else for(const it of u.items) pool.push({unit:u, item:it});
+    else for(const it of u.items){
+      if(u.type==='conj' && !conjItemPass(it)) continue;
+      pool.push({unit:u, item:it});
+    }
   }
   return pool;
 }

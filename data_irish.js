@@ -251,7 +251,7 @@ window.QUIZ_DATA.irish = {
         ]},
         // ---------- CONJUGATION ----------
         { id: "ga_c1", type: "conj", title: "Conjugate: Bí — present (tá)", tense:"Aimsir láithreach", items: [
-          {inf:"bí", en:"to be (present: tá)", forms:["táim/tá mé","tá tú","tá sé/tá sí","táimid","tá sibh","tá siad"]}
+          {inf:"bí", irr:1, en:"to be (present: tá)", forms:["táim/tá mé","tá tú","tá sé/tá sí","táimid","tá sibh","tá siad"]}
         ]},
         { id: "ga_c2", type: "conj", title: "Conjugate: Present tense (1st & 2nd conjugation)", tense:"Aimsir láithreach", items: [
           {inf:"ól", en:"to drink", forms:["ólaim","ólann tú","ólann sé/ólann sí","ólaimid","ólann sibh","ólann siad"]},
@@ -260,13 +260,13 @@ window.QUIZ_DATA.irish = {
           {inf:"imir", en:"to play (2nd conj.)", forms:["imrím","imríonn tú","imríonn sé/imríonn sí","imrímid","imríonn sibh","imríonn siad"]}
         ]},
         { id: "ga_c3", type: "conj", title: "Conjugate: Past tense (séimhiú & d')", tense:"Aimsir chaite", items: [
-          {inf:"bí", en:"to be → was", forms:["bhí mé","bhí tú","bhí sé/bhí sí","bhíomar","bhí sibh","bhí siad"]},
+          {inf:"bí", irr:1, en:"to be → was", forms:["bhí mé","bhí tú","bhí sé/bhí sí","bhíomar","bhí sibh","bhí siad"]},
           {inf:"ól", en:"to drink → drank (d' + vowel)", forms:["d'ól mé","d'ól tú","d'ól sé/d'ól sí","d'ólamar","d'ól sibh","d'ól siad"]},
           {inf:"cuir", en:"to put → put (lenited)", forms:["chuir mé","chuir tú","chuir sé/chuir sí","chuireamar","chuir sibh","chuir siad"]},
           {inf:"ceannaigh", en:"to buy → bought", forms:["cheannaigh mé","cheannaigh tú","cheannaigh sé/cheannaigh sí","cheannaíomar","cheannaigh sibh","cheannaigh siad"]}
         ]},
         { id: "ga_c4", type: "conj", title: "Conjugate: Future tense (-faidh / -fidh)", tense:"Aimsir fháistineach", items: [
-          {inf:"bí", en:"to be → will be", forms:["beidh mé","beidh tú","beidh sé/beidh sí","beimid","beidh sibh","beidh siad"]},
+          {inf:"bí", irr:1, en:"to be → will be", forms:["beidh mé","beidh tú","beidh sé/beidh sí","beimid","beidh sibh","beidh siad"]},
           {inf:"ól", en:"to drink → will drink", forms:["ólfaidh mé","ólfaidh tú","ólfaidh sé/ólfaidh sí","ólfaimid","ólfaidh sibh","ólfaidh siad"]},
           {inf:"cuir", en:"to put → will put", forms:["cuirfidh mé","cuirfidh tú","cuirfidh sé/cuirfidh sí","cuirfimid","cuirfidh sibh","cuirfidh siad"]}
         ]}

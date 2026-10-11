@@ -37,26 +37,26 @@ window.QUIZ_ADDON_UNITS.push(
 
 // ---------- ITALIAN ----------
 window.QUIZ_ADDON_UNITS.push(
-{ lang:"italian", course:"it_a0a2", unit:{ id:"it_p1", type:"conj", title:"Tables: Articoli determinativi & indeterminativi", tense:"Articoli", items:[
+{ lang:"italian", course:"it_a0a2", unit:{ id:"it_p1", type:"conj", title:"Tables: Definite & indefinite articles (articoli)", tense:"Articoli", items:[
   {inf:"the — singular", en:"definite article by noun type", rows:["masculine (standard)","masc. + s-consonant/z/gn/ps","masc. + vowel","feminine","fem. + vowel"], forms:["il","lo","l'","la","l'"]},
   {inf:"the — plural", en:"definite article by noun type", rows:["masculine (standard)","masc. + s-consonant/z/gn/ps","masc. + vowel","feminine"], forms:["i","gli","gli","le"]},
   {inf:"a/an", en:"indefinite article by noun type", rows:["masculine (standard)","masc. + s-consonant/z/gn/ps","masc. + vowel","feminine","fem. + vowel"], forms:["un","uno","un","una","un'"]}
 ]}},
-{ lang:"italian", course:"it_a0a2", unit:{ id:"it_p2", type:"conj", title:"Tables: Preposizioni articolate", tense:"Preposizioni", items:[
+{ lang:"italian", course:"it_a0a2", unit:{ id:"it_p2", type:"conj", title:"Tables: Combined prepositions (preposizioni articolate)", tense:"Preposizioni", items:[
   {inf:"a + article (to/at the)", en:"a combined with il/lo/la/i/gli/le", rows:["a + il","a + lo","a + la","a + i","a + gli","a + le"], forms:["al","allo","alla","ai","agli","alle"]},
   {inf:"di + article (of the)", en:"di combined with il/lo/la/i/gli/le", rows:["di + il","di + lo","di + la","di + i","di + gli","di + le"], forms:["del","dello","della","dei","degli","delle"]},
   {inf:"in + article (in the)", en:"in combined with il/lo/la/i/gli/le", rows:["in + il","in + lo","in + la","in + i","in + gli","in + le"], forms:["nel","nello","nella","nei","negli","nelle"]},
   {inf:"su + article (on the)", en:"su combined with il/lo/la/i/gli/le", rows:["su + il","su + lo","su + la","su + i","su + gli","su + le"], forms:["sul","sullo","sulla","sui","sugli","sulle"]},
   {inf:"da + article (from/by the)", en:"da combined with il/lo/la/i/gli/le", rows:["da + il","da + lo","da + la","da + i","da + gli","da + le"], forms:["dal","dallo","dalla","dai","dagli","dalle"]}
 ]}},
-{ lang:"italian", course:"it_a0a2", unit:{ id:"it_p3", type:"conj", title:"Tables: Possessivi (with article)", tense:"Possessivi", items:[
+{ lang:"italian", course:"it_a0a2", unit:{ id:"it_p3", type:"conj", title:"Tables: Possessives with article (possessivi)", tense:"Possessivi", items:[
   {inf:"my — il mio…", en:"possessive with its article", rows:["masc. singular","fem. singular","masc. plural","fem. plural"], forms:["il mio","la mia","i miei","le mie"]},
   {inf:"your (sg.) — il tuo…", en:"possessive with its article", rows:["masc. singular","fem. singular","masc. plural","fem. plural"], forms:["il tuo","la tua","i tuoi","le tue"]},
   {inf:"his/her — il suo…", en:"possessive with its article", rows:["masc. singular","fem. singular","masc. plural","fem. plural"], forms:["il suo","la sua","i suoi","le sue"]},
   {inf:"our — il nostro…", en:"possessive with its article", rows:["masc. singular","fem. singular","masc. plural","fem. plural"], forms:["il nostro","la nostra","i nostri","le nostre"]},
   {inf:"their — il loro…", en:"possessive with its article (loro never changes)", rows:["masc. singular","fem. singular","masc. plural","fem. plural"], forms:["il loro","la loro","i loro","le loro"]}
 ]}},
-{ lang:"italian", course:"it_a0a2", unit:{ id:"it_p4", type:"conj", title:"Tables: Pronomi oggetto", tense:"Pronomi", items:[
+{ lang:"italian", course:"it_a0a2", unit:{ id:"it_p4", type:"conj", title:"Tables: Object pronouns (pronomi oggetto)", tense:"Pronomi", items:[
   {inf:"direct-object pronouns (mi vedi?)", en:"me, you, him/it, her/it, us, you pl., them", rows:["me","you (sg.)","him / it (m.)","her / it (f.)","us","you (pl.)","them (m.)","them (f.)"], forms:["mi","ti","lo","la","ci","vi","li","le"]},
   {inf:"indirect-object pronouns (mi scrivi?)", en:"to me, to you, to him, to her…", rows:["(to) me","(to) you (sg.)","(to) him","(to) her","(to) us","(to) you (pl.)","(to) them"], forms:["mi","ti","gli","le","ci","vi","gli/loro"]}
 ]}});

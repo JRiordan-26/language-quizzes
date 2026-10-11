@@ -205,7 +205,7 @@ window.QUIZ_DATA.spanish = {
           {q:"La fiesta ___ en mi casa.", c:["es","está","estás","estamos"], a:0, x:"The famous exception: EVENTS use ser for where they take place — la fiesta es en mi casa. Estar locates objects and people; for a party, meeting or concert, 'is held at' = ser.", tr:"The party is at my house."},
           {q:"Ustedes ___ muy amables.", c:["son","están","es","somos"], a:0, x:"Kindness as a personality trait is inherent, so ser: ustedes son muy amables. Están amables would mean they are acting unusually nice right now — estar turns traits into momentary states.", tr:"You all are very kind."}
         ]},
-        { id: "es_c1", type: "conj", title: "Conjugate: Present — regular -ar/-er/-ir", tense: "Presente", items: [
+        { id: "es_c1", type: "conj", title: "Conjugate: Present — regular -ar/-er/-ir", tense: "Present (Presente)", items: [
           {inf:"hablar", en:"to speak", forms:["hablo","hablas","habla","hablamos","hablan","hablan"]},
           {inf:"trabajar", en:"to work", forms:["trabajo","trabajas","trabaja","trabajamos","trabajan","trabajan"]},
           {inf:"estudiar", en:"to study", forms:["estudio","estudias","estudia","estudiamos","estudian","estudian"]},
@@ -214,7 +214,7 @@ window.QUIZ_DATA.spanish = {
           {inf:"vivir", en:"to live", forms:["vivo","vives","vive","vivimos","viven","viven"]},
           {inf:"escribir", en:"to write", forms:["escribo","escribes","escribe","escribimos","escriben","escriben"]}
         ]},
-        { id: "es_c2", type: "conj", title: "Conjugate: Present — irregular & stem-changing", tense: "Presente", items: [
+        { id: "es_c2", type: "conj", title: "Conjugate: Present — irregular & stem-changing", tense: "Present (Presente)", items: [
           {inf:"ser", irr:1, en:"to be (permanent)", forms:["soy","eres","es","somos","son","son"]},
           {inf:"estar", irr:1, en:"to be (state/place)", forms:["estoy","estás","está","estamos","están","están"]},
           {inf:"ir", irr:1, en:"to go", forms:["voy","vas","va","vamos","van","van"]},
@@ -306,7 +306,7 @@ window.QUIZ_DATA.spanish = {
           {q:"Me alegra que te ___ la comida. (gustar)", c:["guste","gusta","gustará","gustaba"], a:0, x:"Emotion verbs (me alegra que…) trigger the subjunctive in the que-clause: me alegra que te guste la comida. Gusta (indicative) misses the trigger — feelings ABOUT an event demand the subjunctive.", tr:"I'm glad you like the food."},
           {q:"No creo que ellos ___ tiempo. (tener)", c:["tengan","tienen","tendrán","tenían"], a:0, x:"Negated belief (no creo que) expresses doubt, so the subjunctive: tengan. Form it from yo tengo — drop the -o, add -a endings: tenga, tengan. Tienen (indicative) would only follow affirmative creo que.", tr:"I don't think they have time."}
         ]},
-        { id: "es_c3", type: "conj", title: "Conjugate: Simple past (Pretérito) — regular & key irregulars", tense: "Pretérito", items: [
+        { id: "es_c3", type: "conj", title: "Conjugate: Simple past (Pretérito) — regular & key irregulars", tense: "Simple past (Pretérito)", items: [
           {inf:"hablar", en:"to speak", forms:["hablé","hablaste","habló","hablamos","hablaron","hablaron"]},
           {inf:"comer", en:"to eat", forms:["comí","comiste","comió","comimos","comieron","comieron"]},
           {inf:"vivir", en:"to live", forms:["viví","viviste","vivió","vivimos","vivieron","vivieron"]},
@@ -315,7 +315,7 @@ window.QUIZ_DATA.spanish = {
           {inf:"hacer", irr:1, en:"to do / make", forms:["hice","hiciste","hizo","hicimos","hicieron","hicieron"]},
           {inf:"tener", irr:1, en:"to have", forms:["tuve","tuviste","tuvo","tuvimos","tuvieron","tuvieron"]}
         ]},
-        { id: "es_c4", type: "conj", title: "Conjugate: Imperfect (Imperfecto) — only three irregulars", tense: "Imperfecto", items: [
+        { id: "es_c4", type: "conj", title: "Conjugate: Imperfect (Imperfecto) — only three irregulars", tense: "Imperfect (Imperfecto)", items: [
           {inf:"hablar", en:"to speak", forms:["hablaba","hablabas","hablaba","hablábamos","hablaban","hablaban"]},
           {inf:"comer", en:"to eat", forms:["comía","comías","comía","comíamos","comían","comían"]},
           {inf:"vivir", en:"to live", forms:["vivía","vivías","vivía","vivíamos","vivían","vivían"]},
@@ -323,7 +323,7 @@ window.QUIZ_DATA.spanish = {
           {inf:"ir", irr:1, en:"to go (irregular)", forms:["iba","ibas","iba","íbamos","iban","iban"]},
           {inf:"ver", irr:1, en:"to see (irregular)", forms:["veía","veías","veía","veíamos","veían","veían"]}
         ]},
-        { id: "es_c5", type: "conj", title: "Conjugate: Future (Futuro) — infinitive + endings", tense: "Futuro", items: [
+        { id: "es_c5", type: "conj", title: "Conjugate: Future (Futuro) — infinitive + endings", tense: "Future (Futuro)", items: [
           {inf:"hablar", en:"to speak", forms:["hablaré","hablarás","hablará","hablaremos","hablarán","hablarán"]},
           {inf:"comer", en:"to eat", forms:["comeré","comerás","comerá","comeremos","comerán","comerán"]},
           {inf:"vivir", en:"to live", forms:["viviré","vivirás","vivirá","viviremos","vivirán","vivirán"]},
@@ -331,14 +331,14 @@ window.QUIZ_DATA.spanish = {
           {inf:"hacer", irr:1, en:"to do / make (har-)", forms:["haré","harás","hará","haremos","harán","harán"]},
           {inf:"poder", irr:1, en:"to be able (podr-)", forms:["podré","podrás","podrá","podremos","podrán","podrán"]}
         ]},
-        { id: "es_c6", type: "conj", title: "Conjugate: Conditional (Condicional) — same stems as the future", tense: "Condicional", items: [
+        { id: "es_c6", type: "conj", title: "Conjugate: Conditional (Condicional) — same stems as the future", tense: "Conditional (Condicional)", items: [
           {inf:"hablar", en:"to speak", forms:["hablaría","hablarías","hablaría","hablaríamos","hablarían","hablarían"]},
           {inf:"comer", en:"to eat", forms:["comería","comerías","comería","comeríamos","comerían","comerían"]},
           {inf:"vivir", en:"to live", forms:["viviría","vivirías","viviría","viviríamos","vivirían","vivirían"]},
           {inf:"tener", irr:1, en:"to have (tendr-)", forms:["tendría","tendrías","tendría","tendríamos","tendrían","tendrían"]},
           {inf:"hacer", irr:1, en:"to do / make (har-)", forms:["haría","harías","haría","haríamos","harían","harían"]}
         ]},
-        { id: "es_v_idioms", type: "vocab", title: "Vocab: Modismos & expresiones", items: [
+        { id: "es_v_idioms", type: "vocab", title: "Vocab: Idioms & expressions (modismos)", items: [
           {t:"¡Qué padre!", e:"how cool! (Mexico)"},
           {t:"¡Qué chévere!", e:"how cool! (Caribbean/Andes)"},
           {t:"¿Qué onda?", e:"what's up? (Mexico)"},

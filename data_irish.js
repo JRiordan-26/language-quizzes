@@ -250,22 +250,22 @@ window.QUIZ_DATA.irish = {
           {q:"Genitive of 'an fear' (the man):", c:["an fhir","an fear","na fear","an bhfear"], a:0, x:"Masculine genitive singular keeps the article an but lenites the noun, often with a vowel change: fear → an fhir — hata an fhir = the man's hat. Urú ('an bhfear') never marks the genitive.", ex:"hata an fhir", tr:"of the man"}
         ]},
         // ---------- CONJUGATION ----------
-        { id: "ga_c1", type: "conj", title: "Conjugate: Bí — present (tá)", tense:"Aimsir láithreach", items: [
+        { id: "ga_c1", type: "conj", title: "Conjugate: Bí — present (tá)", tense:"Present (An Aimsir Láithreach)", items: [
           {inf:"bí", irr:1, en:"to be (present: tá)", forms:["táim/tá mé","tá tú","tá sé/tá sí","táimid","tá sibh","tá siad"]}
         ]},
-        { id: "ga_c2", type: "conj", title: "Conjugate: Present tense (1st & 2nd conjugation)", tense:"Aimsir láithreach", items: [
+        { id: "ga_c2", type: "conj", title: "Conjugate: Present tense (1st & 2nd conjugation)", tense:"Present (An Aimsir Láithreach)", items: [
           {inf:"ól", en:"to drink", forms:["ólaim","ólann tú","ólann sé/ólann sí","ólaimid","ólann sibh","ólann siad"]},
           {inf:"cuir", en:"to put", forms:["cuirim","cuireann tú","cuireann sé/cuireann sí","cuirimid","cuireann sibh","cuireann siad"]},
           {inf:"ceannaigh", en:"to buy (2nd conj.)", forms:["ceannaím","ceannaíonn tú","ceannaíonn sé/ceannaíonn sí","ceannaímid","ceannaíonn sibh","ceannaíonn siad"]},
           {inf:"imir", en:"to play (2nd conj.)", forms:["imrím","imríonn tú","imríonn sé/imríonn sí","imrímid","imríonn sibh","imríonn siad"]}
         ]},
-        { id: "ga_c3", type: "conj", title: "Conjugate: Past tense (séimhiú & d')", tense:"Aimsir chaite", items: [
+        { id: "ga_c3", type: "conj", title: "Conjugate: Past tense (séimhiú & d')", tense:"Past (An Aimsir Chaite)", items: [
           {inf:"bí", irr:1, en:"to be → was", forms:["bhí mé","bhí tú","bhí sé/bhí sí","bhíomar","bhí sibh","bhí siad"]},
           {inf:"ól", en:"to drink → drank (d' + vowel)", forms:["d'ól mé","d'ól tú","d'ól sé/d'ól sí","d'ólamar","d'ól sibh","d'ól siad"]},
           {inf:"cuir", en:"to put → put (lenited)", forms:["chuir mé","chuir tú","chuir sé/chuir sí","chuireamar","chuir sibh","chuir siad"]},
           {inf:"ceannaigh", en:"to buy → bought", forms:["cheannaigh mé","cheannaigh tú","cheannaigh sé/cheannaigh sí","cheannaíomar","cheannaigh sibh","cheannaigh siad"]}
         ]},
-        { id: "ga_c4", type: "conj", title: "Conjugate: Future tense (-faidh / -fidh)", tense:"Aimsir fháistineach", items: [
+        { id: "ga_c4", type: "conj", title: "Conjugate: Future tense (-faidh / -fidh)", tense:"Future (An Aimsir Fháistineach)", items: [
           {inf:"bí", irr:1, en:"to be → will be", forms:["beidh mé","beidh tú","beidh sé/beidh sí","beimid","beidh sibh","beidh siad"]},
           {inf:"ól", en:"to drink → will drink", forms:["ólfaidh mé","ólfaidh tú","ólfaidh sé/ólfaidh sí","ólfaimid","ólfaidh sibh","ólfaidh siad"]},
           {inf:"cuir", en:"to put → will put", forms:["cuirfidh mé","cuirfidh tú","cuirfidh sé/cuirfidh sí","cuirfimid","cuirfidh sibh","cuirfidh siad"]}

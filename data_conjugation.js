@@ -201,7 +201,7 @@ window.QUIZ_CONJ = {
       {inf:"zullen", irr:1, en:"will / shall", forms:["zal","zult/zal","zal","zullen","zullen","zullen"]},
       {inf:"willen", irr:1, en:"to want", forms:["wil","wilt/wil","wil","willen","willen","willen"]}
     ]}},
-    { course: "nl_speak", unit: { id:"nl_sp_c1", type:"conj", title:"Conjugate: Present – zijn, hebben & regular verbs", tense:"Present", items: [
+    { course: "nl_speak", unit: { id:"nl_sp_c1", type:"conj", title:"Conjugate: Present – zijn, hebben & regular verbs", tense:"Present (presens)", items: [
       {inf:"zijn", irr:1, en:"to be", forms:["ben","bent","is","zijn","zijn","zijn"]},
       {inf:"hebben", irr:1, en:"to have", forms:["heb","hebt","heeft","hebben","hebben","hebben"]},
       {inf:"werken", en:"to work", forms:["werk","werkt","werkt","werken","werken","werken"]},
@@ -214,7 +214,7 @@ window.QUIZ_CONJ = {
       {inf:"schrijven", irr:1, en:"to write (f/v!)", forms:["schrijf","schrijft","schrijft","schrijven","schrijven","schrijven"]},
       {inf:"lezen", irr:1, en:"to read (s/z!)", forms:["lees","leest","leest","lezen","lezen","lezen"]}
     ]}},
-    { course: "nl_gram", unit: { id:"nl_g_c1", type:"conj", title:"Conjugate: the 5 modal verbs (present)", tense:"Present", items: [
+    { course: "nl_gram", unit: { id:"nl_g_c1", type:"conj", title:"Conjugate: the 5 modal verbs (present)", tense:"Present (presens)", items: [
       {inf:"kunnen", irr:1, en:"can / to be able to", forms:["kan","kunt/kan","kan","kunnen","kunnen","kunnen"]},
       {inf:"moeten", irr:1, en:"must / to have to", forms:["moet","moet","moet","moeten","moeten","moeten"]},
       {inf:"mogen", irr:1, en:"may / to be allowed", forms:["mag","mag","mag","mogen","mogen","mogen"]},
@@ -242,7 +242,7 @@ window.QUIZ_CONJ = {
       {inf:"zijn", irr:1, en:"to be → have been (zijn!)", forms:["ben geweest","bent geweest","is geweest","zijn geweest","zijn geweest","zijn geweest"]},
       {inf:"hebben", irr:1, en:"to have → have had", forms:["heb gehad","hebt gehad","heeft gehad","hebben gehad","hebben gehad","hebben gehad"]}
     ]}},
-    { course: "nl_gram", unit: { id:"nl_g_c4", type:"conj", title:"Conjugate: Future (zullen + infinitive)", tense:"Futurum", items: [
+    { course: "nl_gram", unit: { id:"nl_g_c4", type:"conj", title:"Conjugate: Future (zullen + infinitive)", tense:"Future (zullen + infinitive)", items: [
       {inf:"werken", en:"to work → will work", forms:["zal werken","zult werken/zal werken","zal werken","zullen werken","zullen werken","zullen werken"]},
       {inf:"gaan", irr:1, en:"to go → will go", forms:["zal gaan","zult gaan/zal gaan","zal gaan","zullen gaan","zullen gaan","zullen gaan"]},
       {inf:"zijn", irr:1, en:"to be → will be", forms:["zal zijn","zult zijn/zal zijn","zal zijn","zullen zijn","zullen zijn","zullen zijn"]},
@@ -251,7 +251,7 @@ window.QUIZ_CONJ = {
     ]}}
   ],
   spanish: [
-    { course: "es_core", unit: { id:"es_irr5_pret", type:"conj", title:"Conjugate: Top 5 irregulars — Simple past (Pretérito): fui, tuve, hice…", tense:"Simple past (pretérito)", items: [
+    { course: "es_core", unit: { id:"es_irr5_pret", type:"conj", title:"Conjugate: Top 5 irregulars — Simple past (Pretérito): fui, tuve, hice…", tense:"Simple past (Pretérito)", items: [
       {inf:"ser", irr:1, en:"to be → was/were (identical to ir!)", forms:["fui","fuiste","fue","fuimos","fueron","fueron"]},
       {inf:"estar", irr:1, en:"to be → was/were (estuv-)", forms:["estuve","estuviste","estuvo","estuvimos","estuvieron","estuvieron"]},
       {inf:"ir", irr:1, en:"to go → went (identical to ser!)", forms:["fui","fuiste","fue","fuimos","fueron","fueron"]},
@@ -291,14 +291,14 @@ window.QUIZ_CONJ = {
     ]}}
   ],
   japanese: [
-    { course: "ja_core", unit: { id:"ja_irr5_b", type:"conj", title:"Conjugate: Top 5 irregulars II — polite past, negatives & potential", tense:"Forms II", items: [
+    { course: "ja_core", unit: { id:"ja_irr5_b", type:"conj", title:"Conjugate: Top 5 irregulars II — polite past, negatives & potential", tense:"Forms II — polite past, negatives, potential", items: [
       {inf:"する (suru)", irr:1, en:"to do", rows:["polite past (〜ました)","plain negative past (〜なかった)","polite negative (〜ません)","polite negative past","potential (can do)"], forms:["しました","しなかった","しません","しませんでした","できる"]},
       {inf:"来る (kuru)", irr:1, en:"to come — reading shifts to き/こ", rows:["polite past (〜ました)","plain negative past (〜なかった)","polite negative (〜ません)","polite negative past","potential (can come)"], forms:["来ました/きました","来なかった/こなかった","来ません/きません","来ませんでした/きませんでした","来られる/こられる/これる"]},
       {inf:"ある (aru)", irr:1, en:"to exist (things) — negatives use ない", rows:["polite past (〜ました)","plain negative past","polite negative (〜ません)","polite negative past","potential (can exist)"], forms:["ありました","なかった","ありません","ありませんでした","あり得る/ありえる"]},
       {inf:"行く (iku)", irr:1, en:"to go", rows:["polite past (〜ました)","plain negative past (〜なかった)","polite negative (〜ません)","polite negative past","potential (can go)"], forms:["行きました/いきました","行かなかった/いかなかった","行きません/いきません","行きませんでした/いきませんでした","行ける/いける"]},
       {inf:"だ・です (copula)", irr:1, en:"to be (X is Y)", rows:["polite past (でした)","plain negative past","polite negative","polite negative past"], forms:["でした","じゃなかった/ではなかった","じゃありません/ではありません/じゃないです","じゃありませんでした/ではありませんでした"]}
     ]}},
-    { course: "ja_core", unit: { id:"ja_irr5", type:"conj", title:"Conjugate: Top 5 irregular verbs (plain & polite)", tense:"Forms", items: [
+    { course: "ja_core", unit: { id:"ja_irr5", type:"conj", title:"Conjugate: Top 5 irregular verbs (plain & polite)", tense:"Forms I — plain, polite, negative, past, te", items: [
       {inf:"する (suru)", irr:1, en:"to do", rows:["dictionary (plain)","polite (〜ます)","negative (plain)","past (plain)","te-form"], forms:["する","します","しない","した","して"]},
       {inf:"来る (kuru)", irr:1, en:"to come — the reading changes!", rows:["dictionary (plain)","polite (〜ます)","negative (plain)","past (plain)","te-form"], forms:["来る/くる","来ます/きます","来ない/こない","来た/きた","来て/きて"]},
       {inf:"ある (aru)", irr:1, en:"to exist (things) — negative is just ない", rows:["dictionary (plain)","polite (〜ます)","negative (plain)","past (plain)","te-form"], forms:["ある","あります","ない","あった","あって"]},

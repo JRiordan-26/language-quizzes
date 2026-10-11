@@ -861,10 +861,18 @@ function renderSetup(){
   // units
   const unitCard = $(`<div class="card"><h2 style="margin-top:0">2 · Material <span class="pill">from your course sections</span></h2></div>`);
   app.appendChild(unitCard);
-  const sections = [...d.courses];
+  let sections = [...d.courses];
   if(state.quizType==='vocab'){
     const cu = customUnitsFor(state.lang);
     if(cu.length) sections.push({ title:'📝 My Words (your custom vocabulary)', units: cu });
+  }
+  if(state.quizType==='conj'){
+    // tenses instead of course units for verbs; tables keep their own section
+    const groups = conjTenseGroups(state.lang);
+    const tableUnits = d.courses.flatMap(c=>c.units).filter(u=>u.type==='conj' && !(u.title||'').startsWith('Conjugate:'));
+    sections = [];
+    if(groups.length) sections.push({ title:'Verb conjugation — pick the tenses', units: groups });
+    if(tableUnits.length) sections.push({ title:'Declension & paradigm tables', units: tableUnits });
   }
   if(!state.openCourses) state.openCourses = null; // per-language default computed below
   const openKey = state.lang + '|' + state.quizType;
@@ -893,7 +901,7 @@ function renderSetup(){
         cntTxt = `${cnt} words${excl?` <span class="learnedTag">(${excl} learned)</span>`:``}`;
       } else if(u.type==='conj'){
         cnt = u.items.length;
-        const isTables = u.items.some(it=>it.rows);
+        const isTables = !u.vgroup && u.items.some(it=>it.rows);
         cntTxt = `${cnt} ${isTables?'tables':'verbs'}`;
         if(!isTables && state.conjFilter && state.conjFilter!=='all'){
           const n = u.items.filter(conjItemPass).length;
@@ -941,18 +949,45 @@ function renderSetup(){
 }
 
 // Regular/irregular radio on the conjugation setup: filters verb items by
-// their irr flag; paradigm tables (items with rows) always pass.
+// their irr flag; paradigm-table items (no irr flag) always pass.
 function conjItemPass(it){
   const f = state.conjFilter || 'all';
-  if(f==='all' || it.rows) return true;
+  if(f==='all') return true;
+  if(it.rows && !('irr' in it)) return true;   // declension tables
   return f==='irr' ? !!it.irr : !it.irr;
+}
+// The conjugation Material list shows TENSES, not course units: all "Conjugate:"
+// units of a language merge into one group per tense (deduped by infinitive);
+// the regular/irregular radio then decides which verbs are asked.
+function conjTenseGroups(lang){
+  const byTense = new Map(), order = [];
+  DATA[lang].courses.forEach(c=>c.units.forEach(u=>{
+    if(u.type!=='conj' || !(u.title||'').startsWith('Conjugate:')) return;
+    const t = u.tense || 'Other';
+    let g = byTense.get(t);
+    if(!g){
+      g = { id:'ct_'+lang+'_'+t.toLowerCase().replace(/[^a-z0-9]+/g,''),
+            type:'conj', vgroup:true, tense:t, title:t, items:[], _byInf:new Map() };
+      byTense.set(t, g); order.push(g);
+    }
+    u.items.forEach(it=>{
+      const prev = g._byInf.get(it.inf);
+      if(!prev){ g._byInf.set(it.inf, it); g.items.push(it); }
+      else if(it.irr && !prev.irr) prev.irr = 1;
+    });
+  }));
+  return order;
 }
 function buildPool(){
   const learned = getLearned(state.lang);
   const pool=[];
+  const groups = state.quizType==='conj' ? conjTenseGroups(state.lang) : [];
   for(const id of state.selectedUnits){
-    const u = unitById(id);
+    let u = unitById(id);
+    if(!u && groups.length) u = groups.find(g=>g.id===id);
     if(!u || u.type!==state.quizType) continue;
+    // verb units are superseded by the tense groups — skip stale selections
+    if(state.quizType==='conj' && !u.vgroup && (u.title||'').startsWith('Conjugate:')) continue;
     if(u.type==='vocab') for(const it of availableVocab(u,learned)) pool.push({unit:u, item:it});
     else for(const it of u.items){
       if(u.type==='conj' && !conjItemPass(it)) continue;

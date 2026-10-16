@@ -2152,6 +2152,10 @@ function saveClimb(lang,L,slot){
 // The 🎯 Misses quiz: union of every climb's misses from its LAST completed
 // round. Answering one correctly here clears it; the pool never grows by
 // itself — only fresh misses in the climbs refill it.
+// Saved missed-word tests: dated snapshots of the live miss pool that persist
+// across days and rounds; rerun until mastered, then delete.
+function getMissSets(lang){ try{ return JSON.parse(localStorage.getItem('lq_misssets_'+lang)||'[]'); }catch(e){ return []; } }
+function saveMissSets(lang, a){ localStorage.setItem('lq_misssets_'+lang, JSON.stringify(a)); }
 function missPool(lang, sel){
   const seen=new Set(), pool=[];
   for(let s=0;s<CLIMB_SLOTS;s++){
@@ -2626,23 +2630,93 @@ function renderClimbMisses(lang, d){
       card.appendChild($(`<div style="line-height:1.8"><span class="pill">${pool.length} missed word${pool.length!==1?'s':''} selected</span></div>`));
       if(pool.length){
         const go=$(`<button class="primary" style="margin-top:14px">▶ Quiz the missed words (${pool.length})</button>`);
-        go.onclick=()=>{ state.lq={mode:'q', miss:true, items:shuffle(missPool(lang, sel)), pos:0, nOk:0}; render(); };
+        go.onclick=()=>{ state.lq={mode:'q', miss:true, items:shuffle(missPool(lang, sel)), pos:0, nOk:0, wrong:[]}; render(); };
         card.appendChild(go);
+        const sv=$(`<button style="margin-top:14px;margin-left:10px" title="Snapshot these ${pool.length} words as a dated test you can rerun on later days">💾 Save as a test</button>`);
+        sv.onclick=()=>{
+          const sets=getMissSets(lang);
+          const dt=new Date();
+          sets.push({ id:Date.now().toString(36), name:`Missed words #${sets.length+1}`,
+            date:dt.toISOString().slice(0,10), srcs:[...sel].sort((a,b)=>a-b),
+            words:pool.map(w=>({t:w.t,e:w.e})), runs:0, best:0, last:null, lastDate:null });
+          saveMissSets(lang, sets); render();
+        };
+        card.appendChild(sv);
       } else {
         card.appendChild($(`<div style="margin-top:10px;color:var(--muted)">Select at least one climb.</div>`));
       }
     }
     app.appendChild(card);
+    // saved tests — persistent, rerunnable, deletable
+    const sets=getMissSets(lang);
+    if(sets.length){
+      const sc=$(`<div class="card"><h2 style="margin-top:0">💾 Saved missed-word tests <span class="pill">rerun until mastered, then delete</span></h2></div>`);
+      const fmt=iso=>new Date(iso+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+      for(const st of sets){
+        if(refreshStoredWords(lang, st.words)) saveMissSets(lang, sets);
+        const tip=`Created ${fmt(st.date)} — from ${st.srcs.map(s=>'Climb '+(s+1)).join(', ')}`;
+        const row=$(`<div style="display:flex;align-items:center;gap:10px;margin:10px 0;flex-wrap:wrap" title="${tip}">
+          <span style="min-width:150px"><b>${st.name}</b><br><span style="color:var(--muted);font-size:.82rem">${fmt(st.date)} · ${st.words.length} words</span></span>
+          <span class="pill">${st.runs?`best ${st.best}% · last ${st.last}/${st.words.length}${st.lastDate?' on '+fmt(st.lastDate):''}`:'not run yet'}</span>
+          <span style="flex:1"></span></div>`);
+        const run=$(`<button class="primary small">▶ Run</button>`);
+        run.onclick=()=>{ state.lq={mode:'q', miss:true, setId:st.id, items:shuffle(st.words.map(w=>({...w}))), pos:0, nOk:0, wrong:[]}; render(); };
+        const del=$(`<button class="small">🗑</button>`);
+        del.onclick=()=>{
+          if(del._arm){ saveMissSets(lang, getMissSets(lang).filter(x=>x.id!==st.id)); render(); }
+          else { del._arm=true; del.textContent='🗑 Sure? Click again'; setTimeout(()=>{ del._arm=false; del.textContent='🗑'; }, 2500); }
+        };
+        row.appendChild(run); row.appendChild(del);
+        sc.appendChild(row);
+      }
+      app.appendChild(sc);
+    }
     return;
   }
   if(ms.end){
-    const remaining=missPool(lang, state.missSel instanceof Set ? state.missSel : undefined).length;
     const card=$(`<div class="card" style="text-align:center"></div>`);
+    if(ms.setId){
+      // saved-test run: record the score once, offer retake / delete
+      if(!ms.recorded){
+        ms.recorded=true;
+        const sets=getMissSets(lang);
+        const st=sets.find(x=>x.id===ms.setId);
+        if(st){
+          st.runs=(st.runs||0)+1; st.last=ms.nOk; st.lastDate=new Date().toISOString().slice(0,10);
+          st.best=Math.max(st.best||0, Math.round(ms.nOk/ms.items.length*100));
+          saveMissSets(lang, sets);
+        }
+      }
+      const perfect=ms.nOk===ms.items.length;
+      card.appendChild($(`<h2 style="margin-top:0">${perfect?'🎉 Perfect run!':'Round done'}</h2>`));
+      card.appendChild($(`<div style="line-height:1.7">You got <b>${ms.nOk} / ${ms.items.length}</b>.${perfect?'<br>If this test feels mastered, delete it below.':''}</div>`));
+      if(ms.wrong.length){
+        const rm=$(`<button class="primary" style="margin-top:16px">🎯 Retake the ${ms.wrong.length} just missed</button>`);
+        rm.onclick=()=>{ state.lq={mode:'q', miss:true, setId:ms.setId, items:shuffle([...ms.wrong]), pos:0, nOk:0, wrong:[]}; render(); };
+        card.appendChild(rm);
+      }
+      const ra=$(`<button class="${ms.wrong.length?'':'primary'}" style="margin-top:16px;margin-left:10px">🔁 Retake the whole test</button>`);
+      ra.onclick=()=>{ const st=getMissSets(lang).find(x=>x.id===ms.setId); state.lq={mode:'q', miss:true, setId:ms.setId, items:shuffle((st?st.words:ms.items).map(w=>({...w}))), pos:0, nOk:0, wrong:[]}; render(); };
+      card.appendChild(ra);
+      const del=$(`<button class="small" style="margin-top:16px;margin-left:10px">🗑 Mastered — delete this test</button>`);
+      del.onclick=()=>{
+        if(del._arm){ saveMissSets(lang, getMissSets(lang).filter(x=>x.id!==ms.setId)); state.lq=null; render(); }
+        else { del._arm=true; del.textContent='🗑 Sure? Click again'; setTimeout(()=>{ del._arm=false; del.textContent='🗑 Mastered — delete this test'; },2500); }
+      };
+      card.appendChild(del);
+      const bk=$(`<button class="small" style="margin-top:16px;margin-left:10px">← Back</button>`);
+      bk.onclick=()=>{ state.lq=null; render(); };
+      card.appendChild(bk);
+      app.appendChild(card);
+      setTimeout(()=>{ (card.querySelector('.primary')||bk).focus(); },50);
+      return;
+    }
+    const remaining=missPool(lang, state.missSel instanceof Set ? state.missSel : undefined).length;
     card.appendChild($(`<h2 style="margin-top:0">${remaining?'Round done':'🎉 All misses cleared!'}</h2>`));
     card.appendChild($(`<div style="line-height:1.7">You got <b>${ms.nOk} / ${ms.items.length}</b>.${remaining?`<br><b>${remaining}</b> word${remaining!==1?'s':''} still missed.`:''}</div>`));
     if(remaining){
       const rt=$(`<button class="primary" style="margin-top:16px">🔁 Retake the remaining ${remaining}</button>`);
-      rt.onclick=()=>{ state.lq={mode:'q', miss:true, items:shuffle(missPool(lang, state.missSel instanceof Set ? state.missSel : undefined)), pos:0, nOk:0}; render(); };
+      rt.onclick=()=>{ state.lq={mode:'q', miss:true, items:shuffle(missPool(lang, state.missSel instanceof Set ? state.missSel : undefined)), pos:0, nOk:0, wrong:[]}; render(); };
       card.appendChild(rt);
     }
     const bk=$(`<button class="small" style="margin-top:16px;margin-left:10px">← Back</button>`);
@@ -2652,11 +2726,13 @@ function renderClimbMisses(lang, d){
     setTimeout(()=>{ (card.querySelector('.primary')||bk).focus(); },50);
     return;
   }
-  ipQuestion({ lang, header:`🎯 Missed words`, prompt:`Type the ${d.name} word — accents optional; nouns need their article`,
+  ipQuestion({ lang, header: ms.setId?`💾 Saved test`:`🎯 Missed words`, prompt: lang==='japanese'?'Type the Japanese word in romaji — it becomes hiragana':`Type the ${d.name} word — accents optional; nouns need their article`,
     count:ms.items.length, pos:ms.pos, nOk:ms.nOk, item:ms.items[ms.pos],
     onQuit:()=>{ state.lq=null; render(); },
     onAnswered:ok=>{
-      if(ok){ ms.nOk++; missClear(lang, ms.items[ms.pos].t); }
+      const w=ms.items[ms.pos];
+      if(ok){ ms.nOk++; if(!ms.setId) missClear(lang, w.t); }
+      else if(ms.wrong && !ms.wrong.some(x=>x.t===w.t)) ms.wrong.push({t:w.t, e:w.e});
       ms.pos++;
       if(ms.pos<ms.items.length){ render(); return; }
       ms.end=true; render();

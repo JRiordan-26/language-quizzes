@@ -2726,7 +2726,7 @@ function renderClimbMisses(lang, d){
     setTimeout(()=>{ (card.querySelector('.primary')||bk).focus(); },50);
     return;
   }
-  ipQuestion({ lang, header: ms.setId?`💾 Saved test`:`🎯 Missed words`, prompt: lang==='japanese'?'Type the Japanese word in romaji — it becomes hiragana':`Type the ${d.name} word — accents optional; nouns need their article`,
+  ipQuestion({ lang, mask:true, header: ms.setId?`💾 Saved test`:`🎯 Missed words`, prompt: lang==='japanese'?'Type the Japanese word in romaji — it becomes hiragana':`Type the ${d.name} word — accents optional; nouns need their article`,
     count:ms.items.length, pos:ms.pos, nOk:ms.nOk, item:ms.items[ms.pos],
     onQuit:()=>{ state.lq=null; render(); },
     onAnswered:ok=>{
@@ -2765,7 +2765,7 @@ function ipQuestion(cfg){
   const card=$(`<div class="card"></div>`);
   app.appendChild(card);
   const w=cfg.item;
-  card.appendChild($(`<div class="qWord" style="font-size:1.5rem">${w.e}</div>`));
+  card.appendChild($(`<div class="qWord" style="font-size:1.5rem">${cfg.mask ? nounPrompt(maskPrompt(w.e, w.t, cfg.lang), w.t) : w.e}</div>`));
   card.appendChild($(`<div class="qHint">${cfg.prompt}${CTRL_HINT[cfg.lang]||''}</div>`));
   const wrap=$(`<div style="max-width:640px;margin:0 auto;text-align:center"></div>`);
   const inp=$(`<input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" style="width:100%;padding:14px 16px;font-size:1.1rem;border-radius:10px;border:2px solid var(--border);background:var(--card2);color:var(--text);outline:none" placeholder="Type here…">`);

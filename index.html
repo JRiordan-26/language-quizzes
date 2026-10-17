@@ -2655,12 +2655,13 @@ function renderClimbMisses(lang, d){
       for(const st of sets){
         if(refreshStoredWords(lang, st.words)) saveMissSets(lang, sets);
         const tip=`Created ${fmt(st.date)} — from ${st.srcs.map(s=>'Climb '+(s+1)).join(', ')}`;
+        const srcLbl = st.srcs.length ? (st.srcs.length===1?'Climb ':'Climbs ')+st.srcs.map(s=>s+1).join(', ') : '';
         const row=$(`<div style="display:flex;align-items:center;gap:10px;margin:10px 0;flex-wrap:wrap" title="${tip}">
-          <span style="min-width:150px"><b>${st.name}</b><br><span style="color:var(--muted);font-size:.82rem">${fmt(st.date)} · ${st.words.length} words</span></span>
+          <span style="min-width:150px"><b>${st.name}</b><br><span style="color:var(--muted);font-size:.82rem">${fmt(st.date)} · ${st.words.length} words${srcLbl?` · from ${srcLbl}`:''}</span></span>
           <span class="pill">${st.runs?`best ${st.best}% · last ${st.last}/${st.words.length}${st.lastDate?' on '+fmt(st.lastDate):''}`:'not run yet'}</span>
           <span style="flex:1"></span></div>`);
         const run=$(`<button class="primary small">▶ Run</button>`);
-        run.onclick=()=>{ state.lq={mode:'q', miss:true, setId:st.id, items:shuffle(st.words.map(w=>({...w}))), pos:0, nOk:0, wrong:[]}; render(); };
+        run.onclick=()=>{ state.lq={mode:'q', miss:true, setId:st.id, srcLbl, items:shuffle(st.words.map(w=>({...w}))), pos:0, nOk:0, wrong:[]}; render(); };
         const del=$(`<button class="small">🗑</button>`);
         del.onclick=()=>{
           if(del._arm){ saveMissSets(lang, getMissSets(lang).filter(x=>x.id!==st.id)); render(); }
@@ -2692,11 +2693,11 @@ function renderClimbMisses(lang, d){
       card.appendChild($(`<div style="line-height:1.7">You got <b>${ms.nOk} / ${ms.items.length}</b>.${perfect?'<br>If this test feels mastered, delete it below.':''}</div>`));
       if(ms.wrong.length){
         const rm=$(`<button class="primary" style="margin-top:16px">🎯 Retake the ${ms.wrong.length} just missed</button>`);
-        rm.onclick=()=>{ state.lq={mode:'q', miss:true, setId:ms.setId, items:shuffle([...ms.wrong]), pos:0, nOk:0, wrong:[]}; render(); };
+        rm.onclick=()=>{ state.lq={mode:'q', miss:true, setId:ms.setId, srcLbl:ms.srcLbl, items:shuffle([...ms.wrong]), pos:0, nOk:0, wrong:[]}; render(); };
         card.appendChild(rm);
       }
       const ra=$(`<button class="${ms.wrong.length?'':'primary'}" style="margin-top:16px;margin-left:10px">🔁 Retake the whole test</button>`);
-      ra.onclick=()=>{ const st=getMissSets(lang).find(x=>x.id===ms.setId); state.lq={mode:'q', miss:true, setId:ms.setId, items:shuffle((st?st.words:ms.items).map(w=>({...w}))), pos:0, nOk:0, wrong:[]}; render(); };
+      ra.onclick=()=>{ const st=getMissSets(lang).find(x=>x.id===ms.setId); state.lq={mode:'q', miss:true, setId:ms.setId, srcLbl:ms.srcLbl, items:shuffle((st?st.words:ms.items).map(w=>({...w}))), pos:0, nOk:0, wrong:[]}; render(); };
       card.appendChild(ra);
       const del=$(`<button class="small" style="margin-top:16px;margin-left:10px">🗑 Mastered — delete this test</button>`);
       del.onclick=()=>{
@@ -2726,7 +2727,7 @@ function renderClimbMisses(lang, d){
     setTimeout(()=>{ (card.querySelector('.primary')||bk).focus(); },50);
     return;
   }
-  ipQuestion({ lang, mask:true, header: ms.setId?`💾 Saved test`:`🎯 Missed words`, prompt: lang==='japanese'?'Type the Japanese word in romaji — it becomes hiragana':`Type the ${d.name} word — accents optional; nouns need their article`,
+  ipQuestion({ lang, mask:true, header: ms.setId?`💾 Saved test${ms.srcLbl?' · '+ms.srcLbl:''}`:`🎯 Missed words`, prompt: lang==='japanese'?'Type the Japanese word in romaji — it becomes hiragana':`Type the ${d.name} word — accents optional; nouns need their article`,
     count:ms.items.length, pos:ms.pos, nOk:ms.nOk, item:ms.items[ms.pos],
     onQuit:()=>{ state.lq=null; render(); },
     onAnswered:ok=>{

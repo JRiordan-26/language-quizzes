@@ -66,6 +66,9 @@
   .tabs{display:flex; gap:8px; margin-bottom:14px;}
   .voiceNote{font-size:.8rem; color:var(--muted); margin-top:8px;}
   .topnav{display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;}
+  .compw{border-bottom:1px dotted var(--muted); cursor:help;}
+  .compTip{display:none; font-size:.85rem; color:var(--muted); margin-top:4px; line-height:1.5;}
+  .compOpen .compTip{display:block;}
   @media (max-width:640px){
     .wrap{padding:12px 10px;}
     h1{font-size:1.45rem;} h2{font-size:1.1rem;}
@@ -97,6 +100,7 @@
 <script src="data_ip_dutch.js"></script>
 <script src="data_ip_spanish.js"></script>
 <script src="data_ip_japanese.js"></script>
+<script src="data_compose.js"></script>
 <script>
 "use strict";
 const $ = (h)=>{const d=document.createElement('div'); d.innerHTML=h; return d.firstElementChild;};
@@ -294,6 +298,26 @@ function jpMatch(typed, answer){
   if(t === jpFold(answer)) return true;
   const k = jpReading(answer);
   return !!k && t === jpFold(k);
+}
+// word-composition tooltips (data_compose.js): hover shows the parts a
+// compound/derived word is built from; tap toggles it inline (phones).
+function composeTip(lang, t){
+  const m = window.QUIZ_COMPOSE && QUIZ_COMPOSE[lang];
+  if(!m) return '';
+  return m[t] || m[stripArticle(t)] || '';
+}
+function revealWord(lang, t){
+  const base = jpDisp(t);
+  const c = composeTip(lang, t);
+  if(!c) return base;
+  const esc = c.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+  return `<span class="compw" title="${esc}" onclick="this.parentElement.classList.toggle('compOpen')">${base}</span>`;
+}
+function composeTipLine(lang, t){
+  const c = composeTip(lang, t);
+  if(!c) return '';
+  const esc = c.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+  return `<div class="compTip">🧩 ${esc}</div>`;
 }
 // kanji words render with furigana wherever the word is revealed
 function jpDisp(t){
@@ -1267,7 +1291,7 @@ function renderQuiz(){
     else if(artMiss) head = `✘ Right word, but the article (gender) is wrong or missing — it's “${q.answer}”`;
     else head = `✘ Not quite — it's “${jpDisp(q.answer)}”`;
     fb.appendChild($(`<div style="font-weight:600; color:${right?'var(--good)':'var(--bad)'}">${head}</div>`));
-    fb.appendChild($(`<div class="expl">${jpDisp(q.item.t)} = ${q.item.e}${pluralNote(state.lang, q.item.t)}</div>`));
+    fb.appendChild($(`<div class="expl">${revealWord(state.lang, q.item.t)} = ${q.item.e}${pluralNote(state.lang, q.item.t)}${composeTipLine(state.lang, q.item.t)}</div>`));
     if(window.speechSynthesis) speak(q.item.t, d.ttsLang);
     const learned = getLearned(state.lang);
     if(!learned.has(vocabId(q.item))){
@@ -1747,7 +1771,7 @@ function renderDaily(){
       inp.style.borderColor= ok?'var(--good)':'var(--bad)';
       const fb=$(`<div class="feedback"></div>`);
       fb.appendChild($(`<div style="font-weight:600;color:${ok?'var(--good)':'var(--bad)'}">${ok?'✔ Correct!':artMiss?'✘ Right word, but the article (gender) is wrong or missing — it\'s “'+w.t+'”':'✘ It\'s “'+w.t+'”'}</div>`));
-      fb.appendChild($(`<div class="expl">${w.t} = ${w.e}${pluralNote(lang, w.t)}</div>`));
+      fb.appendChild($(`<div class="expl">${revealWord(lang, w.t)} = ${w.e}${pluralNote(lang, w.t)}${composeTipLine(lang, w.t)}</div>`));
       if(window.speechSynthesis) speak(w.t, d.ttsLang);
       const next=$(`<button class="primary" style="margin-top:12px">Next →</button>`);
       next.onclick=()=>{
@@ -2076,7 +2100,7 @@ function renderHundred(){
     inp.style.borderColor= ok?'var(--good)':'var(--bad)';
     const fb=$(`<div class="feedback"></div>`);
     fb.appendChild($(`<div style="font-weight:600;color:${ok?'var(--good)':'var(--bad)'}">${ok?'✔ Correct!':artMiss?'✘ Right word, but the article (gender) is wrong or missing — it\'s “'+w.t+'”':'✘ It\'s “'+w.t+'”'}</div>`));
-    fb.appendChild($(`<div class="expl">${w.t} = ${w.e}${pluralNote(lang, w.t)}</div>`));
+    fb.appendChild($(`<div class="expl">${revealWord(lang, w.t)} = ${w.e}${pluralNote(lang, w.t)}${composeTipLine(lang, w.t)}</div>`));
     if(window.speechSynthesis) speak(w.t, d.ttsLang);
     const next=$(`<button class="primary" style="margin-top:12px">${hq.pos+1<hq.order.length?'Next →':'Finish pass'}</button>`);
     next.onclick=()=>{
@@ -2483,7 +2507,7 @@ function renderClimb(){
     inp.style.borderColor= ok?'var(--good)':'var(--bad)';
     const fb=$(`<div class="feedback"></div>`);
     fb.appendChild($(`<div style="font-weight:600;color:${ok?'var(--good)':'var(--bad)'}">${ok?'✔ Correct!':rev?'✘ It means “'+w.e+'”':artMiss?'✘ Right word, but the article (gender) is wrong or missing — it\'s “'+w.t+'”':'✘ It\'s “'+jpDisp(w.t)+'”'}</div>`));
-    fb.appendChild($(`<div class="expl">${jpDisp(w.t)} = ${w.e}${pluralNote(lang, w.t)}</div>`));
+    fb.appendChild($(`<div class="expl">${revealWord(lang, w.t)} = ${w.e}${pluralNote(lang, w.t)}${composeTipLine(lang, w.t)}</div>`));
     if(!rev && window.speechSynthesis) speak(w.t, d.ttsLang);
     const endRound=()=>{
       const LL=getClimb(lang);
@@ -2828,7 +2852,7 @@ function ipQuestion(cfg){
     inp.style.borderColor= ok?'var(--good)':'var(--bad)';
     const fb=$(`<div class="feedback"></div>`);
     fb.appendChild($(`<div style="font-weight:600;color:${ok?'var(--good)':'var(--bad)'}">${ok?'✔ Correct!':'✘ It\'s “'+jpDisp(w.t)+'”'}</div>`));
-    fb.appendChild($(`<div class="expl" style="font-size:1.05rem">${jpDisp(w.t)} = ${w.e}</div>`));
+    fb.appendChild($(`<div class="expl" style="font-size:1.05rem">${revealWord(cfg.lang, w.t)} = ${w.e}${composeTipLine(cfg.lang, w.t)}</div>`));
     if(cfg.extraFeedback) fb.appendChild($(`<div>${cfg.extraFeedback(w)}</div>`));
     if(window.speechSynthesis) speak(w.t, d.ttsLang);
     const next=$(`<button class="primary" style="margin-top:12px">${cfg.pos+1<cfg.count?'Next →':'Finish'}</button>`);
@@ -3350,7 +3374,7 @@ function renderVoice(){
     inp.style.borderColor= ok?'var(--good)':'var(--bad)';
     const fb=$(`<div class="feedback"></div>`);
     fb.appendChild($(`<div style="font-weight:600;color:${ok?'var(--good)':'var(--bad)'}">${ok?'✔ Correct!':'✘ Not quite'}${note?` <span style="color:var(--muted);font-weight:400">${note}</span>`:''}</div>`));
-    fb.appendChild($(`<div class="expl">${jpDisp(w.t)} = ${w.e}</div>`));
+    fb.appendChild($(`<div class="expl">${revealWord(lang, w.t)} = ${w.e}${composeTipLine(lang, w.t)}</div>`));
     if(!dirA && window.speechSynthesis) speak(w.t, d.ttsLang);
     const next=$(`<button class="primary" style="margin-top:10px">${vq.pos+1>=vq.items.length?'Finish round':'Next →'}</button>`);
     next.onclick=()=>{ vq.pos++; render(); };

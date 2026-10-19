@@ -2135,8 +2135,12 @@ const CLIMB_LANGS=['german','italian','dutch','spanish','japanese'];
 // builder keeps their word lists disjoint. Slot 0 uses the original storage
 // key, so a pre-existing single climb becomes Climb 1 untouched.
 const CLIMB_SLOTS=20;
-function climbKey(lang,slot){ return 'lq_climb_'+lang+(slot?'#'+(slot+1):''); }
-function curClimbSlot(){ return typeof state.climbSlot==='number' ? state.climbSlot : 0; }
+function climbKey(lang,slot){
+  if(typeof slot==='string' && slot.startsWith('ms:')) return 'lq_climb_'+lang+'@'+slot;  // a saved test's own climb
+  return 'lq_climb_'+lang+(slot?'#'+(slot+1):'');
+}
+function isMsSlot(s){ return typeof s==='string' && s.startsWith('ms:'); }
+function curClimbSlot(){ const s=state.climbSlot; return (typeof s==='number'||isMsSlot(s)) ? s : 0; }
 function getClimb(lang, slot){
   if(slot===undefined) slot=curClimbSlot();
   try{ const o=JSON.parse(localStorage.getItem(climbKey(lang,slot))||'null')||{};
@@ -2328,6 +2332,12 @@ function renderClimb(){
     }
     const card=$(`<div class="card"></div>`);
     if(!L.used){
+      if(isMsSlot(state.climbSlot)){
+        card.appendChild($(`<div style="line-height:1.6">${L.n?`🏁 This test's climb has been completed <b>${L.n}</b> time${L.n>1?'s':''}.<br>`:''}Restart it from the 🎯 Missed Words screen.</div>`));
+        const bk2=$(`<button class="primary" style="margin-top:14px">← Back to Missed Words</button>`);
+        bk2.onclick=()=>{ state.climbSlot='miss'; state.lq=null; render(); };
+        card.appendChild(bk2); app.appendChild(card); return;
+      }
       card.appendChild($(`<div style="line-height:1.6">${L.n?`🏁 Completed so far: <b>${L.n}</b>.<br>`:''}${climbTotalTested(lang)?`<span class="pill">${climbTotalTested(lang)} tested across all climbs</span><br>`:''}Ready for a ${L.n?'new':''} climb? The 50-word list is built when you start.</div>`));
       const go=$(`<button class="primary" style="margin-top:14px">▶ Start ${L.n?'a new':'the'} climb</button>`);
       go.onclick=()=>{ const LL=getClimb(lang); LL.list=buildMasteryList(lang,50); LL.used=5; LL.tested=[];
@@ -2434,7 +2444,7 @@ function renderClimb(){
   const posLabel = isMiss ? `🎯 Missed ${lq.pos+1} / ${lq.items.length}`
                  : lq.phase==='set' ? `Word ${lq.pos+1} / ${lq.queue.length}` : `🆕 New word +${lq.added+1}`;
   app.appendChild($(`<div class="topnav"><span class="backlink" id="quit">✕ Pause</span>
-    <span style="color:var(--muted);font-size:.9rem">${d.flag} Climb ${(state.climbSlot||0)+1}${L.ms?' 🎯':''} · at ${L.used}/${climbCap(L)}</span></div>`));
+    <span style="color:var(--muted);font-size:.9rem">${d.flag} ${isMsSlot(state.climbSlot)?'🎯 '+(L.msName||'Missed-words climb'):'Climb '+((state.climbSlot||0)+1)} · at ${L.used}/${climbCap(L)}</span></div>`));
   app.querySelector('#quit').onclick=()=>{ state.lq=null; render(); };
   app.appendChild($(`<div class="qTop"><span>${posLabel}</span><span>✓ ${lq.nOk}</span></div>`));
   const bar=$(`<div class="barOuter"><div class="barInner"></div></div>`);
@@ -2660,6 +2670,13 @@ function renderClimbMisses(lang, d){
     app.appendChild(card);
     // saved tests — persistent, rerunnable, deletable
     const sets=getMissSets(lang);
+    for(let s=0;s<CLIMB_SLOTS;s++){                     // migrate old in-slot test climbs
+      const C=getClimb(lang,s);
+      if(!C.ms) continue;
+      const st2=sets.find(x=>x.name===C.msName);
+      if(st2 && !getClimb(lang,'ms:'+st2.id).used) saveClimb(lang, C, 'ms:'+st2.id);
+      localStorage.removeItem(climbKey(lang,s));
+    }
     if(sets.length){
       const sc=$(`<div class="card"><h2 style="margin-top:0">💾 Saved missed-word tests <span class="pill">rerun until mastered, then delete</span></h2></div>`);
       const fmt=iso=>new Date(iso+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
@@ -2675,19 +2692,21 @@ function renderClimbMisses(lang, d){
         run.onclick=()=>{ state.lq={mode:'q', miss:true, setId:st.id, srcLbl, items:shuffle(st.words.map(w=>({...w}))), pos:0, nOk:0, wrong:[]}; render(); };
         const del=$(`<button class="small">🗑</button>`);
         del.onclick=()=>{
-          if(del._arm){ saveMissSets(lang, getMissSets(lang).filter(x=>x.id!==st.id)); render(); }
+          if(del._arm){ saveMissSets(lang, getMissSets(lang).filter(x=>x.id!==st.id)); localStorage.removeItem(climbKey(lang,'ms:'+st.id)); render(); }
           else { del._arm=true; del.textContent='🗑 Sure? Click again'; setTimeout(()=>{ del._arm=false; del.textContent='🗑'; }, 2500); }
         };
-        const cl=$(`<button class="small" title="Run this test climb-style: start with 5 words, clear the set to earn more, top out at ${st.words.length}">🪜 Climb</button>`);
+        const msSlot='ms:'+st.id;
+        const MC=getClimb(lang, msSlot);
+        if(MC.list.length && refreshStoredWords(lang, MC.list)) saveClimb(lang, MC, msSlot);
+        const cl=$(`<button class="small" title="${MC.used?`Continue this test's climb`:`Run this test climb-style: start with 5 words, clear the set to earn more, top out at ${st.words.length}`}">${MC.used?`⛰ Continue climb (${MC.used}/${climbCap(MC)})`:'🪜 Start climb'}${MC.n?` · ${MC.n}×🏁`:''}</button>`);
         cl.onclick=()=>{
-          let slot=-1;
-          for(let s=0;s<CLIMB_SLOTS;s++){ const C=getClimb(lang,s); if(!C.used && !C.list.length){ slot=s; break; } }
-          if(slot<0){ cl.textContent='No empty climb slot'; return; }
-          const C=getClimb(lang,slot);
-          C.list=shuffle(st.words.map(w=>({t:w.t,e:w.e})));
-          C.used=Math.min(5,C.list.length); C.tested=[]; C.removed=[]; C.lastMiss=[]; C.rev=false; C.ms=1; C.msName=st.name;
-          saveClimb(lang,C,slot);
-          state.climbSlot=slot; state.lq=null; render();
+          if(!MC.used){
+            const C=getClimb(lang, msSlot);
+            C.list=shuffle(st.words.map(w=>({t:w.t,e:w.e})));
+            C.used=Math.min(5,C.list.length); C.tested=[]; C.removed=[]; C.lastMiss=[]; C.rev=false; C.ms=1; C.msName=st.name;
+            saveClimb(lang,C,msSlot);
+          }
+          state.climbSlot=msSlot; state.lq=null; render();
         };
         row.appendChild(run); row.appendChild(cl); row.appendChild(del);
         sc.appendChild(row);
@@ -2723,7 +2742,7 @@ function renderClimbMisses(lang, d){
       card.appendChild(ra);
       const del=$(`<button class="small" style="margin-top:16px;margin-left:10px">🗑 Mastered — delete this test</button>`);
       del.onclick=()=>{
-        if(del._arm){ saveMissSets(lang, getMissSets(lang).filter(x=>x.id!==ms.setId)); state.lq=null; render(); }
+        if(del._arm){ saveMissSets(lang, getMissSets(lang).filter(x=>x.id!==ms.setId)); localStorage.removeItem(climbKey(lang,'ms:'+ms.setId)); state.lq=null; render(); }
         else { del._arm=true; del.textContent='🗑 Sure? Click again'; setTimeout(()=>{ del._arm=false; del.textContent='🗑 Mastered — delete this test'; },2500); }
       };
       card.appendChild(del);

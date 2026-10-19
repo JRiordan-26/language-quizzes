@@ -756,7 +756,7 @@ function renderHome(){
     if(!act.length) status = `<span class="pill">${done?done+' completed':'not started'}${tt}</span>`;
     else{
       const nm=missPool(l).length;
-      status = `<span class="pill" style="color:var(--warn)">${act.map(x=>'Climb '+(x.i+1)+': '+x.L.used+'/50').join(' · ')}${nm?` · 🎯 ${nm}`:''}${tt}</span>`;
+      status = `<span class="pill" style="color:var(--warn)">${act.map(x=>'Climb '+(x.i+1)+': '+x.L.used+'/'+climbCap(x.L)).join(' · ')}${nm?` · 🎯 ${nm}`:''}${tt}</span>`;
     }
     const b = $(`<button style="flex:1;min-width:200px;padding:14px">${dd.flag} ${dd.name}<br>${status}</button>`);
     b.onclick=()=>{ state.climbLang=l; state.climbSlot=act.length?act[0].i:0; state.lq=null; state.screen='climb'; render(); };
@@ -2141,10 +2141,13 @@ function getClimb(lang, slot){
   if(slot===undefined) slot=curClimbSlot();
   try{ const o=JSON.parse(localStorage.getItem(climbKey(lang,slot))||'null')||{};
     return {list:o.list||[], used:o.used||0, tested:o.tested||[], past:o.past||[], n:o.n||0,
-            removed:o.removed||[], lastMiss:o.lastMiss||[], rev:!!o.rev, comp:o.comp||[]};
-  }catch(e){ return {list:[],used:0,tested:[],past:[],n:0,removed:[],lastMiss:[],rev:false,comp:[]}; }
+            removed:o.removed||[], lastMiss:o.lastMiss||[], rev:!!o.rev, comp:o.comp||[],
+            ms:o.ms||0, msName:o.msName||''};
+  }catch(e){ return {list:[],used:0,tested:[],past:[],n:0,removed:[],lastMiss:[],rev:false,comp:[],ms:0,msName:''}; }
 }
 function climbActive(L){ return L.used - L.removed.filter(i=>i<L.used).length; }
+// a normal climb caps at 50; a miss-test climb caps at its test's word count
+function climbCap(L){ return (L.ms && L.list.length) ? L.list.length : 50; }
 function saveClimb(lang,L,slot){
   if(slot===undefined) slot=curClimbSlot();
   localStorage.setItem(climbKey(lang,slot), JSON.stringify(L));
@@ -2236,17 +2239,18 @@ function climbDedupe(lang){
   const key=t=>stripArticle(foldTxt(t));
   const slots=[...Array(CLIMB_SLOTS).keys()].map(s=>getClimb(lang,s));
   const usedAll=new Set();
-  for(const L of slots) L.list.forEach(x=>usedAll.add(key(x.t)));
+  for(const L of slots){ if(L.ms) continue; L.list.forEach(x=>usedAll.add(key(x.t))); }
   const H=getHundred(lang);
   H.list.forEach(x=>usedAll.add(key(x.t)));
   H.past.flat().forEach(t=>usedAll.add(key(t)));
-  for(const L of slots){ L.past.flat().forEach(t=>usedAll.add(key(t))); L.tested.forEach(t=>usedAll.add(key(t))); }
+  for(const L of slots){ if(L.ms) continue; L.past.flat().forEach(t=>usedAll.add(key(t))); L.tested.forEach(t=>usedAll.add(key(t))); }
   Object.keys(getDaily(lang).stats).forEach(t=>usedAll.add(key(t)));
   const learned=getLearned(lang);
   const pool=duoFlat(lang).filter(it=>it&&it.t&&it.e&&!learned.has(it.t));
   const seen=new Set(); let pi=0;
   for(let s=0;s<CLIMB_SLOTS;s++){
     const L=slots[s]; let ch=false;
+    if(L.ms) continue;
     for(let i=0;i<L.list.length;i++){
       const k=key(L.list[i].t);
       if(!seen.has(k)){ seen.add(k); continue; }
@@ -2270,7 +2274,7 @@ function startClimbRound(){
   if(!L.used){ state.lq=null; render(); return; }
   let queue=shuffle([...Array(L.used).keys()].filter(i=>!L.removed.includes(i)));
   if(!queue.length){                      // every set word removed: deal fresh ones
-    if(L.used>=50){ state.lq=null; render(); return; }
+    if(L.used>=climbCap(L)){ state.lq=null; render(); return; }
     L.used++; saveClimb(lang,L);
     queue=[L.used-1];
   }
@@ -2289,7 +2293,7 @@ function makeClimbSlotRow(lang, current){
   const row=$(`<div class="row" style="margin-bottom:14px"></div>`);
   for(let s=0;s<CLIMB_SLOTS;s++){
     const Ls=getClimb(lang,s);
-    const lbl=Ls.used?`${Ls.used}/50${Ls.lastMiss.length?` · 🎯${Ls.lastMiss.length}`:''}`:(Ls.n?`${Ls.n} done`:'empty');
+    const lbl=Ls.used?`${Ls.ms?'🎯 ':''}${Ls.used}/${climbCap(Ls)}${Ls.lastMiss.length?` · 🎯${Ls.lastMiss.length}`:''}`:(Ls.n?`${Ls.n} done`:'empty');
     const b=$(`<button style="flex:1;min-width:92px;padding:9px 6px${s===current?';border:2px solid var(--accent)':''}">Climb ${s+1}${Ls.rev?' 🔄':''}<br><span class="pill">${lbl}</span></button>`);
     b.onclick=()=>{ state.climbSlot=s; state.lq=null; render(); };
     row.appendChild(b);
@@ -2314,7 +2318,7 @@ function renderClimb(){
     app.appendChild($(`<div class="sub">Start with 5 words. Answer them all correctly and the quiz keeps dealing new words — at least 3, then onward until your first mistake. Miss any and you can retake the set. Climb until all 50 are cleared in a single run. 40% review words, 60% new; words tested here also count as used for the 100-Word Quiz. Up to ${CLIMB_SLOTS} climbs can run side by side — their word lists never overlap, so switch whenever you lose momentum.</div>`));
     app.appendChild(makeClimbSlotRow(lang, curClimbSlot()));
     {
-      const nAct=[...Array(CLIMB_SLOTS).keys()].filter(s=>getClimb(lang,s).list.length).length;
+      const nAct=[...Array(CLIMB_SLOTS).keys()].filter(s=>{const C=getClimb(lang,s); return C.list.length && !C.ms;}).length;
       if(nAct>=2){
         const sh=$(`<button class="small" style="margin-bottom:14px">🔀 Shuffle words across all ${nAct} climbs</button>`);
         sh.onclick=()=>{ if(confirm(`Redistribute the words of all ${nAct} active climbs randomly among them? Progress counts, tested words, removals and misses travel with their words.`)){
@@ -2331,7 +2335,7 @@ function renderClimb(){
       card.appendChild(go);
     } else {
       card.appendChild($(`<div style="line-height:1.8">
-        <span class="pill">Climbed to ${L.used} / 50</span>
+        <span class="pill">Climbed to ${L.used} / ${climbCap(L)}</span>${L.ms?`<span class="pill">🎯 from ${L.msName||"a missed-words test"}</span>`:``}
         <span class="pill">${L.tested.length} word${L.tested.length!==1?'s':''} tested in this climb</span>
         ${L.removed.length?`<span class="pill">${L.removed.length} removed</span>`:''}
         <span class="pill">${climbTotalTested(lang)} tested across all climbs</span></div>`));
@@ -2364,8 +2368,14 @@ function renderClimb(){
       ab.onclick=()=>{ if(confirm('Abandon this climb? Words already tested stay counted as used; the rest are released.')){
         const LL=getClimb(lang);
         if(LL.tested.length){ LL.past.push([...LL.tested]); if(LL.past.length>10) LL.past=LL.past.slice(-10); }
-        LL.list=[]; LL.used=0; LL.tested=[]; LL.removed=[]; LL.lastMiss=[]; saveClimb(lang,LL); render(); } };
+        LL.list=[]; LL.used=0; LL.tested=[]; LL.removed=[]; LL.lastMiss=[]; LL.ms=0; LL.msName=''; saveClimb(lang,LL); render(); } };
       card.appendChild(ab);
+      const rs=$(`<button class="small" style="margin-top:14px;margin-left:10px" title="Clear this climb completely and start over — unlike Abandon, tested words are NOT archived; they go back into circulation">🔄 Reset this climb</button>`);
+      rs.onclick=()=>{
+        if(rs._arm){ const LL=getClimb(lang); LL.list=[]; LL.used=0; LL.tested=[]; LL.removed=[]; LL.lastMiss=[]; LL.ms=0; LL.msName=''; saveClimb(lang,LL); render(); }
+        else { rs._arm=true; rs.textContent='🔄 Sure? Click again'; setTimeout(()=>{ rs._arm=false; rs.textContent='🔄 Reset this climb'; },2500); }
+      };
+      card.appendChild(rs);
     }
     app.appendChild(card);
     return;
@@ -2382,7 +2392,7 @@ function renderClimb(){
       setTimeout(()=>btn.focus(),50);
     } else {
       const LNow=getClimb(lang);
-      const room=Math.max(0, 50-LNow.used);
+      const room=Math.max(0, climbCap(LNow)-LNow.used);
       const addRow=$(`<div style="margin-top:16px">Add <select id="addN" style="padding:6px 10px;border-radius:8px;border:2px solid var(--border);background:var(--card2);color:var(--text)"></select> new word${room?'s':''} for the next pass</div>`);
       const sel=addRow.querySelector('#addN');
       for(let i=0;i<=Math.min(10,room);i++) sel.appendChild($(`<option value="${i}">${i}</option>`));
@@ -2390,7 +2400,7 @@ function renderClimb(){
       sel.onchange=()=>{ rt.textContent=`🔁 Retake — ${climbActive(LNow)+ +sel.value} words`; };
       rt.onclick=()=>{
         const k=+sel.value;
-        if(k>0){ const LL=getClimb(lang); LL.used=Math.min(50, LL.used+k); saveClimb(lang,LL); }
+        if(k>0){ const LL=getClimb(lang); LL.used=Math.min(climbCap(LL), LL.used+k); saveClimb(lang,LL); }
         startClimbRound();
       };
       const lm=LNow.lastMiss.length;
@@ -2424,7 +2434,7 @@ function renderClimb(){
   const posLabel = isMiss ? `🎯 Missed ${lq.pos+1} / ${lq.items.length}`
                  : lq.phase==='set' ? `Word ${lq.pos+1} / ${lq.queue.length}` : `🆕 New word +${lq.added+1}`;
   app.appendChild($(`<div class="topnav"><span class="backlink" id="quit">✕ Pause</span>
-    <span style="color:var(--muted);font-size:.9rem">${d.flag} Climb ${(state.climbSlot||0)+1} · at ${L.used}/50</span></div>`));
+    <span style="color:var(--muted);font-size:.9rem">${d.flag} Climb ${(state.climbSlot||0)+1}${L.ms?' 🎯':''} · at ${L.used}/${climbCap(L)}</span></div>`));
   app.querySelector('#quit').onclick=()=>{ state.lq=null; render(); };
   app.appendChild($(`<div class="qTop"><span>${posLabel}</span><span>✓ ${lq.nOk}</span></div>`));
   const bar=$(`<div class="barOuter"><div class="barInner"></div></div>`);
@@ -2469,18 +2479,19 @@ function renderClimb(){
       const LL=getClimb(lang);
       LL.lastMiss=[...lq.wrong];           // feeds the 🎯 Misses quiz
       saveClimb(lang,LL);
-      const asked=(lq.phase==='set'? lq.pos+1 : lq.queue.length+lq.added+1);
+      const asked=lq.nOk+lq.mistakes;   // exact in both phases (the old ext-phase formula overcounted on completion)
       const got=`You got <b>${lq.nOk} / ${asked}</b> this round.`;
-      if(lq.mistakes===0 && LL.used>=50){
+      if(lq.mistakes===0 && LL.used>=climbCap(LL)){
+        const capDone=climbCap(LL);
         LL.past.push([...LL.tested]); if(LL.past.length>10) LL.past=LL.past.slice(-10);
         // completed sets count as mastered (past alone can't — abandons land there too)
         LL.comp=(LL.comp||[]).concat([[...LL.tested]]);
-        LL.list=[]; LL.used=0; LL.tested=[]; LL.removed=[]; LL.lastMiss=[]; LL.n=LL.n+1; saveClimb(lang,LL);
+        LL.list=[]; LL.used=0; LL.tested=[]; LL.removed=[]; LL.lastMiss=[]; LL.ms=0; LL.msName=''; LL.n=LL.n+1; saveClimb(lang,LL);
         state.lq={mode:'end', complete:true, headline:'🏆 Climb complete!',
-          detail:`${got}<br>All 50 words cleared in a single run. They join the review pool for future quizzes.`};
+          detail:`${got}<br>All ${capDone} words cleared in a single run. They join the review pool for future quizzes.`};
       } else if(lq.mistakes===0){
         state.lq={mode:'end', headline:'✅ Perfect round!',
-          detail:`${got}<br>Climbed to <b>${LL.used}</b> of 50 — the new words join your set.`};
+          detail:`${got}<br>Climbed to <b>${LL.used}</b> of ${climbCap(LL)} — the new words join your set.`};
       } else {
         const extMiss = lq.phase==='ext' && !ok;   // previous set was fully cleared
         const joined = lq.added + (extMiss?1:0);
@@ -2511,7 +2522,7 @@ function renderClimb(){
         if(lq.pos<lq.queue.length){ render(); return; }
         if(lq.mistakes>0){ endRound(); return; }
         const LL=getClimb(lang);
-        if(LL.used>=50){ endRound(); return; }       // full board cleared
+        if(LL.used>=climbCap(LL)){ endRound(); return; }       // full board cleared
         LL.used++; saveClimb(lang,LL);               // introduce first new word
         lq.phase='ext'; lq.extIdx=LL.used-1;
         render(); return;
@@ -2521,12 +2532,12 @@ function renderClimb(){
         // the old set was fully cleared before this miss on a NEW word:
         // queue 3 additional not-yet-seen words into the next round's set
         const LL=getClimb(lang);
-        LL.used=Math.min(50, LL.used+3); saveClimb(lang,LL);
+        LL.used=Math.min(climbCap(LL), LL.used+3); saveClimb(lang,LL);
         endRound(); return;
       }
       lq.added++;
       const LL=getClimb(lang);
-      if(LL.used>=50){ endRound(); return; }         // reached the top, all correct
+      if(LL.used>=climbCap(LL)){ endRound(); return; }         // reached the top, all correct
       LL.used++; saveClimb(lang,LL);
       lq.extIdx=LL.used-1;
       render();
@@ -2564,7 +2575,7 @@ function shuffleClimbs(lang){
   const act=[];
   for(let s=0;s<CLIMB_SLOTS;s++){
     const L=getClimb(lang,s);
-    if(L.list.length) act.push([s,L]);
+    if(L.list.length && !L.ms) act.push([s,L]);
   }
   if(act.length<2) return false;
   const intro=[], unseen=[];
@@ -2667,7 +2678,18 @@ function renderClimbMisses(lang, d){
           if(del._arm){ saveMissSets(lang, getMissSets(lang).filter(x=>x.id!==st.id)); render(); }
           else { del._arm=true; del.textContent='🗑 Sure? Click again'; setTimeout(()=>{ del._arm=false; del.textContent='🗑'; }, 2500); }
         };
-        row.appendChild(run); row.appendChild(del);
+        const cl=$(`<button class="small" title="Run this test climb-style: start with 5 words, clear the set to earn more, top out at ${st.words.length}">🪜 Climb</button>`);
+        cl.onclick=()=>{
+          let slot=-1;
+          for(let s=0;s<CLIMB_SLOTS;s++){ const C=getClimb(lang,s); if(!C.used && !C.list.length){ slot=s; break; } }
+          if(slot<0){ cl.textContent='No empty climb slot'; return; }
+          const C=getClimb(lang,slot);
+          C.list=shuffle(st.words.map(w=>({t:w.t,e:w.e})));
+          C.used=Math.min(5,C.list.length); C.tested=[]; C.removed=[]; C.lastMiss=[]; C.rev=false; C.ms=1; C.msName=st.name;
+          saveClimb(lang,C,slot);
+          state.climbSlot=slot; state.lq=null; render();
+        };
+        row.appendChild(run); row.appendChild(cl); row.appendChild(del);
         sc.appendChild(row);
       }
       app.appendChild(sc);

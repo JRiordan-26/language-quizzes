@@ -7811,7 +7811,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il gioco", "e": "game (toy)"},
     {"t": "il golf", "e": "golf"},
     {"t": "guardare la televisione", "e": "to watch television"},
-    {"t": "i hobby", "e": "hobby / hobbies"},
+    {"t": "l'hobby", "e": "hobby / hobbies"},
     {"t": "importante", "e": "important"},
     {"t": "noioso", "e": "boring"},
     {"t": "odiare", "e": "to hate"},
@@ -7836,7 +7836,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il monumento", "e": "monument"},
     {"t": "preferite", "e": "you (pl.) prefer (voi form)"},
     {"t": "la sinagoga", "e": "synagogue"},
-    {"t": "i souvenir", "e": "souvenir"},
+    {"t": "il souvenir", "e": "souvenir"},
     {"t": "lo stadio", "e": "stadium"},
     {"t": "la statua", "e": "statue"},
     {"t": "un'", "e": "a / an / one"},
@@ -7949,7 +7949,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "devi", "e": "you must / you have to (tu form)"},
     {"t": "devo", "e": "I must / I have to (io devo)"},
     {"t": "il documento", "e": "document"},
-    {"t": "gli email", "e": "email"},
+    {"t": "l'email", "e": "email"},
     {"t": "intelligente", "e": "intelligent"},
     {"t": "internazionale", "e": "international"},
     {"t": "inviare", "e": "to send"},
@@ -7995,7 +7995,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la domenica", "e": "Sunday"},
     {"t": "la famiglia", "e": "family"},
     {"t": "la foto", "e": "photo"},
-    {"t": "i hobby", "e": "hobby / hobbies"},
+    {"t": "l'hobby", "e": "hobby / hobbies"},
     {"t": "la mamma", "e": "mom"},
     {"t": "il papà", "e": "dad"},
     {"t": "pop", "e": "pop"},
@@ -8024,7 +8024,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "prima", "e": "before"},
     {"t": "scarico", "e": "I download (io form)"},
     {"t": "scusate", "e": "excuse me"},
-    {"t": "il taxi", "e": "taxi / cab / cabs"},
+    {"t": "il taxi", "e": "taxi / cab"},
     {"t": "vada", "e": "go (formal) (feminine)"},
     {"t": "vado", "e": "I go (io vado) (masculine)"}
   ]},
@@ -9095,7 +9095,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "le piacciono", "e": "she likes"},
     {"t": "le piace", "e": "he likes"},
     {"t": "maltese", "e": "Maltese"},
-    {"t": "i manager", "e": "manager"},
+    {"t": "il manager", "e": "manager"},
     {"t": "la prenotazione", "e": "reservation"},
     {"t": "presentare", "e": "to introduce / to present"},
     {"t": "il pullman", "e": "coach / bus"},
@@ -9413,7 +9413,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "dico", "e": "I say (io dico)"},
     {"t": "dire", "e": "to say / to tell"},
     {"t": "il fornello", "e": "stove / burner"},
-    {"t": "i gas", "e": "gas"},
+    {"t": "il gas", "e": "gas"},
     {"t": "giovane", "e": "young"},
     {"t": "già", "e": "already"},
     {"t": "la lenzuola", "e": "sheets (feminine)"},
@@ -9818,7 +9818,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "impossibile", "e": "impossible"},
     {"t": "inoltre", "e": "besides"},
     {"t": "meglio", "e": "better"},
-    {"t": "le novità", "e": "news"},
+    {"t": "la novità", "e": "news"},
     {"t": "possibile", "e": "possible"},
     {"t": "la professione", "e": "profession / trade / occupation"},
     {"t": "il quarto", "e": "quarter"},
@@ -10471,7 +10471,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il navigatore", "e": "navigator / navigation device / GPS"},
     {"t": "proprio", "e": "(his/her/its) own"},
     {"t": "se", "e": "oneself / himself / herself"},
-    {"t": "lo smartphone", "e": "smartphone / phone's"},
+    {"t": "lo smartphone", "e": "smartphone"},
     {"t": "smettere", "e": "to stop / to quit"},
     {"t": "sms", "e": "text message"},
     {"t": "successivamente", "e": "later"},
@@ -10653,7 +10653,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "settimanale", "e": "weekly"},
     {"t": "la situazione", "e": "situation"},
     {"t": "superiore", "e": "superior"},
-    {"t": "i team", "e": "team"}
+    {"t": "il team", "e": "team"}
   ]},
   { id: "duo_it_u145", type: "vocab", title: "Vocab: Unit 145 \u00b7 describing events \u2014 Events: Describe a recent event", items: [
     {"t": "a meno che", "e": "unless"},
@@ -10921,7 +10921,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "bruciare", "e": "to burn"},
     {"t": "il disordine", "e": "disorder / mess / chaos"},
     {"t": "la faccenda", "e": "matter / business / chores"},
-    {"t": "i gas", "e": "gas"},
+    {"t": "il gas", "e": "gas"},
     {"t": "l'inquilino", "e": "tenant / lodger / occupant"},
     {"t": "lasciare", "e": "to leave (an object)"},
     {"t": "la macchia", "e": "stain / spot"},
@@ -11373,7 +11373,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la mossa", "e": "move / tactic / play"},
     {"t": "la pedina", "e": "pawn / piece / checker"},
     {"t": "il punto", "e": "point (masculine)"},
-    {"t": "i quiz", "e": "quiz / quizzes"},
+    {"t": "il quiz", "e": "quiz"},
     {"t": "salire", "e": "to go up / to get on"},
     {"t": "secondario", "e": "secondary"},
     {"t": "tifare", "e": "to cheer / to root for"},
@@ -13159,7 +13159,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
   { id: "duo_it_u259", type: "vocab", title: "Vocab: Unit 259 \u00b7 pop culture \u2014 Pop icons: Describe your favorite pop icon", items: [
     {"t": "appassionante", "e": "exciting / gripping"},
     {"t": "gli ascolti", "e": "ratings / audience"},
-    {"t": "le celebrità", "e": "celebrity / celebrities"},
+    {"t": "la celebrità", "e": "celebrity / celebrities"},
     {"t": "comporre", "e": "to compose"},
     {"t": "il copione", "e": "script / screenplay / scenario"},
     {"t": "debuttare", "e": "to debut"},
@@ -13336,7 +13336,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "l'adattatore", "e": "adapter / adaptor"},
     {"t": "antivirus", "e": "antivirus / antivirus software / antivirus program"},
     {"t": "audio", "e": "audio"},
-    {"t": "i browser", "e": "browser"},
+    {"t": "il browser", "e": "browser"},
     {"t": "corsivo", "e": "italics / cursive"},
     {"t": "disconnettersi", "e": "to disconnect / to log out"},
     {"t": "l'emoji", "e": "emoji / emoticon / smiley"},
@@ -13817,7 +13817,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "protettivo", "e": "protective / shielding / safeguarding"},
     {"t": "la radice", "e": "root"},
     {"t": "repellente", "e": "repellent"},
-    {"t": "gli scooter", "e": "scooter"},
+    {"t": "lo scooter", "e": "scooter"},
     {"t": "solare", "e": "solar / sun / sunny"}
   ]},
   { id: "duo_it_u289", type: "vocab", title: "Vocab: Unit 289 \u00b7 rural life 2 \u2014 Countryside: Describe farm life", items: [
@@ -13864,7 +13864,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il pompiere", "e": "fireman / firefighter"},
     {"t": "quantomeno", "e": "at least"},
     {"t": "stradale", "e": "road / streets"},
-    {"t": "i tunnel", "e": "tunnel"}
+    {"t": "il tunnel", "e": "tunnel"}
   ]},
   { id: "duo_it_u291", type: "vocab", title: "Vocab: Unit 291 \u00b7 art \u2014 Artworks: Describe light in artworks", items: [
     {"t": "il bronzo", "e": "bronze"},
@@ -14109,7 +14109,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo schema", "e": "diagram / outline / scheme"},
     {"t": "scoraggiare", "e": "to discourage"},
     {"t": "sinonimo", "e": "synonym"},
-    {"t": "i test", "e": "test / trial"}
+    {"t": "il test", "e": "test"}
   ]},
   { id: "duo_it_u302", type: "vocab", title: "Vocab: Unit 302 \u00b7 music 2 \u2014 Music: React to live music", items: [
     {"t": "abbondantemente", "e": "generously"},

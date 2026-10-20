@@ -425,9 +425,9 @@ function maskPrompt(e, answer, lang){
       if(key==='sie'||key==='zij'||key==='ze'){ translated=true;   // she vs they by context
         return kept.some(x=>/^(er|es|hij)$/.test(x)) ? 'she' : 'they'; }
       if(pm[key]!==undefined){ translated=true; return pm[key]; }
-      return key;
+      return w;                       // keep punctuation: "singular, feminine"
     });
-    const uniq = mapped.filter((x,i)=>mapped.indexOf(x)===i && x);
+    const uniq = mapped.filter((x,i)=>mapped.indexOf(x)===i && x).map((x,i,a)=>i===a.length-1?x.replace(/[:,;]+$/,''):x);
     if(!uniq.length) return '';
     // "I was (yo fui)" -> "(I)" adds nothing when the English already says I
     if(uniq.length===1 && new RegExp('\\b'+uniq[0]+'\\b').test(e.slice(0, e.indexOf('(')))) return '';

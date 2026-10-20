@@ -7811,7 +7811,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il gioco", "e": "game (toy)"},
     {"t": "il golf", "e": "golf"},
     {"t": "guardare la televisione", "e": "to watch television"},
-    {"t": "i hobby", "e": "hobby / hobbies"},
+    {"t": "l'hobby", "e": "hobby / hobbies"},
     {"t": "importante", "e": "important"},
     {"t": "noioso", "e": "boring"},
     {"t": "odiare", "e": "to hate"},
@@ -7995,7 +7995,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la domenica", "e": "Sunday"},
     {"t": "la famiglia", "e": "family"},
     {"t": "la foto", "e": "photo"},
-    {"t": "i hobby", "e": "hobby / hobbies"},
+    {"t": "l'hobby", "e": "hobby / hobbies"},
     {"t": "la mamma", "e": "mom"},
     {"t": "il papà", "e": "dad"},
     {"t": "pop", "e": "pop"},
@@ -8025,8 +8025,8 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "scarico", "e": "I download (io form)"},
     {"t": "scusate", "e": "excuse me"},
     {"t": "il taxi", "e": "taxi / cab"},
-    {"t": "vada", "e": "go (formal) (feminine)"},
-    {"t": "vado", "e": "I go (io vado) (masculine)"}
+    {"t": "vada", "e": "go! (formal imperative: Vada!) / (that) he or she go (subjunctive)"},
+    {"t": "vado", "e": "I go (io vado)"}
   ]},
   { id: "duo_it_u29", type: "vocab", title: "Vocab: Unit 29 \u00b7 Needs \u2014 List baking ingredients", items: [
     {"t": "l'acqua", "e": "water"},
@@ -9413,7 +9413,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "dico", "e": "I say (io dico)"},
     {"t": "dire", "e": "to say / to tell"},
     {"t": "il fornello", "e": "stove / burner"},
-    {"t": "i gas", "e": "gas"},
+    {"t": "il gas", "e": "gas"},
     {"t": "giovane", "e": "young"},
     {"t": "già", "e": "already"},
     {"t": "la lenzuola", "e": "sheets (feminine)"},
@@ -9818,7 +9818,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "impossibile", "e": "impossible"},
     {"t": "inoltre", "e": "besides"},
     {"t": "meglio", "e": "better"},
-    {"t": "le novità", "e": "news"},
+    {"t": "la novità", "e": "news"},
     {"t": "possibile", "e": "possible"},
     {"t": "la professione", "e": "profession / trade / occupation"},
     {"t": "il quarto", "e": "quarter"},
@@ -10163,12 +10163,12 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il ciclismo", "e": "cycling"},
     {"t": "costringere", "e": "to force / to compel"},
     {"t": "duro", "e": "hard"},
-    {"t": "faceva", "e": "(he/she/it) was doing / used to do (feminine)"},
+    {"t": "faceva", "e": "(he/she/it) was doing / used to do"},
     {"t": "facevamo", "e": "(we) were doing / (we) used to do"},
     {"t": "facevano", "e": "(they) were doing / (they) used to do"},
     {"t": "facevate", "e": "(you) were doing / (you) used to do"},
     {"t": "facevi", "e": "(you) were doing / (you) used to do"},
-    {"t": "facevo", "e": "(I) was doing / (I) used to do (masculine)"},
+    {"t": "facevo", "e": "(I) was doing / (I) used to do"},
     {"t": "finale", "e": "final"},
     {"t": "finire", "e": "to finish"},
     {"t": "la gara", "e": "race / competition"},
@@ -10921,7 +10921,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "bruciare", "e": "to burn"},
     {"t": "il disordine", "e": "disorder / mess / chaos"},
     {"t": "la faccenda", "e": "matter / business / chores"},
-    {"t": "i gas", "e": "gas"},
+    {"t": "il gas", "e": "gas"},
     {"t": "l'inquilino", "e": "tenant / lodger / occupant"},
     {"t": "lasciare", "e": "to leave (an object)"},
     {"t": "la macchia", "e": "stain / spot"},
@@ -13159,7 +13159,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
   { id: "duo_it_u259", type: "vocab", title: "Vocab: Unit 259 \u00b7 pop culture \u2014 Pop icons: Describe your favorite pop icon", items: [
     {"t": "appassionante", "e": "exciting / gripping"},
     {"t": "gli ascolti", "e": "ratings / audience"},
-    {"t": "le celebrità", "e": "celebrity / celebrities"},
+    {"t": "la celebrità", "e": "celebrity / celebrities"},
     {"t": "comporre", "e": "to compose"},
     {"t": "il copione", "e": "script / screenplay / scenario"},
     {"t": "debuttare", "e": "to debut"},
@@ -20354,7 +20354,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el pollo", "e": "chicken"},
     {"t": "la reserva", "e": "reservation"},
     {"t": "tener hambre", "e": "be hungry"},
-    {"t": "vengo", "e": "I'm coming, (I) come, come (masculine)"},
+    {"t": "vengo", "e": "I'm coming, (I) come, come"},
     {"t": "venimos", "e": "we come (nosotros form)"},
     {"t": "vienen", "e": "(you) are coming, (they) come, (they) are coming"},
     {"t": "útil", "e": "useful"}
@@ -20959,7 +20959,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "competitivo", "e": "competitive"},
     {"t": "despierto", "e": "awake"},
     {"t": "dormir", "e": "to sleep"},
-    {"t": "duermo", "e": "I am sleeping, sleep, (I) fall asleep (masculine)"},
+    {"t": "duermo", "e": "I am sleeping, sleep, (I) fall asleep"},
     {"t": "el extranjero", "e": "abroad"},
     {"t": "la fantasía", "e": "fantasy"},
     {"t": "el foro", "e": "forum"},
@@ -21687,7 +21687,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "íbamos", "e": "(we) were going, (we) went out, we'd go"}
   ]},
   { id: "duo_es_u96", type: "vocab", title: "Vocab: Unit 96 \u00b7 House \u2014 Discuss housing costs", items: [
-    {"t": "el ahorro", "e": "(I) spare oneself, saving, (I) spare (masculine)"},
+    {"t": "el ahorro", "e": "(I) spare oneself, saving, (I) spare"},
     {"t": "el alquiler", "e": "rent / hire"},
     {"t": "alto", "e": "tall / loud / louder"},
     {"t": "el ciento veinte", "e": "one hundred and twenty"},
@@ -23389,7 +23389,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "se preocupe", "e": "worry"},
     {"t": "tome", "e": "drink / go / take"},
     {"t": "vaya", "e": "go, (you) go, (I) go"},
-    {"t": "venga", "e": "comes, (I/he/she/it/you) arrive, (I/he/she/it/you) come (feminine)"}
+    {"t": "venga", "e": "comes, (I/he/she/it/you) arrive, (I/he/she/it/you) come"}
   ]},
   { id: "duo_es_u163", type: "vocab", title: "Vocab: Unit 163 \u00b7 Traffic \u2014 Driving: Ask for driving directions", items: [
     {"t": "el auto", "e": "auto / car / writ"},
@@ -24474,7 +24474,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "cocinemos", "e": "cook / let's"},
     {"t": "la cucharada", "e": "spoonful / tablespoon"},
     {"t": "despierte", "e": "wake up"},
-    {"t": "duerma", "e": "sleep (feminine)"},
+    {"t": "duerma", "e": "sleep"},
     {"t": "el guiso", "e": "stew, (I) cook, cook"},
     {"t": "la hierba", "e": "herb / grass / smoke"},
     {"t": "hoy en día", "e": "nowadays"},
@@ -24489,7 +24489,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "para que", "e": "so that / so"},
     {"t": "pedir", "e": "let's / beg / requests"},
     {"t": "poco después", "e": "shortly after"},
-    {"t": "quiera", "e": "(I/he/she/it/you) want, wants, want (feminine)"},
+    {"t": "quiera", "e": "(I/he/she/it/you) want, wants, want"},
     {"t": "recordar a", "e": "remember"},
     {"t": "recuerde", "e": "remind, (I) remember, remember"},
     {"t": "repitamos", "e": "have seconds of"}
@@ -24837,7 +24837,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el trigo", "e": "wheat"}
   ]},
   { id: "duo_es_u218", type: "vocab", title: "Vocab: Unit 218 \u00b7 Buy Now! \u2014 Offers: Describe a special offer", items: [
-    {"t": "ahorra", "e": "(you-formal) save oneself, (he/she/it) saves (oneself), (you-formal) spare oneself (feminine)"},
+    {"t": "ahorra", "e": "(you-formal) save oneself, (he/she/it) saves (oneself), (you-formal) spare oneself"},
     {"t": "comercial", "e": "business / commercial / business school"},
     {"t": "confiable", "e": "reliable"},
     {"t": "conforme", "e": "(I/he/she/it/you) satisfy, satisfy!, satisfied"},

@@ -405,10 +405,19 @@ function maskPrompt(e, answer, lang){
   if(!e || !e.includes('(') || !answer) return e;
   const ans = stripArticle(foldTxt(answer));
   if(!ans) return e;
+  // multiword answers ("ha bisogno di") leak as whole phrases and via their
+  // content words — strip the phrase itself, then flag remaining big words
+  const ansWords = new Set(ans.includes(' ') ? ans.split(' ').filter(x=>x.length>=4) : []);
+  const phraseRx = answer.includes(' ')
+    ? new RegExp('\\s*[—:,–-]?\\s*'+answer.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'i') : null;
   return e.replace(/\s*\(([^)]*)\)/g, (m, inner)=>{
+    let phraseCut=false;
+    if(phraseRx && phraseRx.test(inner)){ inner=inner.replace(phraseRx,'').replace(/\s*[—:,–-]\s*$/,'').trim(); phraseCut=true; }
+    const leakW = w=>{ const wf=stripArticle(foldTxt(w)); return wf===ans || ansWords.has(wf); };
     const words = inner.split(/[\s\/]+/).filter(Boolean);
-    if(!words.some(w=>stripArticle(foldTxt(w))===ans)) return m;  // no leak in this hint
-    const kept = words.filter(w=>stripArticle(foldTxt(w))!==ans);
+    if(!phraseCut && !words.some(leakW)) return m;  // no leak in this hint
+    if(phraseCut && !words.some(leakW)) return words.length ? ' ('+words.join(' ').replace(/\s*[—:,–-]\s*$/,'')+')' : '';
+    const kept = words.filter(w=>!leakW(w));
     const pm = PRON_EN[lang]||{};
     let translated=false;
     const mapped = kept.map(w=>{

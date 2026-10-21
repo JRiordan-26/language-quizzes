@@ -442,7 +442,7 @@ function nounPrompt(e, t){
   if(/^(l['’]|der|die|das|ein|eine|il|lo|la|le|gli|i|el|los|las|un|uno|una|de|het|een|an|na)$/i.test(t.trim())) return e;
   if(!startsWithArticle(t)) return e;
   if(/^(the|a|an)\s/i.test(e)) return e;                       // authored glosses may already say "the"
-  if(/^(each|one|to|i|you|he|she|we|they|it|that|this|these|those|there|what|who|how)\b/i.test(e)) return e;  // phrase/pronoun/sentence glosses
+  if(/^(each|one|to|i|you|he|she|we|they|it|that|this|these|those|there|what|who|how|some|any|no|all|both|more|less|enough|every)\b/i.test(e)) return e;  // phrase/pronoun/quantifier glosses
   if(/^(der|die|das|ein|eine)\s+[a-zäöüß]/.test(t.trim())) return e; // German nouns are capitalized — lowercase word after article = not a noun ("das ist")
   const indef = /^(ein|eine|un|uno|una|een)\s/i.test(t) || /^un['’]/i.test(t);
   return (indef ? 'a ' : 'the ') + e;

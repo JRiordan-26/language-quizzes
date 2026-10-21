@@ -1123,7 +1123,7 @@ window.QUIZ_COMPOSE["italian"] = {
 "vetrina": "vetro (glass) + -ina (little / dear)",
 "raramente": "raro (rare) + -mente (adverb ending, ≈ English -ly)",
 "spazzolino": "spazzola (brush) + -ino (little / dear)",
-"stanotte": "stare (to stay) + notte (night)",
+"stanotte": "questa (this) + notte (night), fused — tonight",
 "ultimamente": "ultimo (last) + -mente (adverb ending, ≈ English -ly)",
 "cassetto": "cassa (cash desk) + -etto (little / dear)",
 "medicina": "medico (doctor) + -ina (little / dear)",
@@ -1639,7 +1639,11 @@ window.QUIZ_COMPOSE["italian"] = {
 "arcobaleno": "arco (arch) + baleno (flash of lightning) — rainbow",
 "francobollo": "franco (free of charge) + bollo (stamp / seal)",
 "pallacanestro": "palla (ball) + canestro (basket) — basketball",
-"pallavolo": "palla (ball) + volo (flight) — volleyball"
+"pallavolo": "palla (ball) + volo (flight) — volleyball",
+"dopodomani": "dopo (after) + domani (tomorrow) — the day after tomorrow",
+"dopoguerra": "dopo (after) + guerra (war) — the postwar period",
+"dopobarba": "dopo (after) + barba (beard) — aftershave",
+"stavolta": "questa (this) + volta (time), fused — this time"
 };
 window.QUIZ_COMPOSE["spanish"] = {
 "solamente": "solo (alone) + -mente (adverb ending, ≈ English -ly)",

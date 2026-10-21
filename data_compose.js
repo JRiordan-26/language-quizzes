@@ -1645,7 +1645,21 @@ window.QUIZ_COMPOSE["italian"] = {
 "dopobarba": "dopo (after) + barba (beard) — aftershave",
 "stavolta": "questa (this) + volta (time), fused — this time",
 "il dentifricio": "denti (teeth) + -fricio (from Latin fricare, to rub) — the tooth-rubber",
-"lo spazzolino": "spazzola (brush) + -ino (little) — the little brush: toothbrush"
+"lo spazzolino": "spazzola (brush) + -ino (little) — the little brush: toothbrush",
+"soprattutto": "sopra (above) + tutto (everything) — above all: especially",
+"dappertutto": "da (from) + per (through) + tutto (everything) — everywhere",
+"anzitutto": "anzi (rather / before) + tutto (everything) — first of all",
+"innanzitutto": "innanzi (before) + tutto (everything) — first and foremost",
+"purtroppo": "pur (yet / even) + troppo (too much) — unfortunately",
+"davvero": "da (from) + vero (true) — really / truly",
+"infatti": "in + fatti (facts) — in fact / indeed",
+"perciò": "per (for) + ciò (that) — therefore",
+"almeno": "al (at the) + meno (least) — at least",
+"insomma": "in + somma (sum) — in short / well…",
+"oppure": "o (or) + pure (also) — or else",
+"tuttavia": "tutta (all) + via (way) — however / nevertheless",
+"sottosopra": "sotto (under) + sopra (above) — upside down",
+"soprannome": "sopra (above / over) + nome (name) — nickname"
 };
 window.QUIZ_COMPOSE["spanish"] = {
 "solamente": "solo (alone) + -mente (adverb ending, ≈ English -ly)",

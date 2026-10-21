@@ -1643,7 +1643,9 @@ window.QUIZ_COMPOSE["italian"] = {
 "dopodomani": "dopo (after) + domani (tomorrow) — the day after tomorrow",
 "dopoguerra": "dopo (after) + guerra (war) — the postwar period",
 "dopobarba": "dopo (after) + barba (beard) — aftershave",
-"stavolta": "questa (this) + volta (time), fused — this time"
+"stavolta": "questa (this) + volta (time), fused — this time",
+"il dentifricio": "denti (teeth) + -fricio (from Latin fricare, to rub) — the tooth-rubber",
+"lo spazzolino": "spazzola (brush) + -ino (little) — the little brush: toothbrush"
 };
 window.QUIZ_COMPOSE["spanish"] = {
 "solamente": "solo (alone) + -mente (adverb ending, ≈ English -ly)",

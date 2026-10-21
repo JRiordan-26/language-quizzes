@@ -2715,8 +2715,8 @@ function renderClimbMisses(lang, d){
       const fmt=iso=>new Date(iso+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
       for(const st of sets){
         if(refreshStoredWords(lang, st.words)) saveMissSets(lang, sets);
-        const tip=`Created ${fmt(st.date)} — from ${st.srcs.map(s=>'Climb '+(s+1)).join(', ')}`;
-        const srcLbl = st.srcs.length ? (st.srcs.length===1?'Climb ':'Climbs ')+st.srcs.map(s=>s+1).join(', ') : '';
+        const srcLbl = st.srcs.length ? (st.srcs.length===1?'Climb ':'Climbs ')+st.srcs.map(s=>s+1).join(', ') : (st.srcTxt||'');
+        const tip=`Created ${fmt(st.date)}${srcLbl?` — from ${srcLbl}`:''}`;
         const row=$(`<div style="display:flex;align-items:center;gap:10px;margin:10px 0;flex-wrap:wrap" title="${tip}">
           <span style="min-width:150px"><b>${st.name}</b><br><span style="color:var(--muted);font-size:.82rem">${fmt(st.date)} · ${st.words.length} words${srcLbl?` · from ${srcLbl}`:''}</span></span>
           <span class="pill">${st.runs?`best ${st.best}% · last ${st.last}/${st.words.length}${st.lastDate?' on '+fmt(st.lastDate):''}`:'not run yet'}</span>
@@ -2730,6 +2730,10 @@ function renderClimbMisses(lang, d){
         };
         const msSlot='ms:'+st.id;
         const MC=getClimb(lang, msSlot);
+        const missKey=w=>stripArticle(foldTxt(w.t));
+        const missMap=new Map();
+        for(const w of [...MC.lastMiss, ...(st.lastWrong||[])]) if(!missMap.has(missKey(w))) missMap.set(missKey(w), {t:w.t,e:w.e});
+        const missW=[...missMap.values()];
         if(MC.list.length && refreshStoredWords(lang, MC.list)) saveClimb(lang, MC, msSlot);
         const cl=$(`<button class="small" title="${MC.used?`Continue this test's climb`:`Run this test climb-style: start with 5 words, clear the set to earn more, top out at ${st.words.length}`}">${MC.used?`⛰ Continue climb (${MC.used}/${climbCap(MC)})`:'🪜 Start climb'}${MC.n?` · ${MC.n}×🏁`:''}</button>`);
         cl.onclick=()=>{
@@ -2741,7 +2745,17 @@ function renderClimbMisses(lang, d){
           }
           state.climbSlot=msSlot; state.lq=null; render();
         };
-        row.appendChild(run); row.appendChild(cl); row.appendChild(del);
+        if(missW.length){
+          const mk=$(`<button class="small" title="The ${missW.length} words missed in this test's climb and last run become their own test">🎯→💾 ${missW.length} missed</button>`);
+          mk.onclick=()=>{
+            const sets2=getMissSets(lang);
+            sets2.push({ id:Date.now().toString(36), name:`Missed words #${sets2.length+1}`,
+              date:new Date().toISOString().slice(0,10), srcs:[], srcTxt:st.name,
+              words:missW.map(w=>({...w})), runs:0, best:0, last:null, lastDate:null });
+            saveMissSets(lang, sets2); render();
+          };
+          row.appendChild(run); row.appendChild(cl); row.appendChild(mk); row.appendChild(del);
+        } else { row.appendChild(run); row.appendChild(cl); row.appendChild(del); }
         sc.appendChild(row);
       }
       app.appendChild(sc);
@@ -2758,6 +2772,7 @@ function renderClimbMisses(lang, d){
         const st=sets.find(x=>x.id===ms.setId);
         if(st){
           st.runs=(st.runs||0)+1; st.last=ms.nOk; st.lastDate=new Date().toISOString().slice(0,10);
+          st.lastWrong=ms.wrong.map(w=>({t:w.t,e:w.e}));
           st.best=Math.max(st.best||0, Math.round(ms.nOk/ms.items.length*100));
           saveMissSets(lang, sets);
         }

@@ -1611,6 +1611,7 @@ window.QUIZ_COMPOSE["italian"] = {
 "fare una foto": "literally: fare (to do) + una (a) + foto (photo)",
 "dal mio punto di vista": "literally: dal (from the) + mio (my) + punto (point) + di (of) + vista (view)",
 "non sono d'accordo": "literally: non (not) + sono (I am) + d'accordo (okay)",
+"riscaldamento": "ri- (again) + caldo (warm) + -mento (the act of) — the warming-up: heating",
 "soggiorno": "sub (Latin: through) + giorno (day) — where you spend the day; also 'a stay' (English sojourn)",
 "frigorifero": "frigo(r)- (Latin: cold) + -fero (carrying, from ferre) — the cold-bearer",
 "lavastoviglie": "lava (washes, from lavare) + stoviglie (dishes)",

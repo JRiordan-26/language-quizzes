@@ -7811,7 +7811,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il gioco", "e": "game (toy)"},
     {"t": "il golf", "e": "golf"},
     {"t": "guardare la televisione", "e": "to watch television"},
-    {"t": "i hobby", "e": "hobby / hobbies"},
+    {"t": "l'hobby", "e": "hobby / hobbies"},
     {"t": "importante", "e": "important"},
     {"t": "noioso", "e": "boring"},
     {"t": "odiare", "e": "to hate"},
@@ -7995,7 +7995,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la domenica", "e": "Sunday"},
     {"t": "la famiglia", "e": "family"},
     {"t": "la foto", "e": "photo"},
-    {"t": "i hobby", "e": "hobby / hobbies"},
+    {"t": "l'hobby", "e": "hobby / hobbies"},
     {"t": "la mamma", "e": "mom"},
     {"t": "il papà", "e": "dad"},
     {"t": "pop", "e": "pop"},
@@ -8380,7 +8380,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "può", "e": "he/she can (lui/lei può)"},
     {"t": "il rugby", "e": "rugby"},
     {"t": "scalare", "e": "to climb"},
-    {"t": "i skateboard", "e": "skateboard"},
+    {"t": "lo skateboard", "e": "skateboard"},
     {"t": "soprattutto", "e": "especially"},
     {"t": "la squadra", "e": "team"},
     {"t": "stare male", "e": "to feel unwell / to be ill / to feel sick"},
@@ -9413,7 +9413,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "dico", "e": "I say (io dico)"},
     {"t": "dire", "e": "to say / to tell"},
     {"t": "il fornello", "e": "stove / burner"},
-    {"t": "i gas", "e": "gas"},
+    {"t": "il gas", "e": "gas"},
     {"t": "giovane", "e": "young"},
     {"t": "già", "e": "already"},
     {"t": "la lenzuola", "e": "sheets (feminine)"},
@@ -9818,7 +9818,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "impossibile", "e": "impossible"},
     {"t": "inoltre", "e": "besides"},
     {"t": "meglio", "e": "better"},
-    {"t": "le novità", "e": "news"},
+    {"t": "la novità", "e": "news"},
     {"t": "possibile", "e": "possible"},
     {"t": "la professione", "e": "profession / trade / occupation"},
     {"t": "il quarto", "e": "quarter"},
@@ -10921,7 +10921,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "bruciare", "e": "to burn"},
     {"t": "il disordine", "e": "disorder / mess / chaos"},
     {"t": "la faccenda", "e": "matter / business / chores"},
-    {"t": "i gas", "e": "gas"},
+    {"t": "il gas", "e": "gas"},
     {"t": "l'inquilino", "e": "tenant / lodger / occupant"},
     {"t": "lasciare", "e": "to leave (an object)"},
     {"t": "la macchia", "e": "stain / spot"},
@@ -13159,7 +13159,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
   { id: "duo_it_u259", type: "vocab", title: "Vocab: Unit 259 \u00b7 pop culture \u2014 Pop icons: Describe your favorite pop icon", items: [
     {"t": "appassionante", "e": "exciting / gripping"},
     {"t": "gli ascolti", "e": "ratings / audience"},
-    {"t": "le celebrità", "e": "celebrity / celebrities"},
+    {"t": "la celebrità", "e": "celebrity / celebrities"},
     {"t": "comporre", "e": "to compose"},
     {"t": "il copione", "e": "script / screenplay / scenario"},
     {"t": "debuttare", "e": "to debut"},
@@ -13198,7 +13198,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo sponsor", "e": "sponsor / supporter / backer"},
     {"t": "sponsorizzare", "e": "to sponsor"},
     {"t": "sponsorizzato", "e": "sponsored"},
-    {"t": "i trailer", "e": "trailer"}
+    {"t": "il trailer", "e": "trailer"}
   ]},
   { id: "duo_it_u261", type: "vocab", title: "Vocab: Unit 261 \u00b7 exercise routines 2 \u2014 Fitness: Describe your workout routine", items: [
     {"t": "aerobico", "e": "aerobic"},
@@ -20011,7 +20011,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el tiempo", "e": "tense / long / weather"},
     {"t": "la una", "e": "a / an (feminine: una)"},
     {"t": "el vegetariano", "e": "vegetarian"},
-    {"t": "los viernes", "e": "Friday"}
+    {"t": "el viernes", "e": "Friday"}
   ]},
   { id: "duo_es_u30", type: "vocab", title: "Vocab: Unit 30 \u00b7 Formality \u2014 Introduce yourself formally", items: [
     {"t": "el apellido", "e": "last name"},
@@ -22717,7 +22717,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
   { id: "duo_es_u137", type: "vocab", title: "Vocab: Unit 137 \u00b7 Studying \u2014 Review for the exam", items: [
     {"t": "el apoyo", "e": "(I) bear out, (I) support, (I) back"},
     {"t": "aprobar", "e": "(to) pass, approve, pass"},
-    {"t": "los apuntes", "e": "notes / outlines / scripts"},
+    {"t": "el apuntes", "e": "notes / outlines / scripts"},
     {"t": "contar", "e": "numbers, let's, (to) count"},
     {"t": "el contenido", "e": "content"},
     {"t": "corregir", "e": "correct"},
@@ -25141,7 +25141,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "habrá ido", "e": "will have gone"},
     {"t": "habrá sido", "e": "must have been"},
     {"t": "la natación", "e": "swimming"},
-    {"t": "los novios", "e": "boyfriends"},
+    {"t": "el novios", "e": "boyfriends"},
     {"t": "químico", "e": "chemical / chemist"},
     {"t": "ser", "e": "being / name's"},
     {"t": "el sudeste", "e": "southeast"},

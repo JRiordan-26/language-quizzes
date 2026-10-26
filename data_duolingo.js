@@ -7493,7 +7493,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "no", "e": "no / not"},
     {"t": "sei di", "e": "you are from"},
     {"t": "sono di", "e": "I am from"},
-    {"t": "sì", "e": "oneself / themselves / each other"},
+    {"t": "sì", "e": "yes (sì) — not the reflexive si"},
     {"t": "tu", "e": "you (informal singular)"},
     {"t": "vero", "e": "true"},
     {"t": "è di", "e": "is from / comes from"}
@@ -7811,7 +7811,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il gioco", "e": "game (toy)"},
     {"t": "il golf", "e": "golf"},
     {"t": "guardare la televisione", "e": "to watch television"},
-    {"t": "l'hobby", "e": "hobby / hobbies"},
+    {"t": "i hobby", "e": "hobby / hobbies"},
     {"t": "importante", "e": "important"},
     {"t": "noioso", "e": "boring"},
     {"t": "odiare", "e": "to hate"},
@@ -7954,7 +7954,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "internazionale", "e": "international"},
     {"t": "inviare", "e": "to send"},
     {"t": "loro", "e": "they / them"},
-    {"t": "là", "e": "her / it"},
+    {"t": "là", "e": "there (over there: là) — not the article la"},
     {"t": "nostra", "e": "our (feminine: nostra)"},
     {"t": "nostro", "e": "our (masculine: nostro)"},
     {"t": "la persona", "e": "person"},
@@ -7995,7 +7995,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la domenica", "e": "Sunday"},
     {"t": "la famiglia", "e": "family"},
     {"t": "la foto", "e": "photo"},
-    {"t": "l'hobby", "e": "hobby / hobbies"},
+    {"t": "i hobby", "e": "hobby / hobbies"},
     {"t": "la mamma", "e": "mom"},
     {"t": "il papà", "e": "dad"},
     {"t": "pop", "e": "pop"},
@@ -8017,7 +8017,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "finalmente", "e": "finally"},
     {"t": "l'indirizzo", "e": "address"},
     {"t": "l'informazione", "e": "information"},
-    {"t": "là", "e": "her / it"},
+    {"t": "là", "e": "there (over there: là) — not the article la"},
     {"t": "lì", "e": "there (in that place: lì) — not the pronoun li"},
     {"t": "la macchina", "e": "car"},
     {"t": "la metropolitana", "e": "subway / underground"},
@@ -8380,7 +8380,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "può", "e": "he/she can (lui/lei può)"},
     {"t": "il rugby", "e": "rugby"},
     {"t": "scalare", "e": "to climb"},
-    {"t": "lo skateboard", "e": "skateboard"},
+    {"t": "i skateboard", "e": "skateboard"},
     {"t": "soprattutto", "e": "especially"},
     {"t": "la squadra", "e": "team"},
     {"t": "stare male", "e": "to feel unwell / to be ill / to feel sick"},
@@ -9413,7 +9413,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "dico", "e": "I say (io dico)"},
     {"t": "dire", "e": "to say / to tell"},
     {"t": "il fornello", "e": "stove / burner"},
-    {"t": "il gas", "e": "gas"},
+    {"t": "i gas", "e": "gas"},
     {"t": "giovane", "e": "young"},
     {"t": "già", "e": "already"},
     {"t": "la lenzuola", "e": "sheets (feminine)"},
@@ -9818,7 +9818,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "impossibile", "e": "impossible"},
     {"t": "inoltre", "e": "besides"},
     {"t": "meglio", "e": "better"},
-    {"t": "la novità", "e": "news"},
+    {"t": "le novità", "e": "news"},
     {"t": "possibile", "e": "possible"},
     {"t": "la professione", "e": "profession / trade / occupation"},
     {"t": "il quarto", "e": "quarter"},
@@ -9966,7 +9966,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la parte", "e": "side"},
     {"t": "quante", "e": "how many (feminine)"},
     {"t": "quanti", "e": "how many"},
-    {"t": "se", "e": "oneself / himself / herself"},
+    {"t": "se", "e": "if / whether (se) — not sé (oneself)"},
     {"t": "sogni d'oro", "e": "sweet dreams"},
     {"t": "la sterlina", "e": "pound"},
     {"t": "il tassista", "e": "taxi driver"}
@@ -10470,7 +10470,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "meridionale", "e": "southern / south"},
     {"t": "il navigatore", "e": "navigator / navigation device / GPS"},
     {"t": "proprio", "e": "(his/her/its) own"},
-    {"t": "se", "e": "oneself / himself / herself"},
+    {"t": "se", "e": "if / whether (se) — not sé (oneself)"},
     {"t": "lo smartphone", "e": "smartphone"},
     {"t": "smettere", "e": "to stop / to quit"},
     {"t": "sms", "e": "text message"},
@@ -10921,7 +10921,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "bruciare", "e": "to burn"},
     {"t": "il disordine", "e": "disorder / mess / chaos"},
     {"t": "la faccenda", "e": "matter / business / chores"},
-    {"t": "il gas", "e": "gas"},
+    {"t": "i gas", "e": "gas"},
     {"t": "l'inquilino", "e": "tenant / lodger / occupant"},
     {"t": "lasciare", "e": "to leave (an object)"},
     {"t": "la macchia", "e": "stain / spot"},
@@ -11175,7 +11175,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "insufficiente", "e": "insufficient / inadequate"},
     {"t": "mensile", "e": "monthly"},
     {"t": "moderato", "e": "moderate"},
-    {"t": "né", "e": "of it / of them"},
+    {"t": "né", "e": "nor / neither (né... né...) — not the pronoun ne"},
     {"t": "l'offerta", "e": "offer"},
     {"t": "pensionato", "e": "retired person / pensioner"},
     {"t": "rispetto a", "e": "compared to"},
@@ -13159,7 +13159,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
   { id: "duo_it_u259", type: "vocab", title: "Vocab: Unit 259 \u00b7 pop culture \u2014 Pop icons: Describe your favorite pop icon", items: [
     {"t": "appassionante", "e": "exciting / gripping"},
     {"t": "gli ascolti", "e": "ratings / audience"},
-    {"t": "la celebrità", "e": "celebrity / celebrities"},
+    {"t": "le celebrità", "e": "celebrity / celebrities"},
     {"t": "comporre", "e": "to compose"},
     {"t": "il copione", "e": "script / screenplay / scenario"},
     {"t": "debuttare", "e": "to debut"},
@@ -13198,7 +13198,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo sponsor", "e": "sponsor / supporter / backer"},
     {"t": "sponsorizzare", "e": "to sponsor"},
     {"t": "sponsorizzato", "e": "sponsored"},
-    {"t": "il trailer", "e": "trailer"}
+    {"t": "i trailer", "e": "trailer"}
   ]},
   { id: "duo_it_u261", type: "vocab", title: "Vocab: Unit 261 \u00b7 exercise routines 2 \u2014 Fitness: Describe your workout routine", items: [
     {"t": "aerobico", "e": "aerobic"},
@@ -22580,7 +22580,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "violento", "e": "burning"},
     {"t": "la víctima", "e": "victim"}
   ]},
-  { id: "duo_es_u132", type: "vocab", title: "Vocab: Unit 132 \u00b7 In Town \u2014 Neighborhood: Talk about nearby places", items: [
+  { id: "duo_es_u132", type: "vocab", title: "Vocab: Unit 132 \u00b7 In Town \u2014 Talk about your neighborhood", items: [
     {"t": "a pie", "e": "on foot"},
     {"t": "anual", "e": "annual / year's"},
     {"t": "el barrio", "e": "neighborhood / neighbourhood"},
@@ -22607,7 +22607,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "solamente", "e": "only / just"},
     {"t": "la terraza", "e": "terrace"}
   ]},
-  { id: "duo_es_u133", type: "vocab", title: "Vocab: Unit 133 \u00b7 Reading \u2014 Poems: Share a favorite poem", items: [
+  { id: "duo_es_u133", type: "vocab", title: "Vocab: Unit 133 \u00b7 Reading \u2014 Talk about novels and poems", items: [
     {"t": "el amor", "e": "love"},
     {"t": "la autobiografía", "e": "autobiography"},
     {"t": "breve", "e": "brief / short"},
@@ -22634,7 +22634,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "traducir", "e": "(to) convey, (to) translate, translate"},
     {"t": "usado", "e": "worn / used"}
   ]},
-  { id: "duo_es_u134", type: "vocab", title: "Vocab: Unit 134 \u00b7 Online \u2014 Internet: Explain how to use a website", items: [
+  { id: "duo_es_u134", type: "vocab", title: "Vocab: Unit 134 \u00b7 Online \u2014 Talk about apps and outings", items: [
     {"t": "anteayer", "e": "the day before yesterday"},
     {"t": "la arroba", "e": "at sign / at"},
     {"t": "el blog", "e": "blog"},
@@ -22661,7 +22661,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el tema", "e": "subject / matter / theme"},
     {"t": "el videojuego", "e": "video game"}
   ]},
-  { id: "duo_es_u135", type: "vocab", title: "Vocab: Unit 135 \u00b7 In Love \u2014 Relationships: Share what you did together", items: [
+  { id: "duo_es_u135", type: "vocab", title: "Vocab: Unit 135 \u00b7 In Love \u2014 Talk about past outings", items: [
     {"t": "el abrazo", "e": "hug"},
     {"t": "aceptar", "e": "fall, (to) accept, takes"},
     {"t": "alegre", "e": "lively / laughing / happier"},
@@ -22687,7 +22687,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "romance", "e": "romance"},
     {"t": "el sueño", "e": "dream / sleepy / tired"}
   ]},
-  { id: "duo_es_u136", type: "vocab", title: "Vocab: Unit 136 \u00b7 News \u2014 Events: Talk about local events", items: [
+  { id: "duo_es_u136", type: "vocab", title: "Vocab: Unit 136 \u00b7 News \u2014 Describe people and actions", items: [
     {"t": "actual", "e": "today's / current"},
     {"t": "actualmente", "e": "currently / presently / at present"},
     {"t": "el artículo", "e": "article / entry"},
@@ -22714,7 +22714,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el título", "e": "title / degree / heading"},
     {"t": "la zona", "e": "area's / zone / area"}
   ]},
-  { id: "duo_es_u137", type: "vocab", title: "Vocab: Unit 137 \u00b7 Studying \u2014 Homework: Review for an exam", items: [
+  { id: "duo_es_u137", type: "vocab", title: "Vocab: Unit 137 \u00b7 Studying \u2014 Review for the exam", items: [
     {"t": "el apoyo", "e": "(I) bear out, (I) support, (I) back"},
     {"t": "aprobar", "e": "(to) pass, approve, pass"},
     {"t": "los apuntes", "e": "notes / outlines / scripts"},
@@ -22738,7 +22738,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "traduzco", "e": "I'm translating / translate"},
     {"t": "útil", "e": "useful / helpful"}
   ]},
-  { id: "duo_es_u138", type: "vocab", title: "Vocab: Unit 138 \u00b7 Health 3 \u2014 Care: Describe a clinic visit", items: [
+  { id: "duo_es_u138", type: "vocab", title: "Vocab: Unit 138 \u00b7 Health 3 \u2014 Describe a clinic visit", items: [
     {"t": "antibiótico", "e": "antibiotic"},
     {"t": "el análisis de sangre", "e": "blood test"},
     {"t": "así", "e": "like that / like this / that way"},
@@ -22765,7 +22765,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "resfriado", "e": "cold"},
     {"t": "la tos", "e": "cough"}
   ]},
-  { id: "duo_es_u139", type: "vocab", title: "Vocab: Unit 139 \u00b7 Opinions \u2014 Decisions: Share your opinion", items: [
+  { id: "duo_es_u139", type: "vocab", title: "Vocab: Unit 139 \u00b7 Opinions \u2014 Share your honest opinion", items: [
     {"t": "la decisión", "e": "decision / decisiveness / call"},
     {"t": "la descripción", "e": "description"},
     {"t": "discutir", "e": "(to) discuss, debate, discuss"},
@@ -22792,7 +22792,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "ya", "e": "now / anymore"},
     {"t": "único", "e": "only / only one / only thing"}
   ]},
-  { id: "duo_es_u140", type: "vocab", title: "Vocab: Unit 140 \u00b7 Clothing \u2014 Shopping: Ask about product quality", items: [
+  { id: "duo_es_u140", type: "vocab", title: "Vocab: Unit 140 \u00b7 Clothing \u2014 Describe clothing quality", items: [
     {"t": "el algodón", "e": "cotton (wool) ball, piece of cotton, piece of cotton wool"},
     {"t": "apretado", "e": "squeezed together / stopped / tightfisted"},
     {"t": "la caja registradora", "e": "cash register"},
@@ -22818,7 +22818,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la tela", "e": "canvas / material / fabric"},
     {"t": "total", "e": "resounding / so / counted"}
   ]},
-  { id: "duo_es_u141", type: "vocab", title: "Vocab: Unit 141 \u00b7 Cooking \u2014 Flavors: Share a recipe", items: [
+  { id: "duo_es_u141", type: "vocab", title: "Vocab: Unit 141 \u00b7 Cooking \u2014 Discuss recipes and cooking", items: [
     {"t": "el atún", "e": "tuna"},
     {"t": "batir", "e": "to beat"},
     {"t": "el brócoli", "e": "broccoli"},
@@ -22845,7 +22845,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la vainilla", "e": "vanilla"},
     {"t": "el vinagre", "e": "vinegar"}
   ]},
-  { id: "duo_es_u142", type: "vocab", title: "Vocab: Unit 142 \u00b7 Advice \u2014 Rules: Give travel advice", items: [
+  { id: "duo_es_u142", type: "vocab", title: "Vocab: Unit 142 \u00b7 Advice \u2014 Give travel advice", items: [
     {"t": "abras", "e": "(you) open up, (you) sprain, (you) be off"},
     {"t": "bebas", "e": "you drink (tú bebas, subjunctive)"},
     {"t": "el buzón", "e": "mailbox / postbox"},
@@ -22872,7 +22872,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la visa", "e": "visa"},
     {"t": "visites", "e": "visit"}
   ]},
-  { id: "duo_es_u143", type: "vocab", title: "Vocab: Unit 143 \u00b7 Warnings \u2014 Trips: Talk about taxi drivers", items: [
+  { id: "duo_es_u143", type: "vocab", title: "Vocab: Unit 143 \u00b7 Warnings \u2014 Discuss fears and generosity", items: [
     {"t": "el campo", "e": "field / country / countryside"},
     {"t": "la costa", "e": "costa / shore / bank"},
     {"t": "des", "e": "(you) hold, (you) hit, (you) ruin"},
@@ -22899,7 +22899,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la vayas", "e": "(you) go, go, leave"},
     {"t": "vengas", "e": "come, (you) come, (you) arrive"}
   ]},
-  { id: "duo_es_u144", type: "vocab", title: "Vocab: Unit 144 \u00b7 Tourist \u2014 Destinations: Ask about flight times", items: [
+  { id: "duo_es_u144", type: "vocab", title: "Vocab: Unit 144 \u00b7 Tourist \u2014 Ask about flights and trips", items: [
     {"t": "la agencia", "e": "agency / office / dealership"},
     {"t": "antiguo", "e": "ancient / sometime / old"},
     {"t": "el apellido", "e": "last name"},
@@ -22925,7 +22925,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el tour", "e": "tour"},
     {"t": "típico", "e": "vintage / typical / classic"}
   ]},
-  { id: "duo_es_u145", type: "vocab", title: "Vocab: Unit 145 \u00b7 At Home \u2014 Furniture: Describe furniture you like", items: [
+  { id: "duo_es_u145", type: "vocab", title: "Vocab: Unit 145 \u00b7 At Home \u2014 Describe furniture you like", items: [
     {"t": "adicional", "e": "add / spare / extra"},
     {"t": "el aire acondicionado", "e": "air conditioning / air conditioner"},
     {"t": "la alfombra", "e": "carpet / rug"},
@@ -22952,7 +22952,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "renovar", "e": "renovate / renew / upgrading"},
     {"t": "la sección", "e": "section / department"}
   ]},
-  { id: "duo_es_u146", type: "vocab", title: "Vocab: Unit 146 \u00b7 Habits \u2014 Routine: Describe your daily routine", items: [
+  { id: "duo_es_u146", type: "vocab", title: "Vocab: Unit 146 \u00b7 Habits \u2014 Describe your daily routine", items: [
     {"t": "a", "e": "to / with / away"},
     {"t": "activo", "e": "asset, (I) take active steps, (I) start working"},
     {"t": "al mismo tiempo", "e": "at the same time"},
@@ -22977,7 +22977,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tanto como", "e": "as much as"},
     {"t": "el tiempo libre", "e": "free time / spare time / leisure time"}
   ]},
-  { id: "duo_es_u147", type: "vocab", title: "Vocab: Unit 147 \u00b7 Imagine \u2014 Dreams: Share your dreams", items: [
+  { id: "duo_es_u147", type: "vocab", title: "Vocab: Unit 147 \u00b7 Imagine \u2014 Share your dreams", items: [
     {"t": "aprender", "e": "learning, (to) learn, learn"},
     {"t": "comer", "e": "let's"},
     {"t": "competir", "e": "compete / racing"},
@@ -23004,7 +23004,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "vivir", "e": "live, (to) live, living"},
     {"t": "el éxito", "e": "success / successful / succeeded"}
   ]},
-  { id: "duo_es_u148", type: "vocab", title: "Vocab: Unit 148 \u00b7 At Work \u2014 Careers: Describe your job", items: [
+  { id: "duo_es_u148", type: "vocab", title: "Vocab: Unit 148 \u00b7 At Work \u2014 Discuss jobs and office work", items: [
     {"t": "el abogado", "e": "lawyer / counsel"},
     {"t": "alto", "e": "tall / loud / louder"},
     {"t": "el asistente", "e": "assistant / attendant's / attendant"},
@@ -23031,7 +23031,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tercio", "e": "(I) sling, (I) tilt, (I) set … at a tilt"},
     {"t": "el valor", "e": "value / cost / worth"}
   ]},
-  { id: "duo_es_u149", type: "vocab", title: "Vocab: Unit 149 \u00b7 Politics \u2014 Society: Explain government decisions", items: [
+  { id: "duo_es_u149", type: "vocab", title: "Vocab: Unit 149 \u00b7 Politics \u2014 Discuss politics and elections", items: [
     {"t": "alguna", "e": "any / one / either"},
     {"t": "algunos", "e": "a few / some / any"},
     {"t": "algún", "e": "any / a / one"},
@@ -23058,7 +23058,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "voluntario", "e": "volunteer"},
     {"t": "votar", "e": "(to) approve, (to) vote to approve, vote"}
   ]},
-  { id: "duo_es_u150", type: "vocab", title: "Vocab: Unit 150 \u00b7 Right Now \u2014 Experiences: Share your experiences", items: [
+  { id: "duo_es_u150", type: "vocab", title: "Vocab: Unit 150 \u00b7 Right Now \u2014 Meet locals and explore cities", items: [
     {"t": "la academia", "e": "academia / academy / school"},
     {"t": "el acento", "e": "accent / stress"},
     {"t": "el autor", "e": "perpetrator / writer / author"},
@@ -23084,7 +23084,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "visitando", "e": "visiting"},
     {"t": "visitándolos", "e": "visiting them"}
   ]},
-  { id: "duo_es_u151", type: "vocab", title: "Vocab: Unit 151 \u00b7 People 5 \u2014 Personality: Talk about personality traits", items: [
+  { id: "duo_es_u151", type: "vocab", title: "Vocab: Unit 151 \u00b7 People 5 \u2014 Describe personality traits", items: [
     {"t": "alguien", "e": "someone"},
     {"t": "la amistad", "e": "friends / friendship"},
     {"t": "antipático", "e": "unfriendly / unlikable"},
@@ -23110,7 +23110,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tímido", "e": "timid / shy (masculine)"},
     {"t": "viudo", "e": "widower"}
   ]},
-  { id: "duo_es_u152", type: "vocab", title: "Vocab: Unit 152 \u00b7 Places \u2014 Neighborhood: Describe favorite local spots", items: [
+  { id: "duo_es_u152", type: "vocab", title: "Vocab: Unit 152 \u00b7 Places \u2014 Describe where you used to go", items: [
     {"t": "al fondo de", "e": "at the end of"},
     {"t": "el ayuntamiento", "e": "town / city hall / city council"},
     {"t": "el balcón", "e": "balcony / observation point / circle"},
@@ -23135,7 +23135,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "ser", "e": "being / name's"},
     {"t": "venir", "e": "(to) arrive, (to) come, come"}
   ]},
-  { id: "duo_es_u153", type: "vocab", title: "Vocab: Unit 153 \u00b7 Today \u2014 Travel: Ask who is winning", items: [
+  { id: "duo_es_u153", type: "vocab", title: "Vocab: Unit 153 \u00b7 Today \u2014 Talk about sports and teams", items: [
     {"t": "agradecerle", "e": "thank her / thank him"},
     {"t": "el alfabeto", "e": "alphabet"},
     {"t": "atención", "e": "attention / focus / service"},
@@ -23161,7 +23161,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el universo", "e": "universe"},
     {"t": "el árbitro", "e": "referee"}
   ]},
-  { id: "duo_es_u154", type: "vocab", title: "Vocab: Unit 154 \u00b7 At Home 2 \u2014 Chores: Ask for household items", items: [
+  { id: "duo_es_u154", type: "vocab", title: "Vocab: Unit 154 \u00b7 At Home 2 \u2014 Talk about household items", items: [
     {"t": "la aspiradora", "e": "vacuum cleaner / vaccuum"},
     {"t": "barrer", "e": "drive / sweeping"},
     {"t": "el congelador", "e": "freezer"},
@@ -23185,7 +23185,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la tareas domésticas", "e": "housework"},
     {"t": "te lo", "e": "it to you / it for you"}
   ]},
-  { id: "duo_es_u155", type: "vocab", title: "Vocab: Unit 155 \u00b7 Imagine 2 \u2014 Imagination: Imagine new adventures", items: [
+  { id: "duo_es_u155", type: "vocab", title: "Vocab: Unit 155 \u00b7 Imagine 2 \u2014 Imagine new adventures", items: [
     {"t": "la araña", "e": "chandelier / scratch! / spider"},
     {"t": "la arena", "e": "arena / sand / ring"},
     {"t": "la aventura", "e": "adventure / affair"},
@@ -23212,7 +23212,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "venir", "e": "(to) arrive, (to) come, come"},
     {"t": "el ángel", "e": "angel / angels' / charm"}
   ]},
-  { id: "duo_es_u156", type: "vocab", title: "Vocab: Unit 156 \u00b7 Office \u2014 Messages: Write a brief message", items: [
+  { id: "duo_es_u156", type: "vocab", title: "Vocab: Unit 156 \u00b7 Office \u2014 Talk about plans and routines", items: [
     {"t": "actualizar", "e": "update / upgrade"},
     {"t": "ayudándolas", "e": "helping them"},
     {"t": "contestar", "e": "answer / getting"},
@@ -23237,7 +23237,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "traductor", "e": "translator"},
     {"t": "urgente", "e": "urgent / immediate / express"}
   ]},
-  { id: "duo_es_u157", type: "vocab", title: "Vocab: Unit 157 \u00b7 In Class \u2014 Communication: Ask for help with tasks", items: [
+  { id: "duo_es_u157", type: "vocab", title: "Vocab: Unit 157 \u00b7 In Class \u2014 Ask for help with tasks", items: [
     {"t": "apropiado", "e": "right / met / meet"},
     {"t": "ayúdame", "e": "help me"},
     {"t": "la beca", "e": "scholarship"},
@@ -23264,7 +23264,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "pídele", "e": "ask for / ask / ask him for"},
     {"t": "pídeselo", "e": "ask / ask him for it / ask her for it"}
   ]},
-  { id: "duo_es_u158", type: "vocab", title: "Vocab: Unit 158 \u00b7 Since Then \u2014 Time: Talk about how long something lasts", items: [
+  { id: "duo_es_u158", type: "vocab", title: "Vocab: Unit 158 \u00b7 Since Then \u2014 Say how long things last", items: [
     {"t": "la cabaña", "e": "cabin"},
     {"t": "el comienzo", "e": "(I) begin, beginning, (I) start"},
     {"t": "cuánto hace que", "e": "how long it has been since / how long has it been since"},
@@ -23291,7 +23291,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la trompeta", "e": "trumpet"},
     {"t": "el yoga", "e": "yoga"}
   ]},
-  { id: "duo_es_u159", type: "vocab", title: "Vocab: Unit 159 \u00b7 Vacation 4 \u2014 Journey: Share your travel plans", items: [
+  { id: "duo_es_u159", type: "vocab", title: "Vocab: Unit 159 \u00b7 Vacation 4 \u2014 Say what happened on vacation", items: [
     {"t": "a tiempo", "e": "on time"},
     {"t": "buscar", "e": "looking for, (to) search, find"},
     {"t": "busqué", "e": "searched for / want / looked"},
@@ -23313,7 +23313,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el sobrino", "e": "nephew"},
     {"t": "el tiburón", "e": "shark / raider"}
   ]},
-  { id: "duo_es_u160", type: "vocab", title: "Vocab: Unit 160 \u00b7 Customs \u2014 Customs: Describe eating customs", items: [
+  { id: "duo_es_u160", type: "vocab", title: "Vocab: Unit 160 \u00b7 Customs \u2014 Describe dining customs", items: [
     {"t": "animado", "e": "lively"},
     {"t": "el carnaval", "e": "carnaval / carnival"},
     {"t": "la celebración", "e": "celebration / party's"},
@@ -23338,7 +23338,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el tango", "e": "tango"},
     {"t": "tradicional", "e": "traditional"}
   ]},
-  { id: "duo_es_u161", type: "vocab", title: "Vocab: Unit 161 \u00b7 Mystery \u2014 Horror: Describe a scary scene", items: [
+  { id: "duo_es_u161", type: "vocab", title: "Vocab: Unit 161 \u00b7 Mystery \u2014 Describe a scary scene", items: [
     {"t": "a punto de", "e": "about to"},
     {"t": "asesino", "e": "murderer / killer"},
     {"t": "daba", "e": "(I/he/she/it/you) was/were giving, (I/he/she/it/you) was/were hitting, (I/he/she/it/you) was/were administering"},
@@ -23364,7 +23364,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "suspenso", "e": "suspense"},
     {"t": "últimamente", "e": "lately / recently"}
   ]},
-  { id: "duo_es_u162", type: "vocab", title: "Vocab: Unit 162 \u00b7 Healthcare \u2014 Injury: Describe your symptoms", items: [
+  { id: "duo_es_u162", type: "vocab", title: "Vocab: Unit 162 \u00b7 Healthcare \u2014 Describe your symptoms", items: [
     {"t": "la ambulancia", "e": "ambulance"},
     {"t": "la aspirina", "e": "aspirin"},
     {"t": "atender", "e": "assist / tend to / answer"},
@@ -23391,7 +23391,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "vaya", "e": "go, (you) go, (I) go"},
     {"t": "venga", "e": "comes, (I/he/she/it/you) arrive, (I/he/she/it/you) come"}
   ]},
-  { id: "duo_es_u163", type: "vocab", title: "Vocab: Unit 163 \u00b7 Traffic \u2014 Driving: Ask for driving directions", items: [
+  { id: "duo_es_u163", type: "vocab", title: "Vocab: Unit 163 \u00b7 Traffic \u2014 Give directions while driving", items: [
     {"t": "el auto", "e": "auto / car / writ"},
     {"t": "buscar", "e": "looking for, (to) search, find"},
     {"t": "el camino", "e": "way / road / path"},
@@ -23416,7 +23416,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el tránsito", "e": "traffic"},
     {"t": "la ubicación", "e": "location"}
   ]},
-  { id: "duo_es_u164", type: "vocab", title: "Vocab: Unit 164 \u00b7 Plans 2 \u2014 Trips: Plan a trip", items: [
+  { id: "duo_es_u164", type: "vocab", title: "Vocab: Unit 164 \u00b7 Plans 2 \u2014 Let's plan a trip", items: [
     {"t": "Caribe", "e": "Caribbean"},
     {"t": "el alojamiento", "e": "accommodation / lodging"},
     {"t": "busquemos", "e": "look for / let's look up / let's look for"},
@@ -23442,7 +23442,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "volvamos", "e": "return, (let us) turn, (let us) go back"},
     {"t": "y si", "e": "what if"}
   ]},
-  { id: "duo_es_u165", type: "vocab", title: "Vocab: Unit 165 \u00b7 Wishes \u2014 Wishes: Express your wishes", items: [
+  { id: "duo_es_u165", type: "vocab", title: "Vocab: Unit 165 \u00b7 Wishes \u2014 Tell others what you want", items: [
     {"t": "aniversario", "e": "anniversary / birthday's"},
     {"t": "aprenda", "e": "learn"},
     {"t": "aprendamos", "e": "let's learn"},
@@ -23469,7 +23469,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "viajen", "e": "travel"},
     {"t": "vivan", "e": "live!, (they/you-plural) be alive, be alive!"}
   ]},
-  { id: "duo_es_u166", type: "vocab", title: "Vocab: Unit 166 \u00b7 Favors \u2014 Devices: Ask for the wifi password", items: [
+  { id: "duo_es_u166", type: "vocab", title: "Vocab: Unit 166 \u00b7 Favors \u2014 Talk about apps and devices", items: [
     {"t": "actualizar", "e": "update / upgrade"},
     {"t": "el aire acondicionado", "e": "air conditioning / air conditioner"},
     {"t": "el antivirus", "e": "antivirus"},
@@ -23496,7 +23496,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el volumen", "e": "volume"},
     {"t": "el wifi", "e": "wifi"}
   ]},
-  { id: "duo_es_u167", type: "vocab", title: "Vocab: Unit 167 \u00b7 At Work 2 \u2014 Work Life: Ask about office locations", items: [
+  { id: "duo_es_u167", type: "vocab", title: "Vocab: Unit 167 \u00b7 At Work 2 \u2014 Ask about office locations", items: [
     {"t": "ansioso", "e": "eager / anxious / excited"},
     {"t": "el arquitecto", "e": "architect"},
     {"t": "arrogante", "e": "arrogant"},
@@ -23521,7 +23521,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el socio", "e": "business partner / partner's / member"},
     {"t": "tener razón", "e": "be right"}
   ]},
-  { id: "duo_es_u168", type: "vocab", title: "Vocab: Unit 168 \u00b7 Events \u2014 Events: Describe an art event", items: [
+  { id: "duo_es_u168", type: "vocab", title: "Vocab: Unit 168 \u00b7 Events \u2014 Describe an art event", items: [
     {"t": "a", "e": "to / with / away"},
     {"t": "además", "e": "also"},
     {"t": "aunque", "e": "although / though / even though"},
@@ -23548,7 +23548,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el salmón", "e": "salmon"},
     {"t": "el vestido", "e": "dress / worn / dressed"}
   ]},
-  { id: "duo_es_u169", type: "vocab", title: "Vocab: Unit 169 \u00b7 College \u2014 Assignments: Share your study routine", items: [
+  { id: "duo_es_u169", type: "vocab", title: "Vocab: Unit 169 \u00b7 College \u2014 Talk about school and reading", items: [
     {"t": "aprendan", "e": "(they/you-plural) learn, learn!, learn"},
     {"t": "el campus", "e": "campus"},
     {"t": "la carrera", "e": "degree / career / race"},
@@ -23575,7 +23575,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "terminen", "e": "finishes, (they/you-plural) be over, finish"},
     {"t": "universitario", "e": "university / college"}
   ]},
-  { id: "duo_es_u170", type: "vocab", title: "Vocab: Unit 170 \u00b7 Eating Out \u2014 Restaurant: Order food and drinks", items: [
+  { id: "duo_es_u170", type: "vocab", title: "Vocab: Unit 170 \u00b7 Eating Out \u2014 Serve food and confirm orders", items: [
     {"t": "crudo", "e": "harsh / brilliant / excellent"},
     {"t": "elegí", "e": "(I) chose, choose"},
     {"t": "eligió", "e": "(she) chose, (he) chose, choose"},
@@ -23602,7 +23602,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "siguió", "e": "go / follow"},
     {"t": "sirvió", "e": "served, (he/she/it/you) functioned, (he/she/it/you) worked"}
   ]},
-  { id: "duo_es_u171", type: "vocab", title: "Vocab: Unit 171 \u00b7 Intentions \u2014 Success: Tell someone your plans", items: [
+  { id: "duo_es_u171", type: "vocab", title: "Vocab: Unit 171 \u00b7 Intentions \u2014 Talk about past plans and news", items: [
     {"t": "a", "e": "to / with / away"},
     {"t": "ahora mismo", "e": "right now"},
     {"t": "al final", "e": "in the end"},
@@ -23629,7 +23629,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el sueldo", "e": "salary / wage"},
     {"t": "ya", "e": "now / anymore"}
   ]},
-  { id: "duo_es_u172", type: "vocab", title: "Vocab: Unit 172 \u00b7 News 2 \u2014 Events: Talk about important events", items: [
+  { id: "duo_es_u172", type: "vocab", title: "Vocab: Unit 172 \u00b7 News 2 \u2014 Discuss news and the economy", items: [
     {"t": "afortunadamente", "e": "fortunately"},
     {"t": "alguna vez", "e": "ever"},
     {"t": "aún", "e": "still"},
@@ -23656,7 +23656,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el tornado", "e": "tornado"},
     {"t": "visto", "e": "looked / watched"}
   ]},
-  { id: "duo_es_u173", type: "vocab", title: "Vocab: Unit 173 \u00b7 Free Time \u2014 TV Shows: Talk about favorite TV shows", items: [
+  { id: "duo_es_u173", type: "vocab", title: "Vocab: Unit 173 \u00b7 Free Time \u2014 Discuss TV shows you have seen", items: [
     {"t": "conseguir", "e": "(to) get, get, to achieve"},
     {"t": "divertido", "e": "funny / entertaining / amusing"},
     {"t": "en mi vida", "e": "in my life"},
@@ -23681,7 +23681,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la temporada", "e": "run / spell / season"},
     {"t": "la verdad", "e": "right"}
   ]},
-  { id: "duo_es_u174", type: "vocab", title: "Vocab: Unit 174 \u00b7 Sports \u2014 Teams: Talk about your team", items: [
+  { id: "duo_es_u174", type: "vocab", title: "Vocab: Unit 174 \u00b7 Sports \u2014 Talk about soccer games", items: [
     {"t": "el boxeo", "e": "boxing"},
     {"t": "el campeón", "e": "champion"},
     {"t": "la cancha", "e": "court / field / course"},
@@ -23707,7 +23707,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "talentoso", "e": "talented"},
     {"t": "el tenista", "e": "tennis player"}
   ]},
-  { id: "duo_es_u175", type: "vocab", title: "Vocab: Unit 175 \u00b7 Art Events \u2014 Culture: Ask about favorite books", items: [
+  { id: "duo_es_u175", type: "vocab", title: "Vocab: Unit 175 \u00b7 Art Events \u2014 Discuss and recommend books", items: [
     {"t": "aburrirse", "e": "get bored"},
     {"t": "la acción", "e": "plot / share / act"},
     {"t": "anteriormente", "e": "before / previously"},
@@ -23731,7 +23731,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la versión", "e": "model / covers / translation"},
     {"t": "último", "e": "final / last / latest"}
   ]},
-  { id: "duo_es_u176", type: "vocab", title: "Vocab: Unit 176 \u00b7 Banking \u2014 Banking: Ask for change at the bank", items: [
+  { id: "duo_es_u176", type: "vocab", title: "Vocab: Unit 176 \u00b7 Banking \u2014 Get change from the teller", items: [
     {"t": "los ahorros", "e": "savings"},
     {"t": "ayúdala", "e": "help her"},
     {"t": "el billete", "e": "bill / ticket / banknote"},
@@ -23756,7 +23756,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la tarjeta de débito", "e": "debit card"},
     {"t": "la transferencia", "e": "transfer"}
   ]},
-  { id: "duo_es_u177", type: "vocab", title: "Vocab: Unit 177 \u00b7 Weather 2 \u2014 Storms: Describe today\u2019s forecast", items: [
+  { id: "duo_es_u177", type: "vocab", title: "Vocab: Unit 177 \u00b7 Weather 2 \u2014 Describe the weather forecast", items: [
     {"t": "bajar", "e": "go downstairs, drawn, (to) get off"},
     {"t": "la brisa", "e": "air / breeze"},
     {"t": "caer granizo", "e": "hail"},
@@ -23783,7 +23783,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tronar", "e": "click / thundering"},
     {"t": "el trueno", "e": "thunder / click / thunderclaps"}
   ]},
-  { id: "duo_es_u178", type: "vocab", title: "Vocab: Unit 178 \u00b7 I Disagree \u2014 Opinions: Express your opinions", items: [
+  { id: "duo_es_u178", type: "vocab", title: "Vocab: Unit 178 \u00b7 I Disagree \u2014 Say what you really think", items: [
     {"t": "a pesar de", "e": "despite / In spite of / although"},
     {"t": "así", "e": "that way, (I) seized, so"},
     {"t": "bueno", "e": "well / all right / anyway"},
@@ -23810,7 +23810,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "sinceramente", "e": "honestly"},
     {"t": "la tontería", "e": "nonsense"}
   ]},
-  { id: "duo_es_u179", type: "vocab", title: "Vocab: Unit 179 \u00b7 Romance \u2014 Romance: Explain why you fell in love", items: [
+  { id: "duo_es_u179", type: "vocab", title: "Vocab: Unit 179 \u00b7 Romance \u2014 Talk about love and marriage", items: [
     {"t": "a primera vista", "e": "at first sight"},
     {"t": "abrazar", "e": "(to) hug, (to) encircle, (to) hug each other"},
     {"t": "ansioso", "e": "eager / anxious / excited"},
@@ -23837,7 +23837,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la voz", "e": "sound / word / shouts"},
     {"t": "el éxito", "e": "success"}
   ]},
-  { id: "duo_es_u180", type: "vocab", title: "Vocab: Unit 180 \u00b7 Office 2 \u2014 Goals: Express your goals", items: [
+  { id: "duo_es_u180", type: "vocab", title: "Vocab: Unit 180 \u00b7 Office 2 \u2014 Share plans and preferences", items: [
     {"t": "el análisis", "e": "analysis"},
     {"t": "la conferencia", "e": "conference / talk / lecture"},
     {"t": "el contrato", "e": "(I) hire, (I) sign up, (I) take on"},
@@ -23863,7 +23863,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tener", "e": "let's / being / you've"},
     {"t": "la venta", "e": "roadside bar / restaurant / hostelry"}
   ]},
-  { id: "duo_es_u181", type: "vocab", title: "Vocab: Unit 181 \u00b7 Goal! \u2014 Soccer: Pass the ball to a teammate", items: [
+  { id: "duo_es_u181", type: "vocab", title: "Vocab: Unit 181 \u00b7 Goal! \u2014 Talk to your soccer team", items: [
     {"t": "apenas", "e": "scarce / as soon as / barely"},
     {"t": "el arco", "e": "goal"},
     {"t": "atajar", "e": "stop / arrested / arrest"},
@@ -23891,7 +23891,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tírasela", "e": "kick it to him / throw it to him"},
     {"t": "vamos", "e": "we go / let's go (vamos)"}
   ]},
-  { id: "duo_es_u182", type: "vocab", title: "Vocab: Unit 182 \u00b7 Clothing 2 \u2014 Clothes: Ask about clothes", items: [
+  { id: "duo_es_u182", type: "vocab", title: "Vocab: Unit 182 \u00b7 Clothing 2 \u2014 Ask how clothes fit", items: [
     {"t": "al revés", "e": "inside out"},
     {"t": "el aro", "e": "hoop / band / ring"},
     {"t": "atar", "e": "lock / tie"},
@@ -23916,7 +23916,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tejer", "e": "knit"},
     {"t": "la zapatería", "e": "shoe store"}
   ]},
-  { id: "duo_es_u183", type: "vocab", title: "Vocab: Unit 183 \u00b7 Hygiene \u2014 Toiletries: Ask about toiletries", items: [
+  { id: "duo_es_u183", type: "vocab", title: "Vocab: Unit 183 \u00b7 Hygiene \u2014 Get the toiletries you need", items: [
     {"t": "el acondicionador", "e": "conditioner"},
     {"t": "afeitarse", "e": "(to) shave off (oneself), (to) scrape (oneself), (to) trim (oneself)"},
     {"t": "antibacterial", "e": "antibacterial"},
@@ -23942,7 +23942,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "servir", "e": "serving, (to) serve, serve"},
     {"t": "la uña", "e": "pick / claw / sting"}
   ]},
-  { id: "duo_es_u184", type: "vocab", title: "Vocab: Unit 184 \u00b7 Purchases \u2014 Clothing: Show what you bought", items: [
+  { id: "duo_es_u184", type: "vocab", title: "Vocab: Unit 184 \u00b7 Purchases \u2014 Talk about what you bought", items: [
     {"t": "arrepentirse", "e": "to repent / to regret / to be sorry"},
     {"t": "el bikini", "e": "bikini"},
     {"t": "el chal", "e": "throw / shawl"},
@@ -23969,7 +23969,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el top", "e": "top"},
     {"t": "unos cuantos", "e": "some"}
   ]},
-  { id: "duo_es_u185", type: "vocab", title: "Vocab: Unit 185 \u00b7 Returns \u2014 Repairs: Ask about repair options", items: [
+  { id: "duo_es_u185", type: "vocab", title: "Vocab: Unit 185 \u00b7 Returns \u2014 Ask about repairs and returns", items: [
     {"t": "además de", "e": "on top of"},
     {"t": "apenas", "e": "scarce / as soon as / barely"},
     {"t": "la bañera", "e": "bathtub / bath / lifeguard"},
@@ -23995,7 +23995,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tirar", "e": "(to) throw out / away, throwing away, waste"},
     {"t": "el vidrio", "e": "glass"}
   ]},
-  { id: "duo_es_u186", type: "vocab", title: "Vocab: Unit 186 \u00b7 Be Polite! \u2014 Table Talk: Order drinks", items: [
+  { id: "duo_es_u186", type: "vocab", title: "Vocab: Unit 186 \u00b7 Be Polite! \u2014 Make requests at a restaurant", items: [
     {"t": "la carne de res", "e": "beef / meat"},
     {"t": "cerdo", "e": "pig / pork"},
     {"t": "la chuleta", "e": "pork chop / chop / cutlet"},
@@ -24021,7 +24021,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el tocino", "e": "bacon"},
     {"t": "traería", "e": "(I/he/she/it/you) would bring, (I/he/she/it/you) would wear, got"}
   ]},
-  { id: "duo_es_u187", type: "vocab", title: "Vocab: Unit 187 \u00b7 Customers \u2014 Refunds: Ask for a refund", items: [
+  { id: "duo_es_u187", type: "vocab", title: "Vocab: Unit 187 \u00b7 Customers \u2014 Make complaints at a store", items: [
     {"t": "la actitud", "e": "posture / attitude"},
     {"t": "el artículo", "e": "article / entry"},
     {"t": "la atención", "e": "service"},
@@ -24048,7 +24048,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el supervisor", "e": "supervisor / manager's"},
     {"t": "una vez que", "e": "once"}
   ]},
-  { id: "duo_es_u188", type: "vocab", title: "Vocab: Unit 188 \u00b7 Complaints \u2014 Products: Complain about faulty products", items: [
+  { id: "duo_es_u188", type: "vocab", title: "Vocab: Unit 188 \u00b7 Complaints \u2014 Complain to store staff", items: [
     {"t": "aceptable", "e": "adequate / acceptable"},
     {"t": "agotado", "e": "dead / exhausted oneself / worn … out"},
     {"t": "atender", "e": "assist / tend to / answer"},
@@ -24075,7 +24075,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "uno", "e": "first, one, (I) join"},
     {"t": "vencido", "e": "expired / defeated"}
   ]},
-  { id: "duo_es_u189", type: "vocab", title: "Vocab: Unit 189 \u00b7 Small Talk \u2014 Visits: Talk about places you visited", items: [
+  { id: "duo_es_u189", type: "vocab", title: "Vocab: Unit 189 \u00b7 Small Talk \u2014 Talk about places you've visited", items: [
     {"t": "acostumbrarse", "e": "get used to"},
     {"t": "además de", "e": "on top of"},
     {"t": "la arquitectura", "e": "architecture"},
@@ -24100,7 +24100,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la vida nocturna", "e": "nightlife"},
     {"t": "visitado", "e": "visited with / visited"}
   ]},
-  { id: "duo_es_u190", type: "vocab", title: "Vocab: Unit 190 \u00b7 Ecology \u2014 Nature: Describe sea animals", items: [
+  { id: "duo_es_u190", type: "vocab", title: "Vocab: Unit 190 \u00b7 Ecology \u2014 Describe sea animals", items: [
     {"t": "el arroyo", "e": "burn / stream's / stream"},
     {"t": "la atracción", "e": "entertainment / attraction / call"},
     {"t": "la ave", "e": "bird"},
@@ -24127,7 +24127,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la selva", "e": "jungle / forest / forrest"},
     {"t": "la tortuga", "e": "tortoise / turtle"}
   ]},
-  { id: "duo_es_u191", type: "vocab", title: "Vocab: Unit 191 \u00b7 Art Talk \u2014 Artists: Describe your favorite artist", items: [
+  { id: "duo_es_u191", type: "vocab", title: "Vocab: Unit 191 \u00b7 Art Talk \u2014 Discuss celebrities and art", items: [
     {"t": "admirar", "e": "admire / look up to / look"},
     {"t": "anterior", "e": "earlier / past / before"},
     {"t": "aplaudir", "e": "cheers / clap"},
@@ -24153,7 +24153,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el retrato", "e": "pictures / portrait"},
     {"t": "seguramente", "e": "surely"}
   ]},
-  { id: "duo_es_u192", type: "vocab", title: "Vocab: Unit 192 \u00b7 Travelers \u2014 Flights: Describe your flight experience", items: [
+  { id: "duo_es_u192", type: "vocab", title: "Vocab: Unit 192 \u00b7 Travelers \u2014 Talk about your last flight", items: [
     {"t": "ahora sí", "e": "now"},
     {"t": "amanecer", "e": "(to) stay up all night, daybreak, dawn"},
     {"t": "asustar", "e": "(to) frighten, (to) get frightened, scare"},
@@ -24180,7 +24180,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la turbulencia", "e": "turbulence"},
     {"t": "viajero", "e": "traveler / passenger's"}
   ]},
-  { id: "duo_es_u193", type: "vocab", title: "Vocab: Unit 193 \u00b7 I agree \u2014 Opinions: Share your opinions", items: [
+  { id: "duo_es_u193", type: "vocab", title: "Vocab: Unit 193 \u00b7 I agree \u2014 Share your opinions", items: [
     {"t": "absolutamente", "e": "absolutely"},
     {"t": "admitir", "e": "support / takes / take"},
     {"t": "el alcalde", "e": "mayor's / supervisor / mayor"},
@@ -24207,7 +24207,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la religión", "e": "religion"},
     {"t": "yo diría", "e": "I would say"}
   ]},
-  { id: "duo_es_u194", type: "vocab", title: "Vocab: Unit 194 \u00b7 Questions \u2014 Office: Ask about office locations", items: [
+  { id: "duo_es_u194", type: "vocab", title: "Vocab: Unit 194 \u00b7 Questions \u2014 Ask questions about work", items: [
     {"t": "a dónde", "e": "where"},
     {"t": "a quién", "e": "whom"},
     {"t": "a qué distancia", "e": "how far"},
@@ -24234,7 +24234,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "valer", "e": "be worth / worth / they're"},
     {"t": "el vendedor", "e": "seller / salesman / salesperson"}
   ]},
-  { id: "duo_es_u195", type: "vocab", title: "Vocab: Unit 195 \u00b7 Probably \u2014 Promises: Keep promises", items: [
+  { id: "duo_es_u195", type: "vocab", title: "Vocab: Unit 195 \u00b7 Probably \u2014 Make plans and share feelings", items: [
     {"t": "cariñoso", "e": "loving / warmer / warm"},
     {"t": "celoso", "e": "jealous"},
     {"t": "confundido", "e": "confused / mixed up / embarrassed"},
@@ -24261,7 +24261,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tomar", "e": "take / get / caught"},
     {"t": "tomar con calma", "e": "be calm about"}
   ]},
-  { id: "duo_es_u196", type: "vocab", title: "Vocab: Unit 196 \u00b7 Doubts \u2014 Doubt: Choose who to trust", items: [
+  { id: "duo_es_u196", type: "vocab", title: "Vocab: Unit 196 \u00b7 Doubts \u2014 Share your news and secrets", items: [
     {"t": "algún día", "e": "someday"},
     {"t": "la cara a cara", "e": "face to face"},
     {"t": "comprometido", "e": "engaged"},
@@ -24286,7 +24286,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "sensato", "e": "sensible / prudent / practical"},
     {"t": "la sugerencia", "e": "suggestion"}
   ]},
-  { id: "duo_es_u197", type: "vocab", title: "Vocab: Unit 197 \u00b7 Hospital \u2014 Clinic: Talk about hospital experiences", items: [
+  { id: "duo_es_u197", type: "vocab", title: "Vocab: Unit 197 \u00b7 Hospital \u2014 Discuss pregnancy and birth", items: [
     {"t": "curarse", "e": "dry"},
     {"t": "dentro de", "e": "within the next"},
     {"t": "la enfermedad", "e": "illness / disease"},
@@ -24310,7 +24310,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el tratamiento", "e": "medication / treatment / handling"},
     {"t": "urgentemente", "e": "urgently"}
   ]},
-  { id: "duo_es_u198", type: "vocab", title: "Vocab: Unit 198 \u00b7 Hard Work \u2014 Business: Describe company challenges", items: [
+  { id: "duo_es_u198", type: "vocab", title: "Vocab: Unit 198 \u00b7 Hard Work \u2014 Discuss business challenges", items: [
     {"t": "a cuánto", "e": "how much"},
     {"t": "aprovechar", "e": "press / use / take advantage of"},
     {"t": "el aumento", "e": "pays, better, (I) increase"},
@@ -24335,7 +24335,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "reunido", "e": "met up / gotten together / met"},
     {"t": "el trimestre", "e": "quarter / term / semester"}
   ]},
-  { id: "duo_es_u199", type: "vocab", title: "Vocab: Unit 199 \u00b7 Urgency \u2014 Emergencies: Report an emergency", items: [
+  { id: "duo_es_u199", type: "vocab", title: "Vocab: Unit 199 \u00b7 Urgency \u2014 Give advice on driving safely", items: [
     {"t": "acompañe", "e": "go with / comes along"},
     {"t": "apurarse", "e": "hurry, (to) hurry, hurries"},
     {"t": "asustado", "e": "afraid / scared / frightened"},
@@ -24362,7 +24362,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la víctima", "e": "victim"},
     {"t": "ya mismo", "e": "right now"}
   ]},
-  { id: "duo_es_u200", type: "vocab", title: "Vocab: Unit 200 \u00b7 Gratitude \u2014 Thanks: Say thank you", items: [
+  { id: "duo_es_u200", type: "vocab", title: "Vocab: Unit 200 \u00b7 Gratitude \u2014 Say thank you and you're welcome", items: [
     {"t": "la amabilidad", "e": "kindness"},
     {"t": "ayudado", "e": "helped oneself / helped"},
     {"t": "el colegio", "e": "school / college"},
@@ -24386,7 +24386,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el ramo", "e": "subject / branch / area (masculine)"},
     {"t": "tanto", "e": "so much / both / so"}
   ]},
-  { id: "duo_es_u201", type: "vocab", title: "Vocab: Unit 201 \u00b7 Let's Go! \u2014 Streets: Plan your trip across town", items: [
+  { id: "duo_es_u201", type: "vocab", title: "Vocab: Unit 201 \u00b7 Let's Go! \u2014 Get around town at rush hour", items: [
     {"t": "el acceso", "e": "access / entrance / approach"},
     {"t": "la acera", "e": "sidewalk"},
     {"t": "bajémonos", "e": "let's get off"},
@@ -24413,7 +24413,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "veámonos", "e": "let's see each other"},
     {"t": "vámonos", "e": "let's / let's leave / let's go"}
   ]},
-  { id: "duo_es_u202", type: "vocab", title: "Vocab: Unit 202 \u00b7 Bad Day \u2014 Classes: Describe your grades", items: [
+  { id: "duo_es_u202", type: "vocab", title: "Vocab: Unit 202 \u00b7 Bad Day \u2014 Talk about grades and effort", items: [
     {"t": "a propósito", "e": "on purpose"},
     {"t": "atentamente", "e": "carefully"},
     {"t": "bastante", "e": "plenty of / a lot / quite a bit"},
@@ -24440,7 +24440,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "totalmente", "e": "completely"},
     {"t": "la unidad", "e": "car / vessel / unit"}
   ]},
-  { id: "duo_es_u203", type: "vocab", title: "Vocab: Unit 203 \u00b7 Bad News \u2014 Police: Describe a police investigation", items: [
+  { id: "duo_es_u203", type: "vocab", title: "Vocab: Unit 203 \u00b7 Bad News \u2014 Describe crimes and criminals", items: [
     {"t": "algunos de", "e": "Some of the / Some of"},
     {"t": "el arma", "e": "weapon / gun"},
     {"t": "arrestar", "e": "arrested / arrest / they'd"},
@@ -24467,7 +24467,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "una parte de", "e": "a part of"},
     {"t": "uno de", "e": "One of"}
   ]},
-  { id: "duo_es_u204", type: "vocab", title: "Vocab: Unit 204 \u00b7 Comfort \u2014 Meals: Suggest a meal", items: [
+  { id: "duo_es_u204", type: "vocab", title: "Vocab: Unit 204 \u00b7 Comfort \u2014 Suggest a meal or snack", items: [
     {"t": "la avena", "e": "oatmeal"},
     {"t": "calentar", "e": "warmer / warm / to heat"},
     {"t": "casero", "e": "home / homemade"},
@@ -24494,7 +24494,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "recuerde", "e": "remind, (I) remember, remember"},
     {"t": "repitamos", "e": "have seconds of"}
   ]},
-  { id: "duo_es_u205", type: "vocab", title: "Vocab: Unit 205 \u00b7 Empathy \u2014 Emotion: Describe how you feel", items: [
+  { id: "duo_es_u205", type: "vocab", title: "Vocab: Unit 205 \u00b7 Empathy \u2014 Discuss injuries and setbacks", items: [
     {"t": "a fin de cuentas", "e": "in the end"},
     {"t": "agotado", "e": "dead / exhausted oneself / worn … out"},
     {"t": "aliviado", "e": "relieved"},
@@ -24521,7 +24521,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tranquilo", "e": "calm / peaceful / quiet (masculine)"},
     {"t": "la victoria", "e": "Victoria / victory / gains"}
   ]},
-  { id: "duo_es_u206", type: "vocab", title: "Vocab: Unit 206 \u00b7 Sorry \u2014 Mistakes: Talk about mistakes", items: [
+  { id: "duo_es_u206", type: "vocab", title: "Vocab: Unit 206 \u00b7 Sorry \u2014 Discuss chores and apologies", items: [
     {"t": "a la perfección", "e": "perfectly"},
     {"t": "acostumbrado", "e": "used to / gotten used to / trained"},
     {"t": "al revés", "e": "inside out"},
@@ -24547,7 +24547,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "servir", "e": "serving, (to) serve, serve"},
     {"t": "siento mucho que", "e": "I'm very sorry that"}
   ]},
-  { id: "duo_es_u207", type: "vocab", title: "Vocab: Unit 207 \u00b7 Too Bad \u2014 Rental: Ask about contract terms", items: [
+  { id: "duo_es_u207", type: "vocab", title: "Vocab: Unit 207 \u00b7 Too Bad \u2014 Ask about an apartment lease", items: [
     {"t": "acogedor", "e": "welcoming"},
     {"t": "al menos", "e": "at least"},
     {"t": "el ambiente", "e": "room / atmosphere"},
@@ -24574,7 +24574,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "vendiera", "e": "sell / sold"},
     {"t": "viera", "e": "saw, (I/he/she/it/you) picture, (I/he/she/it/you) meet"}
   ]},
-  { id: "duo_es_u208", type: "vocab", title: "Vocab: Unit 208 \u00b7 Blind Date \u2014 Dating: Talk about dating worries", items: [
+  { id: "duo_es_u208", type: "vocab", title: "Vocab: Unit 208 \u00b7 Blind Date \u2014 Discuss your dating concerns", items: [
     {"t": "al aire libre", "e": "outdoor"},
     {"t": "anticuado", "e": "old fashioned / fashioned"},
     {"t": "aquí mismo", "e": "right here"},
@@ -24601,7 +24601,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tonto", "e": "gump / fool / idiot"},
     {"t": "tuviera", "e": "have / has"}
   ]},
-  { id: "duo_es_u209", type: "vocab", title: "Vocab: Unit 209 \u00b7 Recipes \u2014 Groceries: Ask about grocery needs", items: [
+  { id: "duo_es_u209", type: "vocab", title: "Vocab: Unit 209 \u00b7 Recipes \u2014 Give recipe tips and advice", items: [
     {"t": "el alimento", "e": "(I) feed, (I) am nourishing, (I) boost"},
     {"t": "la berenjena", "e": "eggplant"},
     {"t": "el calabacín", "e": "squash"},
@@ -24628,7 +24628,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "viniéramos", "e": "come"},
     {"t": "la yema", "e": "yolk"}
   ]},
-  { id: "duo_es_u210", type: "vocab", title: "Vocab: Unit 210 \u00b7 Got Wi Fi? \u2014 Tech: Share your username", items: [
+  { id: "duo_es_u210", type: "vocab", title: "Vocab: Unit 210 \u00b7 Got Wi Fi? \u2014 Talk about your internet setup", items: [
     {"t": "adjuntar", "e": "includes, (to) attach"},
     {"t": "la batería", "e": "drum kit / battery / drums"},
     {"t": "bloguero", "e": "blogger"},
@@ -24653,7 +24653,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la tendencia", "e": "trend"},
     {"t": "el ícono", "e": "icon"}
   ]},
-  { id: "duo_es_u211", type: "vocab", title: "Vocab: Unit 211 \u00b7 Fix It! \u2014 Home: Ask about home repairs", items: [
+  { id: "duo_es_u211", type: "vocab", title: "Vocab: Unit 211 \u00b7 Fix It! \u2014 Ask about home repairs", items: [
     {"t": "antes de que", "e": "before"},
     {"t": "aproximado", "e": "approximate"},
     {"t": "el cable", "e": "cable / wire / lead"},
@@ -24680,7 +24680,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "presupuesto", "e": "(I) plan, budget, estimate"},
     {"t": "la pérdida", "e": "miscarriage / loss / waste"}
   ]},
-  { id: "duo_es_u212", type: "vocab", title: "Vocab: Unit 212 \u00b7 Decor \u2014 Decor: Suggest changes for a room", items: [
+  { id: "duo_es_u212", type: "vocab", title: "Vocab: Unit 212 \u00b7 Decor \u2014 Talk about home decor changes", items: [
     {"t": "el aluminio", "e": "aluminum"},
     {"t": "la bandeja", "e": "rear shelf / magazine / tray"},
     {"t": "el candelabro", "e": "candelabra / candle holder / candlestick"},
@@ -24706,7 +24706,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "unos", "e": "some (masculine: unos)"},
     {"t": "la vela", "e": "sail / watch"}
   ]},
-  { id: "duo_es_u213", type: "vocab", title: "Vocab: Unit 213 \u00b7 Insurance \u2014 Insurance: Ask about health coverage", items: [
+  { id: "duo_es_u213", type: "vocab", title: "Vocab: Unit 213 \u00b7 Insurance \u2014 Discuss health insurance", items: [
     {"t": "adecuado", "e": "right / appropriate / adequate"},
     {"t": "la alergia", "e": "allergy"},
     {"t": "aprobar", "e": "(to) pass, approve, pass"},
@@ -24733,7 +24733,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "solicitar", "e": "desire / applying / claims"},
     {"t": "la tarifa", "e": "price / fee / fare"}
   ]},
-  { id: "duo_es_u214", type: "vocab", title: "Vocab: Unit 214 \u00b7 Talk Show \u2014 Fame: Describe a celebrity", items: [
+  { id: "duo_es_u214", type: "vocab", title: "Vocab: Unit 214 \u00b7 Talk Show \u2014 Talk about celebrities and TV", items: [
     {"t": "a continuación", "e": "next"},
     {"t": "aparecer", "e": "appear / roll"},
     {"t": "el apodo", "e": "nickname"},
@@ -24759,7 +24759,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tratar de", "e": "deal / treat"},
     {"t": "volviendo al tema", "e": "anyway"}
   ]},
-  { id: "duo_es_u215", type: "vocab", title: "Vocab: Unit 215 \u00b7 Celebrate! \u2014 Festivals: Describe festival traditions", items: [
+  { id: "duo_es_u215", type: "vocab", title: "Vocab: Unit 215 \u00b7 Celebrate! \u2014 Talk about celebrations", items: [
     {"t": "Día de los Muertos", "e": "Day of the Dead"},
     {"t": "Semana Santa", "e": "Holy Week"},
     {"t": "al aire libre", "e": "outdoor"},
@@ -24784,7 +24784,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "se tiene que", "e": "has to / have to / has to be"},
     {"t": "se visita", "e": "are visited / is visited"}
   ]},
-  { id: "duo_es_u216", type: "vocab", title: "Vocab: Unit 216 \u00b7 World News \u2014 News: Report on a news event", items: [
+  { id: "duo_es_u216", type: "vocab", title: "Vocab: Unit 216 \u00b7 World News \u2014 Talk about current events", items: [
     {"t": "la aerolínea", "e": "airline"},
     {"t": "británico", "e": "Britisher / British person / Briton"},
     {"t": "causado", "e": "caused / produced"},
@@ -24810,7 +24810,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el respecto a", "e": "regarding"},
     {"t": "sudamericano", "e": "South American"}
   ]},
-  { id: "duo_es_u217", type: "vocab", title: "Vocab: Unit 217 \u00b7 Harvest \u2014 Gardens: Describe plants in your garden", items: [
+  { id: "duo_es_u217", type: "vocab", title: "Vocab: Unit 217 \u00b7 Harvest \u2014 Talk about growing plants", items: [
     {"t": "la aceituna", "e": "olive"},
     {"t": "arruinar", "e": "don't / ruin / spoil"},
     {"t": "bajo cero", "e": "below zero"},
@@ -24836,7 +24836,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "terreno", "e": "terrestrial / site / lots"},
     {"t": "el trigo", "e": "wheat"}
   ]},
-  { id: "duo_es_u218", type: "vocab", title: "Vocab: Unit 218 \u00b7 Buy Now! \u2014 Offers: Describe a special offer", items: [
+  { id: "duo_es_u218", type: "vocab", title: "Vocab: Unit 218 \u00b7 Buy Now! \u2014 Advertise products and deals", items: [
     {"t": "ahorra", "e": "(you-formal) save oneself, (he/she/it) saves (oneself), (you-formal) spare oneself"},
     {"t": "comercial", "e": "business / commercial / business school"},
     {"t": "confiable", "e": "reliable"},
@@ -24863,7 +24863,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "suscribirse", "e": "to subscribe / to sign up / to enroll"},
     {"t": "una vez", "e": "once"}
   ]},
-  { id: "duo_es_u219", type: "vocab", title: "Vocab: Unit 219 \u00b7 TV Chef \u2014 Kitchen: Talk about cooking shows", items: [
+  { id: "duo_es_u219", type: "vocab", title: "Vocab: Unit 219 \u00b7 TV Chef \u2014 Talk about cooking shows", items: [
     {"t": "agrio", "e": "sharp / sour / bitter"},
     {"t": "amargo", "e": "bitter / painful / maté without sugar"},
     {"t": "bailando", "e": "swiping / pinching / spinning"},
@@ -24888,7 +24888,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el sartén", "e": "frying pan / skillet / pan"},
     {"t": "seleccionar", "e": "select / pick"}
   ]},
-  { id: "duo_es_u220", type: "vocab", title: "Vocab: Unit 220 \u00b7 Concerns \u2014 Politics: Express your views on democracy", items: [
+  { id: "duo_es_u220", type: "vocab", title: "Vocab: Unit 220 \u00b7 Concerns \u2014 Discuss politics and the news", items: [
     {"t": "la democracia", "e": "democracy"},
     {"t": "desagradable", "e": "unkind / unpleasant / painful"},
     {"t": "la desventaja", "e": "disadvantage / downside"},
@@ -24915,7 +24915,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "prometer", "e": "promise / doesn't / let's"},
     {"t": "el terrorismo", "e": "terrorism"}
   ]},
-  { id: "duo_es_u221", type: "vocab", title: "Vocab: Unit 221 \u00b7 Adventures \u2014 Outdoors: Describe outdoor activities", items: [
+  { id: "duo_es_u221", type: "vocab", title: "Vocab: Unit 221 \u00b7 Adventures \u2014 Talk about camping trips", items: [
     {"t": "armar", "e": "getting / paste / make"},
     {"t": "aun así", "e": "even so"},
     {"t": "calmo", "e": "(I) relieve, (I) ease, (I) quench"},
@@ -24942,7 +24942,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "yo no", "e": "I do not"},
     {"t": "yo sí", "e": "I do"}
   ]},
-  { id: "duo_es_u222", type: "vocab", title: "Vocab: Unit 222 \u00b7 Jobs \u2014 Professions: Say who is in charge", items: [
+  { id: "duo_es_u222", type: "vocab", title: "Vocab: Unit 222 \u00b7 Jobs \u2014 Talk about running a company", items: [
     {"t": "la administración", "e": "administration / running / management"},
     {"t": "aparentemente", "e": "apparently"},
     {"t": "apoyar", "e": "stand / getting"},
@@ -24968,7 +24968,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "suspender", "e": "stay / stopped"},
     {"t": "el tiempo completo", "e": "full-time"}
   ]},
-  { id: "duo_es_u223", type: "vocab", title: "Vocab: Unit 223 \u00b7 Neighbors \u2014 Neighbors: Describe your neighbors", items: [
+  { id: "duo_es_u223", type: "vocab", title: "Vocab: Unit 223 \u00b7 Neighbors \u2014 Describe your neighbors", items: [
     {"t": "adoptar", "e": "adopting / take / put"},
     {"t": "el bigote", "e": "mustache"},
     {"t": "calvo", "e": "bald"},
@@ -24995,7 +24995,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "séptimo", "e": "seventh"},
     {"t": "veterinario", "e": "veterinarian / vet"}
   ]},
-  { id: "duo_es_u224", type: "vocab", title: "Vocab: Unit 224 \u00b7 Counsel \u2014 Habits: Share family habits", items: [
+  { id: "duo_es_u224", type: "vocab", title: "Vocab: Unit 224 \u00b7 Counsel \u2014 Talk about family conflicts", items: [
     {"t": "la adolescencia", "e": "adolescence"},
     {"t": "animar", "e": "warmer / warm / encourage"},
     {"t": "artístico", "e": "artistic"},
@@ -25020,7 +25020,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "trabajara", "e": "work / were working"},
     {"t": "técnico", "e": "coach's / repairman / trainer"}
   ]},
-  { id: "duo_es_u225", type: "vocab", title: "Vocab: Unit 225 \u00b7 Patients \u2014 Wellness: Describe an injury", items: [
+  { id: "duo_es_u225", type: "vocab", title: "Vocab: Unit 225 \u00b7 Patients \u2014 Describe an injury", items: [
     {"t": "acostado", "e": "lied down / gone to bed"},
     {"t": "la caloría", "e": "Calorie"},
     {"t": "caminara", "e": "walk"},
@@ -25047,7 +25047,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la urgencia", "e": "emergency"},
     {"t": "la vitamina", "e": "vitamin"}
   ]},
-  { id: "duo_es_u226", type: "vocab", title: "Vocab: Unit 226 \u00b7 Disbelief \u2014 Mystery: Describe a mysterious event", items: [
+  { id: "duo_es_u226", type: "vocab", title: "Vocab: Unit 226 \u00b7 Disbelief \u2014 Describe a mystery", items: [
     {"t": "borracho", "e": "wasting / tight"},
     {"t": "el ciego", "e": "blind man, blind drunk, (I) blind"},
     {"t": "el compañero", "e": "colleague's / roommate's / classmate's"},
@@ -25074,7 +25074,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "típico", "e": "vintage / typical / classic"},
     {"t": "vigilar", "e": "stand / guarding"}
   ]},
-  { id: "duo_es_u227", type: "vocab", title: "Vocab: Unit 227 \u00b7 Surprise \u2014 Surprises: React to unexpected news", items: [
+  { id: "duo_es_u227", type: "vocab", title: "Vocab: Unit 227 \u00b7 Surprise \u2014 React to unexpected news", items: [
     {"t": "bromear", "e": "kid / joke"},
     {"t": "la cabina", "e": "cabin / cockpit"},
     {"t": "los calzoncillos", "e": "boxers / underwear / shortest"},
@@ -25100,7 +25100,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "uy", "e": "wow"},
     {"t": "la ventanilla", "e": "window"}
   ]},
-  { id: "duo_es_u228", type: "vocab", title: "Vocab: Unit 228 \u00b7 Elementary \u2014 Classroom: Describe classroom routines", items: [
+  { id: "duo_es_u228", type: "vocab", title: "Vocab: Unit 228 \u00b7 Elementary \u2014 Share feelings about daycare", items: [
     {"t": "la bandera", "e": "flag"},
     {"t": "la batalla", "e": "(you-formal) battle, fight!, wheelbase"},
     {"t": "callarse", "e": "callarse / broken / breaks"},
@@ -25126,7 +25126,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la tierra", "e": "earth"},
     {"t": "el triángulo", "e": "triangle"}
   ]},
-  { id: "duo_es_u229", type: "vocab", title: "Vocab: Unit 229 \u00b7 Speculate \u2014 Weddings: Describe wedding destinations", items: [
+  { id: "duo_es_u229", type: "vocab", title: "Vocab: Unit 229 \u00b7 Speculate \u2014 Describe your upcoming trips", items: [
     {"t": "adelgazar", "e": "to lose weight / reduce"},
     {"t": "la alianza", "e": "wedding ring / band / alliance"},
     {"t": "asiático", "e": "Asian"},
@@ -25152,7 +25152,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la vacuna", "e": "vaccine"},
     {"t": "el valle", "e": "valley"}
   ]},
-  { id: "duo_es_u230", type: "vocab", title: "Vocab: Unit 230 \u00b7 Animals \u2014 Pets: Ask about animal behavior", items: [
+  { id: "duo_es_u230", type: "vocab", title: "Vocab: Unit 230 \u00b7 Animals \u2014 Talk about animal encounters", items: [
     {"t": "acercarse", "e": "close / get close / move"},
     {"t": "asustarse", "e": "start / shy"},
     {"t": "la cucaracha", "e": "cockroach"},
@@ -25178,7 +25178,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "rescatar", "e": "rescue / pick / getting"},
     {"t": "te lo", "e": "it to you / it for you"}
   ]},
-  { id: "duo_es_u231", type: "vocab", title: "Vocab: Unit 231 \u00b7 Gossip \u2014 Gossip: React to neighborhood gossip", items: [
+  { id: "duo_es_u231", type: "vocab", title: "Vocab: Unit 231 \u00b7 Gossip \u2014 Share and respond to gossip", items: [
     {"t": "amante", "e": "mistress / lover / fancier"},
     {"t": "la barriga", "e": "stomach / tummy / belly"},
     {"t": "bronceado", "e": "tan / brown / suntanned"},
@@ -25203,7 +25203,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "superar", "e": "beat / getting / get"},
     {"t": "tomar sol", "e": "sunbathe / get some sun / bask in the sun"}
   ]},
-  { id: "duo_es_u232", type: "vocab", title: "Vocab: Unit 232 \u00b7 Big Trip \u2014 Requests: Ask for permission", items: [
+  { id: "duo_es_u232", type: "vocab", title: "Vocab: Unit 232 \u00b7 Big Trip \u2014 Ask for permission", items: [
     {"t": "apostar", "e": "to bet"},
     {"t": "definitivamente", "e": "definitely"},
     {"t": "dejar", "e": "let's / gave / drop off"},
@@ -25229,7 +25229,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "si es así", "e": "if so / If that's the case..."},
     {"t": "una y otra vez", "e": "again and again / over and over again"}
   ]},
-  { id: "duo_es_u233", type: "vocab", title: "Vocab: Unit 233 \u00b7 Lifestyle \u2014 Wellness: Describe pain and symptoms", items: [
+  { id: "duo_es_u233", type: "vocab", title: "Vocab: Unit 233 \u00b7 Lifestyle \u2014 Describe pain and symptoms", items: [
     {"t": "a la larga", "e": "in the long run / eventually"},
     {"t": "aliviar", "e": "relieve"},
     {"t": "la ansiedad", "e": "anxiety"},
@@ -25256,7 +25256,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "supuestamente", "e": "supposedly"},
     {"t": "yo que tú", "e": "If I were you"}
   ]},
-  { id: "duo_es_u234", type: "vocab", title: "Vocab: Unit 234 \u00b7 New Home \u2014 Homes: Describe your dream house", items: [
+  { id: "duo_es_u234", type: "vocab", title: "Vocab: Unit 234 \u00b7 New Home \u2014 Find a new home", items: [
     {"t": "a fin de", "e": "by the end of / at the end of"},
     {"t": "a fondo", "e": "thoroughly"},
     {"t": "el agente inmobiliario", "e": "real estate agent"},
@@ -25283,7 +25283,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el ático", "e": "attic"},
     {"t": "ía", "e": "would"}
   ]},
-  { id: "duo_es_u235", type: "vocab", title: "Vocab: Unit 235 \u00b7 Management \u2014 Work Team: Ask for help from teammates", items: [
+  { id: "duo_es_u235", type: "vocab", title: "Vocab: Unit 235 \u00b7 Management \u2014 Ask Your Teammates for Help", items: [
     {"t": "a", "e": "to / with / away"},
     {"t": "a última hora", "e": "at the last minute"},
     {"t": "la acción", "e": "plot / share / act"},
@@ -25307,7 +25307,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "un vistazo", "e": "look"},
     {"t": "unirse a", "e": "joined"}
   ]},
-  { id: "duo_es_u236", type: "vocab", title: "Vocab: Unit 236 \u00b7 Doctors \u2014 Hospital: Describe an injury", items: [
+  { id: "duo_es_u236", type: "vocab", title: "Vocab: Unit 236 \u00b7 Doctors \u2014 Talk about injuries and care", items: [
     {"t": "la articulación", "e": "joint"},
     {"t": "la bronquitis", "e": "bronchitis"},
     {"t": "el cansancio", "e": "tiredness"},
@@ -25334,7 +25334,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el traumatólogo", "e": "orthopedic surgeon"},
     {"t": "vendar", "e": "bandages / dress / dressed"}
   ]},
-  { id: "duo_es_u237", type: "vocab", title: "Vocab: Unit 237 \u00b7 Mechanic \u2014 Cars: Describe car problems", items: [
+  { id: "duo_es_u237", type: "vocab", title: "Vocab: Unit 237 \u00b7 Mechanic \u2014 Talk about car problems", items: [
     {"t": "arrancar", "e": "starting, (to) tear out, (to) run off / away"},
     {"t": "atascado", "e": "stuck"},
     {"t": "la batería", "e": "drum kit / battery / drums"},
@@ -25361,7 +25361,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la vez", "e": "time"},
     {"t": "yo mismo", "e": "myself"}
   ]},
-  { id: "duo_es_u238", type: "vocab", title: "Vocab: Unit 238 \u00b7 Career \u2014 Careers: Share your career interests", items: [
+  { id: "duo_es_u238", type: "vocab", title: "Vocab: Unit 238 \u00b7 Career \u2014 Discuss your career plans", items: [
     {"t": "al contrario", "e": "quite the opposite"},
     {"t": "el consejero", "e": "advisor"},
     {"t": "costar", "e": "cost / lose"},
@@ -25386,7 +25386,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el sino", "e": "but rather / if not / but"},
     {"t": "trabajador autónomo", "e": "freelancer"}
   ]},
-  { id: "duo_es_u239", type: "vocab", title: "Vocab: Unit 239 \u00b7 Reunion \u2014 People: Describe people", items: [
+  { id: "duo_es_u239", type: "vocab", title: "Vocab: Unit 239 \u00b7 Reunion \u2014 Describe people", items: [
     {"t": "actuar", "e": "act"},
     {"t": "aparentar", "e": "look / pretend"},
     {"t": "budista", "e": "buddhist"},
@@ -25412,7 +25412,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el rumor", "e": "rumor"},
     {"t": "íntimo", "e": "private / close / personal"}
   ]},
-  { id: "duo_es_u240", type: "vocab", title: "Vocab: Unit 240 \u00b7 Campaign \u2014 Campaign: Describe a political campaign", items: [
+  { id: "duo_es_u240", type: "vocab", title: "Vocab: Unit 240 \u00b7 Campaign \u2014 Describe a political campaign", items: [
     {"t": "alcanzar", "e": "(to) catch, caught, (to) reach"},
     {"t": "anunciar", "e": "to announce"},
     {"t": "asegurar", "e": "assure"},
@@ -25437,7 +25437,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "triunfar", "e": "succeed"},
     {"t": "votante", "e": "voter"}
   ]},
-  { id: "duo_es_u241", type: "vocab", title: "Vocab: Unit 241 \u00b7 Climate \u2014 Climate: Talk about climate problems", items: [
+  { id: "duo_es_u241", type: "vocab", title: "Vocab: Unit 241 \u00b7 Climate \u2014 Talk about climate change", items: [
     {"t": "cada vez más", "e": "increasingly"},
     {"t": "el calentamiento", "e": "warming"},
     {"t": "el consumo", "e": "consumption"},
@@ -25461,7 +25461,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "talar", "e": "cut down"},
     {"t": "tecnológico", "e": "technological"}
   ]},
-  { id: "duo_es_u242", type: "vocab", title: "Vocab: Unit 242 \u00b7 Admonish \u2014 Responsibility: Give reasons for rules", items: [
+  { id: "duo_es_u242", type: "vocab", title: "Vocab: Unit 242 \u00b7 Admonish \u2014 Give a child instructions", items: [
     {"t": "advertir", "e": "warn"},
     {"t": "arriesgado", "e": "risky"},
     {"t": "el chaleco salvavidas", "e": "life jacket"},
@@ -25488,7 +25488,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tender", "e": "hold, (to) hang (up), (to) make"},
     {"t": "terco", "e": "stubborn"}
   ]},
-  { id: "duo_es_u243", type: "vocab", title: "Vocab: Unit 243 \u00b7 New Parent \u2014 Babies: Talk about adopting a baby", items: [
+  { id: "duo_es_u243", type: "vocab", title: "Vocab: Unit 243 \u00b7 New Parent \u2014 Discuss preparing for a baby", items: [
     {"t": "adoptar", "e": "adopting / take / put"},
     {"t": "al inicio", "e": "at the beginning / at first"},
     {"t": "al tanto", "e": "informed"},
@@ -25513,7 +25513,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el pediatra", "e": "pediatrician"},
     {"t": "ya", "e": "now / anymore"}
   ]},
-  { id: "duo_es_u244", type: "vocab", title: "Vocab: Unit 244 \u00b7 Folklore \u2014 Myths: Share myths you know", items: [
+  { id: "duo_es_u244", type: "vocab", title: "Vocab: Unit 244 \u00b7 Folklore \u2014 Share some myths you know", items: [
     {"t": "absurdo", "e": "absurd / fantastic"},
     {"t": "el caldo", "e": "broth"},
     {"t": "la cinta", "e": "tape / ribbon"},
@@ -25537,7 +25537,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "si mal no recuerdo", "e": "If I remember correctly"},
     {"t": "sonar", "e": "ring / sound"}
   ]},
-  { id: "duo_es_u245", type: "vocab", title: "Vocab: Unit 245 \u00b7 Regrets \u2014 Regret: Express past regrets", items: [
+  { id: "duo_es_u245", type: "vocab", title: "Vocab: Unit 245 \u00b7 Regrets \u2014 Talk about past regrets", items: [
     {"t": "aclarar", "e": "to clarify"},
     {"t": "el alma gemela", "e": "soulmate"},
     {"t": "armar una escena", "e": "make a scene"},
@@ -25560,7 +25560,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el rencor", "e": "resentment"},
     {"t": "tarde o temprano", "e": "sooner or later"}
   ]},
-  { id: "duo_es_u246", type: "vocab", title: "Vocab: Unit 246 \u00b7 Higher Ed \u2014 School: Ask about your classes", items: [
+  { id: "duo_es_u246", type: "vocab", title: "Vocab: Unit 246 \u00b7 Higher Ed \u2014 Talk about classes and exams", items: [
     {"t": "acaso", "e": "could it be / perhaps"},
     {"t": "al fin y al cabo", "e": "after all"},
     {"t": "comentar", "e": "comment / mention"},
@@ -25587,7 +25587,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "sabático", "e": "sabbatical"},
     {"t": "teórico", "e": "theoretical"}
   ]},
-  { id: "duo_es_u247", type: "vocab", title: "Vocab: Unit 247 \u00b7 Reminisce \u2014 Childhood: Describe your childhood home", items: [
+  { id: "duo_es_u247", type: "vocab", title: "Vocab: Unit 247 \u00b7 Reminisce \u2014 Talk about your childhood", items: [
     {"t": "el abuelito", "e": "grandpa / grandfather"},
     {"t": "el albergue", "e": "hostel"},
     {"t": "anochecer", "e": "dusk"},
@@ -25613,7 +25613,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "unidos", "e": "close"},
     {"t": "verse con", "e": "seeing / see"}
   ]},
-  { id: "duo_es_u248", type: "vocab", title: "Vocab: Unit 248 \u00b7 Together \u2014 Family: Describe your family", items: [
+  { id: "duo_es_u248", type: "vocab", title: "Vocab: Unit 248 \u00b7 Together \u2014 Show affection to loved ones", items: [
     {"t": "acomodar", "e": "arrange"},
     {"t": "la anécdota", "e": "story"},
     {"t": "atento", "e": "thoughtful"},
@@ -25637,7 +25637,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tanto tiempo", "e": "so much time"},
     {"t": "el vínculo", "e": "bond"}
   ]},
-  { id: "duo_es_u249", type: "vocab", title: "Vocab: Unit 249 \u00b7 Colleagues \u2014 Worklife: Plan a lunch meeting", items: [
+  { id: "duo_es_u249", type: "vocab", title: "Vocab: Unit 249 \u00b7 Colleagues \u2014 Plan meetings and share ideas", items: [
     {"t": "a fin de cuentas", "e": "in the end"},
     {"t": "agendar", "e": "make a note / schedule"},
     {"t": "analizar", "e": "analyze"},
@@ -25664,7 +25664,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el subdirector", "e": "assistant manager"},
     {"t": "ya", "e": "now / anymore"}
   ]},
-  { id: "duo_es_u250", type: "vocab", title: "Vocab: Unit 250 \u00b7 Paperwork \u2014 Paperwork: Ask about paperwork", items: [
+  { id: "duo_es_u250", type: "vocab", title: "Vocab: Unit 250 \u00b7 Paperwork \u2014 Talk about paperwork delays", items: [
     {"t": "a menos que", "e": "unless"},
     {"t": "a primera hora", "e": "first thing"},
     {"t": "administrativo", "e": "administrative"},
@@ -25690,7 +25690,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "vencer", "e": "to expire"},
     {"t": "válido", "e": "valid"}
   ]},
-  { id: "duo_es_u251", type: "vocab", title: "Vocab: Unit 251 \u00b7 Emergency \u2014 Injury: Describe your symptoms", items: [
+  { id: "duo_es_u251", type: "vocab", title: "Vocab: Unit 251 \u00b7 Emergency \u2014 Discuss symptoms and remedies", items: [
     {"t": "algo de", "e": "some"},
     {"t": "arder", "e": "to burn"},
     {"t": "la curita", "e": "band-aid"},
@@ -25715,7 +25715,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "salir de dudas", "e": "to make sure"},
     {"t": "el terapeuta", "e": "therapist"}
   ]},
-  { id: "duo_es_u252", type: "vocab", title: "Vocab: Unit 252 \u00b7 Fix It Up \u2014 Home Fixes: Fix broken locks", items: [
+  { id: "duo_es_u252", type: "vocab", title: "Vocab: Unit 252 \u00b7 Fix It Up \u2014 Buying and repairing a house", items: [
     {"t": "acabarse", "e": "(to) finish up (oneself), (to) end (oneself), (to) come (oneself)"},
     {"t": "asegurarse", "e": "make sure"},
     {"t": "la cañería", "e": "plumbing"},
@@ -25739,7 +25739,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tapado", "e": "clogged"},
     {"t": "torcido", "e": "crooked"}
   ]},
-  { id: "duo_es_u253", type: "vocab", title: "Vocab: Unit 253 \u00b7 Bickering \u2014 Conflict: Respond to criticism", items: [
+  { id: "duo_es_u253", type: "vocab", title: "Vocab: Unit 253 \u00b7 Bickering \u2014 Argue with family members", items: [
     {"t": "la alternativa", "e": "alternative / alternate / in rotation"},
     {"t": "la aprobación", "e": "approval"},
     {"t": "aunque", "e": "although / though / even though"},
@@ -25765,7 +25765,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "solo eso faltaba", "e": "That's all we needed"},
     {"t": "la tensión", "e": "tension"}
   ]},
-  { id: "duo_es_u254", type: "vocab", title: "Vocab: Unit 254 \u00b7 Telenovela \u2014 Drama: React to dramatic events", items: [
+  { id: "duo_es_u254", type: "vocab", title: "Vocab: Unit 254 \u00b7 Telenovela \u2014 Talk about soap opera plots", items: [
     {"t": "a escondidas", "e": "secretly"},
     {"t": "arrastrarse", "e": "to crawl"},
     {"t": "la cachetada", "e": "slap"},
@@ -25791,7 +25791,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "vengarse", "e": "to take revenge"},
     {"t": "villano", "e": "villain"}
   ]},
-  { id: "duo_es_u255", type: "vocab", title: "Vocab: Unit 255 \u00b7 Changes \u2014 Village: React to someone\u2019s new look", items: [
+  { id: "duo_es_u255", type: "vocab", title: "Vocab: Unit 255 \u00b7 Changes \u2014 Talk about how people change", items: [
     {"t": "a lo largo de", "e": "along / throughout / during"},
     {"t": "agobiado", "e": "overwhelmed"},
     {"t": "al poco tiempo", "e": "shortly after"},
@@ -25817,7 +25817,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "teñir", "e": "to dye"},
     {"t": "el transporte", "e": "transportation"}
   ]},
-  { id: "duo_es_u256", type: "vocab", title: "Vocab: Unit 256 \u00b7 Monotony \u2014 Boredom: Talk about skipping activities", items: [
+  { id: "duo_es_u256", type: "vocab", title: "Vocab: Unit 256 \u00b7 Monotony \u2014 Sleep in and miss appointments", items: [
     {"t": "angustiado", "e": "distressed"},
     {"t": "como mucho", "e": "at most"},
     {"t": "de mala gana", "e": "reluctantly"},
@@ -25844,7 +25844,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "rutinario", "e": "routine"},
     {"t": "únicamente", "e": "only"}
   ]},
-  { id: "duo_es_u257", type: "vocab", title: "Vocab: Unit 257 \u00b7 Really?! \u2014 Neighbors: Describe your neighbors", items: [
+  { id: "duo_es_u257", type: "vocab", title: "Vocab: Unit 257 \u00b7 Really?! \u2014 Describe your neighbors", items: [
     {"t": "a todo volumen", "e": "at full volume"},
     {"t": "asombrar", "e": "to amaze"},
     {"t": "burlarse de", "e": "to make fun of / make fun"},
@@ -25870,7 +25870,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "terminar", "e": "let's / finish / end"},
     {"t": "torpe", "e": "clumsy"}
   ]},
-  { id: "duo_es_u258", type: "vocab", title: "Vocab: Unit 258 \u00b7 Bad Trip \u2014 Problems: Describe unexpected problems", items: [
+  { id: "duo_es_u258", type: "vocab", title: "Vocab: Unit 258 \u00b7 Bad Trip \u2014 Describe unexpected problems", items: [
     {"t": "a última hora", "e": "at the last minute"},
     {"t": "apurado", "e": "in a rush"},
     {"t": "el asco", "e": "disgust"},
@@ -25896,7 +25896,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "los servicios", "e": "amenities"},
     {"t": "ubicar", "e": "locate"}
   ]},
-  { id: "duo_es_u259", type: "vocab", title: "Vocab: Unit 259 \u00b7 Adapting \u2014 Adjustment: Settle into a new place", items: [
+  { id: "duo_es_u259", type: "vocab", title: "Vocab: Unit 259 \u00b7 Adapting \u2014 Talk about studying abroad", items: [
     {"t": "amigable", "e": "friendly"},
     {"t": "como mínimo", "e": "at least"},
     {"t": "cuanto más", "e": "the more"},
@@ -25921,7 +25921,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tratar de usted", "e": "address formally"},
     {"t": "tutear", "e": "address informally"}
   ]},
-  { id: "duo_es_u260", type: "vocab", title: "Vocab: Unit 260 \u00b7 New Cook \u2014 Utensils: Describe how you use utensils", items: [
+  { id: "duo_es_u260", type: "vocab", title: "Vocab: Unit 260 \u00b7 New Cook \u2014 Talk about cleaning supplies", items: [
     {"t": "el abrelatas", "e": "can opener"},
     {"t": "algo así", "e": "something like that"},
     {"t": "el aparato", "e": "gadget"},
@@ -25947,7 +25947,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la suciedad", "e": "dirt"},
     {"t": "el trapo", "e": "rag"}
   ]},
-  { id: "duo_es_u261", type: "vocab", title: "Vocab: Unit 261 \u00b7 Growing Up \u2014 Change: Compare then and now", items: [
+  { id: "duo_es_u261", type: "vocab", title: "Vocab: Unit 261 \u00b7 Growing Up \u2014 Describe how you've changed", items: [
     {"t": "afectar", "e": "(to) affect, (to) encumber, (to) feign"},
     {"t": "el aguafiestas", "e": "party pooper"},
     {"t": "la arruga", "e": "wrinkle"},
@@ -25972,7 +25972,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "volverse", "e": "become, (to) become, (to) turn"},
     {"t": "y eso que", "e": "even though"}
   ]},
-  { id: "duo_es_u262", type: "vocab", title: "Vocab: Unit 262 \u00b7 Caring \u2014 Support: Offer support to others", items: [
+  { id: "duo_es_u262", type: "vocab", title: "Vocab: Unit 262 \u00b7 Caring \u2014 Offer support to others", items: [
     {"t": "algo", "e": "anything"},
     {"t": "alguna cosa", "e": "anything"},
     {"t": "apresurado", "e": "hasty"},
@@ -25998,7 +25998,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tranquilizarse", "e": "to calm down"},
     {"t": "ya veremos", "e": "will see"}
   ]},
-  { id: "duo_es_u263", type: "vocab", title: "Vocab: Unit 263 \u00b7 Break Up \u2014 Breakups: React to breakup news", items: [
+  { id: "duo_es_u263", type: "vocab", title: "Vocab: Unit 263 \u00b7 Break Up \u2014 Comfort a heartbroken friend", items: [
     {"t": "al tanto", "e": "informed"},
     {"t": "la autoestima", "e": "self-esteem"},
     {"t": "brindar", "e": "make a toast / give / lay"},
@@ -26023,7 +26023,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "sospechar", "e": "to suspect"},
     {"t": "terminar con", "e": "break up with / breaking up with"}
   ]},
-  { id: "duo_es_u264", type: "vocab", title: "Vocab: Unit 264 \u00b7 Interrupt \u2014 Discussion: Express your views", items: [
+  { id: "duo_es_u264", type: "vocab", title: "Vocab: Unit 264 \u00b7 Interrupt \u2014 Share your political opinions", items: [
     {"t": "a la vez", "e": "at the same time"},
     {"t": "a partir de", "e": "starting at / from / starting"},
     {"t": "aunque sea", "e": "even if it's just"},
@@ -26049,7 +26049,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tardar", "e": "tardar / take / delay"},
     {"t": "el tema", "e": "subject / matter / theme"}
   ]},
-  { id: "duo_es_u265", type: "vocab", title: "Vocab: Unit 265 \u00b7 Disaster \u2014 Disasters: Describe what happened", items: [
+  { id: "duo_es_u265", type: "vocab", title: "Vocab: Unit 265 \u00b7 Disaster \u2014 Ask about floods and quakes", items: [
     {"t": "aislado", "e": "cut off / lonely / isolated"},
     {"t": "al", "e": "to the / with / your"},
     {"t": "cada tanto", "e": "every now and then"},
@@ -26075,7 +26075,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "sobrevivir", "e": "survive"},
     {"t": "el temblor", "e": "tremor"}
   ]},
-  { id: "duo_es_u266", type: "vocab", title: "Vocab: Unit 266 \u00b7 Siblings \u2014 Siblings: React to what your sibling says", items: [
+  { id: "duo_es_u266", type: "vocab", title: "Vocab: Unit 266 \u00b7 Siblings \u2014 Argue about who is to blame", items: [
     {"t": "acusar", "e": "tell on someone"},
     {"t": "castigado", "e": "grounded"},
     {"t": "el columpio", "e": "swing"},
@@ -26098,7 +26098,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "te lo suplico", "e": "beg"},
     {"t": "el trofeo", "e": "trophy"}
   ]},
-  { id: "duo_es_u267", type: "vocab", title: "Vocab: Unit 267 \u00b7 Criticism \u2014 Cooking: Describe food flavors", items: [
+  { id: "duo_es_u267", type: "vocab", title: "Vocab: Unit 267 \u00b7 Criticism \u2014 Describe food flavors", items: [
     {"t": "al vapor", "e": "steam"},
     {"t": "con todo respeto", "e": "with all due respect"},
     {"t": "condimentar", "e": "season"},
@@ -26124,7 +26124,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "subestimar", "e": "underestimate"},
     {"t": "el yerno", "e": "son-in-law"}
   ]},
-  { id: "duo_es_u268", type: "vocab", title: "Vocab: Unit 268 \u00b7 Theme Park \u2014 Permission: Ask for permission", items: [
+  { id: "duo_es_u268", type: "vocab", title: "Vocab: Unit 268 \u00b7 Theme Park \u2014 Ask for permission", items: [
     {"t": "el berrinche", "e": "tantrum"},
     {"t": "como", "e": "like, as / I eat (como) / how (cómo)"},
     {"t": "contar", "e": "numbers, let's, (to) count"},
@@ -26148,7 +26148,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "un no rotundo", "e": "a resounding no"},
     {"t": "vomitar", "e": "to vomit / throw up"}
   ]},
-  { id: "duo_es_u269", type: "vocab", title: "Vocab: Unit 269 \u00b7 Projects \u2014 Design: Describe your design ideas", items: [
+  { id: "duo_es_u269", type: "vocab", title: "Vocab: Unit 269 \u00b7 Projects \u2014 Describe your design ideas", items: [
     {"t": "a simple vista", "e": "at a glance"},
     {"t": "el arcoíris", "e": "rainbow"},
     {"t": "conocido", "e": "acquaintance"},
@@ -26174,7 +26174,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "ser difícil de", "e": "be difficult to"},
     {"t": "ya nadie", "e": "nobody anymore"}
   ]},
-  { id: "duo_es_u270", type: "vocab", title: "Vocab: Unit 270 \u00b7 Negotiate \u2014 Returns: Request a refund", items: [
+  { id: "duo_es_u270", type: "vocab", title: "Vocab: Unit 270 \u00b7 Negotiate \u2014 Return or exchange an item", items: [
     {"t": "a no ser que", "e": "unless"},
     {"t": "autorizar", "e": "to authorize"},
     {"t": "comprar", "e": "let's / getting / fixed"},
@@ -26201,7 +26201,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "temer", "e": "afraid"},
     {"t": "vestido de novia", "e": "wedding dress"}
   ]},
-  { id: "duo_es_u271", type: "vocab", title: "Vocab: Unit 271 \u00b7 Newscast \u2014 Innovation: Share surprising inventions", items: [
+  { id: "duo_es_u271", type: "vocab", title: "Vocab: Unit 271 \u00b7 Newscast \u2014 React to news about animals", items: [
     {"t": "a que no", "e": "I bet"},
     {"t": "la alga", "e": "seaweed"},
     {"t": "el avance", "e": "breakthrough"},
@@ -26227,7 +26227,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "silbar", "e": "to whistle"},
     {"t": "utilizar", "e": "utilize, (to) utilize, run"}
   ]},
-  { id: "duo_es_u272", type: "vocab", title: "Vocab: Unit 272 \u00b7 Equality \u2014 Rights: Ask about social inequality", items: [
+  { id: "duo_es_u272", type: "vocab", title: "Vocab: Unit 272 \u00b7 Equality \u2014 Discuss rights and inequality", items: [
     {"t": "el acceso", "e": "access / entrance / approach"},
     {"t": "administrar", "e": "to manage"},
     {"t": "anticonceptivo", "e": "contraceptive"},
@@ -26253,7 +26253,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el voto", "e": "vow, (I) vote to approve, (I) vote"},
     {"t": "la época", "e": "epoch / time of year / season"}
   ]},
-  { id: "duo_es_u273", type: "vocab", title: "Vocab: Unit 273 \u00b7 Art \u2014 Art: Describe famous artworks", items: [
+  { id: "duo_es_u273", type: "vocab", title: "Vocab: Unit 273 \u00b7 Art \u2014 Talk about art movements", items: [
     {"t": "barroco", "e": "baroque"},
     {"t": "colonial", "e": "colonial"},
     {"t": "comunicar", "e": "put / connect / communicate"},
@@ -26279,7 +26279,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "sustentable", "e": "sustainable"},
     {"t": "urbano", "e": "urban / city / local"}
   ]},
-  { id: "duo_es_u274", type: "vocab", title: "Vocab: Unit 274 \u00b7 Wrestling \u2014 Wrestling: Describe a wrestling match", items: [
+  { id: "duo_es_u274", type: "vocab", title: "Vocab: Unit 274 \u00b7 Wrestling \u2014 Describe a wrestling match", items: [
     {"t": "arrastrar", "e": "to drag"},
     {"t": "el combate", "e": "fight"},
     {"t": "con el tiempo", "e": "over time"},
@@ -26306,7 +26306,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la vestimenta", "e": "outfit"},
     {"t": "ágil", "e": "nimble"}
   ]},
-  { id: "duo_es_u275", type: "vocab", title: "Vocab: Unit 275 \u00b7 Soccer \u2014 Tournament: Predict the match outcome", items: [
+  { id: "duo_es_u275", type: "vocab", title: "Vocab: Unit 275 \u00b7 Soccer \u2014 Predict who won't win", items: [
     {"t": "a", "e": "to / with / away"},
     {"t": "al contrario", "e": "quite the opposite"},
     {"t": "clasificar", "e": "setting / qualify / qualifies"},
@@ -26332,7 +26332,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el tiempo", "e": "tense / long / weather"},
     {"t": "el triunfo", "e": "win"}
   ]},
-  { id: "duo_es_u276", type: "vocab", title: "Vocab: Unit 276 \u00b7 Arguing \u2014 Residents: Share safety concerns", items: [
+  { id: "duo_es_u276", type: "vocab", title: "Vocab: Unit 276 \u00b7 Arguing \u2014 Discuss safety concerns", items: [
     {"t": "la alarma", "e": "alarm"},
     {"t": "la asociación", "e": "partnership / association"},
     {"t": "el conserje", "e": "custodian"},
@@ -26356,7 +26356,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la restricción", "e": "restriction"},
     {"t": "tranquilo", "e": "calm / peaceful / quiet (masculine)"}
   ]},
-  { id: "duo_es_u277", type: "vocab", title: "Vocab: Unit 277 \u00b7 Annoyed \u2014 Annoyance: Express what annoys you", items: [
+  { id: "duo_es_u277", type: "vocab", title: "Vocab: Unit 277 \u00b7 Annoyed \u2014 Talk about what annoys you", items: [
     {"t": "agotador", "e": "exhausting"},
     {"t": "el agujero", "e": "hole"},
     {"t": "bloquear", "e": "block"},
@@ -26381,7 +26381,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el vendedor", "e": "seller / salesman / salesperson"},
     {"t": "la videollamada", "e": "video call"}
   ]},
-  { id: "duo_es_u278", type: "vocab", title: "Vocab: Unit 278 \u00b7 Games \u2014 Games: Suggest a game to play", items: [
+  { id: "duo_es_u278", type: "vocab", title: "Vocab: Unit 278 \u00b7 Games \u2014 Talk about board games", items: [
     {"t": "a toda costa", "e": "no matter what"},
     {"t": "así es", "e": "that's right"},
     {"t": "avanzar", "e": "to advance / move forward"},
@@ -26408,7 +26408,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el turno", "e": "appointment / shift / sitting"},
     {"t": "y pensar que", "e": "and to think that"}
   ]},
-  { id: "duo_es_u279", type: "vocab", title: "Vocab: Unit 279 \u00b7 Detective \u2014 Mystery: Share clues with others", items: [
+  { id: "duo_es_u279", type: "vocab", title: "Vocab: Unit 279 \u00b7 Detective \u2014 Speculate about the theft", items: [
     {"t": "a eso de", "e": "around"},
     {"t": "anónimo", "e": "anonymous"},
     {"t": "arrestar", "e": "arrest"},
@@ -26435,7 +26435,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "sospechoso", "e": "suspicious / suspect"},
     {"t": "tuvo que haber", "e": "had to have"}
   ]},
-  { id: "duo_es_u280", type: "vocab", title: "Vocab: Unit 280 \u00b7 Legends \u2014 Legends: Tell a scary legend", items: [
+  { id: "duo_es_u280", type: "vocab", title: "Vocab: Unit 280 \u00b7 Legends \u2014 Tell a scary story", items: [
     {"t": "abandonar", "e": "abandon"},
     {"t": "andar", "e": "walks, (to) be, move"},
     {"t": "así", "e": "that way, (I) seized, so"},
@@ -26458,7 +26458,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "supersticioso", "e": "superstitious"},
     {"t": "la tumba", "e": "grave"}
   ]},
-  { id: "duo_es_u281", type: "vocab", title: "Vocab: Unit 281 \u00b7 Job Search \u2014 Hiring: Apply for a job", items: [
+  { id: "duo_es_u281", type: "vocab", title: "Vocab: Unit 281 \u00b7 Job Search \u2014 Look for job vacancies", items: [
     {"t": "a distancia", "e": "online / remote"},
     {"t": "el asesor", "e": "advisor"},
     {"t": "capacitarse", "e": "getting trained"},
@@ -26484,7 +26484,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "vacante", "e": "opening"},
     {"t": "valorar", "e": "to value"}
   ]},
-  { id: "duo_es_u282", type: "vocab", title: "Vocab: Unit 282 \u00b7 Fam Event \u2014 Ceremony: Request help", items: [
+  { id: "duo_es_u282", type: "vocab", title: "Vocab: Unit 282 \u00b7 Fam Event \u2014 Deal with wedding day mishaps", items: [
     {"t": "alcanzar", "e": "(to) catch, caught, (to) reach"},
     {"t": "antes de tiempo", "e": "too soon"},
     {"t": "atrasarse", "e": "to be late"},
@@ -26511,7 +26511,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "se supone", "e": "(he/she/it) supposes, (he/she/it) means, supposed"},
     {"t": "tenso", "e": "tense / tight / test"}
   ]},
-  { id: "duo_es_u283", type: "vocab", title: "Vocab: Unit 283 \u00b7 Zombies \u2014 Zombies: React to a zombie invasion", items: [
+  { id: "duo_es_u283", type: "vocab", title: "Vocab: Unit 283 \u00b7 Zombies \u2014 React to a zombie invasion", items: [
     {"t": "a salvo", "e": "safe"},
     {"t": "el apocalipsis", "e": "apocalypse"},
     {"t": "la autoridad", "e": "authority"},
@@ -26537,7 +26537,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tener a la mano", "e": "have at hand"},
     {"t": "el zombi", "e": "zombi"}
   ]},
-  { id: "duo_es_u284", type: "vocab", title: "Vocab: Unit 284 \u00b7 Magic show \u2014 Magic: Describe magic tricks", items: [
+  { id: "duo_es_u284", type: "vocab", title: "Vocab: Unit 284 \u00b7 Magic show \u2014 Guess the next magic trick", items: [
     {"t": "abuchear", "e": "boo"},
     {"t": "anotar", "e": "write down"},
     {"t": "así de fácil", "e": "that easily"},
@@ -26561,7 +26561,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el truco", "e": "trick"},
     {"t": "la varita", "e": "wand"}
   ]},
-  { id: "duo_es_u285", type: "vocab", title: "Vocab: Unit 285 \u00b7 Quince \u2014 Reception: Comment on guests' outfits", items: [
+  { id: "duo_es_u285", type: "vocab", title: "Vocab: Unit 285 \u00b7 Quince \u2014 Comment on what guests wore", items: [
     {"t": "la ahijada", "e": "goddaughter"},
     {"t": "arreglado", "e": "fixed / dressed / groomed"},
     {"t": "el bufé", "e": "buffet"},
@@ -26588,7 +26588,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el vals", "e": "waltz"},
     {"t": "la vergüenza", "e": "embarrassment / sense of shame / embarrassing"}
   ]},
-  { id: "duo_es_u286", type: "vocab", title: "Vocab: Unit 286 \u00b7 New Life \u2014 Farewell: Share reasons for moving", items: [
+  { id: "duo_es_u286", type: "vocab", title: "Vocab: Unit 286 \u00b7 New Life \u2014 Say why you're moving away", items: [
     {"t": "a ver si", "e": "let's see if"},
     {"t": "adaptarse", "e": "to adapt"},
     {"t": "afortunado", "e": "lucky"},
@@ -26615,7 +26615,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "temporal", "e": "temporary"},
     {"t": "la vivienda", "e": "home"}
   ]},
-  { id: "duo_es_u287", type: "vocab", title: "Vocab: Unit 287 \u00b7 Pets \u2014 Pets: Talk about getting a pet", items: [
+  { id: "duo_es_u287", type: "vocab", title: "Vocab: Unit 287 \u00b7 Pets \u2014 Talk about getting a pet", items: [
     {"t": "agotarse", "e": "to run out / sell out"},
     {"t": "la cabra", "e": "goat"},
     {"t": "callejero", "e": "stray"},
@@ -26641,7 +26641,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tierno", "e": "cute"},
     {"t": "la travesura", "e": "mischief"}
   ]},
-  { id: "duo_es_u288", type: "vocab", title: "Vocab: Unit 288 \u00b7 The Future \u2014 Future: Share your ambitions", items: [
+  { id: "duo_es_u288", type: "vocab", title: "Vocab: Unit 288 \u00b7 The Future \u2014 Share your future ambitions", items: [
     {"t": "la ambición", "e": "ambition"},
     {"t": "apasionado", "e": "passionate"},
     {"t": "ascender", "e": "go / promote"},
@@ -26667,7 +26667,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "verse", "e": "show / getting together / look"},
     {"t": "vivir de", "e": "live off"}
   ]},
-  { id: "duo_es_u289", type: "vocab", title: "Vocab: Unit 289 \u00b7 Technology \u2014 Repairs: Describe a broken device", items: [
+  { id: "duo_es_u289", type: "vocab", title: "Vocab: Unit 289 \u00b7 Technology \u2014 Explain how your device broke", items: [
     {"t": "los ajustes", "e": "settings"},
     {"t": "los audífonos", "e": "earbuds"},
     {"t": "calcular", "e": "work / figure / estimate"},
@@ -26692,7 +26692,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el tornillo", "e": "screw"},
     {"t": "tutorial", "e": "tutorial"}
   ]},
-  { id: "duo_es_u290", type: "vocab", title: "Vocab: Unit 290 \u00b7 Assignment \u2014 Assignments: Choose assignment topics", items: [
+  { id: "duo_es_u290", type: "vocab", title: "Vocab: Unit 290 \u00b7 Assignment \u2014 Choose a project topic", items: [
     {"t": "ahora sí que", "e": "Now we really / Now the teacher really / Now she really"},
     {"t": "el argumento", "e": "plot"},
     {"t": "asignar", "e": "assign"},
@@ -26717,7 +26717,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el trabajo", "e": "assignment"},
     {"t": "volver a", "e": "again"}
   ]},
-  { id: "duo_es_u291", type: "vocab", title: "Vocab: Unit 291 \u00b7 Gym \u2014 Exercise: Describe a workout routine", items: [
+  { id: "duo_es_u291", type: "vocab", title: "Vocab: Unit 291 \u00b7 Gym \u2014 Follow workout instructions", items: [
     {"t": "a mover", "e": "time to move"},
     {"t": "los abdominales", "e": "crunches"},
     {"t": "adolorido", "e": "sore"},
@@ -26741,7 +26741,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "sin aliento", "e": "out of breath"},
     {"t": "el ánimo", "e": "come on"}
   ]},
-  { id: "duo_es_u292", type: "vocab", title: "Vocab: Unit 292 \u00b7 A date \u2014 Outings: Suggest a place to go", items: [
+  { id: "duo_es_u292", type: "vocab", title: "Vocab: Unit 292 \u00b7 A date \u2014 Make plans for your day off", items: [
     {"t": "a domicilio", "e": "delivery"},
     {"t": "apático", "e": "apathetic"},
     {"t": "asistir", "e": "to attend"},
@@ -26766,7 +26766,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "por nada del mundo", "e": "for anything in the world"},
     {"t": "la porción", "e": "serving / portion / helping"}
   ]},
-  { id: "duo_es_u293", type: "vocab", title: "Vocab: Unit 293 \u00b7 Getaway \u2014 Excursion: Plan your trip", items: [
+  { id: "duo_es_u293", type: "vocab", title: "Vocab: Unit 293 \u00b7 Getaway \u2014 Plan your trip", items: [
     {"t": "a este paso", "e": "at this rate"},
     {"t": "acantilado", "e": "cliff"},
     {"t": "acuático", "e": "water"},
@@ -26791,7 +26791,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "un par de", "e": "a couple of"},
     {"t": "el volcán", "e": "volcano"}
   ]},
-  { id: "duo_es_u294", type: "vocab", title: "Vocab: Unit 294 \u00b7 Politics 2 \u2014 Debate: Respond to challenges", items: [
+  { id: "duo_es_u294", type: "vocab", title: "Vocab: Unit 294 \u00b7 Politics 2 \u2014 Talk about your achievements", items: [
     {"t": "el alumbrado", "e": "streetlight"},
     {"t": "cada vez menos", "e": "fewer and fewer"},
     {"t": "la cifra", "e": "figure"},
@@ -26817,7 +26817,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la tasa", "e": "rate"},
     {"t": "el vice", "e": "vice"}
   ]},
-  { id: "duo_es_u295", type: "vocab", title: "Vocab: Unit 295 \u00b7 Mischief \u2014 Secrets: Describe a prank", items: [
+  { id: "duo_es_u295", type: "vocab", title: "Vocab: Unit 295 \u00b7 Mischief \u2014 Talk about a prank", items: [
     {"t": "astuto", "e": "clever"},
     {"t": "castigar", "e": "to punish"},
     {"t": "con normalidad", "e": "normally"},
@@ -26842,7 +26842,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "traicionar", "e": "to betray"},
     {"t": "y qué", "e": "so what"}
   ]},
-  { id: "duo_es_u296", type: "vocab", title: "Vocab: Unit 296 \u00b7 Auto \u2014 Car Deals: Ask about car models", items: [
+  { id: "duo_es_u296", type: "vocab", title: "Vocab: Unit 296 \u00b7 Auto \u2014 Ask about car models", items: [
     {"t": "acelerador", "e": "gas pedal"},
     {"t": "la agencia", "e": "dealership"},
     {"t": "al contado", "e": "up front"},
@@ -26868,7 +26868,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "vibrar", "e": "vibrate"},
     {"t": "volante", "e": "steering wheel"}
   ]},
-  { id: "duo_es_u297", type: "vocab", title: "Vocab: Unit 297 \u00b7 Newspaper \u2014 Headlines: Talk about the weather", items: [
+  { id: "duo_es_u297", type: "vocab", title: "Vocab: Unit 297 \u00b7 Newspaper \u2014 Talk about the weather", items: [
     {"t": "la alimentación", "e": "power / fuel supply / diet"},
     {"t": "el chubasco", "e": "shower"},
     {"t": "comenzar", "e": "start / open"},
@@ -26893,7 +26893,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el trasplante", "e": "transplant"},
     {"t": "único", "e": "only / only one / only thing"}
   ]},
-  { id: "duo_es_u298", type: "vocab", title: "Vocab: Unit 298 \u00b7 Olympics \u2014 Medals: React to winning medals", items: [
+  { id: "duo_es_u298", type: "vocab", title: "Vocab: Unit 298 \u00b7 Olympics \u2014 React to Olympic moments", items: [
     {"t": "el bronce", "e": "bronze"},
     {"t": "caer en la cuenta", "e": "realized"},
     {"t": "darle la vuelta a", "e": "turn / pull"},
@@ -26919,7 +26919,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el récord", "e": "record / better / best"},
     {"t": "y así fue", "e": "and so it was"}
   ]},
-  { id: "duo_es_u299", type: "vocab", title: "Vocab: Unit 299 \u00b7 First Date \u2014 Feelings: Describe how you feel", items: [
+  { id: "duo_es_u299", type: "vocab", title: "Vocab: Unit 299 \u00b7 First Date \u2014 Ask about a bad first date", items: [
     {"t": "alejarse", "e": "to move away / distance oneself"},
     {"t": "el amorío", "e": "fling"},
     {"t": "así", "e": "that way, (I) seized, so"},
@@ -26944,7 +26944,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "sudar", "e": "sweat"},
     {"t": "super", "e": "super"}
   ]},
-  { id: "duo_es_u300", type: "vocab", title: "Vocab: Unit 300 \u00b7 Convention \u2014 Conversation: Share your opinion", items: [
+  { id: "duo_es_u300", type: "vocab", title: "Vocab: Unit 300 \u00b7 Convention \u2014 Discuss innovation and AI", items: [
     {"t": "acerca de", "e": "about"},
     {"t": "el crecimiento", "e": "growth"},
     {"t": "de una vez", "e": "once and for all"},
@@ -26969,7 +26969,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "la timidez", "e": "shyness"},
     {"t": "la trayectoria", "e": "career path"}
   ]},
-  { id: "duo_es_u301", type: "vocab", title: "Vocab: Unit 301 \u00b7 Old Friend \u2014 Memories: Share childhood memories", items: [
+  { id: "duo_es_u301", type: "vocab", title: "Vocab: Unit 301 \u00b7 Old Friend \u2014 Share childhood memories", items: [
     {"t": "a", "e": "to / with / away"},
     {"t": "a gusto", "e": "comfortable"},
     {"t": "arreglar", "e": "work / touch / fixed"},
@@ -26991,7 +26991,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "saber nada", "e": "know anything"},
     {"t": "trepar", "e": "to climb"}
   ]},
-  { id: "duo_es_u302", type: "vocab", title: "Vocab: Unit 302 \u00b7 Mishap \u2014 Accidents: Describe an accident", items: [
+  { id: "duo_es_u302", type: "vocab", title: "Vocab: Unit 302 \u00b7 Mishap \u2014 Talk about accidents you had", items: [
     {"t": "acabarse", "e": "(to) finish up (oneself), (to) end (oneself), (to) come (oneself)"},
     {"t": "el adaptador", "e": "adaptor"},
     {"t": "agradecido", "e": "grateful"},
@@ -27014,7 +27014,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "quedar", "e": "stay, let's, (to) stay"},
     {"t": "sí", "e": "yes (sí) / if (si)"}
   ]},
-  { id: "duo_es_u303", type: "vocab", title: "Vocab: Unit 303 \u00b7 Learning \u2014 Learning: Describe your progress", items: [
+  { id: "duo_es_u303", type: "vocab", title: "Vocab: Unit 303 \u00b7 Learning \u2014 Talk about your progress", items: [
     {"t": "a medida que", "e": "as"},
     {"t": "adicionalmente", "e": "in addition"},
     {"t": "arreglárselas", "e": "getting / get"},
@@ -28596,7 +28596,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "名前", "e": "name", "k": "なまえ"},
     {"t": "四日", "e": "fourth / four days / 4th", "k": "よっか"}
   ]},
-  { id: "duo_ja_u71", type: "vocab", title: "Vocab: Unit 71 \u00b7 New Home 3 \u2014 Describe your neighborhood", items: [
+  { id: "duo_ja_u71", type: "vocab", title: "Vocab: Unit 71 \u00b7 New Home 3 \u2014 Shop for furniture nearby", items: [
     {"t": "いつでも", "e": "anytime", "r": "itsudemo"},
     {"t": "おきます", "e": "get up / going to wake up / wake up", "r": "okimasu"},
     {"t": "かけます", "e": "can draw", "r": "kakemasu"},
@@ -28638,7 +28638,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "早く", "e": "quickly / soon / sooner", "k": "はやく"},
     {"t": "電気をけします", "e": "turn off the light / switch off the light / extinguish the light", "k": "でんきをけします"}
   ]},
-  { id: "duo_ja_u73", type: "vocab", title: "Vocab: Unit 73 \u00b7 Comp. Trip \u2014 Share a favorite trip memory", items: [
+  { id: "duo_ja_u73", type: "vocab", title: "Vocab: Unit 73 \u00b7 Comp. Trip \u2014 Plan a team trip to Kyoto", items: [
     {"t": "いつか", "e": "someday", "r": "itsuka"},
     {"t": "おかしや", "e": "pastry shop", "r": "okashiya"},
     {"t": "おまもり", "e": "charm", "r": "omamori"},
@@ -28659,7 +28659,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "温かい", "e": "warm / hot", "k": "あたたかい"},
     {"t": "行ってらっしゃい", "e": "Have a good trip", "k": "いってらっしゃい"}
   ]},
-  { id: "duo_ja_u74", type: "vocab", title: "Vocab: Unit 74 \u00b7 Family Biz \u2014 Describe restaurant jobs", items: [
+  { id: "duo_ja_u74", type: "vocab", title: "Vocab: Unit 74 \u00b7 Family Biz \u2014 Describe jobs in a restaurant", items: [
     {"t": "うすく", "e": "thinly", "r": "usuku"},
     {"t": "おかず", "e": "side dish", "r": "okazu"},
     {"t": "お客さん", "e": "customer", "k": "おきゃくさん"},
@@ -28678,7 +28678,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "毎週", "e": "every week", "k": "まいしゅう"},
     {"t": "考えます", "e": "consider / (will) think (about it) / thinks", "k": "かんがえます"}
   ]},
-  { id: "duo_ja_u75", type: "vocab", title: "Vocab: Unit 75 \u00b7 Photo cont \u2014 Join a photo contest", items: [
+  { id: "duo_ja_u75", type: "vocab", title: "Vocab: Unit 75 \u00b7 Photo cont \u2014 Enter a photo contest", items: [
     {"t": "きめます", "e": "decide / determine / choose", "r": "kimemasu"},
     {"t": "けします", "e": "erase / turn off / extinguish", "r": "keshimasu"},
     {"t": "けっか", "e": "result / outcome / consequence", "r": "kekka"},
@@ -28702,7 +28702,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "花火", "e": "firework", "k": "はなび"},
     {"t": "見せます", "e": "(will) show / shows / show", "k": "みせます"}
   ]},
-  { id: "duo_ja_u76", type: "vocab", title: "Vocab: Unit 76 \u00b7 Socl Media \u2014 Set up your account", items: [
+  { id: "duo_ja_u76", type: "vocab", title: "Vocab: Unit 76 \u00b7 Socl Media \u2014 Help someone use a smartphone", items: [
     {"t": "うれしい", "e": "happy / glad / pleased", "r": "ureshii"},
     {"t": "えもじ", "e": "emoji", "r": "emoji"},
     {"t": "おてつだいしましょうか", "e": "Shall I help you?", "r": "otetsudaishimashouka"},
@@ -28795,7 +28795,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "時計", "e": "clock", "k": "とけい"},
     {"t": "赤い", "e": "red / (a) red / redder", "k": "あかい"}
   ]},
-  { id: "duo_ja_u80", type: "vocab", title: "Vocab: Unit 80 \u00b7 office 2 \u2014 Ask about a deadline", items: [
+  { id: "duo_ja_u80", type: "vocab", title: "Vocab: Unit 80 \u00b7 office 2 \u2014 Discuss finishing a report", items: [
     {"t": "います", "e": "is / am / has been", "r": "imasu"},
     {"t": "かかります", "e": "take / (it) takes / (it) will take", "r": "kakarimasu"},
     {"t": "しょるい", "e": "document", "r": "shorui"},
@@ -28818,7 +28818,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "映画", "e": "movie", "k": "えいが"},
     {"t": "閉めます", "e": "(will) close", "k": "しめます"}
   ]},
-  { id: "duo_ja_u81", type: "vocab", title: "Vocab: Unit 81 \u00b7 Ski Trip \u2014 Pack for your ski trip", items: [
+  { id: "duo_ja_u81", type: "vocab", title: "Vocab: Unit 81 \u00b7 Ski Trip \u2014 Enjoy a snowy ski trip", items: [
     {"t": "あつまります", "e": "gather / assemble / collect", "r": "atsumarimasu"},
     {"t": "かぶります", "e": "wear / wears / will wear", "r": "kaburimasu"},
     {"t": "くま", "e": "bear", "r": "kuma"},
@@ -28865,7 +28865,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "映画館", "e": "movie theater", "k": "えいがかん"},
     {"t": "男の人", "e": "man", "k": "おとこのひと"}
   ]},
-  { id: "duo_ja_u83", type: "vocab", title: "Vocab: Unit 83 \u00b7 FUKUOKA \u2014 Describe city scenes", items: [
+  { id: "duo_ja_u83", type: "vocab", title: "Vocab: Unit 83 \u00b7 FUKUOKA \u2014 Talk about your trip", items: [
     {"t": "うすい", "e": "bland / thin / mild", "r": "usui"},
     {"t": "かんこうち", "e": "tourist spot", "r": "kankouchi"},
     {"t": "きゅうしゅう", "e": "Kyushu", "r": "kyuushuu"},
@@ -28888,7 +28888,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "科学", "e": "science", "k": "かがく"},
     {"t": "黒い", "e": "black", "k": "くろい"}
   ]},
-  { id: "duo_ja_u84", type: "vocab", title: "Vocab: Unit 84 \u00b7 Bookstre 2 \u2014 Ask about books and supplies", items: [
+  { id: "duo_ja_u84", type: "vocab", title: "Vocab: Unit 84 \u00b7 Bookstre 2 \u2014 Talk about books you like", items: [
     {"t": "えんぴつ", "e": "pencil", "r": "enpitsu"},
     {"t": "くない", "e": "isn't", "r": "kunai"},
     {"t": "けいざい", "e": "economy", "r": "keizai"},
@@ -28910,7 +28910,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "毎月", "e": "every month", "k": "まいつき"},
     {"t": "紙", "e": "paper", "k": "かみ"}
   ]},
-  { id: "duo_ja_u85", type: "vocab", title: "Vocab: Unit 85 \u00b7 Wedding 2 \u2014 Talk about your uncle", items: [
+  { id: "duo_ja_u85", type: "vocab", title: "Vocab: Unit 85 \u00b7 Wedding 2 \u2014 Describe a wedding rehearsal", items: [
     {"t": "おじ", "e": "uncle", "r": "oji"},
     {"t": "おば", "e": "aunt", "r": "oba"},
     {"t": "かんぱいします", "e": "cheers / toast / bottoms up", "r": "kanpaishimasu"},
@@ -28930,7 +28930,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "歳", "e": "year old", "k": "さい"},
     {"t": "白い", "e": "white", "k": "しろい"}
   ]},
-  { id: "duo_ja_u86", type: "vocab", title: "Vocab: Unit 86 \u00b7 HOTEL 3 \u2014 Compare hotel options", items: [
+  { id: "duo_ja_u86", type: "vocab", title: "Vocab: Unit 86 \u00b7 HOTEL 3 \u2014 Compare hotels for your trip", items: [
     {"t": "あずかります", "e": "to take care of / to look after / to keep", "r": "azukarimasu"},
     {"t": "いくつか", "e": "some", "r": "ikutsuka"},
     {"t": "いなか", "e": "countryside", "r": "inaka"},
@@ -28955,7 +28955,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "急ぎます", "e": "hurry / rush / hasten", "k": "いそぎます"},
     {"t": "旅行", "e": "trip", "k": "りょこう"}
   ]},
-  { id: "duo_ja_u87", type: "vocab", title: "Vocab: Unit 87 \u00b7 Meeting \u2014 Ask about meeting delays", items: [
+  { id: "duo_ja_u87", type: "vocab", title: "Vocab: Unit 87 \u00b7 Meeting \u2014 Run an office meeting", items: [
     {"t": "うら", "e": "back", "r": "ura"},
     {"t": "が足りません", "e": "there aren't enough / does not have enough / there isn't enough", "k": "がたりません"},
     {"t": "こうじょう", "e": "factory", "r": "koujou"},
@@ -28978,7 +28978,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "終わり", "e": "end", "k": "おわり"},
     {"t": "返事します", "e": "reply / answer / respond", "k": "へんじします"}
   ]},
-  { id: "duo_ja_u88", type: "vocab", title: "Vocab: Unit 88 \u00b7 Exams \u2014 Talk about exams", items: [
+  { id: "duo_ja_u88", type: "vocab", title: "Vocab: Unit 88 \u00b7 Exams \u2014 Discuss schoolwork and exams", items: [
     {"t": "おきて", "e": "get up", "r": "okite"},
     {"t": "おぼえます", "e": "(will) memorize", "r": "oboemasu"},
     {"t": "かもく", "e": "subject", "r": "kamoku"},
@@ -29000,7 +29000,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "正しい", "e": "right / true / valid", "k": "ただしい"},
     {"t": "漢字", "e": "kanji", "k": "かんじ"}
   ]},
-  { id: "duo_ja_u89", type: "vocab", title: "Vocab: Unit 89 \u00b7 Video Call \u2014 Ask about background noise", items: [
+  { id: "duo_ja_u89", type: "vocab", title: "Vocab: Unit 89 \u00b7 Video Call \u2014 Check sound and video quality", items: [
     {"t": "かみなり", "e": "thunder", "r": "kaminari"},
     {"t": "がめん", "e": "screen", "r": "gamen"},
     {"t": "こえ", "e": "voice", "r": "koe"},
@@ -29064,7 +29064,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "着ます", "e": "puts on / wear / wears", "k": "きます"},
     {"t": "言います", "e": "tell / tells / say", "k": "いいます"}
   ]},
-  { id: "duo_ja_u92", type: "vocab", title: "Vocab: Unit 92 \u00b7 Travel 3 \u2014 Plan your trip", items: [
+  { id: "duo_ja_u92", type: "vocab", title: "Vocab: Unit 92 \u00b7 Travel 3 \u2014 Plan your trip abroad", items: [
     {"t": "じゅんびします", "e": "prepare / get ready / arrange", "r": "junbishimasu"},
     {"t": "それから", "e": "after that", "r": "sorekara"},
     {"t": "ぞう", "e": "elephant", "r": "zou"},
@@ -29108,7 +29108,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "百万", "e": "million", "k": "ひゃくまん"},
     {"t": "閉まります", "e": "will close / closes / close", "k": "しまります"}
   ]},
-  { id: "duo_ja_u94", type: "vocab", title: "Vocab: Unit 94 \u00b7 Research \u2014 Share your opinions", items: [
+  { id: "duo_ja_u94", type: "vocab", title: "Vocab: Unit 94 \u00b7 Research \u2014 Discuss your research project", items: [
     {"t": "いけん", "e": "opinion", "r": "iken"},
     {"t": "けんきゅう", "e": "research", "r": "kenkyuu"},
     {"t": "しょうらい", "e": "future", "r": "shourai"},
@@ -29128,7 +29128,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "課題", "e": "assignment", "k": "かだい"},
     {"t": "返します", "e": "will return / returns / return", "k": "かえします"}
   ]},
-  { id: "duo_ja_u95", type: "vocab", title: "Vocab: Unit 95 \u00b7 BBQ \u2014 Offer food and drinks", items: [
+  { id: "duo_ja_u95", type: "vocab", title: "Vocab: Unit 95 \u00b7 BBQ \u2014 Welcome guests and grill food", items: [
     {"t": "いえいえ", "e": "no / not at all / no no", "r": "ieie"},
     {"t": "ごちそうさまでした", "e": "Thank you for the meal", "r": "gochisousamadeshita"},
     {"t": "つれてきます", "e": "bring someone / take someone / lead someone", "r": "tsuretekimasu"},
@@ -29149,7 +29149,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "知り合い", "e": "acquaintance", "k": "しりあい"},
     {"t": "計画します", "e": "plan / schedule / organize", "k": "けいかくします"}
   ]},
-  { id: "duo_ja_u96", type: "vocab", title: "Vocab: Unit 96 \u00b7 Dietary \u2014 Ask about menu items", items: [
+  { id: "duo_ja_u96", type: "vocab", title: "Vocab: Unit 96 \u00b7 Dietary \u2014 Ask what a dish contains", items: [
     {"t": "いらっしゃいませ", "e": "welcome", "r": "irasshaimase"},
     {"t": "おなか", "e": "stomach", "r": "onaka"},
     {"t": "ざいりょう", "e": "ingredient", "r": "zairyou"},
@@ -29189,7 +29189,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "最初は", "e": "at first", "k": "さいしょは"},
     {"t": "誰か", "e": "someone / who ... is / somebody", "k": "だれか"}
   ]},
-  { id: "duo_ja_u98", type: "vocab", title: "Vocab: Unit 98 \u00b7 meeting 2 \u2014 Arrange the meeting room", items: [
+  { id: "duo_ja_u98", type: "vocab", title: "Vocab: Unit 98 \u00b7 meeting 2 \u2014 Set up the meeting room", items: [
     {"t": "あんないします", "e": "guide / show / lead", "r": "an'naishimasu"},
     {"t": "かいぎ", "e": "meeting", "r": "kaigi"},
     {"t": "じこしょうかいをします", "e": "introduce oneself / self-introduction / to introduce oneself", "r": "jikoshoukaiwoshimasu"},
@@ -29210,7 +29210,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "温度", "e": "temperature", "k": "おんど"},
     {"t": "送ります", "e": "will send / sends / send", "k": "おくります"}
   ]},
-  { id: "duo_ja_u99", type: "vocab", title: "Vocab: Unit 99 \u00b7 Reunion \u2014 Describe changes at home", items: [
+  { id: "duo_ja_u99", type: "vocab", title: "Vocab: Unit 99 \u00b7 Reunion \u2014 Discuss style and the weather", items: [
     {"t": "お兄さん", "e": "older brother", "k": "おにいさん"},
     {"t": "お姉さん", "e": "older sister", "k": "おねえさん"},
     {"t": "かみがた", "e": "hairstyle", "r": "kamigata"},
@@ -29234,7 +29234,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "金", "e": "gold", "k": "かね"},
     {"t": "青い", "e": "(a) blue / pale / blue", "k": "あおい"}
   ]},
-  { id: "duo_ja_u100", type: "vocab", title: "Vocab: Unit 100 \u00b7 Festivals \u2014 Talk about past holidays", items: [
+  { id: "duo_ja_u100", type: "vocab", title: "Vocab: Unit 100 \u00b7 Festivals \u2014 Talk about past celebrations", items: [
     {"t": "いしょう", "e": "costume", "r": "ishou"},
     {"t": "おいわい", "e": "celebration", "r": "oiwai"},
     {"t": "がっき", "e": "instrument", "r": "gakki"},
@@ -29257,7 +29257,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "特別", "e": "special", "k": "とくべつ"},
     {"t": "甘い", "e": "sweet / sweeter", "k": "あまい"}
   ]},
-  { id: "duo_ja_u101", type: "vocab", title: "Vocab: Unit 101 \u00b7 healthy 2 \u2014 Describe a healthy breakfast", items: [
+  { id: "duo_ja_u101", type: "vocab", title: "Vocab: Unit 101 \u00b7 healthy 2 \u2014 Discuss healthy food choices", items: [
     {"t": "えいよう", "e": "nutrition", "r": "eiyou"},
     {"t": "おすすめの", "e": "recommended", "r": "osusumeno"},
     {"t": "お手洗い", "e": "restroom", "k": "おてあらい"},
@@ -29281,7 +29281,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "選びます", "e": "select", "k": "えらびます"},
     {"t": "高い", "e": "higher / expensive / pricey", "k": "たかい"}
   ]},
-  { id: "duo_ja_u102", type: "vocab", title: "Vocab: Unit 102 \u00b7 Xchg Stdnt \u2014 Describe your school uniform", items: [
+  { id: "duo_ja_u102", type: "vocab", title: "Vocab: Unit 102 \u00b7 Xchg Stdnt \u2014 Talk about shoes and uniforms", items: [
     {"t": "じゅく", "e": "cram school", "r": "juku"},
     {"t": "せいふく", "e": "uniform", "r": "seifuku"},
     {"t": "たいそうふく", "e": "gym clothes", "r": "taisoufuku"},
@@ -29301,7 +29301,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "禁止", "e": "prohibition", "k": "きんし"},
     {"t": "部活", "e": "club activity", "k": "ぶかつ"}
   ]},
-  { id: "duo_ja_u103", type: "vocab", title: "Vocab: Unit 103 \u00b7 Day Trip \u2014 Make travel plans", items: [
+  { id: "duo_ja_u103", type: "vocab", title: "Vocab: Unit 103 \u00b7 Day Trip \u2014 Plan a day trip", items: [
     {"t": "かいそく", "e": "express train", "r": "kaisoku"},
     {"t": "かんこうきゃく", "e": "tourist", "r": "kankoukyaku"},
     {"t": "きっぷうりば", "e": "ticket area", "r": "kippuuriba"},
@@ -29322,7 +29322,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "遠い", "e": "far / far away", "k": "とおい"},
     {"t": "間に合います", "e": "be in time / be on time / make it", "k": "まにあいます"}
   ]},
-  { id: "duo_ja_u104", type: "vocab", title: "Vocab: Unit 104 \u00b7 Cultur Diff \u2014 Describe a festival gathering", items: [
+  { id: "duo_ja_u104", type: "vocab", title: "Vocab: Unit 104 \u00b7 Cultur Diff \u2014 Plan a global meetup", items: [
     {"t": "いわいます", "e": "celebrate / congratulate / observe", "r": "iwaimasu"},
     {"t": "えっ", "e": "wow", "r": "e~tsu"},
     {"t": "お知らせ", "e": "announcement", "k": "おしらせ"},
@@ -29395,7 +29395,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "道", "e": "way", "k": "みち"},
     {"t": "集めます", "e": "collect / gather / assemble", "k": "あつめます"}
   ]},
-  { id: "duo_ja_u107", type: "vocab", title: "Vocab: Unit 107 \u00b7 Conference \u2014 Point out people at events", items: [
+  { id: "duo_ja_u107", type: "vocab", title: "Vocab: Unit 107 \u00b7 Conference \u2014 Describe people and objects", items: [
     {"t": "あちら", "e": "over there", "r": "achira"},
     {"t": "いて", "e": "stay / is / being", "r": "ite"},
     {"t": "おぼえていますか", "e": "do ... remember", "r": "oboeteimasuka"},
@@ -29443,7 +29443,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "無理", "e": "impossible", "k": "むり"},
     {"t": "行かない", "e": "do not go / why don't we", "k": "ぎょうかない"}
   ]},
-  { id: "duo_ja_u109", type: "vocab", title: "Vocab: Unit 109 \u00b7 Game Cent \u2014 Invite friends to hang out", items: [
+  { id: "duo_ja_u109", type: "vocab", title: "Vocab: Unit 109 \u00b7 Game Cent \u2014 Invite friends to the arcade", items: [
     {"t": "あるよ", "e": "to be / to exist / to have", "r": "aruyo"},
     {"t": "いいね", "e": "good", "r": "iine"},
     {"t": "いいよ", "e": "okay", "r": "iiyo"},
@@ -29465,7 +29465,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "晴れ", "e": "sunny weather", "k": "はれ"},
     {"t": "楽しみ", "e": "looking forward to", "k": "たのしみ"}
   ]},
-  { id: "duo_ja_u110", type: "vocab", title: "Vocab: Unit 110 \u00b7 Stu Abroad \u2014 Ask about study abroad", items: [
+  { id: "duo_ja_u110", type: "vocab", title: "Vocab: Unit 110 \u00b7 Stu Abroad \u2014 Ask about studying abroad", items: [
     {"t": "がやくにたちます", "e": "be useful / be helpful / serve a purpose", "r": "gayakunitachimasu"},
     {"t": "きかい", "e": "machine", "r": "kikai"},
     {"t": "けいじばん", "e": "bulletin board", "r": "keijiban"},
@@ -29489,7 +29489,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "海外の", "e": "foreign", "k": "かいがいの"},
     {"t": "週間", "e": "weeks / week", "k": "しゅうかん"}
   ]},
-  { id: "duo_ja_u111", type: "vocab", title: "Vocab: Unit 111 \u00b7 Game Night \u2014 Share your favorite foods", items: [
+  { id: "duo_ja_u111", type: "vocab", title: "Vocab: Unit 111 \u00b7 Game Night \u2014 Plan a game day with friends", items: [
     {"t": "えび", "e": "shrimp", "r": "ebi"},
     {"t": "かんせんします", "e": "infect / be infected / contract", "r": "kansenshimasu"},
     {"t": "だいこん", "e": "daikon", "r": "daikon"},
@@ -29538,7 +29538,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "動きます", "e": "works / run / runs", "k": "うごきます"},
     {"t": "問題", "e": "(the) problem / (the) problems / question", "k": "もんだい"}
   ]},
-  { id: "duo_ja_u113", type: "vocab", title: "Vocab: Unit 113 \u00b7 Patient \u2014 Describe your symptoms", items: [
+  { id: "duo_ja_u113", type: "vocab", title: "Vocab: Unit 113 \u00b7 Patient \u2014 Help patients at the hospital", items: [
     {"t": "おれます", "e": "break / fold / snap", "r": "oremasu"},
     {"t": "かんじゃ", "e": "patient / sufferer / victim", "r": "kanja"},
     {"t": "けっかが出ます", "e": "results come out / results appear / results are produced", "k": "けっかがでます"},
@@ -29600,7 +29600,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "私の", "e": "mine / my / (to) me", "k": "わたしの"},
     {"t": "音楽", "e": "music", "k": "おんがく"}
   ]},
-  { id: "duo_ja_u116", type: "vocab", title: "Vocab: Unit 116 \u00b7 Healthy 3 \u2014 Describe your exercise routine", items: [
+  { id: "duo_ja_u116", type: "vocab", title: "Vocab: Unit 116 \u00b7 Healthy 3 \u2014 Talk about routines and health", items: [
     {"t": "あぶら", "e": "oil", "r": "abura"},
     {"t": "きんにく", "e": "muscle", "r": "kin'niku"},
     {"t": "こし", "e": "lower back", "r": "koshi"},
@@ -29621,7 +29621,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "病院", "e": "hospital", "k": "びょういん"},
     {"t": "足", "e": "foot", "k": "あし"}
   ]},
-  { id: "duo_ja_u117", type: "vocab", title: "Vocab: Unit 117 \u00b7 Direction 2 \u2014 Ask for directions", items: [
+  { id: "duo_ja_u117", type: "vocab", title: "Vocab: Unit 117 \u00b7 Direction 2 \u2014 Find your way with a map app", items: [
     {"t": "あんない", "e": "guide", "r": "an'nai"},
     {"t": "きごう", "e": "symbol", "r": "kigou"},
     {"t": "ことば", "e": "word", "r": "kotoba"},
@@ -29642,7 +29642,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "知ります", "e": "know / learn / find out", "k": "しります"},
     {"t": "道をまよいました", "e": "get lost / lose the way / lose my way", "k": "みちをまよいました"}
   ]},
-  { id: "duo_ja_u118", type: "vocab", title: "Vocab: Unit 118 \u00b7 Kendo \u2014 Describe your practice routine", items: [
+  { id: "duo_ja_u118", type: "vocab", title: "Vocab: Unit 118 \u00b7 Kendo \u2014 Discuss kendo and its gear", items: [
     {"t": "いっしょうけんめい", "e": "diligently", "r": "isshoukenmei"},
     {"t": "かっこよくて", "e": "cool / stylish / good-looking", "r": "kakkoyokute"},
     {"t": "きほん", "e": "basic", "r": "kihon"},
@@ -29692,7 +29692,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "閉めます", "e": "(will) close", "k": "しめます"},
     {"t": "電気", "e": "electric", "k": "でんき"}
   ]},
-  { id: "duo_ja_u120", type: "vocab", title: "Vocab: Unit 120 \u00b7 Clinic 2 \u2014 Describe your symptoms", items: [
+  { id: "duo_ja_u120", type: "vocab", title: "Vocab: Unit 120 \u00b7 Clinic 2 \u2014 Discuss symptoms and medicine", items: [
     {"t": "かゆい", "e": "itches / itchy / itching", "r": "kayui"},
     {"t": "ききます", "e": "listen / listens / ask", "r": "kikimasu"},
     {"t": "けっか", "e": "result / outcome / consequence", "r": "kekka"},
@@ -29714,7 +29714,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "痛み止め", "e": "painkiller", "k": "いたみどめ"},
     {"t": "薬", "e": "medicine", "k": "くすり"}
   ]},
-  { id: "duo_ja_u121", type: "vocab", title: "Vocab: Unit 121 \u00b7 Golden wk \u2014 Describe holiday plans", items: [
+  { id: "duo_ja_u121", type: "vocab", title: "Vocab: Unit 121 \u00b7 Golden wk \u2014 Discuss holidays in Japan", items: [
     {"t": "おりがみ", "e": "origami", "r": "origami"},
     {"t": "かぶと", "e": "helmet", "r": "kabuto"},
     {"t": "けんこう", "e": "health", "r": "kenkou"},
@@ -29739,7 +29739,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "県", "e": "Prefecture", "k": "けん"},
     {"t": "連休", "e": "long holiday", "k": "れんきゅう"}
   ]},
-  { id: "duo_ja_u122", type: "vocab", title: "Vocab: Unit 122 \u00b7 Closing \u2014 Order food at cafes", items: [
+  { id: "duo_ja_u122", type: "vocab", title: "Vocab: Unit 122 \u00b7 Closing \u2014 Order food at the mall", items: [
     {"t": "いない", "e": "do not / away / has not", "r": "inai"},
     {"t": "かっこよくない", "e": "not cool / uncool / not stylish", "r": "kakkoyokunai"},
     {"t": "こぜに", "e": "small change", "r": "kozeni"},
@@ -29765,7 +29765,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "閉店", "e": "closing", "k": "へいてん"},
     {"t": "間違えます", "e": "mistake", "k": "まちがえます"}
   ]},
-  { id: "duo_ja_u123", type: "vocab", title: "Vocab: Unit 123 \u00b7 Cleanup \u2014 Suggest ways to clean up", items: [
+  { id: "duo_ja_u123", type: "vocab", title: "Vocab: Unit 123 \u00b7 Cleanup \u2014 Pick up and sort trash", items: [
     {"t": "お", "e": "hot springs", "r": "o"},
     {"t": "おかげさまで", "e": "thanks to you", "r": "okagesamade"},
     {"t": "きょうりょく", "e": "cooperation", "r": "kyouryoku"},
@@ -29814,7 +29814,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "転校生", "e": "transfer student", "k": "てんこうせい"},
     {"t": "頭がいい", "e": "smart / intelligent / smarter", "k": "あたまがいい"}
   ]},
-  { id: "duo_ja_u125", type: "vocab", title: "Vocab: Unit 125 \u00b7 New Guy \u2014 Explain the office rules", items: [
+  { id: "duo_ja_u125", type: "vocab", title: "Vocab: Unit 125 \u00b7 New Guy \u2014 Explain how the office works", items: [
     {"t": "おもて", "e": "front", "r": "omote"},
     {"t": "おゆ", "e": "hot water", "r": "oyu"},
     {"t": "じゆうに", "e": "freely", "r": "jiyuuni"},
@@ -29837,7 +29837,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "皆さん", "e": "everyone", "k": "みなさん"},
     {"t": "自分の", "e": "my own", "k": "じぶんの"}
   ]},
-  { id: "duo_ja_u126", type: "vocab", title: "Vocab: Unit 126 \u00b7 Gaming \u2014 Talk about new games", items: [
+  { id: "duo_ja_u126", type: "vocab", title: "Vocab: Unit 126 \u00b7 Gaming \u2014 Talk about new game releases", items: [
     {"t": "えー", "e": "Ugh", "r": "ē"},
     {"t": "お金をもらいます", "e": "receive / get / obtain", "k": "おかねをもらいます"},
     {"t": "せかい", "e": "world", "r": "sekai"},
@@ -29864,7 +29864,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "石", "e": "stone", "k": "いし"},
     {"t": "美しい", "e": "beautiful / gorgeous", "k": "うつくしい"}
   ]},
-  { id: "duo_ja_u127", type: "vocab", title: "Vocab: Unit 127 \u00b7 Moving out \u2014 Reduce waste at home", items: [
+  { id: "duo_ja_u127", type: "vocab", title: "Vocab: Unit 127 \u00b7 Moving out \u2014 Sort and pack your things", items: [
     {"t": "いっしょに", "e": "together", "r": "isshoni"},
     {"t": "かがみ", "e": "mirror", "r": "kagami"},
     {"t": "きびしい", "e": "harsh / stern / strict", "r": "kibishii"},
@@ -29889,7 +29889,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "家電", "e": "home appliance", "k": "かでん"},
     {"t": "自転車", "e": "bicycle", "k": "じてんしゃ"}
   ]},
-  { id: "duo_ja_u128", type: "vocab", title: "Vocab: Unit 128 \u00b7 Senior Yr \u2014 Talk about your work plans", items: [
+  { id: "duo_ja_u128", type: "vocab", title: "Vocab: Unit 128 \u00b7 Senior Yr \u2014 Talk about plans and routines", items: [
     {"t": "おめでとうございます", "e": "congratulations", "r": "omedetougozaimasu"},
     {"t": "きんちょうします", "e": "to be nervous / to be tense / to feel anxious", "r": "kinchoushimasu"},
     {"t": "けんしゅう", "e": "training", "r": "kenshuu"},
@@ -29912,7 +29912,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "遅く", "e": "late", "k": "おそく"},
     {"t": "食べてみます", "e": "try to eat / try eating / taste", "k": "しょくべてみます"}
   ]},
-  { id: "duo_ja_u129", type: "vocab", title: "Vocab: Unit 129 \u00b7 Contingen \u2014 Ask about train times", items: [
+  { id: "duo_ja_u129", type: "vocab", title: "Vocab: Unit 129 \u00b7 Contingen \u2014 Take trains and pay fares", items: [
     {"t": "おうふく", "e": "round-trip", "r": "oufuku"},
     {"t": "こうべ", "e": "Kobe / head / capital", "r": "koube"},
     {"t": "たこ焼き", "e": "takoyaki", "k": "たこやき"},
@@ -29935,7 +29935,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "足ります", "e": "be enough / suffice / be sufficient", "k": "たります"},
     {"t": "都市", "e": "city", "k": "とし"}
   ]},
-  { id: "duo_ja_u130", type: "vocab", title: "Vocab: Unit 130 \u00b7 Healthy Ch \u2014 Describe how you feel", items: [
+  { id: "duo_ja_u130", type: "vocab", title: "Vocab: Unit 130 \u00b7 Healthy Ch \u2014 Talk about aches and fatigue", items: [
     {"t": "あめ", "e": "candy", "r": "ame"},
     {"t": "かいてき", "e": "comfortable", "r": "kaiteki"},
     {"t": "くわえます", "e": "hold in mouth / bite / add", "r": "kuwaemasu"},
@@ -29956,7 +29956,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "部分", "e": "part", "k": "ぶぶん"},
     {"t": "頭痛", "e": "headache", "k": "ずつう"}
   ]},
-  { id: "duo_ja_u131", type: "vocab", title: "Vocab: Unit 131 \u00b7 games \u2014 Items: Share where items are kept", items: [
+  { id: "duo_ja_u131", type: "vocab", title: "Vocab: Unit 131 \u00b7 games \u2014 Talk about games on a train", items: [
     {"t": "すすめます", "e": "recommend / suggest / advance", "r": "susumemasu"},
     {"t": "サプリ", "e": "supplement / dietary supplement / vitamin supplement", "r": "sapuri"},
     {"t": "チームワーク", "e": "teamwork", "r": "chīmuwāku"},
@@ -29978,7 +29978,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "運", "e": "luck", "k": "うん"},
     {"t": "限界", "e": "limit", "k": "げんかい"}
   ]},
-  { id: "duo_ja_u132", type: "vocab", title: "Vocab: Unit 132 \u00b7 storytelling \u2014 Encounters: Share contact information", items: [
+  { id: "duo_ja_u132", type: "vocab", title: "Vocab: Unit 132 \u00b7 storytelling \u2014 Plan a company trip", items: [
     {"t": "うそ", "e": "lie", "r": "uso"},
     {"t": "おどろきます", "e": "to be surprised / to be amazed / to be astonished", "r": "odorokimasu"},
     {"t": "ついています", "e": "there's ... on", "r": "tsuiteimasu"},
@@ -30000,7 +30000,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "逮捕します", "e": "arrest / apprehend / capture", "k": "たいほします"},
     {"t": "騙します", "e": "deceive / cheat / trick", "k": "だまします"}
   ]},
-  { id: "duo_ja_u133", type: "vocab", title: "Vocab: Unit 133 \u00b7 hobbies 4 \u2014 Customs: Ask about local customs", items: [
+  { id: "duo_ja_u133", type: "vocab", title: "Vocab: Unit 133 \u00b7 hobbies 4 \u2014 Talk about hobbies and games", items: [
     {"t": "お湯", "e": "hot water", "k": "おゆ"},
     {"t": "げんかん", "e": "entryway", "r": "genkan"},
     {"t": "こうげきします", "e": "attack / strike / assault", "r": "kougekishimasu"},
@@ -30024,7 +30024,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "紹介します", "e": "presents / present / introduces", "k": "しょうかいします"},
     {"t": "覚えます", "e": "(will) memorize", "k": "おぼえます"}
   ]},
-  { id: "duo_ja_u134", type: "vocab", title: "Vocab: Unit 134 \u00b7 daily routines \u2014 Everyday Life: Share daily routines", items: [
+  { id: "duo_ja_u134", type: "vocab", title: "Vocab: Unit 134 \u00b7 daily routines \u2014 Offer help and share plans", items: [
     {"t": "う", "e": "u", "r": "u"},
     {"t": "がんばります", "e": "will do my best / will work hard / try my best", "r": "ganbarimasu"},
     {"t": "きちんとした", "e": "tidy", "r": "kichintoshita"},
@@ -30046,7 +30046,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "絵本", "e": "picture book", "k": "えほん"},
     {"t": "銀行員", "e": "bank clerk", "k": "ぎんこういん"}
   ]},
-  { id: "duo_ja_u135", type: "vocab", title: "Vocab: Unit 135 \u00b7 celebrations \u2014 Village: Get ready for a party", items: [
+  { id: "duo_ja_u135", type: "vocab", title: "Vocab: Unit 135 \u00b7 celebrations \u2014 Get ready for the party tonight", items: [
     {"t": "いいところ", "e": "good point", "r": "iitokoro"},
     {"t": "うまく", "e": "well", "r": "umaku"},
     {"t": "にくい", "e": "difficult to / hard to / tough to", "r": "nikui"},
@@ -30067,7 +30067,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "誕生日", "e": "birthday", "k": "たんじょうび"},
     {"t": "遊園地", "e": "amusement park", "k": "ゆうえんち"}
   ]},
-  { id: "duo_ja_u136", type: "vocab", title: "Vocab: Unit 136 \u00b7 chores \u2014 Home Life: Ask for help with chores", items: [
+  { id: "duo_ja_u136", type: "vocab", title: "Vocab: Unit 136 \u00b7 chores \u2014 Ask for help with chores", items: [
     {"t": "あいさつ", "e": "greeting", "r": "aisatsu"},
     {"t": "お客様", "e": "customer", "k": "おきゃくさま"},
     {"t": "くれます", "e": "for me / gives / give", "r": "kuremasu"},
@@ -30086,7 +30086,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "表示", "e": "label", "k": "ひょうじ"},
     {"t": "電池", "e": "battery", "k": "でんち"}
   ]},
-  { id: "duo_ja_u137", type: "vocab", title: "Vocab: Unit 137 \u00b7 seasonal changes \u2014 Seasons: Talk about the seasons", items: [
+  { id: "duo_ja_u137", type: "vocab", title: "Vocab: Unit 137 \u00b7 seasonal changes \u2014 Talk about seasonal changes", items: [
     {"t": "くします", "e": "comb / arrange / tidy", "r": "kushimasu"},
     {"t": "くなります", "e": "become / get / grow", "r": "kunarimasu"},
     {"t": "こうずい", "e": "flood", "r": "kouzui"},
@@ -30112,7 +30112,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "預けます", "e": "(I will) leave", "k": "あずけます"},
     {"t": "鼻", "e": "nose", "k": "はな"}
   ]},
-  { id: "duo_ja_u138", type: "vocab", title: "Vocab: Unit 138 \u00b7 professional life \u2014 Community: Describe your community", items: [
+  { id: "duo_ja_u138", type: "vocab", title: "Vocab: Unit 138 \u00b7 professional life \u2014 Talk about offices and parking", items: [
     {"t": "ほこり", "e": "dust", "r": "hokori"},
     {"t": "コミュニケーション", "e": "communication", "r": "komyunikēshon"},
     {"t": "マッチ", "e": "match", "r": "matchi"},
@@ -30135,7 +30135,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "通り", "e": "street", "k": "とおり"},
     {"t": "駐車場", "e": "parking lot", "k": "ちゅうしゃじょう"}
   ]},
-  { id: "duo_ja_u139", type: "vocab", title: "Vocab: Unit 139 \u00b7 free time \u2014 Experiences: Describe things you tried", items: [
+  { id: "duo_ja_u139", type: "vocab", title: "Vocab: Unit 139 \u00b7 free time \u2014 Talk about activities to try", items: [
     {"t": "での", "e": "at / on / in", "r": "deno"},
     {"t": "みます", "e": "tries / watch", "r": "mimasu"},
     {"t": "リラックスします", "e": "relax / unwind / chill out", "r": "rirakkusushimasu"},
@@ -30156,7 +30156,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "輸出します", "e": "export / ship out / send abroad", "k": "ゆしゅつします"},
     {"t": "降ります", "e": "get off / will get off / gets off", "k": "くだります"}
   ]},
-  { id: "duo_ja_u140", type: "vocab", title: "Vocab: Unit 140 \u00b7 describing events \u2014 Artists: Invite friends to events", items: [
+  { id: "duo_ja_u140", type: "vocab", title: "Vocab: Unit 140 \u00b7 describing events \u2014 Talk about charity events", items: [
     {"t": "されます", "e": "do / be done / perform", "r": "saremasu"},
     {"t": "だと思いました", "e": "I thought that / I believed that / I considered that", "k": "だとおもいました"},
     {"t": "られます", "e": "can", "r": "raremasu"},
@@ -30179,7 +30179,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "窓", "e": "window", "k": "まど"},
     {"t": "誘います", "e": "(I) invite / invite", "k": "さそいます"}
   ]},
-  { id: "duo_ja_u141", type: "vocab", title: "Vocab: Unit 141 \u00b7 social media \u2014 Online Life: Make plans in a group chat", items: [
+  { id: "duo_ja_u141", type: "vocab", title: "Vocab: Unit 141 \u00b7 social media \u2014 Make plans in a group chat", items: [
     {"t": "と", "e": "and / that / door", "r": "to"},
     {"t": "めす", "e": "female", "r": "mesu"},
     {"t": "アンケート", "e": "survey", "r": "ankēto"},
@@ -30200,7 +30200,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "返信します", "e": "reply / respond / answer", "k": "へんしんします"},
     {"t": "面白い", "e": "interesting / funny", "k": "おもしろい"}
   ]},
-  { id: "duo_ja_u142", type: "vocab", title: "Vocab: Unit 142 \u00b7 city life \u2014 Objects: Talk about issues with equipment", items: [
+  { id: "duo_ja_u142", type: "vocab", title: "Vocab: Unit 142 \u00b7 city life \u2014 Talk about broken equipment", items: [
     {"t": "あそこ", "e": "over there", "r": "asoko"},
     {"t": "あの", "e": "those / ah / that (over there)", "r": "ano"},
     {"t": "あれ", "e": "that", "r": "are"},
@@ -30222,7 +30222,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "警察官", "e": "police officer", "k": "けいさつかん"},
     {"t": "黄色い", "e": "yellow", "k": "きいろい"}
   ]},
-  { id: "duo_ja_u143", type: "vocab", title: "Vocab: Unit 143 \u00b7 personal background \u2014 Milestones: Express feelings about milestones", items: [
+  { id: "duo_ja_u143", type: "vocab", title: "Vocab: Unit 143 \u00b7 personal background \u2014 Describe a shrine visit", items: [
     {"t": "しょうちょう", "e": "symbol", "r": "shouchou"},
     {"t": "不便", "e": "inconvenient", "k": "ふべん"},
     {"t": "信じます", "e": "believe / believes", "k": "しんじます"},
@@ -30239,7 +30239,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "間違えます", "e": "mistake", "k": "まちがえます"},
     {"t": "鳥居", "e": "torii", "k": "とりい"}
   ]},
-  { id: "duo_ja_u144", type: "vocab", title: "Vocab: Unit 144 \u00b7 personal experiences \u2014 Situations: Ask questions at an event", items: [
+  { id: "duo_ja_u144", type: "vocab", title: "Vocab: Unit 144 \u00b7 personal experiences \u2014 Talk about a local event", items: [
     {"t": "かみます", "e": "bite / chew / gnaw", "r": "kamimasu"},
     {"t": "しょっちゅう", "e": "frequent", "r": "shotchuu"},
     {"t": "ショック", "e": "shock", "r": "shokku"},
@@ -30257,7 +30257,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "逃げ出します", "e": "run away / escape / flee", "k": "にげだします"},
     {"t": "連れて来ます", "e": "bring / brings", "k": "つれてくます"}
   ]},
-  { id: "duo_ja_u145", type: "vocab", title: "Vocab: Unit 145 \u00b7 school life \u2014 Friends: Talk about survey results", items: [
+  { id: "duo_ja_u145", type: "vocab", title: "Vocab: Unit 145 \u00b7 school life \u2014 Discuss survey results", items: [
     {"t": "お祈り", "e": "prayer", "k": "おいのり"},
     {"t": "この前", "e": "the other day", "k": "このまえ"},
     {"t": "そういうふうに", "e": "in that way", "r": "souiufuuni"},
@@ -30278,7 +30278,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "順番", "e": "order", "k": "じゅんばん"},
     {"t": "魔法", "e": "magic", "k": "まほう"}
   ]},
-  { id: "duo_ja_u146", type: "vocab", title: "Vocab: Unit 146 \u00b7 sports \u2014 Daily Life: Describe your morning routine", items: [
+  { id: "duo_ja_u146", type: "vocab", title: "Vocab: Unit 146 \u00b7 sports \u2014 Get ready for the tournament", items: [
     {"t": "せんたく", "e": "laundry", "r": "sentaku"},
     {"t": "ために", "e": "for the purpose of", "r": "tameni"},
     {"t": "よかった", "e": "I am glad / better / I'm glad", "r": "yokatta"},
@@ -30299,7 +30299,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "飛行機", "e": "airplane", "k": "ひこうき"},
     {"t": "高さ", "e": "height", "k": "たかさ"}
   ]},
-  { id: "duo_ja_u147", type: "vocab", title: "Vocab: Unit 147 \u00b7 neighborhoods \u2014 Community: Ask a neighbor for help", items: [
+  { id: "duo_ja_u147", type: "vocab", title: "Vocab: Unit 147 \u00b7 neighborhoods \u2014 Brief your house sitter", items: [
     {"t": "あちこち", "e": "here and there", "r": "achikochi"},
     {"t": "たまたま", "e": "by chance", "r": "tamatama"},
     {"t": "ゆるい", "e": "loose", "r": "yurui"},
@@ -30321,7 +30321,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "開きます", "e": "am going to throw / are going to throw / opens", "k": "ひらきます"},
     {"t": "音", "e": "sound", "k": "おと"}
   ]},
-  { id: "duo_ja_u148", type: "vocab", title: "Vocab: Unit 148 \u00b7 babysitting \u2014 Children: Talk with children", items: [
+  { id: "duo_ja_u148", type: "vocab", title: "Vocab: Unit 148 \u00b7 babysitting \u2014 Plan snacks and daily routines", items: [
     {"t": "おやつ", "e": "snack", "r": "oyatsu"},
     {"t": "くちびる", "e": "lip", "r": "kuchibiru"},
     {"t": "じゃないと", "e": "unless", "r": "janaito"},
@@ -30343,7 +30343,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "面倒を見ます", "e": "take care of / look after / take responsibility for", "k": "めんどうをみます"},
     {"t": "頼みます", "e": "will ask / ask", "k": "たのみます"}
   ]},
-  { id: "duo_ja_u149", type: "vocab", title: "Vocab: Unit 149 \u00b7 eating habits \u2014 Snacks: Discuss your food habits", items: [
+  { id: "duo_ja_u149", type: "vocab", title: "Vocab: Unit 149 \u00b7 eating habits \u2014 Talk about your eating habits", items: [
     {"t": "いました", "e": "was / there were / stayed", "r": "imashita"},
     {"t": "お菓子", "e": "snack", "k": "おかし"},
     {"t": "すすめます", "e": "recommend / suggest / advance", "r": "susumemasu"},
@@ -30366,7 +30366,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "買います", "e": "will buy", "k": "かいます"},
     {"t": "電話番号", "e": "phone number", "k": "でんわばんごう"}
   ]},
-  { id: "duo_ja_u150", type: "vocab", title: "Vocab: Unit 150 \u00b7 living spaces \u2014 Home: Suggest weekend activities", items: [
+  { id: "duo_ja_u150", type: "vocab", title: "Vocab: Unit 150 \u00b7 living spaces \u2014 Suggest weekend activities", items: [
     {"t": "には", "e": "by (the) / there is... to... / for (the)", "r": "niha"},
     {"t": "まとめ", "e": "summary", "r": "matome"},
     {"t": "アシスタント", "e": "assistant", "r": "ashisutanto"},
@@ -30386,7 +30386,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "若い", "e": "young", "k": "わかい"},
     {"t": "遊歩道", "e": "promenade", "k": "ゆうほどう"}
   ]},
-  { id: "duo_ja_u151", type: "vocab", title: "Vocab: Unit 151 \u00b7 moving \u2014 Daily Scenes: Share safety tips", items: [
+  { id: "duo_ja_u151", type: "vocab", title: "Vocab: Unit 151 \u00b7 moving \u2014 Compare city and country life", items: [
     {"t": "きます", "e": "wears / wear / comes", "r": "kimasu"},
     {"t": "という", "e": "called", "r": "toiu"},
     {"t": "によります", "e": "depend on / be due to / be caused by", "r": "niyorimasu"},
@@ -30406,7 +30406,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "都会", "e": "urban", "k": "とかい"},
     {"t": "電話", "e": "phone", "k": "でんわ"}
   ]},
-  { id: "duo_ja_u152", type: "vocab", title: "Vocab: Unit 152 \u00b7 outdoor activities \u2014 Group: Plan a group camping trip", items: [
+  { id: "duo_ja_u152", type: "vocab", title: "Vocab: Unit 152 \u00b7 outdoor activities \u2014 Plan a group camping trip", items: [
     {"t": "きます", "e": "wears / wear / comes", "r": "kimasu"},
     {"t": "けんかします", "e": "fight / quarrel / argue", "r": "kenkashimasu"},
     {"t": "しかたない", "e": "it can't be helped / unavoidable / no choice", "r": "shikatanai"},
@@ -30426,7 +30426,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "迷います", "e": "to get lost / to hesitate / to be puzzled", "k": "まよいます"},
     {"t": "都合がいい", "e": "convenient", "k": "つごうがいい"}
   ]},
-  { id: "duo_ja_u153", type: "vocab", title: "Vocab: Unit 153 \u00b7 commuting \u2014 Station: Stop by before work", items: [
+  { id: "duo_ja_u153", type: "vocab", title: "Vocab: Unit 153 \u00b7 commuting \u2014 Talk about your daily routine", items: [
     {"t": "しまいます", "e": "will end up", "r": "shimaimasu"},
     {"t": "すぎます", "e": "is too / tastes too / are too", "r": "sugimasu"},
     {"t": "もし", "e": "if / supposing", "r": "moshi"},
@@ -30447,7 +30447,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "雇います", "e": "employ / hire / engage", "k": "やといます"},
     {"t": "駅員", "e": "station attendant", "k": "えきいん"}
   ]},
-  { id: "duo_ja_u154", type: "vocab", title: "Vocab: Unit 154 \u00b7 gatherings \u2014 Gathering: Ask about family roles", items: [
+  { id: "duo_ja_u154", type: "vocab", title: "Vocab: Unit 154 \u00b7 gatherings \u2014 Talk about a family gathering", items: [
     {"t": "あります", "e": "is / (they) are / have", "r": "arimasu"},
     {"t": "いいですよ", "e": "It's good / That's fine / It's okay", "r": "iidesuyo"},
     {"t": "お腹が空きました", "e": "(I am) hungry", "k": "おなかがすきました"},
@@ -30465,7 +30465,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "迎えます", "e": "to welcome / to greet / to meet", "k": "むかえます"},
     {"t": "首", "e": "neck", "k": "くび"}
   ]},
-  { id: "duo_ja_u155", type: "vocab", title: "Vocab: Unit 155 \u00b7 roommates and co-living \u2014 Living: Agree on house rules", items: [
+  { id: "duo_ja_u155", type: "vocab", title: "Vocab: Unit 155 \u00b7 roommates and co-living \u2014 Discuss plans and house rules", items: [
     {"t": "お土産", "e": "souvenir", "k": "おみやげ"},
     {"t": "お年寄り", "e": "elderly person", "k": "おとしより"},
     {"t": "ければよかった", "e": "I wish I had / should have / if only I had", "r": "kerebayokatta"},
@@ -30484,7 +30484,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "火", "e": "fire", "k": "ひ"},
     {"t": "目標", "e": "goal", "k": "めじるし"}
   ]},
-  { id: "duo_ja_u156", type: "vocab", title: "Vocab: Unit 156 \u00b7 time periods \u2014 Events: Share study abroad experiences", items: [
+  { id: "duo_ja_u156", type: "vocab", title: "Vocab: Unit 156 \u00b7 time periods \u2014 Talk about studying abroad", items: [
     {"t": "かります", "e": "borrow", "r": "karimasu"},
     {"t": "せきたん", "e": "coal", "r": "sekitan"},
     {"t": "ところ", "e": "about to / somewhere / places", "r": "tokoro"},
@@ -30504,7 +30504,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "過ぎます", "e": "too much", "k": "すぎます"},
     {"t": "道具", "e": "tool", "k": "どうぐ"}
   ]},
-  { id: "duo_ja_u157", type: "vocab", title: "Vocab: Unit 157 \u00b7 personal goals \u2014 Daily Life: Describe your daily routine", items: [
+  { id: "duo_ja_u157", type: "vocab", title: "Vocab: Unit 157 \u00b7 personal goals \u2014 Show a friend the park", items: [
     {"t": "お互い", "e": "each other", "k": "おたがい"},
     {"t": "ければ", "e": "if", "r": "kereba"},
     {"t": "であれば", "e": "I were / if I am", "r": "deareba"},
@@ -30528,7 +30528,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "答え", "e": "answer", "k": "こたえ"},
     {"t": "鳥", "e": "bird", "k": "とり"}
   ]},
-  { id: "duo_ja_u158", type: "vocab", title: "Vocab: Unit 158 \u00b7 workplace communications \u2014 Preparation: Share your project goals", items: [
+  { id: "duo_ja_u158", type: "vocab", title: "Vocab: Unit 158 \u00b7 workplace communications \u2014 Discuss your ongoing project", items: [
     {"t": "きます", "e": "wears / wear / comes", "r": "kimasu"},
     {"t": "によって", "e": "depending on", "r": "niyotte"},
     {"t": "ゴミ袋", "e": "garbage bag", "k": "ごみふくろ"},
@@ -30549,7 +30549,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "芸術的", "e": "artistic", "k": "げいじゅつてき"},
     {"t": "連絡", "e": "message", "k": "れんらく"}
   ]},
-  { id: "duo_ja_u159", type: "vocab", title: "Vocab: Unit 159 \u00b7 cost of living \u2014 Home Life: Share your home routines", items: [
+  { id: "duo_ja_u159", type: "vocab", title: "Vocab: Unit 159 \u00b7 cost of living \u2014 Explain how things work", items: [
     {"t": "かなり", "e": "considerably", "r": "kanari"},
     {"t": "ご両親", "e": "your parents", "k": "ごりょうしん"},
     {"t": "それから", "e": "after that / and then / then", "r": "sorekara"},
@@ -30573,7 +30573,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "税金", "e": "tax", "k": "ぜいきん"},
     {"t": "言葉", "e": "word", "k": "ことば"}
   ]},
-  { id: "duo_ja_u160", type: "vocab", title: "Vocab: Unit 160 \u00b7 medical care \u2014 Hospital: Share your hospital experience", items: [
+  { id: "duo_ja_u160", type: "vocab", title: "Vocab: Unit 160 \u00b7 medical care \u2014 Discuss schools and teachers", items: [
     {"t": "させます", "e": "make / makes", "r": "sasemasu"},
     {"t": "さらに", "e": "furthermore", "r": "sarani"},
     {"t": "ちゃんとした", "e": "proper", "r": "chantoshita"},
@@ -30592,7 +30592,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "看護師", "e": "nurse", "k": "かんごし"},
     {"t": "隅", "e": "corner", "k": "すみ"}
   ]},
-  { id: "duo_ja_u161", type: "vocab", title: "Vocab: Unit 161 \u00b7 directions 2 \u2014 Directions: Ask for directions", items: [
+  { id: "duo_ja_u161", type: "vocab", title: "Vocab: Unit 161 \u00b7 directions 2 \u2014 Plan where to go after school", items: [
     {"t": "いきます", "e": "live / go / goes", "r": "ikimasu"},
     {"t": "お腹がいっぱい", "e": "full", "k": "おはらがいっぱい"},
     {"t": "デザイナー", "e": "designer", "r": "dezainā"},
@@ -30613,7 +30613,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "隣", "e": "next to", "k": "となり"},
     {"t": "高速道路", "e": "highway", "k": "こうそくどうろ"}
   ]},
-  { id: "duo_ja_u162", type: "vocab", title: "Vocab: Unit 162 \u00b7 aspirations \u2014 Goals: Set team goals", items: [
+  { id: "duo_ja_u162", type: "vocab", title: "Vocab: Unit 162 \u00b7 aspirations \u2014 Prepare for a club activity", items: [
     {"t": "あこがれます", "e": "long for / yearn for / admire", "r": "akogaremasu"},
     {"t": "うれしい", "e": "happy / glad / pleased", "r": "ureshii"},
     {"t": "そう", "e": "that way", "r": "sou"},
@@ -30636,7 +30636,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "途中で", "e": "in the middle of", "k": "とちゅうで"},
     {"t": "遊びます", "e": "play / will play / plays", "k": "あそびます"}
   ]},
-  { id: "duo_ja_u163", type: "vocab", title: "Vocab: Unit 163 \u00b7 future plans \u2014 Results: Give reasons for choices", items: [
+  { id: "duo_ja_u163", type: "vocab", title: "Vocab: Unit 163 \u00b7 future plans \u2014 Plan ahead for a trip", items: [
     {"t": "おきます", "e": "get up / going to wake up / wake up", "r": "okimasu"},
     {"t": "こうきしんがつよい", "e": "curious / inquisitive / eager to learn", "r": "koukishingatsuyoi"},
     {"t": "し", "e": "play / have / four", "r": "shi"},
@@ -30658,7 +30658,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "落ちます", "e": "fall", "k": "おちます"},
     {"t": "靴下", "e": "sock", "k": "くつした"}
   ]},
-  { id: "duo_ja_u164", type: "vocab", title: "Vocab: Unit 164 \u00b7 friendships \u2014 Friends: Talk about your friends", items: [
+  { id: "duo_ja_u164", type: "vocab", title: "Vocab: Unit 164 \u00b7 friendships \u2014 Discuss plans and interests", items: [
     {"t": "お疲れ様でした", "e": "you did good work / goodbye (at work)", "k": "おつかれさまでした"},
     {"t": "くれます", "e": "for me / gives / give", "r": "kuremasu"},
     {"t": "こうたくのある", "e": "glossy / polished / shiny", "r": "koutakunoaru"},
@@ -30679,7 +30679,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "過ごします", "e": "are going to spend / spend / are spending", "k": "すごします"},
     {"t": "韓国", "e": "(South) Korean / (South) Korea / korea", "k": "かんこく"}
   ]},
-  { id: "duo_ja_u165", type: "vocab", title: "Vocab: Unit 165 \u00b7 cooking 2 \u2014 Kitchen: Ask what's in a dish", items: [
+  { id: "duo_ja_u165", type: "vocab", title: "Vocab: Unit 165 \u00b7 cooking 2 \u2014 Talk about a cooking contest", items: [
     {"t": "かき混ぜます", "e": "stir / mix / scramble", "k": "かきまぜます"},
     {"t": "すごい", "e": "amazing / terrific / incredible", "r": "sugoi"},
     {"t": "せっかく", "e": "with trouble / specially / especially", "r": "sekkaku"},
@@ -30702,7 +30702,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "香り", "e": "fragrance", "k": "かおり"},
     {"t": "香辛料", "e": "spice", "k": "こうしんりょう"}
   ]},
-  { id: "duo_ja_u166", type: "vocab", title: "Vocab: Unit 166 \u00b7 crisis response \u2014 Emergencies: Share safety tips", items: [
+  { id: "duo_ja_u166", type: "vocab", title: "Vocab: Unit 166 \u00b7 crisis response \u2014 Share emergency safety tips", items: [
     {"t": "でも", "e": "but / however / neither", "r": "demo"},
     {"t": "どんなに", "e": "no matter how", "r": "don'nani"},
     {"t": "の形", "e": "shape of", "k": "のかたち"},
@@ -30723,7 +30723,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "空気", "e": "air", "k": "くうき"},
     {"t": "結果", "e": "result", "k": "けっか"}
   ]},
-  { id: "duo_ja_u167", type: "vocab", title: "Vocab: Unit 167 \u00b7 extreme weather events \u2014 Weather: Describe recent weather", items: [
+  { id: "duo_ja_u167", type: "vocab", title: "Vocab: Unit 167 \u00b7 extreme weather events \u2014 Describe extreme weather", items: [
     {"t": "けど", "e": "but / even though", "r": "kedo"},
     {"t": "それで", "e": "so / and / that's", "r": "sorede"},
     {"t": "たき", "e": "waterfall", "r": "taki"},
@@ -30744,7 +30744,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "続きます", "e": "continue / continues", "k": "つづきます"},
     {"t": "議論", "e": "discussion", "k": "ぎろん"}
   ]},
-  { id: "duo_ja_u168", type: "vocab", title: "Vocab: Unit 168 \u00b7 well-being \u2014 Planning: Make a plan for your day", items: [
+  { id: "duo_ja_u168", type: "vocab", title: "Vocab: Unit 168 \u00b7 well-being \u2014 Talk about reducing stress", items: [
     {"t": "お子さん", "e": "child", "k": "おこさん"},
     {"t": "かなと思います", "e": "I wonder if / I think that / I feel like", "k": "かなとおもいます"},
     {"t": "によると", "e": "according to", "r": "niyoruto"},
@@ -30765,7 +30765,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "資源", "e": "resource", "k": "しげん"},
     {"t": "食事", "e": "meal", "k": "しょくじ"}
   ]},
-  { id: "duo_ja_u169", type: "vocab", title: "Vocab: Unit 169 \u00b7 climate \u2014 Supplies: Ask about available supplies", items: [
+  { id: "duo_ja_u169", type: "vocab", title: "Vocab: Unit 169 \u00b7 climate \u2014 Talk about the weather", items: [
     {"t": "がっかりします", "e": "be disappointed / feel disappointed / be disheartened", "r": "gakkarishimasu"},
     {"t": "が必要です", "e": "need / (I) need / needs", "k": "がひつようです"},
     {"t": "くぎ", "e": "nail", "r": "kugi"},
@@ -30787,7 +30787,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "自販機", "e": "vending machine", "k": "じはんき"},
     {"t": "調べます", "e": "(will) search for", "k": "しらべます"}
   ]},
-  { id: "duo_ja_u170", type: "vocab", title: "Vocab: Unit 170 \u00b7 parenting \u2014 School: Describe your school routine", items: [
+  { id: "duo_ja_u170", type: "vocab", title: "Vocab: Unit 170 \u00b7 parenting \u2014 Help your child study at home", items: [
     {"t": "もう一つは", "e": "another", "k": "もういちつは"},
     {"t": "よくない", "e": "not good / do not ... good", "r": "yokunai"},
     {"t": "取っ手", "e": "handle", "k": "とって"},
@@ -30807,7 +30807,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "防ぎます", "e": "blocks (against)", "k": "ふせぎます"},
     {"t": "電気をつけます", "e": "turn on the light / switch on the light / light up the light", "k": "でんきをつけます"}
   ]},
-  { id: "duo_ja_u171", type: "vocab", title: "Vocab: Unit 171 \u00b7 traffic \u2014 Outings: Ask for directions", items: [
+  { id: "duo_ja_u171", type: "vocab", title: "Vocab: Unit 171 \u00b7 traffic \u2014 Discuss getting around town", items: [
     {"t": "じゅうたい", "e": "traffic jam", "r": "juutai"},
     {"t": "ちょうこくか", "e": "sculptor", "r": "choukokuka"},
     {"t": "と", "e": "and / that / door", "r": "to"},
@@ -30827,7 +30827,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "量", "e": "amount", "k": "りょう"},
     {"t": "頼みます", "e": "will ask / ask", "k": "たのみます"}
   ]},
-  { id: "duo_ja_u172", type: "vocab", title: "Vocab: Unit 172 \u00b7 gossip and rumors \u2014 Rumors: Share office rumors", items: [
+  { id: "duo_ja_u172", type: "vocab", title: "Vocab: Unit 172 \u00b7 gossip and rumors \u2014 Guess what might happen", items: [
     {"t": "うわさ", "e": "rumor", "r": "uwasa"},
     {"t": "かもしれません", "e": "possibly / might / may", "r": "kamoshiremasen"},
     {"t": "ただ", "e": "just", "r": "tada"},
@@ -30847,7 +30847,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "覚えておきます", "e": "remember / keep in mind / note", "k": "さとりえておきます"},
     {"t": "隠します", "e": "hide / conceal / cover", "k": "かくします"}
   ]},
-  { id: "duo_ja_u173", type: "vocab", title: "Vocab: Unit 173 \u00b7 music \u2014 Music: Talk about your favorite music", items: [
+  { id: "duo_ja_u173", type: "vocab", title: "Vocab: Unit 173 \u00b7 music \u2014 Talk about classical music", items: [
     {"t": "ながら", "e": "as / while", "r": "nagara"},
     {"t": "クラシック", "e": "classical music", "r": "kurashikku"},
     {"t": "ピアニスト", "e": "pianist", "r": "pianisuto"},
@@ -30868,7 +30868,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "録音", "e": "recording", "k": "ろくおん"},
     {"t": "電卓", "e": "calculator", "k": "でんたく"}
   ]},
-  { id: "duo_ja_u174", type: "vocab", title: "Vocab: Unit 174 \u00b7 healthy habits \u2014 Habits: Describe your daily habits", items: [
+  { id: "duo_ja_u174", type: "vocab", title: "Vocab: Unit 174 \u00b7 healthy habits \u2014 Talk about healthy habits", items: [
     {"t": "ようにします", "e": "try to / make sure to / endeavor to", "r": "younishimasu"},
     {"t": "ようになります", "e": "become able to / come to / start to", "r": "youninarimasu"},
     {"t": "メッセージ", "e": "message", "r": "messēji"},
@@ -30887,7 +30887,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "調子", "e": "condition", "k": "ちょうし"},
     {"t": "離婚", "e": "divorce", "k": "りこん"}
   ]},
-  { id: "duo_ja_u175", type: "vocab", title: "Vocab: Unit 175 \u00b7 safety precautions \u2014 Safety: Follow safety instructions", items: [
+  { id: "duo_ja_u175", type: "vocab", title: "Vocab: Unit 175 \u00b7 safety precautions \u2014 Follow safety instructions", items: [
     {"t": "から", "e": "because / starting / through", "r": "kara"},
     {"t": "それから", "e": "after that / and then / then", "r": "sorekara"},
     {"t": "はっきりしていません", "e": "unclear", "r": "hakkirishiteimasen"},
@@ -30908,7 +30908,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "関係", "e": "relationship / dealings / relations", "k": "かんけい"},
     {"t": "願い事", "e": "wish", "k": "ねがいごと"}
   ]},
-  { id: "duo_ja_u176", type: "vocab", title: "Vocab: Unit 176 \u00b7 debate \u2014 Topics: Give your opinion", items: [
+  { id: "duo_ja_u176", type: "vocab", title: "Vocab: Unit 176 \u00b7 debate \u2014 Give your opinion", items: [
     {"t": "おでん", "e": "oden", "r": "oden"},
     {"t": "お大事に", "e": "take care", "k": "おだいじに"},
     {"t": "しまいます", "e": "will end up", "r": "shimaimasu"},
@@ -30930,7 +30930,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "降ります", "e": "get off / will get off / gets off", "k": "くだります"},
     {"t": "髪型", "e": "hairstyle", "k": "かみがた"}
   ]},
-  { id: "duo_ja_u177", type: "vocab", title: "Vocab: Unit 177 \u00b7 public occasions \u2014 Campus: Introduce a guest on campus", items: [
+  { id: "duo_ja_u177", type: "vocab", title: "Vocab: Unit 177 \u00b7 public occasions \u2014 Talk about guests at an event", items: [
     {"t": "いらっしゃいます", "e": "available", "r": "irasshaimasu"},
     {"t": "くださいます", "e": "give", "r": "kudasaimasu"},
     {"t": "ご存知", "e": "know", "k": "ごぞんじ"},
@@ -30950,7 +30950,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "貯金します", "e": "save money / deposit money / put money aside", "k": "ちょきんします"},
     {"t": "通訳", "e": "interpreter", "k": "つうやく"}
   ]},
-  { id: "duo_ja_u178", type: "vocab", title: "Vocab: Unit 178 \u00b7 customer service \u2014 Office: Help an office visitor", items: [
+  { id: "duo_ja_u178", type: "vocab", title: "Vocab: Unit 178 \u00b7 customer service \u2014 Use polite language every day", items: [
     {"t": "いらっしゃいます", "e": "available", "r": "irasshaimasu"},
     {"t": "お礼", "e": "thanks", "k": "おれい"},
     {"t": "になります", "e": "will be / becomes / become", "r": "ninarimasu"},
@@ -30972,7 +30972,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "銀座", "e": "Ginza", "k": "ぎんざ"},
     {"t": "韓国語", "e": "Korean", "k": "かんこくご"}
   ]},
-  { id: "duo_ja_u179", type: "vocab", title: "Vocab: Unit 179 \u00b7 visual arts \u2014 Exhibit: Describe artworks", items: [
+  { id: "duo_ja_u179", type: "vocab", title: "Vocab: Unit 179 \u00b7 visual arts \u2014 Describe art at a museum", items: [
     {"t": "えいきょう", "e": "influence", "r": "eikyou"},
     {"t": "お花畑", "e": "flower field", "k": "おはなばたけ"},
     {"t": "しーんとします", "e": "become silent / fall silent / be quiet", "r": "shīntoshimasu"},
@@ -30994,7 +30994,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "見えない", "e": "do not see / cannot see / invisible", "k": "みえない"},
     {"t": "触ります", "e": "touch", "k": "さわります"}
   ]},
-  { id: "duo_ja_u180", type: "vocab", title: "Vocab: Unit 180 \u00b7 public transit \u2014 Commute: Describe your commute", items: [
+  { id: "duo_ja_u180", type: "vocab", title: "Vocab: Unit 180 \u00b7 public transit \u2014 Describe your commute", items: [
     {"t": "います", "e": "is / am / has been", "r": "imasu"},
     {"t": "おす", "e": "male", "r": "osu"},
     {"t": "お皿", "e": "plate", "k": "おさら"},
@@ -31014,7 +31014,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "着陸", "e": "landing", "k": "ちゃくりく"},
     {"t": "西口", "e": "west exit", "k": "にしぐち"}
   ]},
-  { id: "duo_ja_u181", type: "vocab", title: "Vocab: Unit 181 \u00b7 library \u2014 Advice: Suggest where to go", items: [
+  { id: "duo_ja_u181", type: "vocab", title: "Vocab: Unit 181 \u00b7 library \u2014 Ask for advice on a hot day", items: [
     {"t": "こういう", "e": "this kind of / these kinds of", "r": "kouiu"},
     {"t": "しまいます", "e": "will end up", "r": "shimaimasu"},
     {"t": "どうしたら", "e": "what should I do / how should I do / what to do", "r": "doushitara"},
@@ -31035,7 +31035,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "開きます", "e": "am going to throw / are going to throw / opens", "k": "ひらきます"},
     {"t": "面接", "e": "(an) interview / interviews / (the) interview", "k": "めんせつ"}
   ]},
-  { id: "duo_ja_u182", type: "vocab", title: "Vocab: Unit 182 \u00b7 everyday tech \u2014 Events: Share festival memories", items: [
+  { id: "duo_ja_u182", type: "vocab", title: "Vocab: Unit 182 \u00b7 everyday tech \u2014 Share festival memories", items: [
     {"t": "お祝い", "e": "celebration", "k": "おいわい"},
     {"t": "と関係があります", "e": "is related to / has a relationship with / is connected to", "k": "とかんけいがあります"},
     {"t": "ぶんせき", "e": "analysis", "r": "bunseki"},
@@ -31056,7 +31056,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "間", "e": "between", "k": "あいだ"},
     {"t": "間に", "e": "while", "k": "あいだに"}
   ]},
-  { id: "duo_ja_u183", type: "vocab", title: "Vocab: Unit 183 \u00b7 job interview \u2014 Work Life: Talk about your job experience", items: [
+  { id: "duo_ja_u183", type: "vocab", title: "Vocab: Unit 183 \u00b7 job interview \u2014 Discuss your childhood and job", items: [
     {"t": "おります", "e": "(we) are / (will) get off / getting off", "r": "orimasu"},
     {"t": "お目にかかります", "e": "to meet / to see / to have the honor of meeting", "k": "おめにかかります"},
     {"t": "会議室", "e": "conference room", "k": "かいぎしつ"},
@@ -31076,7 +31076,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "自己紹介します", "e": "(I'll) introduce myself", "k": "じこしょうかいします"},
     {"t": "辞職します", "e": "resign / quit / step down", "k": "じしょくします"}
   ]},
-  { id: "duo_ja_u184", type: "vocab", title: "Vocab: Unit 184 \u00b7 cultural practices \u2014 Permission: Ask for permission", items: [
+  { id: "duo_ja_u184", type: "vocab", title: "Vocab: Unit 184 \u00b7 cultural practices \u2014 Ask about the event venue", items: [
     {"t": "いただきます", "e": "take (polite) / get (polite) / let's eat", "r": "itadakimasu"},
     {"t": "いただけませんか", "e": "would please ... for me / could you please / would you mind ... for me", "r": "itadakemasenka"},
     {"t": "します", "e": "makes / are doing / make", "r": "shimasu"},
@@ -31098,7 +31098,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "門", "e": "gate", "k": "と"},
     {"t": "静かに", "e": "quietly", "k": "しずかに"}
   ]},
-  { id: "duo_ja_u185", type: "vocab", title: "Vocab: Unit 185 \u00b7 restaurant experiences \u2014 Restaurant: Choose a restaurant", items: [
+  { id: "duo_ja_u185", type: "vocab", title: "Vocab: Unit 185 \u00b7 restaurant experiences \u2014 Talk about a restaurant", items: [
     {"t": "お腹", "e": "stomach", "k": "おなか"},
     {"t": "そう", "e": "that / right / so", "r": "sou"},
     {"t": "ていねい", "e": "polite / careful / courteous", "r": "teinei"},
@@ -31117,7 +31117,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "面倒を見ます", "e": "take care of / look after / take responsibility for", "k": "めんどうをみます"},
     {"t": "駅前", "e": "in front of the station", "k": "えきまえ"}
   ]},
-  { id: "duo_ja_u186", type: "vocab", title: "Vocab: Unit 186 \u00b7 self-expression \u2014 Summer: Share summer goals", items: [
+  { id: "duo_ja_u186", type: "vocab", title: "Vocab: Unit 186 \u00b7 self-expression \u2014 Share your dreams and plans", items: [
     {"t": "きれいに", "e": "neatly", "r": "kireini"},
     {"t": "この辺り", "e": "this area", "k": "このあたり"},
     {"t": "しない", "e": "doesn't / does not / do not", "r": "shinai"},
@@ -31137,7 +31137,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "誕生", "e": "birth", "k": "たんじょう"},
     {"t": "距離", "e": "distance", "k": "きょり"}
   ]},
-  { id: "duo_ja_u187", type: "vocab", title: "Vocab: Unit 187 \u00b7 film \u2014 Everyday Life: Ask about local places", items: [
+  { id: "duo_ja_u187", type: "vocab", title: "Vocab: Unit 187 \u00b7 film \u2014 Discuss when places are open", items: [
     {"t": "くだらない", "e": "worthless / trivial / silly", "r": "kudaranai"},
     {"t": "ずっと", "e": "continuous", "r": "zutto"},
     {"t": "なんとか", "e": "somehow", "r": "nantoka"},
@@ -31159,7 +31159,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "長さ", "e": "length", "k": "ながさ"},
     {"t": "養子", "e": "adopted child", "k": "ようし"}
   ]},
-  { id: "duo_ja_u188", type: "vocab", title: "Vocab: Unit 188 \u00b7 geography \u2014 Impressions: Share your first impressions", items: [
+  { id: "duo_ja_u188", type: "vocab", title: "Vocab: Unit 188 \u00b7 geography \u2014 Get directions and read graphs", items: [
     {"t": "かわいそう", "e": "pathetic", "r": "kawaisou"},
     {"t": "がけ", "e": "cliff", "r": "gake"},
     {"t": "へ", "e": "to / for", "r": "he"},
@@ -31181,7 +31181,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "近く", "e": "nearby", "k": "ちかく"},
     {"t": "鉄", "e": "iron", "k": "てつ"}
   ]},
-  { id: "duo_ja_u189", type: "vocab", title: "Vocab: Unit 189 \u00b7 future plans 2 \u2014 Hanukkah: Share how you prepare", items: [
+  { id: "duo_ja_u189", type: "vocab", title: "Vocab: Unit 189 \u00b7 future plans 2 \u2014 Get ready for the competition", items: [
     {"t": "お守り", "e": "amulet", "k": "おまもり"},
     {"t": "じゅんすい", "e": "pure / genuine / unmixed", "r": "junsui"},
     {"t": "そのあと", "e": "after that", "r": "sonoato"},
@@ -31201,7 +31201,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "赤ちゃん", "e": "baby", "k": "あかちゃん"},
     {"t": "飛びます", "e": "fly / flown", "k": "とびます"}
   ]},
-  { id: "duo_ja_u190", type: "vocab", title: "Vocab: Unit 190 \u00b7 scientific discoveries \u2014 Science: Talk about science news", items: [
+  { id: "duo_ja_u190", type: "vocab", title: "Vocab: Unit 190 \u00b7 scientific discoveries \u2014 Talk about science news", items: [
     {"t": "そういう", "e": "those kinds of", "r": "souiu"},
     {"t": "とか", "e": "things like / something like", "r": "toka"},
     {"t": "の代わりに", "e": "instead of", "k": "のかわりに"},
@@ -31223,7 +31223,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "重要", "e": "important", "k": "じゅうよう"},
     {"t": "金色", "e": "golden", "k": "きんいろ"}
   ]},
-  { id: "duo_ja_u191", type: "vocab", title: "Vocab: Unit 191 \u00b7 buying goods \u2014 Shopping: Ask about prices", items: [
+  { id: "duo_ja_u191", type: "vocab", title: "Vocab: Unit 191 \u00b7 buying goods \u2014 Get ready for a trip", items: [
     {"t": "お願いします", "e": "please (give) / I would like", "k": "おねがいします"},
     {"t": "だけ", "e": "only", "r": "dake"},
     {"t": "だけじゃなくて", "e": "not only but also", "r": "dakejanakute"},
@@ -31243,7 +31243,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "輝きます", "e": "shine / sparkle / glitter", "k": "かがやきます"},
     {"t": "長持ち", "e": "last", "k": "ながもち"}
   ]},
-  { id: "duo_ja_u192", type: "vocab", title: "Vocab: Unit 192 \u00b7 environmental features \u2014 Community: Describe your community", items: [
+  { id: "duo_ja_u192", type: "vocab", title: "Vocab: Unit 192 \u00b7 environmental features \u2014 Describe a mountain hike", items: [
     {"t": "うちに", "e": "while / with us / at home", "r": "uchini"},
     {"t": "きれい", "e": "beautiful", "r": "kirei"},
     {"t": "プライベート", "e": "private", "r": "puraibēto"},
@@ -31263,7 +31263,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "耳の不自由", "e": "hearing impaired", "k": "みみのふじゆう"},
     {"t": "返品", "e": "return", "k": "へんぴん"}
   ]},
-  { id: "duo_ja_u193", type: "vocab", title: "Vocab: Unit 193 \u00b7 religion \u2014 Plans: Make plans with friends", items: [
+  { id: "duo_ja_u193", type: "vocab", title: "Vocab: Unit 193 \u00b7 religion \u2014 Share your plans and beliefs", items: [
     {"t": "お寺", "e": "temple", "k": "おてら"},
     {"t": "お菓子屋", "e": "pastry shop", "k": "おかしや"},
     {"t": "ことにします", "e": "decide to / choose to / make up one's mind to", "r": "kotonishimasu"},
@@ -31283,7 +31283,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "認めます", "e": "recognize / admit / acknowledge", "k": "みとめます"},
     {"t": "足りない", "e": "could use / is missing / am short on", "k": "たりない"}
   ]},
-  { id: "duo_ja_u194", type: "vocab", title: "Vocab: Unit 194 \u00b7 recycling and waste \u2014 Recycling: Talk about recycling at home", items: [
+  { id: "duo_ja_u194", type: "vocab", title: "Vocab: Unit 194 \u00b7 recycling and waste \u2014 Discuss recycling on a walk", items: [
     {"t": "と思います", "e": "I think", "k": "とおもいます"},
     {"t": "なので", "e": "so", "r": "nanode"},
     {"t": "よね", "e": "won't he / is he / was he", "r": "yone"},
@@ -31304,7 +31304,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "賛成", "e": "agreement", "k": "さんせい"},
     {"t": "跡", "e": "mark", "k": "あと"}
   ]},
-  { id: "duo_ja_u195", type: "vocab", title: "Vocab: Unit 195 \u00b7 digital tools \u2014 Settings: Change the lighting", items: [
+  { id: "duo_ja_u195", type: "vocab", title: "Vocab: Unit 195 \u00b7 digital tools \u2014 Help run a traditional inn", items: [
     {"t": "きかい", "e": "machine", "r": "kikai"},
     {"t": "って", "e": "(casual topic marker) / that", "r": "tte"},
     {"t": "と比べて", "e": "compared to / compared with / in comparison to", "k": "とくらべて"},
@@ -31322,7 +31322,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "設定", "e": "setting", "k": "せってい"},
     {"t": "電球", "e": "light bulb", "k": "でんきゅう"}
   ]},
-  { id: "duo_ja_u196", type: "vocab", title: "Vocab: Unit 196 \u00b7 gardening \u2014 Garden: Invite friends to join", items: [
+  { id: "duo_ja_u196", type: "vocab", title: "Vocab: Unit 196 \u00b7 gardening \u2014 Grow flowers with friends", items: [
     {"t": "つづけます", "e": "continue / keep / carry on", "r": "tsudzukemasu"},
     {"t": "ハーブ", "e": "herb", "r": "hābu"},
     {"t": "会場", "e": "venue", "k": "かいじょう"},
@@ -31343,7 +31343,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "関係", "e": "relationship", "k": "かんけい"},
     {"t": "隣の", "e": "next-door", "k": "となりの"}
   ]},
-  { id: "duo_ja_u197", type: "vocab", title: "Vocab: Unit 197 \u00b7 weddings \u2014 Weddings: Plan wedding details", items: [
+  { id: "duo_ja_u197", type: "vocab", title: "Vocab: Unit 197 \u00b7 weddings \u2014 Plan the wedding details", items: [
     {"t": "ことです", "e": "thing / matter / fact", "r": "kotodesu"},
     {"t": "つまり", "e": "in other words", "r": "tsumari"},
     {"t": "ということです", "e": "that means", "r": "toiukotodesu"},
@@ -31364,7 +31364,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "費用", "e": "cost", "k": "ひよう"},
     {"t": "迎えに行きます", "e": "picking ~ up", "k": "むかえにいきます"}
   ]},
-  { id: "duo_ja_u198", type: "vocab", title: "Vocab: Unit 198 \u00b7 travel experiences \u2014 Places: Talk about places you visited", items: [
+  { id: "duo_ja_u198", type: "vocab", title: "Vocab: Unit 198 \u00b7 travel experiences \u2014 Talk about travel and weather", items: [
     {"t": "ご家族", "e": "family", "k": "ごかぞく"},
     {"t": "と", "e": "and / that / door", "r": "to"},
     {"t": "のんびり", "e": "relaxedly", "r": "nonbiri"},
@@ -31383,7 +31383,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "辺り", "e": "area", "k": "あたり"},
     {"t": "雨が多い", "e": "rainy / a lot of rain / heavy rainfall", "k": "あめがおおい"}
   ]},
-  { id: "duo_ja_u199", type: "vocab", title: "Vocab: Unit 199 \u00b7 getting a haircut / salon \u2014 Salon: Ask about a new look", items: [
+  { id: "duo_ja_u199", type: "vocab", title: "Vocab: Unit 199 \u00b7 getting a haircut / salon \u2014 Ask about a new look", items: [
     {"t": "あこがれの人", "e": "admired person", "k": "あこがれのじん"},
     {"t": "いい感じ", "e": "good", "k": "いいかんじ"},
     {"t": "いただきます", "e": "take (polite) / get (polite) / let's eat", "r": "itadakimasu"},
@@ -31402,7 +31402,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "風邪を引きます", "e": "catch a cold / come down with a cold / get a cold", "k": "かぜをひきます"},
     {"t": "髪", "e": "hair", "k": "かみ"}
   ]},
-  { id: "duo_ja_u200", type: "vocab", title: "Vocab: Unit 200 \u00b7 gift giving \u2014 Gifts: Pick a gift", items: [
+  { id: "duo_ja_u200", type: "vocab", title: "Vocab: Unit 200 \u00b7 gift giving \u2014 Pick a gift for a friend", items: [
     {"t": "こんな", "e": "these / this kind of / like this", "r": "kon'na"},
     {"t": "だいたい", "e": "about", "r": "daitai"},
     {"t": "ですか", "e": "isn't it?", "r": "desuka"},
@@ -31423,7 +31423,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "転職します", "e": "change jobs / change careers / switch jobs", "k": "てんしょくします"},
     {"t": "高級", "e": "luxurious", "k": "こうきゅう"}
   ]},
-  { id: "duo_ja_u201", type: "vocab", title: "Vocab: Unit 201 \u00b7 geopolitical issues \u2014 News: Share local news", items: [
+  { id: "duo_ja_u201", type: "vocab", title: "Vocab: Unit 201 \u00b7 geopolitical issues \u2014 Share local news", items: [
     {"t": "しょうこ", "e": "evidence", "r": "shouko"},
     {"t": "らしい", "e": "apparently / supposed to / appear", "r": "rashii"},
     {"t": "予約", "e": "reservation", "k": "よやく"},
@@ -31443,7 +31443,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "食パン", "e": "white bread", "k": "しょくぱん"},
     {"t": "首都", "e": "capital city", "k": "しゅと"}
   ]},
-  { id: "duo_ja_u202", type: "vocab", title: "Vocab: Unit 202 \u00b7 types of cuisine \u2014 Restaurants: Share your favorite dishes", items: [
+  { id: "duo_ja_u202", type: "vocab", title: "Vocab: Unit 202 \u00b7 types of cuisine \u2014 Talk about food and cooking", items: [
     {"t": "なら", "e": "it'd / you're / for", "r": "nara"},
     {"t": "デカい", "e": "big / huge / gigantic", "r": "dekai"},
     {"t": "パン屋", "e": "bakery", "k": "ぱんや"},
@@ -31464,7 +31464,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "選手", "e": "player", "k": "せんしゅ"},
     {"t": "食べ放題", "e": "all-you-can-eat", "k": "たべほうだい"}
   ]},
-  { id: "duo_ja_u203", type: "vocab", title: "Vocab: Unit 203 \u00b7 fashion \u2014 Fashion: Describe your outfit", items: [
+  { id: "duo_ja_u203", type: "vocab", title: "Vocab: Unit 203 \u00b7 fashion \u2014 Shop for new clothes", items: [
     {"t": "くせ毛", "e": "curly hair", "k": "くせげ"},
     {"t": "ばかり", "e": "just", "r": "bakari"},
     {"t": "みます", "e": "tries / watch", "r": "mimasu"},
@@ -31484,7 +31484,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "試着室", "e": "fitting room", "k": "しちゃくしつ"},
     {"t": "誌", "e": "magazine", "k": "し"}
   ]},
-  { id: "duo_ja_u204", type: "vocab", title: "Vocab: Unit 204 \u00b7 first aid \u2014 Experience: Share past experiences", items: [
+  { id: "duo_ja_u204", type: "vocab", title: "Vocab: Unit 204 \u00b7 first aid \u2014 Prepare for emergencies", items: [
     {"t": "けが", "e": "injury", "r": "kega"},
     {"t": "さえ", "e": "even", "r": "sae"},
     {"t": "その間", "e": "meanwhile", "k": "そのあいだ"},
@@ -31504,7 +31504,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "防災", "e": "disaster preparedness", "k": "ぼうさい"},
     {"t": "集まり", "e": "meeting", "k": "あつまり"}
   ]},
-  { id: "duo_ja_u205", type: "vocab", title: "Vocab: Unit 205 \u00b7 destinations \u2014 Resorts: Share opinions about resorts", items: [
+  { id: "duo_ja_u205", type: "vocab", title: "Vocab: Unit 205 \u00b7 destinations \u2014 Discuss school and free time", items: [
     {"t": "お願いしました", "e": "request", "k": "おねがいいしました"},
     {"t": "で", "e": "as a / under / through", "r": "de"},
     {"t": "でしょう", "e": "are going to / is / haven't", "r": "deshou"},
@@ -31525,7 +31525,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "連れて行きます", "e": "take / are taking", "k": "つれていきます"},
     {"t": "階段", "e": "stairs", "k": "かいだん"}
   ]},
-  { id: "duo_ja_u206", type: "vocab", title: "Vocab: Unit 206 \u00b7 family structure \u2014 Family: Describe your family members", items: [
+  { id: "duo_ja_u206", type: "vocab", title: "Vocab: Unit 206 \u00b7 family structure \u2014 Describe your family", items: [
     {"t": "おかげで", "e": "thanks to", "r": "okagede"},
     {"t": "お祭り", "e": "festival", "k": "おおまつり"},
     {"t": "けっきょく", "e": "in the end", "r": "kekkyoku"},
@@ -31544,7 +31544,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "離婚した", "e": "divorced", "k": "りこんした"},
     {"t": "頼りになります", "e": "reliable / dependable / trustworthy", "k": "たよりになります"}
   ]},
-  { id: "duo_ja_u207", type: "vocab", title: "Vocab: Unit 207 \u00b7 philosophy \u2014 Topics: Ask about the neighbors", items: [
+  { id: "duo_ja_u207", type: "vocab", title: "Vocab: Unit 207 \u00b7 philosophy \u2014 Describe your new apartment", items: [
     {"t": "じまん", "e": "proud", "r": "jiman"},
     {"t": "てつがく", "e": "philosophy", "r": "tetsugaku"},
     {"t": "どこにも", "e": "nowhere", "r": "dokonimo"},
@@ -31564,7 +31564,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "誰にも", "e": "(to) anyone / (to) anybody", "k": "だれにも"},
     {"t": "誰も", "e": "none / nobody / no one", "k": "だれも"}
   ]},
-  { id: "duo_ja_u208", type: "vocab", title: "Vocab: Unit 208 \u00b7 sports 2 \u2014 Competition: Ask about injuries", items: [
+  { id: "duo_ja_u208", type: "vocab", title: "Vocab: Unit 208 \u00b7 sports 2 \u2014 Discuss sports and training", items: [
     {"t": "あきらめます", "e": "give up / abandon / resign", "r": "akiramemasu"},
     {"t": "ほど", "e": "sufficient / enough / about", "r": "hodo"},
     {"t": "ゴール", "e": "goal", "r": "gōru"},
@@ -31586,7 +31586,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "袋", "e": "bag", "k": "ふくろ"},
     {"t": "進めます", "e": "advance / proceed / promote", "k": "すすめます"}
   ]},
-  { id: "duo_ja_u209", type: "vocab", title: "Vocab: Unit 209 \u00b7 public policy \u2014 Writers: Talk about library hours", items: [
+  { id: "duo_ja_u209", type: "vocab", title: "Vocab: Unit 209 \u00b7 public policy \u2014 Explain changes in your city", items: [
     {"t": "かけます", "e": "can draw", "r": "kakemasu"},
     {"t": "だから", "e": "therefore", "r": "dakara"},
     {"t": "ほります", "e": "carve / engrave / dig", "r": "horimasu"},
@@ -31607,7 +31607,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "進めます", "e": "advance / proceed / promote", "k": "すすめます"},
     {"t": "面倒", "e": "troublesome", "k": "めんどう"}
   ]},
-  { id: "duo_ja_u210", type: "vocab", title: "Vocab: Unit 210 \u00b7 exercise routines \u2014 Levels: Enjoy fun stories", items: [
+  { id: "duo_ja_u210", type: "vocab", title: "Vocab: Unit 210 \u00b7 exercise routines \u2014 Talk about gym workouts", items: [
     {"t": "そのかわり", "e": "instead", "r": "sonokawari"},
     {"t": "わけ", "e": "(reason)", "r": "wake"},
     {"t": "わけじゃない", "e": "it's not that", "r": "wakejanai"},
@@ -31628,7 +31628,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "転びます", "e": "falls down", "k": "ころびます"},
     {"t": "電気屋", "e": "electronics store", "k": "でんきや"}
   ]},
-  { id: "duo_ja_u211", type: "vocab", title: "Vocab: Unit 211 \u00b7 concerts and performances \u2014 Events: Decide which event to attend", items: [
+  { id: "duo_ja_u211", type: "vocab", title: "Vocab: Unit 211 \u00b7 concerts and performances \u2014 Decide which event to attend", items: [
     {"t": "か", "e": "or / is it? / that", "r": "ka"},
     {"t": "かどうか", "e": "whether or not", "r": "kadouka"},
     {"t": "オーケストラ", "e": "orchestra", "r": "ōkesutora"},
@@ -31647,7 +31647,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "腕時計", "e": "wristwatch", "k": "うでどけい"},
     {"t": "観光", "e": "tourism", "k": "かんこう"}
   ]},
-  { id: "duo_ja_u212", type: "vocab", title: "Vocab: Unit 212 \u00b7 historical events \u2014 Exhibit: Describe an exhibit", items: [
+  { id: "duo_ja_u212", type: "vocab", title: "Vocab: Unit 212 \u00b7 historical events \u2014 Discuss a historical event", items: [
     {"t": "あの時", "e": "at that time", "k": "あのとき"},
     {"t": "だんだん", "e": "gradually", "r": "dandan"},
     {"t": "ついていません", "e": "unlucky", "r": "tsuiteimasen"},
@@ -31666,7 +31666,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "見学します", "e": "visit / tour / inspect", "k": "けんがくします"},
     {"t": "銀行", "e": "bank", "k": "ぎんこう"}
   ]},
-  { id: "duo_ja_u213", type: "vocab", title: "Vocab: Unit 213 \u00b7 diversity \u2014 Daily Life: Describe daily routines", items: [
+  { id: "duo_ja_u213", type: "vocab", title: "Vocab: Unit 213 \u00b7 diversity \u2014 Get used to campus life", items: [
     {"t": "かんげいします", "e": "welcome / greet / receive", "r": "kangeishimasu"},
     {"t": "さえ", "e": "even", "r": "sae"},
     {"t": "体験します", "e": "experience / undergo / go through", "k": "たいけんします"},
@@ -31683,7 +31683,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "配ります", "e": "distribute / hand out / deliver", "k": "くばります"},
     {"t": "骨", "e": "bone", "k": "ほね"}
   ]},
-  { id: "duo_ja_u214", type: "vocab", title: "Vocab: Unit 214 \u00b7 negotiation and persuasion \u2014 Projects: Assign project tasks", items: [
+  { id: "duo_ja_u214", type: "vocab", title: "Vocab: Unit 214 \u00b7 negotiation and persuasion \u2014 Assign project tasks", items: [
     {"t": "ですか", "e": "is / is it / is that", "r": "desuka"},
     {"t": "ようなきがします", "e": "feel like", "r": "younakigashimasu"},
     {"t": "コスト", "e": "cost", "r": "kosuto"},
@@ -31703,7 +31703,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "追加の", "e": "additional", "k": "ついかの"},
     {"t": "違います", "e": "is incorrect / is wrong / is not correct", "k": "ちがいます"}
   ]},
-  { id: "duo_ja_u215", type: "vocab", title: "Vocab: Unit 215 \u00b7 romantic relationships \u2014 Feelings: Share your feelings", items: [
+  { id: "duo_ja_u215", type: "vocab", title: "Vocab: Unit 215 \u00b7 romantic relationships \u2014 Talk about your romantic life", items: [
     {"t": "じゃう", "e": "do completely / end up doing / finish doing", "r": "jau"},
     {"t": "ちゃう", "e": "going to (negative)", "r": "chau"},
     {"t": "と", "e": "and / that / door", "r": "to"},
@@ -31721,7 +31721,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "賞", "e": "award", "k": "しょう"},
     {"t": "雑誌", "e": "magazine", "k": "ざっし"}
   ]},
-  { id: "duo_ja_u216", type: "vocab", title: "Vocab: Unit 216 \u00b7 public spaces \u2014 Gatherings: Invite friends to a gathering", items: [
+  { id: "duo_ja_u216", type: "vocab", title: "Vocab: Unit 216 \u00b7 public spaces \u2014 Watch the game with friends", items: [
     {"t": "かな", "e": "I wonder (if) / perhaps / maybe", "r": "kana"},
     {"t": "かも", "e": "may (be) / perhaps / maybe", "r": "kamo"},
     {"t": "から", "e": "because / starting / through", "r": "kara"},
@@ -31741,7 +31741,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "覚えていますか", "e": "Do you remember / Are you remembering / Have you remembered", "k": "さとりえていますか"},
     {"t": "観戦します", "e": "watch a game / watch a match / spectate", "k": "かんせんします"}
   ]},
-  { id: "duo_ja_u217", type: "vocab", title: "Vocab: Unit 217 \u00b7 rural life \u2014 Home Life: Describe daily routines", items: [
+  { id: "duo_ja_u217", type: "vocab", title: "Vocab: Unit 217 \u00b7 rural life \u2014 Talk about life in a village", items: [
     {"t": "と", "e": "and / that / door", "r": "to"},
     {"t": "め", "e": "(the) buds / (an) eye / (the) sprouts", "r": "me"},
     {"t": "もくげきしゃ", "e": "witness", "r": "mokugekisha"},
@@ -31763,7 +31763,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "軽い", "e": "light / lightweight / mild", "k": "かるい"},
     {"t": "離れます", "e": "to separate / to leave / to be apart", "k": "はなれます"}
   ]},
-  { id: "duo_ja_u218", type: "vocab", title: "Vocab: Unit 218 \u00b7 museum visits \u2014 Museum: Ask about museum rules", items: [
+  { id: "duo_ja_u218", type: "vocab", title: "Vocab: Unit 218 \u00b7 museum visits \u2014 Talk about a museum visit", items: [
     {"t": "あきます", "e": "opens / open", "r": "akimasu"},
     {"t": "まさかの", "e": "unexpected", "r": "masakano"},
     {"t": "わけがない", "e": "no way", "r": "wakeganai"},
@@ -31784,7 +31784,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "祝日", "e": "holiday", "k": "しゅくじつ"},
     {"t": "被ります", "e": "wears / will wear / wear", "k": "かぶります"}
   ]},
-  { id: "duo_ja_u219", type: "vocab", title: "Vocab: Unit 219 \u00b7 landmarks \u2014 Sights: Describe famous sights", items: [
+  { id: "duo_ja_u219", type: "vocab", title: "Vocab: Unit 219 \u00b7 landmarks \u2014 Describe famous sights", items: [
     {"t": "ありえない", "e": "impossible", "r": "arienai"},
     {"t": "いけません", "e": "you may not / it is not allowed / cannot", "r": "ikemasen"},
     {"t": "じっと", "e": "still", "r": "jitto"},
@@ -31801,7 +31801,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "離れています", "e": "be away / be separated / be distant", "k": "りれています"},
     {"t": "頂上", "e": "summit", "k": "ちょうじょう"}
   ]},
-  { id: "duo_ja_u220", type: "vocab", title: "Vocab: Unit 220 \u00b7 civic life \u2014 Groups: Ask about joining groups", items: [
+  { id: "duo_ja_u220", type: "vocab", title: "Vocab: Unit 220 \u00b7 civic life \u2014 Ask about community services", items: [
     {"t": "への", "e": "with / towards / into", "r": "heno"},
     {"t": "ほとんど", "e": "almost", "r": "hotondo"},
     {"t": "代理店", "e": "agency", "k": "だいりてん"},
@@ -31819,7 +31819,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "論文", "e": "thesis", "k": "ろんぶん"},
     {"t": "高校生", "e": "high school student", "k": "こうこうせい"}
   ]},
-  { id: "duo_ja_u221", type: "vocab", title: "Vocab: Unit 221 \u00b7 extending accepting and declining invitations \u2014 Gathering: Talk about party plans", items: [
+  { id: "duo_ja_u221", type: "vocab", title: "Vocab: Unit 221 \u00b7 extending accepting and declining invitations \u2014 Chat at a birthday party", items: [
     {"t": "お久しぶり", "e": "long time no see", "k": "おひさしぶり"},
     {"t": "けど", "e": "but / even though", "r": "kedo"},
     {"t": "そういうこと", "e": "that kind of thing", "r": "souiukoto"},
@@ -31841,7 +31841,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "間もなく", "e": "soon", "k": "まもなく"},
     {"t": "風船", "e": "balloon", "k": "ふうせん"}
   ]},
-  { id: "duo_ja_u222", type: "vocab", title: "Vocab: Unit 222 \u00b7 volunteering \u2014 Teamwork: Share ideas with your team", items: [
+  { id: "duo_ja_u222", type: "vocab", title: "Vocab: Unit 222 \u00b7 volunteering \u2014 Volunteer with your neighbors", items: [
     {"t": "として", "e": "as / in", "r": "toshite"},
     {"t": "になります", "e": "will be / becomes / become", "r": "ninarimasu"},
     {"t": "多分", "e": "probably", "k": "たぶん"},
@@ -31861,7 +31861,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "重さ", "e": "weight", "k": "おもさ"},
     {"t": "野菜", "e": "vegetable", "k": "やさい"}
   ]},
-  { id: "duo_ja_u223", type: "vocab", title: "Vocab: Unit 223 \u00b7 governmental systems \u2014 Campus: Ask about campus offices", items: [
+  { id: "duo_ja_u223", type: "vocab", title: "Vocab: Unit 223 \u00b7 governmental systems \u2014 Discuss civic and royal roles", items: [
     {"t": "からは", "e": "from / since / as for", "r": "karaha"},
     {"t": "だいとうりょう", "e": "president", "r": "daitouryou"},
     {"t": "では", "e": "well (then) / at / during", "r": "deha"},
@@ -31883,7 +31883,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "預かります", "e": "take care of / keep / look after", "k": "あずかります"},
     {"t": "食堂", "e": "cafeteria", "k": "しょくどう"}
   ]},
-  { id: "duo_ja_u224", type: "vocab", title: "Vocab: Unit 224 \u00b7 disability \u2014 Beginnings: Talk about what you need", items: [
+  { id: "duo_ja_u224", type: "vocab", title: "Vocab: Unit 224 \u00b7 disability \u2014 Discuss earthquake safety", items: [
     {"t": "しか", "e": "only / deer", "r": "shika"},
     {"t": "とします", "e": "to do / to decide / to assume", "r": "toshimasu"},
     {"t": "には", "e": "by (the) / there is... to... / for (the)", "r": "niha"},
@@ -31903,7 +31903,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "違法", "e": "illegal", "k": "いほう"},
     {"t": "飾ります", "e": "decorate / adorn / ornament", "k": "かざります"}
   ]},
-  { id: "duo_ja_u225", type: "vocab", title: "Vocab: Unit 225 \u00b7 pet care \u2014 Pets: Describe your pet's needs", items: [
+  { id: "duo_ja_u225", type: "vocab", title: "Vocab: Unit 225 \u00b7 pet care \u2014 Describe your pet's needs", items: [
     {"t": "ほとんどは", "e": "mostly", "r": "hotondoha"},
     {"t": "エサ", "e": "feed", "r": "esa"},
     {"t": "ゴミ箱", "e": "trash can", "k": "ごみはこ"},
@@ -31921,7 +31921,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "革", "e": "leather", "k": "かわ"},
     {"t": "首輪", "e": "collar", "k": "くびわ"}
   ]},
-  { id: "duo_ja_u226", type: "vocab", title: "Vocab: Unit 226 \u00b7 literature \u2014 Books: Describe a book", items: [
+  { id: "duo_ja_u226", type: "vocab", title: "Vocab: Unit 226 \u00b7 literature \u2014 Get ready for an exam", items: [
     {"t": "ぴったり", "e": "perfect", "r": "pittari"},
     {"t": "ぼうけん", "e": "adventure", "r": "bouken"},
     {"t": "みたいに", "e": "like", "r": "mitaini"},
@@ -31942,7 +31942,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "生きます", "e": "live", "k": "いきます"},
     {"t": "辞書", "e": "dictionary", "k": "じしょ"}
   ]},
-  { id: "duo_ja_u227", type: "vocab", title: "Vocab: Unit 227 \u00b7 economic systems \u2014 Reasoning: Explain your thinking", items: [
+  { id: "duo_ja_u227", type: "vocab", title: "Vocab: Unit 227 \u00b7 economic systems \u2014 Explain choices and reasons", items: [
     {"t": "かわりに", "e": "instead of", "r": "kawarini"},
     {"t": "それから", "e": "after that / and then / then", "r": "sorekara"},
     {"t": "で", "e": "as a / under / through", "r": "de"},
@@ -31963,7 +31963,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "集めます", "e": "collect / gather / assemble", "k": "あつめます"},
     {"t": "靴", "e": "shoe", "k": "くつ"}
   ]},
-  { id: "duo_ja_u228", type: "vocab", title: "Vocab: Unit 228 \u00b7 sustainability \u2014 Admission: Talk about payment options", items: [
+  { id: "duo_ja_u228", type: "vocab", title: "Vocab: Unit 228 \u00b7 sustainability \u2014 Talk about spending habits", items: [
     {"t": "これからも", "e": "from now on", "r": "korekaramo"},
     {"t": "そのまま", "e": "as is", "r": "sonomama"},
     {"t": "ほほ", "e": "cheek", "r": "hoho"},
@@ -31983,7 +31983,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "込みます", "e": "to be crowded / to be packed / to be congested", "k": "こみます"},
     {"t": "音量", "e": "volume", "k": "おんりょう"}
   ]},
-  { id: "duo_ja_u229", type: "vocab", title: "Vocab: Unit 229 \u00b7 measurements \u2014 Challenges: Discuss baking challenges", items: [
+  { id: "duo_ja_u229", type: "vocab", title: "Vocab: Unit 229 \u00b7 measurements \u2014 Talk about baking and tools", items: [
     {"t": "それに", "e": "besides", "r": "soreni"},
     {"t": "だって", "e": "even", "r": "datte"},
     {"t": "だもの", "e": "because", "r": "damono"},
@@ -32005,7 +32005,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "決まり", "e": "rule", "k": "きまり"},
     {"t": "若いころ", "e": "youth", "k": "わかいころ"}
   ]},
-  { id: "duo_ja_u230", type: "vocab", title: "Vocab: Unit 230 \u00b7 aging \u2014 Choices: Talk about trying a new sport", items: [
+  { id: "duo_ja_u230", type: "vocab", title: "Vocab: Unit 230 \u00b7 aging \u2014 Try a new sport", items: [
     {"t": "としたら", "e": "if / assuming that / supposing that", "r": "toshitara"},
     {"t": "どんな", "e": "what kind of", "r": "don'na"},
     {"t": "のままに", "e": "still in", "r": "nomamani"},
@@ -32027,7 +32027,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "赤ちゃんがいる", "e": "have a baby / have an infant / be with a baby", "k": "あかちゃんがいる"},
     {"t": "迷います", "e": "to get lost / to hesitate / to be puzzled", "k": "まよいます"}
   ]},
-  { id: "duo_ja_u231", type: "vocab", title: "Vocab: Unit 231 \u00b7 clothes shopping \u2014 Clothes: React to great deals", items: [
+  { id: "duo_ja_u231", type: "vocab", title: "Vocab: Unit 231 \u00b7 clothes shopping \u2014 Express surprise at a bargain", items: [
     {"t": "なんて", "e": "that / what ... / how ...", "r": "nante"},
     {"t": "やめます", "e": "quit / leave / stop", "r": "yamemasu"},
     {"t": "やや", "e": "somewhat", "r": "yaya"},
@@ -32047,7 +32047,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "防水", "e": "waterproof", "k": "ぼうすい"},
     {"t": "黒", "e": "black", "k": "くろ"}
   ]},
-  { id: "duo_ja_u232", type: "vocab", title: "Vocab: Unit 232 \u00b7 personal experiences 2 \u2014 Choices: Describe your opinions", items: [
+  { id: "duo_ja_u232", type: "vocab", title: "Vocab: Unit 232 \u00b7 personal experiences 2 \u2014 Talk about feeling nervous", items: [
     {"t": "きっかけ", "e": "trigger", "r": "kikkake"},
     {"t": "さまざま", "e": "various", "r": "samazama"},
     {"t": "そんな", "e": "such (a) / like that", "r": "son'na"},
@@ -32072,7 +32072,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "達成感", "e": "sense of achievement", "k": "たっせいかん"},
     {"t": "選択", "e": "choice", "k": "せんたく"}
   ]},
-  { id: "duo_ja_u233", type: "vocab", title: "Vocab: Unit 233 \u00b7 playing or training for a sport \u2014 Training: Share your training goals", items: [
+  { id: "duo_ja_u233", type: "vocab", title: "Vocab: Unit 233 \u00b7 playing or training for a sport \u2014 Explain training camp's value", items: [
     {"t": "すると", "e": "when", "r": "suruto"},
     {"t": "つもりで", "e": "intend", "r": "tsumoride"},
     {"t": "まだまだ", "e": "still far from", "r": "madamada"},
@@ -32093,7 +32093,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "防具", "e": "protective gear", "k": "ぼうぐ"},
     {"t": "陸上", "e": "track and field", "k": "りくじょう"}
   ]},
-  { id: "duo_ja_u234", type: "vocab", title: "Vocab: Unit 234 \u00b7 school 2 \u2014 School: Hand out classroom materials", items: [
+  { id: "duo_ja_u234", type: "vocab", title: "Vocab: Unit 234 \u00b7 school 2 \u2014 Hand out classroom materials", items: [
     {"t": "かさ立て", "e": "umbrella stand", "k": "かさたて"},
     {"t": "ずつ", "e": "each", "r": "zutsu"},
     {"t": "など", "e": "things like / or something / et cetera", "r": "nado"},
@@ -32113,7 +32113,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "総合的", "e": "comprehensive", "k": "そうごうてき"},
     {"t": "集中力", "e": "concentration", "k": "しゅうちゅうりょく"}
   ]},
-  { id: "duo_ja_u235", type: "vocab", title: "Vocab: Unit 235 \u00b7 mental health \u2014 Wellness: Describe how you relax", items: [
+  { id: "duo_ja_u235", type: "vocab", title: "Vocab: Unit 235 \u00b7 mental health \u2014 Describe how you relax", items: [
     {"t": "なんか", "e": "something / kind of / (negative judgement)", "r": "nanka"},
     {"t": "一時的に", "e": "temporarily", "k": "いちじてきに"},
     {"t": "体操", "e": "exercise", "k": "たいそう"},
@@ -32130,7 +32130,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "非常に", "e": "extremely", "k": "ひじょうに"},
     {"t": "飲み放題", "e": "all-you-can-drink", "k": "のみほうだい"}
   ]},
-  { id: "duo_ja_u236", type: "vocab", title: "Vocab: Unit 236 \u00b7 neighborhood \u2014 Neighborhood: Describe local houses", items: [
+  { id: "duo_ja_u236", type: "vocab", title: "Vocab: Unit 236 \u00b7 neighborhood \u2014 Talk about your neighborhood", items: [
     {"t": "し", "e": "play / have / four", "r": "shi"},
     {"t": "コインランドリー", "e": "laundromat", "r": "koinrandorī"},
     {"t": "ポスト", "e": "postbox", "r": "posuto"},
@@ -32154,7 +32154,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "防犯カメラ", "e": "security camera", "k": "ぼうはんかめら"},
     {"t": "飲食店", "e": "restaurant", "k": "いんしょくてん"}
   ]},
-  { id: "duo_ja_u237", type: "vocab", title: "Vocab: Unit 237 \u00b7 celebration \u2014 Party: Ask about the party", items: [
+  { id: "duo_ja_u237", type: "vocab", title: "Vocab: Unit 237 \u00b7 celebration \u2014 Ask about the party", items: [
     {"t": "あんな", "e": "such", "r": "an'na"},
     {"t": "ちなみに", "e": "by the way", "r": "chinamini"},
     {"t": "っけ", "e": "again", "r": "kke"},
@@ -32174,7 +32174,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "贈ります", "e": "give (as a present)", "k": "おくります"},
     {"t": "願い", "e": "wish", "k": "ねがい"}
   ]},
-  { id: "duo_ja_u238", type: "vocab", title: "Vocab: Unit 238 \u00b7 politics \u2014 Politics: Share your views on politicians", items: [
+  { id: "duo_ja_u238", type: "vocab", title: "Vocab: Unit 238 \u00b7 politics \u2014 Talk politics and the economy", items: [
     {"t": "しばしば", "e": "often", "r": "shibashiba"},
     {"t": "ほぼ", "e": "almost", "r": "hobo"},
     {"t": "インフレ", "e": "inflation", "r": "infure"},
@@ -32191,7 +32191,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "選挙", "e": "election", "k": "せんきょ"},
     {"t": "野党", "e": "opposition party", "k": "やとう"}
   ]},
-  { id: "duo_ja_u239", type: "vocab", title: "Vocab: Unit 239 \u00b7 time management \u2014 Routines: Talk about daily routines", items: [
+  { id: "duo_ja_u239", type: "vocab", title: "Vocab: Unit 239 \u00b7 time management \u2014 Talk about errands and timing", items: [
     {"t": "あのさ", "e": "hey", "r": "anosa"},
     {"t": "ありがとう", "e": "thank you", "r": "arigatou"},
     {"t": "ごめん", "e": "sorry", "r": "gomen"},
@@ -32214,7 +32214,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "締め切り", "e": "deadline", "k": "しめきり"},
     {"t": "複数", "e": "multiple", "k": "ふくすう"}
   ]},
-  { id: "duo_ja_u240", type: "vocab", title: "Vocab: Unit 240 \u00b7 recipes \u2014 Cooking: Describe making soup", items: [
+  { id: "duo_ja_u240", type: "vocab", title: "Vocab: Unit 240 \u00b7 recipes \u2014 Compare ways to make soup", items: [
     {"t": "おたま", "e": "ladle", "r": "otama"},
     {"t": "ごま油", "e": "sesame oil", "k": "ごまあぶら"},
     {"t": "さっと", "e": "quickly", "r": "satto"},
@@ -32237,7 +32237,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "豚肉", "e": "pork", "k": "ぶたにく"},
     {"t": "酸っぱい", "e": "sour", "k": "すっぱい"}
   ]},
-  { id: "duo_ja_u241", type: "vocab", title: "Vocab: Unit 241 \u00b7 workplace communication \u2014 Meetings: Express concerns at meetings", items: [
+  { id: "duo_ja_u241", type: "vocab", title: "Vocab: Unit 241 \u00b7 workplace communication \u2014 Complain about a coworker", items: [
     {"t": "あいまい", "e": "unclear", "r": "aimai"},
     {"t": "がち", "e": "tends", "r": "gachi"},
     {"t": "っぽい", "e": "looks like a / look like", "r": "ppoi"},
@@ -32256,7 +32256,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "詳細", "e": "detail", "k": "しょうさい"},
     {"t": "誤解", "e": "misunderstanding / miscomprehension / misunderstandings", "k": "ごかい"}
   ]},
-  { id: "duo_ja_u242", type: "vocab", title: "Vocab: Unit 242 \u00b7 journalism \u2014 News: Summarize news reports", items: [
+  { id: "duo_ja_u242", type: "vocab", title: "Vocab: Unit 242 \u00b7 journalism \u2014 Talk about news reports", items: [
     {"t": "さすがに", "e": "as expected", "r": "sasugani"},
     {"t": "で", "e": "as a / under / through", "r": "de"},
     {"t": "とおり", "e": "street", "r": "toori"},
@@ -32280,7 +32280,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "重要性", "e": "importance", "k": "じゅうようせい"},
     {"t": "関係者", "e": "people involved", "k": "かんけいしゃ"}
   ]},
-  { id: "duo_ja_u243", type: "vocab", title: "Vocab: Unit 243 \u00b7 video games \u2014 Gaming: Share ways to cooperate", items: [
+  { id: "duo_ja_u243", type: "vocab", title: "Vocab: Unit 243 \u00b7 video games \u2014 Describe a game to colleagues", items: [
     {"t": "こそ", "e": "emphasis particle / exactly / precisely", "r": "koso"},
     {"t": "アイテム", "e": "item", "r": "aitemu"},
     {"t": "クエスト", "e": "quest", "r": "kuesuto"},
@@ -32298,7 +32298,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "装備", "e": "equipment / gear / outfit", "k": "そうび"},
     {"t": "難易度", "e": "difficulty", "k": "なんいど"}
   ]},
-  { id: "duo_ja_u244", type: "vocab", title: "Vocab: Unit 244 \u00b7 life goals \u2014 Goals: Share your goals", items: [
+  { id: "duo_ja_u244", type: "vocab", title: "Vocab: Unit 244 \u00b7 life goals \u2014 Share your goals in life", items: [
     {"t": "としても", "e": "also ... as", "r": "toshitemo"},
     {"t": "チャンス", "e": "chance", "r": "chansu"},
     {"t": "中心", "e": "center", "k": "ちゅうしん"},
@@ -32317,7 +32317,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "達成", "e": "reach / accomplishment / accomplish", "k": "たっせい"},
     {"t": "長期的", "e": "long-term", "k": "ちょうきてき"}
   ]},
-  { id: "duo_ja_u245", type: "vocab", title: "Vocab: Unit 245 \u00b7 career choices \u2014 Careers: Explain your job choice", items: [
+  { id: "duo_ja_u245", type: "vocab", title: "Vocab: Unit 245 \u00b7 career choices \u2014 Explain your career choice", items: [
     {"t": "ごとに", "e": "per each", "r": "gotoni"},
     {"t": "で", "e": "as a / under / through", "r": "de"},
     {"t": "やりがい", "e": "sense of fulfillment", "r": "yarigai"},
@@ -32340,7 +32340,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "責任", "e": "responsibility", "k": "せきにん"},
     {"t": "開発", "e": "(commercial) development", "k": "かいはつ"}
   ]},
-  { id: "duo_ja_u246", type: "vocab", title: "Vocab: Unit 246 \u00b7 environmental protection \u2014 Environment: Suggest eco-friendly habits", items: [
+  { id: "duo_ja_u246", type: "vocab", title: "Vocab: Unit 246 \u00b7 environmental protection \u2014 Suggest green work habits", items: [
     {"t": "けれども", "e": "yet / but / even though", "r": "keredomo"},
     {"t": "しかたない", "e": "it can't be helped / unavoidable / no choice", "r": "shikatanai"},
     {"t": "せんぷうき", "e": "fan", "r": "senpuuki"},
@@ -32361,7 +32361,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "節約", "e": "save / saving", "k": "せつやく"},
     {"t": "豪雨", "e": "heavy rain", "k": "ごうう"}
   ]},
-  { id: "duo_ja_u247", type: "vocab", title: "Vocab: Unit 247 \u00b7 city life 2 \u2014 City Life: Compare ways to get around", items: [
+  { id: "duo_ja_u247", type: "vocab", title: "Vocab: Unit 247 \u00b7 city life 2 \u2014 Compare ways to commute", items: [
     {"t": "ものだ", "e": "should", "r": "monoda"},
     {"t": "乗り場", "e": "stand", "k": "のりば"},
     {"t": "仏像", "e": "Buddhist statue", "k": "ぶつぞう"},
@@ -32383,7 +32383,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "運賃", "e": "fare", "k": "うんちん"},
     {"t": "都心", "e": "city center", "k": "としん"}
   ]},
-  { id: "duo_ja_u248", type: "vocab", title: "Vocab: Unit 248 \u00b7 hiking \u2014 Hiking: Describe hiking challenges", items: [
+  { id: "duo_ja_u248", type: "vocab", title: "Vocab: Unit 248 \u00b7 hiking \u2014 Describe problems on a hike", items: [
     {"t": "だけで", "e": "just by", "r": "dakede"},
     {"t": "といったら", "e": "speaking of", "r": "toittara"},
     {"t": "どっち", "e": "which one", "r": "dotchi"},
@@ -32401,7 +32401,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "赤", "e": "one—red / red / akai", "k": "あか"},
     {"t": "遠回り", "e": "detour", "k": "とおまわり"}
   ]},
-  { id: "duo_ja_u249", type: "vocab", title: "Vocab: Unit 249 \u00b7 corporate rumors \u2014 Rumors: Ask about office gossip", items: [
+  { id: "duo_ja_u249", type: "vocab", title: "Vocab: Unit 249 \u00b7 corporate rumors \u2014 Report what happened at work", items: [
     {"t": "あっという間", "e": "blink of an eye", "k": "あっというま"},
     {"t": "かぎりでは", "e": "as far as I know", "r": "kagirideha"},
     {"t": "だが", "e": "but / however / though", "r": "daga"},
@@ -32419,7 +32419,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "曖昧", "e": "unclear", "k": "あいまい"},
     {"t": "真相", "e": "truth", "k": "しんそう"}
   ]},
-  { id: "duo_ja_u250", type: "vocab", title: "Vocab: Unit 250 \u00b7 university 2 \u2014 College: Share a college memory", items: [
+  { id: "duo_ja_u250", type: "vocab", title: "Vocab: Unit 250 \u00b7 university 2 \u2014 Talk about college life", items: [
     {"t": "ゼミ", "e": "seminar", "r": "zemi"},
     {"t": "出席", "e": "attendance", "k": "しゅっせき"},
     {"t": "前期", "e": "first semester", "k": "ぜんき"},
@@ -32440,7 +32440,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "講師", "e": "lecturer", "k": "こうし"},
     {"t": "進学", "e": "advancement to a higher school / going on to the next stage of education / entering a higher-level school", "k": "しんがく"}
   ]},
-  { id: "duo_ja_u251", type: "vocab", title: "Vocab: Unit 251 \u00b7 debate 2 \u2014 Discussion: Explain your opinions", items: [
+  { id: "duo_ja_u251", type: "vocab", title: "Vocab: Unit 251 \u00b7 debate 2 \u2014 Give reasons for your opinions", items: [
     {"t": "さて", "e": "now", "r": "sate"},
     {"t": "一方", "e": "one side / on the other hand / meanwhile", "k": "いっぽう"},
     {"t": "主張", "e": "proposal / argument / statement", "k": "しゅちょう"},
@@ -32459,7 +32459,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "説得", "e": "persuade / persuasion / convince", "k": "せっとく"},
     {"t": "貧困問題", "e": "poverty issue", "k": "ひんこんもんだい"}
   ]},
-  { id: "duo_ja_u252", type: "vocab", title: "Vocab: Unit 252 \u00b7 news \u2014 Stories: Retell surprising stories", items: [
+  { id: "duo_ja_u252", type: "vocab", title: "Vocab: Unit 252 \u00b7 news \u2014 Talk about unmet expectations", items: [
     {"t": "あやしい", "e": "suspicious / dubious / questionable", "r": "ayashii"},
     {"t": "おそらく", "e": "probably", "r": "osoraku"},
     {"t": "どころか", "e": "far from", "r": "dokoroka"},
@@ -32475,7 +32475,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "銅メダル", "e": "bronze medal", "k": "どうめだる"},
     {"t": "非公式", "e": "unofficial", "k": "ひこうしき"}
   ]},
-  { id: "duo_ja_u253", type: "vocab", title: "Vocab: Unit 253 \u00b7 board games \u2014 Games: Share your favorite games", items: [
+  { id: "duo_ja_u253", type: "vocab", title: "Vocab: Unit 253 \u00b7 board games \u2014 Describe your time at home", items: [
     {"t": "じっくり", "e": "carefully", "r": "jikkuri"},
     {"t": "と言っても", "e": "even though", "k": "といっても"},
     {"t": "コマ", "e": "piece", "r": "koma"},
@@ -32494,7 +32494,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "確実", "e": "certain", "k": "かくじつ"},
     {"t": "違反", "e": "violation", "k": "いはん"}
   ]},
-  { id: "duo_ja_u254", type: "vocab", title: "Vocab: Unit 254 \u00b7 study abroad \u2014 Campus: Describe your campus life", items: [
+  { id: "duo_ja_u254", type: "vocab", title: "Vocab: Unit 254 \u00b7 study abroad \u2014 Talk about studying abroad", items: [
     {"t": "しかも", "e": "furthermore", "r": "shikamo"},
     {"t": "にちがいない", "e": "must be", "r": "nichigainai"},
     {"t": "やっぱり", "e": "after all", "r": "yappari"},
@@ -32512,7 +32512,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "適度", "e": "moderate", "k": "てきど"},
     {"t": "郵便", "e": "mail", "k": "ゆうびん"}
   ]},
-  { id: "duo_ja_u255", type: "vocab", title: "Vocab: Unit 255 \u00b7 holidays \u2014 Trips: Talk about choosing a hotel", items: [
+  { id: "duo_ja_u255", type: "vocab", title: "Vocab: Unit 255 \u00b7 holidays \u2014 Talk about where to stay", items: [
     {"t": "オフシーズン", "e": "off-season", "r": "ofushīzun"},
     {"t": "ダイビング", "e": "diving", "r": "daibingu"},
     {"t": "ツイン", "e": "twin", "r": "tsuin"},
@@ -32530,7 +32530,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "登山", "e": "mountain climbing", "k": "とざん"},
     {"t": "穴場", "e": "hidden gem", "k": "あなば"}
   ]},
-  { id: "duo_ja_u256", type: "vocab", title: "Vocab: Unit 256 \u00b7 entrepreneurship \u2014 Business: Explain testing", items: [
+  { id: "duo_ja_u256", type: "vocab", title: "Vocab: Unit 256 \u00b7 entrepreneurship \u2014 Discuss product testing", items: [
     {"t": "お問い合わせ", "e": "inquiry", "k": "おといあわせ"},
     {"t": "が", "e": "(softens the tone) / (indicates the subject) / but", "r": "ga"},
     {"t": "に基づいて", "e": "based on", "k": "にもとづいて"},
@@ -32551,7 +32551,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "資産", "e": "asset", "k": "しさん"},
     {"t": "配送", "e": "delivery", "k": "はいそう"}
   ]},
-  { id: "duo_ja_u257", type: "vocab", title: "Vocab: Unit 257 \u00b7 baby \u2014 Babies: Share advice for new parents", items: [
+  { id: "duo_ja_u257", type: "vocab", title: "Vocab: Unit 257 \u00b7 baby \u2014 Talk about a childbirth class", items: [
     {"t": "おしゃぶり", "e": "pacifier", "r": "oshaburi"},
     {"t": "おむつ", "e": "diaper", "r": "omutsu"},
     {"t": "ばかり", "e": "only / just / continuously", "r": "bakari"},
@@ -32572,7 +32572,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "風邪", "e": "cold", "k": "かぜ"},
     {"t": "鼻水", "e": "nasal mucus", "k": "はなみず"}
   ]},
-  { id: "duo_ja_u258", type: "vocab", title: "Vocab: Unit 258 \u00b7 art \u2014 Art: Describe your favorite art style", items: [
+  { id: "duo_ja_u258", type: "vocab", title: "Vocab: Unit 258 \u00b7 art \u2014 Talk about making art", items: [
     {"t": "かけ", "e": "put", "r": "kake"},
     {"t": "キャンバス", "e": "canvas", "r": "kyanbasu"},
     {"t": "コントラスト", "e": "contrast", "r": "kontorasuto"},
@@ -32593,7 +32593,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "芸術家", "e": "artist", "k": "げいじゅつか"},
     {"t": "鮮やか", "e": "vivid", "k": "あざやか"}
   ]},
-  { id: "duo_ja_u259", type: "vocab", title: "Vocab: Unit 259 \u00b7 attending a sporting event \u2014 Stadium: Meet friends at the stadium", items: [
+  { id: "duo_ja_u259", type: "vocab", title: "Vocab: Unit 259 \u00b7 attending a sporting event \u2014 Talk about a sports match", items: [
     {"t": "お尻", "e": "buttock", "k": "おしり"},
     {"t": "だらけ", "e": "full of", "r": "darake"},
     {"t": "ハーフタイム", "e": "halftime", "r": "hāfutaimu"},
@@ -32615,7 +32615,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "遅刻します", "e": "will be late", "k": "ちこくします"},
     {"t": "非常口", "e": "emergency exit", "k": "ひじょうぐち"}
   ]},
-  { id: "duo_ja_u260", type: "vocab", title: "Vocab: Unit 260 \u00b7 negotiation and persuasion 2 \u2014 Discussion: Share honest opinions", items: [
+  { id: "duo_ja_u260", type: "vocab", title: "Vocab: Unit 260 \u00b7 negotiation and persuasion 2 \u2014 Share views and make requests", items: [
     {"t": "ことはない", "e": "have never", "r": "kotohanai"},
     {"t": "そちら", "e": "you", "r": "sochira"},
     {"t": "でお願いします", "e": "please / I would like / I request", "k": "でおねがいいします"},
@@ -32634,7 +32634,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "立場", "e": "position", "k": "たちば"},
     {"t": "需要", "e": "demand", "k": "じゅよう"}
   ]},
-  { id: "duo_ja_u261", type: "vocab", title: "Vocab: Unit 261 \u00b7 scientific discoveries/advancements \u2014 Research: Ask for research advice", items: [
+  { id: "duo_ja_u261", type: "vocab", title: "Vocab: Unit 261 \u00b7 scientific discoveries/advancements \u2014 Set up a research experiment", items: [
     {"t": "これら", "e": "these", "r": "korera"},
     {"t": "それら", "e": "those", "r": "sorera"},
     {"t": "である", "e": "were / is / am", "r": "dearu"},
@@ -32655,7 +32655,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "資金", "e": "fund", "k": "しきん"},
     {"t": "進歩", "e": "progress", "k": "しんぽ"}
   ]},
-  { id: "duo_ja_u262", type: "vocab", title: "Vocab: Unit 262 \u00b7 advertising \u2014 Ideas: Share your ideas", items: [
+  { id: "duo_ja_u262", type: "vocab", title: "Vocab: Unit 262 \u00b7 advertising \u2014 Share your ideas", items: [
     {"t": "イメージ", "e": "image", "r": "imēji"},
     {"t": "オファー", "e": "offer", "r": "ofā"},
     {"t": "キャッチコピー", "e": "catchphrase", "r": "kyatchikopī"},
@@ -32674,7 +32674,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "関心", "e": "interest", "k": "かんしん"},
     {"t": "魅力", "e": "charm", "k": "みりょく"}
   ]},
-  { id: "duo_ja_u263", type: "vocab", title: "Vocab: Unit 263 \u00b7 medicine \u2014 Hospital: Describe an accident", items: [
+  { id: "duo_ja_u263", type: "vocab", title: "Vocab: Unit 263 \u00b7 medicine \u2014 Describe an accident", items: [
     {"t": "かけます", "e": "can draw", "r": "kakemasu"},
     {"t": "めまい", "e": "dizziness", "r": "memai"},
     {"t": "下痢", "e": "diarrhea", "k": "げり"},
@@ -32698,7 +32698,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "車椅子", "e": "wheelchair", "k": "くるまいす"},
     {"t": "骨折", "e": "fractured / fracturing / fracture", "k": "こっせつ"}
   ]},
-  { id: "duo_ja_u264", type: "vocab", title: "Vocab: Unit 264 \u00b7 voting \u2014 Voting: Explain your decision", items: [
+  { id: "duo_ja_u264", type: "vocab", title: "Vocab: Unit 264 \u00b7 voting \u2014 Weigh the evidence and decide", items: [
     {"t": "あるいは", "e": "perhaps / maybe / or", "r": "aruiha"},
     {"t": "いずれ", "e": "eventually", "r": "izure"},
     {"t": "ただし", "e": "however / provided that / but", "r": "tadashi"},
@@ -32722,7 +32722,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "証明", "e": "proof", "k": "しょうめい"},
     {"t": "過半数", "e": "majority", "k": "かはんすう"}
   ]},
-  { id: "duo_ja_u265", type: "vocab", title: "Vocab: Unit 265 \u00b7 historic figures \u2014 Legends: Describe a legendary figure", items: [
+  { id: "duo_ja_u265", type: "vocab", title: "Vocab: Unit 265 \u00b7 historic figures \u2014 Describe a historic figure", items: [
     {"t": "にしては", "e": "for", "r": "nishiteha"},
     {"t": "伝説的", "e": "legendary", "k": "でんせつてき"},
     {"t": "偉大", "e": "great", "k": "いだい"},
@@ -32742,7 +32742,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "野心的", "e": "ambitious", "k": "やしんてき"},
     {"t": "鉱物", "e": "mineral", "k": "こうぶつ"}
   ]},
-  { id: "duo_ja_u266", type: "vocab", title: "Vocab: Unit 266 \u00b7 cooking 3 \u2014 Dishes: Describe how to make a dish", items: [
+  { id: "duo_ja_u266", type: "vocab", title: "Vocab: Unit 266 \u00b7 cooking 3 \u2014 Explain a simple recipe", items: [
     {"t": "かぼちゃ", "e": "pumpkin", "r": "kabocha"},
     {"t": "たて", "e": "shield / shields", "r": "tate"},
     {"t": "にんにく", "e": "garlic", "r": "nin'niku"},
@@ -32760,7 +32760,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "鶏肉", "e": "chicken", "k": "とりにく"},
     {"t": "麺", "e": "noodle", "k": "めん"}
   ]},
-  { id: "duo_ja_u267", type: "vocab", title: "Vocab: Unit 267 \u00b7 exercise routines 2 \u2014 Exercise: Describe your exercise routine", items: [
+  { id: "duo_ja_u267", type: "vocab", title: "Vocab: Unit 267 \u00b7 exercise routines 2 \u2014 Describe your exercise routine", items: [
     {"t": "さ", "e": "you know", "r": "sa"},
     {"t": "たっぷり", "e": "plenty", "r": "tappuri"},
     {"t": "め", "e": "eye", "r": "me"},
@@ -32777,7 +32777,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "跳びます", "e": "jump / jumps", "k": "とびます"},
     {"t": "鍛えます", "e": "train", "k": "きたえます"}
   ]},
-  { id: "duo_ja_u268", type: "vocab", title: "Vocab: Unit 268 \u00b7 restaurant 2 \u2014 Restaurants: Book a table", items: [
+  { id: "duo_ja_u268", type: "vocab", title: "Vocab: Unit 268 \u00b7 restaurant 2 \u2014 Book a restaurant table", items: [
     {"t": "きります", "e": "going to cut", "r": "kirimasu"},
     {"t": "しっとり", "e": "moist", "r": "shittori"},
     {"t": "キャンセル料", "e": "cancellation fee", "k": "きゃんせるりょう"},
@@ -32797,7 +32797,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "食感", "e": "texture", "k": "しょっかん"},
     {"t": "鮭", "e": "salmon", "k": "さけ"}
   ]},
-  { id: "duo_ja_u269", type: "vocab", title: "Vocab: Unit 269 \u00b7 conflict resolution \u2014 Opinions: Share your opinion", items: [
+  { id: "duo_ja_u269", type: "vocab", title: "Vocab: Unit 269 \u00b7 conflict resolution \u2014 Handle conflicts with empathy", items: [
     {"t": "あいにく", "e": "unfortunately", "r": "ainiku"},
     {"t": "に対して", "e": "towards", "k": "にたいして"},
     {"t": "に対する", "e": "toward", "k": "にたいする"},
@@ -32810,7 +32810,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "期待", "e": "(my) expectations", "k": "きたい"},
     {"t": "観点", "e": "point of view", "k": "かんてん"}
   ]},
-  { id: "duo_ja_u270", type: "vocab", title: "Vocab: Unit 270 \u00b7 social media 2 \u2014 Social Media: Describe online habits", items: [
+  { id: "duo_ja_u270", type: "vocab", title: "Vocab: Unit 270 \u00b7 social media 2 \u2014 Talk about online annoyances", items: [
     {"t": "よかったら", "e": "if you like", "r": "yokattara"},
     {"t": "コミュニティー", "e": "community", "r": "komyunitī"},
     {"t": "スパム", "e": "spam", "r": "supamu"},
@@ -32826,7 +32826,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "炎上", "e": "blaze / fire / burning", "k": "えんじょう"},
     {"t": "画像", "e": "image", "k": "がぞう"}
   ]},
-  { id: "duo_ja_u271", type: "vocab", title: "Vocab: Unit 271 \u00b7 ethical shopping \u2014 Products: Compare product features", items: [
+  { id: "duo_ja_u271", type: "vocab", title: "Vocab: Unit 271 \u00b7 ethical shopping \u2014 Compare price and durability", items: [
     {"t": "からといって", "e": "just because", "r": "karatoitte"},
     {"t": "どのくらい", "e": "how much", "r": "donokurai"},
     {"t": "レジ袋", "e": "plastic bag", "k": "れじふくろ"},
@@ -32846,7 +32846,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "鞄", "e": "bag", "k": "かばん"},
     {"t": "食中毒", "e": "food poisoning", "k": "しょくちゅうどく"}
   ]},
-  { id: "duo_ja_u272", type: "vocab", title: "Vocab: Unit 272 \u00b7 post office \u2014 Delivery: Ask about delivery options", items: [
+  { id: "duo_ja_u272", type: "vocab", title: "Vocab: Unit 272 \u00b7 post office \u2014 Ask about sending a package", items: [
     {"t": "お釣り", "e": "change", "k": "おつり"},
     {"t": "ことができます", "e": "is able (to) / can", "r": "kotogadekimasu"},
     {"t": "はかり", "e": "scale", "r": "hakari"},
@@ -32869,7 +32869,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "配達員", "e": "delivery person", "k": "はいたついん"},
     {"t": "重量", "e": "weight", "k": "じゅうりょう"}
   ]},
-  { id: "duo_ja_u273", type: "vocab", title: "Vocab: Unit 273 \u00b7 pop culture \u2014 Pop Stars: Describe a pop star", items: [
+  { id: "duo_ja_u273", type: "vocab", title: "Vocab: Unit 273 \u00b7 pop culture \u2014 Talk about famous entertainers", items: [
     {"t": "っていうか", "e": "I mean", "r": "tteiuka"},
     {"t": "アイドル", "e": "idol", "r": "aidoru"},
     {"t": "インフルエンサー", "e": "influencer", "r": "infuruensā"},
@@ -32892,7 +32892,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "馬", "e": "horse", "k": "うま"},
     {"t": "魅力的", "e": "attractive", "k": "みりょくてき"}
   ]},
-  { id: "duo_ja_u274", type: "vocab", title: "Vocab: Unit 274 \u00b7 cross-cultural communication \u2014 Etiquette: Describe polite behavior", items: [
+  { id: "duo_ja_u274", type: "vocab", title: "Vocab: Unit 274 \u00b7 cross-cultural communication \u2014 Prepare for a global meeting", items: [
     {"t": "ことわざ", "e": "proverb", "r": "kotowaza"},
     {"t": "どちら", "e": "which one", "r": "dochira"},
     {"t": "もよろしいでしょうか", "e": "May I", "r": "moyoroshiideshouka"},
@@ -32910,7 +32910,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "表情", "e": "facial expression", "k": "ひょうじょう"},
     {"t": "遠慮", "e": "hesitation / restraint", "k": "えんりょ"}
   ]},
-  { id: "duo_ja_u275", type: "vocab", title: "Vocab: Unit 275 \u00b7 divorce \u2014 Relationships: Talk about family updates", items: [
+  { id: "duo_ja_u275", type: "vocab", title: "Vocab: Unit 275 \u00b7 divorce \u2014 Share family news and worries", items: [
     {"t": "だろう", "e": "are going to / is / must be", "r": "darou"},
     {"t": "まとめます", "e": "summarize / compile / organize", "r": "matomemasu"},
     {"t": "カウンセリング", "e": "counseling", "r": "kaunseringu"},
@@ -32927,7 +32927,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "財産", "e": "property", "k": "ざいさん"},
     {"t": "遠距離", "e": "long-distance", "k": "えんきょり"}
   ]},
-  { id: "duo_ja_u276", type: "vocab", title: "Vocab: Unit 276 \u00b7 literature 2 \u2014 Books: Recommend a book", items: [
+  { id: "duo_ja_u276", type: "vocab", title: "Vocab: Unit 276 \u00b7 literature 2 \u2014 Recommend books to customers", items: [
     {"t": "よう", "e": "so that", "r": "you"},
     {"t": "ように", "e": "as if", "r": "youni"},
     {"t": "クライマックス", "e": "climax", "r": "kuraimakkusu"},
@@ -32948,7 +32948,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "読書", "e": "reading", "k": "どくしょ"},
     {"t": "雰囲気", "e": "atmosphere", "k": "ふんいき"}
   ]},
-  { id: "duo_ja_u277", type: "vocab", title: "Vocab: Unit 277 \u00b7 organizing an event \u2014 Plans: Ask about meeting times", items: [
+  { id: "duo_ja_u277", type: "vocab", title: "Vocab: Unit 277 \u00b7 organizing an event \u2014 Plan an event in Osaka", items: [
     {"t": "テーブル席", "e": "table seat", "k": "てーぶるせき"},
     {"t": "ビジネスカジュアル", "e": "business casual", "r": "bijinesukajuaru"},
     {"t": "仮に", "e": "supposing", "k": "かりに"},
@@ -32961,7 +32961,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "都合が悪い", "e": "inconvenient / not convenient / I cannot go", "k": "つごうがわるい"},
     {"t": "騒がしい", "e": "noisy", "k": "さわがしい"}
   ]},
-  { id: "duo_ja_u278", type: "vocab", title: "Vocab: Unit 278 \u00b7 artificial intelligence \u2014 Systems: Present your team\u2019s system", items: [
+  { id: "duo_ja_u278", type: "vocab", title: "Vocab: Unit 278 \u00b7 artificial intelligence \u2014 Explain how your AI learns", items: [
     {"t": "セキュリティ", "e": "security", "r": "sekyuriti"},
     {"t": "センサー", "e": "sensor", "r": "sensā"},
     {"t": "個人情報", "e": "personal information", "k": "こじんじょうほう"},
@@ -32974,7 +32974,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "改善します", "e": "improves", "k": "かいぜんします"},
     {"t": "検索", "e": "search", "k": "けんさく"}
   ]},
-  { id: "duo_ja_u279", type: "vocab", title: "Vocab: Unit 279 \u00b7 living abroad \u2014 Work Life: Describe your new job", items: [
+  { id: "duo_ja_u279", type: "vocab", title: "Vocab: Unit 279 \u00b7 living abroad \u2014 Adapt to life and work abroad", items: [
     {"t": "たとえ", "e": "if", "r": "tatoe"},
     {"t": "というより", "e": "rather than", "r": "toiuyori"},
     {"t": "不動産", "e": "real estate", "k": "ふどうさん"},
@@ -32995,7 +32995,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "電柱", "e": "utility pole", "k": "でんちゅう"},
     {"t": "駐輪場", "e": "bicycle parking lot", "k": "ちゅうりんじょう"}
   ]},
-  { id: "duo_ja_u280", type: "vocab", title: "Vocab: Unit 280 \u00b7 sustainability 2 \u2014 Nature: Suggest ways to save resources", items: [
+  { id: "duo_ja_u280", type: "vocab", title: "Vocab: Unit 280 \u00b7 sustainability 2 \u2014 Suggest ways to save resources", items: [
     {"t": "かぎり", "e": "as long as", "r": "kagiri"},
     {"t": "交通手段", "e": "means of transportation", "k": "こうつうしゅだん"},
     {"t": "利用します", "e": "use / utilize / uses", "k": "りようします"},
@@ -33009,7 +33009,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "貴重", "e": "valuable", "k": "きちょう"},
     {"t": "野生動物", "e": "wildlife", "k": "やせいどうぶつ"}
   ]},
-  { id: "duo_ja_u281", type: "vocab", title: "Vocab: Unit 281 \u00b7 disabilities \u2014 Access: Request sign language help", items: [
+  { id: "duo_ja_u281", type: "vocab", title: "Vocab: Unit 281 \u00b7 disabilities \u2014 Help those with hearing loss", items: [
     {"t": "スロープ", "e": "ramp", "r": "surōpu"},
     {"t": "バリアフリー", "e": "barrier-free", "r": "bariafurī"},
     {"t": "充分に", "e": "enough", "k": "じゅうぶんに"},
@@ -33031,7 +33031,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "通路側", "e": "aisle seat", "k": "つうろがわ"},
     {"t": "音声ガイド", "e": "audio guide", "k": "おんせいがいど"}
   ]},
-  { id: "duo_ja_u282", type: "vocab", title: "Vocab: Unit 282 \u00b7 driving \u2014 Driving: Talk about hills and slopes", items: [
+  { id: "duo_ja_u282", type: "vocab", title: "Vocab: Unit 282 \u00b7 driving \u2014 Talk about cars and driving", items: [
     {"t": "ウィンカー", "e": "turn signal", "r": "u~inkā"},
     {"t": "エンジン", "e": "engine", "r": "enjin"},
     {"t": "ガソリンスタンド", "e": "gas station", "r": "gasorinsutando"},
@@ -33050,7 +33050,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "速度制限", "e": "speed limit", "k": "そくどせいげん"},
     {"t": "進路変更", "e": "lane change", "k": "しんろへんこう"}
   ]},
-  { id: "duo_ja_u283", type: "vocab", title: "Vocab: Unit 283 \u00b7 empathy \u2014 Feelings: Talk about similarities", items: [
+  { id: "duo_ja_u283", type: "vocab", title: "Vocab: Unit 283 \u00b7 empathy \u2014 Say what you have in common", items: [
     {"t": "お互いに", "e": "mutually", "k": "おたがいに"},
     {"t": "きちんと", "e": "properly", "r": "kichinto"},
     {"t": "にとって", "e": "to / for", "r": "nitotte"},
@@ -33070,7 +33070,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "納得", "e": "consent / understanding / agreement", "k": "なっとく"},
     {"t": "自然に", "e": "naturally", "k": "しぜんに"}
   ]},
-  { id: "duo_ja_u284", type: "vocab", title: "Vocab: Unit 284 \u00b7 money management \u2014 Money: Talk about living costs", items: [
+  { id: "duo_ja_u284", type: "vocab", title: "Vocab: Unit 284 \u00b7 money management \u2014 Talk about living costs", items: [
     {"t": "には", "e": "by (the) / there is... to... / for (the)", "r": "niha"},
     {"t": "キャッシュレス", "e": "cashless", "r": "kyasshuresu"},
     {"t": "中期", "e": "mid-term", "k": "ちゅうき"},
@@ -33092,7 +33092,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "返金", "e": "refund", "k": "へんきん"},
     {"t": "通信費", "e": "communication cost", "k": "つうしんひ"}
   ]},
-  { id: "duo_ja_u285", type: "vocab", title: "Vocab: Unit 285 \u00b7 risks \u2014 Disaster: Describe a disaster", items: [
+  { id: "duo_ja_u285", type: "vocab", title: "Vocab: Unit 285 \u00b7 risks \u2014 Discuss natural disasters", items: [
     {"t": "山火事", "e": "wildfire", "k": "やまかじ"},
     {"t": "故障", "e": "breakdown", "k": "こしょう"},
     {"t": "温暖化", "e": "global warming", "k": "おんだんか"},
@@ -33106,7 +33106,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "雷", "e": "thunder", "k": "かみなり"},
     {"t": "震度", "e": "seismic intensity", "k": "しんど"}
   ]},
-  { id: "duo_ja_u286", type: "vocab", title: "Vocab: Unit 286 \u00b7 language learning \u2014 Language: Ask about pronunciation", items: [
+  { id: "duo_ja_u286", type: "vocab", title: "Vocab: Unit 286 \u00b7 language learning \u2014 Talk about learning languages", items: [
     {"t": "なまり", "e": "accent", "r": "namari"},
     {"t": "ひらがな", "e": "hiragana", "r": "hiragana"},
     {"t": "わりに", "e": "considering", "r": "warini"},
@@ -33129,7 +33129,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "記憶", "e": "memory", "k": "きおく"},
     {"t": "語彙力", "e": "vocabulary", "k": "ごいりょく"}
   ]},
-  { id: "duo_ja_u287", type: "vocab", title: "Vocab: Unit 287 \u00b7 gender orientation \u2014 Diversity: Talk about discrimination", items: [
+  { id: "duo_ja_u287", type: "vocab", title: "Vocab: Unit 287 \u00b7 gender orientation \u2014 Talk about equal rights", items: [
     {"t": "ゲイ", "e": "gay", "r": "gei"},
     {"t": "ジェンダー", "e": "gender", "r": "jendā"},
     {"t": "トランスジェンダー", "e": "transgender", "r": "toransujendā"},
@@ -33152,7 +33152,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "認めます", "e": "recognize / admit / acknowledge", "k": "みとめます"},
     {"t": "配慮", "e": "consideration / concern / thoughtfulness", "k": "はいりょ"}
   ]},
-  { id: "duo_ja_u288", type: "vocab", title: "Vocab: Unit 288 \u00b7 global trade \u2014 Markets: Describe different markets", items: [
+  { id: "duo_ja_u288", type: "vocab", title: "Vocab: Unit 288 \u00b7 global trade \u2014 Describe global trade markets", items: [
     {"t": "しかし", "e": "however / but", "r": "shikashi"},
     {"t": "不景気", "e": "recession", "k": "ふけいき"},
     {"t": "交渉", "e": "negotiation / negotiations / negotiate", "k": "こうしょう"},
@@ -33170,7 +33170,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "見積もり", "e": "estimate / quotation / assessment", "k": "みつもり"},
     {"t": "輸出", "e": "export / exports", "k": "ゆしゅつ"}
   ]},
-  { id: "duo_ja_u289", type: "vocab", title: "Vocab: Unit 289 \u00b7 rural life 2 \u2014 Countryside: Describe country life", items: [
+  { id: "duo_ja_u289", type: "vocab", title: "Vocab: Unit 289 \u00b7 rural life 2 \u2014 Describe country life", items: [
     {"t": "お爺さん", "e": "grandfather", "k": "おじいさん"},
     {"t": "インフラ", "e": "infrastructure", "r": "infura"},
     {"t": "トラクター", "e": "tractor", "r": "torakutā"},
@@ -33191,7 +33191,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "運転免許", "e": "driver's license", "k": "うんてんめんきょ"},
     {"t": "鹿", "e": "deer", "k": "しか"}
   ]},
-  { id: "duo_ja_u290", type: "vocab", title: "Vocab: Unit 290 \u00b7 the hard sciences \u2014 Science: Explain research findings", items: [
+  { id: "duo_ja_u290", type: "vocab", title: "Vocab: Unit 290 \u00b7 the hard sciences \u2014 Explain how animals adapt", items: [
     {"t": "そのため", "e": "therefore", "r": "sonotame"},
     {"t": "の", "e": "for / 's / one", "r": "no"},
     {"t": "一般的に", "e": "generally", "k": "いっぱんてきに"},
@@ -33212,7 +33212,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "適応", "e": "adaptation / adapt / adjustment", "k": "てきおう"},
     {"t": "重力", "e": "gravity", "k": "じゅうりょく"}
   ]},
-  { id: "duo_ja_u291", type: "vocab", title: "Vocab: Unit 291 \u00b7 music 2 \u2014 Music: Describe a song", items: [
+  { id: "duo_ja_u291", type: "vocab", title: "Vocab: Unit 291 \u00b7 music 2 \u2014 Describe a memorable song", items: [
     {"t": "もしくは", "e": "or / otherwise / alternatively", "r": "moshikuha"},
     {"t": "サンバ", "e": "samba", "r": "sanba"},
     {"t": "ジャンル", "e": "genre", "r": "janru"},
@@ -33229,7 +33229,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "流行", "e": "trend", "k": "りゅうこう"},
     {"t": "脳内", "e": "in the brain", "k": "のうない"}
   ]},
-  { id: "duo_ja_u292", type: "vocab", title: "Vocab: Unit 292 \u00b7 customer service 2 \u2014 Service: Explain store hours", items: [
+  { id: "duo_ja_u292", type: "vocab", title: "Vocab: Unit 292 \u00b7 customer service 2 \u2014 Serve customers politely", items: [
     {"t": "ご注意ください", "e": "attention / please", "k": "ごちゅういください"},
     {"t": "サポート", "e": "support / assistance / help", "r": "sapōto"},
     {"t": "一粒", "e": "grain", "k": "ひとつぶ"},
@@ -33253,7 +33253,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "確実に", "e": "surely", "k": "かくじつに"},
     {"t": "送料", "e": "shipping cost", "k": "そうりょう"}
   ]},
-  { id: "duo_ja_u293", type: "vocab", title: "Vocab: Unit 293 \u00b7 friendship \u2014 Personality: Describe a friend's personality", items: [
+  { id: "duo_ja_u293", type: "vocab", title: "Vocab: Unit 293 \u00b7 friendship \u2014 Describe a friend's traits", items: [
     {"t": "いざとなると", "e": "when it comes to the crunch / when push comes to shove / in an emergency", "r": "izatonaruto"},
     {"t": "ぎこちない", "e": "awkward / clumsy / stiff", "r": "gikochinai"},
     {"t": "わりと", "e": "relatively", "r": "warito"},
@@ -33269,7 +33269,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "開放的", "e": "open-minded", "k": "かいほうてき"},
     {"t": "頑固", "e": "stubborn", "k": "がんこ"}
   ]},
-  { id: "duo_ja_u294", type: "vocab", title: "Vocab: Unit 294 \u00b7 globalization \u2014 Economy: Discuss price differences", items: [
+  { id: "duo_ja_u294", type: "vocab", title: "Vocab: Unit 294 \u00b7 globalization \u2014 Weigh the pros and cons", items: [
     {"t": "一方で", "e": "on the other hand", "k": "いっぽうで"},
     {"t": "人材", "e": "talent", "k": "じんざい"},
     {"t": "労働力", "e": "labor force", "k": "ろうどうりょく"},
@@ -33286,7 +33286,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "賃金", "e": "wage", "k": "ちんぎん"},
     {"t": "通信", "e": "communication", "k": "つうしん"}
   ]},
-  { id: "duo_ja_u295", type: "vocab", title: "Vocab: Unit 295 \u00b7 outer space \u2014 Space: Discuss a space launch", items: [
+  { id: "duo_ja_u295", type: "vocab", title: "Vocab: Unit 295 \u00b7 outer space \u2014 Discuss a space launch", items: [
     {"t": "あらゆる", "e": "every", "r": "arayuru"},
     {"t": "クレーター", "e": "crater", "r": "kurētā"},
     {"t": "不可能", "e": "impossible", "k": "ふかのう"},
@@ -33308,7 +33308,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "豊富", "e": "abundant", "k": "ほうふ"},
     {"t": "金星", "e": "Venus / planet", "k": "きんせい"}
   ]},
-  { id: "duo_ja_u296", type: "vocab", title: "Vocab: Unit 296 \u00b7 nature \u2014 Weather: Share a weather update", items: [
+  { id: "duo_ja_u296", type: "vocab", title: "Vocab: Unit 296 \u00b7 nature \u2014 Give a weather forecast", items: [
     {"t": "噴火", "e": "eruption", "k": "ふんか"},
     {"t": "地滑り", "e": "landslide", "k": "じすべり"},
     {"t": "岩", "e": "rock", "k": "いわ"},
@@ -33329,7 +33329,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "野生の", "e": "wild", "k": "やせいの"},
     {"t": "雲", "e": "cloud", "k": "くも"}
   ]},
-  { id: "duo_ja_u297", type: "vocab", title: "Vocab: Unit 297 \u00b7 crime \u2014 Crime: Discuss crime prevention", items: [
+  { id: "duo_ja_u297", type: "vocab", title: "Vocab: Unit 297 \u00b7 crime \u2014 Discuss new security systems", items: [
     {"t": "おわび", "e": "apology", "r": "owabi"},
     {"t": "アリバイ", "e": "alibi", "r": "aribai"},
     {"t": "インタビュー", "e": "interview", "r": "intabyū"},
@@ -33351,7 +33351,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "長所", "e": "strength", "k": "ちょうしょ"},
     {"t": "防犯", "e": "crime prevention", "k": "ぼうはん"}
   ]},
-  { id: "duo_ja_u298", type: "vocab", title: "Vocab: Unit 298 \u00b7 secondary school \u2014 Classroom: Share exam study tips", items: [
+  { id: "duo_ja_u298", type: "vocab", title: "Vocab: Unit 298 \u00b7 secondary school \u2014 Share entrance exam advice", items: [
     {"t": "べき", "e": "should", "r": "beki"},
     {"t": "めったに", "e": "rarely", "r": "mettani"},
     {"t": "修学旅行", "e": "school trip", "k": "しゅうがくりょこう"},
@@ -33371,7 +33371,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "課外活動", "e": "extracurricular activity", "k": "かがいかつどう"},
     {"t": "黒板", "e": "blackboard", "k": "こくばん"}
   ]},
-  { id: "duo_ja_u299", type: "vocab", title: "Vocab: Unit 299 \u00b7 accidents \u2014 Accidents: Explain how to prevent falls", items: [
+  { id: "duo_ja_u299", type: "vocab", title: "Vocab: Unit 299 \u00b7 accidents \u2014 Explain how to stay safe", items: [
     {"t": "たいした", "e": "significant", "r": "taishita"},
     {"t": "ぶつけます", "e": "hit", "r": "butsukemasu"},
     {"t": "アクセル", "e": "accelerator", "r": "akuseru"},
@@ -33394,7 +33394,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "通話", "e": "call", "k": "つうわ"},
     {"t": "酷い", "e": "terrible / badly", "k": "ひどい"}
   ]},
-  { id: "duo_ja_u300", type: "vocab", title: "Vocab: Unit 300 \u00b7 disaster preparedness \u2014 Camping: Describe useful gear", items: [
+  { id: "duo_ja_u300", type: "vocab", title: "Vocab: Unit 300 \u00b7 disaster preparedness \u2014 Pack an emergency bag", items: [
     {"t": "あらかじめ", "e": "in advance", "r": "arakajime"},
     {"t": "グリル", "e": "grill", "r": "guriru"},
     {"t": "スコップ", "e": "shovel", "r": "sukoppu"},
@@ -33416,7 +33416,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "食材", "e": "ingredient", "k": "しょくざい"},
     {"t": "飲料水", "e": "drinking water", "k": "いんりょうすい"}
   ]},
-  { id: "duo_ja_u301", type: "vocab", title: "Vocab: Unit 301 \u00b7 romance \u2014 Romance: Describe a romantic moment", items: [
+  { id: "duo_ja_u301", type: "vocab", title: "Vocab: Unit 301 \u00b7 romance \u2014 Describe a romantic moment", items: [
     {"t": "そっと", "e": "gently", "r": "sotto"},
     {"t": "もしかして", "e": "perhaps", "r": "moshikashite"},
     {"t": "プロポーズ", "e": "proposal / marriage proposal / propose", "r": "puropōzu"},
@@ -33438,7 +33438,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "背徳感", "e": "guilt", "k": "はいとくかん"},
     {"t": "花束", "e": "bouquet", "k": "はなたば"}
   ]},
-  { id: "duo_ja_u302", type: "vocab", title: "Vocab: Unit 302 \u00b7 community service \u2014 Community: Describe community roles", items: [
+  { id: "duo_ja_u302", type: "vocab", title: "Vocab: Unit 302 \u00b7 community service \u2014 Describe community roles", items: [
     {"t": "もちろん", "e": "of course", "r": "mochiron"},
     {"t": "チラシ", "e": "flyer", "r": "chirashi"},
     {"t": "代表", "e": "representative", "k": "だいひょう"},
@@ -33456,7 +33456,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "餅", "e": "mochi", "k": "もち"},
     {"t": "高齢者", "e": "elderly person", "k": "こうれいしゃ"}
   ]},
-  { id: "duo_ja_u303", type: "vocab", title: "Vocab: Unit 303 \u00b7 bank 2 \u2014 Banking: Fill out bank forms", items: [
+  { id: "duo_ja_u303", type: "vocab", title: "Vocab: Unit 303 \u00b7 bank 2 \u2014 Fill out bank forms", items: [
     {"t": "キャッシュカード", "e": "ATM card", "r": "kyasshukādo"},
     {"t": "デビットカード", "e": "debit card", "r": "debittokādo"},
     {"t": "両替", "e": "currency exchange", "k": "りょうがえ"},
@@ -33477,7 +33477,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "通帳", "e": "passbook", "k": "つうちょう"},
     {"t": "金額", "e": "amount", "k": "きんがく"}
   ]},
-  { id: "duo_ja_u304", type: "vocab", title: "Vocab: Unit 304 \u00b7 digital communication \u2014 Messages: Block unwanted messages", items: [
+  { id: "duo_ja_u304", type: "vocab", title: "Vocab: Unit 304 \u00b7 digital communication \u2014 Block spam and check call logs", items: [
     {"t": "の際", "e": "in the event of", "k": "のさい"},
     {"t": "スタンプ", "e": "sticker", "r": "sutanpu"},
     {"t": "ビデオ会議", "e": "video conference", "k": "びでおかいぎ"},
@@ -33491,7 +33491,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "迷惑行為", "e": "harassment", "k": "めいわくこうい"},
     {"t": "通知", "e": "notification", "k": "つうち"}
   ]},
-  { id: "duo_ja_u305", type: "vocab", title: "Vocab: Unit 305 \u00b7 history \u2014 Heritage: Describe historical places", items: [
+  { id: "duo_ja_u305", type: "vocab", title: "Vocab: Unit 305 \u00b7 history \u2014 Describe historic sites", items: [
     {"t": "世界遺産", "e": "World Heritage Site", "k": "せかいいさん"},
     {"t": "世紀", "e": "century", "k": "せいき"},
     {"t": "伝記", "e": "biography", "k": "でんき"},
@@ -33511,7 +33511,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "象徴", "e": "symbol", "k": "しょうちょう"},
     {"t": "遺跡", "e": "ruins", "k": "いせき"}
   ]},
-  { id: "duo_ja_u306", type: "vocab", title: "Vocab: Unit 306 \u00b7 immigration \u2014 Scholarship: Describe common challenges", items: [
+  { id: "duo_ja_u306", type: "vocab", title: "Vocab: Unit 306 \u00b7 immigration \u2014 Describe challenges abroad", items: [
     {"t": "その結果", "e": "as a result", "k": "そのけっか"},
     {"t": "ところが", "e": "however / but / on the other hand", "r": "tokoroga"},
     {"t": "不安定", "e": "unstable", "k": "ふあんてい"},
@@ -33533,7 +33533,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "滞在", "e": "visits / stay", "k": "たいざい"},
     {"t": "移民", "e": "immigrant", "k": "いみん"}
   ]},
-  { id: "duo_ja_u307", type: "vocab", title: "Vocab: Unit 307 \u00b7 technology \u2014 Devices: Describe a device problem", items: [
+  { id: "duo_ja_u307", type: "vocab", title: "Vocab: Unit 307 \u00b7 technology \u2014 Describe a computer problem", items: [
     {"t": "お気に入り", "e": "favorite", "k": "おきにいり"},
     {"t": "で大丈夫", "e": "is okay", "k": "でだいじょうぶ"},
     {"t": "まで", "e": "through / even / before", "r": "made"},
@@ -33548,7 +33548,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "設定します", "e": "sets / (will) set / set", "k": "せっていします"},
     {"t": "順調", "e": "going well", "k": "じゅんちょう"}
   ]},
-  { id: "duo_ja_u308", type: "vocab", title: "Vocab: Unit 308 \u00b7 activism \u2014 Leaders: Share leaders\u2019 messages", items: [
+  { id: "duo_ja_u308", type: "vocab", title: "Vocab: Unit 308 \u00b7 activism \u2014 Support a cause online", items: [
     {"t": "それでも", "e": "still", "r": "soredemo"},
     {"t": "ストライキ", "e": "strike", "r": "sutoraiki"},
     {"t": "ハッシュタグ", "e": "hashtag", "r": "hasshutagu"},
@@ -33568,7 +33568,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "議員", "e": "legislator", "k": "ぎいん"},
     {"t": "関東", "e": "Kanto / Kanto region / Kanto area", "k": "かんとう"}
   ]},
-  { id: "duo_ja_u309", type: "vocab", title: "Vocab: Unit 309 \u00b7 apologizing \u2014 Refunds: Apologize for a wrong order", items: [
+  { id: "duo_ja_u309", type: "vocab", title: "Vocab: Unit 309 \u00b7 apologizing \u2014 Apologize for a mistake", items: [
     {"t": "いかがですか", "e": "How is it?", "r": "ikagadesuka"},
     {"t": "と申します", "e": "my name is...", "k": "ともうします"},
     {"t": "なさいます", "e": "do / make / perform", "r": "nasaimasu"},
@@ -33583,7 +33583,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "番号札", "e": "number ticket", "k": "ばんごうふだ"},
     {"t": "負担", "e": "burden", "k": "ふたん"}
   ]},
-  { id: "duo_ja_u310", type: "vocab", title: "Vocab: Unit 310 \u00b7 food \u2014 Sushi Bar: Choose your seat", items: [
+  { id: "duo_ja_u310", type: "vocab", title: "Vocab: Unit 310 \u00b7 food \u2014 Choose your seat", items: [
     {"t": "お好きな", "e": "your preferred", "k": "およしみきな"},
     {"t": "お米", "e": "rice", "k": "おうべい"},
     {"t": "カウンター席", "e": "counter seat", "k": "かうんたーせき"},

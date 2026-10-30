@@ -3045,7 +3045,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "unternimmt", "e": "undertake / take on / do"},
     {"t": "winken", "e": "waves / gestured"}
   ]},
-  { id: "duo_de_u131", type: "vocab", title: "Vocab: Unit 131 \u00b7 hobbies \u2014 Hobbies: Talk about new hobbies you tried", items: [
+  { id: "duo_de_u131", type: "vocab", title: "Vocab: Unit 131 \u00b7 hobbies \u2014 Talk about fun activities", items: [
     {"t": "der Anfänger", "e": "beginner (masculine)"},
     {"t": "der Bogen", "e": "bow / arc"},
     {"t": "die Eisdiele", "e": "parlor"},
@@ -3068,7 +3068,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wollten", "e": "wanted to / did want / wanted"},
     {"t": "öfters", "e": "often"}
   ]},
-  { id: "duo_de_u132", type: "vocab", title: "Vocab: Unit 132 \u00b7 music \u2014 Music: Share your favorite music", items: [
+  { id: "duo_de_u132", type: "vocab", title: "Vocab: Unit 132 \u00b7 music \u2014 Discuss music and feelings", items: [
     {"t": "das Album", "e": "album"},
     {"t": "die Bassgitarre", "e": "bass guitar / bass"},
     {"t": "die Filmmusik", "e": "soundtrack"},
@@ -3089,7 +3089,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "iris", "e": "Iris"},
     {"t": "letztens", "e": "recently"}
   ]},
-  { id: "duo_de_u133", type: "vocab", title: "Vocab: Unit 133 \u00b7 gatherings \u2014 Gathering: Suggest an event to attend", items: [
+  { id: "duo_de_u133", type: "vocab", title: "Vocab: Unit 133 \u00b7 gatherings \u2014 Discuss a campus event", items: [
     {"t": "der Arbeitskollege", "e": "coworker"},
     {"t": "die Arbeitskollegin", "e": "coworker"},
     {"t": "die Beschreibung", "e": "description"},
@@ -3111,7 +3111,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "sich lohnen", "e": "to be worthwhile; to pay off"},
     {"t": "verunsichert", "e": "insecure"}
   ]},
-  { id: "duo_de_u134", type: "vocab", title: "Vocab: Unit 134 \u00b7 outdoor activities \u2014 Trails: Describe your trail route", items: [
+  { id: "duo_de_u134", type: "vocab", title: "Vocab: Unit 134 \u00b7 outdoor activities \u2014 Describe a trip through nature", items: [
     {"t": "das Eichhörnchen", "e": "squirrel"},
     {"t": "das Fahrzeug", "e": "vehicle"},
     {"t": "die Gasse", "e": "alley"},
@@ -3136,7 +3136,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "steil", "e": "steep / steeply"},
     {"t": "um", "e": "around / at"}
   ]},
-  { id: "duo_de_u135", type: "vocab", title: "Vocab: Unit 135 \u00b7 extending accepting and declining invitations \u2014 Events: Invite classmates to events", items: [
+  { id: "duo_de_u135", type: "vocab", title: "Vocab: Unit 135 \u00b7 extending accepting and declining invitations \u2014 Organize a club event", items: [
     {"t": "die Abendkasse", "e": "evening box office"},
     {"t": "die Anmeldung", "e": "announcement / registration"},
     {"t": "Gefallen", "e": "to be pleasing"},
@@ -3159,7 +3159,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "werfen", "e": "to throw"},
     {"t": "zusagen", "e": "did"}
   ]},
-  { id: "duo_de_u136", type: "vocab", title: "Vocab: Unit 136 \u00b7 daily routines \u2014 Routine: Describe your morning routine", items: [
+  { id: "duo_de_u136", type: "vocab", title: "Vocab: Unit 136 \u00b7 daily routines \u2014 Describe your morning routine", items: [
     {"t": "der Arbeitstag", "e": "workday"},
     {"t": "die Kaffeetasse", "e": "coffee mug"},
     {"t": "die Morgenroutine", "e": "morning routine"},
@@ -3181,7 +3181,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "schließlich", "e": "finally / at last / after all"},
     {"t": "unpünktlich", "e": "unpunctual"}
   ]},
-  { id: "duo_de_u137", type: "vocab", title: "Vocab: Unit 137 \u00b7 customer service \u2014 Service: Request a receipt", items: [
+  { id: "duo_de_u137", type: "vocab", title: "Vocab: Unit 137 \u00b7 customer service \u2014 Ask for a receipt", items: [
     {"t": "die Bedienung", "e": "service / waiter / waitress"},
     {"t": "die Bestellung", "e": "order; reservation"},
     {"t": "die Details", "e": "details"},
@@ -3204,7 +3204,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verständlich", "e": "understandable / readable"},
     {"t": "werktags", "e": "weekdays"}
   ]},
-  { id: "duo_de_u138", type: "vocab", title: "Vocab: Unit 138 \u00b7 climate \u2014 City Life: Ask about civic responsibilities", items: [
+  { id: "duo_de_u138", type: "vocab", title: "Vocab: Unit 138 \u00b7 climate \u2014 Prepare a group presentation", items: [
     {"t": "der Bürger", "e": "citizen (masculine)"},
     {"t": "das Dach", "e": "roof"},
     {"t": "die Entwicklung", "e": "development"},
@@ -3228,7 +3228,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zusammenarbeiten", "e": "work together / will work together / working together"},
     {"t": "zusammenstellen", "e": "make / makes"}
   ]},
-  { id: "duo_de_u139", type: "vocab", title: "Vocab: Unit 139 \u00b7 professional life \u2014 Office: Describe your workspace", items: [
+  { id: "duo_de_u139", type: "vocab", title: "Vocab: Unit 139 \u00b7 professional life \u2014 Share feedback with your team", items: [
     {"t": "die Angestellter", "e": "Angestellter / employee's / employee"},
     {"t": "der Arbeitsalltag", "e": "workday"},
     {"t": "der Assistent", "e": "assistant / attendant's (masculine)"},
@@ -3250,7 +3250,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "voraussichtlich", "e": "probably"},
     {"t": "der Überblick", "e": "overview / survey"}
   ]},
-  { id: "duo_de_u140", type: "vocab", title: "Vocab: Unit 140 \u00b7 family structure \u2014 Family: Introduce your relatives", items: [
+  { id: "duo_de_u140", type: "vocab", title: "Vocab: Unit 140 \u00b7 family structure \u2014 Introduce your relatives", items: [
     {"t": "das Enkelkind", "e": "grandkid / grandchildren"},
     {"t": "das Familientreffen", "e": "reunions"},
     {"t": "der Fleck", "e": "spot / stain"},
@@ -3274,7 +3274,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "weitere", "e": "farther / further / more"},
     {"t": "zurückhaltend", "e": "private / modest / reserved"}
   ]},
-  { id: "duo_de_u141", type: "vocab", title: "Vocab: Unit 141 \u00b7 buying goods \u2014 Shopping: Compare prices and brands", items: [
+  { id: "duo_de_u141", type: "vocab", title: "Vocab: Unit 141 \u00b7 buying goods \u2014 Compare prices and brands", items: [
     {"t": "der Artikel", "e": "article"},
     {"t": "das Budget", "e": "budget"},
     {"t": "das Dutzend", "e": "dozen"},
@@ -3301,7 +3301,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "relativ", "e": "relative"},
     {"t": "verlässlich", "e": "reliable / credible / dependable"}
   ]},
-  { id: "duo_de_u142", type: "vocab", title: "Vocab: Unit 142 \u00b7 free time \u2014 Dreams: Share your biggest wishes", items: [
+  { id: "duo_de_u142", type: "vocab", title: "Vocab: Unit 142 \u00b7 free time \u2014 Share your biggest dreams", items: [
     {"t": "das Abenteuer", "e": "adventure"},
     {"t": "die Auswahl", "e": "selection / choice"},
     {"t": "das Bowling", "e": "Bowling"},
@@ -3327,7 +3327,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "träumen", "e": "to dream"},
     {"t": "wünschen", "e": "to wish"}
   ]},
-  { id: "duo_de_u143", type: "vocab", title: "Vocab: Unit 143 \u00b7 destinations \u2014 Zoo: Interact with people at the zoo", items: [
+  { id: "duo_de_u143", type: "vocab", title: "Vocab: Unit 143 \u00b7 destinations \u2014 Talk about your zoo visit", items: [
     {"t": "der Affe", "e": "monkey / ape"},
     {"t": "das Faultier", "e": "sloth"},
     {"t": "die Feder", "e": "feather"},
@@ -3349,7 +3349,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "scheu", "e": "shy"},
     {"t": "willkommen", "e": "welcome"}
   ]},
-  { id: "duo_de_u144", type: "vocab", title: "Vocab: Unit 144 \u00b7 neighborhoods \u2014 Neighborhood: Meet your new neighbors", items: [
+  { id: "duo_de_u144", type: "vocab", title: "Vocab: Unit 144 \u00b7 neighborhoods \u2014 Meet your new neighbors", items: [
     {"t": "die Attraktion", "e": "attraction"},
     {"t": "der Bach", "e": "stream / creek / brook"},
     {"t": "der Bau", "e": "structure / construction / building"},
@@ -3373,7 +3373,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "vielen", "e": "many / a lot of"},
     {"t": "wegziehen", "e": "pull away / drawing"}
   ]},
-  { id: "duo_de_u145", type: "vocab", title: "Vocab: Unit 145 \u00b7 storytelling \u2014 Childhood: Talk about favorite fairy tales", items: [
+  { id: "duo_de_u145", type: "vocab", title: "Vocab: Unit 145 \u00b7 storytelling \u2014 Discuss childhood fairy tales", items: [
     {"t": "die Jugend", "e": "youth"},
     {"t": "der Kapitän", "e": "captain / master / skipper"},
     {"t": "die Kindheit", "e": "childhood"},
@@ -3399,7 +3399,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "ununterbrochen", "e": "uninterruptedly"},
     {"t": "vergraben", "e": "bury / buried"}
   ]},
-  { id: "duo_de_u146", type: "vocab", title: "Vocab: Unit 146 \u00b7 describing events \u2014 Rules: Describe household rules", items: [
+  { id: "duo_de_u146", type: "vocab", title: "Vocab: Unit 146 \u00b7 describing events \u2014 Talk about being punished", items: [
     {"t": "das Fußballspiel", "e": "soccer game"},
     {"t": "der Hausarrest", "e": "grounded"},
     {"t": "der Papierkorb", "e": "wastebasket"},
@@ -3421,7 +3421,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verantwortungslos", "e": "irresponsible"},
     {"t": "wischen", "e": "mopping / sweeps"}
   ]},
-  { id: "duo_de_u147", type: "vocab", title: "Vocab: Unit 147 \u00b7 living spaces \u2014 Home: Describe a living space", items: [
+  { id: "duo_de_u147", type: "vocab", title: "Vocab: Unit 147 \u00b7 living spaces \u2014 Describe a cozy living space", items: [
     {"t": "die Breite", "e": "breadth / width / amplitude"},
     {"t": "der Dachboden", "e": "attic"},
     {"t": "die Dekoration", "e": "decoration / window dressing"},
@@ -3447,7 +3447,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "scheinen", "e": "to seem / to shine"},
     {"t": "zertifiziert", "e": "certified"}
   ]},
-  { id: "duo_de_u148", type: "vocab", title: "Vocab: Unit 148 \u00b7 religion \u2014 Traditions: Describe local traditions", items: [
+  { id: "duo_de_u148", type: "vocab", title: "Vocab: Unit 148 \u00b7 religion \u2014 Describe the evening sky", items: [
     {"t": "das Abendbrot", "e": "dinner"},
     {"t": "die Bibel", "e": "bible"},
     {"t": "die Fastenzeit", "e": "fast"},
@@ -3471,7 +3471,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "familiär", "e": "familiar"},
     {"t": "nach wie vor", "e": "still"}
   ]},
-  { id: "duo_de_u149", type: "vocab", title: "Vocab: Unit 149 \u00b7 personal experiences \u2014 Discovery: Describe a discovery", items: [
+  { id: "duo_de_u149", type: "vocab", title: "Vocab: Unit 149 \u00b7 personal experiences \u2014 Share experiences at a castle", items: [
     {"t": "der Alpen", "e": "Alps"},
     {"t": "das Auslandsjahr", "e": "year"},
     {"t": "die Burg", "e": "castle / fort"},
@@ -3492,7 +3492,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zuvor", "e": "beforehand / previously"},
     {"t": "ähneln", "e": "resemble"}
   ]},
-  { id: "duo_de_u150", type: "vocab", title: "Vocab: Unit 150 \u00b7 chores \u2014 Chores: Describe household chores", items: [
+  { id: "duo_de_u150", type: "vocab", title: "Vocab: Unit 150 \u00b7 chores \u2014 Talk about cleaning at home", items: [
     {"t": "der Abwasch", "e": "dishes"},
     {"t": "das Altpapier", "e": "waste paper"},
     {"t": "der Behälter", "e": "container / tank's"},
@@ -3517,7 +3517,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wegbringen", "e": "drive"},
     {"t": "die Überraschungsparty", "e": "party"}
   ]},
-  { id: "duo_de_u151", type: "vocab", title: "Vocab: Unit 151 \u00b7 getting a haircut / salon \u2014 Salon: Describe your new haircut", items: [
+  { id: "duo_de_u151", type: "vocab", title: "Vocab: Unit 151 \u00b7 getting a haircut / salon \u2014 Describe your new haircut", items: [
     {"t": "der Haarschnitt", "e": "haircut"},
     {"t": "das Haarspray", "e": "hairspray"},
     {"t": "der Kamm", "e": "comb"},
@@ -3537,7 +3537,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "rund", "e": "round"},
     {"t": "von jetzt an", "e": "from now on"}
   ]},
-  { id: "duo_de_u152", type: "vocab", title: "Vocab: Unit 152 \u00b7 gift giving \u2014 Gifts: Choose a gift for someone", items: [
+  { id: "duo_de_u152", type: "vocab", title: "Vocab: Unit 152 \u00b7 gift giving \u2014 Choose a birthday gift", items: [
     {"t": "der Dank", "e": "thank / thanks to"},
     {"t": "die Duftkerze", "e": "scented candle / scented"},
     {"t": "die Familientradition", "e": "tradition"},
@@ -3558,7 +3558,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "umsonst", "e": "for free"},
     {"t": "verschenken", "e": "are giving away / give away"}
   ]},
-  { id: "duo_de_u153", type: "vocab", title: "Vocab: Unit 153 \u00b7 historical events \u2014 Museum: Describe a museum exhibit", items: [
+  { id: "duo_de_u153", type: "vocab", title: "Vocab: Unit 153 \u00b7 historical events \u2014 Describe a museum exhibit", items: [
     {"t": "der Entdecker", "e": "explorer / discoverer"},
     {"t": "die Fahne", "e": "galley / flag / smell of alcohol on somebody's breath"},
     {"t": "die Gefangener", "e": "prisoner"},
@@ -3582,7 +3582,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "das Alter", "e": "age"},
     {"t": "übrigens", "e": "by the way"}
   ]},
-  { id: "duo_de_u154", type: "vocab", title: "Vocab: Unit 154 \u00b7 first aid \u2014 First Aid: Share a first aid story", items: [
+  { id: "duo_de_u154", type: "vocab", title: "Vocab: Unit 154 \u00b7 first aid \u2014 Talk about a first aid class", items: [
     {"t": "die Brust", "e": "breast / chest"},
     {"t": "der Fall", "e": "case / instance"},
     {"t": "der Knochen", "e": "bone"},
@@ -3604,7 +3604,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "die Übung", "e": "exercise / practice"},
     {"t": "ängstlich", "e": "scary"}
   ]},
-  { id: "duo_de_u155", type: "vocab", title: "Vocab: Unit 155 \u00b7 romantic relationships \u2014 Support: Encourage a friend", items: [
+  { id: "duo_de_u155", type: "vocab", title: "Vocab: Unit 155 \u00b7 romantic relationships \u2014 Plan a date with someone new", items: [
     {"t": "die Bekannter", "e": "acquaintance"},
     {"t": "der Jahrestag", "e": "anniversary"},
     {"t": "der Kuss", "e": "kiss"},
@@ -3626,7 +3626,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verteidigen", "e": "(we/they) defend/are defending, (to) be a defender, (to) defend"},
     {"t": "zusammenziehen", "e": "contract"}
   ]},
-  { id: "duo_de_u156", type: "vocab", title: "Vocab: Unit 156 \u00b7 school life \u2014 Homework: Organize your worksheets", items: [
+  { id: "duo_de_u156", type: "vocab", title: "Vocab: Unit 156 \u00b7 school life \u2014 Prepare for the club meeting", items: [
     {"t": "das Arbeitsblatt", "e": "worksheet"},
     {"t": "das Kapitel", "e": "chapter"},
     {"t": "die Klassenarbeit", "e": "test"},
@@ -3648,7 +3648,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wiederholen", "e": "to repeat; to recur / to reiterate"},
     {"t": "überarbeiten", "e": "revise / redo / reformulated"}
   ]},
-  { id: "duo_de_u157", type: "vocab", title: "Vocab: Unit 157 \u00b7 moving \u2014 Moving: Describe your new city", items: [
+  { id: "duo_de_u157", type: "vocab", title: "Vocab: Unit 157 \u00b7 moving \u2014 Describe your new city", items: [
     {"t": "die Couch", "e": "couch"},
     {"t": "die Empfehlung", "e": "recommendation"},
     {"t": "die Heimatstadt", "e": "hometown"},
@@ -3673,7 +3673,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "sahen", "e": "looked / watched"},
     {"t": "ziehen", "e": "grow / pull"}
   ]},
-  { id: "duo_de_u158", type: "vocab", title: "Vocab: Unit 158 \u00b7 travel experiences \u2014 Travel: Share travel memories", items: [
+  { id: "duo_de_u158", type: "vocab", title: "Vocab: Unit 158 \u00b7 travel experiences \u2014 Share travel memories", items: [
     {"t": "der Bewohner", "e": "inhabitant / occupant (masculine)"},
     {"t": "das Irland", "e": "Ireland"},
     {"t": "die Passkontrolle", "e": "passport control"},
@@ -3695,7 +3695,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "unterstützen", "e": "to support"},
     {"t": "zurückkehren", "e": "return"}
   ]},
-  { id: "duo_de_u159", type: "vocab", title: "Vocab: Unit 159 \u00b7 extreme weather events \u2014 Alerts: Describe emergency signals", items: [
+  { id: "duo_de_u159", type: "vocab", title: "Vocab: Unit 159 \u00b7 extreme weather events \u2014 Talk about storms and safety", items: [
     {"t": "die Ankündigung", "e": "notice"},
     {"t": "die Anweisung", "e": "charge / instructions / orders"},
     {"t": "die Feuerwehr", "e": "fire brigade"},
@@ -3721,7 +3721,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verkünden", "e": "hands / publish / passed"},
     {"t": "warnen", "e": "warn"}
   ]},
-  { id: "duo_de_u160", type: "vocab", title: "Vocab: Unit 160 \u00b7 personal goals \u2014 Progress: Set personal goals", items: [
+  { id: "duo_de_u160", type: "vocab", title: "Vocab: Unit 160 \u00b7 personal goals \u2014 Set goals for your studies", items: [
     {"t": "die Akademie", "e": "academy"},
     {"t": "das Anliegen", "e": "interests / interest"},
     {"t": "die Anstrengung", "e": "strain / effort"},
@@ -3744,7 +3744,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "von zeit zu zeit", "e": "from time to time"},
     {"t": "vornehmen", "e": "makes / make / forms"}
   ]},
-  { id: "duo_de_u161", type: "vocab", title: "Vocab: Unit 161 \u00b7 eating habits \u2014 Meals: Describe your eating habits", items: [
+  { id: "duo_de_u161", type: "vocab", title: "Vocab: Unit 161 \u00b7 eating habits \u2014 Describe your eating habits", items: [
     {"t": "die Ananas", "e": "pineapple"},
     {"t": "der Appetit", "e": "appetite"},
     {"t": "der Einkauf", "e": "shop / buying"},
@@ -3766,7 +3766,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wöchentlich", "e": "weekly"},
     {"t": "zum", "e": "zu+dem contraction"}
   ]},
-  { id: "duo_de_u162", type: "vocab", title: "Vocab: Unit 162 \u00b7 concerts and performances \u2014 Concert: Anticipate your favorite songs", items: [
+  { id: "duo_de_u162", type: "vocab", title: "Vocab: Unit 162 \u00b7 concerts and performances \u2014 Listen closely to the speech", items: [
     {"t": "die Aussprache", "e": "pronunciation"},
     {"t": "das Erlebnis", "e": "experiences / thrills"},
     {"t": "der Inhalt", "e": "content"},
@@ -3790,7 +3790,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "sein", "e": "his / its"},
     {"t": "sich vorbereiten", "e": "prepare"}
   ]},
-  { id: "duo_de_u163", type: "vocab", title: "Vocab: Unit 163 \u00b7 public transit \u2014 Transit: Talk about fellow passengers", items: [
+  { id: "duo_de_u163", type: "vocab", title: "Vocab: Unit 163 \u00b7 public transit \u2014 Describe a subway incident", items: [
     {"t": "die Ankunft", "e": "arrival / plane's"},
     {"t": "die Anzeigetafel", "e": "display board"},
     {"t": "die Beschwerde", "e": "complaint"},
@@ -3814,7 +3814,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "tranken", "e": "were drinking / did drink"},
     {"t": "wurden", "e": "would"}
   ]},
-  { id: "duo_de_u164", type: "vocab", title: "Vocab: Unit 164 \u00b7 celebrations \u2014 Parties: Plan a party", items: [
+  { id: "duo_de_u164", type: "vocab", title: "Vocab: Unit 164 \u00b7 celebrations \u2014 Plan a birthday party", items: [
     {"t": "die Abschlussfeier", "e": "graduation"},
     {"t": "das Aussehen", "e": "appearance"},
     {"t": "die Begrüßung", "e": "salutation"},
@@ -3835,7 +3835,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "im voraus", "e": "in advance"},
     {"t": "was für", "e": "what kind of"}
   ]},
-  { id: "duo_de_u165", type: "vocab", title: "Vocab: Unit 165 \u00b7 babysitting \u2014 Family: Give instructions to a child", items: [
+  { id: "duo_de_u165", type: "vocab", title: "Vocab: Unit 165 \u00b7 babysitting \u2014 Tell a child what to do", items: [
     {"t": "der Briefkasten", "e": "mailbox / letter box / postbox"},
     {"t": "die Kommunikation", "e": "communication"},
     {"t": "das Kopfkissen", "e": "pillow"},
@@ -3860,7 +3860,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "vorlesen", "e": "read"},
     {"t": "zubereiten", "e": "make / prepare / cook"}
   ]},
-  { id: "duo_de_u166", type: "vocab", title: "Vocab: Unit 166 \u00b7 economic systems \u2014 Business: Describe a business trend", items: [
+  { id: "duo_de_u166", type: "vocab", title: "Vocab: Unit 166 \u00b7 economic systems \u2014 Talk about business news", items: [
     {"t": "das Angebot", "e": "offer / bid"},
     {"t": "das Erdgas", "e": "natural gas"},
     {"t": "die Fabrik", "e": "factory"},
@@ -3885,7 +3885,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zunehmen", "e": "pick / grow / built"},
     {"t": "überwachen", "e": "monitor"}
   ]},
-  { id: "duo_de_u167", type: "vocab", title: "Vocab: Unit 167 \u00b7 civic life \u2014 Community: Share community ideas", items: [
+  { id: "duo_de_u167", type: "vocab", title: "Vocab: Unit 167 \u00b7 civic life \u2014 Share ideas at a town meeting", items: [
     {"t": "die Angestellter", "e": "Angestellter / employee's / employee"},
     {"t": "die Behörde", "e": "authority"},
     {"t": "der Bürgermeister", "e": "mayor (masculine)"},
@@ -3907,7 +3907,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zerstören", "e": "broken / broke / take"},
     {"t": "die Öffentlichkeit", "e": "public"}
   ]},
-  { id: "duo_de_u168", type: "vocab", title: "Vocab: Unit 168 \u00b7 time periods \u2014 Schedule: Plan your week", items: [
+  { id: "duo_de_u168", type: "vocab", title: "Vocab: Unit 168 \u00b7 time periods \u2014 Plan upcoming meetings at work", items: [
     {"t": "die Besprechung", "e": "meeting"},
     {"t": "die Dauer", "e": "duration"},
     {"t": "Ferienjob", "e": "job"},
@@ -3927,7 +3927,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "unsicher", "e": "uncertain / unstable"},
     {"t": "vergangen", "e": "past / bygone / last"}
   ]},
-  { id: "duo_de_u169", type: "vocab", title: "Vocab: Unit 169 \u00b7 aspirations \u2014 Careers: Describe your dream job", items: [
+  { id: "duo_de_u169", type: "vocab", title: "Vocab: Unit 169 \u00b7 aspirations \u2014 Describe your dream job", items: [
     {"t": "die Armee", "e": "army"},
     {"t": "die Auswirkung", "e": "repercussion / consequence / effect"},
     {"t": "der Banker", "e": "banker (masculine)"},
@@ -3948,7 +3948,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "genügend", "e": "enough / adequately"},
     {"t": "sich trauen", "e": "dare"}
   ]},
-  { id: "duo_de_u170", type: "vocab", title: "Vocab: Unit 170 \u00b7 workplace communications \u2014 Teamwork: Share ideas with your team", items: [
+  { id: "duo_de_u170", type: "vocab", title: "Vocab: Unit 170 \u00b7 workplace communications \u2014 Discuss changes at work", items: [
     {"t": "der Druck", "e": "pressure / print"},
     {"t": "der Gruppenchat", "e": "group chat"},
     {"t": "die Konsequenz", "e": "consequence"},
@@ -3971,7 +3971,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "die Überstunde", "e": "overtime hour"},
     {"t": "äußern", "e": "state"}
   ]},
-  { id: "duo_de_u171", type: "vocab", title: "Vocab: Unit 171 \u00b7 seasonal changes \u2014 Feelings: Describe your feelings", items: [
+  { id: "duo_de_u171", type: "vocab", title: "Vocab: Unit 171 \u00b7 seasonal changes \u2014 Talk about how you feel", items: [
     {"t": "die Aktivität", "e": "activity"},
     {"t": "die Begeisterung", "e": "enthusiasm"},
     {"t": "die Dunkelheit", "e": "darkness / dark"},
@@ -3993,7 +3993,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "unsicher", "e": "uncertain / unstable"},
     {"t": "der Ärger", "e": "anger"}
   ]},
-  { id: "duo_de_u172", type: "vocab", title: "Vocab: Unit 172 \u00b7 film \u2014 Movies: Describe a movie scene", items: [
+  { id: "duo_de_u172", type: "vocab", title: "Vocab: Unit 172 \u00b7 film \u2014 Discuss a movie scene", items: [
     {"t": "der Actionfilm", "e": "action movie"},
     {"t": "die Emotion", "e": "emotion"},
     {"t": "das Entsetzen", "e": "horror"},
@@ -4017,7 +4017,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "unklar", "e": "unclear"},
     {"t": "unterhalten", "e": "keeps / having a chat / chat"}
   ]},
-  { id: "duo_de_u173", type: "vocab", title: "Vocab: Unit 173 \u00b7 rural life \u2014 Farm Life: Describe your day on a farm", items: [
+  { id: "duo_de_u173", type: "vocab", title: "Vocab: Unit 173 \u00b7 rural life \u2014 Describe your day on the farm", items: [
     {"t": "der Bauer", "e": "farmer (masculine)"},
     {"t": "das Bauernhaus", "e": "farmhouse"},
     {"t": "der Bauernhof", "e": "farm / farmer's"},
@@ -4043,7 +4043,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "frühmorgens", "e": "early in the morning"},
     {"t": "hacken", "e": "hack / chop / chopping"}
   ]},
-  { id: "duo_de_u174", type: "vocab", title: "Vocab: Unit 174 \u00b7 medical care \u2014 Doctor: Describe your symptoms", items: [
+  { id: "duo_de_u174", type: "vocab", title: "Vocab: Unit 174 \u00b7 medical care \u2014 Describe your symptoms", items: [
     {"t": "der Arztbesuch", "e": "doctor's visit / doctor's"},
     {"t": "die Arztpraxis", "e": "doctor's office / physician / doctor"},
     {"t": "der Arzttermin", "e": "doctor's appointment / doctor's"},
@@ -4065,7 +4065,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "weiterhelfen", "e": "help further"},
     {"t": "üblich", "e": "customary / usual / established"}
   ]},
-  { id: "duo_de_u175", type: "vocab", title: "Vocab: Unit 175 \u00b7 job interview \u2014 Workplace: Describe your work experience", items: [
+  { id: "duo_de_u175", type: "vocab", title: "Vocab: Unit 175 \u00b7 job interview \u2014 Describe your work experience", items: [
     {"t": "die Berufserfahrung", "e": "experience"},
     {"t": "der Elefant", "e": "elephant"},
     {"t": "der Held", "e": "hero"},
@@ -4087,7 +4087,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "vermuten", "e": "suspect"},
     {"t": "verständnisvoll", "e": "empathetic / understanding / understandingly"}
   ]},
-  { id: "duo_de_u176", type: "vocab", title: "Vocab: Unit 176 \u00b7 games \u2014 Board Game: Check game progress", items: [
+  { id: "duo_de_u176", type: "vocab", title: "Vocab: Unit 176 \u00b7 games \u2014 Explain board game rules", items: [
     {"t": "das Finale", "e": "final"},
     {"t": "der Gegner", "e": "opponent (masculine)"},
     {"t": "der Mitspieler", "e": "hand (masculine)"},
@@ -4110,7 +4110,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "siebte", "e": "seventh"},
     {"t": "würfeln", "e": "roll"}
   ]},
-  { id: "duo_de_u177", type: "vocab", title: "Vocab: Unit 177 \u00b7 sports \u2014 Competition: Describe a sports event", items: [
+  { id: "duo_de_u177", type: "vocab", title: "Vocab: Unit 177 \u00b7 sports \u2014 Tour a renovated stadium", items: [
     {"t": "der Fan", "e": "fan"},
     {"t": "der Favorit", "e": "favorite"},
     {"t": "Fußballturnier", "e": "tournament"},
@@ -4134,7 +4134,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "woanders", "e": "somewhere else / elsewhere"},
     {"t": "zuschauen", "e": "watching"}
   ]},
-  { id: "duo_de_u178", type: "vocab", title: "Vocab: Unit 178 \u00b7 commuting \u2014 Commute: Describe your daily commute", items: [
+  { id: "duo_de_u178", type: "vocab", title: "Vocab: Unit 178 \u00b7 commuting \u2014 Describe your daily commute", items: [
     {"t": "die Alternative", "e": "alternative"},
     {"t": "der Arbeitsplatz", "e": "workplace / job / place of work"},
     {"t": "die Bahn", "e": "train / railroad / railway"},
@@ -4155,7 +4155,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wenden", "e": "to turn"},
     {"t": "überfüllt", "e": "overcrowded"}
   ]},
-  { id: "duo_de_u179", type: "vocab", title: "Vocab: Unit 179 \u00b7 scientific discoveries \u2014 Science: Explain a discovery", items: [
+  { id: "duo_de_u179", type: "vocab", title: "Vocab: Unit 179 \u00b7 scientific discoveries \u2014 Discuss inventions in class", items: [
     {"t": "der Astronaut", "e": "astronaut"},
     {"t": "die Atmosphäre", "e": "atmosphere; ambience"},
     {"t": "der Erfinder", "e": "inventor (masculine)"},
@@ -4179,7 +4179,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zerbrochen", "e": "broken / break / broke"},
     {"t": "zerrissen", "e": "broken / rip / cut"}
   ]},
-  { id: "duo_de_u180", type: "vocab", title: "Vocab: Unit 180 \u00b7 types of cuisine \u2014 Cuisine: Choose a place to eat", items: [
+  { id: "duo_de_u180", type: "vocab", title: "Vocab: Unit 180 \u00b7 types of cuisine \u2014 Choose a place to eat", items: [
     {"t": "das Bistro", "e": "bistro"},
     {"t": "das Curry", "e": "curry"},
     {"t": "das Dessert", "e": "dessert"},
@@ -4204,7 +4204,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "vietnamesisch", "e": "Vietnamese"},
     {"t": "würzig", "e": "aromatic / spicy / tangy"}
   ]},
-  { id: "duo_de_u181", type: "vocab", title: "Vocab: Unit 181 \u00b7 future plans \u2014 Vacation: Plan your family trip", items: [
+  { id: "duo_de_u181", type: "vocab", title: "Vocab: Unit 181 \u00b7 future plans \u2014 Plan your family vacation", items: [
     {"t": "die Abreise", "e": "departure"},
     {"t": "der Anfang", "e": "beginning / start"},
     {"t": "Australien", "e": "Australia"},
@@ -4225,7 +4225,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "braun gebrannt", "e": "suntanned"},
     {"t": "treiben", "e": "cutting / drive / puts"}
   ]},
-  { id: "duo_de_u182", type: "vocab", title: "Vocab: Unit 182 \u00b7 volunteering \u2014 Volunteers: Welcome new guests", items: [
+  { id: "duo_de_u182", type: "vocab", title: "Vocab: Unit 182 \u00b7 volunteering \u2014 Prepare the room for guests", items: [
     {"t": "das Altenheim", "e": "nursing home"},
     {"t": "die Anforderung", "e": "requirement / demand"},
     {"t": "die Art", "e": "kind / type"},
@@ -4248,7 +4248,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wiegen", "e": "weigh / rocks"},
     {"t": "die Überschwemmung", "e": "flooding"}
   ]},
-  { id: "duo_de_u183", type: "vocab", title: "Vocab: Unit 183 \u00b7 visual arts \u2014 Artwork: Describe a painting", items: [
+  { id: "duo_de_u183", type: "vocab", title: "Vocab: Unit 183 \u00b7 visual arts \u2014 Describe portraits", items: [
     {"t": "die Absicht", "e": "intention"},
     {"t": "der Ausdruck", "e": "expression print; edition"},
     {"t": "das Detail", "e": "detail"},
@@ -4273,7 +4273,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "kulturell", "e": "cultural / culturally"},
     {"t": "mysteriös", "e": "mysterious"}
   ]},
-  { id: "duo_de_u184", type: "vocab", title: "Vocab: Unit 184 \u00b7 restaurant experiences \u2014 Menu: Ask about food preferences", items: [
+  { id: "duo_de_u184", type: "vocab", title: "Vocab: Unit 184 \u00b7 restaurant experiences \u2014 Talk about food and service", items: [
     {"t": "die Erbse", "e": "pea"},
     {"t": "der Geschmack", "e": "taste / sense of taste / aroma"},
     {"t": "die Getränkekarte", "e": "drink menu"},
@@ -4296,7 +4296,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "vor kurzem", "e": "recently"},
     {"t": "Öffnungszeiten", "e": "business hours / hours of operation"}
   ]},
-  { id: "duo_de_u185", type: "vocab", title: "Vocab: Unit 185 \u00b7 literature \u2014 Bookstore: Ask about new books", items: [
+  { id: "duo_de_u185", type: "vocab", title: "Vocab: Unit 185 \u00b7 literature \u2014 Ask the librarian about books", items: [
     {"t": "der Bibliothekar", "e": "librarian"},
     {"t": "die Buchhandlung", "e": "bookstore"},
     {"t": "die Diskussion", "e": "discussion"},
@@ -4318,7 +4318,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "nennen", "e": "to call / to name"},
     {"t": "tragisch", "e": "tragic / tragically"}
   ]},
-  { id: "duo_de_u186", type: "vocab", title: "Vocab: Unit 186 \u00b7 geography \u2014 Travel: Describe your trip", items: [
+  { id: "duo_de_u186", type: "vocab", title: "Vocab: Unit 186 \u00b7 geography \u2014 Describe your trip", items: [
     {"t": "Afrika", "e": "Africa"},
     {"t": "der Amerikaner", "e": "American (masculine)"},
     {"t": "Asien", "e": "Asia"},
@@ -4336,7 +4336,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "die Übernachtung", "e": "overnight stay"},
     {"t": "über", "e": "above / over / about"}
   ]},
-  { id: "duo_de_u187", type: "vocab", title: "Vocab: Unit 187 \u00b7 cost of living \u2014 Budget: Plan your monthly budget", items: [
+  { id: "duo_de_u187", type: "vocab", title: "Vocab: Unit 187 \u00b7 cost of living \u2014 Plan your monthly budget", items: [
     {"t": "das Auslandsstudium", "e": "study abroad"},
     {"t": "das Bankkonto", "e": "bank account / account"},
     {"t": "das Darlehen", "e": "loan"},
@@ -4359,7 +4359,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verringern", "e": "decrease, (to) decrease, cutting"},
     {"t": "überlastet", "e": "overloaded"}
   ]},
-  { id: "duo_de_u188", type: "vocab", title: "Vocab: Unit 188 \u00b7 well-being \u2014 Routine: Describe your routine", items: [
+  { id: "duo_de_u188", type: "vocab", title: "Vocab: Unit 188 \u00b7 well-being \u2014 Discuss your feelings at work", items: [
     {"t": "die Agentur", "e": "agency"},
     {"t": "die Matte", "e": "mat"},
     {"t": "die Müdigkeit", "e": "tiredness"},
@@ -4380,7 +4380,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wohlfühlen", "e": "feel well / enjoy"},
     {"t": "zunächst", "e": "first / at first / for the moment"}
   ]},
-  { id: "duo_de_u189", type: "vocab", title: "Vocab: Unit 189 \u00b7 everyday tech \u2014 Apps: Demonstrate how to use an app", items: [
+  { id: "duo_de_u189", type: "vocab", title: "Vocab: Unit 189 \u00b7 everyday tech \u2014 Talk about phone features", items: [
     {"t": "der Akku", "e": "battery / camera's"},
     {"t": "die App", "e": "app"},
     {"t": "die Aufmerksamkeit", "e": "attentiveness / attention"},
@@ -4403,7 +4403,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "solchen", "e": "such"},
     {"t": "vernetzt", "e": "networked / interconnected"}
   ]},
-  { id: "duo_de_u190", type: "vocab", title: "Vocab: Unit 190 \u00b7 pet care \u2014 Pets: Describe your pet", items: [
+  { id: "duo_de_u190", type: "vocab", title: "Vocab: Unit 190 \u00b7 pet care \u2014 Describe your pet at the vet", items: [
     {"t": "das Aquarium", "e": "aquarium"},
     {"t": "der Begleiter", "e": "chaperone / satellites / attendants (masculine)"},
     {"t": "der Besitzer", "e": "property owner / owner / proprietor (masculine)"},
@@ -4426,7 +4426,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "niedlich", "e": "cute / pretty / sweet"},
     {"t": "pflegen", "e": "keeps / care for / maintaining"}
   ]},
-  { id: "duo_de_u191", type: "vocab", title: "Vocab: Unit 191 \u00b7 governmental systems \u2014 Politics: Describe political leaders", items: [
+  { id: "duo_de_u191", type: "vocab", title: "Vocab: Unit 191 \u00b7 governmental systems \u2014 Talk about the economy", items: [
     {"t": "das Bündnis", "e": "alliance"},
     {"t": "das Fernsehen", "e": "television"},
     {"t": "die Kandidatur", "e": "candidacy"},
@@ -4451,7 +4451,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "unwahrscheinlich", "e": "unlikely / improbable / implausible"},
     {"t": "vorübergehend", "e": "temporary"}
   ]},
-  { id: "duo_de_u192", type: "vocab", title: "Vocab: Unit 192 \u00b7 crisis response \u2014 Teamwork: Solve problems together", items: [
+  { id: "duo_de_u192", type: "vocab", title: "Vocab: Unit 192 \u00b7 crisis response \u2014 Face a crisis together", items: [
     {"t": "der Abstand", "e": "interval / distance / gap"},
     {"t": "die Analyse", "e": "analysis"},
     {"t": "die Ausrüstung", "e": "equipment / finishing / equipping"},
@@ -4476,7 +4476,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "unfähig", "e": "unable"},
     {"t": "vorbereitet", "e": "prepared"}
   ]},
-  { id: "duo_de_u193", type: "vocab", title: "Vocab: Unit 193 \u00b7 personal background \u2014 Careers: Share your work interests", items: [
+  { id: "duo_de_u193", type: "vocab", title: "Vocab: Unit 193 \u00b7 personal background \u2014 Talk about jobs and education", items: [
     {"t": "das Bankwesen", "e": "banking"},
     {"t": "die Beschäftigung", "e": "occupation"},
     {"t": "die Bildung", "e": "education"},
@@ -4501,7 +4501,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zuverlässig", "e": "dependable / goods / sure"},
     {"t": "die Übersetzung", "e": "translation"}
   ]},
-  { id: "duo_de_u194", type: "vocab", title: "Vocab: Unit 194 \u00b7 fashion \u2014 Clothing: Ask about clothing options", items: [
+  { id: "duo_de_u194", type: "vocab", title: "Vocab: Unit 194 \u00b7 fashion \u2014 Shop for clothes", items: [
     {"t": "die Baumwolle", "e": "cotton"},
     {"t": "der Blazer", "e": "blazer"},
     {"t": "das Kleidungsstück", "e": "play / piece [of furniture] / specimen"},
@@ -4523,7 +4523,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "speziell", "e": "special"},
     {"t": "ärmellos", "e": "sleeveless"}
   ]},
-  { id: "duo_de_u195", type: "vocab", title: "Vocab: Unit 195 \u00b7 cultural practices \u2014 Culture: Describe a tradition", items: [
+  { id: "duo_de_u195", type: "vocab", title: "Vocab: Unit 195 \u00b7 cultural practices \u2014 Describe a tradition", items: [
     {"t": "die Bedeutung", "e": "meaning"},
     {"t": "die Besonderheit", "e": "peculiarity"},
     {"t": "der Brauch", "e": "usage / customs"},
@@ -4542,7 +4542,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "spanisch", "e": "Spanish"},
     {"t": "Ägypten", "e": "Egypt"}
   ]},
-  { id: "duo_de_u196", type: "vocab", title: "Vocab: Unit 196 \u00b7 pharmacy \u2014 Health: Ask about a health problem", items: [
+  { id: "duo_de_u196", type: "vocab", title: "Vocab: Unit 196 \u00b7 pharmacy \u2014 Ask for help at the pharmacy", items: [
     {"t": "die Allergie", "e": "allergy"},
     {"t": "der Atem", "e": "breath"},
     {"t": "der Beweis", "e": "prove, (I) prove/am proving, show"},
@@ -4566,7 +4566,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "erneut", "e": "once again / again / renewed"},
     {"t": "schmerzhaft", "e": "painful"}
   ]},
-  { id: "duo_de_u197", type: "vocab", title: "Vocab: Unit 197 \u00b7 roommates and co-living \u2014 Home Life: Talk about kitchen routines", items: [
+  { id: "duo_de_u197", type: "vocab", title: "Vocab: Unit 197 \u00b7 roommates and co-living \u2014 Rearrange your new furniture", items: [
     {"t": "das Chaos", "e": "chaos"},
     {"t": "die Einkaufstasche", "e": "shopping bag"},
     {"t": "das Gas", "e": "gas"},
@@ -4587,7 +4587,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "schärfen", "e": "sharpen / spiciest"},
     {"t": "umstellen", "e": "shift / change"}
   ]},
-  { id: "duo_de_u198", type: "vocab", title: "Vocab: Unit 198 \u00b7 friendships \u2014 Classmates: Talk about school reunions", items: [
+  { id: "duo_de_u198", type: "vocab", title: "Vocab: Unit 198 \u00b7 friendships \u2014 Talk about a class reunion", items: [
     {"t": "die Anzahl", "e": "number"},
     {"t": "der Augenblick", "e": "moment / instant"},
     {"t": "der Entwurf", "e": "blueprint / concept / draft"},
@@ -4608,7 +4608,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zusammenhalten", "e": "stand / hold"},
     {"t": "zählen", "e": "to count; to number to pay"}
   ]},
-  { id: "duo_de_u199", type: "vocab", title: "Vocab: Unit 199 \u00b7 healthy habits \u2014 Habits: Describe your morning routine", items: [
+  { id: "duo_de_u199", type: "vocab", title: "Vocab: Unit 199 \u00b7 healthy habits \u2014 Describe your morning routine", items: [
     {"t": "die Bewegung", "e": "movement / flow"},
     {"t": "die Chemikalie", "e": "chemical"},
     {"t": "die Einstellung", "e": "attitude / setting / employee recruitment"},
@@ -4630,7 +4630,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "stressfrei", "e": "stress-free"},
     {"t": "verbrachte", "e": "lived / passed"}
   ]},
-  { id: "duo_de_u200", type: "vocab", title: "Vocab: Unit 200 \u00b7 destinations 2 \u2014 Places: Describe vacation spots", items: [
+  { id: "duo_de_u200", type: "vocab", title: "Vocab: Unit 200 \u00b7 destinations 2 \u2014 Describe vacation spots", items: [
     {"t": "die Anziehungskraft", "e": "appeal / gravitation"},
     {"t": "der Bezirk", "e": "district"},
     {"t": "die Bucht", "e": "Book / bay"},
@@ -4651,7 +4651,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "südlich", "e": "to the south of"},
     {"t": "versteckt", "e": "hide / hid"}
   ]},
-  { id: "duo_de_u201", type: "vocab", title: "Vocab: Unit 201 \u00b7 geopolitical issues \u2014 Citizens: Explain citizens\u2019 rights", items: [
+  { id: "duo_de_u201", type: "vocab", title: "Vocab: Unit 201 \u00b7 geopolitical issues \u2014 Talk about the news", items: [
     {"t": "die Allianz", "e": "alliance"},
     {"t": "Astronom", "e": "astronomer"},
     {"t": "der Biologe", "e": "biologist"},
@@ -4678,7 +4678,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "was auch immer", "e": "whatever"},
     {"t": "der Ökonom", "e": "economist"}
   ]},
-  { id: "duo_de_u202", type: "vocab", title: "Vocab: Unit 202 \u00b7 library \u2014 Library: Organize books by topic", items: [
+  { id: "duo_de_u202", type: "vocab", title: "Vocab: Unit 202 \u00b7 library \u2014 Explain how you sort books", items: [
     {"t": "die Anordnung", "e": "order / organizations"},
     {"t": "die Biografie", "e": "biography"},
     {"t": "das Diagramm", "e": "charts"},
@@ -4702,7 +4702,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zurückbringen", "e": "bring / return / brings"},
     {"t": "übertragen", "e": "giving, gave, (to) transmit"}
   ]},
-  { id: "duo_de_u203", type: "vocab", title: "Vocab: Unit 203 \u00b7 directions \u2014 Directions: Ask for directions", items: [
+  { id: "duo_de_u203", type: "vocab", title: "Vocab: Unit 203 \u00b7 directions \u2014 Ask for directions", items: [
     {"t": "die Etage", "e": "level / storey / floor"},
     {"t": "der Fußweg", "e": "footpath"},
     {"t": "der Kreis", "e": "circle"},
@@ -4723,7 +4723,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "westlich", "e": "to the west of"},
     {"t": "östlich", "e": "to the east of"}
   ]},
-  { id: "duo_de_u204", type: "vocab", title: "Vocab: Unit 204 \u00b7 social media \u2014 Social Media: Share a real story", items: [
+  { id: "duo_de_u204", type: "vocab", title: "Vocab: Unit 204 \u00b7 social media \u2014 Share posts and hashtags", items: [
     {"t": "der Follower", "e": "follower (masculine)"},
     {"t": "der Hashtag", "e": "hashtag"},
     {"t": "der Influencer", "e": "influencer (masculine)"},
@@ -4743,7 +4743,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "sensibel", "e": "sensitive / sensitively"},
     {"t": "veröffentlichen", "e": "to publish"}
   ]},
-  { id: "duo_de_u205", type: "vocab", title: "Vocab: Unit 205 \u00b7 parenting \u2014 Children: Talk about losing things", items: [
+  { id: "duo_de_u205", type: "vocab", title: "Vocab: Unit 205 \u00b7 parenting \u2014 Find lost items and stay calm", items: [
     {"t": "das Bananenbrot", "e": "banana bread"},
     {"t": "die Emotionen", "e": "emotions"},
     {"t": "die Flexibilität", "e": "flexibility"},
@@ -4765,7 +4765,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "ungeplant", "e": "unplanned"},
     {"t": "verschlafen", "e": "sleepy"}
   ]},
-  { id: "duo_de_u206", type: "vocab", title: "Vocab: Unit 206 \u00b7 debate \u2014 Debate: Argue for your side", items: [
+  { id: "duo_de_u206", type: "vocab", title: "Vocab: Unit 206 \u00b7 debate \u2014 Debate and defend your view", items: [
     {"t": "die Debatte", "e": "debate / argument"},
     {"t": "die Demokratie", "e": "democracy"},
     {"t": "die Diktatur", "e": "dictatorship"},
@@ -4792,7 +4792,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "weder", "e": "neither"},
     {"t": "zweitrangig", "e": "secondary"}
   ]},
-  { id: "duo_de_u207", type: "vocab", title: "Vocab: Unit 207 \u00b7 exercise routines \u2014 Exercise: Describe your workout routine", items: [
+  { id: "duo_de_u207", type: "vocab", title: "Vocab: Unit 207 \u00b7 exercise routines \u2014 Describe your workout routine", items: [
     {"t": "die Avocado", "e": "avocado"},
     {"t": "das Fitnessprogramm", "e": "program"},
     {"t": "die Folge", "e": "consequence"},
@@ -4814,7 +4814,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "unvorsichtig", "e": "careless / indiscreet / unguarded"},
     {"t": "überraschenderweise", "e": "surprisingly"}
   ]},
-  { id: "duo_de_u208", type: "vocab", title: "Vocab: Unit 208 \u00b7 gardening \u2014 Garden: Talk about plants in the garden", items: [
+  { id: "duo_de_u208", type: "vocab", title: "Vocab: Unit 208 \u00b7 gardening \u2014 Talk about garden plants", items: [
     {"t": "die Ameise", "e": "ant"},
     {"t": "der Baumarkt", "e": "hardware store"},
     {"t": "der Blumentopf", "e": "flowerpot"},
@@ -4839,7 +4839,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "irgendein", "e": "Some / any"},
     {"t": "reif", "e": "ripe"}
   ]},
-  { id: "duo_de_u209", type: "vocab", title: "Vocab: Unit 209 \u00b7 public occasions \u2014 Meetings: Share conference details", items: [
+  { id: "duo_de_u209", type: "vocab", title: "Vocab: Unit 209 \u00b7 public occasions \u2014 Share conference details", items: [
     {"t": "das Angebot", "e": "offer / bid"},
     {"t": "der Beginn", "e": "beginning / begin / show's"},
     {"t": "die Behinderung", "e": "disability"},
@@ -4866,7 +4866,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "weltweit", "e": "worldwide"},
     {"t": "während", "e": "while / during"}
   ]},
-  { id: "duo_de_u210", type: "vocab", title: "Vocab: Unit 210 \u00b7 disability \u2014 Friends: Describe how friends help you", items: [
+  { id: "duo_de_u210", type: "vocab", title: "Vocab: Unit 210 \u00b7 disability \u2014 Discuss disability rights", items: [
     {"t": "der Arbeitgeber", "e": "employer (masculine)"},
     {"t": "die Brailleschrift", "e": "Braille"},
     {"t": "die Clique", "e": "clique"},
@@ -4890,7 +4890,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verlässlich", "e": "reliable / credible / dependable"},
     {"t": "zocken", "e": "to gamble / to play / to bet"}
   ]},
-  { id: "duo_de_u211", type: "vocab", title: "Vocab: Unit 211 \u00b7 safety precautions \u2014 Safety: React to warnings", items: [
+  { id: "duo_de_u211", type: "vocab", title: "Vocab: Unit 211 \u00b7 safety precautions \u2014 Discuss warnings and risks", items: [
     {"t": "der Ast", "e": "branch / twig"},
     {"t": "der Brennstoff", "e": "fuel"},
     {"t": "die Dienstleistung", "e": "service"},
@@ -4913,7 +4913,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "vollständig", "e": "full / complete / completely"},
     {"t": "die Überschwemmung", "e": "flooding"}
   ]},
-  { id: "duo_de_u212", type: "vocab", title: "Vocab: Unit 212 \u00b7 environmental features \u2014 Nature: Ask about animals in nature", items: [
+  { id: "duo_de_u212", type: "vocab", title: "Vocab: Unit 212 \u00b7 environmental features \u2014 Describe nature and wildlife", items: [
     {"t": "die Art", "e": "kind / type"},
     {"t": "der Berg", "e": "mountain"},
     {"t": "die Biene", "e": "bee"},
@@ -4940,7 +4940,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wissenschaftlich", "e": "learned"},
     {"t": "zelten", "e": "camp"}
   ]},
-  { id: "duo_de_u213", type: "vocab", title: "Vocab: Unit 213 \u00b7 negotiation and persuasion \u2014 Teamwork: Suggest a new plan", items: [
+  { id: "duo_de_u213", type: "vocab", title: "Vocab: Unit 213 \u00b7 negotiation and persuasion \u2014 Explain your reasons politely", items: [
     {"t": "das Argument", "e": "argument"},
     {"t": "die Daten", "e": "dates / facts / data"},
     {"t": "der Grund", "e": "reason / ground"},
@@ -4962,7 +4962,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zusätzlich", "e": "additional / in addition"},
     {"t": "zutiefst", "e": "deeply"}
   ]},
-  { id: "duo_de_u214", type: "vocab", title: "Vocab: Unit 214 \u00b7 recycling and waste \u2014 Recycling: Ask about recycling bins", items: [
+  { id: "duo_de_u214", type: "vocab", title: "Vocab: Unit 214 \u00b7 recycling and waste \u2014 Ask about waste disposal", items: [
     {"t": "der Abfall", "e": "waste / litter / garbage"},
     {"t": "der Aufkleber", "e": "sticker"},
     {"t": "die Batterie", "e": "battery"},
@@ -4984,7 +4984,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "ungefährlich", "e": "harmless"},
     {"t": "weiterer", "e": "further / farther"}
   ]},
-  { id: "duo_de_u215", type: "vocab", title: "Vocab: Unit 215 \u00b7 digital tools \u2014 Tech Tools: Set up your device", items: [
+  { id: "duo_de_u215", type: "vocab", title: "Vocab: Unit 215 \u00b7 digital tools \u2014 Say what you're thinking about", items: [
     {"t": "der Chat", "e": "chat"},
     {"t": "der Filter", "e": "filters, (I) select/am selecting, filter out"},
     {"t": "der Hintergrund", "e": "background"},
@@ -5010,7 +5010,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "woran", "e": "about / what / on what"},
     {"t": "worunter", "e": "under what"}
   ]},
-  { id: "duo_de_u216", type: "vocab", title: "Vocab: Unit 216 \u00b7 museum visits \u2014 Museum: Describe your museum visit", items: [
+  { id: "duo_de_u216", type: "vocab", title: "Vocab: Unit 216 \u00b7 museum visits \u2014 Describe your museum visit", items: [
     {"t": "die Exkursion", "e": "excursion"},
     {"t": "die Infotafel", "e": "board"},
     {"t": "der Kontinent", "e": "continent"},
@@ -5034,7 +5034,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verschwunden", "e": "gone / vanished / disappeared"},
     {"t": "zusammenbauen", "e": "build / built"}
   ]},
-  { id: "duo_de_u217", type: "vocab", title: "Vocab: Unit 217 \u00b7 gossip and rumors \u2014 Truth: Share your honest opinion", items: [
+  { id: "duo_de_u217", type: "vocab", title: "Vocab: Unit 217 \u00b7 gossip and rumors \u2014 React to gossip about friends", items: [
     {"t": "der Fakt", "e": "(he/she/it) fakes/is faking, (you-plural) fake/are faking, (you-plural) forge/are forging"},
     {"t": "der Feind", "e": "enemy"},
     {"t": "der Klatsch", "e": "gossip"},
@@ -5055,7 +5055,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wetten", "e": "to bet"},
     {"t": "zugeben", "e": "allow / recognize"}
   ]},
-  { id: "duo_de_u218", type: "vocab", title: "Vocab: Unit 218 \u00b7 self-expression \u2014 Art: Describe your dream art job", items: [
+  { id: "duo_de_u218", type: "vocab", title: "Vocab: Unit 218 \u00b7 self-expression \u2014 Describe your artistic dreams", items: [
     {"t": "die Architektur", "e": "architecture"},
     {"t": "das Atelier", "e": "studio"},
     {"t": "die Fähigkeit", "e": "skill / competency"},
@@ -5077,7 +5077,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "inspirieren", "e": "inspire / fire"},
     {"t": "sichtbar", "e": "visible"}
   ]},
-  { id: "duo_de_u219", type: "vocab", title: "Vocab: Unit 219 \u00b7 cooking \u2014 Kitchen: Describe kitchen tools", items: [
+  { id: "duo_de_u219", type: "vocab", title: "Vocab: Unit 219 \u00b7 cooking \u2014 Talk about cooking and food", items: [
     {"t": "die Aubergine", "e": "aubergine / eggplant"},
     {"t": "das Feuerzeug", "e": "lighter"},
     {"t": "der Honig", "e": "honey"},
@@ -5103,7 +5103,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "unvergesslich", "e": "memorable / unforgettable / unforgettably"},
     {"t": "vertraut", "e": "trust"}
   ]},
-  { id: "duo_de_u220", type: "vocab", title: "Vocab: Unit 220 \u00b7 city life \u2014 Districts: Describe a neighborhood", items: [
+  { id: "duo_de_u220", type: "vocab", title: "Vocab: Unit 220 \u00b7 city life \u2014 Describe a city district", items: [
     {"t": "die Bratwurst", "e": "bratwurst"},
     {"t": "der Bürgersteig", "e": "sidewalk"},
     {"t": "das Bürogebäude", "e": "buildings / building"},
@@ -5125,7 +5125,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "unerwartet", "e": "unexpectedly / unexpected"},
     {"t": "überqueren", "e": "cross / crosses"}
   ]},
-  { id: "duo_de_u221", type: "vocab", title: "Vocab: Unit 221 \u00b7 sustainability \u2014 Environment: Express concern for animals", items: [
+  { id: "duo_de_u221", type: "vocab", title: "Vocab: Unit 221 \u00b7 sustainability \u2014 Discuss food and the planet", items: [
     {"t": "die Baguette", "e": "baguette"},
     {"t": "die Ernährung", "e": "nutrition"},
     {"t": "der Flyer", "e": "flyer"},
@@ -5147,7 +5147,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verschmutzen", "e": "pollute"},
     {"t": "wachsen", "e": "grow"}
   ]},
-  { id: "duo_de_u222", type: "vocab", title: "Vocab: Unit 222 \u00b7 philosophy \u2014 Learning: Share your study goals", items: [
+  { id: "duo_de_u222", type: "vocab", title: "Vocab: Unit 222 \u00b7 philosophy \u2014 Talk about your studies", items: [
     {"t": "die Astronomie", "e": "astronomy"},
     {"t": "der Begriff", "e": "term / definition / concept"},
     {"t": "der Dozent", "e": "lecturer / professors / teachers"},
@@ -5169,7 +5169,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "statt", "e": "instead of"},
     {"t": "zuversichtlich", "e": "hopeful"}
   ]},
-  { id: "duo_de_u223", type: "vocab", title: "Vocab: Unit 223 \u00b7 public policy \u2014 Community: Describe your neighborhood", items: [
+  { id: "duo_de_u223", type: "vocab", title: "Vocab: Unit 223 \u00b7 public policy \u2014 Talk about apartment problems", items: [
     {"t": "der Fahrkartenautomat", "e": "ticket machine"},
     {"t": "die Gemeinschaft", "e": "coexistence / community / communities"},
     {"t": "die Handlung", "e": "plot / deed"},
@@ -5192,7 +5192,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verbinden", "e": "link / join / puts"},
     {"t": "vor allem", "e": "especially"}
   ]},
-  { id: "duo_de_u224", type: "vocab", title: "Vocab: Unit 224 \u00b7 public spaces \u2014 Playground: Point out something interesting", items: [
+  { id: "duo_de_u224", type: "vocab", title: "Vocab: Unit 224 \u00b7 public spaces \u2014 Share opinions about the park", items: [
     {"t": "die Fußgängerzone", "e": "pedestrian zone"},
     {"t": "der Lärm", "e": "noise"},
     {"t": "die Parkbank", "e": "bench"},
@@ -5213,7 +5213,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "treiben", "e": "cutting / drive / puts"},
     {"t": "äußerst", "e": "extremely"}
   ]},
-  { id: "duo_de_u225", type: "vocab", title: "Vocab: Unit 225 \u00b7 landmarks \u2014 Landmarks: Describe famous landmarks", items: [
+  { id: "duo_de_u225", type: "vocab", title: "Vocab: Unit 225 \u00b7 landmarks \u2014 Describe famous landmarks", items: [
     {"t": "das Alter", "e": "age"},
     {"t": "der Ausblick", "e": "view"},
     {"t": "der Dom", "e": "cathedral"},
@@ -5235,7 +5235,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "touristisch", "e": "touristy"},
     {"t": "unregelmäßig", "e": "irregularly / irregular"}
   ]},
-  { id: "duo_de_u226", type: "vocab", title: "Vocab: Unit 226 \u00b7 aging \u2014 Home: Describe family photos", items: [
+  { id: "duo_de_u226", type: "vocab", title: "Vocab: Unit 226 \u00b7 aging \u2014 Speak politely with Grandma", items: [
     {"t": "die Bekannter", "e": "acquaintance"},
     {"t": "der Blick", "e": "look / view / glance"},
     {"t": "der Brokkoli", "e": "broccoli"},
@@ -5257,7 +5257,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "sorgen", "e": "(+um) to worry about; (+für) to take care of"},
     {"t": "zusammenkommen", "e": "get / comes / come"}
   ]},
-  { id: "duo_de_u227", type: "vocab", title: "Vocab: Unit 227 \u00b7 traffic \u2014 Traffic: Give driving directions", items: [
+  { id: "duo_de_u227", type: "vocab", title: "Vocab: Unit 227 \u00b7 traffic \u2014 Give driving directions", items: [
     {"t": "der Autofahrer", "e": "driver (masculine)"},
     {"t": "der Fahrgast", "e": "passenger"},
     {"t": "der Fußgänger", "e": "pedestrians (masculine)"},
@@ -5283,7 +5283,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "gesperrt", "e": "closed / blocked"},
     {"t": "überholen", "e": "head / overtake"}
   ]},
-  { id: "duo_de_u228", type: "vocab", title: "Vocab: Unit 228 \u00b7 diversity \u2014 Culture: Share thoughts on artists", items: [
+  { id: "duo_de_u228", type: "vocab", title: "Vocab: Unit 228 \u00b7 diversity \u2014 Discuss artists and their work", items: [
     {"t": "die Erfahrung", "e": "experience"},
     {"t": "die Ernte", "e": "crops, crop, (I) harvest/am harvesting"},
     {"t": "die Lektion", "e": "unit / chapter / lesson"},
@@ -5305,7 +5305,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "stilvoll", "e": "stylishly"},
     {"t": "vielfältig", "e": "various / diverse"}
   ]},
-  { id: "duo_de_u229", type: "vocab", title: "Vocab: Unit 229 \u00b7 weddings \u2014 Wedding: Describe wedding traditions", items: [
+  { id: "duo_de_u229", type: "vocab", title: "Vocab: Unit 229 \u00b7 weddings \u2014 Talk with guests at a wedding", items: [
     {"t": "die Bindung", "e": "bond"},
     {"t": "der Blumenstrauß", "e": "bouquet"},
     {"t": "die Ehe", "e": "marriage"},
@@ -5328,7 +5328,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "werfen", "e": "to throw"},
     {"t": "wünschen", "e": "to wish"}
   ]},
-  { id: "duo_de_u230", type: "vocab", title: "Vocab: Unit 230 \u00b7 values \u2014 Strategy: Share ideas with your supervisor", items: [
+  { id: "duo_de_u230", type: "vocab", title: "Vocab: Unit 230 \u00b7 values \u2014 Talk with your supervisor", items: [
     {"t": "die Auswirkungen", "e": "impact, repercussion, effect (plural)"},
     {"t": "die Basis", "e": "basis"},
     {"t": "die Checkliste", "e": "checklist"},
@@ -5351,7 +5351,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wer", "e": "who"},
     {"t": "überlegen", "e": "to reflect / to consider / to debate"}
   ]},
-  { id: "duo_de_u231", type: "vocab", title: "Vocab: Unit 231 \u00b7 camping \u2014 Camping: Describe camping gear", items: [
+  { id: "duo_de_u231", type: "vocab", title: "Vocab: Unit 231 \u00b7 camping \u2014 Describe camping gear", items: [
     {"t": "der Campingstuhl", "e": "camping chair / camp chair / folding chair"},
     {"t": "die Hängematte", "e": "hammock"},
     {"t": "der Igel", "e": "hedgehog"},
@@ -5377,7 +5377,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "kompakt", "e": "compact / dense / concise"},
     {"t": "wetterfest", "e": "weatherproof / waterproof / weather-resistant"}
   ]},
-  { id: "duo_de_u232", type: "vocab", title: "Vocab: Unit 232 \u00b7 primary school \u2014 School: Ask about school supplies", items: [
+  { id: "duo_de_u232", type: "vocab", title: "Vocab: Unit 232 \u00b7 primary school \u2014 Shop for school supplies", items: [
     {"t": "der Antrag", "e": "application / offer / proposal"},
     {"t": "die Bewertung", "e": "review / appraisal / assessment"},
     {"t": "der Ermittler", "e": "investigator / detective / inquirer (masculine)"},
@@ -5404,7 +5404,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "gestalten", "e": "(to) create, (we/they) create/are creating, (we/they) design/are designing"},
     {"t": "präsentieren", "e": "to present"}
   ]},
-  { id: "duo_de_u233", type: "vocab", title: "Vocab: Unit 233 \u00b7 holidays \u2014 Getaway: Plan your day trip", items: [
+  { id: "duo_de_u233", type: "vocab", title: "Vocab: Unit 233 \u00b7 holidays \u2014 Plan your day trip", items: [
     {"t": "der Campingplatz", "e": "campsite / campground"},
     {"t": "der Fahrplan", "e": "schedule"},
     {"t": "die Halbpension", "e": "half board / half pension"},
@@ -5429,7 +5429,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "umbuchen", "e": "rebook / change booking / transfer booking"},
     {"t": "weiterempfehlen", "e": "recommend / refer / endorse"}
   ]},
-  { id: "duo_de_u234", type: "vocab", title: "Vocab: Unit 234 \u00b7 art \u2014 Artworks: Share your reaction to artworks", items: [
+  { id: "duo_de_u234", type: "vocab", title: "Vocab: Unit 234 \u00b7 art \u2014 React to artworks", items: [
     {"t": "das Aquarell", "e": "watercolor / watercolour / wash painting"},
     {"t": "der Blickwinkel", "e": "viewpoint / perspective / angle"},
     {"t": "der Block", "e": "block"},
@@ -5455,7 +5455,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zart", "e": "fine / delicate"},
     {"t": "überfordert", "e": "overwhelmed / overstrained / overburdened"}
   ]},
-  { id: "duo_de_u235", type: "vocab", title: "Vocab: Unit 235 \u00b7 celebration \u2014 Party: Describe party decorations", items: [
+  { id: "duo_de_u235", type: "vocab", title: "Vocab: Unit 235 \u00b7 celebration \u2014 Describe party decorations", items: [
     {"t": "die Abwesenheit", "e": "absence / absent-mindedness"},
     {"t": "der Becher", "e": "cup / mugs / mug"},
     {"t": "der Cocktail", "e": "cocktail"},
@@ -5477,7 +5477,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "veranstalten", "e": "hosting / running / puts"},
     {"t": "überraschend", "e": "surprising / unexpectedly / astonishing"}
   ]},
-  { id: "duo_de_u236", type: "vocab", title: "Vocab: Unit 236 \u00b7 baby \u2014 Babies: Describe baby care items", items: [
+  { id: "duo_de_u236", type: "vocab", title: "Vocab: Unit 236 \u00b7 baby \u2014 Describe baby care items", items: [
     {"t": "Babyfon", "e": "baby monitor / babyphone"},
     {"t": "Babytrage", "e": "baby carrier / baby sling / baby backpack"},
     {"t": "der Brei", "e": "broth / pulp"},
@@ -5504,7 +5504,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wickeln", "e": "wrapped"},
     {"t": "überwiegend", "e": "predominantly / mainly / chiefly"}
   ]},
-  { id: "duo_de_u237", type: "vocab", title: "Vocab: Unit 237 \u00b7 time management \u2014 Workday: Describe your daily tasks", items: [
+  { id: "duo_de_u237", type: "vocab", title: "Vocab: Unit 237 \u00b7 time management \u2014 Plan tasks to meet deadlines", items: [
     {"t": "der Arbeitsplan", "e": "work schedule / work plan / schedule"},
     {"t": "der Beamer", "e": "projector / video projector / data projector"},
     {"t": "das Bewerbungsgespräch", "e": "interview"},
@@ -5528,7 +5528,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zwischendurch", "e": "occasionally"},
     {"t": "überprüfen", "e": "to check / to inspect"}
   ]},
-  { id: "duo_de_u238", type: "vocab", title: "Vocab: Unit 238 \u00b7 university \u2014 Seminar: Share your seminar experiences", items: [
+  { id: "duo_de_u238", type: "vocab", title: "Vocab: Unit 238 \u00b7 university \u2014 Share your university stories", items: [
     {"t": "die Anwesenheit", "e": "presence / attendance"},
     {"t": "die Arbeitsgruppe", "e": "working group / task force / study group"},
     {"t": "der Athlet", "e": "athlete"},
@@ -5556,7 +5556,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "teamfähig", "e": "team player / able to work in a team / cooperative"},
     {"t": "zusammenfassen", "e": "summarize"}
   ]},
-  { id: "duo_de_u239", type: "vocab", title: "Vocab: Unit 239 \u00b7 conflict resolution \u2014 Conflict: Explain a misunderstanding", items: [
+  { id: "duo_de_u239", type: "vocab", title: "Vocab: Unit 239 \u00b7 conflict resolution \u2014 Explain a mistake", items: [
     {"t": "der Austausch", "e": "exchange"},
     {"t": "der Irrtum", "e": "mistake"},
     {"t": "der Kontext", "e": "context"},
@@ -5583,7 +5583,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "unparteiisch", "e": "neutral / objectively / even-handed"},
     {"t": "verzeihen", "e": "forgiven / forgive"}
   ]},
-  { id: "duo_de_u240", type: "vocab", title: "Vocab: Unit 240 \u00b7 video games \u2014 Games: Describe a game feature", items: [
+  { id: "duo_de_u240", type: "vocab", title: "Vocab: Unit 240 \u00b7 video games \u2014 Describe a game feature", items: [
     {"t": "der Absturz", "e": "dropped"},
     {"t": "der Charakter", "e": "character / personality"},
     {"t": "die Einstellungen", "e": "settings"},
@@ -5610,7 +5610,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "intuitiv", "e": "intuitive / user-friendly / easy to use"},
     {"t": "weiterspielen", "e": "keep playing"}
   ]},
-  { id: "duo_de_u241", type: "vocab", title: "Vocab: Unit 241 \u00b7 extending, accepting, and declining invitations \u2014 Invites: Ask about event details", items: [
+  { id: "duo_de_u241", type: "vocab", title: "Vocab: Unit 241 \u00b7 extending, accepting, and declining invitations \u2014 Ask about event details", items: [
     {"t": "Interessenten", "e": "interested parties / prospects / potential buyers"},
     {"t": "der Organisator", "e": "organizers / facilitator / coordinator (masculine)"},
     {"t": "die Sprachnachricht", "e": "voice message / audio message / voice note"},
@@ -5633,7 +5633,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wollen", "e": "to want"},
     {"t": "zurückmelden", "e": "report back / respond / give feedback"}
   ]},
-  { id: "duo_de_u242", type: "vocab", title: "Vocab: Unit 242 \u00b7 workplace communication \u2014 Feedback: Review tasks", items: [
+  { id: "duo_de_u242", type: "vocab", title: "Vocab: Unit 242 \u00b7 workplace communication \u2014 Discuss deadlines and feedback", items: [
     {"t": "der Anhang", "e": "attachment"},
     {"t": "die Arbeitsanweisung", "e": "work instruction / work directive / job instruction"},
     {"t": "der Arbeitsauftrag", "e": "work order / job order / task assignment"},
@@ -5659,7 +5659,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "transparent", "e": "transparent / transparently"},
     {"t": "vorziehen", "e": "prefer"}
   ]},
-  { id: "duo_de_u243", type: "vocab", title: "Vocab: Unit 243 \u00b7 gossip and rumors 2 \u2014 Gossip: Share a secret", items: [
+  { id: "duo_de_u243", type: "vocab", title: "Vocab: Unit 243 \u00b7 gossip and rumors 2 \u2014 Share a secret", items: [
     {"t": "der Bekannte", "e": "acquaintance, (I/he/she/it) confessed, famous"},
     {"t": "der Bekanntenkreis", "e": "circle of acquaintances / social circle / network of acquaintances"},
     {"t": "der Fehlalarm", "e": "false alarm / false alert / mistaken alarm"},
@@ -5680,7 +5680,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verraten", "e": "reveal / disclose"},
     {"t": "weitererzählen", "e": "to pass on / to tell further / to relate further"}
   ]},
-  { id: "duo_de_u244", type: "vocab", title: "Vocab: Unit 244 \u00b7 pop culture \u2014 Media: Describe a famous person", items: [
+  { id: "duo_de_u244", type: "vocab", title: "Vocab: Unit 244 \u00b7 pop culture \u2014 Describe a famous person", items: [
     {"t": "die Besetzung", "e": "cast / ensemble / lineup"},
     {"t": "Clip", "e": "clip / video clip / short video"},
     {"t": "das Fernsehprogramm", "e": "TV program / television program / TV schedule"},
@@ -5706,7 +5706,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "offenbar", "e": "apparently"},
     {"t": "unterhaltsam", "e": "entertaining"}
   ]},
-  { id: "duo_de_u245", type: "vocab", title: "Vocab: Unit 245 \u00b7 artificial intelligence \u2014 Technology: Describe how automation works", items: [
+  { id: "duo_de_u245", type: "vocab", title: "Vocab: Unit 245 \u00b7 artificial intelligence \u2014 Discuss AI and technology", items: [
     {"t": "der Ablauf", "e": "process / running / passing"},
     {"t": "die Automatisierung", "e": "automation / mechanization"},
     {"t": "die Beurteilung", "e": "assessment / reference / judgement"},
@@ -5733,7 +5733,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "worum", "e": "about what"},
     {"t": "wozu", "e": "for what"}
   ]},
-  { id: "duo_de_u246", type: "vocab", title: "Vocab: Unit 246 \u00b7 friendship \u2014 Friendship: Describe your best friend", items: [
+  { id: "duo_de_u246", type: "vocab", title: "Vocab: Unit 246 \u00b7 friendship \u2014 Describe your best friend", items: [
     {"t": "die Abmachung", "e": "agreement / deals"},
     {"t": "die Ehrlichkeit", "e": "honesty / sincerity / integrity"},
     {"t": "der Glückspilz", "e": "lucky person / lucky devil / fortunate person"},
@@ -5760,7 +5760,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wertschätzend", "e": "appreciative / respectful / valuing"},
     {"t": "die Übernachtungsparty", "e": "sleepover"}
   ]},
-  { id: "duo_de_u247", type: "vocab", title: "Vocab: Unit 247 \u00b7 negotiation and persuasion 2 \u2014 Teamwork: Prepare a team presentation", items: [
+  { id: "duo_de_u247", type: "vocab", title: "Vocab: Unit 247 \u00b7 negotiation and persuasion 2 \u2014 Explain why your plan is best", items: [
     {"t": "der Einblick", "e": "insight / glimpse / view"},
     {"t": "die Einigung", "e": "agreement / settlement / accord"},
     {"t": "die Einschränkung", "e": "cutting / limitation / restriction"},
@@ -5787,7 +5787,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "die Überzeugung", "e": "conviction / belief / persuasion"},
     {"t": "überreden", "e": "persuade / brings"}
   ]},
-  { id: "duo_de_u248", type: "vocab", title: "Vocab: Unit 248 \u00b7 clothes shopping \u2014 Outfits: Compare two outfits", items: [
+  { id: "duo_de_u248", type: "vocab", title: "Vocab: Unit 248 \u00b7 clothes shopping \u2014 Compare two pieces of clothing", items: [
     {"t": "der Absatzschuh", "e": "heeled shoe / heel / high-heeled shoe"},
     {"t": "der Badeanzug", "e": "swimsuit / bathing suit"},
     {"t": "die Boutique", "e": "boutique / fashion boutique / shop"},
@@ -5813,7 +5813,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "umsehen", "e": "look around / have a look / look"},
     {"t": "wasserfest", "e": "waterproof / water-resistant / water-repellent"}
   ]},
-  { id: "duo_de_u249", type: "vocab", title: "Vocab: Unit 249 \u00b7 secondary school \u2014 Classroom: Describe your classroom", items: [
+  { id: "duo_de_u249", type: "vocab", title: "Vocab: Unit 249 \u00b7 secondary school \u2014 Get ready for the school year", items: [
     {"t": "der Berufsberater", "e": "career counselor / vocational counselor / career advisor"},
     {"t": "der Deutschunterricht", "e": "German classes"},
     {"t": "der Elternabend", "e": "parents' evening / parent-teacher meeting / parent conference"},
@@ -5840,7 +5840,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "weglassen", "e": "miss"},
     {"t": "das Übungsheft", "e": "workbook"}
   ]},
-  { id: "duo_de_u250", type: "vocab", title: "Vocab: Unit 250 \u00b7 history \u2014 History: Describe past events", items: [
+  { id: "duo_de_u250", type: "vocab", title: "Vocab: Unit 250 \u00b7 history \u2014 Describe changes over time", items: [
     {"t": "das Archiv", "e": "archive"},
     {"t": "der Archäologe", "e": "archaeologists / archeologist"},
     {"t": "der Dokumentarfilm", "e": "documentary"},
@@ -5866,7 +5866,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "tätigen", "e": "make / effects"},
     {"t": "worden", "e": "(to) were, becomes, (to) was"}
   ]},
-  { id: "duo_de_u251", type: "vocab", title: "Vocab: Unit 251 \u00b7 hiking \u2014 Hiking: Describe the hiking route", items: [
+  { id: "duo_de_u251", type: "vocab", title: "Vocab: Unit 251 \u00b7 hiking \u2014 Describe your hiking route", items: [
     {"t": "Fels", "e": "rock"},
     {"t": "die Frischhaltedose", "e": "food storage container / storage box / airtight container"},
     {"t": "der Hang", "e": "slope / incline / hillside"},
@@ -5893,7 +5893,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "umkehren", "e": "turn"},
     {"t": "wasserdicht", "e": "waterproof / weatherproof"}
   ]},
-  { id: "duo_de_u252", type: "vocab", title: "Vocab: Unit 252 \u00b7 literature 2 \u2014 Stories: Describe your story idea", items: [
+  { id: "duo_de_u252", type: "vocab", title: "Vocab: Unit 252 \u00b7 literature 2 \u2014 Describe your story idea", items: [
     {"t": "die Anmerkung", "e": "note / comment"},
     {"t": "die Ausgabe", "e": "expense / edition / issue"},
     {"t": "die Begründung", "e": "reason / justification"},
@@ -5919,7 +5919,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "schildern", "e": "narrating / charts / depicts"},
     {"t": "säße", "e": "sit / reside / be seated"}
   ]},
-  { id: "duo_de_u253", type: "vocab", title: "Vocab: Unit 253 \u00b7 board games \u2014 Game Night: Explain the rules to others", items: [
+  { id: "duo_de_u253", type: "vocab", title: "Vocab: Unit 253 \u00b7 board games \u2014 Track the score at game night", items: [
     {"t": "die Anleitung", "e": "manual / guide / instruction"},
     {"t": "der Gleichstand", "e": "tie / deadlock / draw"},
     {"t": "die Niederlage", "e": "setback"},
@@ -5945,7 +5945,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "überlegt", "e": "is thinking / wisely / thinks"},
     {"t": "übersichtlich", "e": "clear / easy to understand / well-organized"}
   ]},
-  { id: "duo_de_u254", type: "vocab", title: "Vocab: Unit 254 \u00b7 personal experiences 2 \u2014 Resilience: Describe a challenge you faced", items: [
+  { id: "duo_de_u254", type: "vocab", title: "Vocab: Unit 254 \u00b7 personal experiences 2 \u2014 Describe a risk you avoided", items: [
     {"t": "der Abschied", "e": "valediction / parting / farewell"},
     {"t": "der Albtraum", "e": "nightmare / bad dream / ordeal"},
     {"t": "die Bedingung", "e": "condition / terms / stipulation"},
@@ -5972,7 +5972,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "widerstandsfähig", "e": "tough / resilient / sturdiest"},
     {"t": "zweifeln", "e": "doubt / question / be uncertain"}
   ]},
-  { id: "duo_de_u255", type: "vocab", title: "Vocab: Unit 255 \u00b7 apologizing \u2014 Regret: Reflect on a past conflict", items: [
+  { id: "duo_de_u255", type: "vocab", title: "Vocab: Unit 255 \u00b7 apologizing \u2014 Point out a better solution", items: [
     {"t": "der Abbruch", "e": "cancellation / demolition / termination"},
     {"t": "die Absage", "e": "closing announcement / rejection / refusal"},
     {"t": "der Ansprechpartner", "e": "contact person / point of contact / liaison"},
@@ -5999,7 +5999,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zögern", "e": "hold / hesitate"},
     {"t": "übertrieben", "e": "unrealistically / overdoing / exaggerated"}
   ]},
-  { id: "duo_de_u256", type: "vocab", title: "Vocab: Unit 256 \u00b7 advertising \u2014 Advertising: Describe a memorable ad", items: [
+  { id: "duo_de_u256", type: "vocab", title: "Vocab: Unit 256 \u00b7 advertising \u2014 Describe a memorable ad", items: [
     {"t": "die Aktion", "e": "operation / campaign / drive"},
     {"t": "die Anzeige", "e": "notification / advertisement"},
     {"t": "der Einfluss", "e": "influence"},
@@ -6026,7 +6026,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wirkungsvoll", "e": "telling / atmospherically"},
     {"t": "die Übertreibung", "e": "overstatement / excess / overemphasis"}
   ]},
-  { id: "duo_de_u257", type: "vocab", title: "Vocab: Unit 257 \u00b7 post office \u2014 Post Office: Fill out a mailing form", items: [
+  { id: "duo_de_u257", type: "vocab", title: "Vocab: Unit 257 \u00b7 post office \u2014 Prepare a package to ship", items: [
     {"t": "die Abholung", "e": "collections / pickup"},
     {"t": "der Barcode", "e": "barcode"},
     {"t": "das Etikett", "e": "label / tag / sticker"},
@@ -6052,7 +6052,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "gebührenfrei", "e": "free of charge / free / without fees"},
     {"t": "zerbrechlich", "e": "fragile / frail"}
   ]},
-  { id: "duo_de_u258", type: "vocab", title: "Vocab: Unit 258 \u00b7 neighborhood \u2014 Neighborhood: Talk about your neighbors", items: [
+  { id: "duo_de_u258", type: "vocab", title: "Vocab: Unit 258 \u00b7 neighborhood \u2014 Describe homes and gardens", items: [
     {"t": "die Abfalltrennung", "e": "separation"},
     {"t": "die Fahrgemeinschaft", "e": "carpool / carpool group / ride-sharing group"},
     {"t": "die Feuerwache", "e": "fire station / firehouse"},
@@ -6078,7 +6078,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zusammenlegen", "e": "to combine / to merge / to put together"},
     {"t": "überschaubar", "e": "controllable / comprehensible / manageable"}
   ]},
-  { id: "duo_de_u259", type: "vocab", title: "Vocab: Unit 259 \u00b7 bank 2 \u2014 Banking: Open a new account", items: [
+  { id: "duo_de_u259", type: "vocab", title: "Vocab: Unit 259 \u00b7 bank 2 \u2014 Open a new checking account", items: [
     {"t": "die Bankverbindung", "e": "bank details / bank account details / banking information"},
     {"t": "die Buchung", "e": "booking / reservation / entry"},
     {"t": "die Debitkarte", "e": "debit"},
@@ -6105,7 +6105,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zurückzahlen", "e": "repaid / pay back / repay"},
     {"t": "die Überweisung", "e": "transfer / referral / remittance"}
   ]},
-  { id: "duo_de_u260", type: "vocab", title: "Vocab: Unit 260 \u00b7 divorce \u2014 Choices: Express regrets and wishes", items: [
+  { id: "duo_de_u260", type: "vocab", title: "Vocab: Unit 260 \u00b7 divorce \u2014 Express regrets and wishes", items: [
     {"t": "die Alleinerziehender", "e": "single parent / sole parent / single caregiver"},
     {"t": "die Ausgaben", "e": "editions / distributions / expenses"},
     {"t": "die Beratung", "e": "advice / consultation"},
@@ -6131,7 +6131,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "nur", "e": "only"},
     {"t": "rechtsgültig", "e": "legally valid / legally binding / valid"}
   ]},
-  { id: "duo_de_u261", type: "vocab", title: "Vocab: Unit 261 \u00b7 city life 2 \u2014 City Life: Ask about local festivals", items: [
+  { id: "duo_de_u261", type: "vocab", title: "Vocab: Unit 261 \u00b7 city life 2 \u2014 Describe places in your city", items: [
     {"t": "der Altbau", "e": "old building / older building / historic building"},
     {"t": "der Anwohner", "e": "resident / local resident / inhabitant (masculine)"},
     {"t": "die Buslinie", "e": "bus line / bus route / bus service"},
@@ -6158,7 +6158,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "modernisieren", "e": "modernize / update / upgrade"},
     {"t": "sich verlaufen", "e": "to get lost"}
   ]},
-  { id: "duo_de_u262", type: "vocab", title: "Vocab: Unit 262 \u00b7 exercise routines 2 \u2014 Workout: Describe your workout routine", items: [
+  { id: "duo_de_u262", type: "vocab", title: "Vocab: Unit 262 \u00b7 exercise routines 2 \u2014 Describe how your routine changed", items: [
     {"t": "der Blutdruck", "e": "blood pressure"},
     {"t": "der Ernährungsplan", "e": "nutrition plan / diet plan / meal plan"},
     {"t": "die Hantel", "e": "dumbbell / weight / barbell"},
@@ -6185,7 +6185,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "springen", "e": "to jump"},
     {"t": "strecken", "e": "stretch"}
   ]},
-  { id: "duo_de_u263", type: "vocab", title: "Vocab: Unit 263 \u00b7 study abroad \u2014 Culture: Share experiences abroad", items: [
+  { id: "duo_de_u263", type: "vocab", title: "Vocab: Unit 263 \u00b7 study abroad \u2014 Share your experiences abroad", items: [
     {"t": "das Austauschprogramm", "e": "exchange program / exchange programme / student exchange program"},
     {"t": "die Betreuung", "e": "support / supervision / assistance"},
     {"t": "die Integration", "e": "integration / onboarding"},
@@ -6212,7 +6212,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "mittlerweile", "e": "meanwhile / in the meantime / by now"},
     {"t": "vor ort", "e": "on site"}
   ]},
-  { id: "duo_de_u264", type: "vocab", title: "Vocab: Unit 264 \u00b7 mental health \u2014 Wellness: Share ways to feel better", items: [
+  { id: "duo_de_u264", type: "vocab", title: "Vocab: Unit 264 \u00b7 mental health \u2014 Share tips to manage stress", items: [
     {"t": "der Auslöser", "e": "trigger / cause / reason"},
     {"t": "die Disziplin", "e": "discipline / self-discipline / willpower"},
     {"t": "die Entspannung", "e": "relaxation / calm / peace"},
@@ -6238,7 +6238,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wirksam", "e": "active"},
     {"t": "überfordern", "e": "overwhelm / floors"}
   ]},
-  { id: "duo_de_u265", type: "vocab", title: "Vocab: Unit 265 \u00b7 medicine \u2014 Health: Give tips to stay healthy", items: [
+  { id: "duo_de_u265", type: "vocab", title: "Vocab: Unit 265 \u00b7 medicine \u2014 Give tips to prevent illness", items: [
     {"t": "der Arbeitsunfall", "e": "work accident / occupational accident / workplace accident"},
     {"t": "der Bluttest", "e": "blood test"},
     {"t": "der Bruch", "e": "broken / broke / break"},
@@ -6264,7 +6264,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "unwirksam", "e": "ineffective / invalid / inefficient"},
     {"t": "verschreiben", "e": "to assign / to prescribe / to allocate"}
   ]},
-  { id: "duo_de_u266", type: "vocab", title: "Vocab: Unit 266 \u00b7 nature \u2014 Nature: Describe your local park", items: [
+  { id: "duo_de_u266", type: "vocab", title: "Vocab: Unit 266 \u00b7 nature \u2014 Describe your local park", items: [
     {"t": "der Adler", "e": "eagle"},
     {"t": "der Biber", "e": "beaver"},
     {"t": "der Erdrutsch", "e": "landslide / earthslide / mudslide"},
@@ -6291,7 +6291,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "ursprünglich", "e": "originally / initially / pristine"},
     {"t": "üppig", "e": "fat / lush"}
   ]},
-  { id: "duo_de_u267", type: "vocab", title: "Vocab: Unit 267 \u00b7 journalism \u2014 Newsroom: Compare news then and now", items: [
+  { id: "duo_de_u267", type: "vocab", title: "Vocab: Unit 267 \u00b7 journalism \u2014 Compare news media over time", items: [
     {"t": "der Abonnent", "e": "subscriber (masculine)"},
     {"t": "der Abschnitt", "e": "paragraph / section"},
     {"t": "der Bildtext", "e": "caption / image caption / photo caption"},
@@ -6317,7 +6317,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "mithilfe", "e": "with the help of / by means of / with the aid of"},
     {"t": "unglaubwürdig", "e": "unbelievable / implausible / incredible"}
   ]},
-  { id: "duo_de_u268", type: "vocab", title: "Vocab: Unit 268 \u00b7 driving \u2014 Driving: Describe driving conditions", items: [
+  { id: "duo_de_u268", type: "vocab", title: "Vocab: Unit 268 \u00b7 driving \u2014 Describe driving conditions", items: [
     {"t": "der Abschleppdienst", "e": "breakdown service / towing service / tow truck service"},
     {"t": "das Benzin", "e": "gas"},
     {"t": "das Kennzeichen", "e": "characteristic / feature / sign"},
@@ -6344,7 +6344,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "seitlich", "e": "lateral / sideways / sidewise"},
     {"t": "tanken", "e": "get gas"}
   ]},
-  { id: "duo_de_u269", type: "vocab", title: "Vocab: Unit 269 \u00b7 music 2 \u2014 Bands: Share your favorite bands", items: [
+  { id: "duo_de_u269", type: "vocab", title: "Vocab: Unit 269 \u00b7 music 2 \u2014 Talk about your taste in music", items: [
     {"t": "der Bass", "e": "bass / bass guitar / bass voice"},
     {"t": "der Bassist", "e": "bassist / bass player / bass guitarist (masculine)"},
     {"t": "das Cello", "e": "cello / violoncello"},
@@ -6371,7 +6371,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "uninteressant", "e": "uninteresting"},
     {"t": "unwichtig", "e": "unimportant / insignificant / trivial"}
   ]},
-  { id: "duo_de_u270", type: "vocab", title: "Vocab: Unit 270 \u00b7 customer service 2 \u2014 Customer: Check device availability", items: [
+  { id: "duo_de_u270", type: "vocab", title: "Vocab: Unit 270 \u00b7 customer service 2 \u2014 Ask customer service for help", items: [
     {"t": "der Absender", "e": "sender (masculine)"},
     {"t": "die Anfrage", "e": "question / inquiry / Request"},
     {"t": "der Defekt", "e": "defect / fault / problem"},
@@ -6398,7 +6398,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verlängern", "e": "renew / keep"},
     {"t": "wertlos", "e": "bad / worst / worthless"}
   ]},
-  { id: "duo_de_u271", type: "vocab", title: "Vocab: Unit 271 \u00b7 language learning \u2014 Language: Ask about language resources", items: [
+  { id: "duo_de_u271", type: "vocab", title: "Vocab: Unit 271 \u00b7 language learning \u2014 Describe your German progress", items: [
     {"t": "der Akzent", "e": "accent"},
     {"t": "das Arbeitsbuch", "e": "workbook"},
     {"t": "der Aufsatz", "e": "essay"},
@@ -6424,7 +6424,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "strukturiert", "e": "structures / systematic / systematically"},
     {"t": "zuordnen", "e": "classify"}
   ]},
-  { id: "duo_de_u272", type: "vocab", title: "Vocab: Unit 272 \u00b7 rural life 2 \u2014 Farm Life: Describe daily farm tasks", items: [
+  { id: "duo_de_u272", type: "vocab", title: "Vocab: Unit 272 \u00b7 rural life 2 \u2014 Describe daily farm tasks", items: [
     {"t": "der Apfelbaum", "e": "apple tree"},
     {"t": "der Dünger", "e": "fertilizer / manure / compost"},
     {"t": "die Gartenschere", "e": "secateurs / garden shears / hedge clippers"},
@@ -6451,7 +6451,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "mähen", "e": "mow / are mowing"},
     {"t": "spalten", "e": "rent"}
   ]},
-  { id: "duo_de_u273", type: "vocab", title: "Vocab: Unit 273 \u00b7 ecotourism \u2014 Wildlife: Describe a wildlife trip", items: [
+  { id: "duo_de_u273", type: "vocab", title: "Vocab: Unit 273 \u00b7 ecotourism \u2014 Describe an ecotourism trip", items: [
     {"t": "der Artenschutz", "e": "species protection / species conservation / wildlife protection"},
     {"t": "das Artensterben", "e": "species extinction / extinction of species / species die-off"},
     {"t": "der Aussichtspunkt", "e": "observation point / scenic overlook / viewpoint"},
@@ -6479,7 +6479,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "unberührt", "e": "pristine / untouched / unspoiled"},
     {"t": "der Ökotourismus", "e": "ecotourism / ecological tourism"}
   ]},
-  { id: "duo_de_u274", type: "vocab", title: "Vocab: Unit 274 \u00b7 immigration \u2014 Migration: Share your migration story", items: [
+  { id: "duo_de_u274", type: "vocab", title: "Vocab: Unit 274 \u00b7 immigration \u2014 Talk about immigration", items: [
     {"t": "die Armut", "e": "poverty / indigence / destitution"},
     {"t": "das Asyl", "e": "asylum"},
     {"t": "die Auswanderung", "e": "emigration / moving abroad"},
@@ -6506,7 +6506,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wirtschaftlich", "e": "economic / economical / economically"},
     {"t": "zumindest", "e": "at least"}
   ]},
-  { id: "duo_de_u275", type: "vocab", title: "Vocab: Unit 275 \u00b7 scientific discoveries/advancements \u2014 Science: Describe a scientific discovery", items: [
+  { id: "duo_de_u275", type: "vocab", title: "Vocab: Unit 275 \u00b7 scientific discoveries/advancements \u2014 Describe future innovations", items: [
     {"t": "die Annahme", "e": "passage"},
     {"t": "das Atom", "e": "atom"},
     {"t": "die Beobachtung", "e": "observation / monitoring / surveillance"},
@@ -6532,7 +6532,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "testen", "e": "to test / to check"},
     {"t": "theoretisch", "e": "theoretical / theoretically"}
   ]},
-  { id: "duo_de_u276", type: "vocab", title: "Vocab: Unit 276 \u00b7 news \u2014 News: Summarize key news events", items: [
+  { id: "duo_de_u276", type: "vocab", title: "Vocab: Unit 276 \u00b7 news \u2014 Discuss a government inquiry", items: [
     {"t": "die Abstimmung", "e": "vote / ballot / agreement"},
     {"t": "der Bundestag", "e": "bundestag / Federal Parliament / parliament's"},
     {"t": "der Demonstrant", "e": "demonstrant / demonstrator / protester (masculine)"},
@@ -6559,7 +6559,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verbreiten", "e": "spread / disseminate / propagate"},
     {"t": "verdächtigen", "e": "suspicious / suspected"}
   ]},
-  { id: "duo_de_u277", type: "vocab", title: "Vocab: Unit 277 \u00b7 recipes \u2014 Cooking: Describe kitchen tools", items: [
+  { id: "duo_de_u277", type: "vocab", title: "Vocab: Unit 277 \u00b7 recipes \u2014 Prepare the ingredients", items: [
     {"t": "der Backofen", "e": "[baker's] oven / oven"},
     {"t": "das Backpapier", "e": "baking paper / parchment paper / greaseproof paper"},
     {"t": "der Duft", "e": "beautiful smell / aroma / hoar frost"},
@@ -6586,7 +6586,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "süßen", "e": "cute / sweet / sweeten"},
     {"t": "verrühren", "e": "mix"}
   ]},
-  { id: "duo_de_u278", type: "vocab", title: "Vocab: Unit 278 \u00b7 explore new places \u2014 Landmarks: Describe famous landmarks", items: [
+  { id: "duo_de_u278", type: "vocab", title: "Vocab: Unit 278 \u00b7 explore new places \u2014 Take guests to city landmarks", items: [
     {"t": "Bergsee", "e": "mountain lake / alpine lake"},
     {"t": "die Brauerei", "e": "brewery / breweries"},
     {"t": "der Domturm", "e": "cathedral tower / cathedral spire / cathedral steeple"},
@@ -6612,7 +6612,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "hinübergehen", "e": "to go over / to cross / to pass over"},
     {"t": "schweizerisch", "e": "swiss"}
   ]},
-  { id: "duo_de_u279", type: "vocab", title: "Vocab: Unit 279 \u00b7 life goals \u2014 Goals: Describe your past goals", items: [
+  { id: "duo_de_u279", type: "vocab", title: "Vocab: Unit 279 \u00b7 life goals \u2014 Talk about your past goals", items: [
     {"t": "der Ehrgeiz", "e": "ambition"},
     {"t": "der Entschluss", "e": "decision / resolution / determination"},
     {"t": "die Enttäuschung", "e": "disappointment / disillusionment / frustration"},
@@ -6639,7 +6639,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "wagen", "e": "risk / dared"},
     {"t": "zielgerichtet", "e": "purposeful / goal-oriented / directed"}
   ]},
-  { id: "duo_de_u280", type: "vocab", title: "Vocab: Unit 280 \u00b7 historic figures \u2014 Legends: Tell a famous story", items: [
+  { id: "duo_de_u280", type: "vocab", title: "Vocab: Unit 280 \u00b7 historic figures \u2014 Talk about ancient Egypt", items: [
     {"t": "der Anhänger", "e": "trailer / follower / supporters (masculine)"},
     {"t": "die Arbeiterklasse", "e": "working class / labor class / proletariat"},
     {"t": "die Arbeitsbedingung", "e": "working condition / employment condition / work condition"},
@@ -6664,7 +6664,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "lehren", "e": "teach"},
     {"t": "verfolgen", "e": "stalk, (to) track, (to) hunt"}
   ]},
-  { id: "duo_de_u281", type: "vocab", title: "Vocab: Unit 281 \u00b7 medical professions \u2014 Illness: Describe symptoms", items: [
+  { id: "duo_de_u281", type: "vocab", title: "Vocab: Unit 281 \u00b7 medical professions \u2014 Give winter health advice", items: [
     {"t": "der Allergietest", "e": "allergy screening / allergy examination / allergy test"},
     {"t": "der Angehörige", "e": "relative / family member / next of kin"},
     {"t": "der Apotheker", "e": "pharmacist (masculine)"},
@@ -6690,7 +6690,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "schwindelig", "e": "dizzy"},
     {"t": "statt dass", "e": "instead of / rather than / instead of that"}
   ]},
-  { id: "duo_de_u282", type: "vocab", title: "Vocab: Unit 282 \u00b7 empathy \u2014 Support: Offer comfort to a friend", items: [
+  { id: "duo_de_u282", type: "vocab", title: "Vocab: Unit 282 \u00b7 empathy \u2014 Comfort a friend in need", items: [
     {"t": "der Alleinerziehende", "e": "single parent / sole parent / single mother"},
     {"t": "die Anerkennung", "e": "recognition / acknowledgment / appreciation"},
     {"t": "das Bedürfnis", "e": "want / need"},
@@ -6716,7 +6716,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verletzlich", "e": "vulnerable / susceptible / sensitive"},
     {"t": "vermitteln", "e": "to communicate / to convey"}
   ]},
-  { id: "duo_de_u283", type: "vocab", title: "Vocab: Unit 283 \u00b7 environmental protection \u2014 Environment: Suggest ways to go green", items: [
+  { id: "duo_de_u283", type: "vocab", title: "Vocab: Unit 283 \u00b7 environmental protection \u2014 Suggest ways to go green", items: [
     {"t": "das Abgas", "e": "exhaust gas / emission / fumes"},
     {"t": "die Abholzung", "e": "deforestation / clearing / logging"},
     {"t": "der Bergbau", "e": "mining / mineral extraction / mining industry"},
@@ -6742,7 +6742,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "einsparen", "e": "buy / bought"},
     {"t": "indem", "e": "while / as / by"}
   ]},
-  { id: "duo_de_u284", type: "vocab", title: "Vocab: Unit 284 \u00b7 living abroad \u2014 Arrival: Talk about learning the language", items: [
+  { id: "duo_de_u284", type: "vocab", title: "Vocab: Unit 284 \u00b7 living abroad \u2014 Describe your new life abroad", items: [
     {"t": "das Amt", "e": "office / position / post"},
     {"t": "das Anschreiben", "e": "letter / cover letter / note"},
     {"t": "die Arbeitserlaubnis", "e": "work permit"},
@@ -6766,7 +6766,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "weltoffen", "e": "cosmopolitan / liberal / open-minded"},
     {"t": "zwar", "e": "indeed"}
   ]},
-  { id: "duo_de_u285", type: "vocab", title: "Vocab: Unit 285 \u00b7 money management \u2014 Finances: Explain your loan payments", items: [
+  { id: "duo_de_u285", type: "vocab", title: "Vocab: Unit 285 \u00b7 money management \u2014 Talk about repaying a loan", items: [
     {"t": "der Aufwand", "e": "expenditure / cost / expense"},
     {"t": "der Betrag", "e": "amount"},
     {"t": "das Drittel", "e": "third, divide number by three, (I) profit three ways/am profiting three ways"},
@@ -6793,7 +6793,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "risikoreich", "e": "risky / hazardous / dangerous"},
     {"t": "vorhersehbar", "e": "predictable / foreseeable / anticipated"}
   ]},
-  { id: "duo_de_u286", type: "vocab", title: "Vocab: Unit 286 \u00b7 debate 2 \u2014 Debate: Work on your arguments", items: [
+  { id: "duo_de_u286", type: "vocab", title: "Vocab: Unit 286 \u00b7 debate 2 \u2014 Make your arguments clearer", items: [
     {"t": "die Agenda", "e": "agenda / schedule / diary"},
     {"t": "der Beleg", "e": "proof / receipt / record"},
     {"t": "die Darstellung", "e": "portrayal / picture / representation"},
@@ -6820,7 +6820,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "sachlich", "e": "objective / calm / businesslike"},
     {"t": "widersprüchlich", "e": "contradictory / irish / inconsistently"}
   ]},
-  { id: "duo_de_u287", type: "vocab", title: "Vocab: Unit 287 \u00b7 politics 2 \u2014 Politics: Explain a political decision", items: [
+  { id: "duo_de_u287", type: "vocab", title: "Vocab: Unit 287 \u00b7 politics 2 \u2014 Explain an avoidable crisis", items: [
     {"t": "der Arbeitnehmer", "e": "employee; worker (masculine)"},
     {"t": "der Befürworter", "e": "supporter / advocate / proponent (masculine)"},
     {"t": "der Herausforderer", "e": "competitor / rival / challenger"},
@@ -6846,7 +6846,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zudem", "e": "also / furthermore / moreover"},
     {"t": "zufolge", "e": "according"}
   ]},
-  { id: "duo_de_u288", type: "vocab", title: "Vocab: Unit 288 \u00b7 technology \u2014 Devices: Explain how streaming works", items: [
+  { id: "duo_de_u288", type: "vocab", title: "Vocab: Unit 288 \u00b7 technology \u2014 Stream shows and music", items: [
     {"t": "das Abo", "e": "subscription / season ticket / pass"},
     {"t": "der Betrieb", "e": "company / business"},
     {"t": "der Doppelklick", "e": "double click"},
@@ -6872,7 +6872,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "tragbar", "e": "portable / wearable / manageable"},
     {"t": "die Überwachungskamera", "e": "surveillance camera / security camera / monitoring camera"}
   ]},
-  { id: "duo_de_u289", type: "vocab", title: "Vocab: Unit 289 \u00b7 romance 2 \u2014 Trust: Share your feelings", items: [
+  { id: "duo_de_u289", type: "vocab", title: "Vocab: Unit 289 \u00b7 romance 2 \u2014 Talk about dating someone new", items: [
     {"t": "das Date", "e": "date"},
     {"t": "die Eifersucht", "e": "jealousy / envy"},
     {"t": "der Heiratsantrag", "e": "proposal / offer of marriage"},
@@ -6899,7 +6899,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "versöhnen", "e": "reconcile / make peace / appease"},
     {"t": "zusammenleben", "e": "live together / cohabit / coexist"}
   ]},
-  { id: "duo_de_u290", type: "vocab", title: "Vocab: Unit 290 \u00b7 restaurant \u2014 Restaurant: Describe your favorite dish", items: [
+  { id: "duo_de_u290", type: "vocab", title: "Vocab: Unit 290 \u00b7 restaurant \u2014 Describe your favorite dish", items: [
     {"t": "der Alkohol", "e": "alcohol"},
     {"t": "die Außenterrasse", "e": "outdoor terrace / patio / veranda"},
     {"t": "die Beilage", "e": "side dish"},
@@ -6926,7 +6926,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "vorzeigen", "e": "show"},
     {"t": "würzen", "e": "to season / to spice / to flavor"}
   ]},
-  { id: "duo_de_u291", type: "vocab", title: "Vocab: Unit 291 \u00b7 attending a sporting event \u2014 Matchday: Describe the players", items: [
+  { id: "duo_de_u291", type: "vocab", title: "Vocab: Unit 291 \u00b7 attending a sporting event \u2014 Describe a soccer match", items: [
     {"t": "der Auswechselspieler", "e": "substitute player / substitute / reserve player (masculine)"},
     {"t": "der Außenseiter", "e": "underdog (masculine)"},
     {"t": "der Eintrittspreis", "e": "admission price / entrance fee / entry fee"},
@@ -6953,7 +6953,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "sich anstellen", "e": "clothes / lines"},
     {"t": "spüren", "e": "trails, clues, (to) feel"}
   ]},
-  { id: "duo_de_u292", type: "vocab", title: "Vocab: Unit 292 \u00b7 cooking 2 \u2014 Kitchen: Describe a traditional recipe", items: [
+  { id: "duo_de_u292", type: "vocab", title: "Vocab: Unit 292 \u00b7 cooking 2 \u2014 Describe a traditional recipe", items: [
     {"t": "die Brühe", "e": "broth / stock / soup"},
     {"t": "der Dosenöffner", "e": "can opener"},
     {"t": "das Eigelb", "e": "egg yolk / yolk"},
@@ -6980,7 +6980,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "sodass", "e": "so / therefore"},
     {"t": "säuerlich", "e": "sourish / slightly sour / tart"}
   ]},
-  { id: "duo_de_u293", type: "vocab", title: "Vocab: Unit 293 \u00b7 accidents \u2014 Accidents: Describe an accident", items: [
+  { id: "duo_de_u293", type: "vocab", title: "Vocab: Unit 293 \u00b7 accidents \u2014 Describe a car accident", items: [
     {"t": "der Alkoholtest", "e": "alcohol test / breathalyzer test / sobriety test"},
     {"t": "der Beifahrer", "e": "passengers"},
     {"t": "die Bremse", "e": "brake"},
@@ -7007,7 +7007,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "unverletzt", "e": "unhurt / uninjured / unharmed"},
     {"t": "übersehen", "e": "miss"}
   ]},
-  { id: "duo_de_u294", type: "vocab", title: "Vocab: Unit 294 \u00b7 globalization \u2014 Markets: Find good business locations", items: [
+  { id: "duo_de_u294", type: "vocab", title: "Vocab: Unit 294 \u00b7 globalization \u2014 Explain how trade went global", items: [
     {"t": "die Bedingung", "e": "condition / terms / stipulation"},
     {"t": "der Export", "e": "export / exportation / shipment"},
     {"t": "die Globalisierung", "e": "globalisation / globalization"},
@@ -7035,7 +7035,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "seit", "e": "since; for"},
     {"t": "verhandeln", "e": "to negotiate / to dispute / to judge"}
   ]},
-  { id: "duo_de_u295", type: "vocab", title: "Vocab: Unit 295 \u00b7 the hard sciences \u2014 Lab: Describe lab equipment", items: [
+  { id: "duo_de_u295", type: "vocab", title: "Vocab: Unit 295 \u00b7 the hard sciences \u2014 Describe lab equipment", items: [
     {"t": "der Bereich", "e": "area"},
     {"t": "das Desinfektionsmittel", "e": "disinfecting agent / hand sanitizer / disinfectant solution"},
     {"t": "die Ebene", "e": "plain / level / layer"},
@@ -7061,7 +7061,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "somit", "e": "thus / so / consequently"},
     {"t": "unterhalb", "e": "below / beneath / under"}
   ]},
-  { id: "duo_de_u296", type: "vocab", title: "Vocab: Unit 296 \u00b7 career choices \u2014 Workplace: Describe your ideal workplace", items: [
+  { id: "duo_de_u296", type: "vocab", title: "Vocab: Unit 296 \u00b7 career choices \u2014 Describe your ideal job", items: [
     {"t": "die Ablehnung", "e": "failure / declines / refusal"},
     {"t": "die Arbeitszeit", "e": "working time"},
     {"t": "die Beförderung", "e": "promotion / carriage / transport"},
@@ -7088,7 +7088,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "weiterbilden", "e": "further educate / continue education / train further"},
     {"t": "zeitaufwendig", "e": "time-consuming / time-intensive / laborious"}
   ]},
-  { id: "duo_de_u297", type: "vocab", title: "Vocab: Unit 297 \u00b7 crime \u2014 Crime: Share witness statements", items: [
+  { id: "duo_de_u297", type: "vocab", title: "Vocab: Unit 297 \u00b7 crime \u2014 Discuss what witnesses claim", items: [
     {"t": "das Alibi", "e": "alibi"},
     {"t": "die Anklage", "e": "indictment / charge / prosecution"},
     {"t": "der Augenzeuge", "e": "eyewitness / witness"},
@@ -7116,7 +7116,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verhaften", "e": "arresting"},
     {"t": "verhören", "e": "examine"}
   ]},
-  { id: "duo_de_u298", type: "vocab", title: "Vocab: Unit 298 \u00b7 social media 2 \u2014 Messages: Express your opinion on posts", items: [
+  { id: "duo_de_u298", type: "vocab", title: "Vocab: Unit 298 \u00b7 social media 2 \u2014 Talk about online safety", items: [
     {"t": "der Betrüger", "e": "fraudster / cheater / swindler (masculine)"},
     {"t": "die Bildschirmzeit", "e": "screen time"},
     {"t": "der Browser", "e": "browser"},
@@ -7142,7 +7142,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "vertrauenswürdig", "e": "dependable / credible / reputable"},
     {"t": "zunehmend", "e": "increasing / growing / rising"}
   ]},
-  { id: "duo_de_u299", type: "vocab", title: "Vocab: Unit 299 \u00b7 playing or training for a sport \u2014 Training: Explain your workout routine", items: [
+  { id: "duo_de_u299", type: "vocab", title: "Vocab: Unit 299 \u00b7 playing or training for a sport \u2014 Share competition tips", items: [
     {"t": "die Belastung", "e": "load"},
     {"t": "der Fitnessraum", "e": "fitness room / gym / exercise room"},
     {"t": "das Heimspiel", "e": "home game / home match / home fixture"},
@@ -7168,7 +7168,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "überlasten", "e": "overload / overburden / overstress"},
     {"t": "überschätzen", "e": "overestimate / overrate / overvalue"}
   ]},
-  { id: "duo_de_u300", type: "vocab", title: "Vocab: Unit 300 \u00b7 disabilities \u2014 Access: Ask about wheelchair access", items: [
+  { id: "duo_de_u300", type: "vocab", title: "Vocab: Unit 300 \u00b7 disabilities \u2014 Talk about wheelchair access", items: [
     {"t": "die Barriere", "e": "barrier / bars"},
     {"t": "die Behandlung", "e": "medication / interventions / discussion"},
     {"t": "der Behindertenparkplatz", "e": "disabled parking space / handicapped parking spot / accessible parking space"},
@@ -7194,7 +7194,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zugreifen", "e": "turn / access"},
     {"t": "überwinden", "e": "grew / grow / passed"}
   ]},
-  { id: "duo_de_u301", type: "vocab", title: "Vocab: Unit 301 \u00b7 global trade \u2014 Trade: Ask about product delivery", items: [
+  { id: "duo_de_u301", type: "vocab", title: "Vocab: Unit 301 \u00b7 global trade \u2014 Discuss a product launch plan", items: [
     {"t": "der Anteil", "e": "share"},
     {"t": "der Arbeitsmarkt", "e": "labor market / job market / employment market"},
     {"t": "der Aufschlag", "e": "services"},
@@ -7221,7 +7221,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "versorgen", "e": "provide / services / keeps"},
     {"t": "übernehmen", "e": "to take over / to undertake / to assume"}
   ]},
-  { id: "duo_de_u302", type: "vocab", title: "Vocab: Unit 302 \u00b7 ethical shopping \u2014 Sustainability: Recommend eco-friendly products", items: [
+  { id: "duo_de_u302", type: "vocab", title: "Vocab: Unit 302 \u00b7 ethical shopping \u2014 Explain your product choices", items: [
     {"t": "der Anbau", "e": "building / growing / cultivation"},
     {"t": "der Aspekt", "e": "issue"},
     {"t": "der Beutel", "e": "pouch / batter / bulge"},
@@ -7248,7 +7248,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "zurücksenden", "e": "to send back / to return / to resend"},
     {"t": "ökologisch", "e": "ecological / green / ecologically"}
   ]},
-  { id: "duo_de_u303", type: "vocab", title: "Vocab: Unit 303 \u00b7 cross-cultural communication \u2014 Norms: Explain team rules", items: [
+  { id: "duo_de_u303", type: "vocab", title: "Vocab: Unit 303 \u00b7 cross-cultural communication \u2014 Share what your boss says", items: [
     {"t": "der Augenkontakt", "e": "eye contact"},
     {"t": "der Beitrag", "e": "contribution / fee"},
     {"t": "die Distanz", "e": "distance / gap / range"},
@@ -7275,7 +7275,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "werden", "e": "to become"},
     {"t": "zulassen", "e": "(to) allow, (to) admit, (to) permit"}
   ]},
-  { id: "duo_de_u304", type: "vocab", title: "Vocab: Unit 304 \u00b7 voting \u2014 Election: Express hopes for the election", items: [
+  { id: "duo_de_u304", type: "vocab", title: "Vocab: Unit 304 \u00b7 voting \u2014 Discuss election issues", items: [
     {"t": "die Ansicht", "e": "opinion / view"},
     {"t": "der Anspruch", "e": "claim / demand"},
     {"t": "die Außenpolitik", "e": "foreign policy / external policy / foreign affairs policy"},
@@ -7302,7 +7302,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "weniger", "e": "fewer / less"},
     {"t": "wiederwählen", "e": "reelect / elect again"}
   ]},
-  { id: "duo_de_u305", type: "vocab", title: "Vocab: Unit 305 \u00b7 gender orientation \u2014 Identity: Share your pronouns", items: [
+  { id: "duo_de_u305", type: "vocab", title: "Vocab: Unit 305 \u00b7 gender orientation \u2014 Use pronouns respectfully", items: [
     {"t": "die Adoption", "e": "adoption"},
     {"t": "der Aktivist", "e": "activist (masculine)"},
     {"t": "die Bezeichnung", "e": "term / description / marking"},
@@ -7326,7 +7326,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "weiblich", "e": "female / woman's"},
     {"t": "zurechtkommen", "e": "make / get / gets"}
   ]},
-  { id: "duo_de_u306", type: "vocab", title: "Vocab: Unit 306 \u00b7 outer space \u2014 Space: Describe a space mission", items: [
+  { id: "duo_de_u306", type: "vocab", title: "Vocab: Unit 306 \u00b7 outer space \u2014 Describe a space mission", items: [
     {"t": "die Antenne", "e": "antenna / aerial"},
     {"t": "die Gravitation", "e": "gravitation / gravity"},
     {"t": "die Kollision", "e": "collision / impact"},
@@ -7353,7 +7353,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "strahlen", "e": "rays"},
     {"t": "vergehen", "e": "(to) wear off, (to) pass, (to) go by"}
   ]},
-  { id: "duo_de_u307", type: "vocab", title: "Vocab: Unit 307 \u00b7 digital communication \u2014 Meetings: Share your progress at work", items: [
+  { id: "duo_de_u307", type: "vocab", title: "Vocab: Unit 307 \u00b7 digital communication \u2014 Discuss feedback at work", items: [
     {"t": "der Anrufer", "e": "caller / unexpected caller (masculine)"},
     {"t": "der Eintrag", "e": "entry (in a book), inscription"},
     {"t": "der Hinweis", "e": "tip / clue"},
@@ -7379,7 +7379,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verarbeiten", "e": "makes / work / process"},
     {"t": "verfügbar", "e": "available; online"}
   ]},
-  { id: "duo_de_u308", type: "vocab", title: "Vocab: Unit 308 \u00b7 entrepreneurship \u2014 Business: Explain a business plan", items: [
+  { id: "duo_de_u308", type: "vocab", title: "Vocab: Unit 308 \u00b7 entrepreneurship \u2014 Discuss consulting careers", items: [
     {"t": "der Berater", "e": "guide / advisers (masculine)"},
     {"t": "der Ertrag", "e": "produce"},
     {"t": "die Führungskraft", "e": "leader"},
@@ -7406,7 +7406,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "versichern", "e": "to insure / to assure / to guarantee"},
     {"t": "wollen", "e": "to want"}
   ]},
-  { id: "duo_de_u309", type: "vocab", title: "Vocab: Unit 309 \u00b7 activism \u2014 Dialogue: Describe a protest", items: [
+  { id: "duo_de_u309", type: "vocab", title: "Vocab: Unit 309 \u00b7 activism \u2014 Describe a protest in the news", items: [
     {"t": "die Abgeordneter", "e": "member of parliament / representative / legislator"},
     {"t": "der Anwalt", "e": "lawyer / advocate"},
     {"t": "die Aussage", "e": "statement / message"},
@@ -7432,7 +7432,7 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "moralisch", "e": "moral / morally / ethical"},
     {"t": "verhandelbar", "e": "negotiable / open to negotiation"}
   ]},
-  { id: "duo_de_u310", type: "vocab", title: "Vocab: Unit 310 \u00b7 risks \u2014 Safety: Describe health risks", items: [
+  { id: "duo_de_u310", type: "vocab", title: "Vocab: Unit 310 \u00b7 risks \u2014 Talk about health risks", items: [
     {"t": "der Alarm", "e": "alerts"},
     {"t": "der Besitz", "e": "(I) have, (I) own, property"},
     {"t": "Beweises", "e": "proof / evidence / demonstration"},
@@ -7493,7 +7493,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "no", "e": "no / not"},
     {"t": "sei di", "e": "you are from"},
     {"t": "sono di", "e": "I am from"},
-    {"t": "sì", "e": "yes (sì) — not the reflexive si"},
+    {"t": "sì", "e": "yes (sì; si without the accent is the reflexive)"},
     {"t": "tu", "e": "you (informal singular)"},
     {"t": "vero", "e": "true"},
     {"t": "è di", "e": "is from / comes from"}
@@ -7530,7 +7530,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la farmacia", "e": "pharmacy"},
     {"t": "la gelateria", "e": "ice cream shop / ice cream parlor"},
     {"t": "l'hotel", "e": "hotel"},
-    {"t": "lì", "e": "there (in that place: lì) — not the pronoun li"},
+    {"t": "lì", "e": "there (in that exact spot, lì; là is the farther there)"},
     {"t": "il museo", "e": "museum"},
     {"t": "il negozio", "e": "shop"},
     {"t": "il panificio", "e": "bakery / baker's"},
@@ -7954,7 +7954,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "internazionale", "e": "international"},
     {"t": "inviare", "e": "to send"},
     {"t": "loro", "e": "they / them"},
-    {"t": "là", "e": "there (over there: là) — not the article la"},
+    {"t": "là", "e": "there (over there, là; lì is the exact-spot there)"},
     {"t": "nostra", "e": "our (feminine: nostra)"},
     {"t": "nostro", "e": "our (masculine: nostro)"},
     {"t": "la persona", "e": "person"},
@@ -8017,8 +8017,8 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "finalmente", "e": "finally"},
     {"t": "l'indirizzo", "e": "address"},
     {"t": "l'informazione", "e": "information"},
-    {"t": "là", "e": "there (over there: là) — not the article la"},
-    {"t": "lì", "e": "there (in that place: lì) — not the pronoun li"},
+    {"t": "là", "e": "there (over there, là; lì is the exact-spot there)"},
+    {"t": "lì", "e": "there (in that exact spot, lì; là is the farther there)"},
     {"t": "la macchina", "e": "car"},
     {"t": "la metropolitana", "e": "subway / underground"},
     {"t": "prima", "e": "before"},
@@ -9966,7 +9966,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la parte", "e": "side"},
     {"t": "quante", "e": "how many (feminine)"},
     {"t": "quanti", "e": "how many"},
-    {"t": "se", "e": "if / whether (se) — not sé (oneself)"},
+    {"t": "se", "e": "if / whether (se; with the accent sé means oneself)"},
     {"t": "sogni d'oro", "e": "sweet dreams"},
     {"t": "la sterlina", "e": "pound"},
     {"t": "il tassista", "e": "taxi driver"}
@@ -10343,7 +10343,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la taglia", "e": "size"},
     {"t": "la tasca", "e": "pocket"}
   ]},
-  { id: "duo_it_u131", type: "vocab", title: "Vocab: Unit 131 \u00b7 neighborhoods \u2014 Neighborhood: Talk about local events", items: [
+  { id: "duo_it_u131", type: "vocab", title: "Vocab: Unit 131 \u00b7 neighborhoods \u2014 Talk about local volunteering", items: [
     {"t": "apprezzare", "e": "to appreciate"},
     {"t": "l'attività", "e": "activity"},
     {"t": "il centro storico", "e": "historic center / old town / historic district"},
@@ -10365,7 +10365,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il trasporto", "e": "transportation"},
     {"t": "volontario", "e": "volunteer"}
   ]},
-  { id: "duo_it_u132", type: "vocab", title: "Vocab: Unit 132 \u00b7 hobbies 2 \u2014 Hobbies: Describe your hobbies", items: [
+  { id: "duo_it_u132", type: "vocab", title: "Vocab: Unit 132 \u00b7 hobbies 2 \u2014 Describe your favorite hobbies", items: [
     {"t": "afferrare", "e": "to grab / grasp"},
     {"t": "all'estero", "e": "abroad"},
     {"t": "avvicinarsi", "e": "to approach / to get closer"},
@@ -10388,7 +10388,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "silenzioso", "e": "silent"},
     {"t": "il suggerimento", "e": "suggestion"}
   ]},
-  { id: "duo_it_u133", type: "vocab", title: "Vocab: Unit 133 \u00b7 professional life \u2014 Creativity: Express your ideas", items: [
+  { id: "duo_it_u133", type: "vocab", title: "Vocab: Unit 133 \u00b7 professional life \u2014 Discuss rewards and results", items: [
     {"t": "amichevole", "e": "friendly"},
     {"t": "approssimare", "e": "to approximate"},
     {"t": "l'architetto", "e": "architect"},
@@ -10410,7 +10410,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "rifiutare", "e": "to refuse / to reject"},
     {"t": "silenziosamente", "e": "silently"}
   ]},
-  { id: "duo_it_u134", type: "vocab", title: "Vocab: Unit 134 \u00b7 geography \u2014 Geography: Compare famous explorers", items: [
+  { id: "duo_it_u134", type: "vocab", title: "Vocab: Unit 134 \u00b7 geography \u2014 Discuss famous explorers", items: [
     {"t": "aggiuntivo", "e": "additional / extra / supplementary"},
     {"t": "l'alpi", "e": "Alps"},
     {"t": "attualmente", "e": "currently"},
@@ -10432,7 +10432,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il traduttore", "e": "translator"},
     {"t": "il verso", "e": "towards"}
   ]},
-  { id: "duo_it_u135", type: "vocab", title: "Vocab: Unit 135 \u00b7 storytelling \u2014 Series: Share your hopes for the future", items: [
+  { id: "duo_it_u135", type: "vocab", title: "Vocab: Unit 135 \u00b7 storytelling \u2014 Talk about cleaner energy", items: [
     {"t": "attaccare", "e": "to attack / to attach"},
     {"t": "brillante", "e": "brilliant"},
     {"t": "carburante", "e": "fuel / petrol / gasoline"},
@@ -10454,7 +10454,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "tranquillamente", "e": "calmly"},
     {"t": "il trasporto", "e": "transportation"}
   ]},
-  { id: "duo_it_u136", type: "vocab", title: "Vocab: Unit 136 \u00b7 everyday tech \u2014 Devices: Describe your favorite device", items: [
+  { id: "duo_it_u136", type: "vocab", title: "Vocab: Unit 136 \u00b7 everyday tech \u2014 Discuss nature and technology", items: [
     {"t": "affilato", "e": "sharp"},
     {"t": "l'app", "e": "app"},
     {"t": "l'atterraggio", "e": "landing"},
@@ -10470,7 +10470,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "meridionale", "e": "southern / south"},
     {"t": "il navigatore", "e": "navigator / navigation device / GPS"},
     {"t": "proprio", "e": "(his/her/its) own"},
-    {"t": "se", "e": "if / whether (se) — not sé (oneself)"},
+    {"t": "se", "e": "if / whether (se; with the accent sé means oneself)"},
     {"t": "lo smartphone", "e": "smartphone"},
     {"t": "smettere", "e": "to stop / to quit"},
     {"t": "sms", "e": "text message"},
@@ -10478,7 +10478,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il supervisore", "e": "supervisor"},
     {"t": "il vantaggio", "e": "advantage"}
   ]},
-  { id: "duo_it_u137", type: "vocab", title: "Vocab: Unit 137 \u00b7 school life \u2014 Classroom: Share study habits", items: [
+  { id: "duo_it_u137", type: "vocab", title: "Vocab: Unit 137 \u00b7 school life \u2014 Share study habits", items: [
     {"t": "accorgersi", "e": "to notice / to realize"},
     {"t": "l'assenza", "e": "absence"},
     {"t": "cambiare idea", "e": "change one's mind"},
@@ -10501,7 +10501,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "spesso", "e": "often"},
     {"t": "il tutore", "e": "tutor / guardian / mentor"}
   ]},
-  { id: "duo_it_u138", type: "vocab", title: "Vocab: Unit 138 \u00b7 seasonal changes \u2014 Seasons: Describe autumn scenery", items: [
+  { id: "duo_it_u138", type: "vocab", title: "Vocab: Unit 138 \u00b7 seasonal changes \u2014 Describe autumn and sunsets", items: [
     {"t": "accogliente", "e": "cozy / welcoming"},
     {"t": "all'aperto", "e": "outdoors"},
     {"t": "il cambiamento", "e": "change"},
@@ -10523,7 +10523,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "trasformare", "e": "to transform"},
     {"t": "l'umidità", "e": "humidity"}
   ]},
-  { id: "duo_it_u139", type: "vocab", title: "Vocab: Unit 139 \u00b7 future plans \u2014 Plans: Share your future plans", items: [
+  { id: "duo_it_u139", type: "vocab", title: "Vocab: Unit 139 \u00b7 future plans \u2014 Discuss goals and traditions", items: [
     {"t": "agitare", "e": "to shake / to stir"},
     {"t": "all'indietro", "e": "backwards"},
     {"t": "appena possibile", "e": "as soon as possible"},
@@ -10545,7 +10545,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "unirsi", "e": "to join"},
     {"t": "il weekend", "e": "weekend"}
   ]},
-  { id: "duo_it_u140", type: "vocab", title: "Vocab: Unit 140 \u00b7 free time 2 \u2014 Leisure: Edit your vacation photos", items: [
+  { id: "duo_it_u140", type: "vocab", title: "Vocab: Unit 140 \u00b7 free time 2 \u2014 Edit your vacation photos", items: [
     {"t": "abbassare", "e": "to lower"},
     {"t": "l'atmosfera", "e": "atmosphere"},
     {"t": "attenzione", "e": "attention"},
@@ -10568,7 +10568,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo svago", "e": "leisure / pastime / entertainment"},
     {"t": "l'umore", "e": "mood"}
   ]},
-  { id: "duo_it_u141", type: "vocab", title: "Vocab: Unit 141 \u00b7 babysitting \u2014 Kids: Describe kids\u2019 routines", items: [
+  { id: "duo_it_u141", type: "vocab", title: "Vocab: Unit 141 \u00b7 babysitting \u2014 Talk about bedtime routines", items: [
     {"t": "apparecchiare", "e": "to set the table"},
     {"t": "attentamente", "e": "carefully / attentively"},
     {"t": "badare", "e": "to look after / pay attention"},
@@ -10589,7 +10589,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la serata", "e": "evening"},
     {"t": "ubbidire", "e": "to obey"}
   ]},
-  { id: "duo_it_u142", type: "vocab", title: "Vocab: Unit 142 \u00b7 library \u2014 Library: Ask for help at the desk", items: [
+  { id: "duo_it_u142", type: "vocab", title: "Vocab: Unit 142 \u00b7 library \u2014 Ask for help finding a book", items: [
     {"t": "l'accademico", "e": "academic / scholarly / academician"},
     {"t": "il banco", "e": "desk"},
     {"t": "la bibliotecaria", "e": "librarian (feminine)"},
@@ -10611,7 +10611,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo sportello", "e": "counter / window"},
     {"t": "la tesi", "e": "thesis"}
   ]},
-  { id: "duo_it_u143", type: "vocab", title: "Vocab: Unit 143 \u00b7 sports 2 \u2014 Match: Prepare for the match", items: [
+  { id: "duo_it_u143", type: "vocab", title: "Vocab: Unit 143 \u00b7 sports 2 \u2014 Get ready for the tournament", items: [
     {"t": "abbandonare", "e": "to abandon"},
     {"t": "applaudire", "e": "to applaud"},
     {"t": "l'atleta", "e": "athlete"},
@@ -10633,7 +10633,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "superare", "e": "to overcome / to pass"},
     {"t": "il torneo", "e": "tournament"}
   ]},
-  { id: "duo_it_u144", type: "vocab", title: "Vocab: Unit 144 \u00b7 workplace communications \u2014 Office: React to sudden changes", items: [
+  { id: "duo_it_u144", type: "vocab", title: "Vocab: Unit 144 \u00b7 workplace communications \u2014 Discuss changes at the office", items: [
     {"t": "aspettarsi", "e": "to expect"},
     {"t": "l'atmosfera", "e": "atmosphere"},
     {"t": "carico", "e": "loaded / charged"},
@@ -10655,7 +10655,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "superiore", "e": "superior"},
     {"t": "il team", "e": "team"}
   ]},
-  { id: "duo_it_u145", type: "vocab", title: "Vocab: Unit 145 \u00b7 describing events \u2014 Events: Describe a recent event", items: [
+  { id: "duo_it_u145", type: "vocab", title: "Vocab: Unit 145 \u00b7 describing events \u2014 Describe a surprising event", items: [
     {"t": "a meno che", "e": "unless"},
     {"t": "l'avvenimento", "e": "event"},
     {"t": "complessivo", "e": "overall / total / aggregate"},
@@ -10677,7 +10677,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la valuta", "e": "currency"},
     {"t": "la zona pedonale", "e": "pedestrian zone / pedestrian area / pedestrian precinct"}
   ]},
-  { id: "duo_it_u146", type: "vocab", title: "Vocab: Unit 146 \u00b7 scientific discoveries \u2014 Inventions: Talk about famous inventions", items: [
+  { id: "duo_it_u146", type: "vocab", title: "Vocab: Unit 146 \u00b7 scientific discoveries \u2014 Discuss famous inventions", items: [
     {"t": "apertamente", "e": "openly"},
     {"t": "la coltura", "e": "crop / cultivation"},
     {"t": "comprendere", "e": "to understand / to include"},
@@ -10700,7 +10700,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il termosifone", "e": "radiator / heater / convector heater"},
     {"t": "tuttavia", "e": "however"}
   ]},
-  { id: "duo_it_u147", type: "vocab", title: "Vocab: Unit 147 \u00b7 moving \u2014 Habits: Describe daily habits", items: [
+  { id: "duo_it_u147", type: "vocab", title: "Vocab: Unit 147 \u00b7 moving \u2014 Discuss a project presentation", items: [
     {"t": "l'abitudine", "e": "habit"},
     {"t": "bancario", "e": "banking"},
     {"t": "il caso", "e": "case"},
@@ -10722,7 +10722,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sviluppare", "e": "to develop"},
     {"t": "il talento", "e": "talent"}
   ]},
-  { id: "duo_it_u148", type: "vocab", title: "Vocab: Unit 148 \u00b7 film \u2014 Movies: Choose a movie to watch", items: [
+  { id: "duo_it_u148", type: "vocab", title: "Vocab: Unit 148 \u00b7 film \u2014 Pick a film at the festival", items: [
     {"t": "l'attore principale", "e": "lead actor / main actor / principal actor"},
     {"t": "da qualche parte", "e": "somewhere"},
     {"t": "decimo", "e": "tenth"},
@@ -10744,7 +10744,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "valutare", "e": "to evaluate / to assess"},
     {"t": "la velocità", "e": "speed"}
   ]},
-  { id: "duo_it_u149", type: "vocab", title: "Vocab: Unit 149 \u00b7 personal experiences \u2014 Stories: React to a talent show ad", items: [
+  { id: "duo_it_u149", type: "vocab", title: "Vocab: Unit 149 \u00b7 personal experiences \u2014 Talk about a talent show", items: [
     {"t": "l'annuncio", "e": "announcement / ad"},
     {"t": "l'assistente di volo", "e": "flight attendant / cabin crew / air hostess"},
     {"t": "la bella notizia", "e": "good news / great news / nice news"},
@@ -10766,7 +10766,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il presentatore", "e": "presenter / anchor / compere"},
     {"t": "ricoverare", "e": "to hospitalize / to accommodate / to take in"}
   ]},
-  { id: "duo_it_u150", type: "vocab", title: "Vocab: Unit 150 \u00b7 travel experiences \u2014 Travel: Describe local culture", items: [
+  { id: "duo_it_u150", type: "vocab", title: "Vocab: Unit 150 \u00b7 travel experiences \u2014 Describe local culture", items: [
     {"t": "a causa di", "e": "because of"},
     {"t": "l'abbondanza", "e": "plenty / abundance"},
     {"t": "adattare", "e": "to adapt"},
@@ -10788,7 +10788,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la valentina", "e": "Valentina"},
     {"t": "il viaggiatore", "e": "traveler"}
   ]},
-  { id: "duo_it_u151", type: "vocab", title: "Vocab: Unit 151 \u00b7 job interview \u2014 Work Life: Describe your teamwork skills", items: [
+  { id: "duo_it_u151", type: "vocab", title: "Vocab: Unit 151 \u00b7 job interview \u2014 Describe your teamwork skills", items: [
     {"t": "a malapena", "e": "barely"},
     {"t": "affidabile", "e": "reliable / dependable"},
     {"t": "l'alleanza", "e": "alliance"},
@@ -10810,7 +10810,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "presentarsi", "e": "to introduce oneself / to show up"},
     {"t": "la pronuncia", "e": "pronunciation"}
   ]},
-  { id: "duo_it_u152", type: "vocab", title: "Vocab: Unit 152 \u00b7 gatherings \u2014 Family: Describe funny family moments", items: [
+  { id: "duo_it_u152", type: "vocab", title: "Vocab: Unit 152 \u00b7 gatherings \u2014 Describe funny family moments", items: [
     {"t": "arrostire", "e": "to roast"},
     {"t": "buffo", "e": "funny"},
     {"t": "colpire", "e": "to hit"},
@@ -10830,7 +10830,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "spogliarsi", "e": "to undress"},
     {"t": "l'usanza", "e": "custom / tradition"}
   ]},
-  { id: "duo_it_u153", type: "vocab", title: "Vocab: Unit 153 \u00b7 living spaces \u2014 Invention: Describe your favorite invention", items: [
+  { id: "duo_it_u153", type: "vocab", title: "Vocab: Unit 153 \u00b7 living spaces \u2014 Decorate the living room", items: [
     {"t": "arredare", "e": "to furnish / decorate"},
     {"t": "bussare", "e": "to knock"},
     {"t": "distinto", "e": "distinguished / distinct"},
@@ -10850,7 +10850,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il testo", "e": "text"},
     {"t": "la vittima", "e": "victim"}
   ]},
-  { id: "duo_it_u154", type: "vocab", title: "Vocab: Unit 154 \u00b7 gossip and rumors \u2014 Gossip: Describe rumors you\u2019ve heard", items: [
+  { id: "duo_it_u154", type: "vocab", title: "Vocab: Unit 154 \u00b7 gossip and rumors \u2014 Monitor and finish a project", items: [
     {"t": "il bar", "e": "bar"},
     {"t": "il bastone", "e": "stick / cane"},
     {"t": "la chiacchiera", "e": "talk / chatter"},
@@ -10871,7 +10871,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sul serio", "e": "seriously"},
     {"t": "il tour", "e": "tour"}
   ]},
-  { id: "duo_it_u155", type: "vocab", title: "Vocab: Unit 155 \u00b7 personal background \u2014 Learning: Describe your learning goals", items: [
+  { id: "duo_it_u155", type: "vocab", title: "Vocab: Unit 155 \u00b7 personal background \u2014 Talk about your interests", items: [
     {"t": "ad esempio", "e": "for example"},
     {"t": "il campione", "e": "champion (masculine)"},
     {"t": "la campionessa", "e": "champion / winner / titleholder (feminine)"},
@@ -10893,7 +10893,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il trasferimento", "e": "transfer / assignments / relocation"},
     {"t": "vedersi", "e": "to see each other"}
   ]},
-  { id: "duo_it_u156", type: "vocab", title: "Vocab: Unit 156 \u00b7 music \u2014 Music: Describe your favorite music video", items: [
+  { id: "duo_it_u156", type: "vocab", title: "Vocab: Unit 156 \u00b7 music \u2014 Talk about listening to music", items: [
     {"t": "l'album", "e": "album / illustrated book"},
     {"t": "l'alloggio", "e": "accommodation / lodging"},
     {"t": "allora", "e": "so"},
@@ -10915,7 +10915,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il testo", "e": "text"},
     {"t": "il video musicale", "e": "music video"}
   ]},
-  { id: "duo_it_u157", type: "vocab", title: "Vocab: Unit 157 \u00b7 chores 2 \u2014 Home Life: Describe your daily routine", items: [
+  { id: "duo_it_u157", type: "vocab", title: "Vocab: Unit 157 \u00b7 chores 2 \u2014 Buy bread and do chores", items: [
     {"t": "l'aspirapolvere", "e": "vacuum cleaner"},
     {"t": "avvertire", "e": "to warn"},
     {"t": "bruciare", "e": "to burn"},
@@ -10935,7 +10935,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "semplice", "e": "simple"},
     {"t": "straordinario", "e": "extraordinary / amazing"}
   ]},
-  { id: "duo_it_u158", type: "vocab", title: "Vocab: Unit 158 \u00b7 daily routines \u2014 Routine: Describe your daily routine", items: [
+  { id: "duo_it_u158", type: "vocab", title: "Vocab: Unit 158 \u00b7 daily routines \u2014 Describe your daily routine", items: [
     {"t": "l'agenda", "e": "agenda / planner / appointment book"},
     {"t": "l'allenatore", "e": "coach (masculine)"},
     {"t": "allenatrice", "e": "trainer / coach (feminine)"},
@@ -10958,7 +10958,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "vario", "e": "various / varied"},
     {"t": "visto che", "e": "since"}
   ]},
-  { id: "duo_it_u159", type: "vocab", title: "Vocab: Unit 159 \u00b7 extreme weather events \u2014 Weather: React to changes in weather", items: [
+  { id: "duo_it_u159", type: "vocab", title: "Vocab: Unit 159 \u00b7 extreme weather events \u2014 React to a storm at a palace", items: [
     {"t": "allerta", "e": "alert / warning / alertness"},
     {"t": "l'altezza", "e": "height"},
     {"t": "l'amministrazione", "e": "administration"},
@@ -10981,7 +10981,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il tuono", "e": "thunder"},
     {"t": "l'uragano", "e": "hurricane / cyclone / typhoon"}
   ]},
-  { id: "duo_it_u160", type: "vocab", title: "Vocab: Unit 160 \u00b7 personal goals \u2014 Goals: Share your personal goals", items: [
+  { id: "duo_it_u160", type: "vocab", title: "Vocab: Unit 160 \u00b7 personal goals \u2014 Share your personal goals", items: [
     {"t": "anzi", "e": "on the contrary / nor / quite the opposite"},
     {"t": "attuale", "e": "current / present"},
     {"t": "combattere", "e": "to fight"},
@@ -11003,7 +11003,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il tentativo", "e": "attempt / try"},
     {"t": "ufficiale", "e": "official / officer"}
   ]},
-  { id: "duo_it_u161", type: "vocab", title: "Vocab: Unit 161 \u00b7 aspirations \u2014 Dreams: Describe your dream job", items: [
+  { id: "duo_it_u161", type: "vocab", title: "Vocab: Unit 161 \u00b7 aspirations \u2014 Prepare for a job interview", items: [
     {"t": "adoperare", "e": "to use"},
     {"t": "attirare", "e": "to attract"},
     {"t": "la campana", "e": "bell"},
@@ -11025,7 +11025,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il tribunale", "e": "court / courthouse"},
     {"t": "ufficiale", "e": "official / officer"}
   ]},
-  { id: "duo_it_u162", type: "vocab", title: "Vocab: Unit 162 \u00b7 eating habits \u2014 Diet: Talk about healthy eating", items: [
+  { id: "duo_it_u162", type: "vocab", title: "Vocab: Unit 162 \u00b7 eating habits \u2014 Talk about healthy eating", items: [
     {"t": "abituarsi", "e": "to get used to"},
     {"t": "l'alimentazione", "e": "diet / nutrition"},
     {"t": "congelare", "e": "to freeze"},
@@ -11047,7 +11047,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il sogno", "e": "dream"},
     {"t": "il supplemento", "e": "supplement"}
   ]},
-  { id: "duo_it_u163", type: "vocab", title: "Vocab: Unit 163 \u00b7 destinations \u2014 Culture: Share stories about nature", items: [
+  { id: "duo_it_u163", type: "vocab", title: "Vocab: Unit 163 \u00b7 destinations \u2014 Discuss nature and gardening", items: [
     {"t": "all'estero", "e": "abroad"},
     {"t": "alternativo", "e": "alternative (masculine)"},
     {"t": "ambientale", "e": "environmental"},
@@ -11069,7 +11069,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il sostenitore", "e": "supporter"},
     {"t": "il tempo", "e": "time"}
   ]},
-  { id: "duo_it_u164", type: "vocab", title: "Vocab: Unit 164 \u00b7 outdoor activities \u2014 Mountain: Plan a mountain hike", items: [
+  { id: "duo_it_u164", type: "vocab", title: "Vocab: Unit 164 \u00b7 outdoor activities \u2014 Plan a mountain hike", items: [
     {"t": "la camminata", "e": "walk / stroll"},
     {"t": "campeggiare", "e": "to camp"},
     {"t": "la cima", "e": "top"},
@@ -11091,7 +11091,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "scivoloso", "e": "slippery / slick"},
     {"t": "lo snack", "e": "snack / snack food"}
   ]},
-  { id: "duo_it_u165", type: "vocab", title: "Vocab: Unit 165 \u00b7 self-expression \u2014 Expression: Share your feelings", items: [
+  { id: "duo_it_u165", type: "vocab", title: "Vocab: Unit 165 \u00b7 self-expression \u2014 Describe yourself in writing", items: [
     {"t": "a proprio agio", "e": "at ease"},
     {"t": "l'ansia", "e": "anxiety"},
     {"t": "l'autonomia", "e": "autonomy / range / self-government"},
@@ -11112,7 +11112,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "urlare", "e": "to shout / to scream"},
     {"t": "zitto", "e": "quiet / hush"}
   ]},
-  { id: "duo_it_u166", type: "vocab", title: "Vocab: Unit 166 \u00b7 directions \u2014 Directions: Ask for directions", items: [
+  { id: "duo_it_u166", type: "vocab", title: "Vocab: Unit 166 \u00b7 directions \u2014 Ask for directions", items: [
     {"t": "l'alba", "e": "dawn"},
     {"t": "l'angolo", "e": "corner"},
     {"t": "l'assistente", "e": "assistant"},
@@ -11134,7 +11134,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "svoltare", "e": "to turn"},
     {"t": "tredicesimo", "e": "thirteenth"}
   ]},
-  { id: "duo_it_u167", type: "vocab", title: "Vocab: Unit 167 \u00b7 medical care \u2014 Medicine: Explain medical terms", items: [
+  { id: "duo_it_u167", type: "vocab", title: "Vocab: Unit 167 \u00b7 medical care \u2014 Talk about medical treatment", items: [
     {"t": "altrove", "e": "elsewhere / somewhere else / away"},
     {"t": "l'assistenza", "e": "assistance / care"},
     {"t": "avvolgere", "e": "to wrap"},
@@ -11158,7 +11158,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il tubo", "e": "pipe / tube"},
     {"t": "uguale", "e": "equal / same"}
   ]},
-  { id: "duo_it_u168", type: "vocab", title: "Vocab: Unit 168 \u00b7 cost of living \u2014 Housing: Describe your housing costs", items: [
+  { id: "duo_it_u168", type: "vocab", title: "Vocab: Unit 168 \u00b7 cost of living \u2014 Discuss student living costs", items: [
     {"t": "l'alternativa", "e": "alternative (feminine)"},
     {"t": "gli altri", "e": "other / different"},
     {"t": "il budget", "e": "budget"},
@@ -11175,13 +11175,13 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "insufficiente", "e": "insufficient / inadequate"},
     {"t": "mensile", "e": "monthly"},
     {"t": "moderato", "e": "moderate"},
-    {"t": "né", "e": "nor / neither (né... né...) — not the pronoun ne"},
+    {"t": "né", "e": "nor / neither (né; without the accent it is the pronoun ne)"},
     {"t": "l'offerta", "e": "offer"},
     {"t": "pensionato", "e": "retired person / pensioner"},
     {"t": "rispetto a", "e": "compared to"},
     {"t": "universitario", "e": "university (adjective)"}
   ]},
-  { id: "duo_it_u169", type: "vocab", title: "Vocab: Unit 169 \u00b7 debate \u2014 Debate: State your opinion", items: [
+  { id: "duo_it_u169", type: "vocab", title: "Vocab: Unit 169 \u00b7 debate \u2014 Give your opinion in a debate", items: [
     {"t": "l'affermazione", "e": "statement / assertion"},
     {"t": "andare in pensione", "e": "to retire"},
     {"t": "appassionatamente", "e": "passionately"},
@@ -11204,7 +11204,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo scienziato", "e": "scientist (masculine)"},
     {"t": "sottolineare", "e": "to underline / to emphasize"}
   ]},
-  { id: "duo_it_u170", type: "vocab", title: "Vocab: Unit 170 \u00b7 family structure \u2014 Home: Describe your home", items: [
+  { id: "duo_it_u170", type: "vocab", title: "Vocab: Unit 170 \u00b7 family structure \u2014 Build furniture and plan ahead", items: [
     {"t": "accettabile", "e": "acceptable"},
     {"t": "affetto", "e": "affection"},
     {"t": "affrontare", "e": "to face / to confront"},
@@ -11227,7 +11227,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo spazio", "e": "space"},
     {"t": "sprecare", "e": "to waste"}
   ]},
-  { id: "duo_it_u171", type: "vocab", title: "Vocab: Unit 171 \u00b7 public transit \u2014 Transit: Ask about transit times", items: [
+  { id: "duo_it_u171", type: "vocab", title: "Vocab: Unit 171 \u00b7 public transit \u2014 Discuss public transit", items: [
     {"t": "l'area", "e": "area"},
     {"t": "l'attimo", "e": "moment"},
     {"t": "autista", "e": "driver / chauffeur"},
@@ -11248,7 +11248,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il tram", "e": "tram / streetcar / trolley"},
     {"t": "il trasporto pubblico", "e": "public transport / public transportation / public transit"}
   ]},
-  { id: "duo_it_u172", type: "vocab", title: "Vocab: Unit 172 \u00b7 buying goods \u2014 Shopping: Find items on the shelves", items: [
+  { id: "duo_it_u172", type: "vocab", title: "Vocab: Unit 172 \u00b7 buying goods \u2014 Find items at a bookstore", items: [
     {"t": "ammettere", "e": "to admit"},
     {"t": "l'articolo", "e": "article"},
     {"t": "il carrello", "e": "cart"},
@@ -11270,7 +11270,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "tessuto", "e": "fabric / tissue"},
     {"t": "il venditore", "e": "vendor"}
   ]},
-  { id: "duo_it_u173", type: "vocab", title: "Vocab: Unit 173 \u00b7 restaurant experiences \u2014 Menu: Order dishes from the menu", items: [
+  { id: "duo_it_u173", type: "vocab", title: "Vocab: Unit 173 \u00b7 restaurant experiences \u2014 Talk about dishes and prices", items: [
     {"t": "affatto", "e": "at all"},
     {"t": "all'inizio", "e": "at the beginning"},
     {"t": "assurdo", "e": "absurd"},
@@ -11292,7 +11292,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "squisito", "e": "delicious / exquisite"},
     {"t": "valere", "e": "to be worth"}
   ]},
-  { id: "duo_it_u174", type: "vocab", title: "Vocab: Unit 174 \u00b7 civic life \u2014 Projects: Describe your project", items: [
+  { id: "duo_it_u174", type: "vocab", title: "Vocab: Unit 174 \u00b7 civic life \u2014 Discuss community issues", items: [
     {"t": "all'interno di", "e": "inside / within / inside of"},
     {"t": "l'argomento", "e": "topic"},
     {"t": "ciascuno", "e": "each"},
@@ -11317,7 +11317,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo stato", "e": "state"},
     {"t": "tentare", "e": "to attempt"}
   ]},
-  { id: "duo_it_u175", type: "vocab", title: "Vocab: Unit 175 \u00b7 public policy \u2014 Rules: Talk about recent reforms", items: [
+  { id: "duo_it_u175", type: "vocab", title: "Vocab: Unit 175 \u00b7 public policy \u2014 Talk about recent reforms", items: [
     {"t": "al fine di", "e": "in order to"},
     {"t": "il bus", "e": "bus / coach / shuttle"},
     {"t": "competente", "e": "competent / capable / skilled"},
@@ -11337,7 +11337,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la tassa", "e": "tax"},
     {"t": "l'uguaglianza", "e": "equality"}
   ]},
-  { id: "duo_it_u176", type: "vocab", title: "Vocab: Unit 176 \u00b7 cultural practices \u2014 Festival: Describe festival dances", items: [
+  { id: "duo_it_u176", type: "vocab", title: "Vocab: Unit 176 \u00b7 cultural practices \u2014 Describe dances and costumes", items: [
     {"t": "attorno", "e": "around"},
     {"t": "la bandiera", "e": "flag"},
     {"t": "la bozza", "e": "draft / sketch / outline"},
@@ -11358,7 +11358,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "l'universo", "e": "universe"},
     {"t": "il villaggio", "e": "village"}
   ]},
-  { id: "duo_it_u177", type: "vocab", title: "Vocab: Unit 177 \u00b7 games \u2014 Games: Talk about community games", items: [
+  { id: "duo_it_u177", type: "vocab", title: "Vocab: Unit 177 \u00b7 games \u2014 Plan a community game night", items: [
     {"t": "ampio", "e": "wide / spacious"},
     {"t": "il campionato", "e": "championship"},
     {"t": "competere", "e": "to compete"},
@@ -11380,7 +11380,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il trofeo", "e": "trophy / prize / award"},
     {"t": "urgentemente", "e": "urgently"}
   ]},
-  { id: "duo_it_u178", type: "vocab", title: "Vocab: Unit 178 \u00b7 public occasions \u2014 Festivity: Lead a group activity", items: [
+  { id: "duo_it_u178", type: "vocab", title: "Vocab: Unit 178 \u00b7 public occasions \u2014 Plan an event with volunteers", items: [
     {"t": "la base", "e": "base"},
     {"t": "la celebrazione", "e": "celebration"},
     {"t": "coinvolgere", "e": "to involve"},
@@ -11402,7 +11402,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "splendido", "e": "splendid / wonderful / beautiful"},
     {"t": "il veicolo", "e": "vehicle"}
   ]},
-  { id: "duo_it_u179", type: "vocab", title: "Vocab: Unit 179 \u00b7 commuting \u2014 Nature: Describe a valley", items: [
+  { id: "duo_it_u179", type: "vocab", title: "Vocab: Unit 179 \u00b7 commuting \u2014 Protect nature in the valley", items: [
     {"t": "accidentalmente", "e": "accidentally"},
     {"t": "appropriato", "e": "appropriate"},
     {"t": "attesa", "e": "wait / waiting"},
@@ -11423,7 +11423,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la valle", "e": "valley"},
     {"t": "la vendita", "e": "sale"}
   ]},
-  { id: "duo_it_u180", type: "vocab", title: "Vocab: Unit 180 \u00b7 economic systems \u2014 Office: Describe office equipment", items: [
+  { id: "duo_it_u180", type: "vocab", title: "Vocab: Unit 180 \u00b7 economic systems \u2014 Discuss office work and tools", items: [
     {"t": "la bellezza", "e": "beauty"},
     {"t": "il credito", "e": "credit"},
     {"t": "il datore di lavoro", "e": "employer / boss / hirer"},
@@ -11443,7 +11443,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "temporaneo", "e": "temporary"},
     {"t": "la teoria", "e": "theory"}
   ]},
-  { id: "duo_it_u181", type: "vocab", title: "Vocab: Unit 181 \u00b7 roommates and co-living \u2014 Housemates: Suggest what to do together", items: [
+  { id: "duo_it_u181", type: "vocab", title: "Vocab: Unit 181 \u00b7 roommates and co-living \u2014 Talk about objects you found", items: [
     {"t": "a vicenda", "e": "each other"},
     {"t": "adattarsi", "e": "to adapt"},
     {"t": "l'ambiente", "e": "environment"},
@@ -11464,7 +11464,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "l'umorismo", "e": "humor"},
     {"t": "il volume", "e": "volume / size / amount"}
   ]},
-  { id: "duo_it_u182", type: "vocab", title: "Vocab: Unit 182 \u00b7 religion \u2014 Tradition: Share family traditions", items: [
+  { id: "duo_it_u182", type: "vocab", title: "Vocab: Unit 182 \u00b7 religion \u2014 Discuss faith and inclusion", items: [
     {"t": "l'abbigliamento", "e": "clothing"},
     {"t": "ammissibile", "e": "admissible / allowable / permissible"},
     {"t": "aperto", "e": "open"},
@@ -11488,7 +11488,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "vivo", "e": "I live (io form)"},
     {"t": "la volontà", "e": "will"}
   ]},
-  { id: "duo_it_u183", type: "vocab", title: "Vocab: Unit 183 \u00b7 social media \u2014 Online Life: React to online greetings", items: [
+  { id: "duo_it_u183", type: "vocab", title: "Vocab: Unit 183 \u00b7 social media \u2014 Share greetings and opinions", items: [
     {"t": "apparentemente", "e": "apparently"},
     {"t": "la capienza", "e": "capacity / seating capacity / volume"},
     {"t": "davanti", "e": "in front"},
@@ -11509,7 +11509,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "l'utente", "e": "user"},
     {"t": "la vista", "e": "view"}
   ]},
-  { id: "duo_it_u184", type: "vocab", title: "Vocab: Unit 184 \u00b7 customer service \u2014 Service: Describe product issues", items: [
+  { id: "duo_it_u184", type: "vocab", title: "Vocab: Unit 184 \u00b7 customer service \u2014 Complain about a bad order", items: [
     {"t": "abbonarsi", "e": "to subscribe"},
     {"t": "aumentare", "e": "to increase"},
     {"t": "bug", "e": "bug / glitch / defect"},
@@ -11530,7 +11530,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo strumento", "e": "instrument"},
     {"t": "il tasto", "e": "key / button"}
   ]},
-  { id: "duo_it_u185", type: "vocab", title: "Vocab: Unit 185 \u00b7 measurements \u2014 Size: Describe big and small things", items: [
+  { id: "duo_it_u185", type: "vocab", title: "Vocab: Unit 185 \u00b7 measurements \u2014 Describe your living room", items: [
     {"t": "abitante", "e": "inhabitant / resident / dweller"},
     {"t": "ammirare", "e": "to admire"},
     {"t": "bastare", "e": "to be enough / to suffice"},
@@ -11554,7 +11554,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il tavolone", "e": "large table"},
     {"t": "tazzona", "e": "large cup"}
   ]},
-  { id: "duo_it_u186", type: "vocab", title: "Vocab: Unit 186 \u00b7 friendships \u2014 Nicknames: Describe cute nicknames", items: [
+  { id: "duo_it_u186", type: "vocab", title: "Vocab: Unit 186 \u00b7 friendships \u2014 Use affectionate Italian words", items: [
     {"t": "l'aspetto", "e": "aspect"},
     {"t": "l'azione", "e": "action"},
     {"t": "il beneficio", "e": "benefit"},
@@ -11577,7 +11577,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "tradurre", "e": "to translate"},
     {"t": "zainuccio", "e": "little backpack"}
   ]},
-  { id: "duo_it_u187", type: "vocab", title: "Vocab: Unit 187 \u00b7 pharmacy \u2014 Pharmacy: Describe products you see", items: [
+  { id: "duo_it_u187", type: "vocab", title: "Vocab: Unit 187 \u00b7 pharmacy \u2014 Talk about a pharmacy visit", items: [
     {"t": "l'accademia", "e": "academy"},
     {"t": "l'allergia", "e": "allergy"},
     {"t": "antibiotico", "e": "antibiotic"},
@@ -11599,7 +11599,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la vista", "e": "view"},
     {"t": "la vitamina", "e": "vitamin"}
   ]},
-  { id: "duo_it_u188", type: "vocab", title: "Vocab: Unit 188 \u00b7 well-being \u2014 Wellness: Share your wellness routine", items: [
+  { id: "duo_it_u188", type: "vocab", title: "Vocab: Unit 188 \u00b7 well-being \u2014 Discuss wellness and safety", items: [
     {"t": "approvare", "e": "to approve"},
     {"t": "l'articolo", "e": "article"},
     {"t": "il benessere", "e": "well-being"},
@@ -11621,7 +11621,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il sonno", "e": "sleep"},
     {"t": "il tema", "e": "topic"}
   ]},
-  { id: "duo_it_u189", type: "vocab", title: "Vocab: Unit 189 \u00b7 parenting \u2014 Parenting: Share parenting worries", items: [
+  { id: "duo_it_u189", type: "vocab", title: "Vocab: Unit 189 \u00b7 parenting \u2014 Share your parenting worries", items: [
     {"t": "l'adolescente", "e": "teenager"},
     {"t": "l'ansia", "e": "anxiety"},
     {"t": "calmarsi", "e": "to calm down"},
@@ -11643,7 +11643,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "stabilire", "e": "to establish / to set"},
     {"t": "temere", "e": "to fear"}
   ]},
-  { id: "duo_it_u190", type: "vocab", title: "Vocab: Unit 190 \u00b7 disability \u2014 Access: Describe who can enter", items: [
+  { id: "duo_it_u190", type: "vocab", title: "Vocab: Unit 190 \u00b7 disability \u2014 Describe wheelchair access", items: [
     {"t": "accessibile", "e": "accessible / approachable / open"},
     {"t": "acquisire", "e": "to acquire"},
     {"t": "l'alunno", "e": "student"},
@@ -11666,7 +11666,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la sedia a rotelle", "e": "wheelchair / rolling chair / wheeled chair"},
     {"t": "sordo", "e": "deaf / hard of hearing / deaf person"}
   ]},
-  { id: "duo_it_u191", type: "vocab", title: "Vocab: Unit 191 \u00b7 extending accepting and declining invitations \u2014 Invites: Invite someone to an event", items: [
+  { id: "duo_it_u191", type: "vocab", title: "Vocab: Unit 191 \u00b7 extending accepting and declining invitations \u2014 Talk about global issues", items: [
     {"t": "l'accesso", "e": "access"},
     {"t": "la condizione", "e": "condition / clause / stipulation"},
     {"t": "dare un'occhiata", "e": "to take a look / to have a look / to glance"},
@@ -11687,7 +11687,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "trascorrere", "e": "to spend (time)"},
     {"t": "volentieri", "e": "willingly"}
   ]},
-  { id: "duo_it_u192", type: "vocab", title: "Vocab: Unit 192 \u00b7 healthy habits \u2014 Wellness: Ask about first aid kits", items: [
+  { id: "duo_it_u192", type: "vocab", title: "Vocab: Unit 192 \u00b7 healthy habits \u2014 Talk about a building project", items: [
     {"t": "aggiunta", "e": "addition"},
     {"t": "l'alimento", "e": "food"},
     {"t": "l'attività fisica", "e": "physical activity / exercise / physical exercise"},
@@ -11710,7 +11710,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "stressante", "e": "stressful"},
     {"t": "il tofu", "e": "tofu"}
   ]},
-  { id: "duo_it_u193", type: "vocab", title: "Vocab: Unit 193 \u00b7 cooking \u2014 Cooking: Describe food flavors", items: [
+  { id: "duo_it_u193", type: "vocab", title: "Vocab: Unit 193 \u00b7 cooking \u2014 Describe flavors as you cook", items: [
     {"t": "l'albicocca", "e": "apricot"},
     {"t": "l'associazione", "e": "association"},
     {"t": "il coriandolo", "e": "coriander / cilantro"},
@@ -11732,7 +11732,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il sugo", "e": "sauce"},
     {"t": "umido", "e": "humid"}
   ]},
-  { id: "duo_it_u194", type: "vocab", title: "Vocab: Unit 194 \u00b7 gift giving \u2014 Gifts: Describe a special gift", items: [
+  { id: "duo_it_u194", type: "vocab", title: "Vocab: Unit 194 \u00b7 gift giving \u2014 Celebrate at a birthday party", items: [
     {"t": "andare a trovare", "e": "to visit / to go see"},
     {"t": "biglietto d'auguri", "e": "greeting card / card / birthday card"},
     {"t": "commosso", "e": "touched"},
@@ -11754,7 +11754,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "scherzare", "e": "to joke"},
     {"t": "la simpatia", "e": "fondness / friendliness / liking"}
   ]},
-  { id: "duo_it_u195", type: "vocab", title: "Vocab: Unit 195 \u00b7 haircut \u2014 Barbershop: Compare barbershop prices", items: [
+  { id: "duo_it_u195", type: "vocab", title: "Vocab: Unit 195 \u00b7 haircut \u2014 Find a barber in town", items: [
     {"t": "il barbiere", "e": "barber"},
     {"t": "la contabilità", "e": "accounting / bookkeeping"},
     {"t": "di persona", "e": "in person"},
@@ -11777,7 +11777,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sveglio", "e": "awake / sharp (masculine)"},
     {"t": "il taglio", "e": "cut / haircut (masculine)"}
   ]},
-  { id: "duo_it_u196", type: "vocab", title: "Vocab: Unit 196 \u00b7 traffic \u2014 Traffic: Ask about traffic rules", items: [
+  { id: "duo_it_u196", type: "vocab", title: "Vocab: Unit 196 \u00b7 traffic \u2014 Ask about traffic rules", items: [
     {"t": "adeguato", "e": "adequate"},
     {"t": "convincere", "e": "to convince"},
     {"t": "decorare", "e": "to decorate"},
@@ -11800,7 +11800,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la vigilessa", "e": "policewoman / female police officer / traffic warden"},
     {"t": "visibile", "e": "visible"}
   ]},
-  { id: "duo_it_u197", type: "vocab", title: "Vocab: Unit 197 \u00b7 climate \u2014 Nature: Describe the weather", items: [
+  { id: "duo_it_u197", type: "vocab", title: "Vocab: Unit 197 \u00b7 climate \u2014 Talk about the environment", items: [
     {"t": "assomigliare", "e": "to resemble / to look like"},
     {"t": "attento", "e": "attentive"},
     {"t": "il bordo", "e": "edge / border"},
@@ -11822,7 +11822,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "trasferire", "e": "to transfer"},
     {"t": "trasportare", "e": "to transport"}
   ]},
-  { id: "duo_it_u198", type: "vocab", title: "Vocab: Unit 198 \u00b7 fashion \u2014 Fashion: Share your fashion preferences", items: [
+  { id: "duo_it_u198", type: "vocab", title: "Vocab: Unit 198 \u00b7 fashion \u2014 Share your fashion preferences", items: [
     {"t": "a righe", "e": "striped"},
     {"t": "abbinare", "e": "to match / to pair"},
     {"t": "l'abilità", "e": "skill / ability"},
@@ -11843,7 +11843,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "velluto", "e": "velvet / plush"},
     {"t": "versare", "e": "to pour"}
   ]},
-  { id: "duo_it_u199", type: "vocab", title: "Vocab: Unit 199 \u00b7 types of cuisine \u2014 Dishes: Describe your favorite dish", items: [
+  { id: "duo_it_u199", type: "vocab", title: "Vocab: Unit 199 \u00b7 types of cuisine \u2014 Talk about food and dining", items: [
     {"t": "abbondante", "e": "abundant / plentiful"},
     {"t": "accompagnare", "e": "to accompany"},
     {"t": "accompagnato", "e": "accompanied"},
@@ -11864,7 +11864,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "tostato", "e": "toasted"},
     {"t": "tradizionale", "e": "traditional"}
   ]},
-  { id: "duo_it_u200", type: "vocab", title: "Vocab: Unit 200 \u00b7 exercise routines \u2014 Exercise: Describe your workout routine", items: [
+  { id: "duo_it_u200", type: "vocab", title: "Vocab: Unit 200 \u00b7 exercise routines \u2014 Describe your gym routine", items: [
     {"t": "abituato", "e": "used to / accustomed"},
     {"t": "l'aerobica", "e": "aerobics (feminine)"},
     {"t": "l'allenamento", "e": "training / workout"},
@@ -11886,7 +11886,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sottovalutare", "e": "to underestimate"},
     {"t": "lo yoga", "e": "yoga"}
   ]},
-  { id: "duo_it_u201", type: "vocab", title: "Vocab: Unit 201 \u00b7 weddings \u2014 Events: Describe a special event", items: [
+  { id: "duo_it_u201", type: "vocab", title: "Vocab: Unit 201 \u00b7 weddings \u2014 Describe a wedding day", items: [
     {"t": "all'aperto", "e": "outdoors"},
     {"t": "il campo", "e": "field"},
     {"t": "confrontare", "e": "to compare"},
@@ -11908,7 +11908,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il temporale", "e": "storm"},
     {"t": "il trucco", "e": "makeup / trick"}
   ]},
-  { id: "duo_it_u202", type: "vocab", title: "Vocab: Unit 202 \u00b7 historical events \u2014 History: Describe historical events", items: [
+  { id: "duo_it_u202", type: "vocab", title: "Vocab: Unit 202 \u00b7 historical events \u2014 Discuss museums and history", items: [
     {"t": "andare via", "e": "to leave / to go away"},
     {"t": "l'attrattiva", "e": "attraction / appeal / allure"},
     {"t": "la battaglia", "e": "battle"},
@@ -11929,7 +11929,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il soldato", "e": "soldier"},
     {"t": "la soluzione", "e": "solution / answer / resolution"}
   ]},
-  { id: "duo_it_u203", type: "vocab", title: "Vocab: Unit 203 \u00b7 time periods \u2014 Visit: Describe your museum visit", items: [
+  { id: "duo_it_u203", type: "vocab", title: "Vocab: Unit 203 \u00b7 time periods \u2014 Describe a museum visit", items: [
     {"t": "assente", "e": "absent / absentminded"},
     {"t": "brevemente", "e": "briefly"},
     {"t": "decisivo", "e": "decisive / fateful"},
@@ -11951,7 +11951,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "spiacevole", "e": "unpleasant / disagreeable / uncomfortable"},
     {"t": "la visita", "e": "visit"}
   ]},
-  { id: "duo_it_u204", type: "vocab", title: "Vocab: Unit 204 \u00b7 volunteering \u2014 Tasks: List your main tasks", items: [
+  { id: "duo_it_u204", type: "vocab", title: "Vocab: Unit 204 \u00b7 volunteering \u2014 Talk about volunteer tasks", items: [
     {"t": "caricare", "e": "to load / to charge / to upload"},
     {"t": "commerciale", "e": "commercial"},
     {"t": "concludere", "e": "to conclude / to finish"},
@@ -11973,7 +11973,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "trascinare", "e": "to drag"},
     {"t": "una volta che", "e": "once"}
   ]},
-  { id: "duo_it_u205", type: "vocab", title: "Vocab: Unit 205 \u00b7 safety precautions \u2014 Safety: Ask about safe workout routines", items: [
+  { id: "duo_it_u205", type: "vocab", title: "Vocab: Unit 205 \u00b7 safety precautions \u2014 Track the weights you lift", items: [
     {"t": "l'armadietto", "e": "cabinet / locker"},
     {"t": "assicurarsi", "e": "to make sure / assure"},
     {"t": "la cascata", "e": "waterfall"},
@@ -11995,7 +11995,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la sirena", "e": "siren / alarm / whistle"},
     {"t": "soffiare", "e": "to blow"}
   ]},
-  { id: "duo_it_u206", type: "vocab", title: "Vocab: Unit 206 \u00b7 environmental features \u2014 Park: Plant flowers in the park", items: [
+  { id: "duo_it_u206", type: "vocab", title: "Vocab: Unit 206 \u00b7 environmental features \u2014 Improve and protect the park", items: [
     {"t": "il bidone", "e": "bin / trash can"},
     {"t": "corrente", "e": "current"},
     {"t": "danneggiare", "e": "to damage"},
@@ -12018,7 +12018,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il territorio", "e": "territory"},
     {"t": "la visita guidata", "e": "guided tour / guided visit / tour with a guide"}
   ]},
-  { id: "duo_it_u207", type: "vocab", title: "Vocab: Unit 207 \u00b7 recycling and waste \u2014 Environment: Share tips to reduce waste", items: [
+  { id: "duo_it_u207", type: "vocab", title: "Vocab: Unit 207 \u00b7 recycling and waste \u2014 Discuss ways to reduce waste", items: [
     {"t": "l'agricoltura", "e": "agriculture"},
     {"t": "al chiuso", "e": "indoors"},
     {"t": "il calore", "e": "heat / warmth / warm-heartedness"},
@@ -12039,7 +12039,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "urbano", "e": "urban"},
     {"t": "usato", "e": "used / second-hand"}
   ]},
-  { id: "duo_it_u208", type: "vocab", title: "Vocab: Unit 208 \u00b7 negotiation and persuasion \u2014 Teamwork: Praise your group members", items: [
+  { id: "duo_it_u208", type: "vocab", title: "Vocab: Unit 208 \u00b7 negotiation and persuasion \u2014 Discuss a group project", items: [
     {"t": "l'accordo", "e": "agreement"},
     {"t": "anzitutto", "e": "first of all"},
     {"t": "assieme a", "e": "together with"},
@@ -12059,7 +12059,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "riferire", "e": "to report / to relate"},
     {"t": "valido", "e": "valid / legitimate / admissible"}
   ]},
-  { id: "duo_it_u209", type: "vocab", title: "Vocab: Unit 209 \u00b7 romantic relationships \u2014 Partners: Share plans with your partner", items: [
+  { id: "duo_it_u209", type: "vocab", title: "Vocab: Unit 209 \u00b7 romantic relationships \u2014 Discuss jobs and share dreams", items: [
     {"t": "certo", "e": "of course / sure / certain"},
     {"t": "il designer", "e": "designer"},
     {"t": "la discussione", "e": "discussion"},
@@ -12079,7 +12079,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il terrazzo", "e": "terrace / balcony / rooftop terrace (masculine)"},
     {"t": "il valore", "e": "value"}
   ]},
-  { id: "duo_it_u210", type: "vocab", title: "Vocab: Unit 210 \u00b7 public spaces \u2014 Community: Share event details", items: [
+  { id: "duo_it_u210", type: "vocab", title: "Vocab: Unit 210 \u00b7 public spaces \u2014 Plan a community park event", items: [
     {"t": "accanto a", "e": "next to / beside"},
     {"t": "adatto", "e": "suitable"},
     {"t": "adottare", "e": "to adopt / to take on"},
@@ -12101,7 +12101,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sociale", "e": "social"},
     {"t": "vitale", "e": "vital"}
   ]},
-  { id: "duo_it_u211", type: "vocab", title: "Vocab: Unit 211 \u00b7 digital tools \u2014 Digital Work: Ask about using new apps", items: [
+  { id: "duo_it_u211", type: "vocab", title: "Vocab: Unit 211 \u00b7 digital tools \u2014 Discuss software at work", items: [
     {"t": "accedere", "e": "to access"},
     {"t": "accelerare", "e": "to accelerate"},
     {"t": "aggiornare", "e": "to update"},
@@ -12123,7 +12123,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il software", "e": "software"},
     {"t": "utilizzare", "e": "to use"}
   ]},
-  { id: "duo_it_u212", type: "vocab", title: "Vocab: Unit 212 \u00b7 philosophy \u2014 Classroom: Write clear notes", items: [
+  { id: "duo_it_u212", type: "vocab", title: "Vocab: Unit 212 \u00b7 philosophy \u2014 Summarize what you study", items: [
     {"t": "agire", "e": "to act"},
     {"t": "l'analisi", "e": "analysis"},
     {"t": "apparire", "e": "to appear"},
@@ -12145,7 +12145,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "riassumere", "e": "to summarize"},
     {"t": "riassunto", "e": "summary / abstract / synopsis"}
   ]},
-  { id: "duo_it_u213", type: "vocab", title: "Vocab: Unit 213 \u00b7 celebrations \u2014 Celebration: Plan a celebration", items: [
+  { id: "duo_it_u213", type: "vocab", title: "Vocab: Unit 213 \u00b7 celebrations \u2014 Plan a celebration", items: [
     {"t": "alcolico", "e": "alcoholic / alcohol-related / spirituous"},
     {"t": "all'inizio", "e": "at the beginning"},
     {"t": "l'allegria", "e": "cheerfulness"},
@@ -12167,7 +12167,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "riunirsi", "e": "to gather together / gather"},
     {"t": "soddisfatto", "e": "satisfied / pleased"}
   ]},
-  { id: "duo_it_u214", type: "vocab", title: "Vocab: Unit 214 \u00b7 first aid \u2014 First Aid: Stay calm in emergencies", items: [
+  { id: "duo_it_u214", type: "vocab", title: "Vocab: Unit 214 \u00b7 first aid \u2014 Stay calm in emergencies", items: [
     {"t": "affilare", "e": "to sharpen"},
     {"t": "alcuna", "e": "any (feminine)"},
     {"t": "alcuno", "e": "any / a few / some (masculine)"},
@@ -12189,7 +12189,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "specificare", "e": "to specify"},
     {"t": "universale", "e": "universal"}
   ]},
-  { id: "duo_it_u215", type: "vocab", title: "Vocab: Unit 215 \u00b7 pet care \u2014 Pets: Describe your pet\u2019s routine", items: [
+  { id: "duo_it_u215", type: "vocab", title: "Vocab: Unit 215 \u00b7 pet care \u2014 Talk about your pet\u2019s health", items: [
     {"t": "l'acquario", "e": "aquarium / fish tank"},
     {"t": "adottare", "e": "to adopt / to take on"},
     {"t": "ansioso", "e": "eager / nervous / anxiously"},
@@ -12210,7 +12210,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "vaccino", "e": "vaccine"},
     {"t": "veterinario", "e": "veterinarian / vet"}
   ]},
-  { id: "duo_it_u216", type: "vocab", title: "Vocab: Unit 216 \u00b7 city life \u2014 City Life: Chat about city cafes", items: [
+  { id: "duo_it_u216", type: "vocab", title: "Vocab: Unit 216 \u00b7 city life \u2014 Chat about cafes in the city", items: [
     {"t": "animato", "e": "animated / bustling / excited"},
     {"t": "l'attrazione", "e": "attraction / seduction"},
     {"t": "il binario", "e": "track"},
@@ -12232,7 +12232,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la struttura", "e": "structure"},
     {"t": "la vita notturna", "e": "nightlife"}
   ]},
-  { id: "duo_it_u217", type: "vocab", title: "Vocab: Unit 217 \u00b7 gardening \u2014 Garden: Talk about gardening challenges", items: [
+  { id: "duo_it_u217", type: "vocab", title: "Vocab: Unit 217 \u00b7 gardening \u2014 Discuss gardening challenges", items: [
     {"t": "automatico", "e": "automatic / self-acting / mechanical"},
     {"t": "ce", "e": "there / us"},
     {"t": "coltivare", "e": "to cultivate"},
@@ -12254,7 +12254,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il tulipano", "e": "tulip"},
     {"t": "la zucchina", "e": "zucchini / courgette / marrow"}
   ]},
-  { id: "duo_it_u218", type: "vocab", title: "Vocab: Unit 218 \u00b7 concerts and performances \u2014 Concerts: Meet up with friends", items: [
+  { id: "duo_it_u218", type: "vocab", title: "Vocab: Unit 218 \u00b7 concerts and performances \u2014 Talk about a music festival", items: [
     {"t": "l'arena", "e": "arena / venue / stadium"},
     {"t": "assistere", "e": "to attend / to assist"},
     {"t": "dal vivo", "e": "live"},
@@ -12276,7 +12276,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo spettatore", "e": "spectator (masculine)"},
     {"t": "la spettatrice", "e": "spectator / viewer / audience member (feminine)"}
   ]},
-  { id: "duo_it_u219", type: "vocab", title: "Vocab: Unit 219 \u00b7 rural life \u2014 Countryside: Describe life in the countryside", items: [
+  { id: "duo_it_u219", type: "vocab", title: "Vocab: Unit 219 \u00b7 rural life \u2014 Describe rural life", items: [
     {"t": "l'agricoltore", "e": "farmer (masculine)"},
     {"t": "l'agricoltrice", "e": "farmer (feminine)"},
     {"t": "il campo", "e": "field"},
@@ -12300,7 +12300,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il toro", "e": "bull"},
     {"t": "il turismo", "e": "tourism"}
   ]},
-  { id: "duo_it_u220", type: "vocab", title: "Vocab: Unit 220 \u00b7 crisis response \u2014 Emergencies: Share emergency updates", items: [
+  { id: "duo_it_u220", type: "vocab", title: "Vocab: Unit 220 \u00b7 crisis response \u2014 Stay informed in a crisis", items: [
     {"t": "l'affare", "e": "deal / bargain / business"},
     {"t": "l'atteggiamento", "e": "behaviour / position / stance"},
     {"t": "attivo", "e": "active / working / livelier"},
@@ -12323,7 +12323,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "unire", "e": "to unite"},
     {"t": "unito", "e": "united / joined"}
   ]},
-  { id: "duo_it_u221", type: "vocab", title: "Vocab: Unit 221 \u00b7 diversity \u2014 Diversity: React to others\u2019 suggestions", items: [
+  { id: "duo_it_u221", type: "vocab", title: "Vocab: Unit 221 \u00b7 diversity \u2014 Discuss mindsets and teamwork", items: [
     {"t": "allargare", "e": "to broaden"},
     {"t": "l'approccio", "e": "approach / method / attitude"},
     {"t": "arricchire", "e": "to enrich"},
@@ -12346,7 +12346,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la ricchezza", "e": "wealth"},
     {"t": "valorizzare", "e": "to enhance / to make the most of"}
   ]},
-  { id: "duo_it_u222", type: "vocab", title: "Vocab: Unit 222 \u00b7 museum visits \u2014 Art Visit: Learn about modern sculpture", items: [
+  { id: "duo_it_u222", type: "vocab", title: "Vocab: Unit 222 \u00b7 museum visits \u2014 Discuss art at a museum", items: [
     {"t": "abituale", "e": "habitual"},
     {"t": "assolutamente", "e": "absolutely"},
     {"t": "contemporaneo", "e": "contemporary / coeval / concurrent"},
@@ -12368,7 +12368,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il visitatore", "e": "visitor (masculine)"},
     {"t": "la visitatrice", "e": "visitor / female visitor / museum visitor (feminine)"}
   ]},
-  { id: "duo_it_u223", type: "vocab", title: "Vocab: Unit 223 \u00b7 governmental systems \u2014 Society: Explain how government works", items: [
+  { id: "duo_it_u223", type: "vocab", title: "Vocab: Unit 223 \u00b7 governmental systems \u2014 Discuss systems of government", items: [
     {"t": "approfondire", "e": "to deepen"},
     {"t": "autorizzato", "e": "authorized / allowed"},
     {"t": "avere intenzione di", "e": "to intend to / intend"},
@@ -12389,7 +12389,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il testimone", "e": "witness / best man"},
     {"t": "trasparente", "e": "transparent / clear"}
   ]},
-  { id: "duo_it_u224", type: "vocab", title: "Vocab: Unit 224 \u00b7 values \u2014 Choices: Help choose a course", items: [
+  { id: "duo_it_u224", type: "vocab", title: "Vocab: Unit 224 \u00b7 values \u2014 Discuss classes and studying", items: [
     {"t": "aiutante", "e": "assistant / helper / aide"},
     {"t": "alla fine", "e": "in the end"},
     {"t": "l'altruismo", "e": "altruism / selflessness / unselfishness"},
@@ -12409,7 +12409,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sbadato", "e": "careless"},
     {"t": "totalmente", "e": "totally"}
   ]},
-  { id: "duo_it_u225", type: "vocab", title: "Vocab: Unit 225 \u00b7 literature \u2014 Stories: Share stories about feelings", items: [
+  { id: "duo_it_u225", type: "vocab", title: "Vocab: Unit 225 \u00b7 literature \u2014 Discuss hobbies and feelings", items: [
     {"t": "l'autore", "e": "author / writer"},
     {"t": "il capitolo", "e": "chapter"},
     {"t": "ciò che", "e": "what"},
@@ -12431,7 +12431,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il sentimento", "e": "feeling"},
     {"t": "sfortunato", "e": "unlucky / unfortunate"}
   ]},
-  { id: "duo_it_u226", type: "vocab", title: "Vocab: Unit 226 \u00b7 sustainability \u2014 Leadership: Describe good leadership", items: [
+  { id: "duo_it_u226", type: "vocab", title: "Vocab: Unit 226 \u00b7 sustainability \u2014 Discuss environmental careers", items: [
     {"t": "l'attaccamento", "e": "attachment / affection / bond"},
     {"t": "biologico", "e": "organic"},
     {"t": "la capitana", "e": "captain / skipper / leader (feminine)"},
@@ -12453,7 +12453,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la terra", "e": "earth / land / ground"},
     {"t": "terribilmente", "e": "terribly / awfully / dreadfully"}
   ]},
-  { id: "duo_it_u227", type: "vocab", title: "Vocab: Unit 227 \u00b7 landmarks \u2014 Landmarks: Describe a landmark", items: [
+  { id: "duo_it_u227", type: "vocab", title: "Vocab: Unit 227 \u00b7 landmarks \u2014 Talk about visiting landmarks", items: [
     {"t": "all'esterno", "e": "outside"},
     {"t": "all'interno", "e": "inside"},
     {"t": "la baia", "e": "bay / cove / inlet"},
@@ -12476,7 +12476,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "venire", "e": "to come"},
     {"t": "la vittoria", "e": "victory / win"}
   ]},
-  { id: "duo_it_u228", type: "vocab", title: "Vocab: Unit 228 \u00b7 geopolitical issues \u2014 Opinion: Agree or disagree with a friend", items: [
+  { id: "duo_it_u228", type: "vocab", title: "Vocab: Unit 228 \u00b7 geopolitical issues \u2014 Describe jobs and industries", items: [
     {"t": "l'ala", "e": "wing / blade / fin"},
     {"t": "appena", "e": "just / barely / as soon as"},
     {"t": "il bestiame", "e": "livestock / cattle"},
@@ -12497,7 +12497,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "preferibile", "e": "preferable / advisable / better"},
     {"t": "il settore bancario", "e": "banking sector / banking industry / bank sector"}
   ]},
-  { id: "duo_it_u229", type: "vocab", title: "Vocab: Unit 229 \u00b7 aging \u2014 Aging: Describe healthy habits", items: [
+  { id: "duo_it_u229", type: "vocab", title: "Vocab: Unit 229 \u00b7 aging \u2014 Talk about aging and health", items: [
     {"t": "l'adulto", "e": "adult"},
     {"t": "annuale", "e": "annual / year’s"},
     {"t": "augurarsi", "e": "to hope / wish"},
@@ -12519,7 +12519,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "tenere a mente", "e": "to keep in mind"},
     {"t": "vivace", "e": "lively"}
   ]},
-  { id: "duo_it_u230", type: "vocab", title: "Vocab: Unit 230 \u00b7 visual arts \u2014 Art Room: Describe paintings you see", items: [
+  { id: "duo_it_u230", type: "vocab", title: "Vocab: Unit 230 \u00b7 visual arts \u2014 Discuss the art exhibits", items: [
     {"t": "ambizioso", "e": "ambitious"},
     {"t": "l'arco", "e": "arch / bow / arc"},
     {"t": "avanzare", "e": "to advance / to move forward"},
@@ -12541,7 +12541,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "l'unità", "e": "unit / unity"},
     {"t": "vivace", "e": "lively"}
   ]},
-  { id: "duo_it_u231", type: "vocab", title: "Vocab: Unit 231 \u00b7 workplace communication \u2014 Meetings: Reach agreements at work", items: [
+  { id: "duo_it_u231", type: "vocab", title: "Vocab: Unit 231 \u00b7 workplace communication \u2014 Reach agreements at work", items: [
     {"t": "accennare", "e": "to mention / to allude to / to touch on"},
     {"t": "affiancare", "e": "to work alongside / support"},
     {"t": "l'aggiornamento", "e": "upgrading / update"},
@@ -12564,7 +12564,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "trattare", "e": "to treat / to deal with"},
     {"t": "verificare", "e": "to verify"}
   ]},
-  { id: "duo_it_u232", type: "vocab", title: "Vocab: Unit 232 \u00b7 artificial intelligence \u2014 Technology: Ask about smart robots", items: [
+  { id: "duo_it_u232", type: "vocab", title: "Vocab: Unit 232 \u00b7 artificial intelligence \u2014 Discuss if AI can be trusted", items: [
     {"t": "l'accuratezza", "e": "accuracy / precision / exactness"},
     {"t": "l'adozione", "e": "adoption / uptake / implementation"},
     {"t": "artificiale", "e": "artificial / man-made / fake"},
@@ -12586,7 +12586,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "uso", "e": "I use (io form)"},
     {"t": "vietare", "e": "to prohibit"}
   ]},
-  { id: "duo_it_u233", type: "vocab", title: "Vocab: Unit 233 \u00b7 life goals \u2014 Goals: Share your main goal", items: [
+  { id: "duo_it_u233", type: "vocab", title: "Vocab: Unit 233 \u00b7 life goals \u2014 Share your main goal in life", items: [
     {"t": "aggiornarsi", "e": "to keep up to date / to update oneself"},
     {"t": "l'aspirazione", "e": "aspiration"},
     {"t": "la competenza", "e": "competence"},
@@ -12608,7 +12608,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "specializzarsi", "e": "to specialize"},
     {"t": "la tattica", "e": "tactic / tactics"}
   ]},
-  { id: "duo_it_u234", type: "vocab", title: "Vocab: Unit 234 \u00b7 video games \u2014 Gaming: Share your favorite moments", items: [
+  { id: "duo_it_u234", type: "vocab", title: "Vocab: Unit 234 \u00b7 video games \u2014 Describe your video game win", items: [
     {"t": "arrampicarsi", "e": "to climb"},
     {"t": "il colpo", "e": "blow / hit / shot"},
     {"t": "il comando", "e": "command / control"},
@@ -12628,7 +12628,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sparare", "e": "to shoot"},
     {"t": "spuntarla", "e": "to pull it off / to win out"}
   ]},
-  { id: "duo_it_u235", type: "vocab", title: "Vocab: Unit 235 \u00b7 university \u2014 College: Ask for help with research", items: [
+  { id: "duo_it_u235", type: "vocab", title: "Vocab: Unit 235 \u00b7 university \u2014 Talk about your assignments", items: [
     {"t": "analizzare", "e": "to analyze"},
     {"t": "autonomo", "e": "autonomous / independent / self-employed"},
     {"t": "il borsista", "e": "scholarship holder / grant holder / fellow"},
@@ -12650,7 +12650,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la selezione", "e": "selection / screening / trial"},
     {"t": "svolgere", "e": "to carry out / perform"}
   ]},
-  { id: "duo_it_u236", type: "vocab", title: "Vocab: Unit 236 \u00b7 invitations \u2014 Invites: Invite someone out", items: [
+  { id: "duo_it_u236", type: "vocab", title: "Vocab: Unit 236 \u00b7 invitations \u2014 Discuss joining an activity", items: [
     {"t": "accogliere", "e": "to welcome"},
     {"t": "brindare", "e": "to toast"},
     {"t": "la conferma", "e": "confirmation"},
@@ -12672,7 +12672,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "ulteriore", "e": "further / broader"},
     {"t": "la voglia", "e": "desire / craving (feminine)"}
   ]},
-  { id: "duo_it_u237", type: "vocab", title: "Vocab: Unit 237 \u00b7 voting \u2014 Voting: Share your views on elections", items: [
+  { id: "duo_it_u237", type: "vocab", title: "Vocab: Unit 237 \u00b7 voting \u2014 Share your views on elections", items: [
     {"t": "alleato", "e": "ally"},
     {"t": "l'assessore", "e": "councillor / alderman"},
     {"t": "la cabina", "e": "booth / cabin"},
@@ -12694,7 +12694,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "l'urna", "e": "ballot box / urn"},
     {"t": "la votazione", "e": "vote / voting / ballot"}
   ]},
-  { id: "duo_it_u238", type: "vocab", title: "Vocab: Unit 238 \u00b7 time management \u2014 Planning: Make a to-do list", items: [
+  { id: "duo_it_u238", type: "vocab", title: "Vocab: Unit 238 \u00b7 time management \u2014 Write down your daily tasks", items: [
     {"t": "annotare", "e": "to note down / to jot down"},
     {"t": "approssimativamente", "e": "approximately"},
     {"t": "concentrare", "e": "to concentrate"},
@@ -12716,7 +12716,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il timer", "e": "timer / stopwatch / countdown timer"},
     {"t": "visivo", "e": "visual / optic / optical"}
   ]},
-  { id: "duo_it_u239", type: "vocab", title: "Vocab: Unit 239 \u00b7 clothes shopping \u2014 Clothing: Compare shirt styles", items: [
+  { id: "duo_it_u239", type: "vocab", title: "Vocab: Unit 239 \u00b7 clothes shopping \u2014 Compare shirts while shopping", items: [
     {"t": "abbottonare", "e": "to button / to fasten buttons / to button up"},
     {"t": "accorciare", "e": "to shorten"},
     {"t": "la boutique", "e": "boutique / shop / store"},
@@ -12738,7 +12738,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la suola", "e": "sole / outsole / bottom of a shoe"},
     {"t": "il tacco", "e": "heel / heel height / heel type"}
   ]},
-  { id: "duo_it_u240", type: "vocab", title: "Vocab: Unit 240 \u00b7 conflict resolution \u2014 Clarity: Ask for honest feedback", items: [
+  { id: "duo_it_u240", type: "vocab", title: "Vocab: Unit 240 \u00b7 conflict resolution \u2014 Help under certain conditions", items: [
     {"t": "la chiarezza", "e": "clarity / clearness / brightness"},
     {"t": "la collaborazione", "e": "collaboration / cooperation / teamwork"},
     {"t": "la critica", "e": "criticism / critique / review"},
@@ -12760,7 +12760,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "tollerante", "e": "tolerant"},
     {"t": "tollerare", "e": "to tolerate"}
   ]},
-  { id: "duo_it_u241", type: "vocab", title: "Vocab: Unit 241 \u00b7 mental health \u2014 Wellness: Talk about your fears", items: [
+  { id: "duo_it_u241", type: "vocab", title: "Vocab: Unit 241 \u00b7 mental health \u2014 Talk about your fears", items: [
     {"t": "affidarsi", "e": "to trust / rely"},
     {"t": "dannoso", "e": "damaging / hazardous"},
     {"t": "l'esaurimento", "e": "exhaustion / depletion / burnout"},
@@ -12782,7 +12782,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "trascurare", "e": "to neglect"},
     {"t": "la vergogna", "e": "shame / embarrassment / disgrace"}
   ]},
-  { id: "duo_it_u242", type: "vocab", title: "Vocab: Unit 242 \u00b7 politics \u2014 Politics: Describe political leaders", items: [
+  { id: "duo_it_u242", type: "vocab", title: "Vocab: Unit 242 \u00b7 politics \u2014 Describe political leaders", items: [
     {"t": "l'ambasciatore", "e": "ambassador"},
     {"t": "ambientalista", "e": "environmentalist / conservationist / ecologist"},
     {"t": "benché", "e": "though"},
@@ -12804,7 +12804,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "pubblicamente", "e": "publicly"},
     {"t": "il senatore", "e": "senator"}
   ]},
-  { id: "duo_it_u243", type: "vocab", title: "Vocab: Unit 243 \u00b7 divorce \u2014 Divorce: Describe what happened", items: [
+  { id: "duo_it_u243", type: "vocab", title: "Vocab: Unit 243 \u00b7 divorce \u2014 Talk about a divorce case", items: [
     {"t": "l'amante", "e": "lover / sweetheart / admirer"},
     {"t": "civile", "e": "civil / civilized"},
     {"t": "conflittuale", "e": "conflictual / conflicting / adversarial"},
@@ -12826,7 +12826,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il terapeuta", "e": "therapist / counselor"},
     {"t": "la testimonianza", "e": "testimony / evidence / witness statement"}
   ]},
-  { id: "duo_it_u244", type: "vocab", title: "Vocab: Unit 244 \u00b7 personal experiences 2 \u2014 Regret: Share a past regret", items: [
+  { id: "duo_it_u244", type: "vocab", title: "Vocab: Unit 244 \u00b7 personal experiences 2 \u2014 Share a regret from the past", items: [
     {"t": "affermare", "e": "to state / to affirm / to claim"},
     {"t": "il conforto", "e": "comfort / consolation"},
     {"t": "il destino", "e": "destiny / fate"},
@@ -12848,7 +12848,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "talvolta", "e": "sometimes"},
     {"t": "la tappa", "e": "stage / stop / leg"}
   ]},
-  { id: "duo_it_u245", type: "vocab", title: "Vocab: Unit 245 \u00b7 apologizing \u2014 Intentions: Apologize for mistakes", items: [
+  { id: "duo_it_u245", type: "vocab", title: "Vocab: Unit 245 \u00b7 apologizing \u2014 Reflect on past mistakes", items: [
     {"t": "la circostanza", "e": "circumstance / situation / condition"},
     {"t": "la colpa", "e": "fault / blame / wrong"},
     {"t": "la consolazione", "e": "consolation / solace / relief"},
@@ -12870,7 +12870,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "tardare", "e": "to be late / to delay"},
     {"t": "urtare", "e": "to bump into / bump"}
   ]},
-  { id: "duo_it_u246", type: "vocab", title: "Vocab: Unit 246 \u00b7 holidays 2 \u2014 Journeys: Express travel preferences", items: [
+  { id: "duo_it_u246", type: "vocab", title: "Vocab: Unit 246 \u00b7 holidays 2 \u2014 Talk about your trip regrets", items: [
     {"t": "abbronzarsi", "e": "to tan / to get a tan / to sunbathe"},
     {"t": "autunnale", "e": "autumn / autumnal"},
     {"t": "il bagaglio", "e": "luggage / baggage"},
@@ -12892,7 +12892,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "suggestivo", "e": "atmospheric / evocative / impressive"},
     {"t": "il tragitto", "e": "journey / route / way"}
   ]},
-  { id: "duo_it_u247", type: "vocab", title: "Vocab: Unit 247 \u00b7 hiking \u2014 Hiking: Describe a hiking path", items: [
+  { id: "duo_it_u247", type: "vocab", title: "Vocab: Unit 247 \u00b7 hiking \u2014 Discuss safer mountain routes", items: [
     {"t": "l'alce", "e": "moose / elk"},
     {"t": "allacciare", "e": "to fasten"},
     {"t": "l'alpinismo", "e": "alpine climbing / mountaineering / mountain climbing"},
@@ -12914,7 +12914,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il torrente", "e": "torrent / stream / brook"},
     {"t": "la vetta", "e": "peak / summit / top"}
   ]},
-  { id: "duo_it_u248", type: "vocab", title: "Vocab: Unit 248 \u00b7 bank 2 \u2014 Banking: Identify bank staff", items: [
+  { id: "duo_it_u248", type: "vocab", title: "Vocab: Unit 248 \u00b7 bank 2 \u2014 Talk politely at the bank", items: [
     {"t": "l'assegno", "e": "check / cheque"},
     {"t": "attivare", "e": "to activate"},
     {"t": "il banchiere", "e": "banker"},
@@ -12937,7 +12937,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "variare", "e": "to vary"},
     {"t": "la variazione", "e": "variation / change / adjustment"}
   ]},
-  { id: "duo_it_u249", type: "vocab", title: "Vocab: Unit 249 \u00b7 career choices \u2014 Careers: Explain your career choice", items: [
+  { id: "duo_it_u249", type: "vocab", title: "Vocab: Unit 249 \u00b7 career choices \u2014 Explain your career choice", items: [
     {"t": "l'apprendistato", "e": "apprenticeship / traineeship / internship"},
     {"t": "aspirare", "e": "to aspire"},
     {"t": "bensì", "e": "but (rather)"},
@@ -12959,7 +12959,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il sindacato", "e": "labor union"},
     {"t": "la vocazione", "e": "vocation / call"}
   ]},
-  { id: "duo_it_u250", type: "vocab", title: "Vocab: Unit 250 \u00b7 accidents \u2014 Accidents: Describe an accident", items: [
+  { id: "duo_it_u250", type: "vocab", title: "Vocab: Unit 250 \u00b7 accidents \u2014 Describe an accident", items: [
     {"t": "la barella", "e": "stretcher / litter / gurney"},
     {"t": "bendare", "e": "to bandage / to blindfold / to wrap"},
     {"t": "la caduta", "e": "fall (drop)"},
@@ -12981,7 +12981,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "l'urto", "e": "impact / collision / bump"},
     {"t": "l'ustione", "e": "burn / burn injury / burn wound"}
   ]},
-  { id: "duo_it_u251", type: "vocab", title: "Vocab: Unit 251 \u00b7 advertising \u2014 Advertising: Compare two ads", items: [
+  { id: "duo_it_u251", type: "vocab", title: "Vocab: Unit 251 \u00b7 advertising \u2014 Compare two ads", items: [
     {"t": "attrarre", "e": "to attract"},
     {"t": "la campagna", "e": "countryside"},
     {"t": "il clic", "e": "click / tap"},
@@ -13003,7 +13003,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo spot", "e": "commercial / ad / spot"},
     {"t": "tanto quanto", "e": "as much as"}
   ]},
-  { id: "duo_it_u252", type: "vocab", title: "Vocab: Unit 252 \u00b7 cross-cultural communication \u2014 Culture: Share tips for avoiding offense", items: [
+  { id: "duo_it_u252", type: "vocab", title: "Vocab: Unit 252 \u00b7 cross-cultural communication \u2014 Advise against using sarcasm", items: [
     {"t": "l'accento", "e": "accent"},
     {"t": "accordarsi", "e": "to agree / to come to an agreement / to reach an understanding"},
     {"t": "ambito", "e": "field / sphere / area"},
@@ -13025,7 +13025,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il tabù", "e": "taboo / forbidden topic"},
     {"t": "uso", "e": "I use (io form)"}
   ]},
-  { id: "duo_it_u253", type: "vocab", title: "Vocab: Unit 253 \u00b7 primary school \u2014 Classroom: Ask about school supplies", items: [
+  { id: "duo_it_u253", type: "vocab", title: "Vocab: Unit 253 \u00b7 primary school \u2014 Ask about school supplies", items: [
     {"t": "apposta", "e": "on purpose"},
     {"t": "il bidello", "e": "janitor / caretaker / custodian"},
     {"t": "la campanella", "e": "handbell / bell"},
@@ -13047,7 +13047,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la verifica", "e": "test / check / quiz"},
     {"t": "il vocabolario", "e": "vocabulary / dictionary"}
   ]},
-  { id: "duo_it_u254", type: "vocab", title: "Vocab: Unit 254 \u00b7 debate 2 \u2014 Reasoning: Explain your reasoning", items: [
+  { id: "duo_it_u254", type: "vocab", title: "Vocab: Unit 254 \u00b7 debate 2 \u2014 Reflect on group decisions", items: [
     {"t": "aggressivo", "e": "aggressive / pushy"},
     {"t": "l'andamento", "e": "trend / performance / course"},
     {"t": "il consenso", "e": "consensus / approval"},
@@ -13069,7 +13069,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo scenario", "e": "scenario / setting / stage"},
     {"t": "il tono", "e": "tone"}
   ]},
-  { id: "duo_it_u255", type: "vocab", title: "Vocab: Unit 255 \u00b7 gossip and rumors 2 \u2014 Gossip: React to shocking news", items: [
+  { id: "duo_it_u255", type: "vocab", title: "Vocab: Unit 255 \u00b7 gossip and rumors 2 \u2014 React to shocking gossip", items: [
     {"t": "banale", "e": "banal / trivial / stock"},
     {"t": "confidenziale", "e": "confidential / private / secret"},
     {"t": "curiosare", "e": "to snoop"},
@@ -13091,7 +13091,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "vergognoso", "e": "shameful / disgraceful / scandalous"},
     {"t": "la voce di corridoio", "e": "rumor / whisper / grapevine"}
   ]},
-  { id: "duo_it_u256", type: "vocab", title: "Vocab: Unit 256 \u00b7 attending a sporting event \u2014 Stadium: Talk about the crowd\u2019s chants", items: [
+  { id: "duo_it_u256", type: "vocab", title: "Vocab: Unit 256 \u00b7 attending a sporting event \u2014 Talk about a soccer game", items: [
     {"t": "l'arbitro", "e": "referee / umpire"},
     {"t": "il coro", "e": "choir / chorus"},
     {"t": "il derby", "e": "derby / local derby / rivalry match"},
@@ -13112,7 +13112,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "tifoso", "e": "fan / supporter"},
     {"t": "la tribuna", "e": "grandstand / stands"}
   ]},
-  { id: "duo_it_u257", type: "vocab", title: "Vocab: Unit 257 \u00b7 living abroad \u2014 Adjustment: Talk about new routines", items: [
+  { id: "duo_it_u257", type: "vocab", title: "Vocab: Unit 257 \u00b7 living abroad \u2014 Describe what surprised you", items: [
     {"t": "ambientarsi", "e": "to adjust / adapt"},
     {"t": "l'arredamento", "e": "furniture / furnishings / interior decoration"},
     {"t": "definitivo", "e": "definitive"},
@@ -13134,7 +13134,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il timbro", "e": "stamp / seal / postmark"},
     {"t": "il vicinato", "e": "neighborhood / neighbors"}
   ]},
-  { id: "duo_it_u258", type: "vocab", title: "Vocab: Unit 258 \u00b7 journalism \u2014 Media: Summarize a news story", items: [
+  { id: "duo_it_u258", type: "vocab", title: "Vocab: Unit 258 \u00b7 journalism \u2014 Talk about a news story", items: [
     {"t": "accusare", "e": "to accuse"},
     {"t": "attribuire", "e": "to attribute"},
     {"t": "che io sappia", "e": "as far as I know"},
@@ -13156,7 +13156,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la tabella", "e": "table / chart"},
     {"t": "la trasmissione", "e": "broadcast / show / program"}
   ]},
-  { id: "duo_it_u259", type: "vocab", title: "Vocab: Unit 259 \u00b7 pop culture \u2014 Pop icons: Describe your favorite pop icon", items: [
+  { id: "duo_it_u259", type: "vocab", title: "Vocab: Unit 259 \u00b7 pop culture \u2014 Compare live performances", items: [
     {"t": "appassionante", "e": "exciting / gripping"},
     {"t": "gli ascolti", "e": "ratings / audience"},
     {"t": "la celebrità", "e": "celebrity / celebrities"},
@@ -13178,7 +13178,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il supereroe", "e": "superhero"},
     {"t": "virale", "e": "viral"}
   ]},
-  { id: "duo_it_u260", type: "vocab", title: "Vocab: Unit 260 \u00b7 social media 2 \u2014 Media: Describe an influencer", items: [
+  { id: "duo_it_u260", type: "vocab", title: "Vocab: Unit 260 \u00b7 social media 2 \u2014 Describe an online influencer", items: [
     {"t": "abbonato", "e": "subscriber / member"},
     {"t": "accattivante", "e": "captivating / catchy / engaging"},
     {"t": "l'amministratore", "e": "administrator / manager / director"},
@@ -13200,7 +13200,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sponsorizzato", "e": "sponsored"},
     {"t": "il trailer", "e": "trailer"}
   ]},
-  { id: "duo_it_u261", type: "vocab", title: "Vocab: Unit 261 \u00b7 exercise routines 2 \u2014 Fitness: Describe your workout routine", items: [
+  { id: "duo_it_u261", type: "vocab", title: "Vocab: Unit 261 \u00b7 exercise routines 2 \u2014 Do mat exercises", items: [
     {"t": "aerobico", "e": "aerobic"},
     {"t": "alternare", "e": "to alternate"},
     {"t": "ciascuno", "e": "each"},
@@ -13222,7 +13222,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "tonificare", "e": "to tone / to tone up"},
     {"t": "uno", "e": "a / an (masculine before s+consonant or z: uno) / one"}
   ]},
-  { id: "duo_it_u262", type: "vocab", title: "Vocab: Unit 262 \u00b7 literature 2 \u2014 Literature: Identify irony in stories", items: [
+  { id: "duo_it_u262", type: "vocab", title: "Vocab: Unit 262 \u00b7 literature 2 \u2014 Discuss what a story means", items: [
     {"t": "ambientare", "e": "to set / to place / to situate"},
     {"t": "l'antagonista", "e": "antagonist / villain"},
     {"t": "l'appendice", "e": "appendix / addendum / supplement"},
@@ -13244,7 +13244,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la tragedia", "e": "tragedy / drama / catastrophe"},
     {"t": "tragico", "e": "tragic"}
   ]},
-  { id: "duo_it_u263", type: "vocab", title: "Vocab: Unit 263 \u00b7 negotiation and persuasion 2 \u2014 Decision: Express your view on a decision", items: [
+  { id: "duo_it_u263", type: "vocab", title: "Vocab: Unit 263 \u00b7 negotiation and persuasion 2 \u2014 Discuss a fair compromise", items: [
     {"t": "l'anticipo", "e": "advance / advance payment"},
     {"t": "concorrente", "e": "competitor / contestant / rival"},
     {"t": "il confronto", "e": "comparison / confrontation"},
@@ -13266,7 +13266,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "svantaggioso", "e": "disadvantageous / unfavorable / unprofitable"},
     {"t": "vantaggioso", "e": "advantageous / favorable"}
   ]},
-  { id: "duo_it_u264", type: "vocab", title: "Vocab: Unit 264 \u00b7 romance \u2014 Romance: React to a romantic gesture", items: [
+  { id: "duo_it_u264", type: "vocab", title: "Vocab: Unit 264 \u00b7 romance \u2014 Describe a past relationship", items: [
     {"t": "l'abbraccio", "e": "hug"},
     {"t": "affascinare", "e": "to fascinate"},
     {"t": "coccolare", "e": "to cuddle"},
@@ -13288,7 +13288,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "spiritoso", "e": "witty / humorous / clever"},
     {"t": "la tenerezza", "e": "tenderness / affection / fondness"}
   ]},
-  { id: "duo_it_u265", type: "vocab", title: "Vocab: Unit 265 \u00b7 camping 2 \u2014 Camping: Describe your camping gear", items: [
+  { id: "duo_it_u265", type: "vocab", title: "Vocab: Unit 265 \u00b7 camping 2 \u2014 Describe your camping gear", items: [
     {"t": "l'amaca", "e": "hammock"},
     {"t": "barbecue", "e": "barbecue"},
     {"t": "il bollitore", "e": "kettle / boiler / electric kettle"},
@@ -13310,7 +13310,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la tanica", "e": "jerrycan / canister / container"},
     {"t": "la zanzara", "e": "mosquito"}
   ]},
-  { id: "duo_it_u266", type: "vocab", title: "Vocab: Unit 266 \u00b7 study abroad \u2014 Integration: Ask for help joining activities", items: [
+  { id: "duo_it_u266", type: "vocab", title: "Vocab: Unit 266 \u00b7 study abroad \u2014 Settle into your new school", items: [
     {"t": "ampliare", "e": "to broaden / expand"},
     {"t": "autonomamente", "e": "independently"},
     {"t": "bocciare", "e": "to fail"},
@@ -13332,7 +13332,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "temporaneamente", "e": "temporarily"},
     {"t": "volontariamente", "e": "willingly"}
   ]},
-  { id: "duo_it_u267", type: "vocab", title: "Vocab: Unit 267 \u00b7 digital communication \u2014 Messages: Connect to Wi-Fi", items: [
+  { id: "duo_it_u267", type: "vocab", title: "Vocab: Unit 267 \u00b7 digital communication \u2014 Manage your WiFi connection", items: [
     {"t": "l'adattatore", "e": "adapter / adaptor"},
     {"t": "l'antivirus", "e": "antivirus / antivirus software / antivirus program"},
     {"t": "audio", "e": "audio"},
@@ -13354,7 +13354,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il webinar", "e": "webinar / online seminar / web conference"},
     {"t": "wi-fi", "e": "wi-fi"}
   ]},
-  { id: "duo_it_u268", type: "vocab", title: "Vocab: Unit 268 \u00b7 post office \u2014 Mail: Send a letter", items: [
+  { id: "duo_it_u268", type: "vocab", title: "Vocab: Unit 268 \u00b7 post office \u2014 Mail a letter", items: [
     {"t": "assicurato", "e": "insured / assured"},
     {"t": "avvisare", "e": "to notify / to alert / to warn"},
     {"t": "cap", "e": "postal code / ZIP code / postcode"},
@@ -13376,7 +13376,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "timbrare", "e": "to stamp"},
     {"t": "il tramite", "e": "via / through / by"}
   ]},
-  { id: "duo_it_u269", type: "vocab", title: "Vocab: Unit 269 \u00b7 secondary school \u2014 Exams: Say why you need to be there", items: [
+  { id: "duo_it_u269", type: "vocab", title: "Vocab: Unit 269 \u00b7 secondary school \u2014 Talk about the school assembly", items: [
     {"t": "assegnare", "e": "to assign"},
     {"t": "l'assemblea", "e": "assembly / meeting / gathering"},
     {"t": "l'astuccio", "e": "pencil case / case / pouch"},
@@ -13397,7 +13397,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo spogliatoio", "e": "locker room / changing room / dressing room"},
     {"t": "la sufficienza", "e": "pass"}
   ]},
-  { id: "duo_it_u270", type: "vocab", title: "Vocab: Unit 270 \u00b7 money management \u2014 Finances: Ask for financial advice", items: [
+  { id: "duo_it_u270", type: "vocab", title: "Vocab: Unit 270 \u00b7 money management \u2014 Talk about money regrets", items: [
     {"t": "l'assicurazione", "e": "insurance"},
     {"t": "il cambio", "e": "change"},
     {"t": "la consulenza", "e": "advice"},
@@ -13420,7 +13420,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la trasparenza", "e": "transparency / clearness / openness"},
     {"t": "variabile", "e": "varying / changeable"}
   ]},
-  { id: "duo_it_u271", type: "vocab", title: "Vocab: Unit 271 \u00b7 friendship \u2014 Trust: Express trust in a friend", items: [
+  { id: "duo_it_u271", type: "vocab", title: "Vocab: Unit 271 \u00b7 friendship \u2014 Offer and ask for support", items: [
     {"t": "l'antipatia", "e": "antipathy / dislike / aversion"},
     {"t": "l'appoggio", "e": "support / backing / help"},
     {"t": "apposta", "e": "on purpose"},
@@ -13442,7 +13442,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "tradire", "e": "to betray"},
     {"t": "umile", "e": "humble"}
   ]},
-  { id: "duo_it_u272", type: "vocab", title: "Vocab: Unit 272 \u00b7 crime \u2014 Police: Report a crime", items: [
+  { id: "duo_it_u272", type: "vocab", title: "Vocab: Unit 272 \u00b7 crime \u2014 Imagine witnessing a crime", items: [
     {"t": "l'agente", "e": "agent / official / officer"},
     {"t": "il commissariato", "e": "police station"},
     {"t": "deliberatamente", "e": "deliberately"},
@@ -13463,7 +13463,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sospetto", "e": "suspicious / suspicion / suspect"},
     {"t": "lo spavento", "e": "fright / scare / fear"}
   ]},
-  { id: "duo_it_u273", type: "vocab", title: "Vocab: Unit 273 \u00b7 entrepreneurship \u2014 Business: Describe funding needs", items: [
+  { id: "duo_it_u273", type: "vocab", title: "Vocab: Unit 273 \u00b7 entrepreneurship \u2014 Plan your business ethically", items: [
     {"t": "aggiornato", "e": "updated / upgraded"},
     {"t": "aziendale", "e": "corporate / business's"},
     {"t": "il collaboratore", "e": "collaborator / co-worker"},
@@ -13487,7 +13487,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "progettare", "e": "to design"},
     {"t": "testare", "e": "to test"}
   ]},
-  { id: "duo_it_u274", type: "vocab", title: "Vocab: Unit 274 \u00b7 board games \u2014 Games: Choose a game role", items: [
+  { id: "duo_it_u274", type: "vocab", title: "Vocab: Unit 274 \u00b7 board games \u2014 Talk about playing board games", items: [
     {"t": "accumulare", "e": "to accumulate"},
     {"t": "arretrare", "e": "to move back / to move backward / to retreat"},
     {"t": "avvincente", "e": "gripping"},
@@ -13509,7 +13509,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il sorteggio", "e": "draw / drawing lots / toss"},
     {"t": "tematico", "e": "thematic / topical / subject-related"}
   ]},
-  { id: "duo_it_u275", type: "vocab", title: "Vocab: Unit 275 \u00b7 playing or training for a sport \u2014 Sports: Describe how to avoid penalties", items: [
+  { id: "duo_it_u275", type: "vocab", title: "Vocab: Unit 275 \u00b7 playing or training for a sport \u2014 Give tips for dancing and yoga", items: [
     {"t": "l'agilità", "e": "agility"},
     {"t": "amatoriale", "e": "amateur / amateurish / non-professional"},
     {"t": "il battito", "e": "beat / pulse / pulse rate"},
@@ -13531,7 +13531,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "spingere", "e": "to push"},
     {"t": "vincente", "e": "winning"}
   ]},
-  { id: "duo_it_u276", type: "vocab", title: "Vocab: Unit 276 \u00b7 baby \u2014 Babies: Ask about the baby's needs", items: [
+  { id: "duo_it_u276", type: "vocab", title: "Vocab: Unit 276 \u00b7 baby \u2014 Discuss what the baby needed", items: [
     {"t": "l'accappatoio", "e": "bathrobe / dressing gown / robe"},
     {"t": "affamato", "e": "hungry / starved"},
     {"t": "allattare", "e": "to breastfeed"},
@@ -13553,7 +13553,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il talco", "e": "talc / talcum powder"},
     {"t": "viziare", "e": "to spoil"}
   ]},
-  { id: "duo_it_u277", type: "vocab", title: "Vocab: Unit 277 \u00b7 environmental protection \u2014 Environment: Suggest ways to help animals", items: [
+  { id: "duo_it_u277", type: "vocab", title: "Vocab: Unit 277 \u00b7 environmental protection \u2014 Talk about protecting parks", items: [
     {"t": "l'acciaio", "e": "steel"},
     {"t": "l'allagamento", "e": "flood / inundation"},
     {"t": "l'alluminio", "e": "aluminium / aluminum"},
@@ -13575,7 +13575,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "specie", "e": "species / kind"},
     {"t": "il suolo", "e": "soil / ground"}
   ]},
-  { id: "duo_it_u278", type: "vocab", title: "Vocab: Unit 278 \u00b7 empathy \u2014 Kindness: Describe an act of kindness", items: [
+  { id: "duo_it_u278", type: "vocab", title: "Vocab: Unit 278 \u00b7 empathy \u2014 Discuss respect and teamwork", items: [
     {"t": "accoglienza", "e": "welcome / reception / hospitality"},
     {"t": "altruista", "e": "altruistic / selfless / unselfish"},
     {"t": "l'armonia", "e": "harmony / accord / agreement"},
@@ -13597,7 +13597,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "l'umanità", "e": "humanity"},
     {"t": "vulnerabile", "e": "vulnerable / susceptible / sensitive"}
   ]},
-  { id: "duo_it_u279", type: "vocab", title: "Vocab: Unit 279 \u00b7 globalization \u2014 Economy: Talk about global brands", items: [
+  { id: "duo_it_u279", type: "vocab", title: "Vocab: Unit 279 \u00b7 globalization \u2014 Talk about global brands", items: [
     {"t": "la connessione", "e": "connection / interconnection"},
     {"t": "connettere", "e": "to connect"},
     {"t": "la conservazione", "e": "conservation / preservation / protection"},
@@ -13619,7 +13619,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sviluppato", "e": "developed"},
     {"t": "la tariffa", "e": "rate / fare / tariff"}
   ]},
-  { id: "duo_it_u280", type: "vocab", title: "Vocab: Unit 280 \u00b7 immigration \u2014 Migration: Talk about living abroad", items: [
+  { id: "duo_it_u280", type: "vocab", title: "Vocab: Unit 280 \u00b7 immigration \u2014 Reflect on your life abroad", items: [
     {"t": "l'appartenenza", "e": "belonging / membership / affiliation"},
     {"t": "la cittadinanza", "e": "citizenship"},
     {"t": "la convivenza", "e": "coexistence / living together / cohabitation"},
@@ -13641,7 +13641,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il soccorso", "e": "rescue / aid / help"},
     {"t": "lo spostamento", "e": "relocation"}
   ]},
-  { id: "duo_it_u281", type: "vocab", title: "Vocab: Unit 281 \u00b7 community service \u2014 Community: Describe local service groups", items: [
+  { id: "duo_it_u281", type: "vocab", title: "Vocab: Unit 281 \u00b7 community service \u2014 Plan community volunteer work", items: [
     {"t": "addestrare", "e": "to train"},
     {"t": "l'adesione", "e": "adhesion / membership / adherence"},
     {"t": "agile", "e": "agile / nimble / quick"},
@@ -13663,7 +13663,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sanitario", "e": "health / medical / sanitary"},
     {"t": "la sanità", "e": "healthcare"}
   ]},
-  { id: "duo_it_u282", type: "vocab", title: "Vocab: Unit 282 \u00b7 medicine \u2014 Health: Ask about treatment options", items: [
+  { id: "duo_it_u282", type: "vocab", title: "Vocab: Unit 282 \u00b7 medicine \u2014 Talk about your diagnosis", items: [
     {"t": "acuto", "e": "acute / sharp / high-pitched"},
     {"t": "ambulatorio", "e": "clinic / outpatient clinic / outpatient department"},
     {"t": "l'asma", "e": "asthma"},
@@ -13686,7 +13686,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il ticket", "e": "ticket / copayment / fee"},
     {"t": "il vomito", "e": "vomit / vomiting"}
   ]},
-  { id: "duo_it_u283", type: "vocab", title: "Vocab: Unit 283 \u00b7 historic figures \u2014 Leaders: Explain a leader's goals", items: [
+  { id: "duo_it_u283", type: "vocab", title: "Vocab: Unit 283 \u00b7 historic figures \u2014 Describe a historic leader", items: [
     {"t": "cardinale", "e": "cardinal / cardinal bird / cardinal number"},
     {"t": "il carisma", "e": "charisma / charm / appeal"},
     {"t": "il comandante", "e": "commanding officer / commander / commanding"},
@@ -13708,7 +13708,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il successore", "e": "successor / heir / inheritor"},
     {"t": "visionario", "e": "visionary / futurist / seer"}
   ]},
-  { id: "duo_it_u284", type: "vocab", title: "Vocab: Unit 284 \u00b7 celebration \u2014 Parties: Describe a memorable party", items: [
+  { id: "duo_it_u284", type: "vocab", title: "Vocab: Unit 284 \u00b7 celebration \u2014 Describe a memorable party", items: [
     {"t": "addobbare", "e": "to decorate"},
     {"t": "l'aragosta", "e": "lobster"},
     {"t": "il brindisi", "e": "toast / cheers / salute"},
@@ -13730,7 +13730,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sobrio", "e": "sober / understated"},
     {"t": "la stima", "e": "esteem / estimate"}
   ]},
-  { id: "duo_it_u285", type: "vocab", title: "Vocab: Unit 285 \u00b7 history 2 \u2014 Dynasty: Describe a royal decision", items: [
+  { id: "duo_it_u285", type: "vocab", title: "Vocab: Unit 285 \u00b7 history 2 \u2014 Reimagine a historical event", items: [
     {"t": "abdicare", "e": "to abdicate"},
     {"t": "l'archivio", "e": "archive / file"},
     {"t": "belgio", "e": "Belgium"},
@@ -13753,7 +13753,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il tiranno", "e": "tyrant / despot / dictator"},
     {"t": "virtuale", "e": "virtual"}
   ]},
-  { id: "duo_it_u286", type: "vocab", title: "Vocab: Unit 286 \u00b7 disabilities \u2014 Access: Support equal rights", items: [
+  { id: "duo_it_u286", type: "vocab", title: "Vocab: Unit 286 \u00b7 disabilities \u2014 Discuss disability inclusion", items: [
     {"t": "abbattere", "e": "to knock down / to break down / to fell"},
     {"t": "adeguare", "e": "to adjust"},
     {"t": "convivere", "e": "to coexist"},
@@ -13775,7 +13775,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la stampella", "e": "crutch / cane / walking stick"},
     {"t": "il trattamento", "e": "treatment"}
   ]},
-  { id: "duo_it_u287", type: "vocab", title: "Vocab: Unit 287 \u00b7 driving \u2014 Driving: Describe car problems", items: [
+  { id: "duo_it_u287", type: "vocab", title: "Vocab: Unit 287 \u00b7 driving \u2014 Describe your car problems", items: [
     {"t": "l'acceleratore", "e": "accelerator / gas pedal / throttle"},
     {"t": "l'airbag", "e": "airbag / safety cushion"},
     {"t": "carroattrezzi", "e": "tow truck / wrecker / recovery vehicle"},
@@ -13798,7 +13798,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il tergicristallo", "e": "wiper blade / windscreen wiper / windshield wiper"},
     {"t": "volante", "e": "steering wheel"}
   ]},
-  { id: "duo_it_u288", type: "vocab", title: "Vocab: Unit 288 \u00b7 ecotourism \u2014 Outdoors: Describe outdoor experiences", items: [
+  { id: "duo_it_u288", type: "vocab", title: "Vocab: Unit 288 \u00b7 ecotourism \u2014 Talk about an ecotourism trip", items: [
     {"t": "l'agriturismo", "e": "agritourism / farm stay / farmhouse tourism"},
     {"t": "l'altitudine", "e": "altitude / height / elevation"},
     {"t": "l'artigianato", "e": "handiwork / handicrafts / craftsmanship"},
@@ -13820,7 +13820,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo scooter", "e": "scooter"},
     {"t": "solare", "e": "solar / sun / sunny"}
   ]},
-  { id: "duo_it_u289", type: "vocab", title: "Vocab: Unit 289 \u00b7 rural life 2 \u2014 Countryside: Describe farm life", items: [
+  { id: "duo_it_u289", type: "vocab", title: "Vocab: Unit 289 \u00b7 rural life 2 \u2014 Describe a day on the farm", items: [
     {"t": "l'allevatore", "e": "breeder / farmer / animal breeder"},
     {"t": "l'asino", "e": "donkey"},
     {"t": "la capra", "e": "goat"},
@@ -13844,7 +13844,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "spremere", "e": "to squeeze"},
     {"t": "il trattore", "e": "tractor"}
   ]},
-  { id: "duo_it_u290", type: "vocab", title: "Vocab: Unit 290 \u00b7 city life 2 \u2014 City Life: Describe a walk in the city", items: [
+  { id: "duo_it_u290", type: "vocab", title: "Vocab: Unit 290 \u00b7 city life 2 \u2014 Describe a seaside walk", items: [
     {"t": "addirittura", "e": "even"},
     {"t": "anteriore", "e": "front / previous"},
     {"t": "l'asfalto", "e": "asphalt / tarmac / bitumen"},
@@ -13866,7 +13866,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "stradale", "e": "road / streets"},
     {"t": "il tunnel", "e": "tunnel"}
   ]},
-  { id: "duo_it_u291", type: "vocab", title: "Vocab: Unit 291 \u00b7 art \u2014 Artworks: Describe light in artworks", items: [
+  { id: "duo_it_u291", type: "vocab", title: "Vocab: Unit 291 \u00b7 art \u2014 Describe and interpret art", items: [
     {"t": "il bronzo", "e": "bronze"},
     {"t": "bruscamente", "e": "abruptly / sharply"},
     {"t": "il collezionista", "e": "collector / art collector"},
@@ -13888,7 +13888,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la tela", "e": "canvas / cloth / fabric"},
     {"t": "la vernice", "e": "paint / varnish"}
   ]},
-  { id: "duo_it_u292", type: "vocab", title: "Vocab: Unit 292 \u00b7 outer space \u2014 Space: Point out stars and rockets", items: [
+  { id: "duo_it_u292", type: "vocab", title: "Vocab: Unit 292 \u00b7 outer space \u2014 Describe the horizon and sky", items: [
     {"t": "l'asteroide", "e": "asteroid"},
     {"t": "l'astronauta", "e": "astronaut"},
     {"t": "l'astronave", "e": "spaceship / spacecraft / starship"},
@@ -13911,7 +13911,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il satellite", "e": "satellite / moon / artificial satellite"},
     {"t": "sorgere", "e": "to rise"}
   ]},
-  { id: "duo_it_u293", type: "vocab", title: "Vocab: Unit 293 \u00b7 medical professions \u2014 Illness: Describe your hospital stay", items: [
+  { id: "duo_it_u293", type: "vocab", title: "Vocab: Unit 293 \u00b7 medical professions \u2014 Talk about your hospital stay", items: [
     {"t": "cronico", "e": "chronic / persistent / long-standing"},
     {"t": "la dose", "e": "dose / dosage"},
     {"t": "la frattura", "e": "fracture / break"},
@@ -13934,7 +13934,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la vaccinazione", "e": "vaccination / immunization / inoculation"},
     {"t": "la vertigine", "e": "dizziness"}
   ]},
-  { id: "duo_it_u294", type: "vocab", title: "Vocab: Unit 294 \u00b7 ethical shopping \u2014 Products: Explain your product choice", items: [
+  { id: "duo_it_u294", type: "vocab", title: "Vocab: Unit 294 \u00b7 ethical shopping \u2014 Explain your purchase choices", items: [
     {"t": "l'acquisto", "e": "purchase"},
     {"t": "l'allevamento", "e": "breeding / farming / farm"},
     {"t": "artigianale", "e": "artisan / artisanal / handcrafted"},
@@ -13956,7 +13956,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "stagionale", "e": "seasonal"},
     {"t": "il vegetale", "e": "vegetable / plant"}
   ]},
-  { id: "duo_it_u295", type: "vocab", title: "Vocab: Unit 295 \u00b7 global trade \u2014 Logistics: Describe daily shipping tasks", items: [
+  { id: "duo_it_u295", type: "vocab", title: "Vocab: Unit 295 \u00b7 global trade \u2014 Talk about shipping cargo", items: [
     {"t": "la commissione", "e": "commission"},
     {"t": "consolidare", "e": "to consolidate"},
     {"t": "il container", "e": "container / shipping container / storage container"},
@@ -13978,7 +13978,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la stima", "e": "esteem / estimate"},
     {"t": "la trattativa", "e": "negotiation"}
   ]},
-  { id: "duo_it_u296", type: "vocab", title: "Vocab: Unit 296 \u00b7 cooking 2 \u2014 Cooking: Talk about favorite dishes", items: [
+  { id: "duo_it_u296", type: "vocab", title: "Vocab: Unit 296 \u00b7 cooking 2 \u2014 Talk about cooking together", items: [
     {"t": "affettare", "e": "to slice"},
     {"t": "l'apriscatole", "e": "can opener / tin opener / electric can opener"},
     {"t": "il bollito", "e": "boiled / boiled meat"},
@@ -14000,7 +14000,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "lo zafferano", "e": "saffron"},
     {"t": "lo zenzero", "e": "ginger"}
   ]},
-  { id: "duo_it_u297", type: "vocab", title: "Vocab: Unit 297 \u00b7 customer service 2 \u2014 Service: Switch to another operator", items: [
+  { id: "duo_it_u297", type: "vocab", title: "Vocab: Unit 297 \u00b7 customer service 2 \u2014 Provide tech support to users", items: [
     {"t": "l'abbonamento", "e": "subscription / pass"},
     {"t": "accurato", "e": "accurate / careful"},
     {"t": "la compatibilità", "e": "compatibility"},
@@ -14022,7 +14022,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "l'urgenza", "e": "urgency / emergency / need"},
     {"t": "verificarsi", "e": "to occur"}
   ]},
-  { id: "duo_it_u298", type: "vocab", title: "Vocab: Unit 298 \u00b7 neighborhood \u2014 Neighborhood: Point out local features", items: [
+  { id: "duo_it_u298", type: "vocab", title: "Vocab: Unit 298 \u00b7 neighborhood \u2014 Describe your neighborhood", items: [
     {"t": "l'attico", "e": "penthouse / attic"},
     {"t": "l'attraversamento", "e": "crossing / pedestrian crossing"},
     {"t": "il bilocale", "e": "two-room apartment / one-bedroom apartment / two-room flat"},
@@ -14044,7 +14044,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "trafficato", "e": "busy / congested"},
     {"t": "il vicolo", "e": "alley / lane / narrow street"}
   ]},
-  { id: "duo_it_u299", type: "vocab", title: "Vocab: Unit 299 \u00b7 activism \u2014 Activism: Share your view on activism", items: [
+  { id: "duo_it_u299", type: "vocab", title: "Vocab: Unit 299 \u00b7 activism \u2014 Share your views on protests", items: [
     {"t": "l'attivista", "e": "activist / campaigner / advocate"},
     {"t": "autoritario", "e": "autocratic / authoritarian / strict"},
     {"t": "il comitato", "e": "committee"},
@@ -14067,7 +14067,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "solidale", "e": "supportive / sympathetic / united"},
     {"t": "il sondaggio", "e": "survey / poll / questionnaire"}
   ]},
-  { id: "duo_it_u300", type: "vocab", title: "Vocab: Unit 300 \u00b7 restaurant 2 \u2014 Dishes: Describe a dish", items: [
+  { id: "duo_it_u300", type: "vocab", title: "Vocab: Unit 300 \u00b7 restaurant 2 \u2014 Describe flavors and textures", items: [
     {"t": "l'abbinamento", "e": "pairing / combination / match"},
     {"t": "agrodolce", "e": "sweet and sour / bittersweet / sweet-sour"},
     {"t": "al dente", "e": "al dente"},
@@ -14089,7 +14089,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il vitello", "e": "veal"},
     {"t": "la vongola", "e": "clam"}
   ]},
-  { id: "duo_it_u301", type: "vocab", title: "Vocab: Unit 301 \u00b7 language learning \u2014 Language: Prepare for a language test", items: [
+  { id: "duo_it_u301", type: "vocab", title: "Vocab: Unit 301 \u00b7 language learning \u2014 Prepare for a language test", items: [
     {"t": "l'apprendimento", "e": "learning"},
     {"t": "associare", "e": "to associate"},
     {"t": "il canale", "e": "channel"},
@@ -14111,7 +14111,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il sinonimo", "e": "synonym"},
     {"t": "il test", "e": "test"}
   ]},
-  { id: "duo_it_u302", type: "vocab", title: "Vocab: Unit 302 \u00b7 music 2 \u2014 Music: React to live music", items: [
+  { id: "duo_it_u302", type: "vocab", title: "Vocab: Unit 302 \u00b7 music 2 \u2014 Talk about a live concert", items: [
     {"t": "abbondantemente", "e": "generously"},
     {"t": "accomodarsi", "e": "to sit down"},
     {"t": "accordare", "e": "to tune / to grant"},
@@ -14133,7 +14133,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il trombone", "e": "trombone"},
     {"t": "il vinile", "e": "vinyl"}
   ]},
-  { id: "duo_it_u303", type: "vocab", title: "Vocab: Unit 303 \u00b7 recipes \u2014 Flavors: Describe different flavors", items: [
+  { id: "duo_it_u303", type: "vocab", title: "Vocab: Unit 303 \u00b7 recipes \u2014 Explain how to prepare a dish", items: [
     {"t": "l'alloro", "e": "bay / laurel"},
     {"t": "l'aroma", "e": "aroma / scent"},
     {"t": "la consistenza", "e": "consistency / texture / thickness"},
@@ -14156,7 +14156,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il tuorlo", "e": "egg yolk / yolk"},
     {"t": "utensile", "e": "utensil / tool / implement"}
   ]},
-  { id: "duo_it_u304", type: "vocab", title: "Vocab: Unit 304 \u00b7 news \u2014 News: Explain an official statement", items: [
+  { id: "duo_it_u304", type: "vocab", title: "Vocab: Unit 304 \u00b7 news \u2014 Discuss official announcements", items: [
     {"t": "accadere", "e": "to happen"},
     {"t": "attendibile", "e": "reliable / credible"},
     {"t": "calare", "e": "to decrease"},
@@ -14179,7 +14179,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "ufficialmente", "e": "officially"},
     {"t": "la versione", "e": "version"}
   ]},
-  { id: "duo_it_u305", type: "vocab", title: "Vocab: Unit 305 \u00b7 technology \u2014 Devices: Describe device settings", items: [
+  { id: "duo_it_u305", type: "vocab", title: "Vocab: Unit 305 \u00b7 technology \u2014 Discuss app interface updates", items: [
     {"t": "l'antenna", "e": "antenna / aerial"},
     {"t": "il caricabatterie", "e": "charger / battery charger"},
     {"t": "il circuito", "e": "circuit"},
@@ -14201,7 +14201,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "l'utilizzo", "e": "use / usage"},
     {"t": "velocizzare", "e": "to speed up / accelerate"}
   ]},
-  { id: "duo_it_u306", type: "vocab", title: "Vocab: Unit 306 \u00b7 scientific discoveries 2 \u2014 Nature: Watch for changes", items: [
+  { id: "duo_it_u306", type: "vocab", title: "Vocab: Unit 306 \u00b7 scientific discoveries 2 \u2014 Discuss a science experiment", items: [
     {"t": "acido", "e": "acidic / acid / sour"},
     {"t": "l'astronomia", "e": "astronomy"},
     {"t": "l'atomo", "e": "atom"},
@@ -14222,7 +14222,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "tecnologico", "e": "technological / technological-related"},
     {"t": "terrestre", "e": "terrestrial / earthly / land-dwelling"}
   ]},
-  { id: "duo_it_u307", type: "vocab", title: "Vocab: Unit 307 \u00b7 risks \u2014 Disaster: Explain how you stayed safe", items: [
+  { id: "duo_it_u307", type: "vocab", title: "Vocab: Unit 307 \u00b7 risks \u2014 Talk about floods and illness", items: [
     {"t": "l'alluvione", "e": "flood"},
     {"t": "ampiamente", "e": "extensively"},
     {"t": "assicurare", "e": "to insure / to assure / to ensure"},
@@ -14246,7 +14246,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la quarantena", "e": "quarantine"},
     {"t": "sopravvivere", "e": "to survive"}
   ]},
-  { id: "duo_it_u308", type: "vocab", title: "Vocab: Unit 308 \u00b7 gender orientation \u2014 Identity: Share a personal story", items: [
+  { id: "duo_it_u308", type: "vocab", title: "Vocab: Unit 308 \u00b7 gender orientation \u2014 Talk about sexual orientation", items: [
     {"t": "avemmo", "e": "(we) had"},
     {"t": "aveste", "e": "(you all) had"},
     {"t": "avesti", "e": "(you) had"},
@@ -14273,7 +14273,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "l'unione", "e": "union / harmony / joining"},
     {"t": "la visibilità", "e": "visibility"}
   ]},
-  { id: "duo_it_u309", type: "vocab", title: "Vocab: Unit 309 \u00b7 hard sciences \u2014 Science: Describe your science project", items: [
+  { id: "duo_it_u309", type: "vocab", title: "Vocab: Unit 309 \u00b7 hard sciences \u2014 Describe your science project", items: [
     {"t": "l'acidità", "e": "acidity"},
     {"t": "applicare", "e": "to apply"},
     {"t": "componente", "e": "component / member / element"},
@@ -14304,7 +14304,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la superficie", "e": "surface"},
     {"t": "il telescopio", "e": "telescope"}
   ]},
-  { id: "duo_it_u310", type: "vocab", title: "Vocab: Unit 310 \u00b7 nature \u2014 Nature: Share an experience in nature", items: [
+  { id: "duo_it_u310", type: "vocab", title: "Vocab: Unit 310 \u00b7 nature \u2014 Describe a scene in nature", items: [
     {"t": "allevare", "e": "to raise / to breed / to rear"},
     {"t": "l'anfibio", "e": "amphibian / amphibious vehicle / amphibious soldier"},
     {"t": "il carnivoro", "e": "carnivore / carnivorous"},

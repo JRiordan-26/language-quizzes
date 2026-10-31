@@ -1078,10 +1078,49 @@ function buildPool(){
 }
 
 // ---------- quiz building ----------
+// Vocab quizzes put related words back-to-back (same word family like
+// parlo/parlare, shared gloss word like good morning/good evening, same
+// themed unit like fork/knife) while the order OF the groups stays random.
+const SIM_STOP = new Set(['the','and','for','with','that','this','you','are','not','was','were','has','have','had','can','will','would','does','did','from','they','she','him','her','your','his','its','one','some','any','all','both','each','every','more','most','very','much','many','thing','things','there','here','when','where','what','how','who','too','also','about','into','onto','out','off']);
+function simKeyTokens(it){
+  return {
+    tw: stripArticle(foldTxt(it.t)).split(' ').filter(x=>x.length>=3),
+    ew: foldTxt(it.e).split(' ').filter(x=>x.length>=3 && !SIM_STOP.has(x))
+  };
+}
+function simScore(a,b,sameUnit){
+  for(const x of a.tw) for(const y of b.tw){
+    const n=Math.min(x.length,y.length); let cp=0;
+    while(cp<n && x[cp]===y[cp]) cp++;
+    if(cp>=4 || cp===n && cp>=3) return 3;     // same word / word family
+  }
+  for(const x of a.ew) if(b.ew.includes(x)) return 2;  // shared English sense word
+  return sameUnit ? 1 : 0;                     // same themed unit
+}
+function groupSimilar(picked){
+  const n=picked.length;
+  if(n<3 || n>400) return picked;              // O(n²) — skip huge "all" runs
+  const ks=picked.map(p=>simKeyTokens(p.item));
+  const used=new Array(n).fill(false);
+  const out=[picked[0]]; used[0]=true;
+  let last=0;
+  for(let k=1;k<n;k++){
+    let best=-1,bs=0;
+    for(let j=0;j<n;j++){
+      if(used[j]) continue;
+      const s=simScore(ks[last],ks[j], picked[last].unit===picked[j].unit);
+      if(s>bs){ bs=s; best=j; if(s===3) break; }
+    }
+    if(best<0) for(let j=0;j<n;j++) if(!used[j]){ best=j; break; }  // random fresh group
+    used[best]=true; out.push(picked[best]); last=best;
+  }
+  return out;
+}
 function startQuiz(){
   const pool = buildPool();
   if(!pool.length) return;
-  const picked = shuffle(pool).slice(0, Math.min(state.qCount, pool.length));
+  let picked = shuffle(pool).slice(0, Math.min(state.qCount, pool.length));
+  if(state.quizType==='vocab') picked = groupSimilar(picked);
   let questions;
   if(state.quizType==='vocab'){
     // distractors drawn from the full selected pool (fall back to whole language)

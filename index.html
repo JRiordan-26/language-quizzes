@@ -2243,10 +2243,10 @@ function getMissSets(lang){ try{ return JSON.parse(localStorage.getItem('lq_miss
 function saveMissSets(lang, a){ localStorage.setItem('lq_misssets_'+lang, JSON.stringify(a)); }
 function missPool(lang, sel, set){
   const seen=new Set(), pool=[];
-  if(set==='th'){                             // themed bank: misses across its category climbs
-    for(const c of TH_CATS){
-      if(sel && !sel.has('th:'+c.id)) continue;
-      for(const w of getClimb(lang,'th:'+c.id).lastMiss){
+  if(set==='th'){                             // themed bank: misses across its category climbs (all parts)
+    for(const s of thSlotsAll(lang)){
+      if(sel && !sel.has(s)) continue;
+      for(const w of getClimb(lang,s).lastMiss){
         const k=stripArticle(foldTxt(w.t));
         if(!k||seen.has(k)) continue;
         seen.add(k); pool.push({t:w.t, e:w.e});
@@ -2288,7 +2288,7 @@ function englishAnswerOk(typed, gloss){
 }
 function missClear(lang, t){
   const k=stripArticle(foldTxt(t));
-  const slots=[...Array(CLIMB_SLOTS).keys(), ...TH_CATS.map(c=>'th:'+c.id)];
+  const slots=[...Array(CLIMB_SLOTS).keys(), ...thSlotsAll(lang)];
   for(const s of slots){
     const L=getClimb(lang,s);
     const nl=L.lastMiss.filter(w=>stripArticle(foldTxt(w.t))!==k);
@@ -2354,6 +2354,37 @@ function thPools(lang){
   _thPools[lang]=pools;
   return pools;
 }
+// A theme with more than 50 words splits into ceil(pool/50) climbs of
+// near-equal size (25–50 words each), covering the WHOLE pool instead of a
+// random 50. Part k of category id lives at slot 'th:id:k'; part 0 keeps the
+// bare 'th:id' slot so pre-split progress carries over. Part boundaries can
+// drift as the pool changes (new data, learned words) — started climbs keep
+// their snapshotted list regardless.
+function thParts(pool){ return Math.max(1, Math.ceil((pool?pool.length:0)/50)); }
+function thSlot(id, part){ return 'th:'+id+(part?':'+part:''); }
+function thSlotInfo(s){ const p=String(s).split(':'); return {id:p[1], part:+(p[2]||0)}; }
+function thSlice(pool, part){
+  const n=thParts(pool), base=Math.floor(pool.length/n), rem=pool.length%n;
+  const start=part*base+Math.min(part,rem), len=base+(part<rem?1:0);
+  return pool.slice(start, start+len);
+}
+function thSlotName(lang, s){
+  const {id,part}=thSlotInfo(s);
+  const c=TH_CATS.find(x=>x.id===id);
+  const n=thParts(thPools(lang)[id]||[]);
+  return (c?c.name:id)+(n>1?` ${part+1}/${n}`:'');
+}
+// Every themed slot incl. parts — plus any stored stragglers beyond the
+// current part count (pool shrank), so their misses/progress stay reachable.
+function thSlotsAll(lang){
+  const pools=thPools(lang), out=[];
+  for(const c of TH_CATS){
+    const n=thParts(pools[c.id]);
+    for(let k=0;k<n;k++) out.push(thSlot(c.id,k));
+    for(let k=n;;k++){ if(localStorage.getItem(climbKey(lang,thSlot(c.id,k)))) out.push(thSlot(c.id,k)); else break; }
+  }
+  return out;
+}
 // Refresh stored word snapshots from current course data (like migrateDaily),
 // so gloss/article improvements reach climbs and 100-word quizzes already built.
 function refreshStoredWords(lang, arr){
@@ -2374,7 +2405,7 @@ function refreshStoredWords(lang, arr){
 function migrateMastery(lang){
   const H=getHundred(lang);
   if(H.list.length && refreshStoredWords(lang,H.list)) saveHundred(lang,H);
-  for(const s of [...Array(CLIMB_SLOTS).keys(), ...TH_CATS.map(c=>'th:'+c.id)]){
+  for(const s of [...Array(CLIMB_SLOTS).keys(), ...thSlotsAll(lang)]){
     const L=getClimb(lang,s);
     if(!L.list.length) continue;
     const before=JSON.stringify(L.tested);
@@ -2466,8 +2497,8 @@ function makeClimbSlotRow(lang, current){
   }
   {  // themed bank — same vocabulary regrouped by meaning
     let nAct=0, nDone=0, nMiss=0;
-    for(const c of TH_CATS){
-      const C=getClimb(lang,'th:'+c.id);
+    for(const s of thSlotsAll(lang)){
+      const C=getClimb(lang,s);
       if(C.used) nAct++; nDone+=C.n; nMiss+=C.lastMiss.length;
     }
     const lbl=nAct||nDone?`${nAct} active${nDone?` · ${nDone}🏁`:''}${nMiss?` · 🎯${nMiss}`:''}`:'by topic';
@@ -2479,14 +2510,24 @@ function makeClimbSlotRow(lang, current){
   const row=$(`<div class="row" style="margin-bottom:14px"></div>`);
   if(set==='th'){
     const pools=thPools(lang);
+    const curInfo=isThSlot(current)?thSlotInfo(current):null;
     for(const c of TH_CATS){
       const pool=pools[c.id];
       if(pool.length<5) continue;                       // too thin to climb
-      const slot='th:'+c.id;
-      const C=getClimb(lang,slot);
-      const lbl=C.used?`${C.used}/${climbCap(C)}${C.lastMiss.length?` · 🎯${C.lastMiss.length}`:''}`:(C.n?`${C.n} done`:`${Math.min(50,pool.length)} words`);
-      const b=$(`<button style="flex:1;min-width:120px;padding:9px 6px${slot===current?';border:2px solid var(--accent)':''}">${c.icon} ${c.name}${C.rev?' 🔄':''}<br><span class="pill">${lbl}</span></button>`);
-      b.onclick=()=>{ state.climbSlot=slot; state.lq=null; render(); };
+      const n=thParts(pool);
+      const hot=!!(curInfo && curInfo.id===c.id);
+      let lbl, rev='';
+      if(n===1){
+        const C=getClimb(lang,thSlot(c.id,0));
+        lbl=C.used?`${C.used}/${climbCap(C)}${C.lastMiss.length?` · 🎯${C.lastMiss.length}`:''}`:(C.n?`${C.n} done`:`${pool.length} words`);
+        if(C.rev) rev=' 🔄';
+      } else {                                          // multi-part: aggregate across the parts
+        let nAct=0, nDone=0, nMiss=0;
+        for(let k=0;k<n;k++){ const C=getClimb(lang,thSlot(c.id,k)); if(C.used) nAct++; nDone+=C.n; nMiss+=C.lastMiss.length; }
+        lbl=(nAct||nDone)?`${n} climbs${nAct?` · ${nAct} active`:''}${nDone?` · ${nDone}🏁`:''}${nMiss?` · 🎯${nMiss}`:''}`:`${pool.length} words · ${n} climbs`;
+      }
+      const b=$(`<button style="flex:1;min-width:120px;padding:9px 6px${hot?';border:2px solid var(--accent)':''}">${c.icon} ${c.name}${rev}<br><span class="pill">${lbl}</span></button>`);
+      b.onclick=()=>{ if(!hot) state.climbSlot=thSlot(c.id,0); state.lq=null; render(); };
       row.appendChild(b);
     }
     const mp=missPool(lang, null, 'th');
@@ -2494,6 +2535,22 @@ function makeClimbSlotRow(lang, current){
     mb.onclick=()=>{ state.climbSet='th'; state.climbSlot='miss'; state.lq=null; render(); };
     row.appendChild(mb);
     wrap.appendChild(row);
+    // part selector for the current multi-part category
+    if(curInfo){
+      const pool=pools[curInfo.id]||[], n=thParts(pool);
+      if(n>1){
+        const cat=TH_CATS.find(c=>c.id===curInfo.id);
+        const prow=$(`<div class="row" style="margin-bottom:14px"></div>`);
+        for(let k=0;k<n;k++){
+          const slot=thSlot(curInfo.id,k), C=getClimb(lang,slot);
+          const lbl=C.used?`${C.used}/${climbCap(C)}${C.lastMiss.length?` · 🎯${C.lastMiss.length}`:''}`:(C.n?`${C.n} done`:`${thSlice(pool,k).length} words`);
+          const b=$(`<button style="flex:1;min-width:92px;padding:9px 6px${slot===current?';border:2px solid var(--accent)':''}">${cat?cat.icon:''} Part ${k+1}${C.rev?' 🔄':''}<br><span class="pill">${lbl}</span></button>`);
+          b.onclick=()=>{ state.climbSlot=slot; state.lq=null; render(); };
+          prow.appendChild(b);
+        }
+        wrap.appendChild(prow);
+      }
+    }
     return wrap;
   }
   for(let s=set*CLIMB_SET;s<(set+1)*CLIMB_SET;s++){
@@ -2545,16 +2602,19 @@ function renderClimb(){
         card.appendChild(bk2); app.appendChild(card); return;
       }
       if(isThSlot(state.climbSlot)){
-        const catId=state.climbSlot.slice(3);
+        const {id:catId, part}=thSlotInfo(state.climbSlot);
         const cat=TH_CATS.find(c=>c.id===catId);
         const pool=thPools(lang)[catId]||[];
-        const nW=Math.min(50,pool.length);
-        card.appendChild($(`<div style="line-height:1.6">${L.n?`🏁 Completed <b>${L.n}</b> time${L.n>1?'s':''}.<br>`:''}<b>${cat?cat.icon+' '+cat.name:catId}</b> — ${pool.length} matching word${pool.length!==1?'s':''} in the course vocabulary${pool.length>50?` (the climb takes a random 50)`:''}. These words overlap your numbered climbs on purpose: same vocabulary, regrouped by topic.</div>`));
+        const n=thParts(pool);
+        const slice=thSlice(pool,part);
+        const nW=Math.min(50,slice.length);
+        const pname=(cat?cat.name:catId)+(n>1?` ${part+1}/${n}`:'');
+        card.appendChild($(`<div style="line-height:1.6">${L.n?`🏁 Completed <b>${L.n}</b> time${L.n>1?'s':''}.<br>`:''}<b>${cat?cat.icon+' ':''}${pname}</b> — ${n>1?`part ${part+1} of ${n}: <b>${slice.length}</b> of the theme's ${pool.length} words (together the parts cover them all)`:`${pool.length} matching word${pool.length!==1?'s':''} in the course vocabulary`}. These words overlap your numbered climbs on purpose: same vocabulary, regrouped by topic.</div>`));
         if(nW>=5){
           const go=$(`<button class="primary" style="margin-top:14px">▶ Start the ${nW}-word climb</button>`);
           go.onclick=()=>{ const LL=getClimb(lang);
-            LL.list=shuffle([...pool]).slice(0,50).map(w=>({t:w.t,e:w.e}));
-            LL.used=Math.min(5,LL.list.length); LL.tested=[]; LL.removed=[]; LL.lastMiss=[]; LL.th=1; LL.thName=(cat?cat.name:catId);
+            LL.list=shuffle([...slice]).slice(0,50).map(w=>({t:w.t,e:w.e}));
+            LL.used=Math.min(5,LL.list.length); LL.tested=[]; LL.removed=[]; LL.lastMiss=[]; LL.th=1; LL.thName=pname;
             saveClimb(lang,LL); state.climbLang=lang; startClimbRound(); };
           card.appendChild(go);
         }
@@ -2851,7 +2911,7 @@ function renderClimbMisses(lang, d){
     app.appendChild(makeClimbSlotRow(lang,'miss'));
     // which climbs to include (chips; default = all of this SET's climbs with misses)
     const withMiss=themed
-      ? TH_CATS.map(c=>'th:'+c.id).filter(s=>getClimb(lang,s).lastMiss.length)
+      ? thSlotsAll(lang).filter(s=>getClimb(lang,s).lastMiss.length)
       : [...Array(CLIMB_SET).keys()].map(i=>mset*CLIMB_SET+i).filter(s=>getClimb(lang,s).lastMiss.length);
     if(state.missSelLang!==lang || state.missSelSet!==mset || !(state.missSel instanceof Set)){ state.missSel=new Set(withMiss); state.missSelLang=lang; state.missSelSet=mset; }
     state.missSel=new Set([...state.missSel].filter(s=>withMiss.includes(s)));
@@ -2864,8 +2924,8 @@ function renderClimbMisses(lang, d){
         const chipRow=$(`<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px"></div>`);
         for(const s of withMiss){
           const n=getClimb(lang,s).lastMiss.length;
-          const cat=themed?TH_CATS.find(c=>'th:'+c.id===s):null;
-          const c=$(`<button class="small" style="${sel.has(s)?'border:2px solid var(--accent);color:var(--text)':'opacity:.55'}">${cat?cat.icon+' '+cat.name:'Climb '+(s+1)} · ${n}</button>`);
+          const cat=themed?TH_CATS.find(c=>c.id===thSlotInfo(s).id):null;
+          const c=$(`<button class="small" style="${sel.has(s)?'border:2px solid var(--accent);color:var(--text)':'opacity:.55'}">${themed?(cat?cat.icon+' ':'')+thSlotName(lang,s):'Climb '+(s+1)} · ${n}</button>`);
           c.onclick=()=>{ sel.has(s)?sel.delete(s):sel.add(s); render(); };
           chipRow.appendChild(c);
         }
@@ -2889,7 +2949,7 @@ function renderClimbMisses(lang, d){
           sets.push({ id:Date.now().toString(36), name:`Missed words #${sets.length+1}`,
             date:dt.toISOString().slice(0,10),
             srcs:themed?[]:[...sel].sort((a,b)=>a-b),
-            srcTxt:themed?('Themed: '+[...sel].map(s=>{const c=TH_CATS.find(x=>'th:'+x.id===s);return c?c.name:s;}).join(', ')):undefined,
+            srcTxt:themed?('Themed: '+[...sel].map(s=>thSlotName(lang,s)).join(', ')):undefined,
             words:pool.map(w=>({t:w.t,e:w.e})), runs:0, best:0, last:null, lastDate:null });
           saveMissSets(lang, sets); render();
         };

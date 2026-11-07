@@ -91,6 +91,7 @@
 <script src="data_japanese.js"></script>
 <script src="data_extra.js"></script>
 <script src="data_conjugation.js"></script>
+<script src="data_conjugation_extra.js"></script>
 <script src="data_duolingo.js"></script>
 <script src="data_idioms.js"></script>
 <script src="data_paradigms.js"></script>
@@ -979,14 +980,18 @@ function renderSetup(){
     verbCard.querySelector('#verbCnt').textContent=`${nOn} of ${universe.length} selected`;
     for(const it of universe){
       const on=!state.conjVerbsOff.has(it.inf);
-      const b=$(`<button class="small" style="margin:0;${on?'background:var(--accent);color:#fff':'opacity:.55'}" title="${(it.en||'').replace(/"/g,'&quot;')}">${it.inf}${it.irr?' ⚡':''}</button>`);
+      // irregular verbs are color-coded amber; regular stay accent-blue
+      const sty = it.irr
+        ? (on?'background:#b4631f;color:#fff;border-color:#e09a4a':'opacity:.55;color:#e09a4a;border-color:#e09a4a')
+        : (on?'background:var(--accent);color:#fff':'opacity:.55');
+      const b=$(`<button class="small" style="margin:0;${sty}" title="${(it.en||'').replace(/"/g,'&quot;')}${it.irr?' — irregular':''}">${it.inf}${it.irr?' ⚡':''}</button>`);
       b.onclick=()=>{ on?state.conjVerbsOff.add(it.inf):state.conjVerbsOff.delete(it.inf); refreshVerbCard(); updateStartBar(); };
       body.appendChild(b);
     }
   }
   if(state.quizType==='conj'){
     verbCard = $(`<div class="card"><h2 style="margin-top:0">3 · Verbs <span class="pill" id="verbCnt"></span></h2>
-      <div class="sub" style="margin-bottom:10px">Tap verbs to drop or re-add them — work on exactly the ones you want. <button class="small" id="vAll">all</button> <button class="small" id="vNone">none</button></div>
+      <div class="sub" style="margin-bottom:10px">Tap verbs to drop or re-add them — work on exactly the ones you want. <span style="color:#e09a4a">⚡ amber = irregular</span>, blue = regular. <button class="small" id="vAll">all</button> <button class="small" id="vNone">none</button></div>
       <div id="verbChips" style="display:flex;gap:6px;flex-wrap:wrap"></div></div>`);
     app.appendChild(verbCard);
     verbCard.querySelector('#vAll').onclick=()=>{ state.conjVerbsOff=new Set(); refreshVerbCard(); updateStartBar(); };
@@ -1199,7 +1204,7 @@ function renderQuiz(){
       const exPron = PRON[state.lang][0].length ? ex0+' or '+PRON[state.lang][0][0]+' '+ex0 : ex0;
       hintTxt = 'type the verb form for each person — pronoun optional (e.g. '+exPron+')';
     }
-    card.appendChild($(`<div class="qWord">${q.item.inf}</div>`));
+    card.appendChild($(`<div class="qWord">${q.item.inf}${q.item.irr?' <span style="color:#e09a4a;font-size:1.3rem" title="irregular verb">⚡</span>':''}</div>`));
     if(q.item.en) card.appendChild($(`<div style="text-align:center;font-size:1.15rem;font-style:italic;margin:-2px 0 8px">🇬🇧 ${q.item.en}</div>`));
     card.appendChild($(`<div class="qHint"><b>${q.unit.tense}</b> — ${hintTxt}</div>`));
     if(window.speechSynthesis){

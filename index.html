@@ -194,7 +194,8 @@ function conjSpeakText(lang,item){
 function conjRowOk(lang,i,typed,f,plain){
   const variants=f.split('/').map(v=>v.trim());
   const prons=plain?[]:(PRON[lang][i]||[]);
-  if(!prons.length) return variants.some(v=>answerMatches(typed,v));
+  if(variants.some(v=>answerMatches(typed,v))) return true;   // bare form — pronoun optional
+  if(!prons.length) return false;
   if(prons.some(p=>variants.some(v=>answerMatches(typed, p+' '+v)))) return true;
   // the reveal shows compound pronouns ("lui/lei lavora", "er/sie/es ist") —
   // typing them that way must count: any run of this row's pronouns + form
@@ -1194,8 +1195,9 @@ function renderQuiz(){
     if(q.item.rows){
       hintTxt = 'fill in every form';
     } else {
-      const exPron = PRON[state.lang][0].length ? PRON[state.lang][0][0]+' + verb ('+PRON[state.lang][0][0]+' '+q.item.forms[0].split('/')[0]+')' : q.item.forms[0].split('/')[0];
-      hintTxt = 'type pronoun + verb form for each person (e.g. '+exPron+')';
+      const ex0=q.item.forms[0].split('/')[0];
+      const exPron = PRON[state.lang][0].length ? ex0+' or '+PRON[state.lang][0][0]+' '+ex0 : ex0;
+      hintTxt = 'type the verb form for each person — pronoun optional (e.g. '+exPron+')';
     }
     card.appendChild($(`<div class="qWord">${q.item.inf}</div>`));
     if(q.item.en) card.appendChild($(`<div style="text-align:center;font-size:1.15rem;font-style:italic;margin:-2px 0 8px">🇬🇧 ${q.item.en}</div>`));

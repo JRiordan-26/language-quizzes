@@ -1198,7 +1198,8 @@ function renderQuiz(){
       hintTxt = 'type pronoun + verb form for each person (e.g. '+exPron+')';
     }
     card.appendChild($(`<div class="qWord">${q.item.inf}</div>`));
-    card.appendChild($(`<div class="qHint">${q.item.en} · <b>${q.unit.tense}</b> — ${hintTxt}</div>`));
+    if(q.item.en) card.appendChild($(`<div style="text-align:center;font-size:1.15rem;font-style:italic;margin:-2px 0 8px">🇬🇧 ${q.item.en}</div>`));
+    card.appendChild($(`<div class="qHint"><b>${q.unit.tense}</b> — ${hintTxt}</div>`));
     if(window.speechSynthesis){
       const sp = $(`<button class="speakBtn" title="Hear the infinitive">🔊</button>`);
       sp.onclick=()=>speak(q.item.inf, d.ttsLang);
@@ -1432,7 +1433,7 @@ function renderResult(){
       } else if(q.kind==='conj'){
         const rowLabels = q.item.rows || PERSONS_EN[state.lang];
         const tbl = rowLabels.map((p,i)=>`${p}: <span style="color:var(--good)">${conjCanon(state.lang,i,q.item.forms[i],!!q.item.rows)}</span>`).join(' · ');
-        row.appendChild($(`<span style="flex:1"><span class="w">${q.item.inf}</span> (${q.unit.tense})<br>${tbl}</span>`));
+        row.appendChild($(`<span style="flex:1"><span class="w">${q.item.inf}</span>${q.item.en?` <span style="color:var(--muted)">— ${q.item.en}</span>`:''} (${q.unit.tense})<br>${tbl}</span>`));
         if(window.speechSynthesis){
           const sp = $(`<button class="small">🔊</button>`);
           sp.onclick=()=>speak(conjSpeakText(state.lang, q.item), d.ttsLang);

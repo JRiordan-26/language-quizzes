@@ -92,6 +92,7 @@
 <script src="data_extra.js"></script>
 <script src="data_conjugation.js"></script>
 <script src="data_conjugation_extra.js"></script>
+<script src="data_sentences.js"></script>
 <script src="data_duolingo.js"></script>
 <script src="data_idioms.js"></script>
 <script src="data_paradigms.js"></script>
@@ -847,6 +848,144 @@ function renderHome(){
   app.appendChild($(note));
 }
 
+// ---------- sentence practice (💬 Sentences) ----------
+// Five random scenario sentences built from hand-authored templates
+// (data_sentences.js). Each slotted template carries one noun slot that is
+// filled from vocabulary the user has already reviewed (learned words,
+// daily-round words, climb words); unreviewed words only fill gaps.
+const SENT_SCEN = [
+  {id:'restaurant', name:'At the restaurant',       icon:'🍽️'},
+  {id:'coffee',     name:'At the coffee shop',      icon:'☕'},
+  {id:'hotel',      name:'At the hotel',            icon:'🏨'},
+  {id:'ski',        name:'At the ski lodge',        icon:'⛷️'},
+  {id:'city',       name:'Getting around the city', icon:'🚌'},
+  {id:'sights',     name:'Sightseeing',             icon:'🗺️'},
+  {id:'airport',    name:'At the airport',          icon:'✈️'},
+  {id:'shopping',   name:'Shopping',                icon:'🛍️'},
+];
+const SENT_SLOT_KW = {
+  food:'bread cheese soup salad cake pie dessert fish chicken meat beef pork ham sausage rice pasta pizza sandwich egg eggs apple banana pear peach strawberry cherry lemon orange melon grape grapes tomato potato onion carrot mushroom chocolate cookie cookies croissant butter honey jam sushi',
+  drink:'coffee tea juice wine beer milk water cappuccino espresso lemonade cocoa soda cola',
+  place:'station museum bank market supermarket park pharmacy library cinema theater theatre zoo hospital school university church beach harbor harbour',
+  trans:'bus train tram taxi metro subway plane airplane boat ship ferry bicycle bike',
+  hthing:'room key bed towel shower window blanket pillow soap lamp',
+  buy:'shirt blouse shoe shoes hat cap scarf glove gloves jacket coat sweater dress skirt sock socks postcard souvenir map book bag umbrella watch ring wallet purse',
+  sight:'museum castle church cathedral tower bridge monument palace statue temple shrine',
+  winter:'snow ice boot boots glove gloves scarf hat cap jacket coat sweater fire mountain'
+};
+const SENT_KWSETS = {}; for(const k of Object.keys(SENT_SLOT_KW)) SENT_KWSETS[k]=new Set(SENT_SLOT_KW[k].split(' '));
+// slot fills must be nouns: article-carrying languages demand the article,
+// Japanese falls back on gloss heuristics
+let _gaVerbs=null;
+function gaVerbSet(){
+  if(_gaVerbs) return _gaVerbs;
+  _gaVerbs=new Set();
+  try{ conjTenseGroups('irish').forEach(g=>g.items.forEach(it=>_gaVerbs.add(foldTxt(it.inf)))); }catch(e){}
+  return _gaVerbs;
+}
+function sentNounOk(lang, it){
+  if(lang==='irish'){
+    if(/^(an|na)\s/i.test(it.t)) return true;
+    // bare single words count as nouns unless they are known verbs (ól, ith…)
+    return !/\s/.test(it.t) && !/^to\s/i.test(it.e) && !/^(i|you|he|she|it|we|they)\s/i.test(it.e)
+      && !gaVerbSet().has(foldTxt(it.t));
+  }
+  if(lang==='japanese') return /^[぀-ヿ]+$/.test(it.t)   // kana-only single word (no verb phrases, no kanji)
+    && !/^to\s/i.test(it.e) && !/^(i|you|he|she|it|we|they)\s/i.test(it.e);
+  return startsWithArticle(it.t);
+}
+let _sentPools=null, _sentPoolsLang=null;
+function sentSlotPools(lang){
+  if(_sentPoolsLang===lang && _sentPools) return _sentPools;
+  const pools={}; for(const k of Object.keys(SENT_KWSETS)) pools[k]=[];
+  const seen=new Set();
+  const scan=it=>{
+    if(!it||!it.t||!it.e||!sentNounOk(lang,it)) return;
+    const key=stripArticle(foldTxt(it.t));
+    if(!key||seen.has(key)) return;
+    // match on the English HEAD noun (last token) so "souvenir shop" doesn't
+    // land in the souvenir slot and "coffee shop" doesn't count as a drink
+    const toks=foldTxt(sentEnBase(it.e)).split(' ').filter(Boolean);
+    const head=toks[toks.length-1];
+    if(!head) return;
+    let hit=false;
+    for(const k of Object.keys(SENT_KWSETS)) if(SENT_KWSETS[k].has(head)){ pools[k].push({t:it.t,e:it.e}); hit=true; }
+    if(hit) seen.add(key);
+  };
+  duoFlat(lang).forEach(scan);
+  DATA[lang].courses.filter(c=>!c.id.startsWith('duo_')).forEach(c=>c.units.forEach(u=>{ if(u.type==='vocab'&&u.items) u.items.forEach(scan); }));
+  _sentPools=pools; _sentPoolsLang=lang;
+  return pools;
+}
+// every word the user has engaged with anywhere in the app
+function reviewedSet(lang){
+  const s=new Set(getLearned(lang));
+  for(const k of Object.keys(getDaily(lang).stats||{})) s.add(k);
+  for(let i=0;i<localStorage.length;i++){
+    const key=localStorage.key(i);
+    if(!key||!key.startsWith('lq_climb_'+lang)) continue;
+    try{ const o=JSON.parse(localStorage.getItem(key)||'null');
+      if(o&&o.list) o.list.slice(0,o.used||0).forEach(w=>{ if(w&&w.t) s.add(w.t); });
+    }catch(e){}
+  }
+  return s;
+}
+function sentEnBase(e){
+  const s=String(e).split('/')[0].replace(/\(.*?\)/g,'').trim();
+  return s.replace(/^(the|a|an)\s+/i,'').trim();
+}
+// Irish nouns are stored with the article and its mutation (an cháis, an
+// t-arán, an tsráid): the bare noun must undo lenition/prefixes.
+function gaBare(t){
+  let s=t.replace(/^(an|na)\s+/i,'');
+  if(/^t-/i.test(s)) return s.slice(2);              // an t-arán → arán
+  if(/^ts/i.test(s)) return s.slice(1);              // an tsráid → sráid
+  if(/^h[aeiouáéíóú]/i.test(s)) return s.slice(1);   // na héadaí → éadaí
+  const m=s.match(/^([bcdfgmpst])h(.*)$/i);
+  if(m) return m[1]+m[2];                            // an cháis → cáis
+  return s;
+}
+function sentFill(lang, tp, w){
+  if(!w) return {en:tp.en, fl:tp.fl};
+  const b=sentEnBase(w.e), t=w.t;
+  const acc = lang==='german' ? t.replace(/^der /,'den ').replace(/^ein /,'einen ') : t;
+  const bare = lang==='irish' ? (/^(an|na)\s/i.test(t) ? gaBare(t) : t) : stripArticle(t);
+  return {
+    en: tp.en.replace('{E}','the '+b).replace('{Eb}',b),
+    fl: tp.fl.replace('{N}',t).replace('{Nacc}',acc).replace('{Nb}',bare)
+  };
+}
+function buildSentQuestions(){
+  const lang=state.lang, T=(window.QUIZ_SENT||{})[lang]||{};
+  const pools=sentSlotPools(lang), rev=reviewedSet(lang);
+  let cands=[];
+  for(const sc of state.sentScen) for(const tp of (T[sc]||[])) cands.push({sc,tp});
+  if(!cands.length) return [];
+  const qs=[], usedWords=new Set(), usedSent=new Set();
+  const make=(c,slotOnly)=>{
+    if(slotOnly && !c.tp.slot) return;
+    let w=null;
+    if(c.tp.slot){
+      const pool=pools[c.tp.slot]||[];
+      const fresh=pool.filter(x=>!usedWords.has(x.t));
+      const revd=fresh.filter(x=>rev.has(x.t));
+      const opts=revd.length?revd:fresh;
+      if(!opts.length) return;
+      w=opts[Math.floor(Math.random()*opts.length)];
+    }
+    const {en,fl}=sentFill(lang,c.tp,w);
+    if(usedSent.has(fl)) return;
+    usedSent.add(fl);
+    if(w) usedWords.add(w.t);
+    qs.push({kind:'sent', scen:c.sc, en, fl, word:w,
+      prompt: state.sentDir==='fromEN'?en:fl,
+      answer: state.sentDir==='fromEN'?fl:en});
+  };
+  for(const c of shuffle(cands)){ if(qs.length>=state.sentCount) break; make(c,false); }
+  for(const c of shuffle(cands)){ if(qs.length>=state.sentCount) break; make(c,true); }
+  return qs;
+}
+
 // ---------- setup ----------
 function renderSetup(){
   const d = langData();
@@ -864,7 +1003,7 @@ function renderSetup(){
   // quiz type
   const typeCard = $(`<div class="card"><h2 style="margin-top:0">1 · Quiz type</h2><div class="opts" id="types"></div><div class="opts" id="modes"></div></div>`);
   app.appendChild(typeCard);
-  const types = [ ['vocab','📖 Vocabulary'], ['grammar','✏️ Grammar'], ['conj','🔤 Conjugation & tables'] ];
+  const types = [ ['vocab','📖 Vocabulary'], ['grammar','✏️ Grammar'], ['conj','🔤 Conjugation & tables'], ['sent','💬 Sentences'] ];
   for(const [val,lbl] of types){
     const o = $(`<div class="opt ${state.quizType===val?'sel':''}">${lbl}</div>`);
     o.onclick=()=>{ state.quizType=val; render(); };
@@ -891,6 +1030,48 @@ function renderSetup(){
       typeCard.querySelector('#modes').appendChild(o);
     }
     if(state.conjFilter!=='all') typeCard.appendChild($(`<div class="voiceNote">Only ${state.conjFilter==='irr'?'irregular':'regular'} verbs will be asked from the ticked units; declension tables are unaffected.</div>`));
+  }
+  if(state.quizType==='sent'){
+    if(!state.sentScen) state.sentScen=new Set(['restaurant']);
+    if(!state.sentDir) state.sentDir='fromEN';
+    if(!state.sentCount) state.sentCount=5;
+    for(const [val,lbl] of [['fromEN','English → '+d.name+' (you produce '+d.name+')'],['toEN',d.name+' → English']]){
+      const o = $(`<div class="opt ${state.sentDir===val?'sel':''}">${lbl}</div>`);
+      o.onclick=()=>{ state.sentDir=val; render(); };
+      typeCard.querySelector('#modes').appendChild(o);
+    }
+    // scenarios
+    const scCard=$(`<div class="card"><h2 style="margin-top:0">2 · Scenarios <span class="pill">pick one or more</span></h2><div class="opts" id="scens"></div><div class="sub" id="scInfo" style="margin-top:8px"></div></div>`);
+    app.appendChild(scCard);
+    for(const sc of SENT_SCEN){
+      const on=state.sentScen.has(sc.id);
+      const o=$(`<div class="opt ${on?'sel':''}">${sc.icon} ${sc.name}</div>`);
+      o.onclick=()=>{ on?state.sentScen.delete(sc.id):state.sentScen.add(sc.id); render(); };
+      scCard.querySelector('#scens').appendChild(o);
+    }
+    if(state.sentScen.size){
+      const rev=reviewedSet(state.lang), pools=sentSlotPools(state.lang);
+      const T=(window.QUIZ_SENT||{})[state.lang]||{};
+      const slotKinds=new Set();
+      for(const id of state.sentScen) (T[id]||[]).forEach(tp=>{ if(tp.slot) slotKinds.add(tp.slot); });
+      const cnt=new Set(), cntR=new Set();
+      for(const k of slotKinds) for(const w of (pools[k]||[])){ if(!cnt.has(w.t)){ cnt.add(w.t); if(rev.has(w.t)) cntR.add(w.t); } }
+      scCard.querySelector('#scInfo').innerHTML =
+        `Sentences are generated fresh each time and use words you've already reviewed where possible — <b>${cntR.size}</b> of your reviewed words fit these scenarios${cntR.size<5?' (new words will fill the gaps)':''}.`;
+    } else scCard.querySelector('#scInfo').textContent='Pick at least one scenario.';
+    // length
+    const lenC=$(`<div class="card"><h2 style="margin-top:0">3 · Sentences per quiz</h2><div class="opts" id="slens"></div></div>`);
+    app.appendChild(lenC);
+    for(const v of [5,10]){
+      const o=$(`<div class="opt ${state.sentCount===v?'sel':''}">${v}</div>`);
+      o.onclick=()=>{ state.sentCount=v; render(); };
+      lenC.querySelector('#slens').appendChild(o);
+    }
+    // start bar
+    const sbar=$(`<div class="startBar"><div class="info">${state.sentScen.size? state.sentScen.size+' scenario'+(state.sentScen.size>1?'s':'')+' → '+state.sentCount+' random sentences':'Select at least one scenario.'}</div><button class="primary" id="sStart" ${state.sentScen.size?'':'disabled'}>Start quiz ▶</button></div>`);
+    app.appendChild(sbar);
+    sbar.querySelector('#sStart').onclick=startQuiz;
+    return;
   }
 
   // units
@@ -1130,6 +1311,13 @@ function groupSimilar(picked){
   return out;
 }
 function startQuiz(){
+  if(state.quizType==='sent'){
+    const questions = buildSentQuestions();
+    if(!questions.length) return;
+    state.quiz = { questions, idx:0, correct:0, missed:[], answered:false };
+    state.screen='quiz'; render();
+    return;
+  }
   const pool = buildPool();
   if(!pool.length) return;
   let picked = shuffle(pool).slice(0, Math.min(state.qCount, pool.length));
@@ -1173,7 +1361,7 @@ function renderQuiz(){
   const q = qz.questions[qz.idx];
   const d = langData();
   app.appendChild($(`<div class="topnav"><span class="backlink" id="quit">✕ Quit quiz</span>
-    <span style="color:var(--muted);font-size:.9rem">${d.flag} ${state.quizType==='vocab'?'Vocabulary':state.quizType==='conj'?'Conjugation':'Grammar'}</span></div>`));
+    <span style="color:var(--muted);font-size:.9rem">${d.flag} ${state.quizType==='vocab'?'Vocabulary':state.quizType==='conj'?'Conjugation':state.quizType==='sent'?'Sentences':'Grammar'}</span></div>`));
   app.querySelector('#quit').onclick=()=>{ if(confirm('Quit this quiz?')){ state.screen='setup'; render(); } };
 
   app.appendChild($(`<div class="qTop"><span>Question ${qz.idx+1} / ${qz.questions.length}</span><span>Score: ${qz.correct}</span></div>`));
@@ -1217,6 +1405,17 @@ function renderQuiz(){
     if(window.speechSynthesis){
       const sp = $(`<button class="speakBtn" title="Hear the infinitive">🔊</button>`);
       sp.onclick=()=>speak(q.item.inf, d.ttsLang);
+      card.appendChild(sp);
+    }
+  } else if(q.kind==='sent'){
+    const sc=SENT_SCEN.find(s=>s.id===q.scen);
+    const toFL = state.sentDir==='fromEN';
+    card.appendChild($(`<div style="text-align:center;margin-bottom:6px"><span class="pill">${sc?sc.icon+' '+sc.name:'💬'}</span></div>`));
+    card.appendChild($(`<div class="qWord" style="font-size:1.3rem;line-height:1.55">${state.lang==='japanese'&&!toFL?jpDisp(q.prompt):q.prompt}</div>`));
+    card.appendChild($(`<div class="qHint">Translate into ${toFL?d.name:'English'} — exact matches check automatically, otherwise compare with the model answer</div>`));
+    if(window.speechSynthesis && !toFL){
+      const sp = $(`<button class="speakBtn" title="Play audio">🔊</button>`);
+      sp.onclick=()=>speak(q.prompt, d.ttsLang);
       card.appendChild(sp);
     }
   } else {
@@ -1307,6 +1506,68 @@ function renderQuiz(){
     wrapC.appendChild(accRow); wrapC.appendChild(go);
     card.appendChild(wrapC);
     setTimeout(()=>inputs[0].focus(),50);
+  } else if(q.kind==='sent'){
+    const toFL = state.sentDir==='fromEN';
+    const wrapS = $(`<div style="max-width:640px;margin:0 auto;text-align:center"></div>`);
+    const inp = $(`<input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" style="width:100%;padding:14px 16px;font-size:1.05rem;border-radius:10px;border:2px solid var(--border);background:var(--card);color:var(--text);outline:none" placeholder="Type your translation…">`);
+    if(toFL) jpBind(inp, state.lang);
+    wrapS.appendChild(inp);
+    if(toFL && (ACCENTS[state.lang]||[]).length){
+      const accRow = $(`<div style="display:flex;gap:6px;justify-content:center;margin:10px 0 0;flex-wrap:wrap"></div>`);
+      ACCENTS[state.lang].forEach(chr=>{
+        const b = $(`<button class="small" style="min-width:38px;font-size:1.05rem">${chr}</button>`);
+        const cb=comboFor(state.lang,chr); if(cb) b.title=cb;
+        b.onclick=()=>{ const s=inp.selectionStart||inp.value.length; inp.value=inp.value.slice(0,s)+chr+inp.value.slice(inp.selectionEnd||s); inp.focus(); inp.setSelectionRange(s+1,s+1); };
+        accRow.appendChild(b);
+      });
+      wrapS.appendChild(accRow);
+    }
+    const go = $(`<button class="primary" style="display:block;margin:10px auto 0">Check</button>`);
+    function revealSent(){
+      if(qz.answered) return;
+      qz.answered=true;
+      inp.disabled=true; go.style.display='none';
+      const typed=inp.value.trim();
+      const auto = !!typed && answerMatches(typed, q.answer);
+      const fb = $(`<div class="feedback"></div>`);
+      const ansHtml = (state.lang==='japanese'&&toFL)?jpDisp(q.answer):q.answer;
+      const flSent = toFL ? q.answer : q.prompt;
+      const next = $(`<button class="primary" style="margin-top:12px">${qz.idx+1<qz.questions.length?'Next →':'Finish'}</button>`);
+      next.onclick=()=>{
+        qz.answered=false;
+        if(qz.idx+1<qz.questions.length){ qz.idx++; render(); }
+        else { state.screen='result'; render(); }
+      };
+      fb.appendChild($(`<div style="font-size:1.15rem;line-height:1.5"><span style="color:var(--good)">${ansHtml}</span></div>`));
+      if(window.speechSynthesis && state.lang!=='irish'){
+        const hear=$(`<button class="small" style="margin-top:8px">🔊 Hear it</button>`);
+        hear.onclick=()=>speak(flSent, d.ttsLang);
+        fb.appendChild(hear);
+      }
+      if(q.word) fb.appendChild($(`<div style="color:var(--muted);font-size:.9rem;margin-top:6px">uses your word: <b>${q.word.t}</b> — ${q.word.e}</div>`));
+      if(auto){
+        qz.correct++;
+        inp.style.borderColor='var(--good)';
+        fb.prepend($(`<div style="font-weight:600;color:var(--good);margin-bottom:6px">✔ Correct!</div>`));
+        fb.appendChild(next);
+        setTimeout(()=>next.focus(),50);
+      } else {
+        fb.appendChild($(`<div style="margin-top:10px;color:var(--muted)">${typed?'Compare with your version — did you have it right?':'Did you have it right?'}</div>`));
+        const row=$(`<div class="row" style="justify-content:center;margin-top:8px"></div>`);
+        const yes=$(`<button class="primary">✓ I had it right</button>`);
+        const no=$(`<button>✗ Count as missed</button>`);
+        yes.onclick=()=>{ qz.correct++; row.remove(); fb.appendChild(next); next.focus(); };
+        no.onclick=()=>{ qz.missed.push(q); row.remove(); fb.appendChild(next); next.focus(); };
+        row.appendChild(yes); row.appendChild(no);
+        fb.appendChild(row);
+      }
+      card.appendChild(fb);
+    }
+    inp.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); revealSent(); } });
+    go.onclick=revealSent;
+    wrapS.appendChild(go);
+    card.appendChild(wrapS);
+    setTimeout(()=>inp.focus(),50);
   } else if(q.kind==='vocab' && q.mode==='type'){
     const wrapT = $(`<div style="max-width:560px;margin:0 auto;text-align:center"></div>`);
     const inp = $(`<input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" style="width:100%;padding:14px 16px;font-size:1.1rem;border-radius:10px;border:2px solid var(--border);background:var(--card);color:var(--text);outline:none" placeholder="Type here…">`);
@@ -1451,6 +1712,14 @@ function renderResult(){
         if(window.speechSynthesis){
           const sp = $(`<button class="small">🔊</button>`);
           sp.onclick=()=>speak(conjSpeakText(state.lang, q.item), d.ttsLang);
+          row.appendChild(sp);
+        }
+      } else if(q.kind==='sent'){
+        const sc=SENT_SCEN.find(s=>s.id===q.scen);
+        row.appendChild($(`<span style="flex:1">${sc?sc.icon+' ':''}${q.prompt}<br><span style="color:var(--good)">${q.answer}</span>${q.word?`<br><span style="color:var(--muted);font-size:.9rem">word: ${q.word.t} — ${q.word.e}</span>`:''}</span>`));
+        if(window.speechSynthesis){
+          const sp = $(`<button class="small">🔊</button>`);
+          sp.onclick=()=>speak(state.sentDir==='fromEN'?q.answer:q.prompt, d.ttsLang);
           row.appendChild(sp);
         }
       } else {

@@ -68,7 +68,9 @@ window.QUIZ_CONJ.german.push(
     {inf:"nehmen", irr:1, en:"would take (nähme)", forms:["nähme/würde nehmen","nähmest/nähmst/würdest nehmen","nähme/würde nehmen","nähmen/würden nehmen","nähmet/nähmt/würdet nehmen","nähmen/würden nehmen"]},
     {inf:"lassen", irr:1, en:"would let (ließe)", forms:["ließe/würde lassen","ließest/würdest lassen","ließe/würde lassen","ließen/würden lassen","ließet/würdet lassen","ließen/würden lassen"]},
     {inf:"schlafen", irr:1, en:"would sleep (schliefe)", forms:["schliefe/würde schlafen","schliefest/würdest schlafen","schliefe/würde schlafen","schliefen/würden schlafen","schliefet/würdet schlafen","schliefen/würden schlafen"]},
-    {inf:"lesen", irr:1, en:"would read (läse)", forms:["läse/würde lesen","läsest/würdest lesen","läse/würde lesen","läsen/würden lesen","läset/würdet lesen","läsen/würden lesen"]}
+    {inf:"lesen", irr:1, en:"would read (läse)", forms:["läse/würde lesen","läsest/würdest lesen","läse/würde lesen","läsen/würden lesen","läset/würdet lesen","läsen/würden lesen"]},
+    {inf:"machen", en:"would do / make (würde machen)", forms:["würde machen/machte","würdest machen/machtest","würde machen/machte","würden machen/machten","würdet machen/machtet","würden machen/machten"]},
+    {inf:"wohnen", en:"would live (würde wohnen)", forms:["würde wohnen/wohnte","würdest wohnen/wohntest","würde wohnen/wohnte","würden wohnen/wohnten","würdet wohnen/wohntet","würden wohnen/wohnten"]}
   ]}}
 );
 
@@ -88,7 +90,8 @@ window.QUIZ_CONJ.italian.push(
     {inf:"uscire", irr:1, en:"to go out → have gone out (essere! participle agrees)", forms:["sono uscito/sono uscita","sei uscito/sei uscita","è uscito/è uscita","siamo usciti/siamo uscite","siete usciti/siete uscite","sono usciti/sono uscite"]},
     {inf:"bere", irr:1, en:"to drink → drunk (bevuto)", forms:["ho bevuto","hai bevuto","ha bevuto","abbiamo bevuto","avete bevuto","hanno bevuto"]},
     {inf:"potere", irr:1, en:"can → was able to", forms:["ho potuto","hai potuto","ha potuto","abbiamo potuto","avete potuto","hanno potuto"]},
-    {inf:"volere", irr:1, en:"to want → have wanted", forms:["ho voluto","hai voluto","ha voluto","abbiamo voluto","avete voluto","hanno voluto"]}
+    {inf:"volere", irr:1, en:"to want → have wanted", forms:["ho voluto","hai voluto","ha voluto","abbiamo voluto","avete voluto","hanno voluto"]},
+    {inf:"credere", en:"to believe → have believed (regular -ere)", forms:["ho creduto","hai creduto","ha creduto","abbiamo creduto","avete creduto","hanno creduto"]}
   ]}},
   { course:"it_a0a2", unit:{ id:"it_more_imperfetto", type:"conj", title:"Conjugate: Imperfect (Imperfetto) — more verbs", tense:"Imperfect (Imperfetto)", items:[
     {inf:"mangiare", en:"to eat", forms:["mangiavo","mangiavi","mangiava","mangiavamo","mangiavate","mangiavano"]},
@@ -105,7 +108,8 @@ window.QUIZ_CONJ.italian.push(
     {inf:"uscire", irr:1, en:"to go out", forms:["uscivo","uscivi","usciva","uscivamo","uscivate","uscivano"]},
     {inf:"potere", irr:1, en:"can", forms:["potevo","potevi","poteva","potevamo","potevate","potevano"]},
     {inf:"dovere", irr:1, en:"must", forms:["dovevo","dovevi","doveva","dovevamo","dovevate","dovevano"]},
-    {inf:"volere", irr:1, en:"to want", forms:["volevo","volevi","voleva","volevamo","volevate","volevano"]}
+    {inf:"volere", irr:1, en:"to want", forms:["volevo","volevi","voleva","volevamo","volevate","volevano"]},
+    {inf:"credere", en:"to believe (regular -ere)", forms:["credevo","credevi","credeva","credevamo","credevate","credevano"]}
   ]}},
   { course:"it_a0a2", unit:{ id:"it_more_futuro", type:"conj", title:"Conjugate: Future (Futuro) — more verbs", tense:"Future (Futuro)", items:[
     {inf:"lavorare", en:"to work", forms:["lavorerò","lavorerai","lavorerà","lavoreremo","lavorerete","lavoreranno"]},
@@ -121,7 +125,8 @@ window.QUIZ_CONJ.italian.push(
     {inf:"dovere", irr:1, en:"must (dovr-)", forms:["dovrò","dovrai","dovrà","dovremo","dovrete","dovranno"]},
     {inf:"sapere", irr:1, en:"to know (sapr-)", forms:["saprò","saprai","saprà","sapremo","saprete","sapranno"]},
     {inf:"vedere", irr:1, en:"to see (vedr-)", forms:["vedrò","vedrai","vedrà","vedremo","vedrete","vedranno"]},
-    {inf:"vivere", irr:1, en:"to live (vivr-)", forms:["vivrò","vivrai","vivrà","vivremo","vivrete","vivranno"]}
+    {inf:"vivere", irr:1, en:"to live (vivr-)", forms:["vivrò","vivrai","vivrà","vivremo","vivrete","vivranno"]},
+    {inf:"credere", en:"to believe (regular -ere)", forms:["crederò","crederai","crederà","crederemo","crederete","crederanno"]}
   ]}},
   { course:"it_a0a2", unit:{ id:"it_more_condizionale", type:"conj", title:"Conjugate: Conditional (Condizionale) — more verbs", tense:"Conditional (Condizionale)", items:[
     {inf:"mangiare", en:"to eat", forms:["mangerei","mangeresti","mangerebbe","mangeremmo","mangereste","mangerebbero"]},
@@ -137,7 +142,8 @@ window.QUIZ_CONJ.italian.push(
     {inf:"uscire", irr:1, en:"to go out", forms:["uscirei","usciresti","uscirebbe","usciremmo","uscireste","uscirebbero"]},
     {inf:"bere", irr:1, en:"to drink (berr-!)", forms:["berrei","berresti","berrebbe","berremmo","berreste","berrebbero"]},
     {inf:"sapere", irr:1, en:"to know (sapr-)", forms:["saprei","sapresti","saprebbe","sapremmo","sapreste","saprebbero"]},
-    {inf:"vedere", irr:1, en:"to see (vedr-)", forms:["vedrei","vedresti","vedrebbe","vedremmo","vedreste","vedrebbero"]}
+    {inf:"vedere", irr:1, en:"to see (vedr-)", forms:["vedrei","vedresti","vedrebbe","vedremmo","vedreste","vedrebbero"]},
+    {inf:"credere", en:"to believe (regular -ere)", forms:["crederei","crederesti","crederebbe","crederemmo","credereste","crederebbero"]}
   ]}},
   { course:"it_b1b2", unit:{ id:"it_more_congpres", type:"conj", title:"Conjugate: Present subjunctive (Congiuntivo presente) — more verbs", tense:"Present subjunctive (Congiuntivo presente)", items:[
     {inf:"mangiare", en:"to eat", forms:["mangi","mangi","mangi","mangiamo","mangiate","mangino"]},
@@ -154,7 +160,8 @@ window.QUIZ_CONJ.italian.push(
     {inf:"potere", irr:1, en:"can (che io possa…)", forms:["possa","possa","possa","possiamo","possiate","possano"]},
     {inf:"dovere", irr:1, en:"must (che io debba…)", forms:["debba","debba","debba","dobbiamo","dobbiate","debbano"]},
     {inf:"volere", irr:1, en:"to want (che io voglia…)", forms:["voglia","voglia","voglia","vogliamo","vogliate","vogliano"]},
-    {inf:"sapere", irr:1, en:"to know (che io sappia…)", forms:["sappia","sappia","sappia","sappiamo","sappiate","sappiano"]}
+    {inf:"sapere", irr:1, en:"to know (che io sappia…)", forms:["sappia","sappia","sappia","sappiamo","sappiate","sappiano"]},
+    {inf:"credere", en:"to believe (regular -ere)", forms:["creda","creda","creda","crediamo","crediate","credano"]}
   ]}},
   { course:"it_b1b2", unit:{ id:"it_more_congimp", type:"conj", title:"Conjugate: Imperfect subjunctive (Congiuntivo imperfetto) — more verbs", tense:"Imperfect subjunctive (Congiuntivo imperfetto)", items:[
     {inf:"mangiare", en:"to eat", forms:["mangiassi","mangiassi","mangiasse","mangiassimo","mangiaste","mangiassero"]},
@@ -172,7 +179,8 @@ window.QUIZ_CONJ.italian.push(
     {inf:"bere", irr:1, en:"to drink (se io bevessi…)", forms:["bevessi","bevessi","bevesse","bevessimo","beveste","bevessero"]},
     {inf:"potere", irr:1, en:"can", forms:["potessi","potessi","potesse","potessimo","poteste","potessero"]},
     {inf:"dovere", irr:1, en:"must", forms:["dovessi","dovessi","dovesse","dovessimo","doveste","dovessero"]},
-    {inf:"volere", irr:1, en:"to want", forms:["volessi","volessi","volesse","volessimo","voleste","volessero"]}
+    {inf:"volere", irr:1, en:"to want", forms:["volessi","volessi","volesse","volessimo","voleste","volessero"]},
+    {inf:"credere", en:"to believe (regular -ere)", forms:["credessi","credessi","credesse","credessimo","credeste","credessero"]}
   ]}},
   { course:"it_b1b2", unit:{ id:"it_more_premoto", type:"conj", title:"Conjugate: Historic past (Passato remoto) — more verbs", tense:"Historic past (Passato remoto)", items:[
     {inf:"vedere", irr:1, en:"to see → saw (vidi)", forms:["vidi","vedesti","vide","vedemmo","vedeste","videro"]},
@@ -190,7 +198,9 @@ window.QUIZ_CONJ.italian.push(
     {inf:"vivere", irr:1, en:"to live → lived (vissi)", forms:["vissi","vivesti","visse","vivemmo","viveste","vissero"]},
     {inf:"rispondere", irr:1, en:"to answer → answered (risposi)", forms:["risposi","rispondesti","rispose","rispondemmo","rispondeste","risposero"]},
     {inf:"chiedere", irr:1, en:"to ask → asked (chiesi)", forms:["chiesi","chiedesti","chiese","chiedemmo","chiedeste","chiesero"]},
-    {inf:"conoscere", irr:1, en:"to know (people) → met (conobbi)", forms:["conobbi","conoscesti","conobbe","conoscemmo","conosceste","conobbero"]}
+    {inf:"conoscere", irr:1, en:"to know (people) → met (conobbi)", forms:["conobbi","conoscesti","conobbe","conoscemmo","conosceste","conobbero"]},
+    {inf:"credere", en:"to believe → believed (regular -ere: credetti/credei)", forms:["credetti/credei","credesti","credette/credé","credemmo","credeste","credettero/crederono"]},
+    {inf:"dormire", en:"to sleep → slept (regular -ire: dormii)", forms:["dormii","dormisti","dormì","dormimmo","dormiste","dormirono"]}
   ]}}
 );
 
@@ -461,6 +471,12 @@ window.QUIZ_CONJ.irish.push(
     { inf:"éirigh", en:"to get up / rise → will get up", forms:["éireoidh mé","éireoidh tú","éireoidh sé/éireoidh sí","éireoimid/éireoidh muid","éireoidh sibh","éireoidh siad"] },
     { inf:"imigh", en:"to leave / depart → will leave", forms:["imeoidh mé","imeoidh tú","imeoidh sé/imeoidh sí","imeoimid/imeoidh muid","imeoidh sibh","imeoidh siad"] },
     { inf:"oscail", en:"to open → will open", forms:["osclóidh mé","osclóidh tú","osclóidh sé/osclóidh sí","osclóimid/osclóidh muid","osclóidh sibh","osclóidh siad"] }
+  ]}}
+);
+window.QUIZ_CONJ.italian.push(
+  { course:"it_a0a2", unit:{ id:"it_more2_presente", type:"conj", title:"Conjugate: Present (Presente) — regular -ere verbs", tense:"Present (Presente)", items:[
+    {inf:"credere", en:"to believe (regular -ere)", forms:["credo","credi","crede","crediamo","credete","credono"]},
+    {inf:"vendere", en:"to sell (regular -ere)", forms:["vendo","vendi","vende","vendiamo","vendete","vendono"]}
   ]}}
 );
 

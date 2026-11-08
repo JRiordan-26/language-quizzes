@@ -978,7 +978,7 @@ function renderSetup(){
     verbCard.style.display='';
     const nOn=universe.length-state.conjVerbsOff.size;
     verbCard.querySelector('#verbCnt').textContent=`${nOn} of ${universe.length} selected`;
-    for(const it of universe){
+    const mkChip=(it)=>{
       const on=!state.conjVerbsOff.has(it.inf);
       // irregular verbs are color-coded amber; regular stay accent-blue
       const sty = it.irr
@@ -986,7 +986,14 @@ function renderSetup(){
         : (on?'background:var(--accent);color:#fff':'opacity:.55');
       const b=$(`<button class="small" style="margin:0;${sty}" title="${(it.en||'').replace(/"/g,'&quot;')}${it.irr?' — irregular':''}">${it.inf}${it.irr?' ⚡':''}</button>`);
       b.onclick=()=>{ on?state.conjVerbsOff.add(it.inf):state.conjVerbsOff.delete(it.inf); refreshVerbCard(); updateStartBar(); };
-      body.appendChild(b);
+      return b;
+    };
+    const regs=universe.filter(it=>!it.irr), irrs=universe.filter(it=>it.irr);
+    for(const [lbl,color,list] of [['Regular','var(--accent)',regs],['⚡ Irregular','#e09a4a',irrs]]){
+      if(!list.length) continue;
+      if(regs.length&&irrs.length)
+        body.appendChild($(`<div style="flex-basis:100%;font-size:.8rem;font-weight:600;color:${color};margin:4px 0 -2px">${lbl} (${list.length})</div>`));
+      for(const it of list) body.appendChild(mkChip(it));
     }
   }
   if(state.quizType==='conj'){

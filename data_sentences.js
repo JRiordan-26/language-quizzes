@@ -41,10 +41,10 @@ window.QUIZ_SENT.german = {
     {en:"I would like to check out, please.", fl:"Ich möchte bitte auschecken."}
   ],
   ski: [
-    {en:"I love {E}!", fl:"Ich liebe {Nacc}!", slot:"winter"},
-    {en:"Do you see {E}?", fl:"Sehen Sie {Nacc}?", slot:"winter"},
-    {en:"Where can I find {E}?", fl:"Wo finde ich {Nacc}?", slot:"winter"},
-    {en:"We are looking at {E}.", fl:"Wir schauen {Nacc} an.", slot:"winter"},
+    {en:"I love {E}!", fl:"Ich liebe {Nacc}!", slot:"wscen"},
+    {en:"Do you see {E}?", fl:"Sehen Sie {Nacc}?", slot:"wscen"},
+    {en:"Where can I find {E}?", fl:"Wo finde ich {Nacc}?", slot:"wgear"},
+    {en:"I would like to rent {E}.", fl:"Ich möchte {Nacc} ausleihen.", slot:"wgear"},
     {en:"After skiing, I would like {E}.", fl:"Nach dem Skifahren hätte ich gern {Nacc}.", slot:"drink"},
     {en:"Can we order {E} here?", fl:"Können wir hier {Nacc} bestellen?", slot:"drink"},
     {en:"I would like to rent skis.", fl:"Ich möchte Ski ausleihen."},
@@ -143,10 +143,10 @@ window.QUIZ_SENT.italian = {
     {en: "Can you call a taxi for me, please?", fl: "Mi può chiamare un taxi, per favore?"}
   ],
   ski: [
-    {en: "Excuse me, I'm looking for {E}.", fl: "Scusi, cerco {N}.", slot: "winter"},
-    {en: "Look at {E}!", fl: "Guardi {N}!", slot: "winter"},
-    {en: "Can you point {E} out to me?", fl: "Mi può indicare {N}?", slot: "winter"},
-    {en: "Do you see {E}?", fl: "Vede {N}?", slot: "winter"},
+    {en: "Excuse me, I'm looking for {E}.", fl: "Scusi, cerco {N}.", slot: "wgear"},
+    {en: "Look at {E}!", fl: "Guardi {N}!", slot: "wscen"},
+    {en: "Can you point {E} out to me?", fl: "Mi può indicare {N}?", slot: "wscen"},
+    {en: "I would like to rent {E}.", fl: "Vorrei noleggiare {N}.", slot: "wgear"},
     {en: "After skiing, I'll have {E}.", fl: "Dopo lo sci, prendo {N}.", slot: "drink"},
     {en: "Now I would like {E}.", fl: "Adesso vorrei {N}.", slot: "drink"},
     {en: "How much is a ski pass?", fl: "Quanto costa uno skipass?"},
@@ -245,10 +245,10 @@ window.QUIZ_SENT.dutch = {
     { en: "Can you help me, please?", fl: "Kunt u mij helpen, alstublieft?" }
   ],
   ski: [
-    { en: "I see {E}.", fl: "Ik zie {N}.", slot: "winter" },
-    { en: "I'm looking at {E}.", fl: "Ik kijk naar {N}.", slot: "winter" },
-    { en: "Do you like {E}?", fl: "Vindt u {N} mooi?", slot: "winter" },
-    { en: "I want to take a photo of {E}.", fl: "Ik wil een foto van {N} maken.", slot: "winter" },
+    { en: "I see {E}.", fl: "Ik zie {N}.", slot: "wscen" },
+    { en: "Today I need {E}.", fl: "Vandaag heb ik {N} nodig.", slot: "wgear" },
+    { en: "I would like to rent {E}.", fl: "Ik wil graag {N} huren.", slot: "wgear" },
+    { en: "I want to take a photo of {E}.", fl: "Ik wil een foto van {N} maken.", slot: "wscen" },
     { en: "After skiing I drink {Eb}.", fl: "Na het skiën drink ik {Nb}.", slot: "drink" },
     { en: "Can I order {Eb} here?", fl: "Kan ik hier {Nb} bestellen?", slot: "drink" },
     { en: "It is cold outside.", fl: "Het is koud buiten." },
@@ -347,10 +347,10 @@ window.QUIZ_SENT.spanish = {
     { en: "The elevator doesn't work.", fl: "El elevador no funciona." }
   ],
   ski: [
-    { en: "I want to see {E}.", fl: "Quiero ver {N}.", slot: "winter" },
-    { en: "Look at {E}!", fl: "¡Mire {N}!", slot: "winter" },
-    { en: "Be careful with {E}!", fl: "¡Cuidado con {N}!", slot: "winter" },
-    { en: "Where can I find {E}?", fl: "¿Dónde puedo encontrar {N}?", slot: "winter" },
+    { en: "I want to see {E}.", fl: "Quiero ver {N}.", slot: "wscen" },
+    { en: "I want to rent {E}.", fl: "Quiero alquilar {N}.", slot: "wgear" },
+    { en: "Be careful with {E}!", fl: "¡Cuidado con {N}!", slot: "wscen" },
+    { en: "Where can I find {E}?", fl: "¿Dónde puedo encontrar {N}?", slot: "wgear" },
     { en: "After skiing, I want {E}.", fl: "Después de esquiar, quiero {N}.", slot: "drink" },
     { en: "Can you bring us {E}?", fl: "¿Nos puede traer {N}?", slot: "drink" },
     { en: "How much is a ski pass?", fl: "¿Cuánto cuesta el pase de esquí?" },
@@ -445,10 +445,10 @@ window.QUIZ_SENT.irish = {
     {en:"Where is the lift?", fl:"Cá bhfuil an t-ardaitheoir?"}
   ],
   ski: [
-    {en:"I need {E} today.", fl:"Teastaíonn {Nb} uaim inniu.", slot:"winter"},
-    {en:"I see {E} outside.", fl:"Feicim {Nb} amuigh.", slot:"winter"},
-    {en:"Do you have {E} for rent?", fl:"An bhfuil {Nb} ar cíos agaibh?", slot:"winter"},
-    {en:"Can I buy {E} here?", fl:"An féidir liom {Nb} a cheannach anseo?", slot:"winter"},
+    {en:"I need {E} today.", fl:"Teastaíonn {Nb} uaim inniu.", slot:"wgear"},
+    {en:"I see {E} outside.", fl:"Feicim {Nb} amuigh.", slot:"wscen"},
+    {en:"Do you have {E} for rent?", fl:"An bhfuil {Nb} ar cíos agaibh?", slot:"wgear"},
+    {en:"Well, {E} is beautiful today.", fl:"Bhuel, tá {Nb} go hálainn inniu.", slot:"wscen"},
     {en:"I want {Eb} by the fire.", fl:"Tá {Nb} uaim cois tine.", slot:"drink"},
     {en:"Can I get {Eb} at the lodge?", fl:"An féidir liom {Nb} a fháil sa lóiste?", slot:"drink"},
     {en:"It is very cold today.", fl:"Tá sé an-fhuar inniu."},
@@ -547,10 +547,10 @@ window.QUIZ_SENT.japanese = {
     {en:"Do you have Wi-Fi?", fl:"ワイファイはありますか。"}
   ],
   ski: [
-    {en:"Please take a look at {E}.", fl:"ちょっと{Nb}をみてください。", slot:"winter"},
-    {en:"Excuse me, I am looking for {E}.", fl:"すみません、{Nb}をさがしています。", slot:"winter"},
-    {en:"You can see {E} from here.", fl:"ここから{Nb}がみえます。", slot:"winter"},
-    {en:"Can you see {E} over there?", fl:"あそこに{Nb}がみえますか。", slot:"winter"},
+    {en:"Please take a look at {E}.", fl:"ちょっと{Nb}をみてください。", slot:"wscen"},
+    {en:"Excuse me, I am looking for {E}.", fl:"すみません、{Nb}をさがしています。", slot:"wgear"},
+    {en:"You can see {E} from here.", fl:"ここから{Nb}がみえます。", slot:"wscen"},
+    {en:"Excuse me, I would like to rent {E}.", fl:"すみません、{Nb}をかりたいです。", slot:"wgear"},
     {en:"After skiing, I will drink {Eb}.", fl:"スキーのあとで{Nb}をのみます。", slot:"drink"},
     {en:"Is there {Eb} at the lodge?", fl:"ロッジに{Nb}はありますか。", slot:"drink"},
     {en:"I will ski today.", fl:"きょうはスキーをします。"},

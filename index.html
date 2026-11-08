@@ -871,7 +871,8 @@ const SENT_SLOT_KW = {
   hthing:'room key bed towel shower window blanket pillow soap lamp',
   buy:'shirt blouse shoe shoes hat cap scarf glove gloves jacket coat sweater dress skirt sock socks postcard souvenir map book bag umbrella watch ring wallet purse',
   sight:'museum castle church cathedral tower bridge monument palace statue temple shrine',
-  winter:'snow ice boot boots glove gloves scarf hat cap jacket coat sweater fire mountain'
+  wgear:'boot boots glove gloves scarf hat cap jacket coat sweater ski skis goggles helmet',
+  wscen:'snow ice fire mountain mountains'
 };
 const SENT_KWSETS = {}; for(const k of Object.keys(SENT_SLOT_KW)) SENT_KWSETS[k]=new Set(SENT_SLOT_KW[k].split(' '));
 // slot fills must be nouns: article-carrying languages demand the article,
@@ -909,7 +910,12 @@ function sentSlotPools(lang){
     const head=toks[toks.length-1];
     if(!head) return;
     let hit=false;
-    for(const k of Object.keys(SENT_KWSETS)) if(SENT_KWSETS[k].has(head)){ pools[k].push({t:it.t,e:it.e}); hit=true; }
+    for(const k of Object.keys(SENT_KWSETS)){
+      // scenery nouns must match the whole gloss (keeps "forest fire",
+      // "snow storm" compounds out); other kinds match the head noun
+      const ok = k==='wscen' ? SENT_KWSETS[k].has(toks.join(' ')) : SENT_KWSETS[k].has(head);
+      if(ok){ pools[k].push({t:it.t,e:it.e}); hit=true; }
+    }
     if(hit) seen.add(key);
   };
   duoFlat(lang).forEach(scan);

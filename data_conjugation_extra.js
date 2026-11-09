@@ -91,6 +91,8 @@ window.QUIZ_CONJ.italian.push(
     {inf:"bere", irr:1, en:"to drink → drunk (bevuto)", forms:["ho bevuto","hai bevuto","ha bevuto","abbiamo bevuto","avete bevuto","hanno bevuto"]},
     {inf:"potere", irr:1, en:"can → was able to", forms:["ho potuto","hai potuto","ha potuto","abbiamo potuto","avete potuto","hanno potuto"]},
     {inf:"volere", irr:1, en:"to want → have wanted", forms:["ho voluto","hai voluto","ha voluto","abbiamo voluto","avete voluto","hanno voluto"]},
+    {inf:"sapere", irr:1, en:"to know (facts) → found out (saputo)", forms:["ho saputo","hai saputo","ha saputo","abbiamo saputo","avete saputo","hanno saputo"]},
+    {inf:"conoscere", irr:1, en:"to know (people) → met (conosciuto)", forms:["ho conosciuto","hai conosciuto","ha conosciuto","abbiamo conosciuto","avete conosciuto","hanno conosciuto"]},
     {inf:"credere", en:"to believe → have believed (regular -ere)", forms:["ho creduto","hai creduto","ha creduto","abbiamo creduto","avete creduto","hanno creduto"]}
   ]}},
   { course:"it_a0a2", unit:{ id:"it_more_imperfetto", type:"conj", title:"Conjugate: Imperfect (Imperfetto) — more verbs", tense:"Imperfect (Imperfetto)", items:[
@@ -109,6 +111,8 @@ window.QUIZ_CONJ.italian.push(
     {inf:"potere", irr:1, en:"can", forms:["potevo","potevi","poteva","potevamo","potevate","potevano"]},
     {inf:"dovere", irr:1, en:"must", forms:["dovevo","dovevi","doveva","dovevamo","dovevate","dovevano"]},
     {inf:"volere", irr:1, en:"to want", forms:["volevo","volevi","voleva","volevamo","volevate","volevano"]},
+    {inf:"sapere", irr:1, en:"to know (facts) — regular here", forms:["sapevo","sapevi","sapeva","sapevamo","sapevate","sapevano"]},
+    {inf:"conoscere", irr:1, en:"to know (people) — regular here", forms:["conoscevo","conoscevi","conosceva","conoscevamo","conoscevate","conoscevano"]},
     {inf:"credere", en:"to believe (regular -ere)", forms:["credevo","credevi","credeva","credevamo","credevate","credevano"]}
   ]}},
   { course:"it_a0a2", unit:{ id:"it_more_futuro", type:"conj", title:"Conjugate: Future (Futuro) — more verbs", tense:"Future (Futuro)", items:[
@@ -124,6 +128,7 @@ window.QUIZ_CONJ.italian.push(
     {inf:"potere", irr:1, en:"can (potr-)", forms:["potrò","potrai","potrà","potremo","potrete","potranno"]},
     {inf:"dovere", irr:1, en:"must (dovr-)", forms:["dovrò","dovrai","dovrà","dovremo","dovrete","dovranno"]},
     {inf:"sapere", irr:1, en:"to know (sapr-)", forms:["saprò","saprai","saprà","sapremo","saprete","sapranno"]},
+    {inf:"conoscere", irr:1, en:"to know (people) — regular here", forms:["conoscerò","conoscerai","conoscerà","conosceremo","conoscerete","conosceranno"]},
     {inf:"vedere", irr:1, en:"to see (vedr-)", forms:["vedrò","vedrai","vedrà","vedremo","vedrete","vedranno"]},
     {inf:"vivere", irr:1, en:"to live (vivr-)", forms:["vivrò","vivrai","vivrà","vivremo","vivrete","vivranno"]},
     {inf:"credere", en:"to believe (regular -ere)", forms:["crederò","crederai","crederà","crederemo","crederete","crederanno"]}
@@ -142,6 +147,7 @@ window.QUIZ_CONJ.italian.push(
     {inf:"uscire", irr:1, en:"to go out", forms:["uscirei","usciresti","uscirebbe","usciremmo","uscireste","uscirebbero"]},
     {inf:"bere", irr:1, en:"to drink (berr-!)", forms:["berrei","berresti","berrebbe","berremmo","berreste","berrebbero"]},
     {inf:"sapere", irr:1, en:"to know (sapr-)", forms:["saprei","sapresti","saprebbe","sapremmo","sapreste","saprebbero"]},
+    {inf:"conoscere", irr:1, en:"to know (people) — regular here", forms:["conoscerei","conosceresti","conoscerebbe","conosceremmo","conoscereste","conoscerebbero"]},
     {inf:"vedere", irr:1, en:"to see (vedr-)", forms:["vedrei","vedresti","vedrebbe","vedremmo","vedreste","vedrebbero"]},
     {inf:"credere", en:"to believe (regular -ere)", forms:["crederei","crederesti","crederebbe","crederemmo","credereste","crederebbero"]}
   ]}},
@@ -161,6 +167,7 @@ window.QUIZ_CONJ.italian.push(
     {inf:"dovere", irr:1, en:"must (che io debba…)", forms:["debba","debba","debba","dobbiamo","dobbiate","debbano"]},
     {inf:"volere", irr:1, en:"to want (che io voglia…)", forms:["voglia","voglia","voglia","vogliamo","vogliate","vogliano"]},
     {inf:"sapere", irr:1, en:"to know (che io sappia…)", forms:["sappia","sappia","sappia","sappiamo","sappiate","sappiano"]},
+    {inf:"conoscere", irr:1, en:"to know (people) — regular here", forms:["conosca","conosca","conosca","conosciamo","conosciate","conoscano"]},
     {inf:"credere", en:"to believe (regular -ere)", forms:["creda","creda","creda","crediamo","crediate","credano"]}
   ]}},
   { course:"it_b1b2", unit:{ id:"it_more_congimp", type:"conj", title:"Conjugate: Imperfect subjunctive (Congiuntivo imperfetto) — more verbs", tense:"Imperfect subjunctive (Congiuntivo imperfetto)", items:[
@@ -180,6 +187,8 @@ window.QUIZ_CONJ.italian.push(
     {inf:"potere", irr:1, en:"can", forms:["potessi","potessi","potesse","potessimo","poteste","potessero"]},
     {inf:"dovere", irr:1, en:"must", forms:["dovessi","dovessi","dovesse","dovessimo","doveste","dovessero"]},
     {inf:"volere", irr:1, en:"to want", forms:["volessi","volessi","volesse","volessimo","voleste","volessero"]},
+    {inf:"sapere", irr:1, en:"to know (se io sapessi…)", forms:["sapessi","sapessi","sapesse","sapessimo","sapeste","sapessero"]},
+    {inf:"conoscere", irr:1, en:"to know (people) — regular here", forms:["conoscessi","conoscessi","conoscesse","conoscessimo","conosceste","conoscessero"]},
     {inf:"credere", en:"to believe (regular -ere)", forms:["credessi","credessi","credesse","credessimo","credeste","credessero"]}
   ]}},
   { course:"it_b1b2", unit:{ id:"it_more_premoto", type:"conj", title:"Conjugate: Historic past (Passato remoto) — more verbs", tense:"Historic past (Passato remoto)", items:[

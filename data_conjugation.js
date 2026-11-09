@@ -105,6 +105,7 @@ window.QUIZ_CONJ = {
       {inf:"scrivere", irr:1, en:"to write", forms:["scrivo","scrivi","scrive","scriviamo","scrivete","scrivono"]},
       {inf:"leggere", irr:1, en:"to read", forms:["leggo","leggi","legge","leggiamo","leggete","leggono"]},
       {inf:"prendere", irr:1, en:"to take", forms:["prendo","prendi","prende","prendiamo","prendete","prendono"]},
+      {inf:"conoscere", irr:1, en:"to know (people & places)", forms:["conosco","conosci","conosce","conosciamo","conoscete","conoscono"]},
       {inf:"dormire", en:"to sleep", forms:["dormo","dormi","dorme","dormiamo","dormite","dormono"]},
       {inf:"aprire", irr:1, en:"to open", forms:["apro","apri","apre","apriamo","aprite","aprono"]},
       {inf:"finire", en:"to finish (-isc-)", forms:["finisco","finisci","finisce","finiamo","finite","finiscono"]},
@@ -123,7 +124,8 @@ window.QUIZ_CONJ = {
       {inf:"bere", irr:1, en:"to drink", forms:["bevo","bevi","beve","beviamo","bevete","bevono"]},
       {inf:"potere", irr:1, en:"can", forms:["posso","puoi","può","possiamo","potete","possono"]},
       {inf:"dovere", irr:1, en:"must", forms:["devo","devi","deve","dobbiamo","dovete","devono"]},
-      {inf:"volere", irr:1, en:"to want", forms:["voglio","vuoi","vuole","vogliamo","volete","vogliono"]}
+      {inf:"volere", irr:1, en:"to want", forms:["voglio","vuoi","vuole","vogliamo","volete","vogliono"]},
+      {inf:"sapere", irr:1, en:"to know (facts / how to)", forms:["so","sai","sa","sappiamo","sapete","sanno"]}
     ]}},
     { course: "it_a0a2", unit: { id:"it_a1_c1", type:"conj", title:"Conjugate: Spoken past (Passato prossimo) — ho parlato…", tense:"Spoken past (Passato prossimo)", items: [
       {inf:"parlare", en:"to speak → have spoken", forms:["ho parlato","hai parlato","ha parlato","abbiamo parlato","avete parlato","hanno parlato"]},

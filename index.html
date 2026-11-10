@@ -3235,9 +3235,8 @@ function renderClimbMisses(lang, d){
         const sv=$(`<button style="margin-top:14px;margin-left:10px" title="Snapshot these ${pool.length} words as a dated test you can rerun on later days">💾 Save as a test</button>`);
         sv.onclick=()=>{
           const sets=getMissSets(lang);
-          const dt=new Date();
           sets.push({ id:Date.now().toString(36), name:`Missed words #${sets.length+1}`,
-            date:dt.toISOString().slice(0,10),
+            date:todayStr(),
             srcs:themed?[]:[...sel].sort((a,b)=>a-b),
             srcTxt:themed?('Themed: '+[...sel].map(s=>thSlotName(lang,s)).join(', ')):undefined,
             words:pool.map(w=>({t:w.t,e:w.e})), runs:0, best:0, last:null, lastDate:null });
@@ -3298,7 +3297,7 @@ function renderClimbMisses(lang, d){
           mk.onclick=()=>{
             const sets2=getMissSets(lang);
             sets2.push({ id:Date.now().toString(36), name:`Missed words #${sets2.length+1}`,
-              date:new Date().toISOString().slice(0,10), srcs:[], srcTxt:st.name,
+              date:todayStr(), srcs:[], srcTxt:st.name,
               words:missW.map(w=>({...w})), runs:0, best:0, last:null, lastDate:null });
             saveMissSets(lang, sets2); render();
           };
@@ -3319,7 +3318,7 @@ function renderClimbMisses(lang, d){
         const sets=getMissSets(lang);
         const st=sets.find(x=>x.id===ms.setId);
         if(st){
-          st.runs=(st.runs||0)+1; st.last=ms.nOk; st.lastDate=new Date().toISOString().slice(0,10);
+          st.runs=(st.runs||0)+1; st.last=ms.nOk; st.lastDate=todayStr();
           st.lastWrong=ms.wrong.map(w=>({t:w.t,e:w.e}));
           st.best=Math.max(st.best||0, Math.round(ms.nOk/ms.items.length*100));
           saveMissSets(lang, sets);

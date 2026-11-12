@@ -8223,7 +8223,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "visitare", "e": "to visit"}
   ]},
   { id: "duo_it_u38", type: "vocab", title: "Vocab: Unit 38 \u00b7 Swiss Trip \u2014 Plan a trip to Switzerland", items: [
-    {"t": "il bagagli", "e": "luggage"},
+    {"t": "i bagagli", "e": "luggage / bags (plural)"},
     {"t": "come", "e": "how is / what is it like"},
     {"t": "fa bel tempo", "e": "the weather is nice"},
     {"t": "il formaggio", "e": "cheese"},
@@ -8694,7 +8694,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "la pentola", "e": "pot"},
     {"t": "prendere", "e": "to take"},
     {"t": "il rubinetto", "e": "faucet / tap"},
-    {"t": "la salsicce", "e": "sausage"},
+    {"t": "le salsicce", "e": "sausages (plural)"},
     {"t": "la salsiccia", "e": "sausage"},
     {"t": "la spazzatura", "e": "trash"},
     {"t": "il tovagliolo", "e": "napkin"}
@@ -9726,7 +9726,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
   { id: "duo_it_u102", type: "vocab", title: "Vocab: Unit 102 \u00b7 Ouch \u2014 Describe your pain", items: [
     {"t": "il cuore", "e": "heart"},
     {"t": "destro", "e": "right"},
-    {"t": "la dita", "e": "fingers (feminine)"},
+    {"t": "le dita", "e": "fingers (irregular feminine plural of il dito)"},
     {"t": "il dito", "e": "finger"},
     {"t": "il dito del piede", "e": "toe"},
     {"t": "l'emergenza", "e": "emergency"},
@@ -10059,7 +10059,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "l'artista", "e": "artist"},
     {"t": "attento", "e": "attentive"},
     {"t": "la bisnonna", "e": "great-grandmother"},
-    {"t": "il bisnonni", "e": "great-grandparent"},
+    {"t": "i bisnonni", "e": "great-grandparents (plural)"},
     {"t": "il bisnonno", "e": "great-grandfather"},
     {"t": "desiderare", "e": "to desire / to wish"},
     {"t": "il disegno", "e": "drawing"},

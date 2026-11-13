@@ -4084,6 +4084,7 @@ window.QUIZ_PLURALS = {
 "lo spagnolo": "gli spagnoli",
 "lo spam": "gli spam",
 "lo spavento": "gli spaventi",
+"lo spumante": "gli spumanti",
 "lo spazio": "gli spazi",
 "lo spazzolino": "gli spazzolini",
 "lo specchietto": "gli specchietti",

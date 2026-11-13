@@ -8788,7 +8788,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sarete", "e": "you will be (plural)"},
     {"t": "sarà", "e": "he/she/it will be"},
     {"t": "sarò", "e": "I will be (io sarò)"},
-    {"t": "spumante", "e": "sparkling wine"},
+    {"t": "lo spumante", "e": "sparkling wine"},
     {"t": "tutti", "e": "all / everybody / everyone"},
     {"t": "la vacanza", "e": "holiday"}
   ]},

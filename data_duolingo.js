@@ -8802,7 +8802,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "andrò", "e": "I will go (io andrò)"},
     {"t": "asiatico", "e": "Asian"},
     {"t": "buon viaggio", "e": "good trip"},
-    {"t": "capitale", "e": "capital / capital city"},
+    {"t": "la capitale", "e": "capital / capital city"},
     {"t": "che bello", "e": "how nice"},
     {"t": "fare le valigie", "e": "to pack"},
     {"t": "la guida", "e": "guide"},

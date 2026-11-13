@@ -3191,6 +3191,7 @@ window.QUIZ_PLURALS = {
 "la canzone": "le canzoni",
 "la capa": "le cape",
 "la capacità": "le capacità",
+"la capitale": "le capitali",
 "la capienza": "le capienze",
 "la capitana": "le capitane",
 "la capra": "le capre",

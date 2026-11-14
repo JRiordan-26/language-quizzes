@@ -8984,7 +8984,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "conoscere", "e": "to know (be familiar with)"},
     {"t": "coreano", "e": "Korean"},
     {"t": "ed", "e": "and"},
-    {"t": "il fan", "e": "fan"},
+    {"t": "il fan", "e": "fan (of a band / celebrity)"},
     {"t": "fortunato", "e": "fortunate"},
     {"t": "gratis", "e": "free / for free"},
     {"t": "no", "e": "no / not"},
@@ -13109,7 +13109,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "scontrarsi", "e": "to clash"},
     {"t": "la semifinale", "e": "semifinal"},
     {"t": "squalificare", "e": "to disqualify"},
-    {"t": "il tifoso", "e": "fan / supporter"},
+    {"t": "il tifoso", "e": "fan / supporter (sports)"},
     {"t": "la tribuna", "e": "grandstand / stands"}
   ]},
   { id: "duo_it_u257", type: "vocab", title: "Vocab: Unit 257 \u00b7 living abroad \u2014 Describe what surprised you", items: [

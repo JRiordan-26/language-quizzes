@@ -3192,6 +3192,7 @@ window.QUIZ_PLURALS = {
 "la capa": "le cape",
 "la capacità": "le capacità",
 "la capitale": "le capitali",
+  "l'auricolare": "gli auricolari",
 "il sito": "i siti",
 "il bugiardo": "i bugiardi",
 "il cavo": "i cavi",

@@ -9059,7 +9059,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il visto", "e": "visa"}
   ]},
   { id: "duo_it_u74", type: "vocab", title: "Vocab: Unit 74 \u00b7 Eighteen \u2014 Plan an eighteenth birthday party", items: [
-    {"t": "auricolare", "e": "earphone / earpiece / earbud"},
+    {"t": "l'auricolare", "e": "earphone / earpiece / earbud"},
     {"t": "la bomboniera", "e": "party favor"},
     {"t": "la caramella", "e": "candy"},
     {"t": "ci piacciono", "e": "we like (several things: ci piacciono)"},

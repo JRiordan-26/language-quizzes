@@ -9121,7 +9121,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "piace", "e": "is pleasing / is liked (one thing: piace)"},
     {"t": "il piano", "e": "floor (e.g. 1st, 2nd)"},
     {"t": "il soffitto", "e": "ceiling"},
-    {"t": "la terrazza", "e": "terrace (feminine)"},
+    {"t": "la terrazza", "e": "terrace (large / scenic one; feminine)"},
     {"t": "il tetto", "e": "roof"},
     {"t": "traslocare", "e": "to move (house)"},
     {"t": "trentaquattro", "e": "thirty-four"},
@@ -12076,7 +12076,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sensibile", "e": "sensitive"},
     {"t": "separare", "e": "to separate"},
     {"t": "solido", "e": "solid / durable / secure"},
-    {"t": "il terrazzo", "e": "terrace / balcony / rooftop terrace (masculine)"},
+    {"t": "il terrazzo", "e": "terrace / balcony (attached to an apartment; masculine)"},
     {"t": "il valore", "e": "value"}
   ]},
   { id: "duo_it_u210", type: "vocab", title: "Vocab: Unit 210 \u00b7 public spaces \u2014 Plan a community park event", items: [

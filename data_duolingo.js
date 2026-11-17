@@ -8071,7 +8071,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sotto", "e": "under"},
     {"t": "sue", "e": "his / her (feminine plural: sue)"},
     {"t": "suoi", "e": "his / her (masculine plural: suoi)"},
-    {"t": "il tavolo", "e": "table (masculine)"}
+    {"t": "il tavolo", "e": "table (the furniture; masculine)"}
   ]},
   { id: "duo_it_u31", type: "vocab", title: "Vocab: Unit 31 \u00b7 Our Room \u2014 Describe your room", items: [
     {"t": "abbastanza", "e": "enough"},
@@ -14084,7 +14084,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "il salmone", "e": "salmon"},
     {"t": "soffice", "e": "soft"},
     {"t": "il sorbetto", "e": "sorbet / sherbet"},
-    {"t": "la tavola", "e": "table (feminine)"},
+    {"t": "la tavola", "e": "table (set for a meal: a tavola!; feminine)"},
     {"t": "tostare", "e": "to toast"},
     {"t": "il vitello", "e": "veal"},
     {"t": "la vongola", "e": "clam"}

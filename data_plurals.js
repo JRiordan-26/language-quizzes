@@ -3627,7 +3627,6 @@ window.QUIZ_PLURALS = {
 "la lasagne": "le lasagni",
 "la lattina": "le lattine",
 "la laurea": "le lauree",
-"la lava": "le lave",
 "la lavagna": "le lavagne",
 "la lavanderia": "le lavanderie",
 "la lavastoviglie": "le lavastoviglii",

@@ -9169,7 +9169,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "in forma", "e": "in shape"},
     {"t": "istruttore", "e": "instructor (masculine)"},
     {"t": "l'istruttrice", "e": "instructor (feminine)"},
-    {"t": "la lava", "e": "he/she washes"},
+    {"t": "lava", "e": "he/she washes (lavare)"},
     {"t": "lavi", "e": "you wash (tu form)"},
     {"t": "lavo", "e": "I wash (io form)"},
     {"t": "mi", "e": "me"},

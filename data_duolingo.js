@@ -27352,7 +27352,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "なつ", "e": "summer (in kana)", "r": "natsu"},
     {"t": "はなび", "e": "firework (in kana)", "r": "hanabi"},
     {"t": "はる", "e": "spring (in kana)", "r": "haru"},
-    {"t": "はれ", "e": "clear (sunny weather)", "r": "hare"},
+    {"t": "はれ", "e": "clear weather / sunny (noun)", "r": "hare"},
     {"t": "ふゆ", "e": "winter (in kana)", "r": "fuyu"},
     {"t": "ゆき", "e": "snow (in kana)", "r": "yuki"},
     {"t": "ココア", "e": "hot chocolate", "r": "kokoa"},
@@ -27908,9 +27908,9 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "パンや", "e": "bakery (in kana)", "r": "panya"},
     {"t": "メッセージをおくります", "e": "send a message", "r": "messējiwookurimasu"},
     {"t": "一分", "e": "minute", "k": "いちぶ"},
-    {"t": "三分", "e": "minutes (three minutes)", "k": "さんぶん"},
+    {"t": "三分", "e": "three minutes", "k": "さんぶん"},
     {"t": "乗ります", "e": "ride / take", "k": "のります"},
-    {"t": "六分", "e": "minutes (six minutes)", "k": "ろっぷん"},
+    {"t": "六分", "e": "six minutes", "k": "ろっぷん"},
     {"t": "私たち", "e": "we", "k": "わたしたち"}
   ]},
   { id: "duo_ja_u42", type: "vocab", title: "Vocab: Unit 42 \u00b7 Healthcare \u2014 Seek medical help", items: [
@@ -28002,7 +28002,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "はじめて", "e": "first time", "r": "hajimete"},
     {"t": "ぶんか", "e": "culture (in kana)", "r": "bunka"},
     {"t": "べんり", "e": "convenient (handy, in kana)", "r": "benri"},
-    {"t": "りょうしん", "e": "parent (both parents)", "r": "ryoushin"},
+    {"t": "りょうしん", "e": "parents (both one's parents)", "r": "ryoushin"},
     {"t": "乗ります", "e": "ride / take", "k": "のります"},
     {"t": "先月", "e": "last month", "k": "せんげつ"},
     {"t": "先週", "e": "last week", "k": "せんしゅう"},
@@ -28132,7 +28132,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "かじ", "e": "household chore", "r": "kaji"},
     {"t": "くすり", "e": "medicine (in kana)", "r": "kusuri"},
     {"t": "します", "e": "makes / are doing / make", "r": "shimasu"},
-    {"t": "そうじ", "e": "clean (cleaning; housework)", "r": "souji"},
+    {"t": "そうじ", "e": "cleaning (housework)", "r": "souji"},
     {"t": "ねむい", "e": "sleepy", "r": "nemui"},
     {"t": "まだ", "e": "yet / too / hasn't", "r": "mada"},
     {"t": "もうすこし", "e": "a little more", "r": "mousukoshi"},
@@ -28382,7 +28382,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "日本料理", "e": "japanese cuisine (in kanji)", "k": "にほんりょうり"}
   ]},
   { id: "duo_ja_u62", type: "vocab", title: "Vocab: Unit 62 \u00b7 Returns \u2014 Return or exchange items", items: [
-    {"t": "かくにんします", "e": "make (make sure; confirm)", "r": "kakuninshimasu"},
+    {"t": "かくにんします", "e": "to confirm / make sure (polite)", "r": "kakuninshimasu"},
     {"t": "がおすすめ", "e": "is recommended", "r": "gaosusume"},
     {"t": "がら", "e": "pattern / texture / character", "r": "gara"},
     {"t": "こうかんできます", "e": "can exchange / can trade / can swap", "r": "koukandekimasu"},
@@ -28413,11 +28413,11 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "じゅんびします", "e": "prepare / get ready / arrange", "r": "junbishimasu"},
     {"t": "せっけん", "e": "soap", "r": "sekken"},
     {"t": "ぜんぶ", "e": "all (everything, in kana)", "r": "zenbu"},
-    {"t": "はいりますか", "e": "need (do you need ...?; question)", "r": "hairimasuka"},
+    {"t": "はいりますか", "e": "will it fit / go in? (polite question)", "r": "hairimasuka"},
     {"t": "はいりません", "e": "would you like to join", "r": "hairimasen"},
     {"t": "はみがきこ", "e": "toothpaste (in kana)", "r": "hamigakiko"},
     {"t": "はブラシ", "e": "toothbrush (in kana)", "r": "haburashi"},
-    {"t": "ばんそうこう", "e": "bandage (adhesive plaster)", "r": "bansoukou"},
+    {"t": "ばんそうこう", "e": "adhesive bandage / plaster", "r": "bansoukou"},
     {"t": "コンディショナー", "e": "conditioner", "r": "kondishonā"},
     {"t": "デオドラント", "e": "deodorant", "r": "deodoranto"},
     {"t": "ドラッグストア", "e": "drugstore", "r": "doraggusutoa"},
@@ -28549,7 +28549,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "きびしい", "e": "harsh / stern / strict", "r": "kibishii"},
     {"t": "きょうかしょ", "e": "textbook (in kana)", "r": "kyoukasho"},
     {"t": "けど", "e": "but / even though", "r": "kedo"},
-    {"t": "こんがっき", "e": "semester (this semester)", "r": "kongakki"},
+    {"t": "こんがっき", "e": "this semester", "r": "kongakki"},
     {"t": "せいぶつがく", "e": "biology (in kana)", "r": "seibutsugaku"},
     {"t": "ぜひ", "e": "definitely (by all means; please do)", "r": "zehi"},
     {"t": "だけど", "e": "but (though; casual connector)", "r": "dakedo"},
@@ -31241,7 +31241,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "気に入ります", "e": "would like / will like / like", "k": "きにいります"},
     {"t": "褒めます", "e": "praise / compliment / admire", "k": "ほめます"},
     {"t": "輝きます", "e": "shine / sparkle / glitter", "k": "かがやきます"},
-    {"t": "長持ち", "e": "last (to last long; durable)", "k": "ながもち"}
+    {"t": "長持ち", "e": "to last long / durable", "k": "ながもち"}
   ]},
   { id: "duo_ja_u192", type: "vocab", title: "Vocab: Unit 192 \u00b7 environmental features \u2014 Describe a mountain hike", items: [
     {"t": "うちに", "e": "while / with us / at home", "r": "uchini"},
@@ -32157,7 +32157,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
   { id: "duo_ja_u237", type: "vocab", title: "Vocab: Unit 237 \u00b7 celebration \u2014 Ask about the party", items: [
     {"t": "あんな", "e": "such", "r": "an'na"},
     {"t": "ちなみに", "e": "by the way (incidentally)", "r": "chinamini"},
-    {"t": "っけ", "e": "again (recall particle: ...was it?)", "r": "kke"},
+    {"t": "っけ", "e": "...was it? (recall sentence particle)", "r": "kke"},
     {"t": "シャンパン", "e": "champagne", "r": "shanpan"},
     {"t": "乾杯", "e": "toast (cheers!)", "k": "かんぱい"},
     {"t": "優雅", "e": "graceful", "k": "ゆうが"},
@@ -32363,7 +32363,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
   ]},
   { id: "duo_ja_u247", type: "vocab", title: "Vocab: Unit 247 \u00b7 city life 2 \u2014 Compare ways to commute", items: [
     {"t": "ものだ", "e": "should (one ought to, by nature)", "r": "monoda"},
-    {"t": "乗り場", "e": "stand (taxi or bus stand)", "k": "のりば"},
+    {"t": "乗り場", "e": "boarding point (taxi / bus stand)", "k": "のりば"},
     {"t": "仏像", "e": "Buddhist statue", "k": "ぶつぞう"},
     {"t": "住宅街", "e": "residential area", "k": "じゅうたくがい"},
     {"t": "劇場", "e": "theater", "k": "げきじょう"},
@@ -33600,7 +33600,7 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "持ち帰り", "e": "takeout", "k": "もちかえり"},
     {"t": "氷なしで", "e": "without ice", "k": "こおりなしで"},
     {"t": "漬物", "e": "pickled vegetable", "k": "つけもの"},
-    {"t": "甲殻類", "e": "shellfish (crustaceans)", "k": "こうかくるい"},
+    {"t": "甲殻類", "e": "crustaceans (shellfish)", "k": "こうかくるい"},
     {"t": "禁煙", "e": "non-smoking (in kanji)", "k": "きんえん"},
     {"t": "税込み", "e": "including tax", "k": "ぜいこみ"},
     {"t": "食券", "e": "meal ticket", "k": "しょっけん"}

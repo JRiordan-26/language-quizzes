@@ -9180,7 +9180,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "si", "e": "oneself / themselves / each other"},
     {"t": "il succo", "e": "juice"},
     {"t": "svegli", "e": "you wake up (tu svegli)"},
-    {"t": "la sveglia", "e": "alarm clock (feminine)"},
+    {"t": "la sveglia", "e": "alarm clock (from svegliare, to wake)"},
     {"t": "sveglio", "e": "awake / sharp (masculine)"},
     {"t": "ti", "e": "you (object, informal sg.)"},
     {"t": "l'uva", "e": "grape"},
@@ -11020,7 +11020,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "sognare", "e": "to dream"},
     {"t": "il sogno", "e": "dream"},
     {"t": "la speranza", "e": "hope"},
-    {"t": "la sveglia", "e": "alarm clock (feminine)"},
+    {"t": "la sveglia", "e": "alarm clock (from svegliare, to wake)"},
     {"t": "trasferirsi", "e": "to move / to relocate"},
     {"t": "il tribunale", "e": "court / courthouse"},
     {"t": "ufficiale", "e": "official / officer"}

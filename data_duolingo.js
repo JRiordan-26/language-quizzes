@@ -7458,6 +7458,16 @@ window.QUIZ_DUO_LIST.push({ lang: "german", course: { id: "duo_de", title: "Duol
     {"t": "verschlechtern", "e": "worsen / exacerbate / degrade"},
     {"t": "die Überwachung", "e": "controlling / supervision / surveillance"}
   ]},
+  { id: "duo_de_holiday", type: "vocab", title: "Vocab: Holiday · 🎄 Christmas & holidays", items: [
+    {"t": "der Weihnachtsbaum", "e": "Christmas tree"},
+    {"t": "der Weihnachtsmann", "e": "Santa Claus"},
+    {"t": "das Rentier", "e": "reindeer"},
+    {"t": "der Schlitten", "e": "sleigh / sled"},
+    {"t": "der Schneemann", "e": "snowman"},
+    {"t": "der Engel", "e": "angel"},
+    {"t": "der Heiligabend", "e": "Christmas Eve"},
+    {"t": "der Adventskalender", "e": "Advent calendar"}
+  ]},
 ]}});
 window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duolingo Italian \u2014 current path", units: [
   { id: "duo_it_u1", type: "vocab", title: "Vocab: Unit 1 \u00b7 Cafe \u2014 Order at a caf\u00e9", items: [
@@ -14335,6 +14345,19 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "vidi", "e": "(I) saw"},
     {"t": "il vulcano", "e": "volcano"}
   ]},
+  { id: "duo_it_holiday", type: "vocab", title: "Vocab: Holiday · 🎄 Christmas & holidays", items: [
+    {"t": "l'albero di Natale", "e": "Christmas tree"},
+    {"t": "la vigilia di Natale", "e": "Christmas Eve"},
+    {"t": "il Capodanno", "e": "New Year's Day"},
+    {"t": "Buon Natale", "e": "Merry Christmas!"},
+    {"t": "Buon anno", "e": "Happy New Year!"},
+    {"t": "la renna", "e": "reindeer"},
+    {"t": "la slitta", "e": "sleigh / sled"},
+    {"t": "il pupazzo di neve", "e": "snowman"},
+    {"t": "l'angelo", "e": "angel"},
+    {"t": "la ghirlanda", "e": "garland / wreath"},
+    {"t": "la Befana", "e": "the Befana (gift-bringing Epiphany witch)"}
+  ]},
 ]}});
 window.QUIZ_DUO_LIST.push({ lang: "dutch", course: { id: "duo_dn", title: "Duolingo Dutch \u2014 current path", units: [
   { id: "duo_dn_u1", type: "vocab", title: "Vocab: Unit 1 \u00b7 Basics 1 \u2014 Use basic phrases", items: [
@@ -17450,6 +17473,20 @@ window.QUIZ_DUO_LIST.push({ lang: "dutch", course: { id: "duo_dn", title: "Duoli
     {"t": "de wafel", "e": "waffle"},
     {"t": "wallonië", "e": "Wallonia"}
   ]},
+  { id: "duo_dn_holiday", type: "vocab", title: "Vocab: Holiday · 🎄 Christmas & holidays", items: [
+    {"t": "de kerstboom", "e": "Christmas tree"},
+    {"t": "de kerstman", "e": "Santa Claus"},
+    {"t": "het rendier", "e": "reindeer"},
+    {"t": "de slee", "e": "sleigh / sled"},
+    {"t": "de kerstavond", "e": "Christmas Eve"},
+    {"t": "het vuurwerk", "e": "fireworks"},
+    {"t": "de kerstkrans", "e": "Christmas wreath"},
+    {"t": "het kerstlied", "e": "Christmas carol"},
+    {"t": "Sinterklaas", "e": "St. Nicholas / Sinterklaas (December 5-6)"},
+    {"t": "de oliebol", "e": "oliebol (New Year's doughnut)"},
+    {"t": "vrolijk kerstfeest", "e": "Merry Christmas!"},
+    {"t": "gelukkig Nieuwjaar", "e": "Happy New Year!"}
+  ]},
 ]}});
 window.QUIZ_DUO_LIST.push({ lang: "irish", course: { id: "duo_ga", title: "Duolingo Irish \u2014 current path", units: [
   { id: "duo_ga_u1", type: "vocab", title: "Vocab: Unit 1 \u00b7 Caf\u00e9 \u2014 Place order at cafe", items: [
@@ -19276,6 +19313,21 @@ window.QUIZ_DUO_LIST.push({ lang: "irish", course: { id: "duo_ga", title: "Duoli
     {"t": "táirge", "e": "product"},
     {"t": "árachas", "e": "insurance"},
     {"t": "ór", "e": "gold"}
+  ]},
+  { id: "duo_ga_holiday", type: "vocab", title: "Vocab: Holiday · 🎄 Christmas & holidays", items: [
+    {"t": "Daidí na Nollag", "e": "Santa Claus"},
+    {"t": "crann Nollag", "e": "Christmas tree"},
+    {"t": "Oíche Nollag", "e": "Christmas Eve"},
+    {"t": "Nollaig Shona duit", "e": "Merry Christmas (to you)!"},
+    {"t": "athbhliain faoi mhaise duit", "e": "Happy New Year (to you)!"},
+    {"t": "an Athbhliain", "e": "the New Year"},
+    {"t": "bronntanas", "e": "gift / present"},
+    {"t": "aingeal", "e": "angel"},
+    {"t": "réinfhia", "e": "reindeer"},
+    {"t": "fear sneachta", "e": "snowman"},
+    {"t": "carúl Nollag", "e": "Christmas carol"},
+    {"t": "tinte ealaíne", "e": "fireworks"},
+    {"t": "maisiúchán", "e": "decoration / ornament"}
   ]},
 ]}});
 window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duolingo Spanish \u2014 current path", units: [
@@ -23210,7 +23262,7 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "tener", "e": "let's / being / you've"},
     {"t": "valiente", "e": "brave"},
     {"t": "venir", "e": "(to) arrive, (to) come, come"},
-    {"t": "el ángel", "e": "angel / angels' / charm"}
+    {"t": "el ángel", "e": "angel"}
   ]},
   { id: "duo_es_u156", type: "vocab", title: "Vocab: Unit 156 \u00b7 Office \u2014 Talk about plans and routines", items: [
     {"t": "actualizar", "e": "update / upgrade"},
@@ -27036,6 +27088,23 @@ window.QUIZ_DUO_LIST.push({ lang: "spanish", course: { id: "duo_es", title: "Duo
     {"t": "el ritmo", "e": "pace"},
     {"t": "tener constancia", "e": "consistent / be consistent"},
     {"t": "y mucho menos", "e": "much less"}
+  ]},
+  { id: "duo_es_holiday", type: "vocab", title: "Vocab: Holiday · 🎄 Christmas & holidays", items: [
+    {"t": "el árbol de Navidad", "e": "Christmas tree"},
+    {"t": "Papá Noel", "e": "Santa Claus"},
+    {"t": "el reno", "e": "reindeer"},
+    {"t": "el trineo", "e": "sleigh / sled"},
+    {"t": "el muñeco de nieve", "e": "snowman"},
+    {"t": "la Nochevieja", "e": "New Year's Eve (December 31)"},
+    {"t": "el Año Nuevo", "e": "New Year (January 1)"},
+    {"t": "Feliz Navidad", "e": "Merry Christmas!"},
+    {"t": "Feliz Año Nuevo", "e": "Happy New Year!"},
+    {"t": "los Reyes Magos", "e": "the Three Kings (Epiphany gift-bringers)"},
+    {"t": "el villancico", "e": "Christmas carol"},
+    {"t": "los fuegos artificiales", "e": "fireworks"},
+    {"t": "el belén", "e": "nativity scene (Christmas crib)"},
+    {"t": "la guirnalda", "e": "garland / wreath"},
+    {"t": "el turrón", "e": "turrón (Christmas nougat)"}
   ]},
 ]}});
 window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Duolingo Japanese \u2014 current path", units: [
@@ -33604,5 +33673,17 @@ window.QUIZ_DUO_LIST.push({ lang: "japanese", course: { id: "duo_ja", title: "Du
     {"t": "禁煙", "e": "non-smoking (in kanji)", "k": "きんえん"},
     {"t": "税込み", "e": "including tax", "k": "ぜいこみ"},
     {"t": "食券", "e": "meal ticket", "k": "しょっけん"}
+  ]},
+  { id: "duo_ja_holiday", type: "vocab", title: "Vocab: Holiday · 🎄 Christmas & holidays", items: [
+    {"t": "サンタクロース", "e": "Santa Claus", "r": "santakuroosu"},
+    {"t": "トナカイ", "e": "reindeer", "r": "tonakai"},
+    {"t": "メリークリスマス", "e": "Merry Christmas!", "r": "meriikurisumasu"},
+    {"t": "クリスマスイブ", "e": "Christmas Eve", "r": "kurisumasuibu"},
+    {"t": "おしょうがつ", "e": "Japanese New Year (oshougatsu)", "r": "oshougatsu"},
+    {"t": "ゆきだるま", "e": "snowman", "r": "yukidaruma"},
+    {"t": "てんし", "e": "angel", "r": "tenshi"},
+    {"t": "そり", "e": "sleigh / sled", "r": "sori"},
+    {"t": "あけましておめでとう", "e": "Happy New Year!", "r": "akemashite omedetou"},
+    {"t": "かざり", "e": "decoration / ornament (noun)", "r": "kazari"}
   ]},
 ]}});

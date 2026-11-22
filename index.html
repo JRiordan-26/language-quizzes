@@ -2593,6 +2593,10 @@ function climbSlots(lang){ return [...Array(CLIMB_SLOTS).keys()].map(s=>getClimb
 // to the disjointness machinery (dedupe/builder loop numeric slots only).
 const TH_KW = {};
 const TH_CATS = [
+  {id:'holiday', name:'Christmas & holidays', icon:'🎄', test:(e,ef)=>{
+    if(/bell pepper|bell tower|responsibilit|blindfold|famous/.test(ef)) return false;
+    return /christmas|santa|reindeer|sleigh|snowman|mistletoe|tinsel|garland|wreath|\badvent\b|nativity|panettone|mulled|carol|candle|angel|firework|champagne|sparkling|new year|gift|celebrat|festive|feast|tradition|candy|sweets|ribbon|wrap|decorat|nicholas|sinterklaas|befana|epiphany|nougat|\beve\b|\bbell\b/.test(ef);
+  }},
   {id:'numbers',  name:'Numbers',            icon:'🔢', kw:'one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety hundred thousand million zero first second third fourth fifth tenth number numbers'},
   {id:'colors',   name:'Colors',             icon:'🎨', kw:'red blue green yellow black white orange purple pink brown gray grey violet beige blond blonde color colour colorful'},
   {id:'weather',  name:'Weather',            icon:'🌦', kw:'weather rain rains raining rainy snow snows snowing snowy wind windy sunny cloud clouds cloudy storm stormy fog foggy icy frost temperature degrees thunder lightning forecast climate heat hail humid dry sunshine'},

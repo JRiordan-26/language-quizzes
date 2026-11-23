@@ -3205,6 +3205,7 @@ window.QUIZ_PLURALS = {
 "la capa": "le cape",
 "la capacità": "le capacità",
 "la capitale": "le capitali",
+  "lo pneumatico": "gli pneumatici",
   "l'auricolare": "gli auricolari",
   "il parere": "i pareri",
   "il dispiacere": "i dispiaceri",

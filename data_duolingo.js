@@ -9477,7 +9477,7 @@ window.QUIZ_DUO_LIST.push({ lang: "italian", course: { id: "duo_it", title: "Duo
     {"t": "nessuna", "e": "no / not any"},
     {"t": "nessuno", "e": "no one"},
     {"t": "la parola", "e": "word"},
-    {"t": "pneumatico", "e": "tire"},
+    {"t": "lo pneumatico", "e": "tire (lo before pn-)"},
     {"t": "ripetere", "e": "to repeat"},
     {"t": "significare", "e": "to mean"},
     {"t": "ultimo", "e": "last"}

@@ -125,7 +125,8 @@ window.QUIZ_CONJ = {
       {inf:"potere", irr:1, en:"can", forms:["posso","puoi","può","possiamo","potete","possono"]},
       {inf:"dovere", irr:1, en:"must", forms:["devo","devi","deve","dobbiamo","dovete","devono"]},
       {inf:"volere", irr:1, en:"to want", forms:["voglio","vuoi","vuole","vogliamo","volete","vogliono"]},
-      {inf:"sapere", irr:1, en:"to know (facts / how to)", forms:["so","sai","sa","sappiamo","sapete","sanno"]}
+      {inf:"sapere", irr:1, en:"to know (facts / how to)", forms:["so","sai","sa","sappiamo","sapete","sanno"]},
+      {inf:"piacere", irr:1, en:"to be pleasing (mi piace = I like)", forms:["piaccio","piaci","piace","piacciamo","piacete","piacciono"]}
     ]}},
     { course: "it_a0a2", unit: { id:"it_a1_c1", type:"conj", title:"Conjugate: Spoken past (Passato prossimo) — ho parlato…", tense:"Spoken past (Passato prossimo)", items: [
       {inf:"parlare", en:"to speak → have spoken", forms:["ho parlato","hai parlato","ha parlato","abbiamo parlato","avete parlato","hanno parlato"]},
@@ -135,7 +136,8 @@ window.QUIZ_CONJ = {
       {inf:"essere", irr:1, en:"to be → have been (essere! participle agrees)", forms:["sono stato/sono stata","sei stato/sei stata","è stato/è stata","siamo stati/siamo state","siete stati/siete state","sono stati/sono state"]},
       {inf:"andare", irr:1, en:"to go → have gone (essere! participle agrees)", forms:["sono andato/sono andata","sei andato/sei andata","è andato/è andata","siamo andati/siamo andate","siete andati/siete andate","sono andati/sono andate"]},
       {inf:"venire", irr:1, en:"to come → have come (essere!)", forms:["sono venuto/sono venuta","sei venuto/sei venuta","è venuto/è venuta","siamo venuti/siamo venute","siete venuti/siete venute","sono venuti/sono venute"]},
-      {inf:"dire", irr:1, en:"to say → said (detto)", forms:["ho detto","hai detto","ha detto","abbiamo detto","avete detto","hanno detto"]}
+      {inf:"dire", irr:1, en:"to say → said (detto)", forms:["ho detto","hai detto","ha detto","abbiamo detto","avete detto","hanno detto"]},
+      {inf:"piacere", irr:1, en:"to be pleasing → was liked (essere! participle agrees)", forms:["sono piaciuto/sono piaciuta","sei piaciuto/sei piaciuta","è piaciuto/è piaciuta","siamo piaciuti/siamo piaciute","siete piaciuti/siete piaciute","sono piaciuti/sono piaciute"]}
     ]}},
     { course: "it_a0a2", unit: { id:"it_a2_c1", type:"conj", title:"Conjugate: Imperfect (Imperfetto) — used to / was doing", tense:"Imperfect (Imperfetto)", items: [
       {inf:"essere", irr:1, en:"to be", forms:["ero","eri","era","eravamo","eravate","erano"]},
@@ -145,7 +147,8 @@ window.QUIZ_CONJ = {
       {inf:"bere", irr:1, en:"to drink", forms:["bevevo","bevevi","beveva","bevevamo","bevevate","bevevano"]},
       {inf:"dire", irr:1, en:"to say", forms:["dicevo","dicevi","diceva","dicevamo","dicevate","dicevano"]},
       {inf:"dormire", en:"to sleep", forms:["dormivo","dormivi","dormiva","dormivamo","dormivate","dormivano"]},
-      {inf:"andare", irr:1, en:"to go → used to go", forms:["andavo","andavi","andava","andavamo","andavate","andavano"]}
+      {inf:"andare", irr:1, en:"to go → used to go", forms:["andavo","andavi","andava","andavamo","andavate","andavano"]},
+      {inf:"piacere", en:"to be pleasing (mi piaceva = I used to like)", forms:["piacevo","piacevi","piaceva","piacevamo","piacevate","piacevano"]}
     ]}},
     { course: "it_a0a2", unit: { id:"it_a2_c2", type:"conj", title:"Conjugate: Future (Futuro)", tense:"Future (Futuro)", items: [
       {inf:"essere", irr:1, en:"to be", forms:["sarò","sarai","sarà","saremo","sarete","saranno"]},
@@ -156,7 +159,8 @@ window.QUIZ_CONJ = {
       {inf:"fare", irr:1, en:"to do / make", forms:["farò","farai","farà","faremo","farete","faranno"]},
       {inf:"venire", irr:1, en:"to come", forms:["verrò","verrai","verrà","verremo","verrete","verranno"]},
       {inf:"volere", irr:1, en:"to want", forms:["vorrò","vorrai","vorrà","vorremo","vorrete","vorranno"]},
-      {inf:"dire", irr:1, en:"to say → will say", forms:["dirò","dirai","dirà","diremo","direte","diranno"]}
+      {inf:"dire", irr:1, en:"to say → will say", forms:["dirò","dirai","dirà","diremo","direte","diranno"]},
+      {inf:"piacere", en:"to be pleasing (mi piacerà = I will like)", forms:["piacerò","piacerai","piacerà","piaceremo","piacerete","piaceranno"]}
     ]}},
     { course: "it_a0a2", unit: { id:"it_a2_c3", type:"conj", title:"Conjugate: Conditional (Condizionale) — would…", tense:"Conditional (Condizionale)", items: [
       {inf:"volere", irr:1, en:"to want → would like", forms:["vorrei","vorresti","vorrebbe","vorremmo","vorreste","vorrebbero"]},
@@ -167,7 +171,8 @@ window.QUIZ_CONJ = {
       {inf:"parlare", en:"to speak → would speak", forms:["parlerei","parleresti","parlerebbe","parleremmo","parlereste","parlerebbero"]},
       {inf:"fare", irr:1, en:"to do → would do", forms:["farei","faresti","farebbe","faremmo","fareste","farebbero"]},
       {inf:"dire", irr:1, en:"to say → would say", forms:["direi","diresti","direbbe","diremmo","direste","direbbero"]},
-      {inf:"andare", irr:1, en:"to go → would go", forms:["andrei","andresti","andrebbe","andremmo","andreste","andrebbero"]}
+      {inf:"andare", irr:1, en:"to go → would go", forms:["andrei","andresti","andrebbe","andremmo","andreste","andrebbero"]},
+      {inf:"piacere", en:"to be pleasing (mi piacerebbe = I would like)", forms:["piacerei","piaceresti","piacerebbe","piaceremmo","piacereste","piacerebbero"]}
     ]}},
     { course: "it_b1b2", unit: { id:"it_b1_c1", type:"conj", title:"Conjugate: Present subjunctive (Congiuntivo presente)", tense:"Present subjunctive (Congiuntivo presente)", items: [
       {inf:"essere", irr:1, en:"to be", forms:["sia","sia","sia","siamo","siate","siano"]},
@@ -176,7 +181,8 @@ window.QUIZ_CONJ = {
       {inf:"fare", irr:1, en:"to do / make", forms:["faccia","faccia","faccia","facciamo","facciate","facciano"]},
       {inf:"andare", irr:1, en:"to go", forms:["vada","vada","vada","andiamo","andiate","vadano"]},
       {inf:"finire", en:"to finish", forms:["finisca","finisca","finisca","finiamo","finiate","finiscano"]},
-      {inf:"dire", irr:1, en:"to say (che io dica…)", forms:["dica","dica","dica","diciamo","diciate","dicano"]}
+      {inf:"dire", irr:1, en:"to say (che io dica…)", forms:["dica","dica","dica","diciamo","diciate","dicano"]},
+      {inf:"piacere", irr:1, en:"to be pleasing (che ti piaccia…)", forms:["piaccia","piaccia","piaccia","piacciamo","piacciate","piacciano"]}
     ]}},
     { course: "it_b1b2", unit: { id:"it_b1_c2", type:"conj", title:"Conjugate: Imperfect subjunctive (Congiuntivo imperfetto)", tense:"Imperfect subjunctive (Congiuntivo imperfetto)", items: [
       {inf:"essere", irr:1, en:"to be", forms:["fossi","fossi","fosse","fossimo","foste","fossero"]},
@@ -184,7 +190,8 @@ window.QUIZ_CONJ = {
       {inf:"parlare", en:"to speak", forms:["parlassi","parlassi","parlasse","parlassimo","parlaste","parlassero"]},
       {inf:"fare", irr:1, en:"to do / make", forms:["facessi","facessi","facesse","facessimo","faceste","facessero"]},
       {inf:"dire", irr:1, en:"to say (se io dicessi…)", forms:["dicessi","dicessi","dicesse","dicessimo","diceste","dicessero"]},
-      {inf:"andare", irr:1, en:"to go (se io andassi…)", forms:["andassi","andassi","andasse","andassimo","andaste","andassero"]}
+      {inf:"andare", irr:1, en:"to go (se io andassi…)", forms:["andassi","andassi","andasse","andassimo","andaste","andassero"]},
+      {inf:"piacere", en:"to be pleasing (se ti piacesse…)", forms:["piacessi","piacessi","piacesse","piacessimo","piaceste","piacessero"]}
     ]}},
     { course: "it_b1b2", unit: { id:"it_b1_c3", type:"conj", title:"Conjugate: Historic past (Passato remoto) — written & literary", tense:"Historic past (Passato remoto)", items: [
       {inf:"essere", irr:1, en:"to be", forms:["fui","fosti","fu","fummo","foste","furono"]},
@@ -192,7 +199,8 @@ window.QUIZ_CONJ = {
       {inf:"fare", irr:1, en:"to do / make", forms:["feci","facesti","fece","facemmo","faceste","fecero"]},
       {inf:"parlare", en:"to speak", forms:["parlai","parlasti","parlò","parlammo","parlaste","parlarono"]},
       {inf:"dire", irr:1, en:"to say", forms:["dissi","dicesti","disse","dicemmo","diceste","dissero"]},
-      {inf:"andare", irr:1, en:"to go → went (regular in the remoto!)", forms:["andai","andasti","andò","andammo","andaste","andarono"]}
+      {inf:"andare", irr:1, en:"to go → went (regular in the remoto!)", forms:["andai","andasti","andò","andammo","andaste","andarono"]},
+      {inf:"piacere", irr:1, en:"to be pleasing (piacque — very irregular)", forms:["piacqui","piacesti","piacque","piacemmo","piaceste","piacquero"]}
     ]}}
   ],
   dutch: [
